@@ -13,6 +13,10 @@
 @font-face { font-family: 'Outfit'; font-style: normal; font-weight: 300 700; font-display: swap; src: url('../fonts/Outfit-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: 'Rye'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/Rye-normal-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 @font-face { font-family: 'Rye'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/Rye-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Kalam'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/Kalam-400-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Kalam'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/Kalam-400-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Kalam'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/Kalam-700-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Kalam'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/Kalam-700-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: 'Stardos Stencil'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/StardosStencil-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
 /* Liquid Assets: a rustic brick-and-timber bar. Palette tokens come from Plan 01 section 7.1. */
@@ -42,6 +46,9 @@
   --pine: #d9b97f;
   --serif: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif;
   --sans: 'Outfit', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --chalkhand: 'Kalam', 'Cormorant Garamond', serif;
+  --chalk-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.4 2.15'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --chalk-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 6' preserveAspectRatio='none'%3E%3Cpath d='M1 3 Q9 .6 17 3 T33 3 T49 3 T65 3 T81 3 T99 3' fill='none' stroke='%23f2ede4' stroke-width='1.5' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
   --cjk: 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', 'Noto Serif KR', 'Malgun Gothic', serif;
   --footer-h: 36px;
   --chalk: #f2ede4;
@@ -472,28 +479,61 @@ body[data-page='welcome'][data-scene='v3'] { overflow: hidden; background: #1b14
 .scene3 .vessel-art, .scene3 .slot .art { height: 82%; display: flex; align-items: flex-end; justify-content: center; }
 .scene3 .vessel-art svg, .scene3 .slot .art svg, .scene3 .vessel-art .b3, .scene3 .slot .art .b3 { height: 100%; width: auto; max-width: 100%; filter: none; }
 .scene3 .slot { height: 100%; width: calc(100% / var(--per, 6)); justify-content: flex-end; }
-.scene3 .vessel:hover, .scene3 .vessel:focus-visible, .scene3 .vessel[aria-pressed='true'] { transform: translateY(-.7cqw); }
 .scene3 .vessel::before, .scene3 .slot.sub::before { background: radial-gradient(ellipse 50% 62% at 50% 40%, rgba(244, 194, 122, .6), rgba(244, 194, 122, 0) 100%); }
-.scene3 .vessel[aria-pressed='true']::after { bottom: -1.1cqw; width: 3cqw; height: .7cqw; margin-left: -1.5cqw; }
-.scene3 .vessel-cap { top: calc(100% + 1.2cqw); font-size: clamp(11px, .85cqw, 15px); }
-.scene3 .vessel[aria-pressed='true'] .vessel-cap { top: calc(100% + 1.8cqw); opacity: 1; }
-.scene3 .hang { top: calc(100% + .5cqw); max-width: 140%; font-size: clamp(10px, .8cqw, 14px); padding: .35em .7em; }
-.scene3 .slate.s3 { position: absolute; z-index: 5; transform: translate(-50%, -50%); font-size: clamp(11px, 1.05cqw, 17px); min-width: 0; max-width: 90cqw; }
+.scene3 .slot.mix.blocked { visibility: hidden; pointer-events: none; }
 .scene3 .menu-anchor { position: absolute; z-index: 6; transform: translate(-50%, -50%); }
 .scene3 .menu-btn.on-counter { margin: 0; }
 .scene3 .b3 { position: relative; display: block; aspect-ratio: var(--ar); isolation: isolate; }
 .scene3 .b3 .shell { display: block; height: 100%; width: 100%; }
-.scene3 .b3 .lab { position: absolute; overflow: hidden; mix-blend-mode: multiply; }
+.scene3 .vessel-art .b3, .scene3 .slot .art .b3 { height: calc(var(--sc, 1) * 100%); }
+.scene3 .b3 .lab { position: absolute; overflow: hidden; }
 .scene3 .b3 .lab img, .scene3 .b3 .lab svg { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* soft contact shadow under every shell (shells.json shadow) */
+.scene3 .b3::before { content: ''; position: absolute; left: 50%; bottom: -1.2%; width: var(--sh-w, 80%); height: var(--sh-h, 6%); transform: translateX(-50%); z-index: -1; pointer-events: none; background: radial-gradient(ellipse at center, rgba(22, 9, 2, var(--sh-o, .3)) 0, rgba(22, 9, 2, 0) 70%); }
+/* the sake's paper label takes the photo with multiply; every other label is stuck on the glass (Plan 07 section 2.3) */
+.scene3 .b3 .lab.multiply { mix-blend-mode: multiply; }
+.scene3 .b3 .lab.normal { mix-blend-mode: normal; box-shadow: 0 0 1px rgba(20, 8, 2, .55), 0 1px 1.5px rgba(20, 8, 2, .28); }
+.scene3 .b3 .lab.normal::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, .17) 31%, rgba(255, 255, 255, 0) 41%, rgba(0, 0, 0, 0) 74%, rgba(0, 0, 0, .36) 100%); }
+
+/* ---- counter displays (Plan 07 section 4) */
+.scene3 .cgroup { position: absolute; z-index: 4; }
+.scene3 .cg-row { list-style: none; margin: 0; padding: 0; height: 100%; display: flex; justify-content: space-around; align-items: flex-end; }
+.scene3 .cb-cell { flex: 1 1 0; min-width: 0; height: 100%; display: flex; justify-content: center; align-items: flex-end; }
+.scene3 .cbottle { position: relative; display: flex; align-items: flex-end; justify-content: center; height: 100%; width: 100%; padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; text-decoration: none; transition: transform 140ms ease-out; }
+.scene3 .cbottle:hover, .scene3 .cbottle:focus-visible { transform: translateY(-3px); }
+.scene3 .cbottle:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; border-radius: var(--r-sm); box-shadow: none; }
+.scene3 .cb-art { height: 100%; display: flex; align-items: flex-end; justify-content: center; pointer-events: none; }
+.scene3 .cb-art svg { height: 100%; width: auto; max-width: 100%; }
+.scene3 .cb-art .b3 { height: calc(var(--sc, 1) * 100%); width: auto; max-width: 100%; }
+
+/* ---- the burger on the counter (Plan 07 section 3.2) */
+.scene3 .burger-anchor { position: absolute; z-index: 6; transform: translate(-50%, -100%); aspect-ratio: var(--bratio); }
+.scene3 .burger { position: absolute; inset: 0; padding: 0; border: 0; background: none; cursor: pointer; display: block; }
+.scene3 .burger::before { content: ''; position: absolute; left: 50%; top: -75%; width: 150%; height: 110%; transform: translateX(-50%); background: radial-gradient(ellipse 50% 50% at 50% 60%, rgba(244, 194, 122, .6), rgba(244, 194, 122, 0) 100%); opacity: 0; transition: opacity 200ms; pointer-events: none; }
+.scene3 .burger:hover::before, .scene3 .burger:focus-visible::before { opacity: 1; }
+.scene3 .burger-art { position: absolute; inset: 0; display: block; transition: transform 140ms ease-out; filter: drop-shadow(0 .35cqw .45cqw rgba(25, 10, 3, .5)); }
+.scene3 .burger:hover .burger-art, .scene3 .burger:focus-visible .burger-art { transform: translateY(-2px); }
+.scene3 .burger:active .burger-art { transform: translateY(1px); }
+.scene3 .burger:focus-visible { outline: 3px solid var(--glow); outline-offset: 4px; border-radius: var(--r-sm); box-shadow: none; }
+.burger-art img { position: absolute; display: block; max-width: none; user-select: none; -webkit-user-drag: none; pointer-events: none; }
+
+/* ---- the open burger menu: scene dimmed, layers split, words beside them (Plan 07 sections 3.3 to 3.6) */
+.bd { position: fixed; inset: 0; z-index: 300; }
+.bd-scrim { position: absolute; inset: 0; background: rgba(20, 13, 9, .5); -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px); }
+@media (prefers-reduced-transparency: reduce) { .bd-scrim { background: rgba(20, 13, 9, .94); -webkit-backdrop-filter: none; backdrop-filter: none; } }
+.bd-stage { position: absolute; }
+.bd-stage img { position: absolute; display: block; max-width: none; user-select: none; -webkit-user-drag: none; pointer-events: none; will-change: transform; filter: drop-shadow(0 8px 14px rgba(0, 0, 0, .45)); }
+.bd-stage .bl-plate { filter: none; }
+.bd.split .bd-stage .bl { pointer-events: auto; cursor: pointer; }
 /* tall plate: the two lower shelves show 3 bottles and scroll sideways inside the shelf */
-.scene3[data-plate='tall'] .lowrow .row-items { bottom: -11cqw; padding-bottom: 11cqw; overflow-x: auto; overflow-y: hidden; justify-content: flex-start; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); }
+.scene3[data-plate='tall'] .lowrow .row-items { bottom: -12cqw; padding-bottom: 12cqw; overflow-x: auto; overflow-y: hidden; justify-content: flex-start; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; --fl: 0%; --fr: 0%; -webkit-mask-image: linear-gradient(90deg, transparent, #000 var(--fl), #000 calc(100% - var(--fr)), transparent); mask-image: linear-gradient(90deg, transparent, #000 var(--fl), #000 calc(100% - var(--fr)), transparent); }
 .scene3[data-plate='tall'] .lowrow .row-items::-webkit-scrollbar { display: none; }
-.scene3[data-plate='tall'] .lowrow .slot { flex: 0 0 calc(100% / 3); scroll-snap-align: center; height: calc(100% - 11cqw); align-self: flex-end; }
+.scene3[data-plate='tall'] .lowrow .slot { flex: 0 0 calc(100% / var(--per, 3)); scroll-snap-align: center; height: 100%; align-self: flex-end; }
 .scene3[data-plate='tall'] .lowrow .slot:first-child { margin-left: auto; }
 .scene3[data-plate='tall'] .lowrow .slot:last-child { margin-right: auto; }
-.scene3[data-plate='tall'] .hang { max-width: 100%; font-size: clamp(10px, 2.6cqw, 13px); }
-.scene3[data-plate='tall'] .vessel-cap { font-size: clamp(10px, 2.6cqw, 13px); opacity: 1; top: calc(100% + 1cqw); }
-.scene3[data-plate='tall'] .slate.s3 { font-size: clamp(11px, 3.2cqw, 15px); }
+/* the counter on phones: one group at a time behind two tabs (Plan 07 section 7.2) */
+.scene3 .cgroup { transition: opacity 200ms ease-out, visibility 0s linear 0s; }
+.scene3.has-selection .cgroup { opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 200ms ease-out, visibility 0s linear 200ms; }
 /* ?debug=scene guides */
 .dbg { position: absolute; inset: 0; z-index: 50; pointer-events: none; font: 600 11px var(--sans); }
 .dbg i { position: absolute; display: block; }
@@ -527,7 +567,6 @@ body[data-page='welcome'][data-scene='v3'] { overflow: hidden; background: #1b14
 @media (max-width: 767px) {
   body { font-size: 15px; }
   .menu-btn .menu-label { display: none; }
-  .scene3[data-plate='tall'] .slate.s3 { white-space: normal; max-width: 62cqw; }
   .bar { min-height: 0; padding-bottom: 76px; }
   .room { height: 7vh; }
   .beam-back { display: none; }
@@ -648,3 +687,106 @@ body[data-page='welcome'][data-scene='v3'] { overflow: hidden; background: #1b14
   body:not([data-page='welcome']) .sib-tag, body:not([data-page='welcome']) .hang { box-shadow: inset 0 0 0 1px rgba(242, 237, 228, .2), 0 3px 6px rgba(0, 0, 0, .6); }
   body:not([data-page='welcome']) .hero-text, body:not([data-page='welcome']) .head-board { --ink2: #cfc4b3; --link: #f0c27a; }
 }
+
+/* ---- the chalkboard component (Plan 07 sections 9 and 10): one board, three sizes ------------------------------------
+   L: burger option boards and panels. M: status slate, counter labels, phone tabs, Menu. S: bottle name tags and captions.
+   Slate #262a28 with faint chalk smudges, a thin wooden frame, a shadow, Kalam lettering in chalk. Japanese and Korean
+   fall back to a plain gothic in the same colour (Kalam has no CJK glyphs). */
+.chalkboard {
+  --cb-frame: 3px;
+  --cb-fs: 16px;
+  --cb-shadow: 0 6px 14px rgba(20, 8, 2, .55);
+  --tilt: 0deg;
+  --lift: 0px;
+  position: relative;
+  box-sizing: border-box;
+  background:
+    radial-gradient(ellipse 46% 34% at 22% 28%, rgba(242, 237, 228, calc(.05 * var(--sm, 1))), rgba(242, 237, 228, 0) 100%),
+    radial-gradient(ellipse 60% 40% at 78% 72%, rgba(242, 237, 228, calc(.04 * var(--sm, 1))), rgba(242, 237, 228, 0) 100%),
+    radial-gradient(ellipse 30% 70% at 55% 45%, rgba(242, 237, 228, calc(.06 * var(--sm, 1))), rgba(242, 237, 228, 0) 100%),
+    #262a28;
+  border: var(--cb-frame) solid #7a5534;
+  border-radius: var(--r-sm);
+  box-shadow: inset 0 0 0 1px #5a3b22, var(--cb-shadow);
+  color: var(--chalk);
+  font: 700 var(--cb-fs)/1.15 var(--chalkhand);
+  text-shadow: 0 0 1px rgba(242, 237, 228, .35);
+  transform: translateY(var(--lift)) rotate(var(--tilt));
+  transition: transform 140ms ease-out, color 140ms;
+}
+.chalkboard--l { --cb-frame: 4px; --cb-fs: clamp(22px, 2.1vw, 30px); padding: .45em .8em; min-height: 44px; }
+.chalkboard--m { --cb-frame: 3px; --cb-fs: clamp(15px, 1.1vw, 20px); padding: .35em .8em; }
+.chalkboard--s { --sm: .5; --cb-frame: 2px; --cb-fs: 14px; font-weight: 400; --cb-shadow: 0 3px 8px rgba(20, 8, 2, .55); padding: 1px 4px; line-height: 1.1; }
+.chalkboard .chalk { position: relative; display: inline-block; }
+/* Japanese and Korean: a plain gothic, weight 500, same chalk colour and shadow */
+.chalkboard .nat, .chalkboard [lang='ja'], .chalkboard [lang='ko'] { font-family: 'Yu Gothic', 'Hiragino Sans', 'Noto Sans JP', 'Malgun Gothic', sans-serif; font-weight: 500; }
+/* chalk grain on the letters: L always (phones excepted), M only at 18px or more, S never */
+.chalkboard--l .chalk { -webkit-mask-image: var(--chalk-grain); mask-image: var(--chalk-grain); }
+@media (min-width: 1640px) { .chalkboard--m .chalk { -webkit-mask-image: var(--chalk-grain); mask-image: var(--chalk-grain); } }
+/* states: hover and focus lift 2px and glow; selected gets the wavy underline and stays glowing */
+.chalkboard.hot, a.chalkboard:hover, button.chalkboard:hover, a.chalkboard:focus-visible, button.chalkboard:focus-visible { --lift: -2px; color: var(--glow); }
+a.chalkboard:focus-visible, button.chalkboard:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
+.chalkboard[aria-expanded='true'], .chalkboard[aria-selected='true'], .chalkboard.on { color: var(--glow); }
+.chalkboard[aria-expanded='true'] .chalk::after, .chalkboard[aria-selected='true'] .chalk::after, .chalkboard.on .chalk::after,
+.chalkboard .soonmark::after { content: ''; position: absolute; left: 0; right: 0; bottom: -3px; height: 5px; background: var(--chalk-wave) center / 100% 100% no-repeat; opacity: .9; }
+/* unavailable: chalk at 55%, no lift */
+.chalkboard.soon, .chalkboard.soon:hover, .chalkboard.soon:focus-visible { --lift: 0px; cursor: default; color: var(--chalk); }
+.chalkboard .soonmark { position: relative; font: 400 .55em/1.2 var(--chalkhand); opacity: .65; margin-bottom: 4px; }
+.chalkboard .soonmark::after { bottom: -4px; height: 4px; }
+.chalkboard .ct, .chalkboard .count { opacity: .7; font-variant-numeric: tabular-nums; }
+
+/* ---- the burger menu boards and panels (L) */
+.bd { overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
+.bd-scrim { position: fixed; }
+.bd-inner { position: relative; width: 100%; min-height: 100%; }
+.bd-row { position: absolute; height: 0; display: flex; align-items: center; justify-content: flex-end; opacity: 1; }
+.bd-row, .bl { will-change: transform; }
+.bd.shifting .bl, .bd.shifting .bd-row { transition: transform 460ms cubic-bezier(0.16, 1, 0.3, 1); }
+@media (prefers-reduced-motion: reduce) { .bd.shifting .bl, .bd.shifting .bd-row { transition: none; } }
+.bw { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: .1em; margin: 0; cursor: pointer; text-decoration: none; text-align: center; white-space: nowrap; font-weight: 700; --tilt: var(--row-tilt, 0deg); }
+.bd-row.hot .bw { --lift: -2px; color: var(--glow); }
+.bd-panel { position: absolute; width: min(320px, 28vw); min-width: 240px; padding: 10px 16px 12px; font-family: var(--chalkhand); }
+.bd-panel[hidden] { display: none; }
+.bd-panel ul { list-style: none; margin: 0; padding: 0; }
+.bd-panel li + li { border-top: 1px solid rgba(242, 237, 228, .15); }
+.bd-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 4px; margin: 0; font: 400 18px/1.2 var(--chalkhand); color: var(--chalk); text-decoration: none; text-shadow: 0 0 1px rgba(242, 237, 228, .35); transition: color 140ms; }
+.bd-link:hover { color: var(--glow); }
+.bd-link:focus-visible { outline: 3px solid var(--glow); outline-offset: -2px; box-shadow: none; border-radius: var(--r-sm); }
+.bd-link .count { font: 400 18px/1 var(--chalkhand); }
+.bd-h { margin: 0 0 6px; font: 700 22px/1.1 var(--chalkhand); color: var(--chalk); text-shadow: 0 0 1px rgba(242, 237, 228, .35); }
+.bd-about p { margin: 6px 0 8px; font: 400 15px/1.5 var(--sans); color: #e6dfd3; }
+.bd-about .credits { font: 400 13px/1.6 var(--sans); color: #d2c8b8; padding-left: 0; list-style: none; margin: 0; }
+.bd[data-layout='portrait'] .bd-row { justify-content: flex-start; }
+.bd[data-layout='portrait'] .chalkboard--l { --cb-frame: 3px; --cb-fs: clamp(19px, 5.6vw, 24px); }
+.bd[data-layout='portrait'] .chalkboard--l .chalk { -webkit-mask-image: none; mask-image: none; }
+.bd[data-layout='portrait'] .bd-panel { width: auto; min-width: 0; padding: 6px 14px 8px; }
+.bd[data-layout='portrait'] .bd-link, .bd[data-layout='portrait'] .bd-link .count { font-size: 17px; }
+
+/* ---- the scene's labels as boards (M and S) */
+.scene3 .chalkboard { pointer-events: none; }
+.scene3 button.chalkboard, .scene3 a.chalkboard { pointer-events: auto; }
+.scene3 .vessel-cap { position: absolute; top: calc(100% + 2px); left: 50%; transform: translate(-50%, var(--lift)); opacity: 1; white-space: nowrap; z-index: 2; }
+.scene3 .vessel:hover .vessel-cap, .scene3 .vessel:focus-visible .vessel-cap { --lift: -2px; color: var(--glow); }
+.scene3 .vessel[aria-pressed='true'] .vessel-cap { top: calc(100% + 2px); color: var(--glow); opacity: 1; }
+.scene3 .vessel[aria-pressed='true'] .vessel-cap .chalk::after { content: ''; position: absolute; left: 0; right: 0; bottom: -3px; height: 5px; background: var(--chalk-wave) center / 100% 100% no-repeat; opacity: .9; }
+.scene3 .vessel[aria-pressed='true']::after { display: none; }
+.scene3 .vessel:hover, .scene3 .vessel:focus-visible, .scene3 .vessel[aria-pressed='true'] { transform: none; }
+.scene3 .vessel-art { transition: transform 140ms ease-out; }
+.scene3 .vessel:hover .vessel-art, .scene3 .vessel:focus-visible .vessel-art, .scene3 .vessel[aria-pressed='true'] .vessel-art { transform: translateY(-.7cqw); }
+.scene3 .hang { position: absolute; left: 50%; top: calc(100% + 2px); transform: translateX(-50%); width: max-content; max-width: calc(100% - 8px); text-align: center; z-index: 3; --cb-fs: clamp(14px, .9cqw, 16px); }
+.scene3 .hang .nm, .scene3 .hang .l2 { display: block; }
+.scene3 .hang .nm { white-space: normal; overflow-wrap: normal; }
+.scene3 .hang .l2 { white-space: nowrap; }
+.scene3 .slot.sub.soon .hang .chalk, .scene3 .slot.sub.soon .hang .nm, .scene3 .slot.sub.soon .hang .l2 { opacity: .55; }
+.scene3 .slot.sub:hover .hang, .scene3 .slot.sub:focus-visible .hang { color: var(--glow); }
+.scene3 .slot.sub.soon:hover, .scene3 .slot.sub.soon:focus-visible { transform: none; }
+.scene3[data-plate='tall'] .hang { top: calc(100% - 12px); --cb-fs: 14px; }
+.scene3 .slate.s3.mid { --tilt: -.5deg; position: absolute; transform: translate(-50%, -50%) rotate(var(--tilt)); text-align: center; white-space: normal; min-width: 0; max-width: none; padding: .35em .9em; display: flex; align-items: center; justify-content: center; font-weight: 700; z-index: 5; }
+.scene3 .placard { position: absolute; z-index: 5; margin: 0; transform: translate(-50%, -50%); white-space: nowrap; letter-spacing: 0; text-transform: none; font-weight: 700; padding: .3em .85em; }
+.scene3 .cb-tag { position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translate(-50%, 4px); z-index: 8; max-width: 22cqw; white-space: nowrap; opacity: 0; transition: opacity 140ms, transform 140ms; }
+.scene3 .cbottle:hover .cb-tag, .scene3 .cbottle:focus-visible .cb-tag { opacity: 1; transform: translate(-50%, 0); }
+.scene3 .ctabs { position: absolute; z-index: 6; transform: translateY(-50%); display: flex; gap: 8px; }
+.scene3 .ctab { min-height: 44px; min-width: 64px; padding: 0 16px; cursor: pointer; text-transform: none; letter-spacing: 0; font-weight: 700; }
+.scene3 .ctab[aria-selected='false'] .chalk { opacity: .75; }
+.scene3 .burger-tag { z-index: 5; }
+.chalkboard .count, .bd-link .count { color: inherit; }

@@ -24,15 +24,27 @@ function currentGroup(cats) {
 const link = (href, label, extra = '', current = false) =>
   `<a class="menu-link" href="${esc(href)}"${current ? ' aria-current="page"' : ''}><span>${esc(label)}</span>${extra}</a>`;
 
+const CREDITS = [
+  'Map: Natural Earth (public domain)',
+  'Type: Outfit, Cormorant Garamond, Kalam, Rye and Stardos Stencil (SIL Open Font Licence)',
+  'Icons: Phosphor Icons (MIT)',
+];
+
+/** The About text, shared with the burger menu: the one-line description and the credits. */
+export function aboutHTML(b) {
+  const about = b
+    ? `A personal log of ${plural(b.drinkCount, 'drink')}, updated ${esc(fmtDate((b.generated || '').slice(0, 10)))}.`
+    : 'A personal log of drinks.';
+  return `<p>${about}</p>
+<ul class="credits">${CREDITS.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>`;
+}
+
 async function build() {
   const ix = await getIndex();
   const b = getBuild();
   const cur = currentGroup(ix.cats);
   const shelves = ix.shelf.categories.map((c) =>
     `<li>${link(`#/${c.key}`, c.name, `<span class="count" aria-label="${plural(c.drinkCount, 'drink')}">${c.drinkCount}</span>`, cur.cat === c.key)}</li>`).join('');
-  const about = b
-    ? `A personal log of ${plural(b.drinkCount, 'drink')}, updated ${esc(fmtDate((b.generated || '').slice(0, 10)))}.`
-    : 'A personal log of drinks.';
   const el = document.createElement('div');
   el.className = 'menu-overlay';
   el.id = 'site-menu';
@@ -60,12 +72,7 @@ async function build() {
       </nav>
       <section class="menu-group menu-about" aria-labelledby="mh-about">
         <h2 id="mh-about">About</h2>
-        <p>${about}</p>
-        <ul class="credits">
-          <li>Map: Natural Earth (public domain)</li>
-          <li>Type: Outfit, Cormorant Garamond, Rye and Stardos Stencil (SIL Open Font Licence)</li>
-          <li>Icons: Phosphor Icons (MIT)</li>
-        </ul>
+        ${aboutHTML(b)}
       </section>
     </div>
   </div>

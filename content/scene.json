@@ -1,5 +1,5 @@
 {
- "_readme": "Measured layout of the rendered scene plates (Plan 01 sections 2.3 and 12). Every number is a fraction of the plate: x from the left, y from the top, so 0.5 is the middle. WIDE is measured from the owner's bar-wide.webp (1672x941, 2026-10-31): shelf lines are the top edges of the three oak boards, clear is the lit space above each line, the sign is the painted sign, counterTop is the back edge of the counter top. TALL is still a PLACEHOLDER until bar-tall arrives (phones keep the v2 scene until then). Check by eye with ?debug=scene. shelves: y is the shelf line the bottles stand on, x0 and x1 its ends, clear the free height above it. Wide has 3 shelves (vessels, then two lower); tall has 4 (two for vessels, two lower). shells.labelRect is [x, y, w, h] of the white label as fractions of the shell image; null means no label.",
+ "_readme": "Measured layout of the rendered scene plates (Plan 01 sections 2.3 and 12). Every number is a fraction of the plate: x from the left, y from the top, so 0.5 is the middle. WIDE is measured from the owner's bar-wide.webp (1672x941, 2026-10-31): shelf lines are the top edges of the three oak boards, clear is the lit space above each line, the sign is the painted sign, counterTop is the back edge of the counter top. TALL is measured from the owner's bar-tall.webp (852x1846, 2026-11-01): three shelves (vessels on the first two, subcategories on the third), the counter top, a slim slate line and two tabs on the counter front. Check by eye with ?debug=scene. shelves: y is the shelf line the bottles stand on, x0 and x1 its ends, clear the free height above it. Wide has 3 shelves (vessels, then two lower); tall has 3 (two rows of vessels, then one scrolling row of subcategories). The bottle shells and their label rectangles live in content/shells.json (Plan 07). counter (Plan 07 section 4.1): where the counter displays stand. baseY is the line the counter bottles stand on, bottleH the height of a full-size bottle, and each zone is an x range (fractions of the plate): new (New arrivals), season (In season), slate (the status slate, at slateY) and burger (the menu burger, h is its height). Every desktop feature needs phone values on the tall plate (E06): when bar-tall exists, plates.tall must carry its own counter and burger layout. On the tall plate the counter shows one group at a time behind two tabs (mode 'tabs', tabsY is the tab row), the slate is a slim line (slateY), and counter bottles are about 6.6% of the plate height, not 15%, because 15% of this plate would cover the whole subcategory shelf.",
  "version": 1,
  "plates": {
   "wide": {
@@ -40,114 +40,93 @@
      "x": 0.735,
      "y": 0.695
     }
+   },
+   "counter": {
+    "baseY": 0.7,
+    "bottleH": 0.15,
+    "slateY": 0.748,
+    "new": {
+     "x0": 0.04,
+     "x1": 0.31
+    },
+    "season": {
+     "x0": 0.64,
+     "x1": 0.85
+    },
+    "slate": {
+     "x0": 0.38,
+     "x1": 0.62
+    },
+    "burger": {
+     "x0": 0.87,
+     "x1": 0.97,
+     "h": 0.13
+    }
    }
   },
   "tall": {
    "ratio": 0.46154,
    "shelves": [
     {
-     "y": 0.3,
-     "x0": 0.12,
-     "x1": 0.88,
-     "clear": 0.11
+     "y": 0.4045,
+     "x0": 0.175,
+     "x1": 0.865,
+     "clear": 0.0645
     },
     {
-     "y": 0.44,
-     "x0": 0.12,
-     "x1": 0.88,
-     "clear": 0.11
+     "y": 0.4825,
+     "x0": 0.175,
+     "x1": 0.865,
+     "clear": 0.06
     },
     {
-     "y": 0.58,
-     "x0": 0.12,
-     "x1": 0.88,
-     "clear": 0.11
-    },
-    {
-     "y": 0.72,
-     "x0": 0.12,
-     "x1": 0.88,
-     "clear": 0.11
+     "y": 0.5695,
+     "x0": 0.175,
+     "x1": 0.865,
+     "clear": 0.0711
     }
    ],
    "sign": {
-    "x0": 0.1,
-    "y0": 0.05,
-    "x1": 0.9,
-    "y1": 0.17
+    "x0": 0.128,
+    "y0": 0.224,
+    "x1": 0.873,
+    "y1": 0.301
    },
-   "counterTop": 0.8,
+   "counterTop": 0.603,
    "anchors": {
     "slate": {
-     "x": 0.4,
-     "y": 0.89
+     "x": 0.5,
+     "y": 0.652
     },
     "menu": {
-     "x": 0.86,
-     "y": 0.89
+     "x": 0.855,
+     "y": 0.622
+    }
+   },
+   "counter": {
+    "mode": "tabs",
+    "baseY": 0.622,
+    "bottleH": 0.066,
+    "slateY": 0.652,
+    "tabsY": 0.708,
+    "new": {
+     "x0": 0.05,
+     "x1": 0.72
+    },
+    "season": {
+     "x0": 0.05,
+     "x1": 0.72
+    },
+    "slate": {
+     "x0": 0.05,
+     "x1": 0.95
+    },
+    "burger": {
+     "x0": 0.82,
+     "x1": 1.0,
+     "h": 0.05
     }
    }
-  }
- },
- "shells": {
-  "sake": {
-   "labelRect": [
-    0.17,
-    0.62,
-    0.66,
-    0.26
-   ]
-  },
-  "makgeolli": {
-   "labelRect": [
-    0.16,
-    0.447,
-    0.68,
-    0.373
-   ]
-  },
-  "liqueur": {
-   "labelRect": [
-    0.2,
-    0.64,
-    0.6,
-    0.207
-   ]
-  },
-  "beer": {
-   "labelRect": [
-    0.25,
-    0.64,
-    0.5,
-    0.227
-   ]
-  },
-  "wine": {
-   "labelRect": [
-    0.19,
-    0.547,
-    0.62,
-    0.307
-   ]
-  },
-  "spirits": {
-   "labelRect": [
-    0.22,
-    0.5,
-    0.56,
-    0.28
-   ]
-  },
-  "cocktail": {
-   "labelRect": null
-  },
-  "highball": {
-   "labelRect": [
-    0.32,
-    0.507,
-    0.36,
-    0.16
-   ]
   }
  }
 }

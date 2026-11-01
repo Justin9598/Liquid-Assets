@@ -7,7 +7,7 @@ import shutil
 from pathlib import Path
 
 from . import assets as assets_mod, phase as phase_mod, scene as scene_mod, checks, emit as emit_mod, images, og as og_mod, model, photos as photos_mod, producers as producers_mod
-from . import report as report_mod
+from . import burger as burger_mod, counter as counter_mod, report as report_mod, scene_report
 from .common import BuildError, Issues
 from .ledger import load_ledger
 
@@ -98,6 +98,15 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
 
     shelf = emit_mod.build_shelf(drinks, grades, issues)
 
+    # counter displays (Plan 07 section 4): new arrivals and the seasonal picks go into shelf.json
+    seasonal = _load_json(content_dir / "seasonal.json", None, issues, "seasonal.json", code="W20")
+    if seasonal and not counter_mod.validate_seasonal(seasonal, issues):
+        seasonal = None
+    if not issues.errors:
+        content["counter"], counter_report = counter_mod.build_counter(drinks, photo_map, seasonal, issues)
+    else:
+        counter_report = None
+
     # S8
     jobs_all = images.plan_outputs(photo_map)
     jobs = [j for j in jobs_all if phase_mod.keep_job(j, sections)]
@@ -115,8 +124,16 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
     if scene_manifest and not scene_mod.validate_manifest(scene_manifest, issues):
         scene_manifest = None
     if scene_manifest and not issues.errors:
+        shells_cfg = _load_json(content_dir / "shells.json", None, issues, "shells.json", code="W20")
+        if shells_cfg and not scene_mod.validate_shells(shells_cfg, issues):
+            shells_cfg = None
+        burger_cfg = _load_json(content_dir / "burger.json", None, issues, "burger.json", code="W20")
+        if burger_cfg and not burger_mod.validate(burger_cfg, issues):
+            burger_cfg = None
         scene_info, scene_sigs, scene_stats = scene_mod.convert(scene_dir, docs, root / "build" / ".scene-cache.json",
-                                                                 force=force_images, write=not check)
+                                                                 force=force_images, write=not check, shells_cfg=shells_cfg,
+                                                                 burger_cfg=burger_cfg)
+        scene_mod.check_parity(scene_manifest, scene_info, issues)
         content["scene_data"] = scene_mod.merge(scene_manifest, scene_info)
         if not content["scene_data"]["ready"]:
             issues.info("I02", "Design/scene has no plates yet: the page keeps the v2 illustrated scene")
@@ -181,9 +198,14 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
         assets_mod.stamp(docs)                                  # Plan 06 section 7
         og_mod.generate(docs, root / "build" / "fonts" / "Rye-Regular.ttf")   # Plan 06 section 8
 
+    extras = {"counter": counter_report, "shells_sheet": None, "burger_sheet": None}
+    if not check and not issues.errors and content.get("scene_data", {}).get("ready"):
+        sd = content["scene_data"]
+        extras["shells_sheet"] = scene_report.shells_on_plate(docs, sd, reports_dir / "shells-on-plate.png")
+        extras["burger_sheet"] = scene_report.burger_layers(docs, sd, reports_dir / "burger-layers.png")
     res.report_path = report_mod.write_report(
         reports_dir, root, drinks, shelf, photo_map, suggestions, unmatched, issues, state, previous,
-        photos_dir, new_dir, res.summary, check)
+        photos_dir, new_dir, res.summary, check, extras)
     if not check and not issues.errors:
         last_path.write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     res.exit_code = 1 if issues.errors else 0

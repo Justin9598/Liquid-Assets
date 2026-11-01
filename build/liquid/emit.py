@@ -191,6 +191,8 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
         files["scene.json"] = dumps(content["scene_data"])
 
     # ---- shelf.json needs the timestamp; build.json last
+    if content.get("counter"):
+        shelf_out["counter"] = content["counter"]               # Plan 07 section 4.4
     shelf_out["generated"] = generated
     files["shelf.json"] = dumps(shelf_out)
     from .phase import FULL, published

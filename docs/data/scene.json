@@ -54,54 +54,334 @@
       "url": "img/scene/bar-wide-1672.webp"
      }
     ]
+   },
+   "counter": {
+    "baseY": 0.7,
+    "bottleH": 0.15,
+    "slateY": 0.748,
+    "new": {
+     "x0": 0.04,
+     "x1": 0.31
+    },
+    "season": {
+     "x0": 0.64,
+     "x1": 0.85
+    },
+    "slate": {
+     "x0": 0.38,
+     "x1": 0.62
+    },
+    "burger": {
+     "x0": 0.87,
+     "x1": 0.97,
+     "h": 0.13
+    }
    }
   },
   "tall": {
    "ratio": 0.46154,
    "shelves": [
     {
-     "y": 0.3,
-     "x0": 0.12,
-     "x1": 0.88,
-     "clear": 0.11
+     "y": 0.4045,
+     "x0": 0.175,
+     "x1": 0.865,
+     "clear": 0.0645
     },
     {
-     "y": 0.44,
-     "x0": 0.12,
-     "x1": 0.88,
-     "clear": 0.11
+     "y": 0.4825,
+     "x0": 0.175,
+     "x1": 0.865,
+     "clear": 0.06
     },
     {
-     "y": 0.58,
-     "x0": 0.12,
-     "x1": 0.88,
-     "clear": 0.11
-    },
-    {
-     "y": 0.72,
-     "x0": 0.12,
-     "x1": 0.88,
-     "clear": 0.11
+     "y": 0.5695,
+     "x0": 0.175,
+     "x1": 0.865,
+     "clear": 0.0711
     }
    ],
    "sign": {
-    "x0": 0.1,
-    "y0": 0.05,
-    "x1": 0.9,
-    "y1": 0.17
+    "x0": 0.128,
+    "y0": 0.224,
+    "x1": 0.873,
+    "y1": 0.301
    },
-   "counterTop": 0.8,
+   "counterTop": 0.603,
    "anchors": {
     "slate": {
-     "x": 0.4,
-     "y": 0.89
+     "x": 0.5,
+     "y": 0.652
     },
     "menu": {
-     "x": 0.86,
-     "y": 0.89
+     "x": 0.855,
+     "y": 0.622
+    }
+   },
+   "files": {
+    "avif": [
+     {
+      "w": 852,
+      "url": "img/scene/bar-tall-852.avif"
+     }
+    ],
+    "webp": [
+     {
+      "w": 852,
+      "url": "img/scene/bar-tall-852.webp"
+     }
+    ]
+   },
+   "counter": {
+    "mode": "tabs",
+    "baseY": 0.622,
+    "bottleH": 0.066,
+    "slateY": 0.652,
+    "tabsY": 0.708,
+    "new": {
+     "x0": 0.05,
+     "x1": 0.72
+    },
+    "season": {
+     "x0": 0.05,
+     "x1": 0.72
+    },
+    "slate": {
+     "x0": 0.05,
+     "x1": 0.95
+    },
+    "burger": {
+     "x0": 0.82,
+     "x1": 1.0,
+     "h": 0.05
     }
    }
   }
  },
- "shells": {}
+ "shells": {
+  "sake": {
+   "labelRect": [
+    0.0411,
+    0.6284,
+    0.9041,
+    0.3266
+   ],
+   "labelBlend": "multiply",
+   "base": 1.0,
+   "shadow": {
+    "w": 0.86,
+    "h": 0.07,
+    "opacity": 0.36
+   },
+   "aspect": 0.32883,
+   "scale": 1.0,
+   "files": {
+    "1x": "img/scene/shell-sake@1x.webp",
+    "2x": "img/scene/shell-sake@2x.webp"
+   }
+  },
+  "makgeolli": {
+   "labelRect": [
+    0.0854,
+    0.6104,
+    0.8354,
+    0.2928
+   ],
+   "labelBlend": "normal",
+   "base": 1.0,
+   "shadow": {
+    "w": 0.86,
+    "h": 0.07,
+    "opacity": 0.36
+   },
+   "aspect": 0.36937,
+   "scale": 1.0,
+   "files": {
+    "1x": "img/scene/shell-makgeolli@1x.webp",
+    "2x": "img/scene/shell-makgeolli@2x.webp"
+   }
+  },
+  "wine": {
+   "labelRect": [
+    0.1286,
+    0.5714,
+    0.7429,
+    0.2948
+   ],
+   "labelBlend": "normal",
+   "base": 1.0,
+   "shadow": {
+    "w": 0.9,
+    "h": 0.07,
+    "opacity": 0.4
+   },
+   "aspect": 0.31746,
+   "scale": 0.9932,
+   "files": {
+    "1x": "img/scene/shell-wine@1x.webp",
+    "2x": "img/scene/shell-wine@2x.webp"
+   }
+  },
+  "beer": {
+   "labelRect": [
+    0.1338,
+    0.6064,
+    0.7324,
+    0.2517
+   ],
+   "labelBlend": "normal",
+   "base": 1.0,
+   "shadow": {
+    "w": 0.88,
+    "h": 0.07,
+    "opacity": 0.36
+   },
+   "aspect": 0.32494,
+   "scale": 0.9842,
+   "files": {
+    "1x": "img/scene/shell-beer@1x.webp",
+    "2x": "img/scene/shell-beer@2x.webp"
+   }
+  },
+  "spirits": {
+   "labelRect": [
+    0.2111,
+    0.4356,
+    0.5222,
+    0.297
+   ],
+   "labelBlend": "normal",
+   "base": 1.0,
+   "shadow": {
+    "w": 0.9,
+    "h": 0.07,
+    "opacity": 0.3
+   },
+   "aspect": 0.44554,
+   "scale": 0.9099,
+   "files": {
+    "1x": "img/scene/shell-spirits@1x.webp",
+    "2x": "img/scene/shell-spirits@2x.webp"
+   }
+  },
+  "liqueur": {
+   "labelRect": [
+    0.2111,
+    0.4356,
+    0.5222,
+    0.297
+   ],
+   "labelBlend": "normal",
+   "base": 1.0,
+   "shadow": {
+    "w": 0.9,
+    "h": 0.07,
+    "opacity": 0.3
+   },
+   "aspect": 0.44554,
+   "scale": 0.9099,
+   "files": {
+    "1x": "img/scene/shell-liqueur@1x.webp",
+    "2x": "img/scene/shell-liqueur@2x.webp"
+   }
+  },
+  "cocktail": {
+   "labelRect": null,
+   "labelBlend": "normal",
+   "base": 1.0,
+   "shadow": {
+    "w": 0.7,
+    "h": 0.05,
+    "opacity": 0.25
+   },
+   "aspect": 0.66246,
+   "scale": 0.714,
+   "files": {
+    "1x": "img/scene/shell-cocktail@1x.webp",
+    "2x": "img/scene/shell-cocktail@2x.webp"
+   }
+  },
+  "highball": {
+   "labelRect": null,
+   "labelBlend": "normal",
+   "base": 1.0,
+   "shadow": {
+    "w": 0.86,
+    "h": 0.06,
+    "opacity": 0.28
+   },
+   "aspect": 0.4,
+   "scale": 0.7545,
+   "files": {
+    "1x": "img/scene/shell-highball@1x.webp",
+    "2x": "img/scene/shell-highball@2x.webp"
+   }
+  }
+ },
+ "burger": {
+  "ratio": 1.37053,
+  "layers": [
+   {
+    "key": "bar",
+    "label": "The Bar",
+    "x": 0.19432,
+    "y": 0.0,
+    "w": 0.63594,
+    "h": 0.28211,
+    "cy": 0.14035,
+    "files": {
+     "1x": "img/scene/burger-bar@1x.webp",
+     "2x": "img/scene/burger-bar@2x.webp"
+    }
+   },
+   {
+    "key": "shelves",
+    "label": "Shelves",
+    "x": 0.13748,
+    "y": 0.22526,
+    "w": 0.73656,
+    "h": 0.37684,
+    "cy": 0.38289,
+    "files": {
+     "1x": "img/scene/burger-shelves@1x.webp",
+     "2x": "img/scene/burger-shelves@2x.webp"
+    }
+   },
+   {
+    "key": "makers",
+    "label": "The Makers",
+    "x": 0.19048,
+    "y": 0.45158,
+    "w": 0.66974,
+    "h": 0.29684,
+    "cy": 0.61495,
+    "files": {
+     "1x": "img/scene/burger-makers@1x.webp",
+     "2x": "img/scene/burger-makers@2x.webp"
+    }
+   },
+   {
+    "key": "about",
+    "label": "About",
+    "x": 0.19892,
+    "y": 0.70316,
+    "w": 0.60215,
+    "h": 0.20842,
+    "cy": 0.81255,
+    "files": {
+     "1x": "img/scene/burger-about@1x.webp",
+     "2x": "img/scene/burger-about@2x.webp"
+    }
+   }
+  ],
+  "plate": {
+   "x": 0.0,
+   "y": 0.71263,
+   "w": 1.0,
+   "h": 0.28737,
+   "files": {
+    "1x": "img/scene/burger-plate@1x.webp",
+    "2x": "img/scene/burger-plate@2x.webp"
+   }
+  }
+ }
 }

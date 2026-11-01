@@ -140,7 +140,7 @@ The shipper runs this with a browser on the live URL and reports the results.
 - [ ] A sample of drink pages opens, including one with a tasting card, one without a photo, and one had several times.
 - [ ] A producer page and the Makers index open, and the map responds.
 - [ ] Reloading on a deep link (for example `#/sake/junmai-ginjo?style=nama`) restores the view.
-- [ ] Layout checked at 375px and 1440px.
+- [ ] Layout checked at **1440×900, 1920×1080 and 375×812** on every push, with screenshots of both desktop and phone attached to the report (Plan 07 §5.3 parity rule).
 - [ ] **No requests to `Photos/`,** and no published JSON contains `Notes` text. This repeats Plan 05's privacy scan against the live files.
 
 ---
@@ -251,3 +251,20 @@ Work through these in order, and stop and report at the first failure:
 6. Report the commit hash, the live URL and the smoke-test results.
 
 The old `Alcohol-Tasting-List` repos stay untouched (§10 Q1).
+
+### 12.4 Launch record
+
+- **Phase 1 went live on 2026-11-01** at https://justin9598.github.io/Liquid-Assets/.
+  - Commit: `a38ac09` (257 files).
+  - Pages: `main` `/docs`, HTTPS enforced.
+  - The global git config is unchanged.
+- **Designer check:**
+  - No `.xlsx` file, nothing from `Photos/`, `Design/` or `reports/`, and no private markers in tracked files.
+  - The live page renders the v3 plate at 1440×900, and the v2 scene on a 375px phone with no sideways scroll.
+  - No console errors.
+  - The old repos are untouched.
+- **Known gaps, to close in later updates:**
+  - Phones stay on v2 until `bar-tall` arrives.
+  - The bottles are drawn shapes until the shells arrive.
+  - The plate is below the target resolution.
+  - The bottles are small because the plate's shelves are close together (clear height about 8–10% of the plate). Recheck when the plate is replaced.

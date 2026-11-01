@@ -533,6 +533,8 @@ Keep the outer 19% on each side to brick and decor only. Those strips get croppe
 
 ## 13. Counter menu (v3)
 
+*On the welcome page this is superseded by the burger menu in [Plan 07 §3](07-welcome-v4-counter-and-burger.md) (2026-11-01). The iron puck remains for Plans 02–04 page headers.*
+
 ### 13.1 The control
 
 - **Where:** a **hamburger button resting on the bar counter**, at the right, on the counter-top anchor from `scene.json`.

@@ -1,0 +1,22 @@
+{
+ "_readme": "The burger menu cut (Plan 07 section 3). options: one per layer, top layer first; the number of layers always equals the number of top-level menu options (2 to 6). cuts: one polyline per boundary between two layers, as [x, y] points in pixels of Design/scene/burger.webp (1536x1024), left to right, following the real edges of the burger (the bun's underside, the bacon's lower edge, the sauce line) rather than a straight line; they must not cross. plateSplit: the outline of the sauce and bottom bun, so the plate (everything else in the last layer) can fade on its own. mask: how the burger and plate are found automatically (brightness thresholds above and below splitY, the plate's rim as an ellipse, and the columns where the burger can be); add a maskPolygon (a list of [x, y]) to replace that with a hand-made outline. After editing, run the build and look at reports/build-report.html (burger layer sheet).",
+ "version": 1,
+ "source": "burger",
+ "options": [
+  {"key": "bar", "label": "The Bar"},
+  {"key": "shelves", "label": "Shelves"},
+  {"key": "makers", "label": "The Makers"},
+  {"key": "about", "label": "About"}
+ ],
+ "cuts": [
+  [[0, 308], [330, 308], [385, 296], [430, 290], [470, 273], [520, 262], [600, 256], [700, 254], [800, 250], [900, 247], [1000, 250], [1080, 257], [1125, 272], [1160, 290], [1215, 298], [1536, 298]],
+  [[0, 545], [250, 545], [290, 558], [330, 606], [362, 606], [380, 560], [400, 520], [440, 512], [500, 528], [560, 548], [620, 548], [650, 528], [680, 490], [720, 470], [780, 462], [850, 470], [900, 470], [930, 490], [960, 512], [1000, 522], [1050, 528], [1100, 560], [1160, 596], [1215, 596], [1255, 572], [1536, 572]],
+  [[0, 694], [370, 696], [400, 702], [450, 716], [500, 726], [560, 733], [600, 724], [660, 726], [720, 732], [800, 736], [870, 735], [920, 742], [950, 740], [1000, 730], [1050, 724], [1100, 712], [1135, 700], [1170, 694], [1536, 694]]
+ ],
+ "plateSplit": [[372, 690], [1165, 690], [1150, 740], [1142, 790], [1125, 835], [1090, 862], [1030, 883], [940, 893], [768, 898], [600, 894], [500, 884], [440, 860], [405, 830], [392, 790], [380, 745]],
+ "mask": {
+  "splitY": 600, "thresholdTop": 16, "thresholdBottom": 46,
+  "plate": {"cx": 768, "cy": 846, "rx": 652, "ry": 136},
+  "burgerX": [280, 1270], "plateTop": 690, "bunX": [360, 1180], "bunBottom": 930
+ }
+}
