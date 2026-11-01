@@ -1,0 +1,153 @@
+{
+ "_readme": "Measured layout of the rendered scene plates (Plan 01 sections 2.3 and 12). Every number is a fraction of the plate: x from the left, y from the top, so 0.5 is the middle. WIDE is measured from the owner's bar-wide.webp (1672x941, 2026-10-31): shelf lines are the top edges of the three oak boards, clear is the lit space above each line, the sign is the painted sign, counterTop is the back edge of the counter top. TALL is still a PLACEHOLDER until bar-tall arrives (phones keep the v2 scene until then). Check by eye with ?debug=scene. shelves: y is the shelf line the bottles stand on, x0 and x1 its ends, clear the free height above it. Wide has 3 shelves (vessels, then two lower); tall has 4 (two for vessels, two lower). shells.labelRect is [x, y, w, h] of the white label as fractions of the shell image; null means no label.",
+ "version": 1,
+ "plates": {
+  "wide": {
+   "ratio": 1.77683,
+   "shelves": [
+    {
+     "y": 0.372,
+     "x0": 0.245,
+     "x1": 0.79,
+     "clear": 0.084
+    },
+    {
+     "y": 0.486,
+     "x0": 0.245,
+     "x1": 0.79,
+     "clear": 0.089
+    },
+    {
+     "y": 0.61,
+     "x0": 0.245,
+     "x1": 0.79,
+     "clear": 0.1
+    }
+   ],
+   "sign": {
+    "x0": 0.266,
+    "y0": 0.106,
+    "x1": 0.733,
+    "y1": 0.243
+   },
+   "counterTop": 0.665,
+   "anchors": {
+    "slate": {
+     "x": 0.31,
+     "y": 0.695
+    },
+    "menu": {
+     "x": 0.735,
+     "y": 0.695
+    }
+   }
+  },
+  "tall": {
+   "ratio": 0.46154,
+   "shelves": [
+    {
+     "y": 0.3,
+     "x0": 0.12,
+     "x1": 0.88,
+     "clear": 0.11
+    },
+    {
+     "y": 0.44,
+     "x0": 0.12,
+     "x1": 0.88,
+     "clear": 0.11
+    },
+    {
+     "y": 0.58,
+     "x0": 0.12,
+     "x1": 0.88,
+     "clear": 0.11
+    },
+    {
+     "y": 0.72,
+     "x0": 0.12,
+     "x1": 0.88,
+     "clear": 0.11
+    }
+   ],
+   "sign": {
+    "x0": 0.1,
+    "y0": 0.05,
+    "x1": 0.9,
+    "y1": 0.17
+   },
+   "counterTop": 0.8,
+   "anchors": {
+    "slate": {
+     "x": 0.4,
+     "y": 0.89
+    },
+    "menu": {
+     "x": 0.86,
+     "y": 0.89
+    }
+   }
+  }
+ },
+ "shells": {
+  "sake": {
+   "labelRect": [
+    0.17,
+    0.62,
+    0.66,
+    0.26
+   ]
+  },
+  "makgeolli": {
+   "labelRect": [
+    0.16,
+    0.447,
+    0.68,
+    0.373
+   ]
+  },
+  "liqueur": {
+   "labelRect": [
+    0.2,
+    0.64,
+    0.6,
+    0.207
+   ]
+  },
+  "beer": {
+   "labelRect": [
+    0.25,
+    0.64,
+    0.5,
+    0.227
+   ]
+  },
+  "wine": {
+   "labelRect": [
+    0.19,
+    0.547,
+    0.62,
+    0.307
+   ]
+  },
+  "spirits": {
+   "labelRect": [
+    0.22,
+    0.5,
+    0.56,
+    0.28
+   ]
+  },
+  "cocktail": {
+   "labelRect": null
+  },
+  "highball": {
+   "labelRect": [
+    0.32,
+    0.507,
+    0.36,
+    0.16
+   ]
+  }
+ }
+}

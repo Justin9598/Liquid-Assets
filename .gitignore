@@ -1,0 +1,9 @@
+reports/
+build/.image-cache.json
+build/.scene-cache.json
+__pycache__/
+.pytest_cache/
+~$*
+*.xlsx
+Thumbs.db
+desktop.ini

@@ -1,0 +1,1 @@
+{"_readme": "Which launch phase the build publishes (Plan 06 section 12). 1 = the welcome page only. 2 = the full site. `build.py --phase N` overrides this.", "phase": 1}
