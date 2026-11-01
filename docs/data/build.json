@@ -1,0 +1,12 @@
+{
+ "generated": "2026-10-30T09:07:56Z",
+ "drinkCount": 265,
+ "producerCount": 151,
+ "sections": {
+  "welcome": true,
+  "shelves": false,
+  "drinks": false,
+  "makers": false
+ },
+ "version": "ffca22faac"
+}
