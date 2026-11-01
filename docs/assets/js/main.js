@@ -101,7 +101,7 @@ function footer(build) {
   if (build?.generated) bits.push(`Last updated ${esc(fmtDate(build.generated.slice(0, 10)))}`);
   if (build) bits.push(plural(build.drinkCount, 'drink'));
   bits.push('Map: Natural Earth (public domain)');
-  bits.push('Type: Outfit, Cormorant Garamond, Rye, Stardos Stencil (SIL Open Font Licence)');
+  bits.push('Type: Outfit, Cormorant Garamond, Kalam, Rye, Stardos Stencil (SIL Open Font Licence)');
   bits.push('Icons: Phosphor (MIT)');
   el.innerHTML = bits.join(' · ');
 }

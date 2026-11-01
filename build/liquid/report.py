@@ -18,7 +18,7 @@ CODE_TITLES = {
     "W10": "Category falling back to a single bottle (Type unfilled)", "W11": "Detail row with no matching Core ID",
     "W12": "Count dropped sharply since the last build", "W13": "Optional ledger column or sheet missing",
     "W14": "Ledger is open in Excel", "W15": "Value could not be parsed", "W16": "photo-map entry for an unknown drink",
-    "W17": "Duplicate row", "W18": "Related maker not found", "W20": "Content file missing",
+    "W17": "Duplicate row", "W18": "Related maker not found", "W20": "Content file missing", "W22": "Seasonal pin names an unknown drink",
     "I01": "Empty subcategory hidden", "I02": "No rendered scene images yet", "I03": "Label skipped (not used on bottles)", "W21": "Front photo has no label judgement yet",
 }
 
@@ -49,7 +49,7 @@ def _rel(target: Path, start: Path) -> str:
 
 
 def write_report(reports_dir, root, drinks, shelf, photo_map, suggestions, unmatched, issues, state, previous,
-                 photos_dir, new_dir, summary, check):
+                 photos_dir, new_dir, summary, check, extras=None):
     reports_dir = Path(reports_dir)
     docs = Path(root) / "docs"
     out = []
@@ -173,8 +173,32 @@ def write_report(reports_dir, root, drinks, shelf, photo_map, suggestions, unmat
     else:
         add("<p class='ok'>Every photo is matched.</p>")
 
+    # 5. scene art and counter picks (Plan 07)
+    extras = extras or {}
+    add("<h2>5. Welcome page scene</h2>")
+    for key, title, note in (("shells_sheet", "Shells on the plates",
+                              "Each cut-out standing on the lowest shelf of the wide plate and the third shelf of the tall plate, enlarged. "
+                              "A dark halo or a missing rim would show here."),
+                             ("burger_sheet", "Burger layers",
+                              "Left: the burger on its plate as it rests on the counter. Right: the same layers split apart.")):
+        if extras.get(key):
+            add(f"<h3>{title}</h3><p class='muted'>{note}</p><img style='max-width:100%;border:1px solid #d8ccb3' src='{_rel(extras[key], reports_dir)}' alt=''>")
+        else:
+            add(f"<h3>{title}</h3><p class='muted'>Not made in this run.</p>")
+    c = extras.get("counter")
+    if c:
+        add("<h3>New arrivals (counter, left)</h3><p class='muted'>Latest occasion first: Acquired, else Added; ties go to the later ledger row.</p><ol>"
+            + "".join(f"<li>{e(n)} <span class='muted'>({e(k[0] or 'undated')}, ledger row {k[1]})</span></li>" for _id, n, k in c["arrivals"]) + "</ol>")
+        add("<h3>In season (counter, right): the 5 picks per season</h3><p class='muted'>Edit <code>content/seasonal.json</code> to change keywords, pins or exclusions.</p>")
+        for season, picks in c["seasons"].items():
+            add(f"<h4>{e(season.title())}</h4><ol>")
+            for p in picks:
+                why = ", ".join([f"matches {e(' / '.join(p['hits']))}" if p["hits"] else "no keyword match"] + [e(f) for f in p["flags"]])
+                add(f"<li><b>{e(p['name'])}</b> <span class='muted'>({e(p['category'])}, score {p['score']:g}: {why})</span></li>")
+            add("</ol>")
+
     # 4. inbox
-    add("<h2>4. Inbox: photos waiting to be logged</h2>")
+    add("<h2>6. Inbox: photos waiting to be logged</h2>")
     inbox = []
     if Path(new_dir).exists():
         inbox = sorted(p.name for p in Path(new_dir).iterdir() if p.is_file() and p.suffix.lower() in PHOTO_EXT)

@@ -1,0 +1,15 @@
+{
+ "_readme": "Seasonal picks for the counter's 'In season' group (Plan 07 section 4.3). The build scores every drink for each Japanese season and stores 5 picks per season in shelf.json; the page chooses the season from the visitor's month. keywords are matched ignoring case against the drink's Name, Style(s), Public Notes and Other Detail Type: a plain word must match a whole word (so 'aki' does not match 'Akita'), a phrase matches as written, and Japanese characters match anywhere. An entry written 'A/B' is two keywords. summerAbvMax: a drink at or under this ABV counts as one summer match. Scoring is +3 per matching keyword (each counted once), +2 favourite, +1 if it has a published label photo, +0.5 if it is among the recentWindow most recent drinks. The top 5 are taken, with at most maxPerCategory from one category. If fewer than 5 match, favourites then recent drinks fill the rest. pins puts drink IDs first for a season, exclude removes drink IDs from every season.",
+ "version": 1,
+ "keywords": {
+  "spring": ["haru", "spring", "sakura", "hanami", "春", "桜", "nigori", "usunigori", "sparkling"],
+  "summer": ["natsu", "natsuzake", "summer", "夏", "sparkling", "yuzu", "citrus", "Wheat", "Lager", "Pilsner", "Highball"],
+  "autumn": ["hiyaoroshi", "ひやおろし", "akiagari", "aki", "autumn", "秋", "halloween", "kimoto", "yamahai", "aged", "amber", "Pale Ale"],
+  "winter": ["shiboritate", "新酒", "shinshu", "winter", "冬", "nama genshu", "nigori", "kimoto", "yamahai", "Stout/Porter", "Whisky"]
+ },
+ "summerAbvMax": 13,
+ "recentWindow": 30,
+ "maxPerCategory": 3,
+ "pins": {"spring": [], "summer": [], "autumn": [], "winter": []},
+ "exclude": []
+}

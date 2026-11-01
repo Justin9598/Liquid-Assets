@@ -1,6 +1,6 @@
-// Scene engine v3 (Plan 01 sections 2.3 to 2.5 and 7.1): a rendered plate scaled to cover the viewport, with live layers
-// positioned in plate percentages from data/scene.json. Until the owner's images exist the build leaves `ready` false and
-// the page keeps the v2 illustrated scene; `?scene=v3` runs this engine over a plain placeholder plate.
+// Scene engine (Plan 01 sections 2.3 to 2.5, Plan 07): a rendered plate scaled to cover the viewport, with live layers
+// positioned in plate percentages from data/scene.json. Wide for landscape, tall for phones. A plate that is missing
+// shows a plain placeholder in its place, so the layout can still be checked.
 import { img } from './data.js';
 import { esc } from './util.js';
 import { labelArt } from './bottles.js';
@@ -12,14 +12,6 @@ export function sceneQuery(hashParams) {
   const q = new URLSearchParams(location.search);
   if (hashParams) for (const [k, v] of hashParams) q.set(k, v);
   return q;
-}
-
-/** Which engine to run: v3 when the plates are ready (or forced), otherwise the v2 illustration. */
-export function chooseScene(manifest, q) {
-  const forced = q.get('scene');
-  if (forced === 'v2') return 'v2';
-  if (forced === 'v3' && manifest) return 'v3';
-  return manifest && manifest.ready ? 'v3' : 'v2';
 }
 
 export const wideQuery = window.matchMedia('(orientation: landscape) and (min-width: 768px)');
@@ -69,11 +61,14 @@ ${lines}
 <i class="dbg-pt" style="${anchorStyle(a.slate)}"><b>slate</b></i><i class="dbg-pt" style="${anchorStyle(a.menu)}"><b>menu</b></i></div>`;
 }
 
-/** A bottle assembled from the rendered shell, with the label photo composited over its white label (multiply). */
+/** A bottle assembled from the rendered shell. The label photo goes on the sake's paper label with `multiply` (the shell's
+ * shading shows through) and on every other bottle as a normal label stuck to the glass, with a curvature overlay and a
+ * soft 1px shadow (Plan 07 section 2.3). Glasses have no label rectangle, so they carry no photo. */
 export function shellBottle(manifest, shape, { label, native, name, motif } = {}) {
   const sh = manifest?.shells?.[shape];
   if (!sh || !sh.files) return null;
   let lab = '';
+  const blend = sh.labelBlend === 'multiply' ? 'multiply' : 'normal';
   if (sh.labelRect) {
     const [lx, ly, lw, lh] = sh.labelRect;
     let inner;
@@ -84,8 +79,10 @@ export function shellBottle(manifest, shape, { label, native, name, motif } = {}
       const H = 100 / aspect;
       inner = `<svg viewBox="0 0 100 ${H.toFixed(2)}" preserveAspectRatio="none" aria-hidden="true" focusable="false">${labelArt({ x: 0, y: 0, w: 100, h: +H.toFixed(2) }, { native, name, motif })}</svg>`;
     }
-    lab = `<span class="lab" style="left:${pct(lx)};top:${pct(ly)};width:${pct(lw)};height:${pct(lh)}">${inner}</span>`;
+    lab = `<span class="lab ${blend}" style="left:${pct(lx)};top:${pct(ly)};width:${pct(lw)};height:${pct(lh)}">${inner}</span>`;
   }
   const f = sh.files;
-  return `<span class="b3 b3-${shape}" style="--ar:${sh.aspect}"><img class="shell" src="${esc(img(f['1x']))}" srcset="${esc(img(f['1x']))} 1x, ${esc(img(f['2x']))} 2x" alt="">${lab}</span>`;
+  const sd = sh.shadow || { w: 0.8, h: 0.06, opacity: 0.3 };
+  const style = `--ar:${sh.aspect};--sc:${sh.scale ?? 1};--sh-w:${pct(sd.w)};--sh-h:${pct(sd.h)};--sh-o:${sd.opacity}`;
+  return `<span class="b3 b3-${shape}" style="${style}"><img class="shell" src="${esc(img(f['1x']))}" srcset="${esc(img(f['1x']))} 1x, ${esc(img(f['2x']))} 2x" alt="">${lab}</span>`;
 }

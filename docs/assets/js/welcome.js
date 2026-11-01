@@ -1,18 +1,16 @@
 // Welcome page: the bar (Plan 01). Top shelf = categories, lower shelves = subcategory bottles.
-// Two scenes share the same live layers: v2 (illustrated, used until the rendered plates exist) and v3 (the plate engine).
+// One scene engine (Plan 07): a rendered plate for the screen shape, wide for landscape and tall for phones, with the same live layers.
 import { bottleSVG, DEFAULT_LABEL, motifFor, randomPick, shapeFor } from './bottles.js';
+import { burgerHTML, mountBurger } from './burger.js';
+import { countersHTML, mountTabs, placeCounter, seasonNow, slateStyle } from './counter.js';
 import { getJSON, getSections, img } from './data.js';
 import { menuButton } from './menu.js';
-import { BARREL, BAY_ROWS, GLASSES, PRINT, SIGN, STOOL } from './scene.js';
 import { anchorStyle, debugHTML, plateHTML, plateKind, sceneQuery, shelfStyle, shellBottle, wideQuery } from './scene3.js';
 import { $, $$, announce, esc, plural, reducedMotion, setTitle } from './util.js';
 
 const isHangul = (s) => /[ᄀ-ᇿ㄰-㆏가-힯]/.test(s || '');
 const langOf = (s) => (isHangul(s) ? 'ko' : 'ja');
 
-const mqDesktop = window.matchMedia('(min-width: 1024px)');
-const mqTablet = window.matchMedia('(min-width: 768px)');
-const perRow = () => (mqDesktop.matches ? 6 : mqTablet.matches ? 4 : 3);
 
 /** Balanced row sizes: 10 bottles on rows of up to 6 become 5 + 5. */
 function distribute(n, per) {
@@ -31,75 +29,36 @@ export async function mount(root, ctx) {
   let manifest = null;
   try { manifest = await getJSON('scene.json'); } catch { manifest = null; }
   const q = sceneQuery(ctx.params);
-  const forced = q.get('scene');                      // ?scene=v3 or ?scene=v2 overrides the automatic choice
+  if (!manifest?.plates?.wide || !manifest?.plates?.tall) throw new Error('scene.json');
   const debug = q.get('debug') === 'scene';
 
   let sel = ctx.cat || null;
   let items = [];
   let token = 0;
-  let mode = null;                                   // 'v2' | 'wide' | 'tall'
+  let mode = null;                                   // 'wide' | 'tall'
   let lower = null;
   let plaque = null;
-
-  // Automatic choice (Plan 01 section 15.2): a screen shape uses the rendered scene when its plate exists, otherwise the
-  // v2 illustration. Landscape has the wide plate today; phones keep v2 until the tall plate arrives.
-  const hasPlate = (kind) => !!manifest?.plates?.[kind]?.files;
-  const currentMode = () => {
-    if (!manifest || forced === 'v2') return 'v2';
-    const kind = plateKind();
-    return forced === 'v3' || hasPlate(kind) ? kind : 'v2';
-  };
+  let burgerCtl = null;
+  let tabsCtl = null;
 
   // ---- bottle art: rendered shell when one exists, otherwise the SVG bottle -------------------------------------
-  const art = (shape, o) => (mode && mode !== 'v2' && shellBottle(manifest, shape, o)) || bottleSVG(shape, o);
+  const art = (shape, o) => shellBottle(manifest, shape, o) || bottleSVG(shape, o);
 
   const vesselHTML = (c) => {
     const def = DEFAULT_LABEL[c.vessel] || {};
     return `<button type="button" class="vessel" data-cat="${esc(c.key)}" aria-pressed="false">
   <span class="vessel-art">${art(c.vessel, { native: def.native, name: def.name, motif: def.motif })}</span>
-  <span class="vessel-cap">${esc(c.name)}</span>
+  <span class="vessel-cap chalkboard chalkboard--s"><span class="chalk">${esc(c.name)}</span></span>
 </button>`;
   };
 
-  // ---- skeletons ------------------------------------------------------------------------------------------------
-  function skeletonV2() {
-    const spots = Array.from({ length: 6 }, () => '<i></i>').join('');
-    return `<div class="bar">
-  <div class="room" aria-hidden="true">
-    <div class="beam beam-back"></div><div class="beam beam-front"><span class="spots">${spots}</span></div>
-  </div>
-  <h1 class="sr-only" tabindex="-1">Liquid Assets</h1>
-  <div class="sign" aria-hidden="true">${SIGN}</div>
-  <div class="stage">
-    <div class="side left" aria-hidden="true"><div class="print">${PRINT}</div></div>
-    <div class="shelving">
-      <div class="soffit" aria-hidden="true">${spots}</div>
-      <section class="topshelf" aria-label="Categories. Pick one to see its shelves.">
-        <div class="tier t1">${cats.slice(0, 4).map(vesselHTML).join('')}</div>
-        <div class="tier t2">${cats.slice(4).map(vesselHTML).join('')}</div>
-      </section>
-      <section class="lower" id="lower" aria-label="Shelves"></section>
-    </div>
-    <div class="side right" aria-hidden="true"><div class="side-bay">${BAY_ROWS.map((r) => `<div class="bay-row">${r}</div>`).join('')}</div></div>
-  </div>
-  <div class="counter">
-    <div class="counter-top">
-      <p class="slate" id="plaque">${IDLE}</p>
-      <span class="glasses" aria-hidden="true">${GLASSES}</span>
-      ${menuButton('on-counter')}
-    </div>
-    <div class="counter-front" aria-hidden="true"><span class="plinth"></span></div>
-  </div>
-  <div class="floor" aria-hidden="true">
-    <span class="barrel">${BARREL}</span>
-    <div class="stools">${STOOL}${STOOL}${STOOL}${STOOL}</div>
-  </div>
-</div>`;
-  }
-
+  // ---- skeleton --------------------------------------------------------------------------------------------------
   function skeletonV3(kind) {
     const P = manifest.plates[kind];
     const vesselRows = kind === 'wide' ? [cats] : [cats.slice(0, 4), cats.slice(4)];
+    const counterOn = !!P.counter;
+    const burgerOn = counterOn && !!manifest.burger;
+    const season = seasonNow(q);
     const rows = vesselRows.map((row, i) => `<div class="shelf-row s3 vrow" style="${shelfStyle(P.shelves[i])}"><div class="row-items" style="--n:${row.length}">${row.map(vesselHTML).join('')}</div></div>`).join('');
     return `<div class="bar scene3" data-plate="${kind}">
   <h1 class="sr-only" tabindex="-1">Liquid Assets</h1>
@@ -107,8 +66,9 @@ export async function mount(root, ctx) {
     ${plateHTML(P)}
     <section class="topshelf3" aria-label="Categories. Pick one to see its shelves.">${rows}</section>
     <section class="lower" id="lower" aria-label="Shelves"></section>
-    <p class="slate s3" id="plaque" style="${anchorStyle(P.anchors.slate)}">${IDLE}</p>
-    <div class="menu-anchor" style="${anchorStyle(P.anchors.menu)}">${menuButton('on-counter')}</div>
+    ${counterOn ? countersHTML(P, ix.shelf.counter, season, ix, art, kind === 'tall') : ''}
+    <p class="slate s3 chalkboard chalkboard--m${counterOn ? ' mid' : ''}" id="plaque" style="${counterOn ? slateStyle(P.counter) : anchorStyle(P.anchors.slate)}">${IDLE}</p>
+    ${burgerOn ? burgerHTML(P, manifest.burger) : `<div class="menu-anchor" style="${anchorStyle(P.anchors.menu)}">${menuButton('on-counter')}</div>`}
     ${debug ? debugHTML(P) : ''}
   </div>
 </div>`;
@@ -149,7 +109,7 @@ export async function mount(root, ctx) {
     second.push(`<span class="ct">${it.count}</span>`);
     const tagHTML = `<span class="nm">${esc(it.name)}</span><span class="l2">${second.join('<i> · </i>')}</span>`;
     const inner = `<span class="art">${a}</span>
-  <span class="hang" aria-hidden="true">${tagHTML}</span>`;
+  <span class="hang chalkboard chalkboard--s" aria-hidden="true">${tagHTML}</span>`;
     // Phase 1: the shelf pages aren't published, so the bottles are buttons that say so on the slate (Plan 06 section 12.1)
     if (!getSections().shelves) {
       return `<button type="button" class="slot sub soon" data-soon aria-label="${esc(it.name)}, ${plural(it.count, 'drink')}. This shelf opens soon." data-shape="${it.shape}">${inner}</button>`;
@@ -158,44 +118,139 @@ export async function mount(root, ctx) {
   }
 
   // ---- placing rows ----------------------------------------------------------------------------------------------
-  function rowsV2(list) {
-    const sizes = distribute(list.length, perRow());
-    const shelves = Math.max(2, sizes.length);
-    let k = 0;
-    let html = '';
-    for (let r = 0; r < shelves; r++) {
-      const n = sizes[r] || 0;
-      const cells = [];
-      for (let j = 0; j < n; j++, k++) cells.push(slotHTML(list[k]));
-      html += `<div class="shelf-row${n === 1 ? ' single' : ''}"><div class="row-items">${cells.join('')}</div><div class="plank"></div></div>`;
-    }
-    return html;
-  }
-
+  /** Bottles per visible shelf for the subcategory view. Wide: the fewest per row that still fits every bottle on the
+   * two lower shelves, so the pitch is as wide as it can be (the tags need it). Tall: `visible` bottles in the
+   * scrolling row, 3 unless their tags need more room (Plan 07 section 8.2). */
+  let visible = 3;
   function rowsV3(list) {
     const kind = mode;
     const P = manifest.plates[kind];
     const nTop = kind === 'wide' ? 1 : 2;
     const shelves = P.shelves.slice(nTop);
+    const mixed = !!(list.length && list[0].mix);
     let groups;
+    let per;
     if (kind === 'wide') {
-      const sizes = distribute(list.length, 6);
+      per = mixed ? 6 : Math.max(3, Math.ceil(list.length / shelves.length));
+      const sizes = distribute(list.length, per);
       let k = 0;
       groups = sizes.map((n) => { const g = list.slice(k, k + n); k += n; return g; });
     } else {
-      groups = list.length <= 3 ? [list] : [list.slice(0, Math.ceil(list.length / 2)), list.slice(Math.ceil(list.length / 2))];
+      groups = [list];                                  // phones: one shelf, a few visible, scrolling sideways
+      per = mixed ? 3 : visible;
     }
     return shelves.map((s, i) => {
       const g = groups[i] || [];
-      const per = kind === 'wide' ? 6 : 3;
-      return `<div class="shelf-row s3 lowrow${g.length === 1 ? ' single' : ''}" style="${shelfStyle(s)};--per:${per}"><div class="row-items">${g.map(slotHTML).join('')}</div></div>`;
+      return `<div class="shelf-row s3 lowrow${g.length === 1 ? ' single' : ''}" data-shelf="${nTop + i}" style="${shelfStyle(s)};--per:${per}"><div class="row-items">${g.map(slotHTML).join('')}</div></div>`;
     }).join('');
+  }
+
+  /** Do all the subcategory tags fit at the smallest type size: no wrapped Japanese line, at most 2 name lines, and a
+   * height that stays inside the room under their shelf (Plan 07 section 8.2)? */
+  function tagsFit() {
+    const P = manifest.plates[mode];
+    const H = $('.cover', root).getBoundingClientRect().height;
+    const shelves = P.shelves;
+    const low = shelves[shelves.length - 1];
+    return $$('.hang', lower).every((h) => {
+      const nm = $('.nm', h);
+      const lh = parseFloat(getComputedStyle(nm).lineHeight) || 15;
+      if (h.scrollWidth > h.clientWidth + 1 || nm.getBoundingClientRect().height > lh * 2 + 1) { lower.dataset.fitFail = `${nm.textContent}: w ${h.scrollWidth}/${h.clientWidth}, nm ${Math.round(nm.getBoundingClientRect().height)}/${lh}`; return false; }
+      const idx = Number(h.closest('.lowrow').dataset.shelf);
+      const room = (idx === shelves.length - 1
+        ? P.counterTop - low.y
+        : shelves[idx + 1].y - shelves[idx + 1].clear * 0.82 - shelves[idx].y) * H;
+      const ok = h.getBoundingClientRect().height <= room + (mode === 'tall' ? 15 : 0);
+      if (!ok) lower.dataset.fitFail = `${nm.textContent}: height ${Math.round(h.getBoundingClientRect().height)} > room ${Math.round(room)}`;
+      return ok;
+    });
   }
 
   function setRows(list) {
     items = list;
-    lower.innerHTML = mode === 'v2' ? rowsV2(list) : rowsV3(list);
+    visible = 3;
+    lower.innerHTML = rowsV3(list);
     lower.dataset.mode = list.length && list[0].mix ? 'mix' : 'sub';
+    if (mode === 'tall' && lower.dataset.mode === 'sub') {         // fewer bottles in view until every tag fits
+      while (visible > 1 && !tagsFit()) { visible -= 1; lower.innerHTML = rowsV3(list); }
+    }
+    if (mode === 'tall') watchFades($('.lowrow .row-items', lower));
+    clearBehindCounter();
+  }
+
+  /** Share of a bottle's picture that the counter bottles stand in front of. */
+  const coveredShare = (a, front) => {
+    const area = a.width * a.height;
+    if (!area) return 0;
+    let sum = 0;
+    for (const f of front) {
+      const w = Math.min(a.right, f.right) - Math.max(a.left, f.left);
+      const h = Math.min(a.bottom, f.bottom) - Math.max(a.top, f.top);
+      if (w > 0 && h > 0) sum += w * h;
+    }
+    return Math.min(1, sum / area);
+  };
+  const frontBottles = () => $$('.cgroup:not([hidden]) .cb-art > *', root).map((e) => e.getBoundingClientRect()).filter((r) => r.width > 0);
+
+  /** At rest the lower shelves keep their mixed display.
+   * Wide: a slot is left empty where a counter bottle stands in front of it, rather than drawing one bottle behind
+   * another (Plan 07 section 8.3). Tall: shelf 3 keeps its full row of 3 and the counter bottles simply stand in front,
+   * but no bottle may be more than 35% covered, so the row's scroll start moves if one would be (section 11). */
+  function clearBehindCounter() {
+    if (!lower) return;
+    $$('.slot.blocked', lower).forEach((e) => e.classList.remove('blocked'));
+    if (lower.dataset.mode !== 'mix') return;
+    const front = frontBottles();
+    if (!front.length) return;
+    if (mode === 'tall') { fixScrollStart(front); return; }
+    $$('.slot.mix', lower).forEach((s) => {
+      const a = $('.art > *', s)?.getBoundingClientRect();
+      if (a && front.some((f) => a.left < f.right + 3 && a.right > f.left - 3 && a.top < f.bottom && a.bottom > f.top)) s.classList.add('blocked');
+    });
+  }
+
+  function fixScrollStart(front) {
+    const row = $('.lowrow .row-items', lower);
+    if (!row) return;
+    const worst = () => {
+      const rr = row.getBoundingClientRect();
+      let w = 0;
+      for (const s of $$('.slot.mix', lower)) {
+        const sr = s.getBoundingClientRect();
+        if (sr.left < rr.left - 1 || sr.right > rr.right + 1) continue;               // not in view
+        const a = $('.art > *', s)?.getBoundingClientRect();
+        if (a) w = Math.max(w, coveredShare(a, front));
+      }
+      return w;
+    };
+    const slotW = row.clientWidth / 3;
+    const max = row.scrollWidth - row.clientWidth;
+    for (let left = 0; left <= max + 1; left += slotW) {
+      row.scrollTo({ left, behavior: 'instant' });
+      if (worst() <= 0.35) return;
+    }
+    row.scrollTo({ left: 0, behavior: 'instant' });
+  }
+
+  /** Soft fades at the ends of the scrolling shelf, only on the side where there is more (Plan 07 section 7.2). */
+  let fadeOff = null;
+  let blockRaf = 0;
+  function watchFades(el) {
+    fadeOff?.();
+    fadeOff = null;
+    if (!el) return;
+    const upd = () => {
+      const max = el.scrollWidth - el.clientWidth;
+      el.style.setProperty('--fl', el.scrollLeft > 4 ? '9%' : '0%');
+      el.style.setProperty('--fr', max - el.scrollLeft > 4 ? '9%' : '0%');
+      cancelAnimationFrame(blockRaf);
+      blockRaf = requestAnimationFrame(clearBehindCounter);
+    };
+    upd();
+    el.addEventListener('scroll', upd, { passive: true });
+    const ro = new ResizeObserver(upd);
+    ro.observe(el);
+    fadeOff = () => { el.removeEventListener('scroll', upd); ro.disconnect(); };
   }
 
   const slotAnim = (el, from, to, delay, dur, easing) =>
@@ -237,10 +292,10 @@ export async function mount(root, ctx) {
 
   let soonTimer = null;
   const slateText = () => { const c = sel && ix.cats.get(sel); return c ? describe(c) : IDLE; };
-  function soon() {
+  function soon(msg = 'This shelf opens soon.') {
     clearTimeout(soonTimer);
-    plaque.textContent = 'This shelf opens soon.';
-    announce('This shelf opens soon.');
+    plaque.textContent = msg;
+    announce(msg);
     soonTimer = setTimeout(() => { plaque.textContent = slateText(); }, 3000);
   }
 
@@ -253,18 +308,34 @@ export async function mount(root, ctx) {
     setTitle(c ? c.name : '');
     const list = c ? subItems(c) : mixItems();
     if (animate) await swap(list); else { token++; setRows(list); }
+    clearBehindCounter();
     if (c) announce(c.subcategories.length === 1 ? `Showing ${c.name}: ${plural(c.drinkCount, 'drink')}` : `Showing ${c.name}: ${c.subcategories.length} kinds`);
     else announce('Showing a mixed selection');
   }
 
   // ---- render ----------------------------------------------------------------------------------------------------
   function render() {
-    mode = currentMode();
-    root.innerHTML = mode === 'v2' ? skeletonV2() : skeletonV3(mode);
-    document.body.dataset.scene = mode === 'v2' ? 'v2' : 'v3';
+    mode = plateKind();
+    root.innerHTML = skeletonV3(mode);
+    document.body.dataset.scene = 'v3';
+    burgerCtl?.destroy();
+    tabsCtl?.destroy();
+    const P = manifest.plates[mode];
+    burgerCtl = manifest.burger && P.counter ? mountBurger(root, { B: manifest.burger, ix }) : null;
+    tabsCtl = P.counter?.mode === 'tabs' ? mountTabs(root, { onTab: () => { if (sel) location.hash = '#/'; requestAnimationFrame(clearBehindCounter); } }) : null;
     lower = $('#lower', root);
     plaque = $('#plaque', root);
+    if (q.get('tab') === 'season') $('#tab-season', root)?.click();          // ?tab=season, for screenshots
+    placeCounter(root, P, manifest.burger?.ratio);
     select(sel, false);
+    if (burgerCtl && q.get('menu') === 'open') {                    // ?menu=open&panel=shelves, for screenshots and checks
+      const opened = burgerCtl.open(q.get('panel'), { instant: q.get('still') === '1' });
+      if (q.get('settle') === '1') {                                // a real open whose animations are finished for a still capture
+        let done = false;
+        opened.then(() => { done = true; });
+        const tick = setInterval(() => { document.getAnimations().forEach((a) => { try { a.finish(); } catch { /* ignore */ } }); if (done) clearInterval(tick); }, 30);
+      }
+    }
   }
 
   const onClick = (ev) => {
@@ -273,29 +344,34 @@ export async function mount(root, ctx) {
       location.hash = sel === v.dataset.cat ? '#/' : `#/${v.dataset.cat}`;
       return;
     }
+    const cb = ev.target.closest('[data-drink-soon]');
+    if (cb) { soon(`${cb.dataset.name}, ${cb.dataset.cat}. Its page opens soon.`); return; }
     if (ev.target.closest('[data-soon]')) { soon(); return; }
     const mix = ev.target.closest('.slot.mix');
     if (mix) location.hash = `#/${mix.dataset.cat}`;
   };
   root.addEventListener('click', onClick);
   const onMq = () => {
-    if (currentMode() !== mode) render(); else if (items.length) setRows(items);
+    if (plateKind() !== mode) render(); else if (items.length) setRows(items);
   };
-  mqDesktop.addEventListener('change', onMq);
-  mqTablet.addEventListener('change', onMq);
+  const onResize = () => { if (mode) { placeCounter(root, manifest.plates[mode], manifest.burger?.ratio); if (lower?.dataset.mode === 'sub' && mode === 'tall') select(sel, false); else clearBehindCounter(); } };
+  window.addEventListener('resize', onResize);
   wideQuery.addEventListener('change', onMq);
 
   render();
+  if (q.get('check') === '1') import('./selfcheck.js').then((m) => m.run({ manifest, ix }));      // build/tools/smoke.py
 
   return {
     sameTarget: () => true,
     update(c) { select(c.cat, true); },
     unmount() {
       token++;
+      fadeOff?.();
       clearTimeout(soonTimer);
+      burgerCtl?.destroy();
+      tabsCtl?.destroy();
+      window.removeEventListener('resize', onResize);
       root.removeEventListener('click', onClick);
-      mqDesktop.removeEventListener('change', onMq);
-      mqTablet.removeEventListener('change', onMq);
       wideQuery.removeEventListener('change', onMq);
       delete document.body.dataset.scene;
     },

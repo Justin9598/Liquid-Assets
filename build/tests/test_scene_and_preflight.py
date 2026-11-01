@@ -17,7 +17,13 @@ sys.path.insert(0, str(SHIP / "build" / "tools"))
 
 
 def manifest():
-    return json.loads((SHIP / "content" / "scene.json").read_text(encoding="utf-8"))
+    m = json.loads((SHIP / "content" / "scene.json").read_text(encoding="utf-8"))
+    m["shells"] = {"sake": {"labelRect": [0.17, 0.62, 0.66, 0.26]}}      # an individually delivered shell file (legacy path)
+    return m
+
+
+def shells_cfg():
+    return json.loads((SHIP / "content" / "shells.json").read_text(encoding="utf-8"))
 
 
 def test_scene_manifest_is_valid_and_bad_ones_are_rejected():
@@ -29,6 +35,18 @@ def test_scene_manifest_is_valid_and_bad_ones_are_rejected():
     m["shells"]["sake"]["labelRect"] = [0.1, 0.2]
     bad = Issues()
     assert not scene_mod.validate_manifest(m, bad)
+    assert len(bad.errors) == 3 and all(e["code"] == "E04" for e in bad.errors)
+
+
+def test_shells_config_is_valid_and_bad_ones_are_rejected():
+    issues = Issues()
+    assert scene_mod.validate_shells(shells_cfg(), issues) and not issues.errors
+    cfg = shells_cfg()
+    cfg["shells"]["wine"]["mode"] = "shiny"
+    cfg["shells"]["beer"]["labelSheet"] = [0, 0, 10, 10]               # outside the crop
+    cfg["shells"]["sake"]["maskPolygon"] = [[1, 2]]
+    bad = Issues()
+    assert not scene_mod.validate_shells(cfg, bad)
     assert len(bad.errors) == 3 and all(e["code"] == "E04" for e in bad.errors)
 
 
