@@ -6,11 +6,11 @@
  "producer": {
   "key": "sendai-station-brewery-fermenteria",
   "name": "Sendai Station Brewery Fermenteria",
-  "native": null,
-  "location": "Miyagi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "仙台駅ブルワリー ファーメンテリア",
+  "location": "Sendai, Miyagi, Japan",
+  "founded": 2024,
+  "about": "Sendai Station Brewery Fermenteria is a small brewery on the first floor of Sendai Station, run by the company Shokagura. It opened in spring 2024. The name joins the word fermentation with an ending that means a shop.",
+  "url": "https://www.instagram.com/sakebabysendai/"
  },
  "abv": null,
  "styles": [],

@@ -6,11 +6,11 @@
  "producer": {
   "key": "fukumitsuya",
   "name": "Fukumitsuya",
-  "native": null,
-  "location": "Ishikawa, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "福光屋",
+  "location": "Kanazawa, Ishikawa, Japan",
+  "founded": 1625,
+  "about": "Fukumitsuya is the longest-established sake brewery in Kanazawa, dating from 1625. A man from Fukumitsu in Etchu bought the brewery at Ishibiki in the Anei era and renamed the business Fukumitsuya.",
+  "url": "https://www.fukumitsuya.co.jp/"
  },
  "abv": 17,
  "styles": [

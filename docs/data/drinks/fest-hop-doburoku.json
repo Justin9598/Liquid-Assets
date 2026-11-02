@@ -6,11 +6,11 @@
  "producer": {
   "key": "puku-puku-brewing",
   "name": "Puku Puku Brewing",
-  "native": null,
-  "location": "Fukushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "ぷくぷく醸造",
+  "location": "Minamisoma, Fukushima, Japan",
+  "founded": 2022,
+  "about": "Puku Puku Brewing was set up in July 2022 to bring farmland back along the coast of Fukushima through sake. It began as a phantom brewery, renting tank space at breweries in and outside the prefecture and using rice from the coastal Hamadori area.",
+  "url": "https://www.instagram.com/pukupukubrewing/"
  },
  "abv": null,
  "styles": [

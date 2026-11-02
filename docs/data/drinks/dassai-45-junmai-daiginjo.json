@@ -6,11 +6,11 @@
  "producer": {
   "key": "asahi-shuzo-yamaguchi",
   "name": "Asahi Shuzo",
-  "native": null,
-  "location": "Yamaguchi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "旭酒造",
+  "location": "Iwakuni, Yamaguchi, Japan",
+  "founded": 1948,
+  "about": "Asahi Shuzo is the brewery behind Dassai, in the Shuto district of Iwakuni, Yamaguchi. It gives 1948 as its founding date. When Hiroshi Sakurai took over from his father in 1984 it was close to failing, and it dropped its old everyday sake, Asahi Fuji, to concentrate on junmai daiginjo.",
+  "url": "https://dassai.com/"
  },
  "abv": 16,
  "styles": [],

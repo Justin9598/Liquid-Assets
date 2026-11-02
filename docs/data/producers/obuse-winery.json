@@ -1,16 +1,28 @@
 {
  "key": "obuse-winery",
  "name": "Obuse Winery",
- "native": null,
- "location": "Nagano",
+ "native": "小布施ワイナリー",
+ "location": "Obuse, Nagano",
  "region": "Nagano",
  "country": "Japan",
- "founded": null,
+ "founded": 1942,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "http://obusewinery.com/",
+ "brands": [
+  "Sogga Père et Fils",
+  "Domaine Sogga",
+  "Obusé Winery"
+ ],
+ "about": [
+  "Obuse Winery was founded by Ichinojo Soga in Obuse, Nagano. Its own history begins in 1942, when it took a wine licence during the war and made mostly cider. A wine writer adds that the building began as a sake brewery in 1842.",
+  "It expanded its European wine grapes from 1995, began growing without chemical pesticides in 2005, and has had part of its vineyard certified organic under JAS since 2011. Domaine Sogga is its label for estate wines, and Sogga Père et Fils is the name it uses for bottles made from bought grapes."
+ ],
+ "sources": [
+  "http://obusewinery.com/rekisi.htm",
+  "http://obusewinery.com/bio.htm",
+  "http://obusewinery.com/index2.html",
+  "https://www.wineanorak.com/wineblog/japan/nagano-region-japan-14-domaine-sogga-obuse-winery"
+ ],
  "related": [],
  "tally": {
   "drinks": 3,

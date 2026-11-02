@@ -1,16 +1,25 @@
 {
  "key": "kuge-honten",
  "name": "Kuge Honten",
- "native": null,
- "location": "Oita",
+ "native": "久家本店",
+ "location": "Usuki, Oita",
  "region": "Oita",
  "country": "Japan",
- "founded": null,
+ "founded": 1860,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://kugehonten.jp/",
+ "brands": [
+  "Ichinoide",
+  "Tsunezo"
+ ],
+ "about": [
+  "Kuge Honten is a brewery in Usuki, Oita. Its business dates from 1860, when the lord of the Inaba domain gave the family a brewing house. The main sake, Ichinoide, took its name in 1919 from the local place name.",
+  "It also makes barley shochu, including the Tsunezo series, and a plum liqueur blended with Usuki kabosu juice, first sold in 2007. Since the 2021 brewing year it says all its ingredients come from Oita, much of them from Usuki itself."
+ ],
+ "sources": [
+  "https://kugehonten.jp/category14/entry9.html",
+  "https://www.jetro.go.jp/jetro/japan/oita/industry/brewery/kuge_honten.html"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

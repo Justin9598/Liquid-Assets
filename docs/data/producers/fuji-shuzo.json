@@ -1,16 +1,27 @@
 {
  "key": "fuji-shuzo",
  "name": "Fuji Shuzo",
- "native": null,
- "location": "Yamagata",
+ "native": "冨士酒造",
+ "location": "Tsuruoka, Yamagata",
  "region": "Yamagata",
  "country": "Japan",
- "founded": null,
+ "founded": 1778,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.e-sakenom.com/",
+ "brands": [
+  "Eikofuji"
+ ],
+ "about": [
+  "Fuji Shuzo is a brewery in Oyama, Tsuruoka, on the Shonai plain of Yamagata. It dates from 1778 and is run by the 13th generation of the Kato family. Its main brand, Eikofuji, adds the character for glory to Fuji.",
+  "The brewery says it has ties to Lord Kato Kiyomasa, and it aims for sake that is clean and pairs well with food. It sells abroad in the United States, Singapore, Hong Kong and China."
+ ],
+ "sources": [
+  "https://www.e-sakenom.com/",
+  "https://en.sake-times.com/breweries/fuji-shuzo",
+  "https://www.sakenomy.jp/en/brewery/K01N006034/",
+  "https://en.imadeya.co.jp/blogs/brewery/eiko-fuji",
+  "https://kobrandwineandspirits.com/brand-page/eiko-fuji-sake/about"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

@@ -1,16 +1,26 @@
 {
  "key": "shimizu-seizaburo-shoten",
  "name": "Shimizu Seizaburo Shoten",
- "native": null,
- "location": "Mie",
+ "native": "清水清三郎商店",
+ "location": "Suzuka, Mie",
  "region": "Mie",
  "country": "Japan",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "founded": 1869,
+ "master": "Tomohiro Uchiyama",
+ "website": "https://seizaburo.jp/",
+ "brands": [
+  "Zaku",
+  "Suzukagawa"
+ ],
+ "about": [
+  "Shimizu Seizaburo Shoten has brewed in Suzuka, Mie, since 1869, when it opened as Daikokuya Shimizu Seizaburo Shoten. It uses spring water from the Suzuka mountains and small tanks, and it manages each batch closely.",
+  "Its main label is Zaku, and it makes a second line, Suzukagawa. The tōji, Tomohiro Uchiyama, is from Suzuka and trained in biochemistry. A junmai daiginjo he brewed was chosen as the toast sake at the Ise-Shima Summit."
+ ],
+ "sources": [
+  "https://seizaburo.jp/company/",
+  "https://seizaburo.jp/en/ourstory/",
+  "https://seizaburo.jp/ourstory/"
+ ],
  "related": [],
  "tally": {
   "drinks": 3,

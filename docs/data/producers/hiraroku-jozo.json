@@ -1,16 +1,26 @@
 {
  "key": "hiraroku-jozo",
  "name": "Hiraroku Jozo",
- "native": null,
- "location": "Iwate",
+ "native": "平六醸造",
+ "location": "Shiwa, Iwate",
  "region": "Iwate",
  "country": "Japan",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "founded": 2024,
+ "master": "Yuki Hirai",
+ "website": "https://www.hiraroku.com/",
+ "brands": [
+  "Hiraroku",
+  "Layer",
+  "Re:vive"
+ ],
+ "about": [
+  "Hiraroku Jozo is a craft sake brewery in Shiwa, Iwate, in the grounds of the Hizume Hirai residence, a nationally designated Important Cultural Property. The Hirai family has brewed since about 1772, but the family firm was sold in 2021. The present brewery restarted in a century-old storehouse in January 2024.",
+  "Its craft sake is fermented with sprouted glutinous rice as a base, called Re:vive, and the Layer series adds local fruit juice on top. The rice, sprouted rice and fruit all come from contract farms in Shiwa."
+ ],
+ "sources": [
+  "https://www.hiraroku.com/brewery",
+  "https://compalyze.co.jp/company/1400001016136"
+ ],
  "related": [],
  "tally": {
   "drinks": 3,

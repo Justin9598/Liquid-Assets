@@ -154,6 +154,8 @@ The permission system blocks the shipper's push, so whoever the owner names push
 | D8 | Related to a partner still in `draft` (Q2) | **Link now.** The partner's page already exists. The reverse link is added in the partner's own batch. |
 | D9 | The brewery spells its name differently (Q7) | **Keep the Display Name and Page Key.** Put the brewery's own spelling in `Brands` so search finds it (Huchu Homare, HATSUMOMIDI). |
 | D10 | Japan batch 1 (2026-11-02) | **Approved, all 20 rows.** Ties for the last places are broken alphabetically by Page Key. Isekado's Master stays blank, because no romanisation is published. Iinuma keeps 1811. Strict Related rules (Q3). About paragraphs are separated by a blank line inside the cell, which `_paragraphs()` already splits on. |
+| D11 | Japan batch 2 (2026-11-03; researched on Sonnet) | **Approved, all 20 rows.** Date Seven publishes with Founded and Website blank. Obuse Winery Founded 1942 (D7), with the 1842 sake history in the About. Instagram links count as Website for Puku Puku and Fermenteria, because they have no site (§4.2). Hiraroku's owner-brewer goes under Master. Romanised brand names (Mitsugo, Fuji Chitose, Mancho) are kept for search. Fuji Shuzo keeps 1778, on four agreeing sources. |
+| D12 | A maker with no web presence (Akiu Heart Rock Sake) | **Publish from the label photos.** It gets a short About of what the labels state, with Founded, Master and Website left blank. A label photo counts as a source. |
 
 ## 11. Batch 1 review fixes (2026-11-02)
 

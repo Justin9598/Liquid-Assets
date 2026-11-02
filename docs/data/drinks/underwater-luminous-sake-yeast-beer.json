@@ -6,11 +6,11 @@
  "producer": {
   "key": "nara-brewing-co",
   "name": "Nara Brewing Co.",
-  "native": null,
-  "location": "Nara, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "奈良醸造",
+  "location": "Nara, Nara, Japan",
+  "founded": 2018,
+  "about": "Nara Brewing Co. is a craft brewery in Nara City. The company was set up in July 2017 and began brewing in 2018. It took the prefecture's name so that people outside Nara would come to say it.",
+  "url": "https://narabrewing.com/"
  },
  "abv": 6,
  "styles": [],

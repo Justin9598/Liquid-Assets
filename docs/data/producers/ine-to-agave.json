@@ -1,16 +1,25 @@
 {
  "key": "ine-to-agave",
  "name": "Ine to Agave",
- "native": null,
- "location": "Akita",
+ "native": "稲とアガベ",
+ "location": "Oga, Akita",
  "region": "Akita",
  "country": "Japan",
- "founded": null,
+ "founded": 2021,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://inetoagave.com/",
+ "brands": [
+  "Ine to Agave",
+  "Koshu"
+ ],
+ "about": [
+  "Ine to Agave is a craft sake brewery in Oga, Akita. The company was formed in March 2021 and the brewery opened that autumn. The name means rice and agave.",
+  "It ferments rice and koji with fruit, herbs or hops, and sells the results as Koshu craft sake, including the Hanakaze line. It treats its drinks as a local medium for Oga, and has added a restaurant, a food workshop, a ramen shop, a hotel, a distillery and a bar around the brewery."
+ ],
+ "sources": [
+  "https://inetoagave.com/pages/company/",
+  "https://inetoagave.com/pages/about/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

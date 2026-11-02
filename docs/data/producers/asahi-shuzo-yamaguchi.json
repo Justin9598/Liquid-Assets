@@ -1,17 +1,33 @@
 {
  "key": "asahi-shuzo-yamaguchi",
  "name": "Asahi Shuzo",
- "native": null,
- "location": "Yamaguchi",
+ "native": "旭酒造",
+ "location": "Iwakuni, Yamaguchi",
  "region": "Yamaguchi",
  "country": "Japan",
- "founded": null,
+ "founded": 1948,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://dassai.com/",
+ "brands": [
+  "Dassai"
+ ],
+ "about": [
+  "Asahi Shuzo is the brewery behind Dassai, in the Shuto district of Iwakuni, Yamaguchi. It gives 1948 as its founding date. When Hiroshi Sakurai took over from his father in 1984 it was close to failing, and it dropped its old everyday sake, Asahi Fuji, to concentrate on junmai daiginjo.",
+  "Dassai first reached Tokyo in 1990, and the version milled to 23 percent followed in 1992. The brewery says it has no single tōji and that every employee takes part in the brewing."
+ ],
+ "sources": [
+  "https://dassai.com/corp/",
+  "https://dassai.com/about/",
+  "https://www.nippon.com/en/features/c00618/dassai-how-a-rural-sake-brewery-took-on-the-world.html",
+  "https://dassai.com/pages/ourstory"
+ ],
+ "related": [
+  {
+   "key": "dassai-blue",
+   "name": "Dassai Blue",
+   "relationship": "sister brewery"
+  }
+ ],
  "tally": {
   "drinks": 3,
   "categories": 1,

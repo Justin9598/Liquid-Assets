@@ -6,11 +6,11 @@
  "producer": {
   "key": "kuge-honten",
   "name": "Kuge Honten",
-  "native": null,
-  "location": "Oita, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "久家本店",
+  "location": "Usuki, Oita, Japan",
+  "founded": 1860,
+  "about": "Kuge Honten is a brewery in Usuki, Oita. Its business dates from 1860, when the lord of the Inaba domain gave the family a brewing house. The main sake, Ichinoide, took its name in 1919 from the local place name.",
+  "url": "https://kugehonten.jp/"
  },
  "abv": 12,
  "styles": [

@@ -6,11 +6,11 @@
  "producer": {
   "key": "fujioka-shuzo",
   "name": "Fujioka Shuzo",
-  "native": null,
-  "location": "Kyoto, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "藤岡酒造",
+  "location": "Fushimi, Kyoto, Japan",
+  "founded": 1902,
+  "about": "Fujioka Shuzo began in October 1902 in Higashiyama, Kyoto. It moved to Fushimi in 1910 and settled on its present site in 1918. At its peak it brewed about 8,000 koku, mostly under the Mancho label.",
+  "url": "https://www.sookuu.net/"
  },
  "abv": 16,
  "styles": [],

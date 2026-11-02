@@ -1,16 +1,26 @@
 {
  "key": "fukumitsuya",
  "name": "Fukumitsuya",
- "native": null,
- "location": "Ishikawa",
+ "native": "福光屋",
+ "location": "Kanazawa, Ishikawa",
  "region": "Ishikawa",
  "country": "Japan",
- "founded": null,
+ "founded": 1625,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.fukumitsuya.co.jp/",
+ "brands": [
+  "Kagatobi",
+  "Kuroobi",
+  "Fukumasamune"
+ ],
+ "about": [
+  "Fukumitsuya is the longest-established sake brewery in Kanazawa, dating from 1625. A man from Fukumitsu in Etchu bought the brewery at Ishibiki in the Anei era and renamed the business Fukumitsuya.",
+  "In 2001 it switched to junmai only, with no added alcohol, which it describes as the first brewery of its size in Japan to do so. It has grown rice under contract since 1960 and brews with Hyakunensui, groundwater that takes about a century to reach the brewery. Its labels include Kagatobi and Kuroobi."
+ ],
+ "sources": [
+  "https://www.fukumitsuya.co.jp/company/",
+  "https://www.fukumitsuya.co.jp/museum/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

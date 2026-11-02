@@ -1,16 +1,26 @@
 {
  "key": "fujioka-shuzo",
  "name": "Fujioka Shuzo",
- "native": null,
- "location": "Kyoto",
+ "native": "藤岡酒造",
+ "location": "Fushimi, Kyoto",
  "region": "Kyoto",
  "country": "Japan",
- "founded": null,
+ "founded": 1902,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.sookuu.net/",
+ "brands": [
+  "Sokuu",
+  "Mancho"
+ ],
+ "about": [
+  "Fujioka Shuzo began in October 1902 in Higashiyama, Kyoto. It moved to Fushimi in 1910 and settled on its present site in 1918. At its peak it brewed about 8,000 koku, mostly under the Mancho label.",
+  "The third head died suddenly in 1994 and the brewery closed the following year. The fifth head studied at other breweries, rebuilt it in 2002 and became its own tōji. The first batch was only 28 koku, about 5,000 litres, of handmade junmai sake, which he named Sokuu."
+ ],
+ "sources": [
+  "http://www.sookuu.net/contents/history.html",
+  "http://www.sookuu.net/contents/greet.html",
+  "https://www.sookuu.net/index.html"
+ ],
  "related": [],
  "tally": {
   "drinks": 3,

@@ -6,11 +6,11 @@
  "producer": {
   "key": "ine-to-agave",
   "name": "Ine to Agave",
-  "native": null,
-  "location": "Akita, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "稲とアガベ",
+  "location": "Oga, Akita, Japan",
+  "founded": 2021,
+  "about": "Ine to Agave is a craft sake brewery in Oga, Akita. The company was formed in March 2021 and the brewery opened that autumn. The name means rice and agave.",
+  "url": "https://inetoagave.com/"
  },
  "abv": null,
  "styles": [

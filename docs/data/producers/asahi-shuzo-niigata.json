@@ -1,16 +1,25 @@
 {
  "key": "asahi-shuzo-niigata",
  "name": "Asahi Shuzo",
- "native": null,
- "location": "Niigata",
+ "native": "朝日酒造",
+ "location": "Nagaoka, Niigata",
  "region": "Niigata",
  "country": "Japan",
- "founded": null,
+ "founded": 1830,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.asahi-shuzo.co.jp/",
+ "brands": [
+  "Kubota",
+  "Asahiyama"
+ ],
+ "about": [
+  "Asahi Shuzo began brewing in 1830 in what is now Nagaoka, Niigata, under the shop name Kubotaya, and became a company in 1920. Its brewing follows the Koshiji tōji tradition.",
+  "In 1985 it released Kubota, created by its then president and plant manager as a light, dry sake at a time when demand in the region was falling. It also makes Asahiyama. In 2024 it completed the Koshiji Distillery."
+ ],
+ "sources": [
+  "https://www.asahi-shuzo.co.jp/company/",
+  "https://www.asahi-shuzo.co.jp/company/history/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

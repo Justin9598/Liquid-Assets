@@ -6,11 +6,11 @@
  "producer": {
   "key": "fuji-shuzo",
   "name": "Fuji Shuzo",
-  "native": null,
-  "location": "Yamagata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "冨士酒造",
+  "location": "Tsuruoka, Yamagata, Japan",
+  "founded": 1778,
+  "about": "Fuji Shuzo is a brewery in Oyama, Tsuruoka, on the Shonai plain of Yamagata. It dates from 1778 and is run by the 13th generation of the Kato family. Its main brand, Eikofuji, adds the character for glory to Fuji.",
+  "url": "https://www.e-sakenom.com/"
  },
  "abv": 16.9,
  "styles": [],

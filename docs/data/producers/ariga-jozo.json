@@ -1,16 +1,26 @@
 {
  "key": "ariga-jozo",
  "name": "Ariga Jozo",
- "native": null,
- "location": "Fukushima",
+ "native": "有賀醸造",
+ "location": "Shirakawa, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
- "founded": null,
+ "founded": 1774,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://arinokawa.net/",
+ "brands": [
+  "Kissui Hidariuma",
+  "Jinya",
+  "Tora Makkoli"
+ ],
+ "about": [
+  "Ariga Jozo is a small brewery in Higashikamako, Shirakawa, Fukushima. It dates its start to 1774, when the lord of the Echigo Takada domain ordered sake to be brewed at the jinya, or administrative outpost, he held in Kamako.",
+  "Its main labels are Jinya, a word for that outpost, and Kissui Hidariuma. It also makes Tora Makkoli, a makgeolli. The company has about ten staff."
+ ],
+ "sources": [
+  "http://arinokawa.net/publics/index/3/",
+  "https://arinokawa.net/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

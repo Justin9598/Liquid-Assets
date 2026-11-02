@@ -1,16 +1,27 @@
 {
  "key": "nara-brewing-co",
  "name": "Nara Brewing Co.",
- "native": null,
- "location": "Nara",
+ "native": "奈良醸造",
+ "location": "Nara, Nara",
  "region": "Nara",
  "country": "Japan",
- "founded": null,
+ "founded": 2018,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://narabrewing.com/",
+ "brands": [
+  "Function",
+  "Lighthouse",
+  "Underwater"
+ ],
+ "about": [
+  "Nara Brewing Co. is a craft brewery in Nara City. The company was set up in July 2017 and began brewing in 2018. It took the prefecture's name so that people outside Nara would come to say it.",
+  "Its Underwater beers use sake yeast and koji from Yucho Shuzo, a sake brewery in Gose. In April 2026 its Function and Lighthouse each won gold at the World Beer Cup, which the company says was the first Session Beer gold for a Japanese brewery."
+ ],
+ "sources": [
+  "https://narabrewing.com/about-us",
+  "https://prtimes.jp/main/html/rd/p/000000003.000181725.html",
+  "https://beertengoku.com/2023/03/09/nara-underwater-by-nara-brewing-company"
+ ],
  "related": [],
  "tally": {
   "drinks": 3,

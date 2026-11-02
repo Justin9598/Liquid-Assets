@@ -6,11 +6,11 @@
  "producer": {
   "key": "ariga-jozo",
   "name": "Ariga Jozo",
-  "native": null,
-  "location": "Fukushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "有賀醸造",
+  "location": "Shirakawa, Fukushima, Japan",
+  "founded": 1774,
+  "about": "Ariga Jozo is a small brewery in Higashikamako, Shirakawa, Fukushima. It dates its start to 1774, when the lord of the Echigo Takada domain ordered sake to be brewed at the jinya, or administrative outpost, he held in Kamako.",
+  "url": "https://arinokawa.net/"
  },
  "abv": 15,
  "styles": [],

@@ -79,7 +79,7 @@ Steps 2–6 change GitHub or push code, so the shipper runs them only when the o
 
 This is the routine the owner follows after drinking something new. It's built around the folders that already exist, and three agents each have one job:
 
-- The **researcher** (Opus, `.claude/agents/researcher.md`) gathers the data.
+- The **researcher** (Sonnet since 2026-11-03, `.claude/agents/researcher.md`) gathers the data.
 - The **designer** (the main session) plans what changes.
 - The **shipper** (Sonnet, `.claude/agents/shipper.md`) builds and publishes.
 

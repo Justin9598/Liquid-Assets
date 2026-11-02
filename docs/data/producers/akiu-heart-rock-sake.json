@@ -1,15 +1,21 @@
 {
  "key": "akiu-heart-rock-sake",
  "name": "Akiu Heart Rock Sake",
- "native": null,
- "location": "Miyagi",
+ "native": "秋保ハートロックサケ",
+ "location": "Sendai, Miyagi",
  "region": "Miyagi",
  "country": "Japan",
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
+ "brands": [
+  "Raikyo",
+  "Raizin"
+ ],
+ "about": [
+  "Akiu Heart Rock Sake is a craft sake company based in Sendai, Miyagi. Its labels carry a heart-shaped mark, and its neck tag says the sake is fermented with other ingredients together with the rice from the very beginning. The Raikyo line is brewed with Phoenix Dancong oolong tea from a Hong Kong tea house.",
+  "The sake is made under contract at Asakan Shuzoten in Furukawa, Osaki, Miyagi."
+ ],
  "sources": [],
  "related": [],
  "tally": {
