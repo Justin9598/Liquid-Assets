@@ -13,10 +13,10 @@
  "sources": [],
  "related": [],
  "tally": {
-  "drinks": 3,
+  "drinks": 4,
   "categories": 1,
   "favourites": 0,
-  "timesHad": 3
+  "timesHad": 4
  },
  "drinks": [
   {
@@ -33,12 +33,16 @@
    "id": "machida-55",
    "category": "sake",
    "sub": "junmai-ginjo"
+  },
+  {
+   "id": "tenmei-x-machida-shuzo-collaborative-bre",
+   "category": "sake",
+   "sub": "junmai"
   }
  ],
  "moreFromRegion": [
   "nagai-shuzo",
   "ryujin-shuzo",
-  "hijiri-shuzo",
-  "machida-shuzo"
+  "hijiri-shuzo"
  ]
 }

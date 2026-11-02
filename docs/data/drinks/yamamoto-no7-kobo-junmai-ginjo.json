@@ -4,8 +4,8 @@
  "category": "sake",
  "sub": "junmai-ginjo",
  "producer": {
-  "key": "yamamoto-gomei-kaisha",
-  "name": "Yamamoto Gomei Kaisha",
+  "key": "yamamoto-shuzoten",
+  "name": "Yamamoto Shuzoten",
   "native": null,
   "location": "Akita, Japan",
   "founded": null,
@@ -69,8 +69,10 @@
   }
  ],
  "moreFromProducer": [
+  "yamamoto-junmai-ginjo-uki-uki",
   "yamamoto-junmai-ginjo-wain",
   "yamamoto-midnight-blue-junmai-ginjo",
+  "yamamoto-sunset-orange-junmai-ginjo",
   "yamamoto-sunshine-yellow-yamahai-junmai-ginjo"
  ],
  "prev": "yamamoto-midnight-blue-junmai-ginjo",

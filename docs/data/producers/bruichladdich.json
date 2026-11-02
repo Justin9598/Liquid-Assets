@@ -3,7 +3,7 @@
  "name": "Bruichladdich",
  "native": null,
  "location": "Bruichladdich, Islay",
- "region": "Bruichladdich, Islay",
+ "region": "Islay",
  "country": "Scotland",
  "founded": null,
  "master": null,
@@ -25,5 +25,7 @@
    "sub": "other"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [
+  "ardbeg"
+ ]
 }
