@@ -1,0 +1,54 @@
+{
+ "id": "mikotsuru-nigori",
+ "name": "Mikotsuru Junmai Ginjo Sankeinishiki Nigori Nama",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "suwa-mikotsuru-shuzojo",
+  "name": "Suwa Mikotsuru Shuzojo",
+  "native": null,
+  "location": "Nagano, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Nama",
+  "Nigori"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Rice",
+   "value": "Sankei Nishiki"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "mikotsuru-junmai-ginjo-gohakyu-mangoku",
+  "mikotsuru-junmai-muroka-nama-genshu-origarami",
+  "mikotsuru-karakuchi-junmai"
+ ],
+ "prev": "mikotsuru-junmai-ginjo-gohakyu-mangoku",
+ "next": "mizubasho-junmai-ginjo-sparkling-dry"
+}

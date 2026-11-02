@@ -1,4 +1,5 @@
 import hashlib
+import shutil
 import json
 from pathlib import Path
 
@@ -6,6 +7,7 @@ import pytest
 from PIL import Image
 
 from fixture import make_project, make_workbook
+from liquid.common import Issues
 from liquid.pipeline import run
 
 
@@ -251,3 +253,63 @@ def test_phase_1_publishes_the_welcome_page_data_only_and_deletes_leftovers(tmp_
     # phase 2 turns everything back on without code changes
     assert run(ship, phase=2).exit_code == 0 and (data / "drinks.json").exists()
     assert load(ship, "build.json")["sections"]["makers"] is True
+
+
+# ------------------------------------------------------------------ Plan 08 section 6: the privacy scan over what is on disk
+
+def _set_notes(ship, row_id, text, public=None):
+    import openpyxl
+    path = ship.parent / "Drinks Ledger.xlsx"
+    wb = openpyxl.load_workbook(path)
+    ws = wb["Core"]
+    heads = [c.value for c in ws[1]]
+    for r in range(2, ws.max_row + 1):
+        if ws.cell(r, 1).value == row_id:
+            ws.cell(r, heads.index("Notes") + 1).value = text
+            if public is not None:
+                ws.cell(r, heads.index("Public Notes") + 1).value = public
+    wb.save(path)
+
+
+def test_notes_text_found_in_any_published_file_fails_the_build(tmp_path):
+    ship = make_project(tmp_path)
+    secret = "Quietly tasted at the back table with the chef after closing time"
+    _set_notes(ship, "sake-c", secret)
+    _set_notes(ship, "sake-j", "Fine", public=f"Lovely. {secret} and then some.")      # another drink's story repeats it
+    res = run(ship)
+    assert res.exit_code == 1
+    assert any(e["code"] == "E02" and "Notes text" in e["message"] for e in res.issues.errors)
+    assert not (ship / "docs" / "data").exists()
+
+
+def test_notes_the_owner_made_public_in_the_same_row_are_not_a_leak(tmp_path):
+    ship = make_project(tmp_path)
+    same = "A bright and fruity pour that stays public on purpose"
+    _set_notes(ship, "sake-c", same, public=same)
+    res = run(ship)
+    assert res.exit_code == 0, res.issues.errors
+
+
+def test_the_on_disk_scan_reads_every_file_in_data_and_img_in_every_phase(tmp_path):
+    from liquid import checks
+    ship = make_project(tmp_path)
+    for phase in (1, 2):
+        res = run(ship, phase=phase)
+        assert res.exit_code == 0 and res.summary["scanned"] >= 2
+    docs = ship / "docs"
+    photos = ["Alpha Junmai Ginjo Nama.jpg", "Beta Daiginjo.jpg"]
+    issues = Issues()
+    assert checks.scan_published(docs, photos, [], issues) > 5 and not issues.errors
+    # a stale data file with a private marker, an image named like an original photo, an image with EXIF, a filename in the bytes
+    (docs / "data" / "stale.json").write_text('{"x": "Invoice 12 from the shop"}', encoding="utf-8")
+    shutil.copy(docs / "img" / "thumbs" / "sake-a.webp", docs / "img" / "thumbs" / "Beta Daiginjo.jpg")
+    im = Image.new("RGB", (8, 8))
+    exif = Image.Exif()
+    exif[0x010F] = "Secret"
+    im.save(docs / "img" / "thumbs" / "exif.webp", exif=exif)
+    (docs / "img" / "thumbs" / "bytes.webp").write_bytes(b"RIFF....WEBPVP8 " + b"Alpha Junmai Ginjo Nama.jpg")
+    bad = Issues()
+    checks.scan_published(docs, photos, [], bad)
+    text = " | ".join(e["message"] for e in bad.errors)
+    for part in ("invoice", "named like an original photo", "metadata is not stripped in img/thumbs/exif.webp", "inside img/thumbs/bytes.webp"):
+        assert part in text, (part, text)

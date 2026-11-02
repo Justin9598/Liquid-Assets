@@ -1,0 +1,70 @@
+{
+ "id": "kankiku-seijitsu-special-yell-junmai-daiginjo",
+ "name": "Kankiku \"Seijistu -Special Yell-\" Junmai Daiginjo Muroka Nama Genshu",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "kankiku-meijo",
+  "name": "Kankiku Meijo",
+  "native": null,
+  "location": "Chiba, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki & Akaiwa Omachi"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Isego Honten",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kankiku-seijitsu-special-yell-junmai-daiginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "kagura-shiro-junmai-daiginjo-ikkabi",
+ "next": "keigetsu-junmai-daiginjo-sparkling-hao"
+}

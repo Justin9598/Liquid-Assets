@@ -1,0 +1,76 @@
+{
+ "id": "zaku-m",
+ "name": "Zaku Impression Type M",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "shimizu-seizaburo-shoten",
+  "name": "Shimizu Seizaburo Shoten",
+  "native": null,
+  "location": "Mie, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Muroka",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Mie no Yume"
+  },
+  {
+   "label": "Yeast",
+   "value": "House yeast"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/zaku-m-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "zaku-g",
+  "zaku-omachi-2026"
+ ],
+ "prev": "yokoyama-junmai-ginjo-silver-choukara7",
+ "next": "zaku-omachi-2026"
+}

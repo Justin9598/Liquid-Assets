@@ -1,0 +1,35 @@
+{
+ "key": "tomikawa-shuzoten",
+ "name": "Tomikawa Shuzoten",
+ "native": null,
+ "location": "Tochigi",
+ "region": "Tochigi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "chuai-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "iinuma-meijo",
+  "inoue-seikichi-shoten",
+  "kobayashi-shuzo",
+  "nasu-kohgen-beer",
+  "wakakoma-shuzo"
+ ]
+}

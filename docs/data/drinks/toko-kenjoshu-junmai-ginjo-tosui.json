@@ -1,0 +1,51 @@
+{
+ "id": "toko-kenjoshu-junmai-ginjo-tosui",
+ "name": "Toko Kenjoshu Junmai Ginjo Tosui Shikomi",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "kojima-sohonten",
+  "name": "Kojima Sohonten",
+  "native": null,
+  "location": "Yamagata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/toko-kenjoshu-junmai-ginjo-tosui-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
+ "next": "toyobijin-jundou-ichizu-junmai-ginjo-omachi"
+}

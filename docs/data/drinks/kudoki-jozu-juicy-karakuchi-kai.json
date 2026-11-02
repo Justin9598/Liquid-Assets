@@ -1,0 +1,77 @@
+{
+ "id": "kudoki-jozu-juicy-karakuchi-kai",
+ "name": "Kudoki Jozu Juicy Karakuchi Kai Junmai Daiginjo Namazume",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "kamenoi-shuzo",
+  "name": "Kamenoi Shuzo",
+  "native": null,
+  "location": "Yamagata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 48,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Dewa no Sato 100%"
+  },
+  {
+   "label": "Yeast",
+   "value": "M-310 and Ogawa (Kyokai No.10)"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kudoki-jozu-juicy-karakuchi-kai-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/kudoki-jozu-juicy-karakuchi-kai-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "kubota-junmai-daiginjo",
+ "next": "mansakunohana-junmai-daiginjo-nama-genshu-kame"
+}

@@ -1,0 +1,56 @@
+{
+ "id": "isekado-mr-dank",
+ "name": "Isekado Mr. DANK",
+ "category": "beer",
+ "sub": "ipa",
+ "producer": {
+  "key": "isekado",
+  "name": "Isekado",
+  "native": null,
+  "location": "Mie, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 7,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "IPA"
+  },
+  {
+   "label": "Base",
+   "value": "Barley malt"
+  },
+  {
+   "label": "Flavouring or botanicals",
+   "value": "Strata, Citra, Mosaic (double dry-hopped); Incognito in the whirlpool"
+  },
+  {
+   "label": "ABV",
+   "value": 7,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "Pint"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-01",
+   "size": "Pint",
+   "where": "Fermenteria by Sake Mama",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "isekado-mr-dank",
+ "next": "isekado-mr-dank"
+}

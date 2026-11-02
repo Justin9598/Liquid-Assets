@@ -1,0 +1,69 @@
+{
+ "id": "izumibashi-shiboritate",
+ "name": "Izumibashi Shiboritate",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "izumibashi-shuzo",
+  "name": "Izumibashi Shuzo",
+  "native": null,
+  "location": "Kanagawa, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [
+  "Nama",
+  "Genshu",
+  "Kimoto"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/izumibashi-shiboritate-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "izumibashi-natsu-yago-sparkling",
+  "izumibashi-aki-tombo-omachi-kimoto-junmai"
+ ],
+ "prev": "hitakami-aquarium-in-winter",
+ "next": "junsei-jg"
+}

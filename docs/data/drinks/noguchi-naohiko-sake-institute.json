@@ -1,0 +1,69 @@
+{
+ "id": "noguchi-naohiko-sake-institute",
+ "name": "Noguchi Naohiko Sake Institute",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "noguchi-naohiko-sake-institute",
+  "name": "Noguchi Naohiko Sake Institute",
+  "native": null,
+  "location": "Ishikawa, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 19,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu",
+  "Yamahai"
+ ],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 19,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/noguchi-naohiko-sake-institute-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "noguchi-naohiko-natsu-no-namazake-2026"
+ ],
+ "prev": "niida-taruzake",
+ "next": "odayaka-sparkling"
+}

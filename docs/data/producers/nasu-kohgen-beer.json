@@ -1,0 +1,35 @@
+{
+ "key": "nasu-kohgen-beer",
+ "name": "Nasu Kohgen Beer",
+ "native": null,
+ "location": "Tochigi",
+ "region": "Tochigi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "nasu-kohgen-ai",
+   "category": "beer",
+   "sub": "lager"
+  }
+ ],
+ "moreFromRegion": [
+  "iinuma-meijo",
+  "inoue-seikichi-shoten",
+  "kobayashi-shuzo",
+  "tomikawa-shuzoten",
+  "wakakoma-shuzo"
+ ]
+}

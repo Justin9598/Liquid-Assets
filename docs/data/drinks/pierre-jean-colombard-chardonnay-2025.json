@@ -1,0 +1,75 @@
+{
+ "id": "pierre-jean-colombard-chardonnay-2025",
+ "name": "Pierre Jean Colombard Chardonnay 2025",
+ "category": "wine",
+ "sub": "blend",
+ "producer": {
+  "key": "freixenet-gratien",
+  "name": "Freixenet Gratien",
+  "native": null,
+  "location": "Bordeaux, France",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 11,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Vintage",
+   "value": 2025
+  },
+  {
+   "label": "Grape(s)",
+   "value": "Colombard, Chardonnay"
+  },
+  {
+   "label": "Appellation",
+   "value": "Vin de France"
+  },
+  {
+   "label": "Colour",
+   "value": "White"
+  },
+  {
+   "label": "ABV",
+   "value": 11,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "750ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-17",
+   "size": "750ml Bottle",
+   "where": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/pierre-jean-colombard-chardonnay-2025-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/pierre-jean-colombard-chardonnay-2025-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "pierre-jean-colombard-chardonnay-2025",
+ "next": "pierre-jean-colombard-chardonnay-2025"
+}

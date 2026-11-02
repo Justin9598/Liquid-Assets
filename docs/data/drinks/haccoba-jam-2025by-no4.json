@@ -1,0 +1,75 @@
+{
+ "id": "haccoba-jam-2025by-no4",
+ "name": "Haccoba Jam 2025BY No.4",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "haccoba-craft-sake-brewery",
+  "name": "Haccoba Craft Sake Brewery",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 12,
+ "styles": [
+  "Hopped",
+  "Flavoured",
+  "Nama"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 90,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Fukushima-grown, Nemoto Organic Farm"
+  },
+  {
+   "label": "ABV",
+   "value": 12,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/haccoba-jam-2025by-no4-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/haccoba-jam-2025by-no4-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "haccoba-secret-spring"
+ ],
+ "prev": "fermenteria-yeastology-philly-sour",
+ "next": "haccoba-secret-spring"
+}

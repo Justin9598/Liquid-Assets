@@ -1,0 +1,64 @@
+{
+ "id": "fermenteria-sparkling",
+ "name": "Fermenteria Sparkling",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "sendai-station-brewery-fermenteria",
+  "name": "Sendai Station Brewery Fermenteria",
+  "native": null,
+  "location": "Miyagi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 5,
+ "styles": [
+  "Sparkling"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "ABV",
+   "value": 5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "375ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-21",
+   "size": "375ml Bottle",
+   "where": "Fermenteria by Sake Mama",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/fermenteria-sparkling-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/fermenteria-sparkling-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "citrene",
+  "fermenteria-yeastology-philly-sour"
+ ],
+ "prev": "citrene",
+ "next": "fermenteria-yeastology-philly-sour"
+}

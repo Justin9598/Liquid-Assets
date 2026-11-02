@@ -1,0 +1,69 @@
+{
+ "id": "sokuu-junmai-daiginjo-yamadanishiki",
+ "name": "Sokuu Junmai Daiginjo Yamadanishiki",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "fujioka-shuzo",
+  "name": "Fujioka Shuzo",
+  "native": null,
+  "location": "Kyoto, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15.5,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki"
+  },
+  {
+   "label": "ABV",
+   "value": 15.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Fermenteria by Sake Mama",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/sokuu-junmai-daiginjo-yamadanishiki-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "sokuu-junmai-ginjoshu-yamadanishiki",
+  "sokuu-junmai-miyamanishiki"
+ ],
+ "prev": "ryujin-dragon-god-junmai-daiginjo-namazume",
+ "next": "sugata-junmai-daiginjo-yamadanishiki-40"
+}

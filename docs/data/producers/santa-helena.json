@@ -1,0 +1,31 @@
+{
+ "key": "santa-helena",
+ "name": "Santa Helena",
+ "native": null,
+ "location": "Colchagua Valley",
+ "region": "Colchagua Valley",
+ "country": "Chile",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "santa-helena-varietal-cabernet-sauvignon-2025",
+   "category": "wine",
+   "sub": "cabernet-sauvignon"
+  }
+ ],
+ "moreFromRegion": [
+  "casa-silva"
+ ]
+}

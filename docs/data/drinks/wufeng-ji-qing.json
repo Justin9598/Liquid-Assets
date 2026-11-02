@@ -1,0 +1,57 @@
+{
+ "id": "wufeng-ji-qing",
+ "name": "Wufeng Ji Qing Sake",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "wufeng-farmers-association-winery",
+  "name": "Wufeng Farmers' Association Winery",
+  "native": null,
+  "location": "Taichung, Taiwan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yichuan fragrant rice (Tainong 71)"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Ripple Sake",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/wufeng-ji-qing-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "wataibune-terroir-ohta-valley",
+ "next": "takezumi-bamboo-spring"
+}

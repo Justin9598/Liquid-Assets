@@ -1,0 +1,39 @@
+{
+ "key": "ricewine-k-k-hinemos",
+ "name": "RiceWine K.K. (HINEMOS)",
+ "native": null,
+ "location": "Kanagawa",
+ "region": "Kanagawa",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "hinemos-sanji",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "hinemos-shichiji",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "izumibashi-shuzo",
+  "kawanishiya-shuzoten",
+  "oya-takashi-shuzo",
+  "seto-shuzoten"
+ ]
+}

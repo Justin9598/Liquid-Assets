@@ -1,0 +1,50 @@
+{
+ "id": "citrene",
+ "name": "Citrene",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "sendai-station-brewery-fermenteria",
+  "name": "Sendai Station Brewery Fermenteria",
+  "native": null,
+  "location": "Miyagi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Isego Honten",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/citrene-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "fermenteria-sparkling",
+  "fermenteria-yeastology-philly-sour"
+ ],
+ "prev": "baton-touch-no19",
+ "next": "fermenteria-sparkling"
+}

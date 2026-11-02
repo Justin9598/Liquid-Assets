@@ -1,0 +1,63 @@
+{
+ "id": "the-botanist-islay-dry-gin",
+ "name": "The Botanist Islay Dry Gin",
+ "category": "spirits",
+ "sub": "other",
+ "producer": {
+  "key": "bruichladdich",
+  "name": "Bruichladdich",
+  "native": null,
+  "location": "Bruichladdich, Islay, Scotland",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 46,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Flavouring or botanicals",
+   "value": "22 foraged Islay botanicals, nine classic gin botanicals"
+  },
+  {
+   "label": "ABV",
+   "value": 46,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "1L Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-27",
+   "size": "1L Bottle",
+   "where": "Changi Airport Duty Free",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/the-botanist-islay-dry-gin-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/the-botanist-islay-dry-gin-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "chusa-40",
+ "next": "chusa-40"
+}

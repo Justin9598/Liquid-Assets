@@ -1,0 +1,59 @@
+{
+ "id": "makihata-bambino",
+ "name": "Makihata bambino Tsuya Junmai Muroka Nama",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "takachiyo-shuzo",
+  "name": "Takachiyo Shuzo",
+  "native": null,
+  "location": "Niigata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [
+  "Muroka",
+  "Nama"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/makihata-bambino-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "kyo-no-haru-houryou-karakuchi-junmai",
+ "next": "mikotsuru-junmai-muroka-nama-genshu-origarami"
+}

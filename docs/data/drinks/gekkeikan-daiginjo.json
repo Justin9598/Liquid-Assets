@@ -1,0 +1,64 @@
+{
+ "id": "gekkeikan-daiginjo",
+ "name": "Gekkeikan Daiginjo",
+ "category": "sake",
+ "sub": "daiginjo",
+ "producer": {
+  "key": "gekkeikan",
+  "name": "Gekkeikan",
+  "native": null,
+  "location": "Kyoto, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "180ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "180ml Bottle",
+   "where": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/gekkeikan-daiginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "gekkeikan-argo"
+ ],
+ "prev": "endo-daiginjo",
+ "next": "hakutsuru-tokusen-daiginjo"
+}

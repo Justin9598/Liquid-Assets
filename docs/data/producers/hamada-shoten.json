@@ -1,0 +1,29 @@
+{
+ "key": "hamada-shoten",
+ "name": "Hamada Shoten",
+ "native": null,
+ "location": "Wakayama",
+ "region": "Wakayama",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "hamada-ume-liqueur-gold-leaf",
+   "category": "liqueur",
+   "sub": "umeshu"
+  }
+ ],
+ "moreFromRegion": []
+}

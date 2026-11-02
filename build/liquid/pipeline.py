@@ -147,7 +147,8 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
     # S10
     expected = {j["out"] for j in jobs_all}
     checks.check_schema(files, issues)
-    checks.check_privacy(files, photo_files, pages, issues)
+    private_notes = checks.load_private_notes(ledger_path)          # a deny-list only: never copied into any output
+    checks.check_privacy(files, photo_files, pages, issues, notes=private_notes)
     checks.check_references(files, expected, issues, docs_dir=None if (check or phase < 2) else docs)
 
     # golden counts and change tracking
@@ -194,6 +195,14 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
             with open(target, "w", encoding="utf-8", newline="\n") as fh:
                 fh.write(text)
 
+    # the last gate (Plan 08 section 6): every file actually on disk under docs/data and docs/img, in every phase
+    scanned = 0
+    if not check and not issues.errors:
+        scanned = checks.scan_published(docs, photo_files, private_notes, issues)
+        if issues.errors:
+            shutil.rmtree(data_dir, ignore_errors=True)         # nothing stays published after a leak
+    res.summary["scanned"] = scanned
+
     if not check and not issues.errors:
         assets_mod.stamp(docs)                                  # Plan 06 section 7
         og_mod.generate(docs, root / "build" / "fonts" / "Rye-Regular.ttf")   # Plan 06 section 8
@@ -222,7 +231,8 @@ def format_summary(res: Result, check=False) -> str:
             lines.append(f"  ERROR {e['code']}: {e['message']}")
         return "\n".join(lines)
     c = s["counts"]
-    lines.append(f"  Phase {s['phase']}: publishing {len(s['published'])} data files")
+    lines.append(f"  Phase {s['phase']}: publishing {len(s['published'])} data files"
+                 + (f"; privacy scan read {s['scanned']} files in docs/data and docs/img" if s.get("scanned") else ""))
     lines.append(f"  Drinks: {c['drinks']}   Producers (pages): {s['producers']}")
     for name, n in c["categories"].items():
         lines.append(f"    {name:<10} {n}")

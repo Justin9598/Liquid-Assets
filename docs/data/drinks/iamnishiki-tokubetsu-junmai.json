@@ -1,0 +1,54 @@
+{
+ "id": "iamnishiki-tokubetsu-junmai",
+ "name": "Iamnishiki Tokubetsu Junmai",
+ "category": "sake",
+ "sub": "tokubetsu-junmai",
+ "producer": {
+  "key": null,
+  "name": null,
+  "native": null,
+  "location": "Nagano, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Tokubetsu Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 59,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Inter Rice",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "hirotogawa-tokubetsu-junmai",
+ "next": "kaiun-iwaizake-tokubetsu-junmai"
+}

@@ -1,0 +1,64 @@
+{
+ "id": "umifudo-sea-food",
+ "name": "Fukucho \"Seafood\" Sparkling",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "imada-shuzo",
+  "name": "Imada Shuzo",
+  "native": null,
+  "location": "Hiroshima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 13,
+ "styles": [
+  "Sparkling"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 13,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Taipei Alcohol Fair",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/umifudo-sea-food-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "akishika-moto-plus-one-junmai-muroka-nam",
+ "next": "hakugakusen-mufu"
+}

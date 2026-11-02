@@ -1,10 +1,11 @@
-// Drink detail page: "On the counter" (Plan 03).
-import { bottleSVG, motifFor, shapeFor } from './bottles.js';
+// Drink detail page: "On the counter" (Plan 03, looks from Plan 08 section 4.2). A hero board with the photo print and the
+// facts, then one board each for The Label, The Glass, The Story, The Maker and The Tab. Everything is chalk on slate.
 import { cardHTML } from './cards.js';
-import { emptyScene, glossaryEntry, loadGlossary, termHTML, topbar } from './chrome.js';
+import { board, emptyHTML, glossaryEntry, loadGlossary, pageHTML, termHTML } from './chrome.js';
 import { getJSON, img } from './data.js';
 import { icon } from './icons.js';
-import { $, $$, esc, fmtDate, money, num, plural, setTitle, short, sizeShort, stars } from './util.js';
+import { drinkShell } from './shells.js';
+import { $, $$, esc, fmtDate, money, num, setTitle, short, sizeShort, stars } from './util.js';
 
 const isHangul = (s) => /[ᄀ-ᇿ㄰-㆏가-힯]/.test(s || '');
 const COLOUR = { colourless: '#f4f1e4', 'lemon-green': '#e1ea9a', lemon: '#efe27a', gold: '#dfb73d', amber: '#c4842a', brown: '#774a22' };
@@ -38,7 +39,6 @@ function specValue(item) {
 
 function tastingHTML(t) {
   const sc = t.scales || {};
-  const rows = [];
   const block = (title, body) => (body ? `<section class="t-block"><h3>${title}</h3>${body}</section>` : '');
   const row = (k, v) => `<div class="t-row"><span class="k">${k}</span><span class="v">${v}</span></div>`;
   const tags = (arr) => arr?.length ? `<span class="aroma">${arr.map((a) => `<em>${esc(a)}</em>`).join('')}</span>` : '';
@@ -47,7 +47,7 @@ function tastingHTML(t) {
   if (a) {
     const words = [a.clarity, a.intensity, a.colour].filter(Boolean).join(' · ');
     const sw = a.colour ? `<span class="swatch" style="--sw:${COLOUR[a.colour] || '#eee'}" aria-hidden="true"></span>` : '';
-    body = row('Look', `${sw}<span class="word">${esc(words)}</span>${a.other ? `<span class="word note">${esc(a.other)}</span>` : ''}`);
+    body = row('Look', `${sw}<span class="word">${esc(words)}</span>${a.other ? `<span class="word">${esc(a.other)}</span>` : ''}`);
   }
   const look = block('Appearance', body);
   const n = t.nose;
@@ -66,29 +66,30 @@ function tastingHTML(t) {
     for (const [label, key, sKey] of scales) if (p[key]) body += row(label, dots(label, p[key], sc[sKey]));
     if (p.mousse) body += row('Mousse', `<span class="word">${esc(p.mousse)}</span>`);
     if (p.flavour?.length) body += row('Flavour', tags(p.flavour));
-    if (p.other) body += row('Other', `<span class="word note">${esc(p.other)}</span>`);
+    if (p.other) body += row('Other', `<span class="word">${esc(p.other)}</span>`);
   }
   const palate = block('Palate', body);
   const c = t.conclusion;
   body = '';
   if (c) {
     if (c.quality) body += `<div class="stamp" role="img" aria-label="Quality: ${esc(c.quality)}"><span aria-hidden="true">${esc(c.quality)}</span></div>`;
-    const chips = [c.category, c.ginjo, c.production, c.special].filter(Boolean).map((x) => `<span class="pill">${esc(x)}</span>`).join('');
+    const chips = [c.category, c.ginjo, c.production, c.special].filter(Boolean).map((x) => `<span class="pill chalkboard chalkboard--s">${esc(x)}</span>`).join('');
     if (chips) body += `<div class="pills">${chips}</div>`;
   }
-  const concl = block('Conclusion', body);
-  rows.push(look, nose, palate, concl);
-  return rows.join('');
+  return [look, nose, palate, block('Conclusion', body)].join('');
 }
 
 function paragraphs(text) {
-  return String(text).split(/\n\s*\n|\n/).map((p) => p.trim()).filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join('');
+  return String(text).split(/\n\s*\n|\n/).map((p) => p.trim()).filter(Boolean).map((p) => `<p class="t-body">${esc(p)}</p>`).join('');
 }
 
+/** One visit as a chalked line on the tab: date, size, where, then the price at the right. */
 function visitLine(v) {
-  const bits = [v.date && fmtDate(v.date), v.size && sizeShort(v.size), v.where, v.price != null && money(v.price)].filter(Boolean);
-  return bits.map(esc).join(' · ');
+  const bits = [v.date && `<span class="v-date">${esc(fmtDate(v.date))}</span>`, v.size && `<span>${esc(sizeShort(v.size))}</span>`, v.where && `<span>${esc(v.where)}</span>`].filter(Boolean);
+  if (v.price != null) bits.push(`<span class="v-price">${esc(money(v.price))}</span>`);
+  return bits.join('');
 }
+const visitText = (v) => [v.date && fmtDate(v.date), v.size && sizeShort(v.size), v.where, v.price != null && money(v.price)].filter(Boolean).join(' · ');
 
 export async function mount(root, ctx) {
   const { ix, id, state } = ctx;
@@ -98,7 +99,7 @@ export async function mount(root, ctx) {
     d = await getJSON(`drinks/${encodeURIComponent(id)}.json`);
   } catch {
     setTitle('Empty shelf');
-    root.innerHTML = topbar([{ label: 'Empty shelf' }]) + emptyScene('This shelf is empty');
+    root.innerHTML = emptyHTML('This shelf is empty');
     return {};
   }
   const idxRec = ix.byId.get(d.id);
@@ -120,85 +121,78 @@ export async function mount(root, ctx) {
 
   // ---- hero -------------------------------------------------------------------------------------------------
   const photos = d.photos || [];
-  const heroPhoto = photos.length
-    ? `<button type="button" class="photo-main" id="photo-main" aria-label="Open the photo larger"><img id="main-img" src="${esc(img(photos[0].web))}" alt="${esc(photos[0].caption)} of ${esc(d.name)}" width="${photos[0].w}" height="${photos[0].h}" fetchpriority="high"></button>`
-    : `<div class="photo-none">${bottleSVG(shapeFor(d.category), { native: info?.sub.native, name: info?.sub.name, motif: motifFor(d.category, d.sub) })}<span class="none-note">No photo yet</span></div>`;
+  const noPhoto = !photos.length;
+  const heroPhoto = noPhoto
+    ? `<div class="stand" aria-hidden="true">${drinkShell(idxRec || { category: d.category, sub: d.sub }, ix)}</div><p class="t-small none-note">No photo yet</p>`
+    : `<figure class="print print--tilt"><button type="button" class="photo-main" id="photo-main" aria-label="Open the photo larger"><img id="main-img" src="${esc(img(photos[0].web))}" alt="${esc(photos[0].caption)} of ${esc(d.name)}" width="${photos[0].w}" height="${photos[0].h}" fetchpriority="high"></button></figure>`;
   const thumbs = photos.length > 1
-    ? `<ul class="thumbs" aria-label="Photos">${photos.map((p, i) => `<li><button type="button" class="thumb${i === 0 ? ' on' : ''}" data-i="${i}" aria-label="Show ${esc(p.caption.toLowerCase())}" aria-pressed="${i === 0}"><img src="${esc(img(p.web))}" alt="" loading="lazy"></button></li>`).join('')}</ul>` : '';
+    ? `<ul class="thumbs" aria-label="Photos">${photos.map((p, i) => `<li><button type="button" class="thumb${i === 0 ? ' on' : ''}" data-i="${i}" aria-label="Show ${esc(p.caption.toLowerCase())}" aria-pressed="${i === 0}"><span class="print"><img src="${esc(img(p.web))}" alt="" loading="lazy"></span></button></li>`).join('')}</ul>` : '';
 
   const pr = d.producer;
   const nativeLang = pr.native ? (isHangul(pr.native) ? 'ko' : 'ja') : '';
   const makerLine = pr.key
-    ? `<a href="#maker" data-jump="maker">${esc(pr.name)}</a>${pr.location ? ` · ${esc(pr.location)}` : ''}`
+    ? `<a class="chalk-link" href="#maker" data-jump="maker">${esc(pr.name)}</a>${pr.location ? ` · ${esc(pr.location)}` : ''}`
     : (pr.location ? esc(pr.location) : '');
   const quick = [];
   if (d.abv != null) quick.push(`${num(d.abv)}%`);
   const sizes = [...new Set(d.visits.map((v) => v.size).filter(Boolean))];
   if (sizes.length) quick.push(sizes.map(sizeShort).join(' · '));
   if (d.visits.length > 1) quick.push(`had ${d.visits.length} times`);
-  const oneVisit = d.visits.length === 1 ? visitLine({ ...d.visits[0], size: null }) : '';
-  const styleTags = d.styles.length ? `<ul class="style-tags" aria-label="Styles">${d.styles.map((t) => `<li>${glossaryEntry(t) ? termHTML(t) : `<span class="tag">${esc(t)}</span>`}</li>`).join('')}</ul>` : '';
+  const oneVisit = d.visits.length === 1 ? visitText({ ...d.visits[0], size: null }) : '';
+  const styleTags = d.styles.length ? `<ul class="style-tags" aria-label="Styles">${d.styles.map((t) => `<li>${glossaryEntry(t)
+    ? `<button type="button" class="gl chalkboard chalkboard--s" data-term="${esc(glossaryEntry(t).term)}" aria-expanded="false"><span class="chalk">${esc(t)}</span></button>`
+    : `<span class="tag chalkboard chalkboard--s">${esc(t)}</span>`}</li>`).join('')}</ul>` : '';
   const prevRec = d.prev && ix.byId.get(d.prev);
   const nextRec = d.next && ix.byId.get(d.next);
-  const prevnext = (d.prev && d.next && d.prev !== d.id) ? `<nav class="prevnext" aria-label="More from this shelf">
-  <a class="pn prev" href="#/drink/${encodeURIComponent(d.prev)}" rel="prev" aria-label="Previous: ${esc(prevRec?.name || '')}"><span aria-hidden="true">${icon('caret-left', 16)}</span> Prev</a>
-  <a class="pn next" href="#/drink/${encodeURIComponent(d.next)}" rel="next" aria-label="Next: ${esc(nextRec?.name || '')}">Next <span aria-hidden="true">${icon('caret-right', 16)}</span></a>
-</nav>` : '';
+  const hasNav = d.prev && d.next && d.prev !== d.id;
 
-  // ---- panels -----------------------------------------------------------------------------------------------
-  const spec = d.spec.map((it) => `<div class="spec-row"><dt>${termHTML(it.label)}</dt><dd>${specValue(it)}</dd></div>`).join('');
-  const labelPanel = spec ? `<section class="panel label-panel" aria-labelledby="h-label"><h2 id="h-label">The Label</h2><dl class="spec">${spec}</dl></section>` : '';
-  const wsetNote = glossaryEntry('WSET-style tasting')?.def || '';
-  const glassPanel = d.tasting ? `<section class="panel glass-panel" aria-labelledby="h-glass"><h2 id="h-glass">The Glass</h2>
-  ${wsetNote ? `<p class="wset"><button type="button" class="info-btn" id="wset-btn" aria-expanded="false" aria-controls="wset-note">WSET-style tasting <span aria-hidden="true">${icon('info', 16)}</span></button></p>
-  <p class="wset-note" id="wset-note" hidden>${esc(wsetNote)}</p>` : ''}
-  ${tastingHTML(d.tasting)}</section>` : '';
-  const story = d.story ? `<section class="panel story" aria-labelledby="h-story"><h2 id="h-story">The Story</h2><div class="prose dropcap">${paragraphs(d.story)}</div></section>` : '';
-
-  let maker = '';
-  {
-    let inner;
-    if (pr.key) {
-      const more = d.moreFromProducer.map((mid) => ix.byId.get(mid)).filter(Boolean);
-      inner = `<div class="maker-head"><h3>${esc(pr.name)}${pr.native ? ` <span class="native" lang="${nativeLang}">${esc(pr.native)}</span>` : ''}</h3>
-  <p class="meta">${[pr.location, pr.founded ? `est. ${pr.founded}` : ''].filter(Boolean).map(esc).join(' · ')}</p></div>
-  ${pr.about ? `<div class="prose"><p>${esc(pr.about)}</p></div>` : ''}
-  <p class="maker-links"><a class="btn" href="#/producer/${encodeURIComponent(pr.key)}">Visit producer ${icon('arrow-right', 16)}</a>${pr.url ? ` <a class="linkish" href="${esc(pr.url)}" target="_blank" rel="noopener noreferrer">Website ${icon('arrow-up-right', 14)}</a>` : ''}</p>
-  ${more.length ? `<h3 class="more-h">More from ${esc(pr.name)} (${more.length})</h3><div class="mini-row">${more.map((m) => cardHTML(m, ix, { mini: true })).join('')}</div>` : ''}`;
-    } else {
-      inner = `<p class="meta">Producer not recorded${pr.location ? ` · ${esc(pr.location)}` : ''}</p>`;
-    }
-    maker = `<section class="panel maker" id="maker" aria-labelledby="h-maker"><h2 id="h-maker">The Maker</h2>${inner}</section>`;
-  }
-
-  const tab = d.visits.length > 1 ? `<section class="panel tab" aria-labelledby="h-tab"><h2 id="h-tab">The Tab: had ${d.visits.length} times</h2>
-  <ul class="visits">${d.visits.map((v) => `<li><span class="line">${visitLine(v) || 'A visit'}</span>${v.note ? `<span class="vnote">${esc(v.note)}</span>` : ''}</li>`).join('')}</ul></section>` : '';
-
-  root.innerHTML = `<div class="drink-page">
-<div class="wall"><div class="wall-in">
-${topbar(crumbs, cat ? `#/${cat.key}` : '#/')}
-<section class="counter-hero">
-  <div class="hero-photo"><div class="photo-stage">${heroPhoto}</div>${thumbs}</div>
-  <div class="hero-text">
-    ${d.favourite ? `<span class="ribbon big"><span aria-hidden="true">${icon('star-fill', 14)}</span> Favourite</span>` : ''}
-    <h1 tabindex="-1">${esc(d.name)}</h1>
-    ${makerLine ? `<p class="maker-line">${makerLine}</p>` : ''}
-    <p class="hero-chips">${info ? `<a class="shelf-chip" href="${esc(shelfHref)}">${esc(cat.name)}${single ? '' : `, ${esc(info.sub.name)}`}</a>` : ''}${quick.length ? `<span class="quick">${esc(quick.join(' · '))}</span>` : ''}</p>
-    ${oneVisit ? `<p class="one-visit">${oneVisit}${d.visits[0].note ? `<span class="vnote">${esc(d.visits[0].note)}</span>` : ''}</p>` : ''}
+  const hero = board(`<div class="hero-drink">
+  <div class="hd-photo">${heroPhoto}${thumbs}</div>
+  <div class="hd-copy">
+    ${d.favourite ? `<span class="fav-line"><span aria-hidden="true">${icon('star-fill', 20)}</span> Favourite</span>` : ''}
+    <h1 class="t-title" tabindex="-1">${esc(d.name)}</h1>
+    ${makerLine ? `<p class="t-data maker-line">${makerLine}</p>` : ''}
+    <div class="hd-chips">${info ? `<a class="chalkboard chalkboard--s btn-s" href="${esc(shelfHref)}"><span class="chalk">${esc(cat.name)}${single ? '' : `, ${esc(info.sub.name)}`}</span></a>` : ''}${quick.length ? `<span class="t-data quick">${esc(quick.join(' · '))}</span>` : ''}</div>
+    ${oneVisit ? `<p class="t-data">${esc(oneVisit)}${d.visits[0].note ? `<span class="vnote">${esc(d.visits[0].note)}</span>` : ''}</p>` : ''}
     ${styleTags}
     ${d.rating != null ? `<p class="rating">${stars(d.rating)}</p>` : ''}
-    <p class="back"><a href="${esc(back)}"><span aria-hidden="true">${icon('caret-left', 14)}</span> Back to ${info ? esc(single ? cat.name : info.sub.name) : 'the bar'}</a></p>
-    ${prevnext}
+    <div class="hd-nav">
+      <a class="chalkboard chalkboard--s btn-s" href="${esc(back)}"><span aria-hidden="true">${icon('caret-left', 14)}</span> Back to ${info ? esc(single ? cat.name : info.sub.name) : 'the bar'}</a>
+      ${hasNav ? `<a class="chalkboard chalkboard--s btn-s" href="#/drink/${encodeURIComponent(d.prev)}" rel="prev" aria-label="Previous: ${esc(prevRec?.name || '')}"><span aria-hidden="true">${icon('caret-left', 16)}</span> Prev</a>
+      <a class="chalkboard chalkboard--s btn-s" href="#/drink/${encodeURIComponent(d.next)}" rel="next" aria-label="Next: ${esc(nextRec?.name || '')}">Next <span aria-hidden="true">${icon('caret-right', 16)}</span></a>` : ''}
+    </div>
   </div>
-</section>
-</div></div>
-<div class="page">
-<div class="panels">
-  ${labelPanel}${glassPanel}
-</div>
-<div class="stack">${story}${maker}${tab}</div>
-</div>
-</div>`;
+</div>${noPhoto ? '<i class="tray" aria-hidden="true"></i>' : ''}`, `hero${noPhoto ? ' has-tray' : ''}`);
+
+  // ---- section boards ---------------------------------------------------------------------------------------
+  const spec = d.spec.map((it) => `<div class="spec-row"><dt>${termHTML(it.label)}</dt><dd>${specValue(it)}</dd></div>`).join('');
+  const labelBoard = spec ? board(`<h2 class="t-head" id="h-label">The Label</h2><dl class="spec">${spec}</dl>`, 'label-board', 'aria-labelledby="h-label"') : '';
+  const wsetNote = glossaryEntry('WSET-style tasting')?.def || '';
+  const glassBoard = d.tasting ? board(`<h2 class="t-head" id="h-glass">The Glass</h2>
+  ${wsetNote ? `<p class="t-small wset"><button type="button" class="info-btn" id="wset-btn" aria-expanded="false" aria-controls="wset-note">WSET-style tasting <span aria-hidden="true">${icon('info', 16)}</span></button></p>
+  <p class="t-body wset-note" id="wset-note" hidden>${esc(wsetNote)}</p>` : ''}
+  ${tastingHTML(d.tasting)}`, 'glass-board', 'aria-labelledby="h-glass"') : '';
+  const pair = labelBoard && glassBoard ? `<div class="pair">${labelBoard}${glassBoard}</div>` : (labelBoard || glassBoard);
+  const storyBoard = d.story ? board(`<h2 class="t-head" id="h-story">The Story</h2>${paragraphs(d.story)}`, 'story', 'aria-labelledby="h-story"') : '';
+
+  let inner;
+  if (pr.key) {
+    const more = d.moreFromProducer.map((mid) => ix.byId.get(mid)).filter(Boolean);
+    inner = `<div class="maker-head"><h2 class="t-head" id="h-maker">The Maker</h2>
+  <h3 class="t-title maker-name">${esc(pr.name)}${pr.native ? ` <span class="native" lang="${nativeLang}">${esc(pr.native)}</span>` : ''}</h3>
+  <p class="t-data meta">${[pr.location, pr.founded ? `est. ${pr.founded}` : ''].filter(Boolean).map(esc).join(' · ')}</p></div>
+  ${pr.about ? `<p class="t-body">${esc(pr.about)}</p>` : ''}
+  <p class="maker-links"><a class="chalkboard chalkboard--s btn-s" href="#/producer/${encodeURIComponent(pr.key)}">Visit producer ${icon('arrow-right', 16)}</a>${pr.url ? ` <a class="chalk-link" href="${esc(pr.url)}" target="_blank" rel="noopener noreferrer">Website ${icon('arrow-up-right', 14)}</a>` : ''}</p>
+  ${more.length ? `<h3 class="more-h">More from ${esc(pr.name)} (${more.length})</h3><div class="mini-row">${more.map((m) => cardHTML(m, ix, { mini: true })).join('')}</div>` : ''}`;
+  } else {
+    inner = `<h2 class="t-head" id="h-maker">The Maker</h2><p class="t-data">Producer not recorded${pr.location ? ` · ${esc(pr.location)}` : ''}</p>`;
+  }
+  const makerBoard = board(inner, 'maker', 'id="maker" aria-labelledby="h-maker"');
+
+  const tabBoard = d.visits.length > 1 ? board(`<h2 class="t-head" id="h-tab">The Tab: had ${d.visits.length} times</h2>
+  <ul class="visits">${d.visits.map((v) => `<li>${visitLine(v) || '<span>A visit</span>'}${v.note ? `<span class="vnote">${esc(v.note)}</span>` : ''}</li>`).join('')}</ul>`, 'tab', 'aria-labelledby="h-tab"') : '';
+
+  root.innerHTML = pageHTML({ crumbs, cls: 'drink-page', boards: `${hero}${pair}${storyBoard}${makerBoard}${tabBoard}` });
 
   // ---- photo switching and lightbox -------------------------------------------------------------------------
   let cur = 0;
@@ -222,10 +216,10 @@ ${topbar(crumbs, cat ? `#/${cat.key}` : '#/')}
     lb.setAttribute('role', 'dialog');
     lb.setAttribute('aria-modal', 'true');
     lb.setAttribute('aria-label', `Photos of ${d.name}`);
-    lb.innerHTML = `<button type="button" class="lb-close" aria-label="Close">${icon('x', 26)}</button>
-<button type="button" class="lb-nav lb-prev" aria-label="Previous photo"${photos.length < 2 ? ' hidden' : ''}>${icon('caret-left', 26)}</button>
-<figure><img alt=""><figcaption></figcaption></figure>
-<button type="button" class="lb-nav lb-next" aria-label="Next photo"${photos.length < 2 ? ' hidden' : ''}>${icon('caret-right', 26)}</button>`;
+    lb.innerHTML = `<button type="button" class="chalkboard chalkboard--s lb-close" aria-label="Close">${icon('x', 22)}</button>
+<button type="button" class="chalkboard chalkboard--s lb-nav lb-prev" aria-label="Previous photo"${photos.length < 2 ? ' hidden' : ''}>${icon('caret-left', 22)}</button>
+<figure><span class="print"><img alt=""></span><figcaption class="chalkboard chalkboard--s"></figcaption></figure>
+<button type="button" class="chalkboard chalkboard--s lb-nav lb-next" aria-label="Next photo"${photos.length < 2 ? ' hidden' : ''}>${icon('caret-right', 22)}</button>`;
     document.body.appendChild(lb);
     document.body.classList.add('no-scroll');
     const paint = () => {
@@ -282,25 +276,22 @@ ${topbar(crumbs, cat ? `#/${cat.key}` : '#/')}
     const t = ev.target.closest('.thumb');
     if (t) { show(Number(t.dataset.i)); return; }
     const jump = ev.target.closest('[data-jump="maker"]');
-    if (jump) { ev.preventDefault(); const m = $('#maker', root); m?.scrollIntoView({ behavior: 'smooth', block: 'start' }); m?.setAttribute('tabindex', '-1'); m?.focus({ preventScroll: true }); }
+    if (jump) { ev.preventDefault(); const m = $('#maker', root); m?.scrollIntoView({ behavior: 'smooth', block: 'start' }); m?.setAttribute('tabindex', '-1'); m?.focus({ preventScroll: true }); return; }
+    const b = ev.target.closest('#wset-btn');
+    if (b) {
+      const note = $('#wset-note', root);
+      if (!note) return;
+      note.hidden = !note.hidden;
+      b.setAttribute('aria-expanded', String(!note.hidden));
+    }
   };
   root.addEventListener('click', onClick);
-  const onInfo = (ev) => {
-    const b = ev.target.closest('#wset-btn');
-    if (!b) return;
-    const note = $('#wset-note', root);
-    if (!note) return;
-    note.hidden = !note.hidden;
-    b.setAttribute('aria-expanded', String(!note.hidden));
-  };
-  root.addEventListener('click', onInfo);
 
   return {
     unmount() {
       closeLightbox();
       document.removeEventListener('keydown', onKey);
       root.removeEventListener('click', onClick);
-      root.removeEventListener('click', onInfo);
     },
   };
 }

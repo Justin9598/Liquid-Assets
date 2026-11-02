@@ -1,0 +1,70 @@
+{
+ "key": "iinuma-meijo",
+ "name": "Iinuma Meijo",
+ "native": null,
+ "location": "Tochigi",
+ "region": "Tochigi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 8,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 11
+ },
+ "drinks": [
+  {
+   "id": "sugata-junmai-daiginjo-yamadanishiki-40",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "sugata-flying",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "sugata-aiyama",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "sugata-hitogokochi",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "sugata-kitashizuku",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "sugata-omachi",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "sugata-yumesasara",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "sugata-sparkling",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "inoue-seikichi-shoten",
+  "kobayashi-shuzo",
+  "nasu-kohgen-beer",
+  "tomikawa-shuzoten",
+  "wakakoma-shuzo"
+ ]
+}

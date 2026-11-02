@@ -1,0 +1,75 @@
+{
+ "id": "kubota-junmai-daiginjo",
+ "name": "Kubota Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "asahi-shuzo",
+  "name": "Asahi Shuzo",
+  "native": null,
+  "location": "Niigata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku"
+  },
+  {
+   "label": "SMV",
+   "value": 0,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.3
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shopee",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shopee",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "kubota-senju-ginjo"
+ ],
+ "prev": "kikunotsukasa-innocent-40-junmai-daiginj",
+ "next": "kudoki-jozu-juicy-karakuchi-kai"
+}

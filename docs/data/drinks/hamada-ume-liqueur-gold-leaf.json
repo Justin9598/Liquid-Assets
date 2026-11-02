@@ -1,0 +1,52 @@
+{
+ "id": "hamada-ume-liqueur-gold-leaf",
+ "name": "HAMADA Ume Liqueur with Gold Leaf",
+ "category": "liqueur",
+ "sub": "umeshu",
+ "producer": {
+  "key": "hamada-shoten",
+  "name": "Hamada Shoten",
+  "native": null,
+  "location": "Wakayama, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 13.5,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "ABV",
+   "value": 13.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "1L Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "1L Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hamada-ume-liqueur-gold-leaf-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "akebono-color-umeshu-brown-label",
+ "next": "kabosu-umeshu-sakurayama"
+}

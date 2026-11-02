@@ -1,0 +1,29 @@
+{
+ "key": "takazawa-shuzojo",
+ "name": "Takazawa Shuzojo",
+ "native": null,
+ "location": "Toyama",
+ "region": "Toyama",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "ariiso-akebono-flat",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": []
+}

@@ -1,0 +1,36 @@
+{
+ "key": "takachiyo-shuzo",
+ "name": "Takachiyo Shuzo",
+ "native": null,
+ "location": "Niigata",
+ "region": "Niigata",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "makihata-bambino",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "asahi-shuzo",
+  "ishimoto-shuzo",
+  "koshi-meijo",
+  "kubiki-shuzo",
+  "shirataki-shuzo",
+  "swan-lake-beer"
+ ]
+}

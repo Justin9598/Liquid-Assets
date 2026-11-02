@@ -1,0 +1,45 @@
+{
+ "id": "ukiuki-hops",
+ "name": "UkiUki Hops",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "happy-taro-brewery",
+  "name": "Happy Taro Brewery",
+  "native": null,
+  "location": "Shiga, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Doburoku"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Size",
+   "value": "480ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "480ml Bottle",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "ichigoya-hana-strawberry-doburoku",
+  "oriental-whey",
+  "something-happy-fresh-herb-tea"
+ ],
+ "prev": "raizin-heart-rock-phoenix-dancong-oolong",
+ "next": "wakaze-ispahan-rose"
+}

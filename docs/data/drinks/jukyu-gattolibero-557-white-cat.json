@@ -1,0 +1,80 @@
+{
+ "id": "jukyu-gattolibero-557-white-cat",
+ "name": "Jukyu Gattolibero 557 (White Cat)",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "ozawa-shuzojo",
+  "name": "Ozawa Shuzojo",
+  "native": null,
+  "location": "Nagano, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 59,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Shinkoshu No.557 (Yumeminishiki)"
+  },
+  {
+   "label": "Yeast",
+   "value": "Kyokai No.6"
+  },
+  {
+   "label": "SMV",
+   "value": 3.7,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 2.6
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Hakkou Cafe 日本酒專賣店",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/jukyu-gattolibero-557-white-cat-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "jukyu-hirvi-19"
+ ],
+ "prev": "hanahato-kijoshu-8-years",
+ "next": "jukyu-hirvi-19"
+}

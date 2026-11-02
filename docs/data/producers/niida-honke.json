@@ -1,0 +1,79 @@
+{
+ "key": "niida-honke",
+ "name": "Niida Honke",
+ "native": null,
+ "location": "Fukushima",
+ "region": "Fukushima",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 9,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 11
+ },
+ "drinks": [
+  {
+   "id": "kaoruyama",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "natsu-odayaka",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "niida-shizenshu-melon-333",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "niida-taruzake",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "odayaka-30th",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "odayaka-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "odayaka-junmai-ginjo-usunigori-nama",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "odayaka-kimoto-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "odayaka-sparkling",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "akebono-shuzo",
+  "hanaizumi-shuzo",
+  "puku-puku-brewing",
+  "ariga-jozo",
+  "haccoba-craft-sake-brewery",
+  "homare-shuzo",
+  "matsuzaki-shuzo",
+  "miyaizumi-meijo",
+  "ohki-daikichi-honten"
+ ]
+}

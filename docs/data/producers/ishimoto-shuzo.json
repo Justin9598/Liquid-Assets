@@ -1,0 +1,36 @@
+{
+ "key": "ishimoto-shuzo",
+ "name": "Ishimoto Shuzo",
+ "native": null,
+ "location": "Niigata",
+ "region": "Niigata",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "koshi-no-kanbai-junmai-ginjo-sai-mikino-",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "asahi-shuzo",
+  "koshi-meijo",
+  "kubiki-shuzo",
+  "shirataki-shuzo",
+  "swan-lake-beer",
+  "takachiyo-shuzo"
+ ]
+}

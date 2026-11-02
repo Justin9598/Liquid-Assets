@@ -1,0 +1,29 @@
+{
+ "key": "seoul-jangsu-brewery",
+ "name": "Seoul Jangsu Brewery",
+ "native": null,
+ "location": "Chungcheongbuk-do",
+ "region": "Chungcheongbuk-do",
+ "country": "South Korea",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "moonlight-yuja",
+   "category": "makgeolli",
+   "sub": "all"
+  }
+ ],
+ "moreFromRegion": []
+}

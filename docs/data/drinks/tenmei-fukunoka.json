@@ -1,0 +1,74 @@
+{
+ "id": "tenmei-fukunoka",
+ "name": "Tenmei Junmai Fuku no Ka & Yume no Kaori",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "akebono-shuzo",
+  "name": "Akebono Shuzo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 65,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Fukunoka 73%, Yumenokaori 26%"
+  },
+  {
+   "label": "Yeast",
+   "value": "Utsukushima Yume F701"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "akebono-color-umeshu-brown-label",
+  "isshou-seishun-bessen-junmai-daiginjo",
+  "isshou-seishun",
+  "tenmei-arabashiri",
+  "tenmei-nakadori-urugo",
+  "tenmei-junmai-ginjo-hiire-black-label",
+  "tenmei-kamenoo-65-kijoshu",
+  "tenmei-origarami",
+  "tenmei-nakadori-nigo-origarami-nama",
+  "tenmei-nakadori-zerogo-origarami-nama",
+  "tenmei-sarasara-junmai-lovely-summer"
+ ],
+ "prev": "tanzawa-omachi-70",
+ "next": "tenmei-origarami"
+}

@@ -1,0 +1,36 @@
+{
+ "key": "kubiki-shuzo",
+ "name": "Kubiki Shuzo",
+ "native": null,
+ "location": "Niigata",
+ "region": "Niigata",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "against-the-grain-normat-tokubetsu-junma",
+   "category": "sake",
+   "sub": "tokubetsu-junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "asahi-shuzo",
+  "ishimoto-shuzo",
+  "koshi-meijo",
+  "shirataki-shuzo",
+  "swan-lake-beer",
+  "takachiyo-shuzo"
+ ]
+}

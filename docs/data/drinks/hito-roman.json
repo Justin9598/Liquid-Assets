@@ -1,0 +1,84 @@
+{
+ "id": "hito-roman",
+ "name": "Hito Roman Junmai Daiginjo Nama Genshu",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "hanaizumi-shuzo",
+  "name": "Hanaizumi Shuzo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 45,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Aizu-grown rice 100%"
+  },
+  {
+   "label": "Yeast",
+   "value": "Utsukushima Yume yeast"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hito-roman-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "second",
+   "caption": "Second photo",
+   "web": "img/web/hito-roman-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "hanami-roman",
+  "roman-jg",
+  "roman-satsuki-junmai-daiginjo-ikkai-hi-i"
+ ],
+ "prev": "harada-junmai-daiginjo-muroka-nama-gensh",
+ "next": "hououbiden-mikumari-junmai-daiginjo"
+}

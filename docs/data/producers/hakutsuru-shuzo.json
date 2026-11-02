@@ -1,0 +1,52 @@
+{
+ "key": "hakutsuru-shuzo",
+ "name": "Hakutsuru Shuzo",
+ "native": null,
+ "location": "Hyogo",
+ "region": "Hyogo",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 4,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 4
+ },
+ "drinks": [
+  {
+   "id": "hakutsuru-awayuki-sparkling",
+   "category": "sake",
+   "sub": "ungraded"
+  },
+  {
+   "id": "hakutsuru-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "hakutsuru-junmaishu",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "hakutsuru-tokusen-daiginjo",
+   "category": "sake",
+   "sub": "daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "fukunishiki",
+  "hakushika-tatsuuma-honke",
+  "eigashima-shuzo",
+  "kiku-masamune-shuzo",
+  "nihonsakari",
+  "shimomura-shuzoten",
+  "tajime-shuzo"
+ ]
+}

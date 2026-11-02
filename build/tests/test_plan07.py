@@ -259,3 +259,24 @@ def test_browser_smoke_test_passes_at_all_four_sizes():
         for w, h in smoke.SIZES:
             res = smoke.check_size(srv.port, w, h)
             assert res["ok"], f"{w}x{h}: {res['problems'][:5]}"
+
+
+# ------------------------------------------------------------------ Plan 08: the inner pages in a real browser
+
+def test_phase_2_inner_pages_smoke_in_a_scratch_copy():
+    """Builds Phase 2 in a scratch copy outside Ship/ and checks every inner page type at the four sizes (tools/smoke.py)."""
+    sys.path.insert(0, str(SHIP / "build" / "tools"))
+    import smoke
+    pytest.importorskip("websockets")
+    if not smoke.edge_path():
+        pytest.skip("no Edge or Chrome to run the smoke test")
+    if not (SHIP.parent / "Drinks Ledger.xlsx").exists():
+        pytest.skip("real ledger not available")
+    docs = smoke.make_preview()
+    assert docs is not None
+    smoke.DOCS = docs
+    import smoke_inner
+    with smoke.Server() as srv:
+        problems, _ = smoke_inner.run(f"http://127.0.0.1:{srv.port}")
+        smoke.DOCS = SHIP / "docs"
+    assert not problems, problems[:8]

@@ -1,0 +1,41 @@
+{
+ "key": "yamawa-shuzoten",
+ "name": "Yamawa Shuzoten",
+ "native": null,
+ "location": "Miyagi",
+ "region": "Miyagi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "yamawa-junmai-ginjo-muroka-nama-genshu",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "sendai-station-brewery-fermenteria",
+  "akiu-heart-rock-sake",
+  "hirako-shuzo",
+  "date-seven-koganesawa-style-miyagi-collective",
+  "date-seven-yamawa-haginotsuru-miyagi-collective",
+  "date-seven-yamawa-style-miyagi-collective",
+  "hagino-shuzo",
+  "kanbai-shuzo",
+  "kawakei-shoten",
+  "niizawa-brewery",
+  "onuma-shuzoten"
+ ]
+}

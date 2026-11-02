@@ -1,0 +1,66 @@
+{
+ "id": "endo-daiginjo",
+ "name": "Endo Daiginjo Nama Genshu",
+ "category": "sake",
+ "sub": "daiginjo",
+ "producer": {
+  "key": "endo-shuzojo",
+  "name": "Endo Shuzojo",
+  "native": null,
+  "location": "Nagano, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 49,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Miyamanishiki"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/endo-daiginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "naotora"
+ ],
+ "prev": "aizu-homare-daiginjo",
+ "next": "gekkeikan-daiginjo"
+}

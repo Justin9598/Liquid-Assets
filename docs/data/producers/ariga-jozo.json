@@ -1,0 +1,44 @@
+{
+ "key": "ariga-jozo",
+ "name": "Ariga Jozo",
+ "native": null,
+ "location": "Fukushima",
+ "region": "Fukushima",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "jinya-junmai-akiagari",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "kissui-hidariuma-junmai-kasseinigori-uma-uma",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "akebono-shuzo",
+  "niida-honke",
+  "hanaizumi-shuzo",
+  "puku-puku-brewing",
+  "haccoba-craft-sake-brewery",
+  "homare-shuzo",
+  "matsuzaki-shuzo",
+  "miyaizumi-meijo",
+  "ohki-daikichi-honten"
+ ]
+}

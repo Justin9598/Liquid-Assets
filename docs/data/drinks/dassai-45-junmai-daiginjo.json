@@ -1,0 +1,78 @@
+{
+ "id": "dassai-45-junmai-daiginjo",
+ "name": "Dassai 45 Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "asahi-shuzo-dassai",
+  "name": "Asahi Shuzo (Dassai)",
+  "native": null,
+  "location": "Yamaguchi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 45,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamada Nishiki 100%"
+  },
+  {
+   "label": "SMV",
+   "value": 5,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.5
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/dassai-45-junmai-daiginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "dassai-39-junmai-daiginjo",
+  "dassai-39-junmai-daiginjo-enshin-bunri"
+ ],
+ "prev": "dassai-39-junmai-daiginjo-enshin-bunri",
+ "next": "dassai-blue-type-50-junmai-daiginjo"
+}

@@ -1,0 +1,42 @@
+{
+ "key": "shimizu-seizaburo-shoten",
+ "name": "Shimizu Seizaburo Shoten",
+ "native": null,
+ "location": "Mie",
+ "region": "Mie",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 3,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 3
+ },
+ "drinks": [
+  {
+   "id": "zaku-g",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "zaku-m",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "zaku-omachi-2026",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "isekado",
+  "moriki-shuzojo"
+ ]
+}

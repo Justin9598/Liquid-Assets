@@ -1,0 +1,61 @@
+{
+ "id": "gekkeikan-argo",
+ "name": "Gekkeikan Argo",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "gekkeikan",
+  "name": "Gekkeikan",
+  "native": null,
+  "location": "Kyoto, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 5,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "ABV",
+   "value": 5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "300ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-14",
+   "size": "300ml Bottle",
+   "where": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/gekkeikan-argo-1.webp",
+   "w": 676,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/gekkeikan-argo-2.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "gekkeikan-daiginjo"
+ ],
+ "prev": "fukunishiki-low-alcohol-junmai",
+ "next": "hagi-no-tsuru-betsu-shikomi"
+}

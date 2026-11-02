@@ -1,0 +1,53 @@
+{
+ "id": "oriental-whey",
+ "name": "Oriental Whey",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "happy-taro-brewery",
+  "name": "Happy Taro Brewery",
+  "native": null,
+  "location": "Shiga, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Doburoku"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Size",
+   "value": "480ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "480ml Bottle",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/oriental-whey-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "ichigoya-hana-strawberry-doburoku",
+  "ukiuki-hops",
+  "something-happy-fresh-herb-tea"
+ ],
+ "prev": "miyakanbai-strawberry",
+ "next": "librom-pear-craft-sake"
+}

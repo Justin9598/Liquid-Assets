@@ -1,0 +1,68 @@
+{
+ "id": "kavalan-dry-single-malt-highball",
+ "name": "Kavalan Dry Single Malt Highball",
+ "category": "cocktails",
+ "sub": "all",
+ "producer": {
+  "key": "kavalan",
+  "name": "Kavalan",
+  "native": null,
+  "location": "Yilan, Taiwan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 6,
+ "styles": [
+  "Sparkling"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Base",
+   "value": "Kavalan single malt whisky"
+  },
+  {
+   "label": "ABV",
+   "value": 6,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "320ml Can"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-17",
+   "size": "320ml Can",
+   "where": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kavalan-dry-single-malt-highball-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/kavalan-dry-single-malt-highball-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kavalan-distillery-reserve-peated-single-cask-strength",
+  "kavalan-highball-whisky-soda"
+ ],
+ "prev": "kavalan-highball-whisky-soda",
+ "next": "kavalan-highball-whisky-soda"
+}

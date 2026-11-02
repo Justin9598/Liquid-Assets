@@ -1,0 +1,29 @@
+{
+ "key": "taikai-shuzo",
+ "name": "Taikai Shuzo",
+ "native": null,
+ "location": "Kagoshima",
+ "region": "Kagoshima",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "kujira-no-kuromugi",
+   "category": "spirits",
+   "sub": "shochu"
+  }
+ ],
+ "moreFromRegion": []
+}

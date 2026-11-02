@@ -1,0 +1,58 @@
+{
+ "id": "yoshidagura-u-night-and-dance-junmai",
+ "name": "Yoshidagura u Night & Dance Junmai",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "yoshida-sake-brewery",
+  "name": "Yoshida Sake Brewery",
+  "native": null,
+  "location": "Ishikawa, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 9,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hyakumangoku-no-shiro"
+  },
+  {
+   "label": "ABV",
+   "value": 9,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "yamato-damashii-mizumoto",
+ "next": "zaku-g"
+}

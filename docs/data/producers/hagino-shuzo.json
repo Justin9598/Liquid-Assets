@@ -1,0 +1,41 @@
+{
+ "key": "hagino-shuzo",
+ "name": "Hagino Shuzo",
+ "native": null,
+ "location": "Miyagi",
+ "region": "Miyagi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "hagi-no-tsuru-betsu-shikomi",
+   "category": "sake",
+   "sub": "ungraded"
+  }
+ ],
+ "moreFromRegion": [
+  "sendai-station-brewery-fermenteria",
+  "akiu-heart-rock-sake",
+  "hirako-shuzo",
+  "date-seven-koganesawa-style-miyagi-collective",
+  "date-seven-yamawa-haginotsuru-miyagi-collective",
+  "date-seven-yamawa-style-miyagi-collective",
+  "kanbai-shuzo",
+  "kawakei-shoten",
+  "niizawa-brewery",
+  "onuma-shuzoten",
+  "yamawa-shuzoten"
+ ]
+}

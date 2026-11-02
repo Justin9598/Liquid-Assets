@@ -1,0 +1,54 @@
+{
+ "key": "puku-puku-brewing",
+ "name": "Puku Puku Brewing",
+ "native": null,
+ "location": "Fukushima",
+ "region": "Fukushima",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 4,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 4
+ },
+ "drinks": [
+  {
+   "id": "fest-hop-doburoku",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "wadaya-soda-pop-hop",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "baton-touch-no19",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "kikiki-hopped-sour",
+   "category": "sake",
+   "sub": "craft-sake"
+  }
+ ],
+ "moreFromRegion": [
+  "akebono-shuzo",
+  "niida-honke",
+  "hanaizumi-shuzo",
+  "ariga-jozo",
+  "haccoba-craft-sake-brewery",
+  "homare-shuzo",
+  "matsuzaki-shuzo",
+  "miyaizumi-meijo",
+  "ohki-daikichi-honten"
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "key": "tosa-shuzo",
+ "name": "Tosa Shuzo",
+ "native": null,
+ "location": "Kochi",
+ "region": "Kochi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "keigetsu-junmai-daiginjo-sparkling-hao",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "kameizumi-shuzo",
+  "suigei-shuzo"
+ ]
+}

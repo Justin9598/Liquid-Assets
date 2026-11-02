@@ -1,0 +1,29 @@
+{
+ "key": "wufeng-farmers-association-winery",
+ "name": "Wufeng Farmers' Association Winery",
+ "native": null,
+ "location": "Taichung",
+ "region": "Taichung",
+ "country": "Taiwan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "wufeng-ji-qing",
+   "category": "sake",
+   "sub": "ungraded"
+  }
+ ],
+ "moreFromRegion": []
+}

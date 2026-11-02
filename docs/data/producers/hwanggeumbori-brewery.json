@@ -1,0 +1,31 @@
+{
+ "key": "hwanggeumbori-brewery",
+ "name": "Hwanggeumbori Brewery",
+ "native": null,
+ "location": "Chungcheongnam-do",
+ "region": "Chungcheongnam-do",
+ "country": "South Korea",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "hwanggeumbori-jeungryuju-17",
+   "category": "spirits",
+   "sub": "soju"
+  }
+ ],
+ "moreFromRegion": [
+  "yesan-winery"
+ ]
+}

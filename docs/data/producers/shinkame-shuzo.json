@@ -1,0 +1,32 @@
+{
+ "key": "shinkame-shuzo",
+ "name": "Shinkame Shuzo",
+ "native": null,
+ "location": "Saitama",
+ "region": "Saitama",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "hikomago-hikozon-junmai-ginjo-funakuchishu-nam",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "igarashi-shuzo",
+  "kitanishi-shuzo"
+ ]
+}

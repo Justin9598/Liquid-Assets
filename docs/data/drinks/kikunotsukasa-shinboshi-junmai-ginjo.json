@@ -1,0 +1,63 @@
+{
+ "id": "kikunotsukasa-shinboshi-junmai-ginjo",
+ "name": "Kikunotsukasa Shinboshi Junmai Ginjo",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "kikunotsukasa-shuzo",
+  "name": "Kikunotsukasa Shuzo",
+  "native": null,
+  "location": "Iwate, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gin Otome"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "kikunotsukasa-innocent-40-junmai-daiginj",
+  "kikunotsukasa-innocent-60-junmai",
+  "kikunotsukasa-winter",
+  "shichifukujin-super-dry-junmai"
+ ],
+ "prev": "kenkonichi-junmai-ginjo-tejikuri",
+ "next": "kiubijin-junmai-ginjo-yunagi"
+}

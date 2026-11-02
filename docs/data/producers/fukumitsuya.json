@@ -1,0 +1,37 @@
+{
+ "key": "fukumitsuya",
+ "name": "Fukumitsuya",
+ "native": null,
+ "location": "Ishikawa",
+ "region": "Ishikawa",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "kagatobi-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "kagatobi-junmai-daiginjo-gokujo-genshu",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "noguchi-naohiko-sake-institute",
+  "yoshida-sake-brewery"
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "id": "mikotsuru-junmai-ginjo-gohakyu-mangoku",
+ "name": "MIKOTSURU Junmai Ginjo Gohakyu Mangoku",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "suwa-mikotsuru-shuzojo",
+  "name": "Suwa Mikotsuru Shuzojo",
+  "native": null,
+  "location": "Nagano, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "mikotsuru-nigori",
+  "mikotsuru-junmai-muroka-nama-genshu-origarami",
+  "mikotsuru-karakuchi-junmai"
+ ],
+ "prev": "michizakura-junmai-ginjo-suisei-55",
+ "next": "mikotsuru-nigori"
+}

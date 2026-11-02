@@ -1,22 +1,56 @@
-// Shared page chrome: the small sign and breadcrumb (Plan 02 section 4), glossary popovers (Plan 03 section 9).
+// Shared page chrome for the inner pages: the frame every page sits in (breadcrumb and boards, over the fixed bar), the
+// blackboard helpers and the glossary popovers (Plan 03 section 9, Plan 08 sections 3.1 to 3.9).
 import { getJSON } from './data.js';
 import { icon } from './icons.js';
-import { menuButton } from './menu.js';
 import { esc, fold } from './util.js';
 
-/** crumbs: [{ label, href? }] after "Bar". `home` is the href of the small sign. */
-export function topbar(crumbs, home = '#/') {
+/** A content board (XL): the page hero and each section. */
+export const board = (inner, cls = '', attrs = '') => `<section class="chalkboard chalkboard--xl board ${cls}"${attrs ? ' ' + attrs : ''}>${inner}</section>`;
+
+/** An M board holding a heading, for a group of boards or cards (section headings that are not inside a board). */
+export const headBoard = (inner, cls = '', tag = 'h2') => `<${tag} class="chalkboard chalkboard--m head-board ${cls}"><span class="chalk">${inner}</span></${tag}>`;
+
+/** The breadcrumb S board. crumbs: [{ label, href? }] after "Bar". On a phone, when it does not fit on one line, only the
+ * parent link shows ("< Parent"); fitCrumbs() decides. */
+export function crumbsHTML(crumbs) {
   const items = [{ label: 'Bar', href: '#/' }, ...crumbs];
   const lis = items.map((c, i) => {
     const last = i === items.length - 1;
     const sep = i ? `<span class="sep" aria-hidden="true">${icon('caret-right', 12)}</span>` : '';
     return `<li>${sep}${last || !c.href ? `<span${last ? ' aria-current="page"' : ''}>${esc(c.label)}</span>` : `<a href="${esc(c.href)}">${esc(c.label)}</a>`}</li>`;
   }).join('');
-  return `<header class="topbar">
-  <a class="mini-sign" href="${esc(home)}" aria-label="Liquid Assets, back to the bar">Liquid Assets</a>
-  <nav class="crumbs" aria-label="Breadcrumb"><ol>${lis}</ol></nav>
-  ${menuButton('in-header')}
-</header>`;
+  const parent = items.length > 1 ? items[items.length - 2] : null;
+  const back = parent?.href ? `<a class="back" href="${esc(parent.href)}"><span aria-hidden="true">${icon('caret-left', 14)}</span>${esc(parent.label)}</a>` : '';
+  return `<nav class="crumbs" aria-label="Breadcrumb"><div class="chalkboard chalkboard--s"><ol>${lis}</ol>${back}</div></nav>`;
+}
+
+/** Switch the breadcrumb to its parent-only form when the full trail does not fit on one line. */
+export function fitCrumbs(root) {
+  const nav = root.querySelector('.crumbs');
+  if (!nav) return;
+  nav.classList.remove('compact');
+  const ol = nav.querySelector('ol');
+  const room = nav.clientWidth - 30;
+  if (ol && ol.scrollWidth > room && nav.querySelector('.back')) nav.classList.add('compact');
+}
+
+/** The frame of every inner page: the fixed bar shows through above the first board, which starts below the sign.
+ * `boards` is the page's markup (boards and groups of cards); `link` is a sign link that goes back to the bar. */
+export function pageHTML({ crumbs, boards, cls = '' }) {
+  return `<div class="inner ${cls}">
+  <a class="sign-link" href="#/" aria-label="Liquid Assets, back to the bar"></a>
+  ${crumbsHTML(crumbs)}
+  <div class="boards">${boards}</div>
+</div>`;
+}
+
+/** The friendly "empty shelf" page (Plan 02 section 2, Plan 08 section 3.9): one board, then a way back to the bar. */
+export function emptyHTML(message = 'This shelf is empty', crumbs = [{ label: 'Empty shelf' }]) {
+  return pageHTML({
+    crumbs, cls: 'empty',
+    boards: `<div class="empty-wrap">${board(`<h1 class="t-title" tabindex="-1">${esc(message)}</h1><p class="t-body" style="margin-inline:auto">Nothing is standing here.</p>`)}
+  <a class="chalkboard chalkboard--s btn-s" href="#/">Back to the bar</a></div>`,
+  });
 }
 
 // ---- glossary ------------------------------------------------------------------------------------------------
@@ -54,7 +88,7 @@ function openPopover(btn) {
   if (!e) return;
   closePopover();
   popover = document.createElement('div');
-  popover.className = 'popover';
+  popover.className = 'popover chalkboard chalkboard--s';
   popover.id = 'gl-pop';
   popover.setAttribute('role', 'region');
   popover.setAttribute('aria-label', e.term);
@@ -65,7 +99,7 @@ function openPopover(btn) {
   openBtn = btn;
   const r = btn.getBoundingClientRect();
   const pw = popover.offsetWidth;
-  let left = Math.min(Math.max(8, r.left + r.width / 2 - pw / 2), window.innerWidth - pw - 8);
+  const left = Math.min(Math.max(8, r.left + r.width / 2 - pw / 2), window.innerWidth - pw - 8);
   popover.style.left = `${left + window.scrollX}px`;
   popover.style.top = `${r.bottom + window.scrollY + 8}px`;
 }
@@ -88,12 +122,3 @@ export function wireGlossary() {
   window.addEventListener('hashchange', closePopover);
 }
 export { closePopover };
-
-/** The friendly "empty shelf" scene (Plan 02 section 2). */
-export function emptyScene(message = 'This shelf is empty') {
-  return `<section class="empty-scene">
-  <div class="empty-plank" aria-hidden="true"></div>
-  <h1 tabindex="-1">${esc(message)}</h1>
-  <p>Nothing is standing here. <a class="btn" href="#/">Back to the bar</a></p>
-</section>`;
-}

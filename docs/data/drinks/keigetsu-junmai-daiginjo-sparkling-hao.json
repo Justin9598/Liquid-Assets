@@ -1,0 +1,60 @@
+{
+ "id": "keigetsu-junmai-daiginjo-sparkling-hao",
+ "name": "KEIGETSU Junmai Daiginjo Sparkling \"Hao\"",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "tosa-shuzo",
+  "name": "Tosa Shuzo",
+  "native": null,
+  "location": "Kochi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Sparkling"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 45,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gin no Yume"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Inter Rice",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "kankiku-seijitsu-special-yell-junmai-daiginjo",
+ "next": "kikunotsukasa-innocent-40-junmai-daiginj"
+}

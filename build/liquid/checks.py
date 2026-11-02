@@ -1,8 +1,10 @@
 """S10 Checks: privacy scan (E02), references (E03) and schema (E04) over the emitted data."""
 from __future__ import annotations
 
+import io
 import json
 import re
+from pathlib import Path
 
 PRIVATE_MARKERS = ["Invoice", "Sweep batch", "converted at", "mid-market", "corrected from"]
 SAFE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
@@ -117,25 +119,68 @@ def _walk_keys(obj, path=""):
             yield from _walk_keys(v, f"{path}[{i}]")
 
 
-def check_privacy(files, photo_files, pages, issues, extra_markers=()):
+def _norm_text(s):
+    return " ".join(str(s).split()).casefold()
+
+
+def load_private_notes(ledger_path):
+    """The ledger's private `Notes` text, read only so the build can look for it in what it publishes (a deny-list).
+
+    Nothing read here is ever copied into an output. Returns a list of (row, normalised text), leaving out notes that
+    are short or that the owner has deliberately made public by writing the same text in that row's `Public Notes` or
+    `Visit Note`. Returns [] when the ledger or the column is missing."""
+    import openpyxl
+    try:
+        data = Path(ledger_path).read_bytes()
+        wb = openpyxl.load_workbook(io.BytesIO(data), read_only=True, data_only=True)
+        ws = wb["Core"]
+        rows = ws.iter_rows(values_only=True)
+        head = [str(c).strip().casefold() if c is not None else "" for c in next(rows)]
+    except Exception:
+        return []
+    col = {name: head.index(name) for name in ("notes", "public notes", "visit note") if name in head}
+    if "notes" not in col:
+        return []
+    out = []
+    for n, row in enumerate(rows, start=2):
+        def cell(name):
+            i = col.get(name)
+            return _norm_text(row[i]) if i is not None and i < len(row) and row[i] else ""
+        note = cell("notes")
+        if len(note) >= 20 and note not in (cell("public notes"), cell("visit note")):
+            out.append((n, note))
+    wb.close()
+    return out
+
+
+def _scan_data_text(rel, text, markers, filenames, notes, issues, where="data/"):
+    """E02 over one published data file: private markers, original photo filenames, Notes text, notes fields."""
+    low = text.casefold()
+    squashed = _norm_text(text)
+    for m in markers:
+        if m in low:
+            issues.error("E02", f"Privacy leak: '{m}' found in published file {where}{rel}")
+    for f in filenames:
+        if f.casefold() in low:
+            issues.error("E02", f"Privacy leak: an original photo filename ('{f}') appears in {where}{rel}")
+    for row, note in notes:
+        if note in squashed:
+            issues.error("E02", f"Privacy leak: the Notes text of Core row {row} appears in {where}{rel}")
+    try:
+        data = json.loads(text)
+    except ValueError:
+        return
+    for p, k in _walk_keys(data):
+        if k.casefold() in ("notes", "public notes", "publicnotes") and rel not in ("subcategories.json",):
+            issues.error("E02", f"Privacy leak: a '{k}' field is published in {where}{rel}{p}")
+
+
+def check_privacy(files, photo_files, pages, issues, extra_markers=(), notes=()):
     """Fail (E02) when any published file holds private markers, a notes field, or draft research."""
     markers = [m.casefold() for m in list(PRIVATE_MARKERS) + list(extra_markers)]
     filenames = sorted({f for f in photo_files if len(f) >= 5})
     for rel, text in files.items():
-        low = text.casefold()
-        for m in markers:
-            if m in low:
-                issues.error("E02", f"Privacy leak: '{m}' found in published file data/{rel}")
-        for f in filenames:
-            if f.casefold() in low:
-                issues.error("E02", f"Privacy leak: an original photo filename ('{f}') appears in data/{rel}")
-        try:
-            data = json.loads(text)
-        except ValueError:
-            continue
-        for p, k in _walk_keys(data):
-            if k.casefold() in ("notes", "public notes", "publicnotes") and rel not in ("subcategories.json",):
-                issues.error("E02", f"Privacy leak: a '{k}' field is published in data/{rel}{p}")
+        _scan_data_text(rel, text, markers, filenames, notes, issues)
     # draft (non-approved) producers must publish none of their research
     for page in pages.values():
         if page["approved"]:
@@ -166,6 +211,61 @@ def check_privacy(files, photo_files, pages, issues, extra_markers=()):
                         issues.error("E02", f"Draft producer research leaked: {label} of '{page['name']}' "
                                             f"appears in data/{rel}")
                         break
+
+
+_META_BYTES = (b"Exif" + bytes(2), b"<x:xmpmeta", b"http://ns.adobe.com/xap/", b"ICC_PROFILE")
+_WEBP_META = {b"EXIF", b"XMP ", b"ICCP"}
+
+
+def _webp_chunks(raw):
+    """The chunk names of a WebP file (RIFF), or [] when it is not one."""
+    if raw[:4] != b"RIFF" or raw[8:12] != b"WEBP":
+        return []
+    out, i = [], 12
+    while i + 8 <= len(raw):
+        out.append(raw[i:i + 4])
+        size = int.from_bytes(raw[i + 4:i + 8], "little")
+        i += 8 + size + (size & 1)
+    return out
+
+
+def scan_published(docs_dir, photo_files, notes, issues, extra_markers=()):
+    """The last gate (Plan 08 section 6): everything actually on disk under docs/data and docs/img.
+
+    Data files: private markers, original photo filenames, `Notes` text and notes fields (the same rules as the in-memory
+    scan, so a stale file left from an earlier build is caught too). Image files: an original photo filename used as a
+    file name or found in the file's bytes, and any EXIF, XMP or ICC metadata. Returns the number of files scanned."""
+    docs = Path(docs_dir)
+    markers = [m.casefold() for m in list(PRIVATE_MARKERS) + list(extra_markers)]
+    filenames = sorted({f for f in photo_files if len(f) >= 5})
+    names = {f.casefold() for f in filenames}
+    name_re = re.compile(b"|".join(re.escape(f.encode("utf-8")) for f in filenames), re.I) if filenames else None
+    count = 0
+    for sub in ("data", "img"):
+        base = docs / sub
+        if not base.exists():
+            continue
+        for p in sorted(base.rglob("*")):
+            if not p.is_file():
+                continue
+            count += 1
+            rel = p.relative_to(docs).as_posix()
+            if p.name.casefold() in names:                 # a published file is never called by an original photo's name
+                issues.error("E02", f"Privacy leak: published file {rel} is named like an original photo")
+            if p.suffix == ".json":
+                _scan_data_text(p.relative_to(base).as_posix(), p.read_text(encoding="utf-8"), markers, filenames, notes,
+                                issues, where=sub + "/")
+                continue
+            raw = p.read_bytes()
+            bad = [m.decode("latin-1") for m in _META_BYTES if m in raw]
+            bad += [c.decode("latin-1").strip() for c in _webp_chunks(raw) if c in _WEBP_META]
+            if bad:
+                issues.error("E02", f"Image metadata is not stripped in {rel} ({', '.join(sorted(set(bad)))})")
+            if name_re is not None:
+                hit = name_re.search(raw[:16384]) or name_re.search(raw[-16384:])
+                if hit:
+                    issues.error("E02", f"Privacy leak: an original photo filename appears inside {rel}")
+    return count
 
 
 # ---------------------------------------------------------------- references

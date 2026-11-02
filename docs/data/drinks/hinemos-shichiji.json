@@ -1,0 +1,59 @@
+{
+ "id": "hinemos-shichiji",
+ "name": "HINEMOS Shichiji",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "ricewine-k-k-hinemos",
+  "name": "RiceWine K.K. (HINEMOS)",
+  "native": null,
+  "location": "Kanagawa, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 5,
+ "styles": [
+  "Sparkling",
+  "Nama"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 70,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "500ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "500ml Bottle",
+   "where": "Hinemos",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "hinemos-sanji"
+ ],
+ "prev": "hinemos-sanji",
+ "next": "hitakami-chokarakuchi-junmai"
+}

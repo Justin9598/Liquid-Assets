@@ -1,0 +1,29 @@
+{
+ "key": "woodford-reserve",
+ "name": "Woodford Reserve",
+ "native": null,
+ "location": "Versailles, Kentucky",
+ "region": "Versailles, Kentucky",
+ "country": "USA",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "woodford-reserve-distillers-select",
+   "category": "spirits",
+   "sub": "whisky"
+  }
+ ],
+ "moreFromRegion": []
+}

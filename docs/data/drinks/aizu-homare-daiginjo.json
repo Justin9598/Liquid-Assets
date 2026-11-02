@@ -1,0 +1,67 @@
+{
+ "id": "aizu-homare-daiginjo",
+ "name": "AIZU HOMARE Daiginjo",
+ "category": "sake",
+ "sub": "daiginjo",
+ "producer": {
+  "key": "homare-shuzo",
+  "name": "Homare Shuzo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16.5,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki"
+  },
+  {
+   "label": "SMV",
+   "value": 3,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.4
+  },
+  {
+   "label": "ABV",
+   "value": 16.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Inter Rice",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "sawahime-daiginjo-tobingakoi-origarami-nama",
+ "next": "endo-daiginjo"
+}

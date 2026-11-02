@@ -1,0 +1,34 @@
+{
+ "key": "hijiri-shuzo",
+ "name": "Hijiri Shuzo",
+ "native": null,
+ "location": "Gunma",
+ "region": "Gunma",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "meiho-akagi-junmai-ginjo-nama",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "nagai-shuzo",
+  "machida-shuzoten",
+  "ryujin-shuzo",
+  "machida-shuzo"
+ ]
+}

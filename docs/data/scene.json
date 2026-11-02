@@ -30,6 +30,7 @@
     "x1": 0.733,
     "y1": 0.243
    },
+   "content_top": 0.25,
    "counterTop": 0.665,
    "anchors": {
     "slate": {
@@ -106,6 +107,7 @@
     "x1": 0.873,
     "y1": 0.301
    },
+   "content_top": 0.308,
    "counterTop": 0.603,
    "anchors": {
     "slate": {

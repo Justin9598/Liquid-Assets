@@ -1,0 +1,50 @@
+{
+ "id": "kikiki-hopped-sour",
+ "name": "KiKiKi- Hopped Sour",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "puku-puku-brewing",
+  "name": "Puku Puku Brewing",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Hopped",
+  "Doburoku"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "Aikoku"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sakerama",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "fest-hop-doburoku",
+  "wadaya-soda-pop-hop",
+  "baton-touch-no19"
+ ],
+ "prev": "ine-to-nihoncha",
+ "next": "miyakanbai-strawberry"
+}

@@ -1,0 +1,73 @@
+{
+ "id": "mimurosugi-dio-abita",
+ "name": "Mimurosugi Dio Abita",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "imanishi-shuzo",
+  "name": "Imanishi Shuzo",
+  "native": null,
+  "location": "Nara, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 13,
+ "styles": [
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamada Nishiki 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 13,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/mimurosugi-dio-abita-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/mimurosugi-dio-abita-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "mimurosugi-roman-junmai-daiginjo-35"
+ ],
+ "prev": "kamikawa-taisetsu-tokachi-blue",
+ "next": "mizubasho-artist-series-floral-sparkling-2023"
+}

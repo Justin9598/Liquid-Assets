@@ -1,0 +1,54 @@
+{
+ "id": "kiubijin-junmai-ginjo-yunagi",
+ "name": "KIUBIJIN Junmai Ginjo Yunagi",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": null,
+  "name": null,
+  "native": null,
+  "location": "Fukuoka, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Inter Rice",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "kikunotsukasa-shinboshi-junmai-ginjo",
+ "next": "koganesawa-hitomebore-brut"
+}

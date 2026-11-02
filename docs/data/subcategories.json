@@ -1,0 +1,99 @@
+{
+ "sake/junmai-daiginjo": {
+  "explainer": "The top grade: rice polished to 50% or less, nothing but rice, water, kōji and yeast. Usually delicate and aromatic.",
+  "facts": [
+   "No added alcohol",
+   "Polished ≤ 50%"
+  ]
+ },
+ "sake/junmai-ginjo": {
+  "explainer": "Rice polished to 60% or less with no added alcohol. Fragrant and fruity, but with more body than a daiginjo.",
+  "facts": [
+   "No added alcohol",
+   "Polished ≤ 60%"
+  ]
+ },
+ "sake/tokubetsu-junmai": {
+  "explainer": "A \"special\" junmai: polished to 60% or less, or made by a special method the brewery names on the label.",
+  "facts": [
+   "No added alcohol",
+   "Special method or ≤ 60%"
+  ]
+ },
+ "sake/junmai": {
+  "explainer": "Pure rice sake with no minimum polishing. Often fuller, richer and more savoury.",
+  "facts": [
+   "No added alcohol"
+  ]
+ },
+ "sake/daiginjo": {
+  "explainer": "Polished to 50% or less, with a small amount of distilled alcohol added to lift the aroma.",
+  "facts": [
+   "Added alcohol",
+   "Polished ≤ 50%"
+  ]
+ },
+ "sake/ginjo": {
+  "explainer": "Polished to 60% or less, with a touch of distilled alcohol added. Light and fragrant.",
+  "facts": [
+   "Added alcohol",
+   "Polished ≤ 60%"
+  ]
+ },
+ "sake/honjozo": {
+  "explainer": "Polished to 70% or less, with a little added alcohol for a lighter, drier finish.",
+  "facts": [
+   "Added alcohol",
+   "Polished ≤ 70%"
+  ]
+ },
+ "sake/futsushu": {
+  "explainer": "Everyday table sake, made outside the premium grade rules.",
+  "facts": [
+   "Table sake"
+  ]
+ },
+ "sake/craft-sake": {
+  "explainer": "Brewed like sake but with extra ingredients such as fruit, tea or hops, or steps that take it outside the legal definition of sake. Often from new, small breweries.",
+  "facts": [
+   "Rice-based",
+   "Beyond the rules"
+  ]
+ },
+ "sake/ungraded": {
+  "explainer": "Sakes whose grade hasn't been recorded yet.",
+  "facts": []
+ },
+ "makgeolli/all": {
+  "explainer": "Korea's cloudy rice wine: lightly sparkling, milky and often unpasteurised, brewed with nuruk.",
+  "facts": []
+ },
+ "wine/cabernet-sauvignon": {
+  "explainer": "Thick-skinned black grape. Firm tannins and blackcurrant.",
+  "facts": []
+ },
+ "wine/merlot": {
+  "explainer": "Soft, plummy red grape, rounder than Cabernet.",
+  "facts": []
+ },
+ "wine/blend": {
+  "explainer": "Wines made from more than one grape. Each drink page lists its grapes.",
+  "facts": []
+ },
+ "spirits/whisky": {
+  "explainer": "Distilled from fermented grain and aged in wooden casks.",
+  "facts": []
+ },
+ "spirits/shochu": {
+  "explainer": "Japan's distilled spirit, made from barley, sweet potato, rice and more, with kōji.",
+  "facts": []
+ },
+ "spirits/soju": {
+  "explainer": "Korea's distilled spirit. Traditional versions are made with nuruk.",
+  "facts": []
+ },
+ "liqueur/umeshu": {
+  "explainer": "Japanese plum liqueur made by steeping unripe ume in alcohol and sugar.",
+  "facts": []
+ }
+}

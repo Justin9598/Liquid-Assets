@@ -1,0 +1,65 @@
+{
+ "id": "traditional-jeju-makgeolli",
+ "name": "Traditional Jeju Makgeolli",
+ "category": "makgeolli",
+ "sub": "all",
+ "producer": {
+  "key": "jeju-makgeolli",
+  "name": "Jeju Makgeolli",
+  "native": null,
+  "location": "Jeju, South Korea",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 6,
+ "styles": [
+  "Nama"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Base",
+   "value": "Rice (imported), puffed rice"
+  },
+  {
+   "label": "ABV",
+   "value": 6,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "750ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-14",
+   "size": "750ml Bottle",
+   "where": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/traditional-jeju-makgeolli-1.webp",
+   "w": 676,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/traditional-jeju-makgeolli-2.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "moonlight-yuja",
+ "next": "93-hwanggeum-gotgan"
+}

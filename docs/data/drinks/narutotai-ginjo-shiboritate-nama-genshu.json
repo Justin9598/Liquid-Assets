@@ -1,0 +1,61 @@
+{
+ "id": "narutotai-ginjo-shiboritate-nama-genshu",
+ "name": "NARUTOTAI Ginjo Shiboritate Nama Genshu",
+ "category": "sake",
+ "sub": "ginjo",
+ "producer": {
+  "key": "honke-matsuura",
+  "name": "Honke Matsuura",
+  "native": null,
+  "location": "Tokushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 18.5,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 58,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Oseto"
+  },
+  {
+   "label": "ABV",
+   "value": 18.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Inter Rice",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "kubota-senju-ginjo",
+ "next": "sawahime-ginjo"
+}

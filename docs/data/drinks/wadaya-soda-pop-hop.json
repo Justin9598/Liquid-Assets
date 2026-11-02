@@ -1,0 +1,50 @@
+{
+ "id": "wadaya-soda-pop-hop",
+ "name": "#WADAYA Soda Pop Hop",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "puku-puku-brewing",
+  "name": "Puku Puku Brewing",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Hopped",
+  "Doburoku"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "Omachi & Aikoku"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sakerama",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "fest-hop-doburoku",
+  "baton-touch-no19",
+  "kikiki-hopped-sour"
+ ],
+ "prev": "fest-hop-doburoku",
+ "next": "allwright-momo"
+}

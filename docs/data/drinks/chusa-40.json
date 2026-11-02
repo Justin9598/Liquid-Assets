@@ -1,0 +1,69 @@
+{
+ "id": "chusa-40",
+ "name": "Chusa 40",
+ "category": "spirits",
+ "sub": "other",
+ "producer": {
+  "key": "yesan-winery",
+  "name": "Yesan Winery",
+  "native": null,
+  "location": "Chungcheongnam-do, South Korea",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 40,
+ "styles": [
+  "Cask-aged"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Base",
+   "value": "Apple (domestic)"
+  },
+  {
+   "label": "Maturation",
+   "value": "Oak"
+  },
+  {
+   "label": "ABV",
+   "value": 40,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "500ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-14",
+   "size": "500ml Bottle",
+   "where": "Mangwoo Makgeolli Bistro",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/chusa-40-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/chusa-40-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "the-botanist-islay-dry-gin",
+ "next": "the-botanist-islay-dry-gin"
+}

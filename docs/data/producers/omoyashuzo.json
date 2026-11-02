@@ -1,0 +1,29 @@
+{
+ "key": "omoyashuzo",
+ "name": "Omoyashuzo",
+ "native": null,
+ "location": "Iki, Nagasaki",
+ "region": "Iki, Nagasaki",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "yokoyama-junmai-ginjo-silver-choukara7",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": []
+}

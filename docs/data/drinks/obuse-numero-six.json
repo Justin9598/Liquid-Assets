@@ -1,0 +1,69 @@
+{
+ "id": "obuse-numero-six",
+ "name": "Obuse Numero Six 【小布施 Numero SIX】",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "obuse-winery-sogga-pere-et-fils",
+  "name": "Obuse Winery (Sogga Père et Fils)",
+  "native": null,
+  "location": "Nagano, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 59,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Miyama Nishiki"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Sake Hub",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/obuse-numero-six-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "obuse-jamais-deux-sans-toi",
+  "obuse-trois"
+ ],
+ "prev": "obuse-jamais-deux-sans-toi",
+ "next": "obuse-trois"
+}

@@ -1,0 +1,39 @@
+{
+ "key": "gekkeikan",
+ "name": "Gekkeikan",
+ "native": null,
+ "location": "Kyoto",
+ "region": "Kyoto",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "gekkeikan-argo",
+   "category": "sake",
+   "sub": "ungraded"
+  },
+  {
+   "id": "gekkeikan-daiginjo",
+   "category": "sake",
+   "sub": "daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "matsui-shuzo",
+  "fujioka-shuzo",
+  "masuda-tokubee-shoten",
+  "mukai-shuzo"
+ ]
+}

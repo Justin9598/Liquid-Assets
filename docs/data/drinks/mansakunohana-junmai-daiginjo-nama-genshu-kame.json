@@ -1,0 +1,73 @@
+{
+ "id": "mansakunohana-junmai-daiginjo-nama-genshu-kame",
+ "name": "Mansakunohana Junmai Daiginjo Nama Genshu Kame Label",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "hinomaru-jozo",
+  "name": "Hinomaru Jozo",
+  "native": null,
+  "location": "Akita, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 45,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Kamenoo"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.4
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Suiraku",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/mansakunohana-junmai-daiginjo-nama-genshu-kame-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "kudoki-jozu-juicy-karakuchi-kai",
+ "next": "mimurosugi-roman-junmai-daiginjo-35"
+}

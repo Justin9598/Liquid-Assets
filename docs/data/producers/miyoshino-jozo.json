@@ -1,0 +1,34 @@
+{
+ "key": "miyoshino-jozo",
+ "name": "Miyoshino Jozo",
+ "native": null,
+ "location": "Nara",
+ "region": "Nara",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "miyoshino-jozo-hanatomoe-jundaidai-junmai-daig",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "nara-brewing-co",
+  "chiyo-shuzo",
+  "imanishi-shuzo",
+  "okura-honke"
+ ]
+}

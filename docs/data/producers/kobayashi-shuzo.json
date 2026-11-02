@@ -1,0 +1,40 @@
+{
+ "key": "kobayashi-shuzo",
+ "name": "Kobayashi Shuzo",
+ "native": null,
+ "location": "Tochigi",
+ "region": "Tochigi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "houou-biden-tsurugi-karakuchi-junmai",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "hououbiden-mikumari-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "iinuma-meijo",
+  "inoue-seikichi-shoten",
+  "nasu-kohgen-beer",
+  "tomikawa-shuzoten",
+  "wakakoma-shuzo"
+ ]
+}

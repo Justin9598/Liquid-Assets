@@ -1,0 +1,81 @@
+{
+ "id": "aiyama-galaxy-kimoto-junmai-ginjo-origar",
+ "name": "Aiyama 'Galaxy' Kimoto Junmai Ginjo Origarami Nama",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "fukunishiki",
+  "name": "Fukunishiki",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16.2,
+ "styles": [
+  "Nama",
+  "Kimoto",
+  "Origarami"
+ ],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Aiyama"
+  },
+  {
+   "label": "SMV",
+   "value": 3.5,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.8
+  },
+  {
+   "label": "ABV",
+   "value": 16.2,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shu Kuu Izakaya",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "fukunishiki-low-alcohol-junmai",
+  "junsei-jd",
+  "junsei-jg"
+ ],
+ "prev": "zaruso-hourai-junmai-ginjo-oringo-kudasai",
+ "next": "aramasa-colors-cosmos"
+}

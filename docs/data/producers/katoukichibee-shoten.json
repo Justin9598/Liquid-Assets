@@ -1,0 +1,32 @@
+{
+ "key": "katoukichibee-shoten",
+ "name": "Katoukichibee Shoten",
+ "native": null,
+ "location": "Fukui",
+ "region": "Fukui",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "born-gold-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "kokuryu-shuzo",
+  "nyu-shuzo"
+ ]
+}

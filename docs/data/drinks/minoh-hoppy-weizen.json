@@ -1,0 +1,68 @@
+{
+ "id": "minoh-hoppy-weizen",
+ "name": "Minoh Hoppy Weizen",
+ "category": "beer",
+ "sub": "wheat",
+ "producer": {
+  "key": "minoh-beer",
+  "name": "Minoh Beer",
+  "native": null,
+  "location": "Osaka, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 5,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "Wheat"
+  },
+  {
+   "label": "Base",
+   "value": "Wheat and barley malt"
+  },
+  {
+   "label": "Flavouring or botanicals",
+   "value": "Nelson Sauvin hops"
+  },
+  {
+   "label": "Yeast",
+   "value": "Weizen yeast"
+  },
+  {
+   "label": "ABV",
+   "value": 5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "Pint"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-01",
+   "size": "Pint",
+   "where": "Fermenteria by Sake Mama",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/minoh-hoppy-weizen-1.webp",
+   "w": 618,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "minoh-hoppy-weizen",
+ "next": "minoh-hoppy-weizen"
+}

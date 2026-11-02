@@ -1,0 +1,41 @@
+{
+ "key": "kanbai-shuzo",
+ "name": "Kanbai Shuzo",
+ "native": null,
+ "location": "Miyagi",
+ "region": "Miyagi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "miyakanbai-strawberry",
+   "category": "sake",
+   "sub": "craft-sake"
+  }
+ ],
+ "moreFromRegion": [
+  "sendai-station-brewery-fermenteria",
+  "akiu-heart-rock-sake",
+  "hirako-shuzo",
+  "date-seven-koganesawa-style-miyagi-collective",
+  "date-seven-yamawa-haginotsuru-miyagi-collective",
+  "date-seven-yamawa-style-miyagi-collective",
+  "hagino-shuzo",
+  "kawakei-shoten",
+  "niizawa-brewery",
+  "onuma-shuzoten",
+  "yamawa-shuzoten"
+ ]
+}

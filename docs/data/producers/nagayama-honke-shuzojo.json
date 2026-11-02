@@ -1,0 +1,39 @@
+{
+ "key": "nagayama-honke-shuzojo",
+ "name": "Nagayama Honke Shuzojo",
+ "native": null,
+ "location": "Yamaguchi",
+ "region": "Yamaguchi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "taka-tokubetsu-junmai-fukamari",
+   "category": "sake",
+   "sub": "tokubetsu-junmai"
+  },
+  {
+   "id": "taka-sparkling",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "hatsumomiji",
+  "asahi-shuzo-dassai",
+  "shintani-shuzo",
+  "sumikawa-shuzojo"
+ ]
+}

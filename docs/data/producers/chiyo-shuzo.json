@@ -1,0 +1,39 @@
+{
+ "key": "chiyo-shuzo",
+ "name": "Chiyo Shuzo",
+ "native": null,
+ "location": "Nara",
+ "region": "Nara",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "kujira-junmai-yamadanishiki-kimoto-nama-genshu-80",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "shinomine-aiyama-junmai-murokanamagenshu",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "nara-brewing-co",
+  "imanishi-shuzo",
+  "okura-honke",
+  "miyoshino-jozo"
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "id": "underwater-luminous-sake-yeast-beer",
+ "name": "Underwater Luminous Sake Yeast Beer",
+ "category": "beer",
+ "sub": "specialty",
+ "producer": {
+  "key": "nara-brewing-co",
+  "name": "Nara Brewing Co.",
+  "native": null,
+  "location": "Nara, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 6,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "Specialty"
+  },
+  {
+   "label": "Base",
+   "value": "Pilsner malt"
+  },
+  {
+   "label": "Flavouring or botanicals",
+   "value": "No hops; sugar, lactose, lactic acid water, malic acid"
+  },
+  {
+   "label": "Yeast",
+   "value": "Sake yeast (Kaze no Mori, Yucho Shuzo)"
+  },
+  {
+   "label": "ABV",
+   "value": 6,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "350ml Can"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-01",
+   "size": "350ml Can",
+   "where": "Fermenteria by Sake Mama",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/underwater-luminous-sake-yeast-beer-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/underwater-luminous-sake-yeast-beer-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "nara-eighty-eight",
+  "underwater-sake-yeast-beer"
+ ],
+ "prev": "underwater-luminous-sake-yeast-beer",
+ "next": "underwater-luminous-sake-yeast-beer"
+}

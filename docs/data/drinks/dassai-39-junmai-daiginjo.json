@@ -1,0 +1,61 @@
+{
+ "id": "dassai-39-junmai-daiginjo",
+ "name": "Dassai 39 Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "asahi-shuzo-dassai",
+  "name": "Asahi Shuzo (Dassai)",
+  "native": null,
+  "location": "Yamaguchi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 39,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamada Nishiki 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "dassai-39-junmai-daiginjo-enshin-bunri",
+  "dassai-45-junmai-daiginjo"
+ ],
+ "prev": "born-gold-junmai-daiginjo",
+ "next": "dassai-39-junmai-daiginjo-enshin-bunri"
+}

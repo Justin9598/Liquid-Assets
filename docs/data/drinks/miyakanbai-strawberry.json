@@ -1,0 +1,45 @@
+{
+ "id": "miyakanbai-strawberry",
+ "name": "Miyakanbai Hi no Shizuku Strawberry Sake",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "kanbai-shuzo",
+  "name": "Kanbai Shuzo",
+  "native": null,
+  "location": "Miyagi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Flavoured"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "Rice + strawberry"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "kikiki-hopped-sour",
+ "next": "oriental-whey"
+}

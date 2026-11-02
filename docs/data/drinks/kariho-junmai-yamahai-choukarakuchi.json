@@ -1,0 +1,69 @@
+{
+ "id": "kariho-junmai-yamahai-choukarakuchi",
+ "name": "Kariho Junmai Yamahai Choukarakuchi",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "akita-seishu",
+  "name": "Akita Seishu",
+  "native": null,
+  "location": "Akita, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15.8,
+ "styles": [
+  "Yamahai"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Miyamanishiki & Akinosei"
+  },
+  {
+   "label": "SMV",
+   "value": 12,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.4
+  },
+  {
+   "label": "ABV",
+   "value": 15.8,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shu Kuu Izakaya",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "kaoruyama",
+ "next": "kikunotsukasa-innocent-60-junmai"
+}

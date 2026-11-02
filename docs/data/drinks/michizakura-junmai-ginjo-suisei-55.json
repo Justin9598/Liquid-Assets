@@ -1,0 +1,66 @@
+{
+ "id": "michizakura-junmai-ginjo-suisei-55",
+ "name": "Michizakura Junmai Ginjo Suisei 55",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "michizakura-shuzo",
+  "name": "Michizakura Shuzo",
+  "native": null,
+  "location": "Hokkaido, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Suisei"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Isego Honten",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/michizakura-junmai-ginjo-suisei-55-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "meiho-akagi-junmai-ginjo-nama",
+ "next": "mikotsuru-junmai-ginjo-gohakyu-mangoku"
+}

@@ -1,0 +1,65 @@
+{
+ "id": "mangwoo-yakbang-memilbogam",
+ "name": "Mangwoo Yakbang Memilbogam",
+ "category": "makgeolli",
+ "sub": "all",
+ "producer": {
+  "key": "hamahama-brewery",
+  "name": "Hamahama Brewery",
+  "native": null,
+  "location": "Jeju, South Korea",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 8,
+ "styles": [
+  "Nama"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Base",
+   "value": "Glutinous rice, rice, buckwheat"
+  },
+  {
+   "label": "ABV",
+   "value": 8,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "600ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-14",
+   "size": "600ml Bottle",
+   "where": "Mangwoo Makgeolli Bistro",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/mangwoo-yakbang-memilbogam-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/mangwoo-yakbang-memilbogam-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "isibo-wonju",
+ "next": "moonlight-yuja"
+}

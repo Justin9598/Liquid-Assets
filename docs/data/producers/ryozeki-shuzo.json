@@ -1,0 +1,36 @@
+{
+ "key": "ryozeki-shuzo",
+ "name": "Ryozeki Shuzo",
+ "native": null,
+ "location": "Akita",
+ "region": "Akita",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "suigyoku-junmai-ginjo-muroka-nama-genshu",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "yamamoto-gomei-kaisha",
+  "ine-to-agave",
+  "yamamoto-shuzoten",
+  "akita-seishu",
+  "aramasa-shuzo",
+  "hinomaru-jozo"
+ ]
+}

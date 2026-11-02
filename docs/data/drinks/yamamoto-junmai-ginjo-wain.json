@@ -1,0 +1,74 @@
+{
+ "id": "yamamoto-junmai-ginjo-wain",
+ "name": "Yamamoto Junmai Ginjo Wain",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "yamamoto-gomei-kaisha",
+  "name": "Yamamoto Gomei Kaisha",
+  "native": null,
+  "location": "Akita, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gin no Sei"
+  },
+  {
+   "label": "Yeast",
+   "value": "Chardonnay wine yeast + Kyokai No.6"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/yamamoto-junmai-ginjo-wain-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "yamamoto-midnight-blue-junmai-ginjo",
+  "yamamoto-no7-kobo-junmai-ginjo",
+  "yamamoto-sunshine-yellow-yamahai-junmai-ginjo"
+ ],
+ "prev": "yamamoto-junmai-ginjo-uki-uki",
+ "next": "yamamoto-midnight-blue-junmai-ginjo"
+}

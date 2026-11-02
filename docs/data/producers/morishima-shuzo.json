@@ -1,0 +1,31 @@
+{
+ "key": "morishima-shuzo",
+ "name": "Morishima Shuzo",
+ "native": null,
+ "location": "Ibaraki",
+ "region": "Ibaraki",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "morishima-hitachinishiki",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "fuchu-homare"
+ ]
+}

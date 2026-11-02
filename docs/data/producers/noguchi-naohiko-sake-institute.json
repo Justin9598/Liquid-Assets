@@ -1,0 +1,37 @@
+{
+ "key": "noguchi-naohiko-sake-institute",
+ "name": "Noguchi Naohiko Sake Institute",
+ "native": null,
+ "location": "Ishikawa",
+ "region": "Ishikawa",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "noguchi-naohiko-natsu-no-namazake-2026",
+   "category": "sake",
+   "sub": "ungraded"
+  },
+  {
+   "id": "noguchi-naohiko-sake-institute",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "fukumitsuya",
+  "yoshida-sake-brewery"
+ ]
+}

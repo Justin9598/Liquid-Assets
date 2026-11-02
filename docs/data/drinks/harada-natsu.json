@@ -1,0 +1,51 @@
+{
+ "id": "harada-natsu",
+ "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "hatsumomiji",
+  "name": "Hatsumomiji",
+  "native": null,
+  "location": "Yamaguchi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "harada-junmai-daiginjo-muroka-nama-gensh",
+  "harada",
+  "harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu"
+ ],
+ "prev": "hakutsuru-junmaishu",
+ "next": "koueigiku-hello-omachi-sumizake"
+}

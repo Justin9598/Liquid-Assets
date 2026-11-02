@@ -1,0 +1,83 @@
+{
+ "id": "sugata-aiyama",
+ "name": "Sugata Junmai Ginjo Muroka Nama Genshu Aiyama",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "iinuma-meijo",
+  "name": "Iinuma Meijo",
+  "native": null,
+  "location": "Tochigi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17.5,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Aiyama"
+  },
+  {
+   "label": "SMV",
+   "value": -2,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 17.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/sugata-aiyama-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "sugata-junmai-daiginjo-yamadanishiki-40",
+  "sugata-flying",
+  "sugata-hitogokochi",
+  "sugata-kitashizuku",
+  "sugata-omachi",
+  "sugata-yumesasara",
+  "sugata-sparkling"
+ ],
+ "prev": "sokuu-junmai-ginjoshu-yamadanishiki",
+ "next": "sugata-hitogokochi"
+}

@@ -1,0 +1,58 @@
+{
+ "id": "wakakoma-carnival",
+ "name": "Wakakoma Carnival",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "wakakoma-shuzo",
+  "name": "Wakakoma Shuzo",
+  "native": null,
+  "location": "Tochigi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16.5,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku"
+  },
+  {
+   "label": "ABV",
+   "value": 16.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Ripple Sake",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "tenmei-nakadori-nigo-origarami-nama",
+ "next": "wataibune-terroir-ohta-valley"
+}

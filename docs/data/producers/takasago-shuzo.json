@@ -1,0 +1,32 @@
+{
+ "key": "takasago-shuzo",
+ "name": "Takasago Shuzo",
+ "native": null,
+ "location": "Hokkaido",
+ "region": "Hokkaido",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "kokushimuso-junmai-ginjo-kitashizuku",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "kamikawa-taisetsu-shuzo",
+  "michizakura-shuzo"
+ ]
+}

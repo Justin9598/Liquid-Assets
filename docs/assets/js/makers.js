@@ -1,10 +1,11 @@
-// Makers index (Plan 04 section 5): every producer, with a Japan prefecture map as an extra way in.
-import { topbar } from './chrome.js';
+// Makers index (Plan 04 section 5, looks from Plan 08 section 4.4): a title board, a map board with the controls, and a grid of
+// small blackboards, one per maker, grouped by country.
+import { board, headBoard, pageHTML } from './chrome.js';
 import { getJSON } from './data.js';
 import { icon } from './icons.js';
 import { insertMap } from './map.js';
-import { crateTile } from './producer.js';
-import { $, $$, buildHash, debounce, esc, fold, plural, regionKey, replaceHash, setTitle, slug } from './util.js';
+import { makerTile } from './producer.js';
+import { $, $$, buildHash, debounce, esc, fold, plural, reducedMotion, regionKey, replaceHash, setTitle, slug } from './util.js';
 
 const SORTS = { az: 'A to Z', most: 'Most drinks', region: 'Region' };
 
@@ -26,34 +27,20 @@ export async function mount(root, ctx) {
   }
 
   const elsewhere = countries.filter((c) => c !== 'Japan');
-  root.innerHTML = `<div class="makers-page">
-<div class="wall"><div class="wall-in">
-${topbar([{ label: 'Makers' }])}
-<section class="makers-head">
-  <div class="head-board"><h1 tabindex="-1">The Makers</h1>
-  <p class="stats">${plural(producers.length, 'producer')} · ${plural(countries.length, 'country', 'countries')}</p></div>
-</section>
-</div></div>
-<div class="page">
-<div class="makers-grid">
-  <aside class="map-col" aria-label="Map of Japan">
-    <div class="map-box" id="mapbox"></div>
-    <p class="map-tip" id="map-tip" role="status" aria-live="polite">Pick a prefecture to filter the list.</p>
-    ${elsewhere.length ? `<p class="elsewhere">Elsewhere: ${elsewhere.map((c) => `<a href="${esc(buildHash(['makers'], { country: slug(c) }))}" data-country="${esc(slug(c))}">${esc(c)} ${countryCounts.get(c)}</a>`).join(' · ')}</p>` : ''}
-  </aside>
-  <section class="list-col">
-    <div class="m-controls">
-      <label class="search"><span class="sr-only">Search makers</span><input type="search" id="mq" placeholder="Search makers, native names, brands" autocomplete="off"></label>
-      <label class="sel"><span>Country</span><select id="mcountry"><option value="">All</option>${countries.map((c) => `<option value="${esc(slug(c))}">${esc(c)} (${countryCounts.get(c)})</option>`).join('')}</select></label>
-      <label class="sel"><span>Sort</span><select id="msort">${Object.entries(SORTS).map(([k, v]) => `<option value="${k}">${v}</option>`).join('')}</select></label>
+  const title = board(`<h1 class="t-title" tabindex="-1">The Makers</h1>
+  <p class="t-data" style="margin-top:10px">${esc(plural(producers.length, 'producer'))} · ${esc(plural(countries.length, 'country', 'countries'))}</p>`, 'title-board');
+  const mapBoard = `<div class="m-top">${board(`<div class="map-chalk" id="mapbox-wrap"><div id="mapbox"></div></div>
+    <p class="t-body" id="map-tip" role="status" aria-live="polite">Pick a prefecture to filter the list.</p>`, 'map-board', 'aria-label="Map of Japan"')}
+${board(`    <div class="m-controls">
+      <label class="search"><span class="sr-only">Search makers</span><input class="chalk-input" type="search" id="mq" placeholder="Search makers, native names, brands" autocomplete="off"></label>
+      <label class="field"><span>Country</span><select class="chalk-input" id="mcountry"><option value="">All</option>${countries.map((c) => `<option value="${esc(slug(c))}">${esc(c)} (${countryCounts.get(c)})</option>`).join('')}</select></label>
+      <label class="field"><span>Sort</span><select class="chalk-input" id="msort">${Object.entries(SORTS).map(([k, v]) => `<option value="${k}">${v}</option>`).join('')}</select></label>
     </div>
-    <p class="chip-line" id="region-chip"></p>
-    <p class="count" id="mcount" aria-live="polite"></p>
-    <div id="mlist"></div>
-  </section>
-</div>
-</div>
+    ${elsewhere.length ? `<div class="elsewhere"><span class="t-data lead">Elsewhere:</span>${elsewhere.map((c) => `<a class="chalkboard chalkboard--s btn-s" href="${esc(buildHash(['makers'], { country: slug(c) }))}" data-country="${esc(slug(c))}"><span class="chalk">${esc(c)} <span class="ct">${countryCounts.get(c)}</span></span></a>`).join('')}</div>` : ''}
+    <p class="region-chip" id="region-chip"></p>
+    <p class="t-data" id="mcount" aria-live="polite"></p>`, 'controls-board m-side', 'aria-label="Filters"')}
 </div>`;
+  root.innerHTML = pageHTML({ crumbs: [{ label: 'Makers' }], cls: 'makers-page', boards: `${title}${mapBoard}<div class="boards-list" id="mlist"></div>` });
 
   const st = { q: '', country: '', region: '', sort: 'az' };
   const countrySlugs = new Map(countries.map((c) => [slug(c), c]));
@@ -100,18 +87,18 @@ ${topbar([{ label: 'Makers' }])}
       groupsMap.get(k).push(p);
     }
     const order = [...groupsMap.keys()].sort((a, b) => (a === 'Japan' ? -1 : b === 'Japan' ? 1 : groupsMap.get(b).length - groupsMap.get(a).length || a.localeCompare(b)));
-    $('#mlist', root).innerHTML = order.map((k) => {
+    const el = $('#mlist', root);
+    el.innerHTML = order.map((k) => {
       const items = groupsMap.get(k).sort(sorters[st.sort]);
-      return `<section class="country-group"><h2 class="country-h">${esc(k)} <span>${items.length}</span></h2><div class="tile-grid">${items.map((p) => crateTile(p)).join('')}</div></section>`;
-    }).join('') || '<div class="nothing"><div class="empty-plank" aria-hidden="true"></div><p>No makers match.</p></div>';
+      return `<section class="country-group">${headBoard(`${esc(k)} <span class="n">${items.length}</span>`)}<div class="tile-grid">${items.map((p) => makerTile(p)).join('')}</div></section>`;
+    }).join('') || `<div class="chalkboard chalkboard--xl nothing"><h2 class="t-head">No makers match.</h2></div>`;
     $('#mcount', root).textContent = `Showing ${list.length} of ${producers.length}`;
-    if (announceIt) $('#mcount', root).setAttribute('aria-live', 'polite');
     const mq = $('#mq', root);
     if (mq.value !== st.q) mq.value = st.q;
     $('#mcountry', root).value = st.country;
     $('#msort', root).value = st.sort;
     const chip = $('#region-chip', root);
-    chip.innerHTML = st.region ? `<button type="button" class="chip" id="clear-region" aria-label="Remove filter ${esc(regionStats.get(st.region).name)}">${esc(regionStats.get(st.region).name)} ${icon('x', 12)}</button>` : '';
+    chip.innerHTML = st.region ? `<button type="button" class="chalkboard chalkboard--s btn-s" id="clear-region" aria-label="Remove filter ${esc(regionStats.get(st.region).name)}"><span class="chalk">${esc(regionStats.get(st.region).name)} ${icon('x', 14)}</span></button>` : '';
     paintMap();
   }
 
@@ -141,18 +128,21 @@ ${topbar([{ label: 'Makers' }])}
     }
     paintMap();
   } else {
-    $('#mapbox', root).remove();
+    $('#mapbox-wrap', root).remove();
+    $('.m-top', root).style.gridTemplateColumns = 'minmax(0, 1fr)';
+    $('.map-board', root)?.remove();
     tip.remove();
   }
   const showTip = (el) => {
     const r = regionStats.get(el.dataset.key);
-    if (r) tip.textContent = `${r.name} · ${plural(r.drinks, 'drink')} · ${plural(r.makers, 'maker')}`;
+    if (r && tip.isConnected) tip.textContent = `${r.name} · ${plural(r.drinks, 'drink')} · ${plural(r.makers, 'maker')}`;
   };
   const toggleRegion = (el) => {
     const k = el.dataset.key;
     st.region = st.region === k ? '' : k;
     st.country = st.region ? 'japan' : st.country;
     render(); writeUrl();
+    if (window.innerWidth < 768) $('#mcount', root)?.scrollIntoView({ block: 'center', behavior: reducedMotion() ? 'auto' : 'smooth' });   // the list's count comes into view
   };
 
   // ---- events ------------------------------------------------------------------------------------------------

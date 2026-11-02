@@ -1,0 +1,64 @@
+{
+ "id": "kabosu-umeshu-sakurayama",
+ "name": "Kabosu & Umeshu Sakurayama",
+ "category": "liqueur",
+ "sub": "umeshu",
+ "producer": {
+  "key": "kuge-honten",
+  "name": "Kuge Honten",
+  "native": null,
+  "location": "Oita, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 12,
+ "styles": [
+  "Flavoured"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "ABV",
+   "value": 12,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "500ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "500ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "500ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "500ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "500ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "hamada-ume-liqueur-gold-leaf",
+ "next": "akebono-color-umeshu-brown-label"
+}

@@ -1,0 +1,29 @@
+{
+ "key": "daejeon-blues-brewery",
+ "name": "Daejeon Blues Brewery",
+ "native": null,
+ "location": "Daejeon",
+ "region": "Daejeon",
+ "country": "South Korea",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "93-hwanggeum-gotgan",
+   "category": "makgeolli",
+   "sub": "all"
+  }
+ ],
+ "moreFromRegion": []
+}

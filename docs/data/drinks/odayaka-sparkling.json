@@ -1,0 +1,86 @@
+{
+ "id": "odayaka-sparkling",
+ "name": "Odayaka Sparkling",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "niida-honke",
+  "name": "Niida Honke",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 12,
+ "styles": [
+  "Sparkling"
+ ],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 85,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 12,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/odayaka-sparkling-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/odayaka-sparkling-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kaoruyama",
+  "natsu-odayaka",
+  "niida-shizenshu-melon-333",
+  "niida-taruzake",
+  "odayaka-30th",
+  "odayaka-junmai-ginjo",
+  "odayaka-junmai-ginjo-usunigori-nama",
+  "odayaka-kimoto-junmai-daiginjo"
+ ],
+ "prev": "noguchi-naohiko-sake-institute",
+ "next": "okura-junmai-namazake"
+}

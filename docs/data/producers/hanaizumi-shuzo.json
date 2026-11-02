@@ -1,0 +1,54 @@
+{
+ "key": "hanaizumi-shuzo",
+ "name": "Hanaizumi Shuzo",
+ "native": null,
+ "location": "Fukushima",
+ "region": "Fukushima",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 4,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 5
+ },
+ "drinks": [
+  {
+   "id": "hanami-roman",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "hito-roman",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "roman-jg",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "roman-satsuki-junmai-daiginjo-ikkai-hi-i",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "akebono-shuzo",
+  "niida-honke",
+  "puku-puku-brewing",
+  "ariga-jozo",
+  "haccoba-craft-sake-brewery",
+  "homare-shuzo",
+  "matsuzaki-shuzo",
+  "miyaizumi-meijo",
+  "ohki-daikichi-honten"
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "id": "akebono-color-umeshu-brown-label",
+ "name": "Akebono Color Umeshu Brown Label",
+ "category": "liqueur",
+ "sub": "umeshu",
+ "producer": {
+  "key": "akebono-shuzo",
+  "name": "Akebono Shuzo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "isshou-seishun-bessen-junmai-daiginjo",
+  "isshou-seishun",
+  "tenmei-arabashiri",
+  "tenmei-nakadori-urugo",
+  "tenmei-fukunoka",
+  "tenmei-junmai-ginjo-hiire-black-label",
+  "tenmei-kamenoo-65-kijoshu",
+  "tenmei-origarami",
+  "tenmei-nakadori-nigo-origarami-nama",
+  "tenmei-nakadori-zerogo-origarami-nama",
+  "tenmei-sarasara-junmai-lovely-summer"
+ ],
+ "prev": "kabosu-umeshu-sakurayama",
+ "next": "hamada-ume-liqueur-gold-leaf"
+}

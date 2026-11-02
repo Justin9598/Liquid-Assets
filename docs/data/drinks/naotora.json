@@ -1,0 +1,48 @@
+{
+ "id": "naotora",
+ "name": "Naotora Junmai Daiginjo Extra Nama Genshu",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "endo-shuzojo",
+  "name": "Endo Shuzojo",
+  "native": null,
+  "location": "Nagano, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "endo-daiginjo"
+ ],
+ "prev": "nabeshima-junmai-daiginjo-aiyama",
+ "next": "odayaka-30th"
+}

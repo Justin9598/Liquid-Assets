@@ -1,0 +1,62 @@
+{
+ "id": "akabu-junmai-daiginjo-red-emblem",
+ "name": "Akabu Junmai Daiginjo Red Emblem",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "akabu-shuzo",
+  "name": "Akabu Shuzo",
+  "native": null,
+  "location": "Iwate, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamada Nishiki"
+  },
+  {
+   "label": "Yeast",
+   "value": "Iwate yeast"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sake Hub",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "yamashiroya-fuga-junmai-daiginjo",
+ "next": "born-gold-junmai-daiginjo"
+}

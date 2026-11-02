@@ -1,0 +1,56 @@
+{
+ "id": "hanahato-kijoshu-8-years",
+ "name": "HANAHATO Kijoshu 8 Years",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "enoki-shuzo",
+  "name": "Enoki Shuzo",
+  "native": null,
+  "location": "Hiroshima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16.5,
+ "styles": [
+  "Kijoshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 65,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Nakate Shinsenbon"
+  },
+  {
+   "label": "ABV",
+   "value": 16.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Inter Rice",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "hakutsuru-awayuki-sparkling",
+ "next": "jukyu-gattolibero-557-white-cat"
+}

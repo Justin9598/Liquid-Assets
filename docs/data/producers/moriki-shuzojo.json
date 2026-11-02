@@ -1,0 +1,32 @@
+{
+ "key": "moriki-shuzojo",
+ "name": "Moriki Shuzojo",
+ "native": null,
+ "location": "Mie",
+ "region": "Mie",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "suppin-rumiko-no-sake-muroka-nama-genshu-no-6",
+   "category": "sake",
+   "sub": "ungraded"
+  }
+ ],
+ "moreFromRegion": [
+  "shimizu-seizaburo-shoten",
+  "isekado"
+ ]
+}
