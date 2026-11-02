@@ -87,7 +87,7 @@
   "key": "ardbeg",
   "name": "Ardbeg",
   "native": null,
-  "region": "Port Ellen, Islay",
+  "region": "Islay",
   "country": "Scotland",
   "location": "Port Ellen, Islay",
   "brands": [],
@@ -108,7 +108,7 @@
   "hasStory": false
  },
  {
-  "key": "asahi-shuzo",
+  "key": "asahi-shuzo-niigata",
   "name": "Asahi Shuzo",
   "native": null,
   "region": "Niigata",
@@ -120,8 +120,8 @@
   "hasStory": false
  },
  {
-  "key": "asahi-shuzo-dassai",
-  "name": "Asahi Shuzo (Dassai)",
+  "key": "asahi-shuzo-yamaguchi",
+  "name": "Asahi Shuzo",
   "native": null,
   "region": "Yamaguchi",
   "country": "Japan",
@@ -147,7 +147,7 @@
   "key": "bruichladdich",
   "name": "Bruichladdich",
   "native": null,
-  "region": "Bruichladdich, Islay",
+  "region": "Islay",
   "country": "Scotland",
   "location": "Bruichladdich, Islay",
   "brands": [],
@@ -207,7 +207,7 @@
   "key": "dassai-blue",
   "name": "Dassai Blue",
   "native": null,
-  "region": "Hyde Park, New York",
+  "region": "New York",
   "country": "USA",
   "location": "Hyde Park, New York",
   "brands": [],
@@ -216,38 +216,14 @@
   "hasStory": false
  },
  {
-  "key": "date-seven-koganesawa-style-miyagi-collective",
-  "name": "Date Seven (Koganesawa Style, Miyagi Collective)",
+  "key": "date-seven",
+  "name": "Date Seven",
   "native": null,
   "region": "Miyagi",
   "country": "Japan",
   "location": "Miyagi",
   "brands": [],
-  "drinkCount": 1,
-  "favourites": 0,
-  "hasStory": false
- },
- {
-  "key": "date-seven-yamawa-haginotsuru-miyagi-collective",
-  "name": "Date Seven (Yamawa & Haginotsuru, Miyagi Collective)",
-  "native": null,
-  "region": "Miyagi",
-  "country": "Japan",
-  "location": "Miyagi",
-  "brands": [],
-  "drinkCount": 1,
-  "favourites": 0,
-  "hasStory": false
- },
- {
-  "key": "date-seven-yamawa-style-miyagi-collective",
-  "name": "Date Seven (Yamawa Style, Miyagi Collective)",
-  "native": null,
-  "region": "Miyagi",
-  "country": "Japan",
-  "location": "Miyagi",
-  "brands": [],
-  "drinkCount": 1,
+  "drinkCount": 3,
   "favourites": 0,
   "hasStory": false
  },
@@ -432,8 +408,8 @@
   "hasStory": false
  },
  {
-  "key": "hakushika-tatsuuma-honke",
-  "name": "Hakushika (Tatsuuma Honke)",
+  "key": "hakushika",
+  "name": "Hakushika",
   "native": null,
   "region": "Hyogo",
   "country": "Japan",
@@ -948,8 +924,8 @@
   "hasStory": false
  },
  {
-  "key": "konohana-brewery-allwright",
-  "name": "Konohana Brewery (ALLWRIGHT)",
+  "key": "konohana-brewery",
+  "name": "Konohana Brewery",
   "native": null,
   "region": "Tokyo",
   "country": "Japan",
@@ -1020,18 +996,6 @@
   "hasStory": false
  },
  {
-  "key": "machida-shuzo",
-  "name": "Machida Shuzo",
-  "native": null,
-  "region": "Gunma",
-  "country": "Japan",
-  "location": "Gunma",
-  "brands": [],
-  "drinkCount": 1,
-  "favourites": 0,
-  "hasStory": false
- },
- {
   "key": "machida-shuzoten",
   "name": "Machida Shuzoten",
   "native": null,
@@ -1039,7 +1003,7 @@
   "country": "Japan",
   "location": "Gunma",
   "brands": [],
-  "drinkCount": 3,
+  "drinkCount": 4,
   "favourites": 0,
   "hasStory": false
  },
@@ -1308,8 +1272,8 @@
   "hasStory": false
  },
  {
-  "key": "obuse-winery-sogga-pere-et-fils",
-  "name": "Obuse Winery (Sogga Père et Fils)",
+  "key": "obuse-winery",
+  "name": "Obuse Winery",
   "native": null,
   "region": "Nagano",
   "country": "Japan",
@@ -1347,7 +1311,7 @@
   "key": "omoyashuzo",
   "name": "Omoyashuzo",
   "native": null,
-  "region": "Iki, Nagasaki",
+  "region": "Nagasaki",
   "country": "Japan",
   "location": "Iki, Nagasaki",
   "brands": [],
@@ -1416,8 +1380,8 @@
   "hasStory": false
  },
  {
-  "key": "ricewine-k-k-hinemos",
-  "name": "RiceWine K.K. (HINEMOS)",
+  "key": "ricewine-k-k",
+  "name": "RiceWine K.K.",
   "native": null,
   "region": "Kanagawa",
   "country": "Japan",
@@ -1764,8 +1728,8 @@
   "hasStory": false
  },
  {
-  "key": "wakaze-kura-grand-paris",
-  "name": "Wakaze (Kura Grand Paris)",
+  "key": "wakaze",
+  "name": "Wakaze",
   "native": null,
   "region": "Paris",
   "country": "France",
@@ -1779,7 +1743,7 @@
   "key": "woodford-reserve",
   "name": "Woodford Reserve",
   "native": null,
-  "region": "Versailles, Kentucky",
+  "region": "Kentucky",
   "country": "USA",
   "location": "Versailles, Kentucky",
   "brands": [],
@@ -1800,18 +1764,6 @@
   "hasStory": false
  },
  {
-  "key": "yamamoto-gomei-kaisha",
-  "name": "Yamamoto Gomei Kaisha",
-  "native": null,
-  "region": "Akita",
-  "country": "Japan",
-  "location": "Akita",
-  "brands": [],
-  "drinkCount": 4,
-  "favourites": 0,
-  "hasStory": false
- },
- {
   "key": "yamamoto-shuzoten",
   "name": "Yamamoto Shuzoten",
   "native": null,
@@ -1819,7 +1771,7 @@
   "country": "Japan",
   "location": "Akita",
   "brands": [],
-  "drinkCount": 2,
+  "drinkCount": 6,
   "favourites": 0,
   "hasStory": false
  },

@@ -4,8 +4,8 @@
  "category": "sake",
  "sub": "junmai-daiginjo",
  "producer": {
-  "key": "date-seven-yamawa-haginotsuru-miyagi-collective",
-  "name": "Date Seven (Yamawa & Haginotsuru, Miyagi Collective)",
+  "key": "date-seven",
+  "name": "Date Seven",
   "native": null,
   "location": "Miyagi, Japan",
   "founded": null,
@@ -189,7 +189,10 @@
    "h": 1200
   }
  ],
- "moreFromProducer": [],
+ "moreFromProducer": [
+  "date-seven-season-2-episode-5-koganesawa",
+  "date-seven-season-2-episode-5-yamawa"
+ ],
  "prev": "dassai-blue-type-50-junmai-daiginjo",
  "next": "date-seven-season-2-episode-5-koganesawa"
 }

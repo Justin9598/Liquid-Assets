@@ -13,10 +13,10 @@
  "sources": [],
  "related": [],
  "tally": {
-  "drinks": 2,
+  "drinks": 6,
   "categories": 1,
   "favourites": 0,
-  "timesHad": 2
+  "timesHad": 6
  },
  "drinks": [
   {
@@ -25,13 +25,32 @@
    "sub": "junmai-ginjo"
   },
   {
+   "id": "yamamoto-junmai-ginjo-wain",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "yamamoto-midnight-blue-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "yamamoto-no7-kobo-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
    "id": "yamamoto-sunset-orange-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "yamamoto-sunshine-yellow-yamahai-junmai-ginjo",
    "category": "sake",
    "sub": "junmai-ginjo"
   }
  ],
  "moreFromRegion": [
-  "yamamoto-gomei-kaisha",
   "ine-to-agave",
   "akita-seishu",
   "aramasa-shuzo",

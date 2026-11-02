@@ -3,7 +3,7 @@
  "name": "Ardbeg",
  "native": null,
  "location": "Port Ellen, Islay",
- "region": "Port Ellen, Islay",
+ "region": "Islay",
  "country": "Scotland",
  "founded": null,
  "master": null,
@@ -25,5 +25,7 @@
    "sub": "whisky"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [
+  "bruichladdich"
+ ]
 }

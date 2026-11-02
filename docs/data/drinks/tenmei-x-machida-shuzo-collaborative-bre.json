@@ -4,8 +4,8 @@
  "category": "sake",
  "sub": "junmai",
  "producer": {
-  "key": "machida-shuzo",
-  "name": "Machida Shuzo",
+  "key": "machida-shuzoten",
+  "name": "Machida Shuzoten",
   "native": null,
   "location": "Gunma, Japan",
   "founded": null,
@@ -45,7 +45,11 @@
    "h": 1200
   }
  ],
- "moreFromProducer": [],
+ "moreFromProducer": [
+  "machida-jungin-55-omachi",
+  "machida-tokubetsu-junmai-55-gohyakumangoku",
+  "machida-55"
+ ],
  "prev": "tenmei-sarasara-junmai-lovely-summer",
  "next": "tenranzan-natsu-junmai"
 }

@@ -4,8 +4,8 @@
  "category": "sake",
  "sub": "junmai-daiginjo",
  "producer": {
-  "key": "date-seven-koganesawa-style-miyagi-collective",
-  "name": "Date Seven (Koganesawa Style, Miyagi Collective)",
+  "key": "date-seven",
+  "name": "Date Seven",
   "native": null,
   "location": "Miyagi, Japan",
   "founded": null,
@@ -60,7 +60,10 @@
    "h": 1200
   }
  ],
- "moreFromProducer": [],
+ "moreFromProducer": [
+  "date-seven-season-2-episode-2",
+  "date-seven-season-2-episode-5-yamawa"
+ ],
  "prev": "date-seven-season-2-episode-2",
  "next": "date-seven-season-2-episode-5-yamawa"
 }
