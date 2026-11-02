@@ -6,11 +6,11 @@
  "producer": {
   "key": "chiyo-shuzo",
   "name": "Chiyo Shuzo",
-  "native": null,
-  "location": "Nara, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "千代酒造",
+  "location": "Gose, Nara, Japan",
+  "founded": 1873,
+  "about": "Chiyo Shuzo has brewed since 1873 in Kujira, a district of Gose, Nara, at the foot of Mount Katsuragi. It pumps water from its own well, fed by the mountain's groundwater, and sells sake under the Kujira and Shinomine labels.",
+  "url": "https://chiyoshuzo.co.jp/"
  },
  "abv": 15,
  "styles": [

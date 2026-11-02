@@ -1,16 +1,27 @@
 {
  "key": "endo-shuzojo",
  "name": "Endo Shuzojo",
- "native": null,
- "location": "Nagano",
+ "native": "遠藤酒造場",
+ "location": "Suzaka, Nagano",
  "region": "Nagano",
  "country": "Japan",
- "founded": null,
+ "founded": 1864,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.keiryu.jp/",
+ "brands": [
+  "Keiryu",
+  "Naotora",
+  "Suisei",
+  "Asashibori"
+ ],
+ "about": [
+  "Endo Shuzojo has brewed since 1864 in Suzaka, Nagano, as the sake brewery appointed to the Suzaka domain. The sixth head, Hidesaburo Endo, took over in 1982 at the age of 21, when the brewery had only three employees.",
+  "Keiryu, launched in 1988, became its main label, and Asashibori, Doburoku, Naotora and Suisei followed. It marked its 150th anniversary in 2014."
+ ],
+ "sources": [
+  "https://www.keiryu.jp/f/about",
+  "https://www.sakenomy.jp/en/brewery/K01N020083/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

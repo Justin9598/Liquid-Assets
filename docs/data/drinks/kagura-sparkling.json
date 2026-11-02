@@ -6,11 +6,11 @@
  "producer": {
   "key": "matsui-shuzo",
   "name": "Matsui Shuzo",
-  "native": null,
-  "location": "Kyoto, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "松井酒造",
+  "location": "Kyoto, Kyoto, Japan",
+  "founded": 1726,
+  "about": "Matsui Shuzo makes sake at its Kamogawa brewery in Sakyo Ward, Kyoto. The family began brewing in 1726 in Kasumi, a Sea of Japan port in Tajima, now in Hyogo, and moved the brewery to Kyoto late in the Edo period.",
+  "url": "https://matsuishuzo.com/"
  },
  "abv": 7,
  "styles": [

@@ -6,11 +6,11 @@
  "producer": {
   "key": "endo-shuzojo",
   "name": "Endo Shuzojo",
-  "native": null,
-  "location": "Nagano, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "遠藤酒造場",
+  "location": "Suzaka, Nagano, Japan",
+  "founded": 1864,
+  "about": "Endo Shuzojo has brewed since 1864 in Suzaka, Nagano, as the sake brewery appointed to the Suzaka domain. The sixth head, Hidesaburo Endo, took over in 1982 at the age of 21, when the brewery had only three employees.",
+  "url": "https://www.keiryu.jp/"
  },
  "abv": null,
  "styles": [

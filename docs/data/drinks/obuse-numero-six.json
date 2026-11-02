@@ -6,11 +6,11 @@
  "producer": {
   "key": "obuse-winery",
   "name": "Obuse Winery",
-  "native": null,
-  "location": "Nagano, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "小布施ワイナリー",
+  "location": "Obuse, Nagano, Japan",
+  "founded": 1942,
+  "about": "Obuse Winery was founded by Ichinojo Soga in Obuse, Nagano. Its own history begins in 1942, when it took a wine licence during the war and made mostly cider. A wine writer adds that the building began as a sake brewery in 1842.",
+  "url": "http://obusewinery.com/"
  },
  "abv": 15,
  "styles": [],

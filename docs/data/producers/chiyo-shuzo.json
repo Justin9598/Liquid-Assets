@@ -1,16 +1,25 @@
 {
  "key": "chiyo-shuzo",
  "name": "Chiyo Shuzo",
- "native": null,
- "location": "Nara",
+ "native": "千代酒造",
+ "location": "Gose, Nara",
  "region": "Nara",
  "country": "Japan",
- "founded": null,
+ "founded": 1873,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://chiyoshuzo.co.jp/",
+ "brands": [
+  "Kujira",
+  "Shinomine"
+ ],
+ "about": [
+  "Chiyo Shuzo has brewed since 1873 in Kujira, a district of Gose, Nara, at the foot of Mount Katsuragi. It pumps water from its own well, fed by the mountain's groundwater, and sells sake under the Kujira and Shinomine labels.",
+  "In 1996 it began growing its own Yamadanishiki around the brewery, and the fields have kept growing since. The company says rice growing and brewing feed back into each other, and it treats each field's rice as a different grain."
+ ],
+ "sources": [
+  "https://chiyoshuzo.co.jp/company/",
+  "https://chiyoshuzo.co.jp/commitment/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

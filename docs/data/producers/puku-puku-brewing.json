@@ -1,16 +1,24 @@
 {
  "key": "puku-puku-brewing",
  "name": "Puku Puku Brewing",
- "native": null,
- "location": "Fukushima",
+ "native": "ぷくぷく醸造",
+ "location": "Minamisoma, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
- "founded": null,
+ "founded": 2022,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.instagram.com/pukupukubrewing/",
+ "brands": [
+  "Pukupuku Brewing"
+ ],
+ "about": [
+  "Puku Puku Brewing was set up in July 2022 to bring farmland back along the coast of Fukushima through sake. It began as a phantom brewery, renting tank space at breweries in and outside the prefecture and using rice from the coastal Hamadori area.",
+  "In autumn 2024 it opened its own brewery and standing bar in Odaka, Minamisoma. It makes sake and doburoku that ferment naturally without added yeast, and it borrows methods from craft beer, such as hops and wooden barrels."
+ ],
+ "sources": [
+  "https://www.sakenomy.jp/en/brewery/K01N007076",
+  "https://hellosake.com/en/breweries/OzSil6VTbQnx7ApLVCQd"
+ ],
  "related": [],
  "tally": {
   "drinks": 4,

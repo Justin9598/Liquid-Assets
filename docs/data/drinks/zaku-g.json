@@ -6,11 +6,11 @@
  "producer": {
   "key": "shimizu-seizaburo-shoten",
   "name": "Shimizu Seizaburo Shoten",
-  "native": null,
-  "location": "Mie, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "清水清三郎商店",
+  "location": "Suzuka, Mie, Japan",
+  "founded": 1869,
+  "about": "Shimizu Seizaburo Shoten has brewed in Suzuka, Mie, since 1869, when it opened as Daikokuya Shimizu Seizaburo Shoten. It uses spring water from the Suzuka mountains and small tanks, and it manages each batch closely.",
+  "url": "https://seizaburo.jp/"
  },
  "abv": 15,
  "styles": [

@@ -6,11 +6,11 @@
  "producer": {
   "key": "izumibashi-shuzo",
   "name": "Izumibashi Shuzo",
-  "native": null,
-  "location": "Kanagawa, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "泉橋酒造",
+  "location": "Ebina, Kanagawa, Japan",
+  "founded": 1857,
+  "about": "Izumibashi Shuzo has brewed since 1857 in Ebina, Kanagawa, on farmland the Hashiba family had worked for over 400 years. The name joins the Izumi river that once ran beside the brewery with the family's trade name, Hashiba.",
+  "url": "https://izumibashi.com/"
  },
  "abv": 17,
  "styles": [

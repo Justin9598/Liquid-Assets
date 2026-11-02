@@ -1,16 +1,24 @@
 {
  "key": "sendai-station-brewery-fermenteria",
  "name": "Sendai Station Brewery Fermenteria",
- "native": null,
- "location": "Miyagi",
+ "native": "仙台駅ブルワリー ファーメンテリア",
+ "location": "Sendai, Miyagi",
  "region": "Miyagi",
  "country": "Japan",
- "founded": null,
+ "founded": 2024,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.instagram.com/sakebabysendai/",
+ "brands": [
+  "Fermenteria"
+ ],
+ "about": [
+  "Sendai Station Brewery Fermenteria is a small brewery on the first floor of Sendai Station, run by the company Shokagura. It opened in spring 2024. The name joins the word fermentation with an ending that means a shop.",
+  "Thirty clear tanks line a wall so visitors can watch rice turn into sake. The layout is based on MiCURA, a home sake-brewing kit developed by the company's head. Its craft sake and fermented drinks are sold to take away and supplied to the restaurants around the brewery."
+ ],
+ "sources": [
+  "https://straightpress.jp/20240109/1047566",
+  "https://micura.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 3,

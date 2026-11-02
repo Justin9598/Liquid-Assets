@@ -6,11 +6,11 @@
  "producer": {
   "key": "asahi-shuzo-niigata",
   "name": "Asahi Shuzo",
-  "native": null,
-  "location": "Niigata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "朝日酒造",
+  "location": "Nagaoka, Niigata, Japan",
+  "founded": 1830,
+  "about": "Asahi Shuzo began brewing in 1830 in what is now Nagaoka, Niigata, under the shop name Kubotaya, and became a company in 1920. Its brewing follows the Koshiji tōji tradition.",
+  "url": "https://www.asahi-shuzo.co.jp/"
  },
  "abv": 15,
  "styles": [],

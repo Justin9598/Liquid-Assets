@@ -1,16 +1,29 @@
 {
  "key": "matsui-shuzo",
  "name": "Matsui Shuzo",
- "native": null,
- "location": "Kyoto",
+ "native": "松井酒造",
+ "location": "Kyoto, Kyoto",
  "region": "Kyoto",
  "country": "Japan",
- "founded": null,
+ "founded": 1726,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://matsuishuzo.com/",
+ "brands": [
+  "Kagura",
+  "Mitsugo",
+  "Fuji Chitose"
+ ],
+ "about": [
+  "Matsui Shuzo makes sake at its Kamogawa brewery in Sakyo Ward, Kyoto. The family began brewing in 1726 in Kasumi, a Sea of Japan port in Tajima, now in Hyogo, and moved the brewery to Kyoto late in the Edo period.",
+  "Work on the city's subway cut off its well water, and brewing stopped for decades while the licence was kept through contract production. In 2009 the fourteenth head restored the brewery on the same site, and since 2012 his son has brewed as owner and tōji.",
+  "Its main label is Kagura, sold unfiltered and undiluted."
+ ],
+ "sources": [
+  "https://matsuishuzo.com/?mode=f2",
+  "https://matsuishuzo.com/?mode=f6",
+  "https://matsuishuzo.com/?mode=f3",
+  "https://matsuishuzo.com/?mode=f1"
+ ],
  "related": [],
  "tally": {
   "drinks": 4,
