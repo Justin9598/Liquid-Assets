@@ -3,7 +3,7 @@
 // shows a plain placeholder in its place, so the layout can still be checked.
 import { img } from './data.js';
 import { esc } from './util.js';
-import { labelArt } from './bottles.js';
+import { labelArt } from './labels.js';
 
 const pct = (v) => `${+(v * 100).toFixed(3)}%`;
 

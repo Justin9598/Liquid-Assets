@@ -1,0 +1,66 @@
+{
+ "id": "suppin-rumiko-no-sake-muroka-nama-genshu-no-6",
+ "name": "Suppin Rumiko no Sake Muroka Nama Genshu No.6",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "moriki-shuzojo",
+  "name": "Moriki Shuzojo",
+  "native": null,
+  "location": "Mie, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki (Koji) & Hattannishiki (Kakemai)"
+  },
+  {
+   "label": "Yeast",
+   "value": "Yeast No.6"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Suiraku",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/suppin-rumiko-no-sake-muroka-nama-genshu-no-6-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "noguchi-naohiko-natsu-no-namazake-2026",
+ "next": "taiheikai-sparkling"
+}

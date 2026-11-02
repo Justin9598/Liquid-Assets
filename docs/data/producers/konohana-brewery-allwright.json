@@ -1,0 +1,29 @@
+{
+ "key": "konohana-brewery-allwright",
+ "name": "Konohana Brewery (ALLWRIGHT)",
+ "native": null,
+ "location": "Tokyo",
+ "region": "Tokyo",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "allwright-momo",
+   "category": "sake",
+   "sub": "craft-sake"
+  }
+ ],
+ "moreFromRegion": []
+}

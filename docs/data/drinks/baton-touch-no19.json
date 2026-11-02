@@ -1,0 +1,51 @@
+{
+ "id": "baton-touch-no19",
+ "name": "Baton Touch No.19",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "puku-puku-brewing",
+  "name": "Puku Puku Brewing",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Hopped",
+  "Doburoku"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "Akebono"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sakerama",
+   "price": 15.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "fest-hop-doburoku",
+  "wadaya-soda-pop-hop",
+  "kikiki-hopped-sour"
+ ],
+ "prev": "allwright-momo",
+ "next": "citrene"
+}

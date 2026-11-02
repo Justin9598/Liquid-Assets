@@ -1,0 +1,73 @@
+{
+ "id": "asahitaka-tokusen-honjozo-namazake",
+ "name": "Asahitaka Tokusen Honjozo Namazake",
+ "category": "sake",
+ "sub": "honjozo",
+ "producer": {
+  "key": "takagi-shuzo",
+  "name": "Takagi Shuzo",
+  "native": null,
+  "location": "Yamagata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Nama"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Honjozo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Miyamanishiki, Sakemirai"
+  },
+  {
+   "label": "Yeast",
+   "value": "Kyokai No.7"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "DoSake Bistro",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/asahitaka-tokusen-honjozo-namazake-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "hakushika-namachozou",
+ "next": "hakushika-namachozou"
+}

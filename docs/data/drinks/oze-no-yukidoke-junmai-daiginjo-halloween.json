@@ -1,0 +1,72 @@
+{
+ "id": "oze-no-yukidoke-junmai-daiginjo-halloween",
+ "name": "Oze no Yukidoke Junmai Daiginjo Halloween",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "ryujin-shuzo",
+  "name": "Ryujin Shuzo",
+  "native": null,
+  "location": "Gunma, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-01",
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/oze-no-yukidoke-junmai-daiginjo-halloween-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/oze-no-yukidoke-junmai-daiginjo-halloween-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "ryujin-dragon-god-junmai-daiginjo-namazume"
+ ],
+ "prev": "odayaka-kimoto-junmai-daiginjo",
+ "next": "roman-satsuki-junmai-daiginjo-ikkai-hi-i"
+}

@@ -1,0 +1,69 @@
+{
+ "id": "zaku-g",
+ "name": "Zaku Impression Type G",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "shimizu-seizaburo-shoten",
+  "name": "Shimizu Seizaburo Shoten",
+  "native": null,
+  "location": "Mie, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Muroka",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Mie no Yume"
+  },
+  {
+   "label": "Yeast",
+   "value": "Kyokai No.7"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 56.7,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "zaku-m",
+  "zaku-omachi-2026"
+ ],
+ "prev": "yoshidagura-u-night-and-dance-junmai",
+ "next": "akishika-moto-plus-one-junmai-muroka-nam"
+}

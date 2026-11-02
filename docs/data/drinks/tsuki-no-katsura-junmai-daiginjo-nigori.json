@@ -1,0 +1,66 @@
+{
+ "id": "tsuki-no-katsura-junmai-daiginjo-nigori",
+ "name": "TSUKI NO KATSURA Junmai Daiginjo Nigori",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "masuda-tokubee-shoten",
+  "name": "Masuda Tokubee Shoten",
+  "native": null,
+  "location": "Kyoto, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17.2,
+ "styles": [
+  "Nigori"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Iwai"
+  },
+  {
+   "label": "SMV",
+   "value": 1,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 17.2,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Inter Rice",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "tenmei-nakadori-urugo",
+ "next": "yamashiroya-fuga-junmai-daiginjo"
+}

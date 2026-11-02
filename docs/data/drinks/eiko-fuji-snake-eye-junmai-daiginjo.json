@@ -1,0 +1,74 @@
+{
+ "id": "eiko-fuji-snake-eye-junmai-daiginjo",
+ "name": "Eiko Fuji Snake Eye Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "fuji-shuzo",
+  "name": "Fuji Shuzo",
+  "native": null,
+  "location": "Yamagata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16.9,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Wakamizu"
+  },
+  {
+   "label": "Yeast",
+   "value": "Wine yeast"
+  },
+  {
+   "label": "SMV",
+   "value": 4,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.9
+  },
+  {
+   "label": "ABV",
+   "value": 16.9,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sake Hub",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "eiko-fuji-koh-rin"
+ ],
+ "prev": "eiko-fuji-koh-rin",
+ "next": "hakutsuru-junmai-daiginjo"
+}

@@ -1,0 +1,76 @@
+{
+ "id": "taka-tokubetsu-junmai-fukamari",
+ "name": "Taka Tokubetsu Junmai Fukamari",
+ "category": "sake",
+ "sub": "tokubetsu-junmai",
+ "producer": {
+  "key": "nagayama-honke-shuzojo",
+  "name": "Nagayama Honke Shuzojo",
+  "native": null,
+  "location": "Yamaguchi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Tokubetsu Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Omachi (Okayama) 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-21",
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 15.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/taka-tokubetsu-junmai-fukamari-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/taka-tokubetsu-junmai-fukamari-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "taka-sparkling"
+ ],
+ "prev": "shizenango-bio-tokubetsu-junmai",
+ "next": "utama-native-tokubetsu-junmai"
+}

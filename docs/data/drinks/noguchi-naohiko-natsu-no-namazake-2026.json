@@ -1,0 +1,69 @@
+{
+ "id": "noguchi-naohiko-natsu-no-namazake-2026",
+ "name": "Noguchi Naohiko Natsu no Namazake 2026",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "noguchi-naohiko-sake-institute",
+  "name": "Noguchi Naohiko Sake Institute",
+  "native": null,
+  "location": "Ishikawa, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [
+  "Muroka",
+  "Nama"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-03",
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 10.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/noguchi-naohiko-natsu-no-namazake-2026-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/noguchi-naohiko-natsu-no-namazake-2026-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "noguchi-naohiko-sake-institute"
+ ],
+ "prev": "mua-pure-rice",
+ "next": "suppin-rumiko-no-sake-muroka-nama-genshu-no-6"
+}

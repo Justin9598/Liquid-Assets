@@ -1,0 +1,45 @@
+{
+ "key": "inoue-seikichi-shoten",
+ "name": "Inoue Seikichi Shoten",
+ "native": null,
+ "location": "Tochigi",
+ "region": "Tochigi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 3,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 5
+ },
+ "drinks": [
+  {
+   "id": "sawahime-daiginjo-tobingakoi-origarami-nama",
+   "category": "sake",
+   "sub": "daiginjo"
+  },
+  {
+   "id": "sawahime-ginjo",
+   "category": "sake",
+   "sub": "ginjo"
+  },
+  {
+   "id": "sawahime-yamahai-junmai-shin-jizake-sengen",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "iinuma-meijo",
+  "kobayashi-shuzo",
+  "nasu-kohgen-beer",
+  "tomikawa-shuzoten",
+  "wakakoma-shuzo"
+ ]
+}

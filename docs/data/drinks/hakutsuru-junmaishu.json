@@ -1,0 +1,72 @@
+{
+ "id": "hakutsuru-junmaishu",
+ "name": "Hakutsuru Junmaishu",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "hakutsuru-shuzo",
+  "name": "Hakutsuru Shuzo",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 70,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hakutsuru Nishiki, Nakate Shinsenbon"
+  },
+  {
+   "label": "SMV",
+   "value": 4,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.3
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shopee",
+   "price": 22.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "hakutsuru-awayuki-sparkling",
+  "hakutsuru-junmai-daiginjo",
+  "hakutsuru-tokusen-daiginjo"
+ ],
+ "prev": "jozen-hachimitsu",
+ "next": "harada-natsu"
+}

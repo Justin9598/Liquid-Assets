@@ -1,0 +1,76 @@
+{
+ "id": "natsu-odayaka",
+ "name": "Natsu no Odayaka Junmai Ginjo",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "niida-honke",
+  "name": "Niida Honke",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16.5,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku"
+  },
+  {
+   "label": "ABV",
+   "value": 16.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 53.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/natsu-odayaka-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kaoruyama",
+  "niida-shizenshu-melon-333",
+  "niida-taruzake",
+  "odayaka-30th",
+  "odayaka-junmai-ginjo",
+  "odayaka-junmai-ginjo-usunigori-nama",
+  "odayaka-kimoto-junmai-daiginjo",
+  "odayaka-sparkling"
+ ],
+ "prev": "nanbubijin-junmaiginjo-princess-michiko",
+ "next": "niida-shizenshu-melon-333"
+}

@@ -1,0 +1,37 @@
+{
+ "key": "tajime-shuzo",
+ "name": "Tajime Shuzo",
+ "native": null,
+ "location": "Hyogo",
+ "region": "Hyogo",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "takezumi-bamboo-spring",
+   "category": "sake",
+   "sub": "ungraded"
+  }
+ ],
+ "moreFromRegion": [
+  "fukunishiki",
+  "hakutsuru-shuzo",
+  "hakushika-tatsuuma-honke",
+  "eigashima-shuzo",
+  "kiku-masamune-shuzo",
+  "nihonsakari",
+  "shimomura-shuzoten"
+ ]
+}

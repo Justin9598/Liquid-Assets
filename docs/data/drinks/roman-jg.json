@@ -1,0 +1,75 @@
+{
+ "id": "roman-jg",
+ "name": "Roman Junmai Ginjo",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "hanaizumi-shuzo",
+  "name": "Hanaizumi Shuzo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku, Yumenokaori, Himenomochi"
+  },
+  {
+   "label": "Yeast",
+   "value": "Utsukushima Yume yeast"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 46.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/roman-jg-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "hanami-roman",
+  "hito-roman",
+  "roman-satsuki-junmai-daiginjo-ikkai-hi-i"
+ ],
+ "prev": "okuharima-harumachikogarete",
+ "next": "sara-junmai-ginjo"
+}

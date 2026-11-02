@@ -1,0 +1,70 @@
+{
+ "id": "93-hwanggeum-gotgan",
+ "name": "93, Hwanggeum Gotgan",
+ "category": "makgeolli",
+ "sub": "all",
+ "producer": {
+  "key": "daejeon-blues-brewery",
+  "name": "Daejeon Blues Brewery",
+  "native": null,
+  "location": "Daejeon, South Korea",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 7,
+ "styles": [
+  "Nama"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Base",
+   "value": "Glutinous rice (Nonghyup), rice flour"
+  },
+  {
+   "label": "Maturation",
+   "value": "Long cold maturation"
+  },
+  {
+   "label": "ABV",
+   "value": 7,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "930ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-14",
+   "size": "930ml Bottle",
+   "where": "Mangwoo Makgeolli Bistro",
+   "price": 23.85,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/93-hwanggeum-gotgan-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/93-hwanggeum-gotgan-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "traditional-jeju-makgeolli",
+ "next": "isibo-wonju"
+}

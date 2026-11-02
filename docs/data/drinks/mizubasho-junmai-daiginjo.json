@@ -1,0 +1,63 @@
+{
+ "id": "mizubasho-junmai-daiginjo",
+ "name": "Mizubasho Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "nagai-shuzo",
+  "name": "Nagai Shuzo",
+  "native": null,
+  "location": "Gunma, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki"
+  },
+  {
+   "label": "SMV",
+   "value": 1,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Taipei Alcohol Fair",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "mizubasho-artist-series-floral-sparkling-2023",
+  "mizubasho-junmai-daiginjo-premium",
+  "mizubasho-junmai-ginjo-sparkling-dry",
+  "mizubasho-natsusake-junmai-ginjo-origarami-namachozo"
+ ],
+ "prev": "miyoshino-jozo-hanatomoe-jundaidai-junmai-daig",
+ "next": "mizubasho-junmai-daiginjo-premium"
+}

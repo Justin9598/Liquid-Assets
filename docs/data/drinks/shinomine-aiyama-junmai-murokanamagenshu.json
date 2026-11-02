@@ -1,0 +1,77 @@
+{
+ "id": "shinomine-aiyama-junmai-murokanamagenshu",
+ "name": "Shinomine Aiyama Junmai Murokanamagenshu",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "chiyo-shuzo",
+  "name": "Chiyo Shuzo",
+  "native": null,
+  "location": "Nara, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 65,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Aizan"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.8
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Suiraku",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/shinomine-aiyama-junmai-murokanamagenshu-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kujira-junmai-yamadanishiki-kimoto-nama-genshu-80"
+ ],
+ "prev": "shichifukujin-super-dry-junmai",
+ "next": "sokuu-junmai-miyamanishiki"
+}

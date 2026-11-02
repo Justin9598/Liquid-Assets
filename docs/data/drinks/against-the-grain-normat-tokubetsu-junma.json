@@ -1,0 +1,67 @@
+{
+ "id": "against-the-grain-normat-tokubetsu-junma",
+ "name": "Against The Grain (Normat) Tokubetsu Junmai",
+ "category": "sake",
+ "sub": "tokubetsu-junmai",
+ "producer": {
+  "key": "kubiki-shuzo",
+  "name": "Kubiki Shuzo",
+  "native": null,
+  "location": "Niigata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Tokubetsu Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku 25%, Tsukiakari 75%"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Woodstock",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/against-the-grain-normat-tokubetsu-junma-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "utama-native-tokubetsu-junmai",
+ "next": "denshu-tokubetsu-junmai"
+}

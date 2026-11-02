@@ -255,6 +255,9 @@ def validate_manifest(m, issues):
             bad(f"{kind}.sign needs x0, y0, x1, y1 fractions")
         if not _frac(P.get("counterTop")):
             bad(f"{kind}.counterTop must be a fraction")
+        ct = P.get("content_top")
+        if not _frac(ct) or (_frac(sg.get("y1")) and ct < sg["y1"]) or ct > 0.6:
+            bad(f"{kind}.content_top must be a fraction at or below the sign's bottom edge (sign.y1) and at most 0.6")
         c = P.get("counter")
         if c is not None and c.get("mode") == "tabs" and not _frac(c.get("tabsY")):
             bad(f"{kind}.counter in tabs mode needs tabsY")
@@ -275,7 +278,7 @@ def validate_manifest(m, issues):
     return ok
 
 
-FEATURES = ("counter",)                  # desktop features that need phone values on the tall plate (Plan 07 section 5.3)
+FEATURES = ("counter", "content_top")   # desktop features that need phone values on the tall plate (Plan 07 section 5.3, Plan 08 section 3.1)
 
 
 def check_parity(manifest, info, issues):
@@ -333,7 +336,7 @@ def merge(manifest, info):
     for kind, P in manifest["plates"].items():
         conv = info.get("plates", {}).get(kind)
         plate = {"ratio": conv["ratio"] if conv else P["ratio"], "shelves": P["shelves"], "sign": P["sign"],
-                 "counterTop": P["counterTop"], "anchors": P["anchors"]}
+                 "content_top": P["content_top"], "counterTop": P["counterTop"], "anchors": P["anchors"]}
         if conv:
             plate["files"] = conv["files"]
         out["plates"][kind] = plate

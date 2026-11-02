@@ -1,0 +1,34 @@
+{
+ "key": "seto-shuzoten",
+ "name": "Seto Shuzoten",
+ "native": null,
+ "location": "Kanagawa",
+ "region": "Kanagawa",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "setoichi-kakupi-junmai-ginjo-omachi",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "izumibashi-shuzo",
+  "ricewine-k-k-hinemos",
+  "kawanishiya-shuzoten",
+  "oya-takashi-shuzo"
+ ]
+}

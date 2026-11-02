@@ -1,0 +1,39 @@
+{
+ "key": "homare-shuzo",
+ "name": "Homare Shuzo",
+ "native": null,
+ "location": "Fukushima",
+ "region": "Fukushima",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "aizu-homare-daiginjo",
+   "category": "sake",
+   "sub": "daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "akebono-shuzo",
+  "niida-honke",
+  "hanaizumi-shuzo",
+  "puku-puku-brewing",
+  "ariga-jozo",
+  "haccoba-craft-sake-brewery",
+  "matsuzaki-shuzo",
+  "miyaizumi-meijo",
+  "ohki-daikichi-honten"
+ ]
+}

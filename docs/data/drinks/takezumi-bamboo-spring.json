@@ -1,0 +1,57 @@
+{
+ "id": "takezumi-bamboo-spring",
+ "name": "Chikusen \"Bamboo Spring\"",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "tajime-shuzo",
+  "name": "Tajime Shuzo",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Suiraku",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/takezumi-bamboo-spring-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "wufeng-ji-qing",
+ "next": "fukunishiki-low-alcohol-junmai"
+}

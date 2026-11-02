@@ -1,0 +1,66 @@
+{
+ "id": "junsei-jg",
+ "name": "Junsei Hyogo Yumenishiki Kimoto Junmai Ginjo Muroka Jikakumi",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "fukunishiki",
+  "name": "Fukunishiki",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [
+  "Muroka",
+  "Kimoto"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yumenishiki"
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 40.5,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "aiyama-galaxy-kimoto-junmai-ginjo-origar",
+  "fukunishiki-low-alcohol-junmai",
+  "junsei-jd"
+ ],
+ "prev": "izumibashi-shiboritate",
+ "next": "kagura-nojoho-junmai-ginjo"
+}

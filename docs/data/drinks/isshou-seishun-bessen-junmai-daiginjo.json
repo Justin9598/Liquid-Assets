@@ -1,0 +1,80 @@
+{
+ "id": "isshou-seishun-bessen-junmai-daiginjo",
+ "name": "Isshou Seishun Bessen Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "akebono-shuzo",
+  "name": "Akebono Shuzo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki"
+  },
+  {
+   "label": "SMV",
+   "value": 2,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.4
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shu Kuu Izakaya",
+   "price": 120.87,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "akebono-color-umeshu-brown-label",
+  "isshou-seishun",
+  "tenmei-arabashiri",
+  "tenmei-nakadori-urugo",
+  "tenmei-fukunoka",
+  "tenmei-junmai-ginjo-hiire-black-label",
+  "tenmei-kamenoo-65-kijoshu",
+  "tenmei-origarami",
+  "tenmei-nakadori-nigo-origarami-nama",
+  "tenmei-nakadori-zerogo-origarami-nama",
+  "tenmei-sarasara-junmai-lovely-summer"
+ ],
+ "prev": "ikusagami-x-hakurakusei-junmai-daiginjo-",
+ "next": "isshou-seishun"
+}

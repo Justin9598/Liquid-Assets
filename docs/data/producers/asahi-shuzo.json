@@ -1,0 +1,41 @@
+{
+ "key": "asahi-shuzo",
+ "name": "Asahi Shuzo",
+ "native": null,
+ "location": "Niigata",
+ "region": "Niigata",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 3
+ },
+ "drinks": [
+  {
+   "id": "kubota-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "kubota-senju-ginjo",
+   "category": "sake",
+   "sub": "ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "ishimoto-shuzo",
+  "koshi-meijo",
+  "kubiki-shuzo",
+  "shirataki-shuzo",
+  "swan-lake-beer",
+  "takachiyo-shuzo"
+ ]
+}

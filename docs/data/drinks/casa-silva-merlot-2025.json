@@ -1,0 +1,76 @@
+{
+ "id": "casa-silva-merlot-2025",
+ "name": "Casa Silva Merlot 2025",
+ "category": "wine",
+ "sub": "merlot",
+ "producer": {
+  "key": "casa-silva",
+  "name": "Casa Silva",
+  "native": null,
+  "location": "Colchagua Valley, Chile",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Vintage",
+   "value": 2025
+  },
+  {
+   "label": "Grape(s)",
+   "value": "Merlot"
+  },
+  {
+   "label": "Appellation",
+   "value": "Valle de Colchagua"
+  },
+  {
+   "label": "Colour",
+   "value": "Red"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "750ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-17",
+   "size": "750ml Bottle",
+   "where": null,
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/casa-silva-merlot-2025-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/casa-silva-merlot-2025-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "casa-silva-merlot-2025",
+ "next": "casa-silva-merlot-2025"
+}

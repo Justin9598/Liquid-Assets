@@ -1,0 +1,61 @@
+{
+ "id": "mua-classic",
+ "name": "MÙA Classic",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "mua-craft-sake",
+  "name": "MÙA Craft Saké",
+  "native": null,
+  "location": "Ho Chi Minh City, Vietnam",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "Japonica"
+  },
+  {
+   "label": "SMV",
+   "value": -8,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 2
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sake Matsuri",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "mua-pineapple-chili",
+  "mua-pure-rice"
+ ],
+ "prev": "mizubasho-artist-series-floral-sparkling-2023",
+ "next": "mua-pineapple-chili"
+}

@@ -1,0 +1,37 @@
+{
+ "key": "eigashima-shuzo",
+ "name": "Eigashima Shuzo",
+ "native": null,
+ "location": "Hyogo",
+ "region": "Hyogo",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "yamato-damashii-mizumoto",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "fukunishiki",
+  "hakutsuru-shuzo",
+  "hakushika-tatsuuma-honke",
+  "kiku-masamune-shuzo",
+  "nihonsakari",
+  "shimomura-shuzoten",
+  "tajime-shuzo"
+ ]
+}

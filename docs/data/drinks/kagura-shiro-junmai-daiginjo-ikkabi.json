@@ -1,0 +1,81 @@
+{
+ "id": "kagura-shiro-junmai-daiginjo-ikkabi",
+ "name": "Kagura Shiro Junmai Daiginjo Muroka Mukasui Ikkabi",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "matsui-shuzo",
+  "name": "Matsui Shuzo",
+  "native": null,
+  "location": "Kyoto, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Muroka",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 35,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Iwai 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "200ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "200ml Bottle",
+   "where": "Matsui Shuzo",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kagura-shiro-junmai-daiginjo-ikkabi-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/kagura-shiro-junmai-daiginjo-ikkabi-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kagura-hae",
+  "kagura-nojoho-junmai-ginjo",
+  "kagura-sparkling"
+ ],
+ "prev": "kagura-hae",
+ "next": "kankiku-seijitsu-special-yell-junmai-daiginjo"
+}

@@ -1,9 +1,11 @@
-// Shelf list page: "Up close" (Plan 02). Filters, sort and search all run in the browser and live in the hash.
-import { bottleSVG, motifFor, randomPick, shapeFor } from './bottles.js';
+// Shelf list page: "Up close" (Plan 02, looks from Plan 08 section 4.1). Filters, sort and search all run in the browser
+// and live in the hash. A hero board with the shelf's shell, a strip of sibling shelves, a toolbar board and a grid of cards.
 import { cardHTML } from './cards.js';
-import { icon } from './icons.js';
-import { topbar } from './chrome.js';
+import { board, pageHTML } from './chrome.js';
 import { getJSON, img } from './data.js';
+import { icon } from './icons.js';
+import { motifFor, randomPick, shapeFor } from './labels.js';
+import { shellHTML } from './shells.js';
 import { $, $$, announce, buildHash, debounce, esc, fold, plural, replaceHash, setTitle, slug } from './util.js';
 
 const isHangul = (s) => /[ᄀ-ᇿ㄰-㆏가-힯]/.test(s || '');
@@ -28,11 +30,10 @@ export async function mount(root, ctx) {
 
   setTitle(single ? c.name : s.name);
 
-  // ---- hero -------------------------------------------------------------------------------------------------
-  const used = new Set();
-  const motif = motifFor(cat, sub);
-  const heroLabel = randomPick(s.labels, used);
-  const heroBottle = bottleSVG(shapeFor(cat), { label: heroLabel && img(heroLabel), native: s.native, name: s.name, motif });
+  // ---- hero: the bottle the visitor tapped on the bar is the bottle they see ---------------------------------
+  const key = `${cat}/${sub}`;
+  const picked = ctx.state.picked?.[key] ?? randomPick(s.labels, new Set());
+  const heroShell = shellHTML(shapeFor(cat), { label: picked && img(picked), native: s.native, name: s.name, motif: motifFor(cat, sub) });
   const producers = new Set(drinks.map((d) => d.producerKey || d.producer).filter(Boolean));
   const origins = new Set(drinks.map((d) => d.origin).filter(Boolean));
   const allJapan = drinks.length > 0 && drinks.every((d) => d.country === 'Japan');
@@ -40,55 +41,62 @@ export async function mount(root, ctx) {
     `${origins.size} ${allJapan ? (origins.size === 1 ? 'prefecture' : 'prefectures') : (origins.size === 1 ? 'region' : 'regions')}`].join(' · ');
   const nativeLang = s.native ? (isHangul(s.native) ? 'ko' : 'ja') : '';
 
-  const strip = single ? '' : `<nav class="sibling-strip" aria-label="Other ${esc(c.name)} shelves"><div class="strip-inner">${
+  const strip = single ? '' : `<nav class="strip" id="strip" aria-label="Other ${esc(c.name)} shelves">${
     c.subcategories.map((o) => {
-      const lab = randomPick(o.labels, new Set());
       const cur = o.key === sub;
-      return `<a class="sib${cur ? ' current' : ''}" href="#/${c.key}/${o.key}"${cur ? ' aria-current="page"' : ''} aria-label="${esc(o.name)}, ${plural(o.drinkCount, 'drink')}">
-  ${bottleSVG(shapeFor(cat), { label: lab && img(lab), native: o.native, name: o.name, motif: motifFor(cat, o.key) })}<span class="sib-tag" aria-hidden="true">${esc(o.name)} · ${o.drinkCount}</span></a>`;
-    }).join('')}</div><div class="plank"></div></nav>`;
+      return `<a class="sib chalkboard chalkboard--s${cur ? ' on' : ''}" href="#/${c.key}/${o.key}"${cur ? ' aria-current="page"' : ''} aria-label="${esc(o.name)}, ${plural(o.drinkCount, 'drink')}"><span class="chalk">${esc(o.name)}</span><span class="ct" aria-hidden="true">${o.drinkCount}</span></a>`;
+    }).join('')}</nav>`;
 
-  const crumbs = single ? [{ label: c.name }] : [{ label: c.name, href: `#/${c.key}` }, { label: s.name }];
-  root.innerHTML = `<div class="shelf-page">
-<div class="wall"><div class="wall-in">
-${topbar(crumbs, `#/${c.key}`)}
-${strip}
-<section class="hero shelf-hero">
-  <div class="hero-bottle">${heroBottle}</div>
-  <div class="hero-text">
-    <h1 tabindex="-1">${esc(s.name)}${s.native ? ` <span class="native" lang="${nativeLang}">${esc(s.native)}</span>` : ''}</h1>
-    <p class="stats">${esc(stats)}</p>
-    ${copy.explainer ? `<p class="explainer">${esc(copy.explainer)}</p>` : ''}
-    ${copy.facts?.length ? `<ul class="chips">${copy.facts.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
+  const hero = board(`<div class="hero-shelf">
+  <div class="stand" aria-hidden="true">${heroShell}</div>
+  <div class="hero-copy">
+    <h1 class="t-title" tabindex="-1">${esc(s.name)}${s.native ? ` <span class="native" lang="${nativeLang}">${esc(s.native)}</span>` : ''}</h1>
+    <p class="t-data">${esc(stats)}</p>
+    ${copy.explainer ? `<p class="t-body">${esc(copy.explainer)}</p>` : ''}
+    ${copy.facts?.length ? `<ul class="fact-chips">${copy.facts.map((f) => `<li class="chalkboard chalkboard--s">${esc(f)}</li>`).join('')}</ul>` : ''}
   </div>
-</section>
-</div></div>
-<div class="page">
-<section class="shelf-body">
-  ${hasToolbar ? `<div class="toolbar" id="toolbar">
+</div><i class="tray" aria-hidden="true"></i>`, 'has-tray hero');
+
+  const toolbar = hasToolbar ? board(`
     <div class="tb-top">
-      <label class="search"><span class="sr-only">Search name or producer</span><input type="search" id="q" placeholder="Search name or producer" autocomplete="off"></label>
-      <button type="button" class="btn sheet-btn" id="sheet-btn" aria-expanded="false" aria-controls="filters">Filter &amp; sort</button>
+      <label class="search"><span class="sr-only">Search name or producer</span><input class="chalk-input" type="search" id="q" placeholder="Search name or producer" autocomplete="off"></label>
+      <button type="button" class="chalkboard chalkboard--s btn-s sheet-btn" id="sheet-btn" aria-expanded="false" aria-controls="filters">Filter &amp; sort</button>
     </div>
     <div class="filters" id="filters" role="group" aria-label="Filter and sort">
-      <div class="sheet-head"><strong>Filter &amp; sort</strong><button type="button" class="btn" id="sheet-done">Done</button></div>
+      <div class="sheet-head"><strong class="t-label">Filter &amp; sort</strong><button type="button" class="chalkboard chalkboard--s btn-s" id="sheet-done">Done</button></div>
       <div class="chip-row" id="chips" aria-label="Styles"></div>
       <div class="row-controls">
-        <label class="sel"><span>Origin</span><select id="origin"></select></label>
-        <button type="button" class="toggle" id="fav" aria-pressed="false">${icon('star-fill', 14)} Favourites</button>
-        <label class="sel"><span>Sort</span><select id="sort"></select></label>
+        <label class="field"><span>Origin</span><select class="chalk-input" id="origin"></select></label>
+        <button type="button" class="chalkboard chalkboard--s btn-s" id="fav" aria-pressed="false"><span class="chalk">${icon('star-fill', 16)} Favourites</span></button>
+        <label class="field"><span>Sort</span><select class="chalk-input" id="sort"></select></label>
       </div>
     </div>
-    <div class="sheet-backdrop" id="backdrop"></div>
-  </div>` : ''}
-  <p class="count" id="count" aria-live="polite"></p>
-  <div class="grid${few ? ' few' : ''}" id="grid"></div>
-</section>
-</div>
-</div>`;
+    <div class="sheet-backdrop" id="backdrop-sheet"></div>
+    <p class="showing t-data" id="count" aria-live="polite"></p>`, 'toolbar', 'id="toolbar"') : '';
+
+  const crumbs = single ? [{ label: c.name }] : [{ label: c.name, href: `#/${c.key}` }, { label: s.name }];
+  root.innerHTML = pageHTML({
+    crumbs, cls: 'shelf-page',
+    boards: `${hero}${strip}${toolbar}<div class="grid${few ? ' few' : ''}" id="grid"></div>`,
+  });
 
   const grid = $('#grid', root);
   const countEl = $('#count', root);
+
+  // soft fades at the ends of the sibling strip when it scrolls sideways
+  const stripEl = $('#strip', root);
+  const fades = () => {
+    if (!stripEl) return;
+    const max = stripEl.scrollWidth - stripEl.clientWidth;
+    stripEl.classList.toggle('fade-l', stripEl.scrollLeft > 4);
+    stripEl.classList.toggle('fade-r', max - stripEl.scrollLeft > 4);
+  };
+  if (stripEl) {
+    stripEl.addEventListener('scroll', fades, { passive: true });
+    window.addEventListener('resize', fades);
+    $('.sib.on', stripEl)?.scrollIntoView({ inline: 'center', block: 'nearest' });
+    requestAnimationFrame(fades);
+  }
 
   // ---- state from the URL -----------------------------------------------------------------------------------
   const st = { q: '', styles: new Set(), origin: '', fav: false, sort: 'name' };
@@ -177,20 +185,20 @@ ${strip}
       const on = st.styles.has(t);
       const next = new Set(st.styles).add(t);
       const wouldBe = drinks.filter((d) => passes(d, 'styles') && [...next].every((x) => d.styles.includes(x))).length;
-      return `<button type="button" class="chip" data-style="${esc(t)}" aria-pressed="${on}"${!on && wouldBe === 0 ? ' disabled' : ''}>${esc(t)} <span class="n">${n}</span></button>`;
+      return `<button type="button" class="chip chalkboard chalkboard--s" data-style="${esc(t)}" aria-pressed="${on}"${!on && wouldBe === 0 ? ' disabled' : ''}><span class="chalk">${esc(t)} <span class="n">${n}</span></span></button>`;
     }).join('');
   }
 
   function apply(announceIt = true) {
     const list = drinks.filter((d) => passes(d)).sort(cmp[st.sort]);
     if (!list.length) {
-      grid.innerHTML = `<div class="nothing"><div class="empty-plank" aria-hidden="true"></div><p>Nothing on this shelf matches.</p><button type="button" class="btn" id="clear2">Clear filters</button></div>`;
+      grid.innerHTML = `<div class="nothing chalkboard chalkboard--xl"><h2 class="t-head">Nothing on this shelf matches.</h2><div><button type="button" class="chalkboard chalkboard--s btn-s" id="clear2">Clear filters</button></div></div>`;
     } else {
       grid.innerHTML = list.map((d, i) => cardHTML(d, ix, { eager: i < 8 })).join('');
     }
-    countEl.innerHTML = hasToolbar
-      ? `Showing ${list.length} of ${drinks.length}${active() ? ' · <button type="button" class="linkish" id="clear1">Clear filters</button>' : ''}`
-      : '';
+    if (countEl) {
+      countEl.innerHTML = `Showing ${list.length} of ${drinks.length}${active() ? ' · <button type="button" class="linkish" id="clear1">Clear filters</button>' : ''}`;
+    }
     if (hasToolbar) {
       const qEl = $('#q', root);
       if (qEl.value !== st.q) qEl.value = st.q;
@@ -220,7 +228,7 @@ ${strip}
     if (ev.target.closest('#fav')) { st.fav = !st.fav; apply(); writeUrl(); return; }
     if (ev.target.closest('#clear1, #clear2')) { clear(); return; }
     if (ev.target.closest('#sheet-btn')) { setSheet(true); return; }
-    if (ev.target.closest('#sheet-done, #backdrop')) { setSheet(false); }
+    if (ev.target.closest('#sheet-done, #backdrop-sheet')) { setSheet(false); }
   };
   function setSheet(open) {
     const tb = $('#toolbar', root);
@@ -252,6 +260,7 @@ ${strip}
       root.removeEventListener('change', onChange);
       root.removeEventListener('input', onInput);
       document.removeEventListener('keydown', onKey);
+      window.removeEventListener('resize', fades);
       document.body.classList.remove('no-scroll');
     },
   };

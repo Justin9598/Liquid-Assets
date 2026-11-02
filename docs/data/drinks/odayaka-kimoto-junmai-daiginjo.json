@@ -1,0 +1,81 @@
+{
+ "id": "odayaka-kimoto-junmai-daiginjo",
+ "name": "Odayaka Kimoto Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "niida-honke",
+  "name": "Niida Honke",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Kimoto"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/odayaka-kimoto-junmai-daiginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/odayaka-kimoto-junmai-daiginjo-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kaoruyama",
+  "natsu-odayaka",
+  "niida-shizenshu-melon-333",
+  "niida-taruzake",
+  "odayaka-30th",
+  "odayaka-junmai-ginjo",
+  "odayaka-junmai-ginjo-usunigori-nama",
+  "odayaka-sparkling"
+ ],
+ "prev": "odayaka-30th",
+ "next": "oze-no-yukidoke-junmai-daiginjo-halloween"
+}

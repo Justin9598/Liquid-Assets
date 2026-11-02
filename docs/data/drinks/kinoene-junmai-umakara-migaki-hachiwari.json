@@ -1,0 +1,70 @@
+{
+ "id": "kinoene-junmai-umakara-migaki-hachiwari",
+ "name": "Kinoene Junmai Umakara Migaki Hachiwari",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "iinuma-honke",
+  "name": "Iinuma Honke",
+  "native": null,
+  "location": "Chiba, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 80,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-04",
+   "size": "720ml Bottle",
+   "where": null,
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kinoene-junmai-umakara-migaki-hachiwari-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/kinoene-junmai-umakara-migaki-hachiwari-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "kikunotsukasa-winter",
+ "next": "kissui-hidariuma-junmai-kasseinigori-uma-uma"
+}

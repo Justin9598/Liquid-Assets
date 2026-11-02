@@ -1,0 +1,32 @@
+{
+ "key": "kameizumi-shuzo",
+ "name": "Kameizumi Shuzo",
+ "native": null,
+ "location": "Kochi",
+ "region": "Kochi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "kameizumi-junmai-ginjo-nama-genshu-cel-24",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "suigei-shuzo",
+  "tosa-shuzo"
+ ]
+}

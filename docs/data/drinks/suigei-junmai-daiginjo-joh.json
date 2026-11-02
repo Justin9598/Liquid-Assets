@@ -1,0 +1,67 @@
+{
+ "id": "suigei-junmai-daiginjo-joh",
+ "name": "Suigei Junmai Daiginjo \"Joh\"",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "suigei-shuzo",
+  "name": "Suigei Shuzo",
+  "native": null,
+  "location": "Kochi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hattannishiki"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Isego Honten",
+   "price": 5.45,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/suigei-junmai-daiginjo-joh-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "sugata-flying",
+ "next": "tenmei-arabashiri"
+}

@@ -1,0 +1,49 @@
+{
+ "key": "matsui-shuzo",
+ "name": "Matsui Shuzo",
+ "native": null,
+ "location": "Kyoto",
+ "region": "Kyoto",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 4,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 4
+ },
+ "drinks": [
+  {
+   "id": "kagura-hae",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "kagura-nojoho-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "kagura-sparkling",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "kagura-shiro-junmai-daiginjo-ikkabi",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "fujioka-shuzo",
+  "gekkeikan",
+  "masuda-tokubee-shoten",
+  "mukai-shuzo"
+ ]
+}

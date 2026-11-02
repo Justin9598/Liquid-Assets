@@ -1,0 +1,74 @@
+{
+ "id": "ookura-hinohikari-yamahai-junmai-jikagumi",
+ "name": "Ookura Hinohikari Yamahai Junmai Jukadumi Seiryuu-Nama-Genshu",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "okura-honke",
+  "name": "Okura Honke",
+  "native": null,
+  "location": "Nara, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [
+  "Yamahai",
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 70,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hinohikari"
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Isego Honten",
+   "price": 5.45,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/ookura-hinohikari-yamahai-junmai-jikagumi-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "okura-junmai-namazake"
+ ],
+ "prev": "okura-junmai-namazake",
+ "next": "sawahime-yamahai-junmai-shin-jizake-sengen"
+}

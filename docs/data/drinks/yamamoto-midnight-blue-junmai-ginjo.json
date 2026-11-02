@@ -1,0 +1,216 @@
+{
+ "id": "yamamoto-midnight-blue-junmai-ginjo",
+ "name": "Yamamoto Midnight Blue Junmai Ginjo",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "yamamoto-gomei-kaisha",
+  "name": "Yamamoto Gomei Kaisha",
+  "native": null,
+  "location": "Akita, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Sakekomachi"
+  },
+  {
+   "label": "Yeast",
+   "value": "Komachi R-5"
+  },
+  {
+   "label": "SMV",
+   "value": 1,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.5
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": {
+  "appearance": {
+   "clarity": "clear",
+   "intensity": "pale",
+   "colour": "lemon-green"
+  },
+  "nose": {
+   "condition": "clean",
+   "intensity": "medium(-)"
+  },
+  "palate": {
+   "sweetness": "medium-dry",
+   "acidity": "medium(-)",
+   "umami": "low",
+   "body": "light",
+   "flavourIntensity": "medium",
+   "finish": "medium(-)",
+   "alcohol": "medium",
+   "mousse": "creamy"
+  },
+  "conclusion": {
+   "quality": "good",
+   "category": "premium",
+   "ginjo": "ginjō"
+  },
+  "scales": {
+   "clarity": [
+    "clear",
+    "slightly hazy",
+    "hazy (faulty?)",
+    "light lees",
+    "medium lees",
+    "thick lees"
+   ],
+   "appearanceIntensity": [
+    "water-white",
+    "pale",
+    "medium",
+    "deep"
+   ],
+   "colour": [
+    "colourless",
+    "lemon-green",
+    "lemon",
+    "gold",
+    "amber",
+    "brown"
+   ],
+   "noseCondition": [
+    "clean",
+    "unclean (faulty?)"
+   ],
+   "noseIntensity": [
+    "light",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "pronounced"
+   ],
+   "sweetness": [
+    "dry",
+    "off-dry",
+    "medium-dry",
+    "medium-sweet",
+    "sweet",
+    "luscious"
+   ],
+   "acidity": [
+    "low",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "high"
+   ],
+   "umami": [
+    "low",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "high"
+   ],
+   "alcohol": [
+    "low",
+    "medium",
+    "high"
+   ],
+   "body": [
+    "light",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "full"
+   ],
+   "mousse": [
+    "delicate",
+    "creamy",
+    "aggressive"
+   ],
+   "flavourIntensity": [
+    "light",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "pronounced"
+   ],
+   "finish": [
+    "short",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "long"
+   ],
+   "quality": [
+    "faulty",
+    "poor",
+    "acceptable",
+    "good",
+    "very good",
+    "outstanding"
+   ],
+   "category": [
+    "futsū-shu",
+    "premium"
+   ],
+   "ginjo": [
+    "ginjō",
+    "non-ginjō"
+   ]
+  }
+ },
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 13.08,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/yamamoto-midnight-blue-junmai-ginjo-1.webp",
+   "w": 376,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "yamamoto-junmai-ginjo-wain",
+  "yamamoto-no7-kobo-junmai-ginjo",
+  "yamamoto-sunshine-yellow-yamahai-junmai-ginjo"
+ ],
+ "prev": "yamamoto-junmai-ginjo-wain",
+ "next": "yamamoto-no7-kobo-junmai-ginjo"
+}

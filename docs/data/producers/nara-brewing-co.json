@@ -1,0 +1,44 @@
+{
+ "key": "nara-brewing-co",
+ "name": "Nara Brewing Co.",
+ "native": null,
+ "location": "Nara",
+ "region": "Nara",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 3,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 3
+ },
+ "drinks": [
+  {
+   "id": "nara-eighty-eight",
+   "category": "beer",
+   "sub": "saison"
+  },
+  {
+   "id": "underwater-luminous-sake-yeast-beer",
+   "category": "beer",
+   "sub": "specialty"
+  },
+  {
+   "id": "underwater-sake-yeast-beer",
+   "category": "beer",
+   "sub": "other"
+  }
+ ],
+ "moreFromRegion": [
+  "chiyo-shuzo",
+  "imanishi-shuzo",
+  "okura-honke",
+  "miyoshino-jozo"
+ ]
+}

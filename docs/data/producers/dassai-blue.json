@@ -1,0 +1,29 @@
+{
+ "key": "dassai-blue",
+ "name": "Dassai Blue",
+ "native": null,
+ "location": "Hyde Park, New York",
+ "region": "Hyde Park, New York",
+ "country": "USA",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "dassai-blue-type-50-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": []
+}

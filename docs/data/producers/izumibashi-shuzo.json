@@ -1,0 +1,44 @@
+{
+ "key": "izumibashi-shuzo",
+ "name": "Izumibashi Shuzo",
+ "native": null,
+ "location": "Kanagawa",
+ "region": "Kanagawa",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 3,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 3
+ },
+ "drinks": [
+  {
+   "id": "izumibashi-natsu-yago-sparkling",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "izumibashi-shiboritate",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "izumibashi-aki-tombo-omachi-kimoto-junmai",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "ricewine-k-k-hinemos",
+  "kawanishiya-shuzoten",
+  "oya-takashi-shuzo",
+  "seto-shuzoten"
+ ]
+}

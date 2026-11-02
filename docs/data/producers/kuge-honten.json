@@ -1,0 +1,29 @@
+{
+ "key": "kuge-honten",
+ "name": "Kuge Honten",
+ "native": null,
+ "location": "Oita",
+ "region": "Oita",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 4
+ },
+ "drinks": [
+  {
+   "id": "kabosu-umeshu-sakurayama",
+   "category": "liqueur",
+   "sub": "umeshu"
+  }
+ ],
+ "moreFromRegion": []
+}

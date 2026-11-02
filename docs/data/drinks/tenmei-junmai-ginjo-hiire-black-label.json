@@ -1,0 +1,93 @@
+{
+ "id": "tenmei-junmai-ginjo-hiire-black-label",
+ "name": "Tenmei Junmai Ginjo Hiire Black Label",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "akebono-shuzo",
+  "name": "Akebono Shuzo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 57,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Aizu Yamadanishiki 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle, 1.8L Magnum"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "1.8L Magnum",
+   "where": "Mirai Sake Hall",
+   "price": 108.0,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "1.8L Magnum",
+   "where": "Mirai Sake Hall",
+   "price": 108.0,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 63.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/tenmei-junmai-ginjo-hiire-black-label-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "akebono-color-umeshu-brown-label",
+  "isshou-seishun-bessen-junmai-daiginjo",
+  "isshou-seishun",
+  "tenmei-arabashiri",
+  "tenmei-nakadori-urugo",
+  "tenmei-fukunoka",
+  "tenmei-kamenoo-65-kijoshu",
+  "tenmei-origarami",
+  "tenmei-nakadori-nigo-origarami-nama",
+  "tenmei-nakadori-zerogo-origarami-nama",
+  "tenmei-sarasara-junmai-lovely-summer"
+ ],
+ "prev": "takizawa-junmai-ginjo",
+ "next": "tenon-harunotsuki-bihappou-junmaiginjou-nigori"
+}

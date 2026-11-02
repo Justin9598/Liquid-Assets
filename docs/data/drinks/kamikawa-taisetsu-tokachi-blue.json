@@ -1,0 +1,51 @@
+{
+ "id": "kamikawa-taisetsu-tokachi-blue",
+ "name": "Kamikawa Taisetsu Tokachi Blue",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "kamikawa-taisetsu-shuzo",
+  "name": "Kamikawa Taisetsu Shuzo",
+  "native": null,
+  "location": "Hokkaido, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 70,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "DoSake Bistro",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "jukyu-hirvi-19",
+ "next": "mimurosugi-dio-abita"
+}

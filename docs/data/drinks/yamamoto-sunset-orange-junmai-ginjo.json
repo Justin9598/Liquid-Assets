@@ -1,0 +1,80 @@
+{
+ "id": "yamamoto-sunset-orange-junmai-ginjo",
+ "name": "Yamamoto Sunset Orange Junmai Ginjo",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "yamamoto-shuzoten",
+  "name": "Yamamoto Shuzoten",
+  "native": null,
+  "location": "Akita, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Miyamanishiki"
+  },
+  {
+   "label": "Yeast",
+   "value": "Kyokai No.6"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-01",
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/yamamoto-sunset-orange-junmai-ginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/yamamoto-sunset-orange-junmai-ginjo-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "yamamoto-junmai-ginjo-uki-uki"
+ ],
+ "prev": "yamamoto-no7-kobo-junmai-ginjo",
+ "next": "yamamoto-sunshine-yellow-yamahai-junmai-ginjo"
+}

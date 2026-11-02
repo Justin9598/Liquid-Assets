@@ -1,0 +1,64 @@
+{
+ "id": "kokuryu-daiginjo",
+ "name": "Kokuryu Daiginjo",
+ "category": "sake",
+ "sub": "daiginjo",
+ "producer": {
+  "key": "kokuryu-shuzo",
+  "name": "Kokuryu Shuzo",
+  "native": null,
+  "location": "Fukui, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki"
+  },
+  {
+   "label": "SMV",
+   "value": 4,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 80.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "hakutsuru-tokusen-daiginjo",
+ "next": "sawahime-daiginjo-tobingakoi-origarami-nama"
+}

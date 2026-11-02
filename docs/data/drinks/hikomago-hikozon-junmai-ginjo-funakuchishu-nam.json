@@ -1,0 +1,66 @@
+{
+ "id": "hikomago-hikozon-junmai-ginjo-funakuchishu-nam",
+ "name": "Hikomago (Hikozon) Junmai Ginjo Funakuchishu Nama Genshu",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "shinkame-shuzo",
+  "name": "Shinkame Shuzo",
+  "native": null,
+  "location": "Saitama, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Suiraku",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hikomago-hikozon-junmai-ginjo-funakuchishu-nam-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "harada",
+ "next": "hitakami-aquarium-in-winter"
+}

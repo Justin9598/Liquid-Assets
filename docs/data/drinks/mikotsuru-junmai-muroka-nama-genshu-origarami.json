@@ -1,0 +1,114 @@
+{
+ "id": "mikotsuru-junmai-muroka-nama-genshu-origarami",
+ "name": "MIKOTSURU Junmai Muroka Nama Genshu Origarami",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "suwa-mikotsuru-shuzojo",
+  "name": "Suwa Mikotsuru Shuzojo",
+  "native": null,
+  "location": "Nagano, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu",
+  "Origarami"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Rice",
+   "value": "Miyamanishiki (koji, Suwa-contracted) & Nagano rice blend (kake)"
+  },
+  {
+   "label": "Yeast",
+   "value": 901
+  },
+  {
+   "label": "SMV",
+   "value": 4,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 54.0,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shu Kuu Izakaya",
+   "price": 84.89,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 42.0,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shu Kuu Izakaya",
+   "price": 90.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/mikotsuru-junmai-muroka-nama-genshu-origarami-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/mikotsuru-junmai-muroka-nama-genshu-origarami-2.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "maker",
+   "caption": "Maker panel",
+   "web": "img/web/mikotsuru-junmai-muroka-nama-genshu-origarami-3.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "mikotsuru-junmai-ginjo-gohakyu-mangoku",
+  "mikotsuru-nigori",
+  "mikotsuru-karakuchi-junmai"
+ ],
+ "prev": "makihata-bambino",
+ "next": "mikotsuru-karakuchi-junmai"
+}

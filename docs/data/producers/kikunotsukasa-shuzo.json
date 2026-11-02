@@ -1,0 +1,53 @@
+{
+ "key": "kikunotsukasa-shuzo",
+ "name": "Kikunotsukasa Shuzo",
+ "native": null,
+ "location": "Iwate",
+ "region": "Iwate",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 5,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 6
+ },
+ "drinks": [
+  {
+   "id": "kikunotsukasa-innocent-40-junmai-daiginj",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "kikunotsukasa-innocent-60-junmai",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "kikunotsukasa-shinboshi-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "kikunotsukasa-winter",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "shichifukujin-super-dry-junmai",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "hiraroku-jozo",
+  "akabu-shuzo",
+  "nanbu-bijin"
+ ]
+}

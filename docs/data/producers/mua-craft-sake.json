@@ -1,0 +1,39 @@
+{
+ "key": "mua-craft-sake",
+ "name": "MÙA Craft Saké",
+ "native": null,
+ "location": "Ho Chi Minh City",
+ "region": "Ho Chi Minh City",
+ "country": "Vietnam",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 3,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 3
+ },
+ "drinks": [
+  {
+   "id": "mua-classic",
+   "category": "sake",
+   "sub": "ungraded"
+  },
+  {
+   "id": "mua-pineapple-chili",
+   "category": "sake",
+   "sub": "ungraded"
+  },
+  {
+   "id": "mua-pure-rice",
+   "category": "sake",
+   "sub": "ungraded"
+  }
+ ],
+ "moreFromRegion": []
+}

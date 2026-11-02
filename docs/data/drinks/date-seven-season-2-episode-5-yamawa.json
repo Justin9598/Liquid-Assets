@@ -1,0 +1,67 @@
+{
+ "id": "date-seven-season-2-episode-5-yamawa",
+ "name": "DATE SEVEN Season Ⅱ Episode 5 (Yamawa) 【DATE SEVEN SeasonⅡ Episode5 山和】",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "date-seven-yamawa-style-miyagi-collective",
+  "name": "Date Seven (Yamawa Style, Miyagi Collective)",
+  "native": null,
+  "location": "Miyagi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gin no Iroha (koji), Kura no Hana (kake)"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Fermenteria by Sake Mama",
+   "price": 88.85,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/date-seven-season-2-episode-5-yamawa-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "date-seven-season-2-episode-5-koganesawa",
+ "next": "eiko-fuji-koh-rin"
+}

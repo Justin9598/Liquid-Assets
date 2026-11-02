@@ -1,0 +1,76 @@
+{
+ "id": "jozen-hachimitsu",
+ "name": "Hachimitsu Yurai Kobo by Jozen Junmai (Honey-Yeast)",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "shirataki-shuzo",
+  "name": "Shirataki Shuzo",
+  "native": null,
+  "location": "Niigata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 8,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Domestic rice"
+  },
+  {
+   "label": "Yeast",
+   "value": "Honey-derived yeast"
+  },
+  {
+   "label": "SMV",
+   "value": -70,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 8,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mediya",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/jozen-hachimitsu-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "hakugakusen-mufu",
+ "next": "hakutsuru-junmaishu"
+}

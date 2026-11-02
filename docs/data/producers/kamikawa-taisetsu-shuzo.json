@@ -1,0 +1,32 @@
+{
+ "key": "kamikawa-taisetsu-shuzo",
+ "name": "Kamikawa Taisetsu Shuzo",
+ "native": null,
+ "location": "Hokkaido",
+ "region": "Hokkaido",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "kamikawa-taisetsu-tokachi-blue",
+   "category": "sake",
+   "sub": "ungraded"
+  }
+ ],
+ "moreFromRegion": [
+  "michizakura-shuzo",
+  "takasago-shuzo"
+ ]
+}

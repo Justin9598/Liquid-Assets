@@ -1,0 +1,44 @@
+{
+ "key": "happy-taro-brewery",
+ "name": "Happy Taro Brewery",
+ "native": null,
+ "location": "Shiga",
+ "region": "Shiga",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 4,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 4
+ },
+ "drinks": [
+  {
+   "id": "ichigoya-hana-strawberry-doburoku",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "oriental-whey",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "ukiuki-hops",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "something-happy-fresh-herb-tea",
+   "category": "sake",
+   "sub": "craft-sake"
+  }
+ ],
+ "moreFromRegion": []
+}

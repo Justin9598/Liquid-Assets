@@ -124,23 +124,67 @@ def _tokens(block):
     return dict(re.findall(r"--([\w-]+):\s*(#[0-9a-fA-F]{6})", block))
 
 
-def test_text_contrast_is_at_least_4_5_to_1_in_both_themes():
+def test_every_chalk_style_is_at_least_4_5_to_1_on_the_slate():
+    """Plan 08 section 3.4: every chalk style, at its real opacity, on the slate under the strongest chalk smudge."""
     css = (SHIP / "docs" / "assets" / "css" / "app.css").read_text(encoding="utf-8")
-    cut = css.index("@media (prefers-color-scheme: dark)")
-    light = _tokens(css[:cut])
-    dark_block = css[cut:]
-    dark = {**light, **_tokens(dark_block)}
-    pairs = [("ink", "paper"), ("ink2", "paper"), ("link", "paper"), ("ink", "oak-soft"), ("ink2", "oak-soft"),
-             ("link", "oak-soft"), ("brass-dark", "paper"), ("chalk", "iron")]
-    for name, tokens in (("light", light), ("dark", dark)):
-        for fg, bg in pairs:
-            r = ratio(tokens[fg], tokens[bg])
-            assert r >= 4.5, f"{name}: --{fg} on --{bg} is only {r:.2f}:1"
-    # the menu overlay: chalk and glow on the dark-oak panel, muted counts too
-    for fg in ("#f2ede4", "#f4c27a", "#d2c8b8", "#e6dfd3"):
-        assert ratio(fg, "#2a1e14") >= 4.5 and ratio(fg, "#3a2a1b") >= 4.5
-    # oak panels (hero text boards): secondary text and links on the darkest point of the gradient
-    assert ratio('#3b2f24', '#c9a172') >= 4.5 and ratio('#2a1d14', '#c9a172') >= 4.5
-    assert ratio('#cfc4b3', '#3a2a1b') >= 4.5 and ratio('#f0c27a', '#3a2a1b') >= 4.5
-    # slate tags: off-white on iron
-    assert ratio("#cfc6b8", light["iron"]) >= 4.5
+    tokens = _tokens(css)
+    chalk, glow, slate = _hex_i(tokens["chalk"]), _hex_i(tokens["glow"]), _hex_i(tokens["slate"])
+    smudge = {"XL": 0.10, "L and M": 0.06, "S": 0.03}                 # XL smudges are scaled 1.4 (--sm), S are halved
+    styles = {"chalk": (chalk, 1.0), "glow chalk (links, selected)": (glow, 1.0), "small print and 75% terms": (chalk, 0.75),
+              "counts at 70%": (chalk, 0.70), "disabled chip at 65%": (chalk, 0.65), "search placeholder at 65%": (chalk, 0.65),
+              "data at 88%": (chalk, 0.88)}
+    for board, k in smudge.items():
+        ground = _mix(chalk, slate, k)
+        for name, (colour, alpha) in styles.items():
+            if board == "S" and name.startswith("small print"):
+                continue
+            r = _ratio_i(_mix(colour, ground, alpha), ground)
+            assert r >= 4.5, f"{name} on a {board} board: {r:.2f}:1"
+    # the sizes the plan sets as floors are really in the stylesheet
+    assert re.search(r"\.t-body \{ font: 400 17px/1\.6", css) and re.search(r"\.t-small \{ font: 400 14px", css)
+    body = re.search(r"\.t-body \{[^}]*\}", css).group(0)
+    assert "mask" not in body                                         # body text has no grain mask
+
+
+def _hex_i(v):
+    v = v.lstrip("#")
+    return tuple(int(v[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def _mix(fg, bg, a):
+    return tuple(f * a + b * (1 - a) for f, b in zip(fg, bg))
+
+
+def _ratio_i(a, b):
+    la, lb = sorted((_lum([c / 255 for c in a]), _lum([c / 255 for c in b])), reverse=True)
+    return (la + 0.05) / (lb + 0.05)
+
+
+def test_content_top_is_required_on_both_plates_and_below_the_sign():
+    issues = Issues()
+    assert scene_mod.validate_manifest(manifest(), issues) and not issues.errors
+    m = manifest()
+    del m["plates"]["tall"]["content_top"]                            # a phone value is missing
+    m["plates"]["wide"]["content_top"] = 0.1                          # above the sign's bottom edge: the first board would cover it
+    bad = Issues()
+    assert not scene_mod.validate_manifest(m, bad)
+    assert sum("content_top" in e["message"] for e in bad.errors) == 2
+    # the published scene.json carries it for both plates
+    out = scene_mod.merge(manifest(), {"plates": {}, "shells": {}})
+    assert out["plates"]["wide"]["content_top"] == 0.25 and out["plates"]["tall"]["content_top"] == 0.308
+    parity = Issues()
+    tall_missing = manifest()
+    del tall_missing["plates"]["tall"]["content_top"]
+    assert not scene_mod.check_parity(tall_missing, {"plates": {"tall": {}}}, parity)
+    assert parity.errors and parity.errors[0]["code"] == "E06"
+
+
+def test_only_kalam_is_served_and_no_other_font_is_named_in_the_site():
+    docs = SHIP / "docs"
+    assert sorted(p.name for p in (docs / "assets" / "fonts").iterdir()) == sorted(
+        ["Kalam-400-latin-ext.woff2", "Kalam-400-latin.woff2", "Kalam-700-latin-ext.woff2", "Kalam-700-latin.woff2", "OFL-kalam.txt"])
+    text = "".join(p.read_text(encoding="utf-8") for p in (docs / "assets").rglob("*") if p.suffix in (".css", ".js"))
+    text += (docs / "index.html").read_text(encoding="utf-8")
+    for name in ("Outfit", "Cormorant", "Stardos", "Rye"):
+        assert name not in text, name
+    assert "Type: Kalam (SIL Open Font Licence)" in text

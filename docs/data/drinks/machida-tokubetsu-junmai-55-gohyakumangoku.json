@@ -1,0 +1,82 @@
+{
+ "id": "machida-tokubetsu-junmai-55-gohyakumangoku",
+ "name": "Machida Tokubetsu Junmai 55 Gohyakumangoku Jikagumi",
+ "category": "sake",
+ "sub": "tokubetsu-junmai",
+ "producer": {
+  "key": "machida-shuzoten",
+  "name": "Machida Shuzoten",
+  "native": null,
+  "location": "Gunma, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Muroka",
+  "Nama"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Tokubetsu Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku"
+  },
+  {
+   "label": "SMV",
+   "value": -1,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.4
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/machida-tokubetsu-junmai-55-gohyakumangoku-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "machida-jungin-55-omachi",
+  "machida-55"
+ ],
+ "prev": "kaiun-iwaizake-tokubetsu-junmai",
+ "next": "nabeshima-harvest-moon-classic"
+}

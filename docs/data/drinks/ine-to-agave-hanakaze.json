@@ -1,0 +1,81 @@
+{
+ "id": "ine-to-agave-hanakaze",
+ "name": "Ine to Agave Hanakaze",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "ine-to-agave",
+  "name": "Ine to Agave",
+  "native": null,
+  "location": "Akita, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [
+  "Hopped"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 90,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Akita rice 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting, 720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Omu Nomu",
+   "price": null,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Sakerama",
+   "price": 95.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/ine-to-agave-hanakaze-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/ine-to-agave-hanakaze-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "ine-to-nihoncha"
+ ],
+ "prev": "ichigoya-hana-strawberry-doburoku",
+ "next": "ine-to-nihoncha"
+}

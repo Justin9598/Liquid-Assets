@@ -1,0 +1,76 @@
+{
+ "id": "jinya-junmai-akiagari",
+ "name": "Jinya Junmai Akiagari",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "ariga-jozo",
+  "name": "Ariga Jozo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 70,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yume no Kaori (Fukushima) 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-21",
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 15.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/jinya-junmai-akiagari-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/jinya-junmai-akiagari-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kissui-hidariuma-junmai-kasseinigori-uma-uma"
+ ],
+ "prev": "izumibashi-aki-tombo-omachi-kimoto-junmai",
+ "next": "kaoruyama"
+}

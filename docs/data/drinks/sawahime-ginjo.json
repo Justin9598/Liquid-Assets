@@ -1,0 +1,66 @@
+{
+ "id": "sawahime-ginjo",
+ "name": "Sawahime Ginjo",
+ "category": "sake",
+ "sub": "ginjo",
+ "producer": {
+  "key": "inoue-seikichi-shoten",
+  "name": "Inoue Seikichi Shoten",
+  "native": null,
+  "location": "Tochigi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16.5,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hitogokochi"
+  },
+  {
+   "label": "Yeast",
+   "value": "Tochigi T-ND-6"
+  },
+  {
+   "label": "ABV",
+   "value": 16.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 19.62,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "sawahime-daiginjo-tobingakoi-origarami-nama",
+  "sawahime-yamahai-junmai-shin-jizake-sengen"
+ ],
+ "prev": "narutotai-ginjo-shiboritate-nama-genshu",
+ "next": "kubota-senju-ginjo"
+}

@@ -1,0 +1,41 @@
+{
+ "key": "yamamoto-shuzoten",
+ "name": "Yamamoto Shuzoten",
+ "native": null,
+ "location": "Akita",
+ "region": "Akita",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "yamamoto-junmai-ginjo-uki-uki",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "yamamoto-sunset-orange-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "yamamoto-gomei-kaisha",
+  "ine-to-agave",
+  "akita-seishu",
+  "aramasa-shuzo",
+  "hinomaru-jozo",
+  "ryozeki-shuzo"
+ ]
+}

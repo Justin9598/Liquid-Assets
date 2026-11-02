@@ -1,0 +1,33 @@
+{
+ "key": "kamenoi-shuzo",
+ "name": "Kamenoi Shuzo",
+ "native": null,
+ "location": "Yamagata",
+ "region": "Yamagata",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "kudoki-jozu-juicy-karakuchi-kai",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "fuji-shuzo",
+  "kojima-sohonten",
+  "takagi-shuzo"
+ ]
+}

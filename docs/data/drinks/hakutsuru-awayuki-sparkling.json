@@ -1,0 +1,60 @@
+{
+ "id": "hakutsuru-awayuki-sparkling",
+ "name": "Hakutsuru Awayuki Sparkling",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "hakutsuru-shuzo",
+  "name": "Hakutsuru Shuzo",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 5,
+ "styles": [
+  "Sparkling"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "SMV",
+   "value": -58,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 3.2
+  },
+  {
+   "label": "ABV",
+   "value": 5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "360ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "360ml Bottle",
+   "where": "Shopee",
+   "price": 12.99,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "hakutsuru-junmai-daiginjo",
+  "hakutsuru-junmaishu",
+  "hakutsuru-tokusen-daiginjo"
+ ],
+ "prev": "hagi-no-tsuru-betsu-shikomi",
+ "next": "hanahato-kijoshu-8-years"
+}

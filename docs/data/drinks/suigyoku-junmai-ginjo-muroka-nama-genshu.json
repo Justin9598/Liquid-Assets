@@ -1,0 +1,72 @@
+{
+ "id": "suigyoku-junmai-ginjo-muroka-nama-genshu",
+ "name": "Suigyoku Junmai Ginjo Muroka Nama Genshu",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "ryozeki-shuzo",
+  "name": "Ryozeki Shuzo",
+  "native": null,
+  "location": "Akita, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Akita Sake Komachi"
+  },
+  {
+   "label": "SMV",
+   "value": -6.9,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.6
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sake Hub",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "sugata-sparkling",
+ "next": "taiheikai-junmai-ginjo-bin-gakoi"
+}

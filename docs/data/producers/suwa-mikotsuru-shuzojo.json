@@ -1,0 +1,51 @@
+{
+ "key": "suwa-mikotsuru-shuzojo",
+ "name": "Suwa Mikotsuru Shuzojo",
+ "native": null,
+ "location": "Nagano",
+ "region": "Nagano",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 4,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 8
+ },
+ "drinks": [
+  {
+   "id": "mikotsuru-junmai-ginjo-gohakyu-mangoku",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "mikotsuru-nigori",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "mikotsuru-junmai-muroka-nama-genshu-origarami",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "mikotsuru-karakuchi-junmai",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "obuse-winery-sogga-pere-et-fils",
+  "endo-shuzojo",
+  "ozawa-shuzojo",
+  "banno-shuzo",
+  "daishinshu-shuzo",
+  "shinshu-meijo"
+ ]
+}

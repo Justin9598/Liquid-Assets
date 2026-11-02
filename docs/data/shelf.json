@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-30T09:07:56Z",
+ "generated": "2026-11-02T05:07:53Z",
  "categories": [
   {
    "key": "sake",
    "name": "Sake",
    "vessel": "sake",
-   "drinkCount": 242,
+   "drinkCount": 244,
    "subcategories": [
     {
      "key": "junmai-daiginjo",
      "name": "Junmai Daiginjo",
      "native": "純米大吟醸",
-     "drinkCount": 48,
+     "drinkCount": 49,
      "labels": [
       "img/labels/dassai-39-junmai-daiginjo-enshin-bunri.webp",
       "img/labels/dassai-45-junmai-daiginjo.webp",
@@ -31,6 +31,7 @@
       "img/labels/nabeshima-the-nabeshima-junmai-daiginjo.webp",
       "img/labels/nabeshima-junmai-daiginjo-aiyama.webp",
       "img/labels/odayaka-kimoto-junmai-daiginjo.webp",
+      "img/labels/oze-no-yukidoke-junmai-daiginjo-halloween.webp",
       "img/labels/ryujin-dragon-god-junmai-daiginjo-namazume.webp",
       "img/labels/sokuu-junmai-daiginjo-yamadanishiki.webp",
       "img/labels/suigei-junmai-daiginjo-joh.webp"
@@ -40,7 +41,7 @@
      "key": "junmai-ginjo",
      "name": "Junmai Ginjo",
      "native": "純米吟醸",
-     "drinkCount": 74,
+     "drinkCount": 75,
      "labels": [
       "img/labels/aramasa-colors-cosmos.webp",
       "img/labels/ariiso-akebono-flat.webp",
@@ -93,6 +94,7 @@
       "img/labels/wataribune-shiboritate-namagin-muroka.webp",
       "img/labels/yamamoto-junmai-ginjo-uki-uki.webp",
       "img/labels/yamamoto-junmai-ginjo-wain.webp",
+      "img/labels/yamamoto-sunset-orange-junmai-ginjo.webp",
       "img/labels/yamamoto-sunshine-yellow-yamahai-junmai-ginjo.webp",
       "img/labels/yokoyama-junmai-ginjo-silver-choukara7.webp",
       "img/labels/zaruso-hourai-junmai-ginjo-oringo-kudasai.webp"
@@ -267,11 +269,55 @@
    "key": "beer",
    "name": "Beer",
    "vessel": "beer",
-   "drinkCount": 2,
+   "drinkCount": 8,
    "subcategories": [
     {
-     "key": "all",
-     "name": "Beer",
+     "key": "lager",
+     "name": "Lager",
+     "native": null,
+     "drinkCount": 1,
+     "labels": []
+    },
+    {
+     "key": "pale-ale",
+     "name": "Pale Ale",
+     "native": null,
+     "drinkCount": 1,
+     "labels": []
+    },
+    {
+     "key": "ipa",
+     "name": "IPA",
+     "native": null,
+     "drinkCount": 1,
+     "labels": []
+    },
+    {
+     "key": "wheat",
+     "name": "Wheat",
+     "native": null,
+     "drinkCount": 1,
+     "labels": []
+    },
+    {
+     "key": "saison",
+     "name": "Saison",
+     "native": null,
+     "drinkCount": 1,
+     "labels": []
+    },
+    {
+     "key": "specialty",
+     "name": "Specialty",
+     "native": null,
+     "drinkCount": 1,
+     "labels": [
+      "img/labels/underwater-luminous-sake-yeast-beer.webp"
+     ]
+    },
+    {
+     "key": "other",
+     "name": "Other beer",
      "native": null,
      "drinkCount": 2,
      "labels": [
@@ -385,38 +431,38 @@
  "counter": {
   "newArrivals": [
    {
-    "id": "woodford-reserve-distillers-select",
-    "name": "Woodford Reserve Distiller's Select",
-    "category": "spirits",
-    "sub": "whisky",
-    "label": "img/labels/woodford-reserve-distillers-select.webp"
+    "id": "isekado-mr-dank",
+    "name": "Isekado Mr. DANK",
+    "category": "beer",
+    "sub": "ipa",
+    "label": null
    },
    {
-    "id": "the-botanist-islay-dry-gin",
-    "name": "The Botanist Islay Dry Gin",
-    "category": "spirits",
-    "sub": "other",
-    "label": "img/labels/the-botanist-islay-dry-gin.webp"
+    "id": "swanlake-amber-swan-ale",
+    "name": "Swanlake Amber Swan Ale",
+    "category": "beer",
+    "sub": "pale-ale",
+    "label": null
    },
    {
-    "id": "suntory-world-whisky-ao",
-    "name": "Suntory World Whisky Ao",
-    "category": "spirits",
-    "sub": "whisky",
-    "label": "img/labels/suntory-world-whisky-ao.webp"
+    "id": "nasu-kohgen-ai",
+    "name": "Nasu Kohgen Ai",
+    "category": "beer",
+    "sub": "lager",
+    "label": null
    },
    {
-    "id": "kujira-no-kuromugi",
-    "name": "Kujira no Kuromugi",
-    "category": "spirits",
-    "sub": "shochu",
-    "label": "img/labels/kujira-no-kuromugi.webp"
+    "id": "minoh-hoppy-weizen",
+    "name": "Minoh Hoppy Weizen",
+    "category": "beer",
+    "sub": "wheat",
+    "label": null
    },
    {
-    "id": "kavalan-distillery-reserve-peated-single-cask-strength",
-    "name": "Kavalan Distillery Reserve Peated Single Cask Strength",
-    "category": "spirits",
-    "sub": "whisky",
+    "id": "nara-eighty-eight",
+    "name": "Nara Eighty Eight",
+    "category": "beer",
+    "sub": "saison",
     "label": null
    }
   ],
@@ -504,6 +550,13 @@
      "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
     },
     {
+     "id": "swanlake-amber-swan-ale",
+     "name": "Swanlake Amber Swan Ale",
+     "category": "beer",
+     "sub": "pale-ale",
+     "label": null
+    },
+    {
      "id": "akishika-moto-plus-one-junmai-muroka-nam",
      "name": "Akishika Moto Plus One Junmai Muroka Nama",
      "category": "sake",
@@ -523,13 +576,6 @@
      "category": "spirits",
      "sub": "other",
      "label": "img/labels/chusa-40.webp"
-    },
-    {
-     "id": "woodford-reserve-distillers-select",
-     "name": "Woodford Reserve Distiller's Select",
-     "category": "spirits",
-     "sub": "whisky",
-     "label": "img/labels/woodford-reserve-distillers-select.webp"
     }
    ],
    "winter": [

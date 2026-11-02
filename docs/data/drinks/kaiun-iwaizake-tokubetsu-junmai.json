@@ -1,0 +1,59 @@
+{
+ "id": "kaiun-iwaizake-tokubetsu-junmai",
+ "name": "Kaiun Iwaizake Tokubetsu Junmai",
+ "category": "sake",
+ "sub": "tokubetsu-junmai",
+ "producer": {
+  "key": "doi-shuzojo",
+  "name": "Doi Shuzojo",
+  "native": null,
+  "location": "Shizuoka, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Tokubetsu Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "360ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "360ml Bottle",
+   "where": "Yakitori Yatagarasu / HANARE",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "iamnishiki-tokubetsu-junmai",
+ "next": "machida-tokubetsu-junmai-55-gohyakumangoku"
+}

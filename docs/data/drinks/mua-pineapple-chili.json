@@ -1,0 +1,63 @@
+{
+ "id": "mua-pineapple-chili",
+ "name": "MÙA Pineapple Chili",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "mua-craft-sake",
+  "name": "MÙA Craft Saké",
+  "native": null,
+  "location": "Ho Chi Minh City, Vietnam",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 8,
+ "styles": [
+  "Flavoured"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "ST25 (Vietnamese)"
+  },
+  {
+   "label": "SMV",
+   "value": -10,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.8
+  },
+  {
+   "label": "ABV",
+   "value": 8,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sake Matsuri",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "mua-classic",
+  "mua-pure-rice"
+ ],
+ "prev": "mua-classic",
+ "next": "mua-pure-rice"
+}

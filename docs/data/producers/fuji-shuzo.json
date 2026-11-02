@@ -1,0 +1,38 @@
+{
+ "key": "fuji-shuzo",
+ "name": "Fuji Shuzo",
+ "native": null,
+ "location": "Yamagata",
+ "region": "Yamagata",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "eiko-fuji-koh-rin",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "eiko-fuji-snake-eye-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "kamenoi-shuzo",
+  "kojima-sohonten",
+  "takagi-shuzo"
+ ]
+}

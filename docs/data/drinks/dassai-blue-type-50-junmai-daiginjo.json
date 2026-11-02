@@ -1,0 +1,66 @@
+{
+ "id": "dassai-blue-type-50-junmai-daiginjo",
+ "name": "DASSAI Blue Type 50 Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "dassai-blue",
+  "name": "Dassai Blue",
+  "native": null,
+  "location": "Hyde Park, New York, USA",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting, 720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sakerama",
+   "price": 10.0,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Sakerama",
+   "price": 85.02,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "dassai-45-junmai-daiginjo",
+ "next": "date-seven-season-2-episode-2"
+}

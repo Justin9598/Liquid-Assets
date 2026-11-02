@@ -1,0 +1,52 @@
+{
+ "id": "hakugakusen-mufu",
+ "name": "Gyokusendo Junmai Mukaze Betsukoshirae",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "gyokusendo-shuzo",
+  "name": "Gyokusendo Shuzo",
+  "native": null,
+  "location": "Gifu, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Taipei Alcohol Fair",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hakugakusen-mufu-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "umifudo-sea-food",
+ "next": "jozen-hachimitsu"
+}

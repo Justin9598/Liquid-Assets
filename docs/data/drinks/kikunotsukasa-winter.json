@@ -1,0 +1,68 @@
+{
+ "id": "kikunotsukasa-winter",
+ "name": "Kikunotsukasa Winter",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "kikunotsukasa-shuzo",
+  "name": "Kikunotsukasa Shuzo",
+  "native": null,
+  "location": "Iwate, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shu Kuu Izakaya",
+   "price": 92.09,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kikunotsukasa-winter-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kikunotsukasa-innocent-40-junmai-daiginj",
+  "kikunotsukasa-innocent-60-junmai",
+  "kikunotsukasa-shinboshi-junmai-ginjo",
+  "shichifukujin-super-dry-junmai"
+ ],
+ "prev": "kikunotsukasa-innocent-60-junmai",
+ "next": "kinoene-junmai-umakara-migaki-hachiwari"
+}

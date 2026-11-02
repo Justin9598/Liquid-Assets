@@ -1,0 +1,61 @@
+{
+ "id": "mua-pure-rice",
+ "name": "MÙA Pure Rice",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "mua-craft-sake",
+  "name": "MÙA Craft Saké",
+  "native": null,
+  "location": "Ho Chi Minh City, Vietnam",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "ST25 (Vietnamese)"
+  },
+  {
+   "label": "SMV",
+   "value": 5,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 3
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sake Matsuri",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "mua-classic",
+  "mua-pineapple-chili"
+ ],
+ "prev": "mua-pineapple-chili",
+ "next": "noguchi-naohiko-natsu-no-namazake-2026"
+}

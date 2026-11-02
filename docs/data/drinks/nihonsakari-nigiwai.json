@@ -1,0 +1,55 @@
+{
+ "id": "nihonsakari-nigiwai",
+ "name": "NIHONSAKARI NIGIWAI",
+ "category": "sake",
+ "sub": "futsushu",
+ "producer": {
+  "key": "nihonsakari",
+  "name": "Nihonsakari",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 13,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Futsushu"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 75,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 13,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Inter Rice",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "kiku-masamune-kasen",
+ "next": "hakushika-nada-jikomi-karakuchi"
+}

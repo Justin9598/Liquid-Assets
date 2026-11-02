@@ -1,0 +1,59 @@
+{
+ "id": "fukunishiki-low-alcohol-junmai",
+ "name": "Fukunishiki Low Alcohol Junmai",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "fukunishiki",
+  "name": "Fukunishiki",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 8,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 70,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Kinuhikari"
+  },
+  {
+   "label": "ABV",
+   "value": 8,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "500ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "500ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 32.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "aiyama-galaxy-kimoto-junmai-ginjo-origar",
+  "junsei-jd",
+  "junsei-jg"
+ ],
+ "prev": "takezumi-bamboo-spring",
+ "next": "gekkeikan-argo"
+}

@@ -1,0 +1,109 @@
+{
+ "id": "sugata-omachi",
+ "name": "Sugata Junmai Ginjo Muroka Nama Genshu Omachi",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "iinuma-meijo",
+  "name": "Iinuma Meijo",
+  "native": null,
+  "location": "Tochigi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Omachi"
+  },
+  {
+   "label": "SMV",
+   "value": -3,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.7
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle, 1.8L Magnum"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 53.0,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 49.0,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 49.0,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "1.8L Magnum",
+   "where": "Mirai Sake Hall",
+   "price": 105.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/sugata-omachi-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "sugata-junmai-daiginjo-yamadanishiki-40",
+  "sugata-flying",
+  "sugata-aiyama",
+  "sugata-hitogokochi",
+  "sugata-kitashizuku",
+  "sugata-yumesasara",
+  "sugata-sparkling"
+ ],
+ "prev": "sugata-kitashizuku",
+ "next": "sugata-yumesasara"
+}

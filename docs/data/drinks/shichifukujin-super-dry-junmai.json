@@ -1,0 +1,88 @@
+{
+ "id": "shichifukujin-super-dry-junmai",
+ "name": "Shichifukujin Super Dry Junmai",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "kikunotsukasa-shuzo",
+  "name": "Kikunotsukasa Shuzo",
+  "native": null,
+  "location": "Iwate, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yuinoka"
+  },
+  {
+   "label": "SMV",
+   "value": 12,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.8
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle, 1.8L Magnum"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "1.8L Magnum",
+   "where": "Mirai Sake Hall",
+   "price": 95.0,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 42.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/shichifukujin-super-dry-junmai-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kikunotsukasa-innocent-40-junmai-daiginj",
+  "kikunotsukasa-innocent-60-junmai",
+  "kikunotsukasa-shinboshi-junmai-ginjo",
+  "kikunotsukasa-winter"
+ ],
+ "prev": "sharaku-junmaishu",
+ "next": "shinomine-aiyama-junmai-murokanamagenshu"
+}

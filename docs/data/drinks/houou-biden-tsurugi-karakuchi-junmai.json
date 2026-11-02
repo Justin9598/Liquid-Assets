@@ -1,0 +1,69 @@
+{
+ "id": "houou-biden-tsurugi-karakuchi-junmai",
+ "name": "Houou Biden Tsurugi Karakuchi Junmai",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "kobayashi-shuzo",
+  "name": "Kobayashi Shuzo",
+  "native": null,
+  "location": "Tochigi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki (koji), Gohyakumangoku (kake)"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Isego Honten",
+   "price": 5.45,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/houou-biden-tsurugi-karakuchi-junmai-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "hououbiden-mikumari-junmai-daiginjo"
+ ],
+ "prev": "hitakami-chokarakuchi-junmai",
+ "next": "izumibashi-natsu-yago-sparkling"
+}

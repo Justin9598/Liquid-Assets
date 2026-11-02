@@ -20,40 +20,43 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="favicon.png">
-<link rel="preload" href="assets/fonts/Outfit-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Kalam-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Kalam-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <!-- build:assets -->
 <script type="importmap">
 {
  "imports": {
-  "./assets/js/bottles.js": "./assets/js/bottles.js?v=ee2847bdc3",
-  "./assets/js/burger.js": "./assets/js/burger.js?v=ee2847bdc3",
-  "./assets/js/cards.js": "./assets/js/cards.js?v=ee2847bdc3",
-  "./assets/js/chrome.js": "./assets/js/chrome.js?v=ee2847bdc3",
-  "./assets/js/counter.js": "./assets/js/counter.js?v=ee2847bdc3",
-  "./assets/js/data.js": "./assets/js/data.js?v=ee2847bdc3",
-  "./assets/js/drink.js": "./assets/js/drink.js?v=ee2847bdc3",
-  "./assets/js/icons.js": "./assets/js/icons.js?v=ee2847bdc3",
-  "./assets/js/main.js": "./assets/js/main.js?v=ee2847bdc3",
-  "./assets/js/makers.js": "./assets/js/makers.js?v=ee2847bdc3",
-  "./assets/js/map.js": "./assets/js/map.js?v=ee2847bdc3",
-  "./assets/js/menu.js": "./assets/js/menu.js?v=ee2847bdc3",
-  "./assets/js/producer.js": "./assets/js/producer.js?v=ee2847bdc3",
-  "./assets/js/scene3.js": "./assets/js/scene3.js?v=ee2847bdc3",
-  "./assets/js/selfcheck.js": "./assets/js/selfcheck.js?v=ee2847bdc3",
-  "./assets/js/shelf.js": "./assets/js/shelf.js?v=ee2847bdc3",
-  "./assets/js/util.js": "./assets/js/util.js?v=ee2847bdc3",
-  "./assets/js/welcome.js": "./assets/js/welcome.js?v=ee2847bdc3"
+  "./assets/js/backdrop.js": "./assets/js/backdrop.js?v=05f595e879",
+  "./assets/js/burger.js": "./assets/js/burger.js?v=05f595e879",
+  "./assets/js/cards.js": "./assets/js/cards.js?v=05f595e879",
+  "./assets/js/chrome.js": "./assets/js/chrome.js?v=05f595e879",
+  "./assets/js/counter.js": "./assets/js/counter.js?v=05f595e879",
+  "./assets/js/data.js": "./assets/js/data.js?v=05f595e879",
+  "./assets/js/drink.js": "./assets/js/drink.js?v=05f595e879",
+  "./assets/js/icons.js": "./assets/js/icons.js?v=05f595e879",
+  "./assets/js/labels.js": "./assets/js/labels.js?v=05f595e879",
+  "./assets/js/main.js": "./assets/js/main.js?v=05f595e879",
+  "./assets/js/makers.js": "./assets/js/makers.js?v=05f595e879",
+  "./assets/js/map.js": "./assets/js/map.js?v=05f595e879",
+  "./assets/js/producer.js": "./assets/js/producer.js?v=05f595e879",
+  "./assets/js/scene3.js": "./assets/js/scene3.js?v=05f595e879",
+  "./assets/js/selfcheck.js": "./assets/js/selfcheck.js?v=05f595e879",
+  "./assets/js/shelf.js": "./assets/js/shelf.js?v=05f595e879",
+  "./assets/js/shells.js": "./assets/js/shells.js?v=05f595e879",
+  "./assets/js/util.js": "./assets/js/util.js?v=05f595e879",
+  "./assets/js/welcome.js": "./assets/js/welcome.js?v=05f595e879"
  }
 }
 </script>
-<link rel="preload" as="image" type="image/avif" imagesrcset="img/scene/bar-wide-1672.avif?v=e67018a6fb 1672w" imagesizes="max(100vw, calc(100dvh * 1.77683))" media="(orientation: landscape) and (min-width: 768px)">
-<link rel="preload" as="image" type="image/avif" imagesrcset="img/scene/bar-tall-852.avif?v=e67018a6fb 852w" imagesizes="max(100vw, calc(100dvh * 0.46154))" media="not ((orientation: landscape) and (min-width: 768px))">
-<link rel="stylesheet" href="assets/css/app.css?v=ee2847bdc3">
-<script type="module" src="assets/js/main.js?v=ee2847bdc3"></script>
+<link rel="preload" as="image" type="image/avif" imagesrcset="img/scene/bar-wide-1672.avif?v=303a2a7844 1672w" imagesizes="max(100vw, calc(100dvh * 1.77683))" media="(orientation: landscape) and (min-width: 768px)">
+<link rel="preload" as="image" type="image/avif" imagesrcset="img/scene/bar-tall-852.avif?v=303a2a7844 852w" imagesizes="max(100vw, calc(100dvh * 0.46154))" media="not ((orientation: landscape) and (min-width: 768px))">
+<link rel="stylesheet" href="assets/css/app.css?v=05f595e879">
+<script type="module" src="assets/js/main.js?v=05f595e879"></script>
 <!-- /build:assets -->
 </head>
 <body data-page="welcome">
 <a class="skip" href="#main">Skip to content</a>
+<div id="chrome"></div>
 <main id="main" tabindex="-1">
   <div id="page" aria-busy="true">
     <noscript>
@@ -64,7 +67,7 @@
     </noscript>
   </div>
 </main>
-<footer id="footer"></footer>
+<footer id="footer" class="chalkboard chalkboard--m"></footer>
 <div id="live" class="sr-only" aria-live="polite" role="status"></div>
 </body>
 </html>

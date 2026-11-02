@@ -1,0 +1,36 @@
+{
+ "key": "koshi-meijo",
+ "name": "Koshi Meijo",
+ "native": null,
+ "location": "Niigata",
+ "region": "Niigata",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "yamashiroya-fuga-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "asahi-shuzo",
+  "ishimoto-shuzo",
+  "kubiki-shuzo",
+  "shirataki-shuzo",
+  "swan-lake-beer",
+  "takachiyo-shuzo"
+ ]
+}

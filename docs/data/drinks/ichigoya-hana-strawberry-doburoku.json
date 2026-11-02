@@ -1,0 +1,56 @@
+{
+ "id": "ichigoya-hana-strawberry-doburoku",
+ "name": "Ichigoya Hana Strawberry Doburoku",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "happy-taro-brewery",
+  "name": "Happy Taro Brewery",
+  "native": null,
+  "location": "Shiga, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 6,
+ "styles": [
+  "Doburoku",
+  "Flavoured"
+ ],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "Rice + strawberry"
+  },
+  {
+   "label": "ABV",
+   "value": 6,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "480ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "480ml Bottle",
+   "where": "Omu Nomu",
+   "price": 88.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "oriental-whey",
+  "ukiuki-hops",
+  "something-happy-fresh-herb-tea"
+ ],
+ "prev": "hiraroku-layer-pear-craft-sake",
+ "next": "ine-to-agave-hanakaze"
+}

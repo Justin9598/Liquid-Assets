@@ -1,0 +1,67 @@
+{
+ "id": "sawanohana-sasara-super-dry-junmai-ginjo",
+ "name": "Sawanohana Sasara Super Dry Junmai Ginjo",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "banno-shuzo",
+  "name": "Banno Shuzo",
+  "native": null,
+  "location": "Nagano, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hitogokochi"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Isego Honten",
+   "price": 5.45,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/sawanohana-sasara-super-dry-junmai-ginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "sara-junmai-ginjo",
+ "next": "seikoh-junmai-ginjo-omachi"
+}

@@ -1565,5 +1565,48 @@
  "zaku-omachi-2026": {
   "labelStatus": "skip",
   "labelSkip": "printed on dark glass, no paper label"
+ },
+ "oze-no-yukidoke-junmai-daiginjo-halloween": {
+  "labelCrop": [
+   0.22,
+   0.52,
+   0.56,
+   0.28
+  ],
+  "labelStatus": "ok"
+ },
+ "underwater-luminous-sake-yeast-beer": {
+  "labelCrop": [
+   0.32,
+   0.4,
+   0.34,
+   0.34
+  ],
+  "labelStatus": "ok"
+ },
+ "yamamoto-sunset-orange-junmai-ginjo": {
+  "labelCrop": [
+   0.3,
+   0.58,
+   0.38,
+   0.3
+  ],
+  "labelStatus": "ok"
+ },
+ "minoh-hoppy-weizen": {
+  "labelStatus": "skip",
+  "labelSkip": "a glass of beer: no bottle or label in the photo"
+ },
+ "nara-eighty-eight": {
+  "labelStatus": "skip",
+  "labelSkip": "a glass of beer: no bottle or label in the photo"
+ },
+ "nasu-kohgen-ai": {
+  "labelStatus": "skip",
+  "labelSkip": "a glass of beer: no bottle or label in the photo"
+ },
+ "swanlake-amber-swan-ale": {
+  "labelStatus": "skip",
+  "labelSkip": "a glass of beer: no bottle or label in the photo"
  }
 }

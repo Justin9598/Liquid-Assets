@@ -1,0 +1,68 @@
+{
+ "id": "sharaku-junmaishu",
+ "name": "Sharaku Junmaishu",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "miyaizumi-meijo",
+  "name": "Miyaizumi Meijo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yumenoka"
+  },
+  {
+   "label": "SMV",
+   "value": 1,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.3
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sake Hub",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "sawahime-yamahai-junmai-shin-jizake-sengen",
+ "next": "shichifukujin-super-dry-junmai"
+}

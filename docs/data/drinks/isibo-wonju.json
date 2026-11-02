@@ -1,0 +1,67 @@
+{
+ "id": "isibo-wonju",
+ "name": "Isibo Wonju",
+ "category": "makgeolli",
+ "sub": "all",
+ "producer": {
+  "key": "isibo-brewery",
+  "name": "Isibo Brewery",
+  "native": null,
+  "location": "Jeju, South Korea",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15.5,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Base",
+   "value": "Glutinous rice (Jeju), rice"
+  },
+  {
+   "label": "ABV",
+   "value": 15.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "330ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-14",
+   "size": "330ml Bottle",
+   "where": "Mangwoo Makgeolli Bistro",
+   "price": 41.98,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/isibo-wonju-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/isibo-wonju-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "93-hwanggeum-gotgan",
+ "next": "mangwoo-yakbang-memilbogam"
+}

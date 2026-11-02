@@ -1,0 +1,41 @@
+{
+ "key": "ozawa-shuzojo",
+ "name": "Ozawa Shuzojo",
+ "native": null,
+ "location": "Nagano",
+ "region": "Nagano",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "jukyu-gattolibero-557-white-cat",
+   "category": "sake",
+   "sub": "ungraded"
+  },
+  {
+   "id": "jukyu-hirvi-19",
+   "category": "sake",
+   "sub": "ungraded"
+  }
+ ],
+ "moreFromRegion": [
+  "suwa-mikotsuru-shuzojo",
+  "obuse-winery-sogga-pere-et-fils",
+  "endo-shuzojo",
+  "banno-shuzo",
+  "daishinshu-shuzo",
+  "shinshu-meijo"
+ ]
+}

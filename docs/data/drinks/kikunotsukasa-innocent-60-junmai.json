@@ -1,0 +1,64 @@
+{
+ "id": "kikunotsukasa-innocent-60-junmai",
+ "name": "Kikunotsukasa Innocent 60 Junmai",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "kikunotsukasa-shuzo",
+  "name": "Kikunotsukasa Shuzo",
+  "native": null,
+  "location": "Iwate, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Ginginga"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 63.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "kikunotsukasa-innocent-40-junmai-daiginj",
+  "kikunotsukasa-shinboshi-junmai-ginjo",
+  "kikunotsukasa-winter",
+  "shichifukujin-super-dry-junmai"
+ ],
+ "prev": "kariho-junmai-yamahai-choukarakuchi",
+ "next": "kikunotsukasa-winter"
+}

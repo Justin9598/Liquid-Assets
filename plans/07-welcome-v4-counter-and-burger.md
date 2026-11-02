@@ -127,6 +127,8 @@ When the burger is pressed:
 
 ### 3.7 Other pages
 
+*Superseded by [Plan 08 §3.2](08-phase-2-launch.md) once approved: every page uses the same split burger menu as the counter.*
+
 Plans 02–04 pages (Phase 2 onwards) keep the iron-puck button in their header. It opens the same four options as a plain list. The burger animation belongs to the bar counter.
 
 ---

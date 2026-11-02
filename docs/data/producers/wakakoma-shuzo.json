@@ -1,0 +1,35 @@
+{
+ "key": "wakakoma-shuzo",
+ "name": "Wakakoma Shuzo",
+ "native": null,
+ "location": "Tochigi",
+ "region": "Tochigi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "wakakoma-carnival",
+   "category": "sake",
+   "sub": "ungraded"
+  }
+ ],
+ "moreFromRegion": [
+  "iinuma-meijo",
+  "inoue-seikichi-shoten",
+  "kobayashi-shuzo",
+  "nasu-kohgen-beer",
+  "tomikawa-shuzoten"
+ ]
+}

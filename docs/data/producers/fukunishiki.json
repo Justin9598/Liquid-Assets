@@ -1,0 +1,52 @@
+{
+ "key": "fukunishiki",
+ "name": "Fukunishiki",
+ "native": null,
+ "location": "Hyogo",
+ "region": "Hyogo",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 4,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 5
+ },
+ "drinks": [
+  {
+   "id": "aiyama-galaxy-kimoto-junmai-ginjo-origar",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "fukunishiki-low-alcohol-junmai",
+   "category": "sake",
+   "sub": "ungraded"
+  },
+  {
+   "id": "junsei-jd",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "junsei-jg",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "hakutsuru-shuzo",
+  "hakushika-tatsuuma-honke",
+  "eigashima-shuzo",
+  "kiku-masamune-shuzo",
+  "nihonsakari",
+  "shimomura-shuzoten",
+  "tajime-shuzo"
+ ]
+}

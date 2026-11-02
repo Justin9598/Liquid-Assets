@@ -1,0 +1,32 @@
+{
+ "key": "michizakura-shuzo",
+ "name": "Michizakura Shuzo",
+ "native": null,
+ "location": "Hokkaido",
+ "region": "Hokkaido",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "michizakura-junmai-ginjo-suisei-55",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "kamikawa-taisetsu-shuzo",
+  "takasago-shuzo"
+ ]
+}

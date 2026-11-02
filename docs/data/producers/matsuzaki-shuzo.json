@@ -1,0 +1,39 @@
+{
+ "key": "matsuzaki-shuzo",
+ "name": "Matsuzaki Shuzo",
+ "native": null,
+ "location": "Fukushima",
+ "region": "Fukushima",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "hirotogawa-tokubetsu-junmai",
+   "category": "sake",
+   "sub": "tokubetsu-junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "akebono-shuzo",
+  "niida-honke",
+  "hanaizumi-shuzo",
+  "puku-puku-brewing",
+  "ariga-jozo",
+  "haccoba-craft-sake-brewery",
+  "homare-shuzo",
+  "miyaizumi-meijo",
+  "ohki-daikichi-honten"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "key": "ryujin-shuzo",
+ "name": "Ryujin Shuzo",
+ "native": null,
+ "location": "Gunma",
+ "region": "Gunma",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "oze-no-yukidoke-junmai-daiginjo-halloween",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "ryujin-dragon-god-junmai-daiginjo-namazume",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "nagai-shuzo",
+  "machida-shuzoten",
+  "hijiri-shuzo",
+  "machida-shuzo"
+ ]
+}

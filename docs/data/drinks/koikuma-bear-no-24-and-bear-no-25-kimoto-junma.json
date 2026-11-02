@@ -1,0 +1,72 @@
+{
+ "id": "koikuma-bear-no-24-and-bear-no-25-kimoto-junma",
+ "name": "Koikuma Bear No. 24 and Bear No. 25 Kimoto Junmai Muroka Nama Genshu",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "nyu-shuzo",
+  "name": "Nyu Shuzo",
+  "native": null,
+  "location": "Fukui, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [
+  "Kimoto",
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku"
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Suiraku",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/koikuma-bear-no-24-and-bear-no-25-kimoto-junma-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "kissui-hidariuma-junmai-kasseinigori-uma-uma",
+ "next": "komesou-brocken-splash-junmai-muroka-genshu"
+}

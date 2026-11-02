@@ -1,0 +1,68 @@
+{
+ "id": "hakutsuru-tokusen-daiginjo",
+ "name": "Hakutsuru Tokusen Daiginjo",
+ "category": "sake",
+ "sub": "daiginjo",
+ "producer": {
+  "key": "hakutsuru-shuzo",
+  "name": "Hakutsuru Shuzo",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "SMV",
+   "value": 3,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.3
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shopee",
+   "price": 36.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "hakutsuru-awayuki-sparkling",
+  "hakutsuru-junmai-daiginjo",
+  "hakutsuru-junmaishu"
+ ],
+ "prev": "gekkeikan-daiginjo",
+ "next": "kokuryu-daiginjo"
+}

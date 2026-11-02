@@ -129,7 +129,7 @@ export async function run(ctx) {
       if (rb.left < 0 || rb.right > innerWidth + 1 || rb.top < -1) bad(`${when}: board "${bw.textContent.trim().slice(0, 12)}" is off the screen`);
     }
   };
-  const btn = $('[data-burger]');
+  const btn = $('.scene3 [data-burger]');
   btn.click();
   const opened = await until(() => $('.bd.split'));
   if (!opened) bad('the menu never reached its split state');

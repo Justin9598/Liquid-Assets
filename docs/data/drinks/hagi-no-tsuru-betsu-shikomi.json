@@ -1,0 +1,67 @@
+{
+ "id": "hagi-no-tsuru-betsu-shikomi",
+ "name": "Hagi no Tsuru Betsu-shikomi",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "hagino-shuzo",
+  "name": "Hagino Shuzo",
+  "native": null,
+  "location": "Miyagi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-01",
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": null,
+   "note": null
+  },
+  {
+   "date": "2026-10-21",
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 12.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hagi-no-tsuru-betsu-shikomi-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/hagi-no-tsuru-betsu-shikomi-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "gekkeikan-argo",
+ "next": "hakutsuru-awayuki-sparkling"
+}

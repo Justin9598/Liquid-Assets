@@ -2,7 +2,7 @@
 // Japanese season on the right. The build decides the picks (shelf.json `counter`); the page only chooses the season
 // from the visitor's month. Bottles stand on the counter top and are larger than the shelf bottles.
 import { getSections, img } from './data.js';
-import { DEFAULT_LABEL, motifFor, shapeFor } from './bottles.js';
+import { DEFAULT_LABEL, motifFor, shapeFor } from './labels.js';
 import { esc } from './util.js';
 
 const pct = (v) => `${+(v * 100).toFixed(3)}%`;

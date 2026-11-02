@@ -1,0 +1,60 @@
+{
+ "id": "eiko-fuji-koh-rin",
+ "name": "Eiko Fuji Junmai Daiginjo Muroka Nama Genshu Koh-Rin",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "fuji-shuzo",
+  "name": "Fuji Shuzo",
+  "native": null,
+  "location": "Yamagata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Dewasansan"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 60.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "eiko-fuji-snake-eye-junmai-daiginjo"
+ ],
+ "prev": "date-seven-season-2-episode-5-yamawa",
+ "next": "eiko-fuji-snake-eye-junmai-daiginjo"
+}

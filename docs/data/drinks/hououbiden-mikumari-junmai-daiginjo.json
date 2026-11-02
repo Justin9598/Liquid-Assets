@@ -1,0 +1,59 @@
+{
+ "id": "hououbiden-mikumari-junmai-daiginjo",
+ "name": "Hououbiden Mikumari Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "kobayashi-shuzo",
+  "name": "Kobayashi Shuzo",
+  "native": null,
+  "location": "Tochigi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Taipei Alcohol Fair",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hououbiden-mikumari-junmai-daiginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "houou-biden-tsurugi-karakuchi-junmai"
+ ],
+ "prev": "hito-roman",
+ "next": "ikusagami-x-hakurakusei-junmai-daiginjo-"
+}

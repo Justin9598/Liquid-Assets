@@ -1,0 +1,80 @@
+{
+ "id": "nabeshima-the-nabeshima-junmai-daiginjo",
+ "name": "Nabeshima \"The Nabeshima\" Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "fukuchiyo-shuzo",
+  "name": "Fukuchiyo Shuzo",
+  "native": null,
+  "location": "Saga, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 35,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki (Tojo, special grade) 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-03",
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 10.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/nabeshima-the-nabeshima-junmai-daiginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/nabeshima-the-nabeshima-junmai-daiginjo-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "nabeshima-blossoms-moon",
+  "nabeshima-harvest-moon-classic",
+  "nabeshima-junmai-daiginjo-aiyama",
+  "nabeshima-junmai-ginjo-akaiwa-omachi",
+  "nabeshima-junmai-ginjo-gohyakumangoku"
+ ],
+ "prev": "mizubasho-junmai-daiginjo-premium",
+ "next": "nabeshima-junmai-daiginjo-aiyama"
+}

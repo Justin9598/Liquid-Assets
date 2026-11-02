@@ -1,0 +1,46 @@
+{
+ "id": "something-happy-fresh-herb-tea",
+ "name": "“Something Happy” Fresh Herb Tea",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "happy-taro-brewery",
+  "name": "Happy Taro Brewery",
+  "native": null,
+  "location": "Shiga, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Doburoku"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Size",
+   "value": "480ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "480ml Bottle",
+   "where": "Omu Nomu",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "ichigoya-hana-strawberry-doburoku",
+  "oriental-whey",
+  "ukiuki-hops"
+ ],
+ "prev": "wakaze-unique",
+ "next": "fest-hop-doburoku"
+}

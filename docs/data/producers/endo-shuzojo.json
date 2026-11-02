@@ -1,0 +1,41 @@
+{
+ "key": "endo-shuzojo",
+ "name": "Endo Shuzojo",
+ "native": null,
+ "location": "Nagano",
+ "region": "Nagano",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "endo-daiginjo",
+   "category": "sake",
+   "sub": "daiginjo"
+  },
+  {
+   "id": "naotora",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "suwa-mikotsuru-shuzojo",
+  "obuse-winery-sogga-pere-et-fils",
+  "ozawa-shuzojo",
+  "banno-shuzo",
+  "daishinshu-shuzo",
+  "shinshu-meijo"
+ ]
+}

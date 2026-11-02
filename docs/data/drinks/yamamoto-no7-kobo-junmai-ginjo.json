@@ -1,0 +1,78 @@
+{
+ "id": "yamamoto-no7-kobo-junmai-ginjo",
+ "name": "Yamamoto No.7 Kobo Junmai Ginjo",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "yamamoto-gomei-kaisha",
+  "name": "Yamamoto Gomei Kaisha",
+  "native": null,
+  "location": "Akita, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Akita Sake Komachi (koji), Gin no Sei (kake)"
+  },
+  {
+   "label": "Yeast",
+   "value": "Kyokai No.7"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 19.62,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/yamamoto-no7-kobo-junmai-ginjo-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "yamamoto-junmai-ginjo-wain",
+  "yamamoto-midnight-blue-junmai-ginjo",
+  "yamamoto-sunshine-yellow-yamahai-junmai-ginjo"
+ ],
+ "prev": "yamamoto-midnight-blue-junmai-ginjo",
+ "next": "yamamoto-sunset-orange-junmai-ginjo"
+}

@@ -1,0 +1,33 @@
+{
+ "key": "akishika-shuzo",
+ "name": "Akishika Shuzo",
+ "native": null,
+ "location": "Osaka",
+ "region": "Osaka",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "akishika-moto-plus-one-junmai-muroka-nam",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "minoh-beer",
+  "rikyugura",
+  "suntory"
+ ]
+}

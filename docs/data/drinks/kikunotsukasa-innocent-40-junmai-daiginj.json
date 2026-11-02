@@ -1,0 +1,60 @@
+{
+ "id": "kikunotsukasa-innocent-40-junmai-daiginj",
+ "name": "Kikunotsukasa Innocent 40 Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "kikunotsukasa-shuzo",
+  "name": "Kikunotsukasa Shuzo",
+  "native": null,
+  "location": "Iwate, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 76.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "kikunotsukasa-innocent-60-junmai",
+  "kikunotsukasa-shinboshi-junmai-ginjo",
+  "kikunotsukasa-winter",
+  "shichifukujin-super-dry-junmai"
+ ],
+ "prev": "keigetsu-junmai-daiginjo-sparkling-hao",
+ "next": "kubota-junmai-daiginjo"
+}

@@ -1,0 +1,46 @@
+{
+ "key": "obuse-winery-sogga-pere-et-fils",
+ "name": "Obuse Winery (Sogga Père et Fils)",
+ "native": null,
+ "location": "Nagano",
+ "region": "Nagano",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 3,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 3
+ },
+ "drinks": [
+  {
+   "id": "obuse-jamais-deux-sans-toi",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "obuse-numero-six",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "obuse-trois",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "suwa-mikotsuru-shuzojo",
+  "endo-shuzojo",
+  "ozawa-shuzojo",
+  "banno-shuzo",
+  "daishinshu-shuzo",
+  "shinshu-meijo"
+ ]
+}

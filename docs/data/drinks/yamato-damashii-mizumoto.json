@@ -1,0 +1,76 @@
+{
+ "id": "yamato-damashii-mizumoto",
+ "name": "Yamato Damashii Mizumoto",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "eigashima-shuzo",
+  "name": "Eigashima Shuzo",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu",
+  "Mizumoto"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 70,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Nihonbare"
+  },
+  {
+   "label": "Yeast",
+   "value": "#601"
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Suiraku",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/yamato-damashii-mizumoto-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "tenranzan-natsu-junmai",
+ "next": "yoshidagura-u-night-and-dance-junmai"
+}

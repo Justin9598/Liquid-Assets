@@ -1,0 +1,68 @@
+{
+ "id": "miyoshino-jozo-hanatomoe-jundaidai-junmai-daig",
+ "name": "Miyoshino Jozo - Hanatomoe Jundaidai Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "miyoshino-jozo",
+  "name": "Miyoshino Jozo",
+  "native": null,
+  "location": "Nara, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu",
+  "Yamahai"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Suiraku",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/miyoshino-jozo-hanatomoe-jundaidai-junmai-daig-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "mimurosugi-roman-junmai-daiginjo-35",
+ "next": "mizubasho-junmai-daiginjo"
+}

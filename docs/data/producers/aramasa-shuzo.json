@@ -1,0 +1,36 @@
+{
+ "key": "aramasa-shuzo",
+ "name": "Aramasa Shuzo",
+ "native": null,
+ "location": "Akita",
+ "region": "Akita",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "aramasa-colors-cosmos",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "yamamoto-gomei-kaisha",
+  "ine-to-agave",
+  "yamamoto-shuzoten",
+  "akita-seishu",
+  "hinomaru-jozo",
+  "ryozeki-shuzo"
+ ]
+}

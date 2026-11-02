@@ -1,0 +1,95 @@
+{
+ "id": "sawahime-yamahai-junmai-shin-jizake-sengen",
+ "name": "Sawahime Yamahai Junmai Shin Jizake Sengen",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "inoue-seikichi-shoten",
+  "name": "Inoue Seikichi Shoten",
+  "native": null,
+  "location": "Tochigi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 18,
+ "styles": [
+  "Yamahai",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 65,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hitomebore"
+  },
+  {
+   "label": "ABV",
+   "value": 18,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": null,
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 10.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/sawahime-yamahai-junmai-shin-jizake-sengen-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/sawahime-yamahai-junmai-shin-jizake-sengen-2.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "second",
+   "caption": "Second photo",
+   "web": "img/web/sawahime-yamahai-junmai-shin-jizake-sengen-3.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "sawahime-daiginjo-tobingakoi-origarami-nama",
+  "sawahime-ginjo"
+ ],
+ "prev": "ookura-hinohikari-yamahai-junmai-jikagumi",
+ "next": "sharaku-junmaishu"
+}

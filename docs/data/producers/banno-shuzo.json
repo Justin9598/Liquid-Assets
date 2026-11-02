@@ -1,0 +1,36 @@
+{
+ "key": "banno-shuzo",
+ "name": "Banno Shuzo",
+ "native": null,
+ "location": "Nagano",
+ "region": "Nagano",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "sawanohana-sasara-super-dry-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "suwa-mikotsuru-shuzojo",
+  "obuse-winery-sogga-pere-et-fils",
+  "endo-shuzojo",
+  "ozawa-shuzojo",
+  "daishinshu-shuzo",
+  "shinshu-meijo"
+ ]
+}

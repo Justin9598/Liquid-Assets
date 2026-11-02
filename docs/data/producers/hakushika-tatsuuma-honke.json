@@ -1,0 +1,42 @@
+{
+ "key": "hakushika-tatsuuma-honke",
+ "name": "Hakushika (Tatsuuma Honke)",
+ "native": null,
+ "location": "Hyogo",
+ "region": "Hyogo",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "hakushika-nada-jikomi-karakuchi",
+   "category": "sake",
+   "sub": "futsushu"
+  },
+  {
+   "id": "hakushika-namachozou",
+   "category": "sake",
+   "sub": "honjozo"
+  }
+ ],
+ "moreFromRegion": [
+  "fukunishiki",
+  "hakutsuru-shuzo",
+  "eigashima-shuzo",
+  "kiku-masamune-shuzo",
+  "nihonsakari",
+  "shimomura-shuzoten",
+  "tajime-shuzo"
+ ]
+}

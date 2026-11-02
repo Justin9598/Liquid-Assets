@@ -1,0 +1,44 @@
+{
+ "key": "haccoba-craft-sake-brewery",
+ "name": "Haccoba Craft Sake Brewery",
+ "native": null,
+ "location": "Fukushima",
+ "region": "Fukushima",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 2,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 2
+ },
+ "drinks": [
+  {
+   "id": "haccoba-jam-2025by-no4",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "haccoba-secret-spring",
+   "category": "sake",
+   "sub": "craft-sake"
+  }
+ ],
+ "moreFromRegion": [
+  "akebono-shuzo",
+  "niida-honke",
+  "hanaizumi-shuzo",
+  "puku-puku-brewing",
+  "ariga-jozo",
+  "homare-shuzo",
+  "matsuzaki-shuzo",
+  "miyaizumi-meijo",
+  "ohki-daikichi-honten"
+ ]
+}

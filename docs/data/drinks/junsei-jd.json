@@ -1,0 +1,91 @@
+{
+ "id": "junsei-jd",
+ "name": "Junsei Hyogo Yumenishiki Kimoto Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "fukunishiki",
+  "name": "Fukunishiki",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 14,
+ "styles": [
+  "Kimoto"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 50,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hyogo Yumenishiki (Kasai-grown) 100%"
+  },
+  {
+   "label": "Yeast",
+   "value": "Kyokai No.9"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 57.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/junsei-jd-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/junsei-jd-2.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "second",
+   "caption": "Second photo",
+   "web": "img/web/junsei-jd-3.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "aiyama-galaxy-kimoto-junmai-ginjo-origar",
+  "fukunishiki-low-alcohol-junmai",
+  "junsei-jg"
+ ],
+ "prev": "isshou-seishun",
+ "next": "kagatobi-junmai-daiginjo"
+}

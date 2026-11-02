@@ -1,0 +1,76 @@
+{
+ "id": "kokushimuso-junmai-ginjo-kitashizuku",
+ "name": "Kokushimuso Junmai Ginjo Kitashizuku",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "takasago-shuzo",
+  "name": "Takasago Shuzo",
+  "native": null,
+  "location": "Hokkaido, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15.5,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Kitashizuku"
+  },
+  {
+   "label": "SMV",
+   "value": 2,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.5
+  },
+  {
+   "label": "ABV",
+   "value": 15.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Mirai Sake Hall",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kokushimuso-junmai-ginjo-kitashizuku-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "koganesawa-hitomebore-brut",
+ "next": "koshi-no-kanbai-junmai-ginjo-sai-mikino-"
+}

@@ -1,0 +1,72 @@
+{
+ "id": "koshi-no-kanbai-junmai-ginjo-sai-mikino-",
+ "name": "Koshi no Kanbai Junmai Ginjo Sai (Mikino-Mikoto Label)",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "ishimoto-shuzo",
+  "name": "Ishimoto Shuzo",
+  "native": null,
+  "location": "Niigata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku + Yamada Nishiki"
+  },
+  {
+   "label": "SMV",
+   "value": 2,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": null,
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/koshi-no-kanbai-junmai-ginjo-sai-mikino--1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "kokushimuso-junmai-ginjo-kitashizuku",
+ "next": "machida-jungin-55-omachi"
+}

@@ -1,0 +1,68 @@
+{
+ "id": "ikusagami-x-hakurakusei-junmai-daiginjo-",
+ "name": "Ikusagami × Hakurakusei Junmai Daiginjo Rinsen",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "niizawa-brewery",
+  "name": "Niizawa Brewery",
+  "native": null,
+  "location": "Miyagi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16.5,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Omachi"
+  },
+  {
+   "label": "SMV",
+   "value": 5,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.6
+  },
+  {
+   "label": "ABV",
+   "value": 16.5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sake Hub",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "hououbiden-mikumari-junmai-daiginjo",
+ "next": "isshou-seishun-bessen-junmai-daiginjo"
+}

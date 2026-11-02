@@ -1,0 +1,76 @@
+{
+ "id": "mimurosugi-roman-junmai-daiginjo-35",
+ "name": "Mimurosugi Roman Junmai Daiginjo 35",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "imanishi-shuzo",
+  "name": "Imanishi Shuzo",
+  "native": null,
+  "location": "Nara, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 35,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-03",
+   "size": "60ml Tasting",
+   "where": "Fermenteria by Sake Mama",
+   "price": 15.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/mimurosugi-roman-junmai-daiginjo-35-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/mimurosugi-roman-junmai-daiginjo-35-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "mimurosugi-dio-abita"
+ ],
+ "prev": "mansakunohana-junmai-daiginjo-nama-genshu-kame",
+ "next": "miyoshino-jozo-hanatomoe-jundaidai-junmai-daig"
+}

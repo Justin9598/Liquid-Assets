@@ -1,0 +1,51 @@
+{
+ "key": "sendai-station-brewery-fermenteria",
+ "name": "Sendai Station Brewery Fermenteria",
+ "native": null,
+ "location": "Miyagi",
+ "region": "Miyagi",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 3,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 3
+ },
+ "drinks": [
+  {
+   "id": "citrene",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "fermenteria-sparkling",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "fermenteria-yeastology-philly-sour",
+   "category": "sake",
+   "sub": "craft-sake"
+  }
+ ],
+ "moreFromRegion": [
+  "akiu-heart-rock-sake",
+  "hirako-shuzo",
+  "date-seven-koganesawa-style-miyagi-collective",
+  "date-seven-yamawa-haginotsuru-miyagi-collective",
+  "date-seven-yamawa-style-miyagi-collective",
+  "hagino-shuzo",
+  "kanbai-shuzo",
+  "kawakei-shoten",
+  "niizawa-brewery",
+  "onuma-shuzoten",
+  "yamawa-shuzoten"
+ ]
+}

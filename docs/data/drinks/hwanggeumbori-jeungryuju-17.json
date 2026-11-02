@@ -1,0 +1,75 @@
+{
+ "id": "hwanggeumbori-jeungryuju-17",
+ "name": "Hwanggeumbori Jeungryuju 17",
+ "category": "spirits",
+ "sub": "soju",
+ "producer": {
+  "key": "hwanggeumbori-brewery",
+  "name": "Hwanggeumbori Brewery",
+  "native": null,
+  "location": "Chungcheongnam-do, South Korea",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Base ingredient",
+   "value": "Barley"
+  },
+  {
+   "label": "Kōji",
+   "value": "Nuruk"
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "375ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-14",
+   "size": "375ml Bottle",
+   "where": "Mangwoo Makgeolli Bistro",
+   "price": 19.08,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hwanggeumbori-jeungryuju-17-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/hwanggeumbori-jeungryuju-17-2.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "side",
+   "caption": "Side label",
+   "web": "img/web/hwanggeumbori-jeungryuju-17-3.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "hwanggeumbori-jeungryuju-17",
+ "next": "hwanggeumbori-jeungryuju-17"
+}

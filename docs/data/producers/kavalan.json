@@ -1,0 +1,39 @@
+{
+ "key": "kavalan",
+ "name": "Kavalan",
+ "native": null,
+ "location": "Yilan",
+ "region": "Yilan",
+ "country": "Taiwan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 3,
+  "categories": 2,
+  "favourites": 0,
+  "timesHad": 3
+ },
+ "drinks": [
+  {
+   "id": "kavalan-distillery-reserve-peated-single-cask-strength",
+   "category": "spirits",
+   "sub": "whisky"
+  },
+  {
+   "id": "kavalan-dry-single-malt-highball",
+   "category": "cocktails",
+   "sub": "all"
+  },
+  {
+   "id": "kavalan-highball-whisky-soda",
+   "category": "cocktails",
+   "sub": "all"
+  }
+ ],
+ "moreFromRegion": []
+}

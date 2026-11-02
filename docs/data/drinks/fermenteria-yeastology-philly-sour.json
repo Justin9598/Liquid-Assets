@@ -1,0 +1,71 @@
+{
+ "id": "fermenteria-yeastology-philly-sour",
+ "name": "Fermenteria Yeastology Philly Sour",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "sendai-station-brewery-fermenteria",
+  "name": "Sendai Station Brewery Fermenteria",
+  "native": null,
+  "location": "Miyagi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 5,
+ "styles": [
+  "Hopped"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "ABV",
+   "value": 5,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "375ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-21",
+   "size": "375ml Bottle",
+   "where": "Fermenteria by Sake Mama",
+   "price": 49.9,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/fermenteria-yeastology-philly-sour-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/fermenteria-yeastology-philly-sour-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "citrene",
+  "fermenteria-sparkling"
+ ],
+ "prev": "fermenteria-sparkling",
+ "next": "haccoba-jam-2025by-no4"
+}

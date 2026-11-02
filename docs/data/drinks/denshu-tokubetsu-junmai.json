@@ -1,0 +1,63 @@
+{
+ "id": "denshu-tokubetsu-junmai",
+ "name": "Denshu Tokubetsu Junmai",
+ "category": "sake",
+ "sub": "tokubetsu-junmai",
+ "producer": {
+  "key": "nishida-shuzoten",
+  "name": "Nishida Shuzoten",
+  "native": null,
+  "location": "Aomori, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Tokubetsu Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hanafubuki"
+  },
+  {
+   "label": "SMV",
+   "value": 0,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.5
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Sake Hub",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "against-the-grain-normat-tokubetsu-junma",
+ "next": "harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu"
+}

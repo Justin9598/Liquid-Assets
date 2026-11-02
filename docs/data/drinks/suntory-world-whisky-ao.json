@@ -1,0 +1,72 @@
+{
+ "id": "suntory-world-whisky-ao",
+ "name": "Suntory World Whisky Ao",
+ "category": "spirits",
+ "sub": "whisky",
+ "producer": {
+  "key": "suntory",
+  "name": "Suntory",
+  "native": null,
+  "location": "Osaka, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 43,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Bottler",
+   "value": "Distillery bottling"
+  },
+  {
+   "label": "Single cask or blend",
+   "value": "Blended"
+  },
+  {
+   "label": "Cask strength",
+   "value": "No"
+  },
+  {
+   "label": "ABV",
+   "value": 43,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "700ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-10-27",
+   "size": "700ml Bottle",
+   "where": "Changi Airport Duty Free",
+   "price": 128.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/suntory-world-whisky-ao-1.webp",
+   "w": 675,
+   "h": 1200
+  },
+  {
+   "kind": "back",
+   "caption": "Back label",
+   "web": "img/web/suntory-world-whisky-ao-2.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "kavalan-distillery-reserve-peated-single-cask-strength",
+ "next": "woodford-reserve-distillers-select"
+}

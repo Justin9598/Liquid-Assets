@@ -1,0 +1,198 @@
+{
+ "id": "komesou-brocken-splash-junmai-muroka-genshu",
+ "name": "Komesou Brocken Splash Junmai Muroka Genshu",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "aoki-shuzo",
+  "name": "Aoki Shuzo",
+  "native": null,
+  "location": "Aichi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 21,
+ "styles": [
+  "Muroka",
+  "Genshu"
+ ],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 70,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku & Wakamizu"
+  },
+  {
+   "label": "SMV",
+   "value": 16,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 21,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": {
+  "appearance": {
+   "clarity": "clear",
+   "intensity": "medium",
+   "colour": "gold"
+  },
+  "nose": {
+   "condition": "clean",
+   "intensity": "medium(-)"
+  },
+  "palate": {
+   "sweetness": "off-dry",
+   "umami": "medium",
+   "body": "medium(+)",
+   "alcohol": "high",
+   "flavour": [
+    "Strong mushroom taste"
+   ]
+  },
+  "scales": {
+   "clarity": [
+    "clear",
+    "slightly hazy",
+    "hazy (faulty?)",
+    "light lees",
+    "medium lees",
+    "thick lees"
+   ],
+   "appearanceIntensity": [
+    "water-white",
+    "pale",
+    "medium",
+    "deep"
+   ],
+   "colour": [
+    "colourless",
+    "lemon-green",
+    "lemon",
+    "gold",
+    "amber",
+    "brown"
+   ],
+   "noseCondition": [
+    "clean",
+    "unclean (faulty?)"
+   ],
+   "noseIntensity": [
+    "light",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "pronounced"
+   ],
+   "sweetness": [
+    "dry",
+    "off-dry",
+    "medium-dry",
+    "medium-sweet",
+    "sweet",
+    "luscious"
+   ],
+   "acidity": [
+    "low",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "high"
+   ],
+   "umami": [
+    "low",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "high"
+   ],
+   "alcohol": [
+    "low",
+    "medium",
+    "high"
+   ],
+   "body": [
+    "light",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "full"
+   ],
+   "mousse": [
+    "delicate",
+    "creamy",
+    "aggressive"
+   ],
+   "flavourIntensity": [
+    "light",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "pronounced"
+   ],
+   "finish": [
+    "short",
+    "medium(-)",
+    "medium",
+    "medium(+)",
+    "long"
+   ],
+   "quality": [
+    "faulty",
+    "poor",
+    "acceptable",
+    "good",
+    "very good",
+    "outstanding"
+   ],
+   "category": [
+    "futsū-shu",
+    "premium"
+   ],
+   "ginjo": [
+    "ginjō",
+    "non-ginjō"
+   ]
+  }
+ },
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Isego Honten",
+   "price": 5.45,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/komesou-brocken-splash-junmai-muroka-genshu-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "koikuma-bear-no-24-and-bear-no-25-kimoto-junma",
+ "next": "kujira-junmai-yamadanishiki-kimoto-nama-genshu-80"
+}

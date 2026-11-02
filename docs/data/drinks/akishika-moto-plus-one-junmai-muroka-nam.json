@@ -1,0 +1,84 @@
+{
+ "id": "akishika-moto-plus-one-junmai-muroka-nam",
+ "name": "Akishika Moto Plus One Junmai Muroka Nama",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "akishika-shuzo",
+  "name": "Akishika Shuzo",
+  "native": null,
+  "location": "Osaka, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Yamahai"
+ ],
+ "favourite": true,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 70,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki"
+  },
+  {
+   "label": "Yeast",
+   "value": "#7"
+  },
+  {
+   "label": "SMV",
+   "value": -20,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 4.3
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Omu Nomu",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/akishika-moto-plus-one-junmai-muroka-nam-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "zaku-g",
+ "next": "umifudo-sea-food"
+}

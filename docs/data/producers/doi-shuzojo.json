@@ -1,0 +1,29 @@
+{
+ "key": "doi-shuzojo",
+ "name": "Doi Shuzojo",
+ "native": null,
+ "location": "Shizuoka",
+ "region": "Shizuoka",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "kaiun-iwaizake-tokubetsu-junmai",
+   "category": "sake",
+   "sub": "tokubetsu-junmai"
+  }
+ ],
+ "moreFromRegion": []
+}

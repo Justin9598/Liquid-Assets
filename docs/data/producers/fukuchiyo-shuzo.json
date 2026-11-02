@@ -1,0 +1,56 @@
+{
+ "key": "fukuchiyo-shuzo",
+ "name": "Fukuchiyo Shuzo",
+ "native": null,
+ "location": "Saga",
+ "region": "Saga",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 6,
+  "categories": 1,
+  "favourites": 1,
+  "timesHad": 7
+ },
+ "drinks": [
+  {
+   "id": "nabeshima-the-nabeshima-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "nabeshima-blossoms-moon",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "nabeshima-harvest-moon-classic",
+   "category": "sake",
+   "sub": "tokubetsu-junmai"
+  },
+  {
+   "id": "nabeshima-junmai-daiginjo-aiyama",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "nabeshima-junmai-ginjo-akaiwa-omachi",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
+  {
+   "id": "nabeshima-junmai-ginjo-gohyakumangoku",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "koueigiku-shuzo"
+ ]
+}

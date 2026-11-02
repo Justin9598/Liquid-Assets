@@ -1,0 +1,54 @@
+{
+ "id": "kiku-masamune-kasen",
+ "name": "Kiku Masamune Kasen",
+ "category": "sake",
+ "sub": "futsushu",
+ "producer": {
+  "key": "kiku-masamune-shuzo",
+  "name": "Kiku-Masamune Shuzo",
+  "native": null,
+  "location": "Hyogo, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Futsushu"
+  },
+  {
+   "label": "SMV",
+   "value": 2.5,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "1.8L Magnum"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "1.8L Magnum",
+   "where": "Shopee",
+   "price": 55.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [],
+ "prev": "hakushika-nada-jikomi-karakuchi",
+ "next": "nihonsakari-nigiwai"
+}

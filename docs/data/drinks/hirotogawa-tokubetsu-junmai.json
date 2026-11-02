@@ -1,0 +1,72 @@
+{
+ "id": "hirotogawa-tokubetsu-junmai",
+ "name": "Hirotogawa Tokubetsu Junmai",
+ "category": "sake",
+ "sub": "tokubetsu-junmai",
+ "producer": {
+  "key": "matsuzaki-shuzo",
+  "name": "Matsuzaki Shuzo",
+  "native": null,
+  "location": "Fukushima, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Tokubetsu Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yume no Kaori"
+  },
+  {
+   "label": "SMV",
+   "value": 3,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "60ml Tasting",
+   "where": "Shu Kuu Izakaya",
+   "price": null,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hirotogawa-tokubetsu-junmai-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu",
+ "next": "iamnishiki-tokubetsu-junmai"
+}

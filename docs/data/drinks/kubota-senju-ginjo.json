@@ -1,0 +1,66 @@
+{
+ "id": "kubota-senju-ginjo",
+ "name": "Kubota Senju Ginjo",
+ "category": "sake",
+ "sub": "ginjo",
+ "producer": {
+  "key": "asahi-shuzo",
+  "name": "Asahi Shuzo",
+  "native": null,
+  "location": "Niigata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku"
+  },
+  {
+   "label": "SMV",
+   "value": 5,
+   "viz": "smv"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Shopee",
+   "price": 44.0,
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "kubota-junmai-daiginjo"
+ ],
+ "prev": "sawahime-ginjo",
+ "next": "narutotai-ginjo-shiboritate-nama-genshu"
+}

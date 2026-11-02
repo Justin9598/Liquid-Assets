@@ -1,10 +1,9 @@
 // Welcome page: the bar (Plan 01). Top shelf = categories, lower shelves = subcategory bottles.
 // One scene engine (Plan 07): a rendered plate for the screen shape, wide for landscape and tall for phones, with the same live layers.
-import { bottleSVG, DEFAULT_LABEL, motifFor, randomPick, shapeFor } from './bottles.js';
+import { DEFAULT_LABEL, motifFor, randomPick, shapeFor } from './labels.js';
 import { burgerHTML, mountBurger } from './burger.js';
 import { countersHTML, mountTabs, placeCounter, seasonNow, slateStyle } from './counter.js';
 import { getJSON, getSections, img } from './data.js';
-import { menuButton } from './menu.js';
 import { anchorStyle, debugHTML, plateHTML, plateKind, sceneQuery, shelfStyle, shellBottle, wideQuery } from './scene3.js';
 import { $, $$, announce, esc, plural, reducedMotion, setTitle } from './util.js';
 
@@ -24,7 +23,7 @@ function distribute(n, per) {
 const IDLE = 'Pick a bottle from the top shelf.';
 
 export async function mount(root, ctx) {
-  const { ix } = ctx;
+  const { ix, state } = ctx;
   const cats = ix.shelf.categories;
   let manifest = null;
   try { manifest = await getJSON('scene.json'); } catch { manifest = null; }
@@ -41,8 +40,8 @@ export async function mount(root, ctx) {
   let burgerCtl = null;
   let tabsCtl = null;
 
-  // ---- bottle art: rendered shell when one exists, otherwise the SVG bottle -------------------------------------
-  const art = (shape, o) => shellBottle(manifest, shape, o) || bottleSVG(shape, o);
+  // ---- bottle art: the rendered shell for the shape ----------------------------------------------------------------
+  const art = (shape, o) => shellBottle(manifest, shape, o) || '';
 
   const vesselHTML = (c) => {
     const def = DEFAULT_LABEL[c.vessel] || {};
@@ -60,15 +59,17 @@ export async function mount(root, ctx) {
     const burgerOn = counterOn && !!manifest.burger;
     const season = seasonNow(q);
     const rows = vesselRows.map((row, i) => `<div class="shelf-row s3 vrow" style="${shelfStyle(P.shelves[i])}"><div class="row-items" style="--n:${row.length}">${row.map(vesselHTML).join('')}</div></div>`).join('');
-    return `<div class="bar scene3" data-plate="${kind}">
+    // Phase 2: the plate is the fixed backdrop behind every page (backdrop.js), so the welcome page does not carry its own
+    const ownPlate = !state.backdrop;
+    return `<div class="bar scene3${ownPlate ? '' : ' on-backdrop'}" data-plate="${kind}">
   <h1 class="sr-only" tabindex="-1">Liquid Assets</h1>
   <div class="cover" style="--ratio:${P.ratio}">
-    ${plateHTML(P)}
+    ${ownPlate ? plateHTML(P) : ''}
     <section class="topshelf3" aria-label="Categories. Pick one to see its shelves.">${rows}</section>
     <section class="lower" id="lower" aria-label="Shelves"></section>
     ${counterOn ? countersHTML(P, ix.shelf.counter, season, ix, art, kind === 'tall') : ''}
     <p class="slate s3 chalkboard chalkboard--m${counterOn ? ' mid' : ''}" id="plaque" style="${counterOn ? slateStyle(P.counter) : anchorStyle(P.anchors.slate)}">${IDLE}</p>
-    ${burgerOn ? burgerHTML(P, manifest.burger) : `<div class="menu-anchor" style="${anchorStyle(P.anchors.menu)}">${menuButton('on-counter')}</div>`}
+    ${burgerOn ? burgerHTML(P, manifest.burger) : ''}
     ${debug ? debugHTML(P) : ''}
   </div>
 </div>`;
@@ -92,6 +93,7 @@ export async function mount(root, ctx) {
     const used = new Set();
     return c.subcategories.map((s) => {
       const label = randomPick(s.labels, used);
+      state.picked = { ...state.picked, [`${c.key}/${s.key}`]: label };   // the shelf page shows the bottle the visitor tapped
       return {
         cat: c.key, sub: s.key, shape: shapeFor(c.key), label: label && img(label), native: s.native, name: s.name,
         motif: motifFor(c.key, s.key), count: s.drinkCount, href: `#/${c.key}/${s.key}`,
@@ -359,12 +361,19 @@ export async function mount(root, ctx) {
   wideQuery.addEventListener('change', onMq);
 
   render();
+  // tag fit is measured in the real type: when Kalam arrives after the first layout, measure again
+  let alive = true;
+  document.fonts?.ready.then(() => {
+    if (!alive || !mode || !items.length) return;
+    if (mode === 'tall' && lower?.dataset.mode === 'sub') select(sel, false); else setRows(items);
+  });
   if (q.get('check') === '1') import('./selfcheck.js').then((m) => m.run({ manifest, ix }));      // build/tools/smoke.py
 
   return {
     sameTarget: () => true,
     update(c) { select(c.cat, true); },
     unmount() {
+      alive = false;
       token++;
       fadeOff?.();
       clearTimeout(soonTimer);

@@ -1,0 +1,31 @@
+{
+ "key": "koueigiku-shuzo",
+ "name": "Koueigiku Shuzo",
+ "native": null,
+ "location": "Saga",
+ "region": "Saga",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "koueigiku-hello-omachi-sumizake",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "fukuchiyo-shuzo"
+ ]
+}

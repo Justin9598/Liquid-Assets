@@ -1,0 +1,75 @@
+{
+ "id": "harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu",
+ "name": "HARADA Saito No Shizuku Tokubetsu Junmai Muroka Nama Genshu",
+ "category": "sake",
+ "sub": "tokubetsu-junmai",
+ "producer": {
+  "key": "hatsumomiji",
+  "name": "Hatsumomiji",
+  "native": null,
+  "location": "Yamaguchi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Muroka",
+  "Nama",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Tokubetsu Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 60,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Saito no Shizuku"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "price": 63.0,
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu-1.webp",
+   "w": 900,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "harada-junmai-daiginjo-muroka-nama-gensh",
+  "harada",
+  "harada-natsu"
+ ],
+ "prev": "denshu-tokubetsu-junmai",
+ "next": "hirotogawa-tokubetsu-junmai"
+}
