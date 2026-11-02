@@ -14,7 +14,7 @@ from pathlib import Path
 import openpyxl
 from openpyxl.utils import column_index_from_string, range_boundaries
 
-from .common import BuildError, clean
+from .common import BuildError, clean, clean_paragraphs
 
 # Allow-lists per sheet (canonical header names). Order is irrelevant: headers are read by name.
 CORE_FIELDS = ["ID", "Name", "Category", "Size", "ABV %", "Producer", "Origin", "Country", "Style(s)",
@@ -22,6 +22,9 @@ CORE_FIELDS = ["ID", "Name", "Category", "Size", "ABV %", "Producer", "Origin", 
                "Public Notes", "Visit Note"]
 CORE_REQUIRED = ["ID", "Name", "Category"]
 CORE_OPTIONAL = ["Public Notes", "Visit Note"]
+
+# Columns written in paragraphs keep their line breaks (Plan 09 section 11.1). Later paragraph columns join this list.
+MULTILINE = {"About", "Public Notes", "Visit Note"}
 
 SHEET_FIELDS = {
     "Sake Detail": ["ID", "Grade", "Milling % (RPR)", "Rice", "Yeast", "SMV", "Acidity"],
@@ -98,7 +101,7 @@ def _read_sheet(ws, allowed, sheet_name, issues, optional_cols=()):
     for rownum, values in enumerate(ws.iter_rows(min_row=2, max_col=max_col, values_only=True), start=2):
         record = {}
         for name, col in col_for.items():
-            record[name] = clean(values[col - 1]) if col - 1 < len(values) else None
+            record[name] = (clean_paragraphs if name in MULTILINE else clean)(values[col - 1]) if col - 1 < len(values) else None
         if record.get(key_field) in (None, ""):
             continue
         if not isinstance(record[key_field], str):

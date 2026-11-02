@@ -122,3 +122,16 @@ export function wireGlossary() {
   window.addEventListener('hashchange', closePopover);
 }
 export { closePopover };
+
+/** A native name is never broken inside a word. On a phone it sits on its own line; if it is still wider than its board its
+ * type steps down, to no less than 18px (Plan 09 section 11.2). */
+export function fitNative(root) {
+  for (const el of root.querySelectorAll('.t-title .native')) {
+    el.style.fontSize = '';
+    const room = el.closest('.chalkboard')?.clientWidth;
+    if (!room) continue;
+    const avail = room - 2 * parseFloat(getComputedStyle(el.closest('.chalkboard')).paddingLeft || 0);
+    let px = parseFloat(getComputedStyle(el).fontSize);
+    while (el.scrollWidth > avail && px > 18) { px -= 1; el.style.fontSize = `${px}px`; }
+  }
+}

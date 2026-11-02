@@ -6,11 +6,11 @@
  "producer": {
   "key": "niida-honke",
   "name": "Niida Honke",
-  "native": null,
-  "location": "Fukushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "仁井田本家",
+  "location": "Koriyama, Fukushima, Japan",
+  "founded": 1711,
+  "about": "Niida Honke has brewed in Tamuramachi, on the edge of Koriyama in Fukushima, since 1711. The family that runs it is now in its eighteenth generation.",
+  "url": "https://1711.jp/"
  },
  "abv": null,
  "styles": [],

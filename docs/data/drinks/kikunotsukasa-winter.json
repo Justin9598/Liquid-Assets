@@ -6,11 +6,11 @@
  "producer": {
   "key": "kikunotsukasa-shuzo",
   "name": "Kikunotsukasa Shuzo",
-  "native": null,
-  "location": "Iwate, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "菊の司酒造",
+  "location": "Shizukuishi, Iwate, Japan",
+  "founded": 1772,
+  "about": "Kikunotsukasa Shuzo is the oldest sake brewery in Iwate. The Hirai family kept an inn in Shiwa from the early 1600s and began making sake in 1772. The business later moved to Morioka and took its present name in 1968.",
+  "url": "https://kikunotsukasa.jp/"
  },
  "abv": 15,
  "styles": [],

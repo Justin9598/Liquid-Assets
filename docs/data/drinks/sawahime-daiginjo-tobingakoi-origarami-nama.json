@@ -6,11 +6,11 @@
  "producer": {
   "key": "inoue-seikichi-shoten",
   "name": "Inoue Seikichi Shoten",
-  "native": null,
-  "location": "Tochigi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "井上清吉商店",
+  "location": "Utsunomiya, Tochigi, Japan",
+  "founded": 1868,
+  "about": "Inoue Seikichi Shoten was founded in 1868 in Shirasawa, a former post town on the old Oshu Kaido road that is now part of Utsunomiya, Tochigi. Its sake is sold as Sawahime.",
+  "url": "https://sawahime.co.jp/"
  },
  "abv": 18,
  "styles": [

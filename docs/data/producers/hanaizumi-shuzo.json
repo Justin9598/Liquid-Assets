@@ -1,16 +1,28 @@
 {
  "key": "hanaizumi-shuzo",
  "name": "Hanaizumi Shuzo",
- "native": null,
- "location": "Fukushima",
+ "native": "花泉酒造",
+ "location": "Minamiaizu, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
- "founded": null,
+ "founded": 1920,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://hanaizumi.ne.jp/",
+ "brands": [
+  "Roman",
+  "Hanaizumi"
+ ],
+ "about": [
+  "Hanaizumi Shuzo is in the Nango area of Minamiaizu, a district of heavy snow in the mountains of southern Fukushima. It was founded in 1920, took the Hanaizumi name in 1989, and marked its centenary in 2020.",
+  "It brews with water from two local springs. One of them, Takashimizu, rises in a forest on the national list of 100 water-source forests. Most of its rice comes from the Aizu region and is polished in the brewery's own mill.",
+  "The Roman series, launched in 2007, adds steamed glutinous rice to the mash as a fourth stage."
+ ],
+ "sources": [
+  "https://hanaizumi.ne.jp/aboutus",
+  "https://hanaizumi.ne.jp/water",
+  "https://hanaizumi.ne.jp/rice",
+  "https://en.imadeya.co.jp/blogs/brewery/hanaizumi"
+ ],
  "related": [],
  "tally": {
   "drinks": 4,

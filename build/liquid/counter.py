@@ -96,7 +96,7 @@ def season_picks(drinks, photo_map, cfg, issues):
         for did in (cfg.get("pins") or {}).get(season, []):
             d = by_id.get(did)
             if d is None:
-                issues.warn("W22", f"content/seasonal.json pins unknown drink ID '{did}' for {season}")
+                issues.warn("W23", f"content/seasonal.json pins unknown drink ID '{did}' for {season}")
             elif did not in exclude:
                 e = next(x for x in scored if x[0]["id"] == did)
                 take(e, "pinned", respect_cap=False)

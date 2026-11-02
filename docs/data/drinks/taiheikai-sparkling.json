@@ -6,11 +6,11 @@
  "producer": {
   "key": "fuchu-homare",
   "name": "Fuchu Homare",
-  "native": null,
-  "location": "Ibaraki, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "府中誉",
+  "location": "Ishioka, Ibaraki, Japan",
+  "founded": 1854,
+  "about": "Fuchu Homare is a family brewery in Ishioka, Ibaraki, founded in 1854 and now run by the seventh generation. Seven of its buildings, including the main house, are registered national cultural properties. Taiheikai was its original label.",
+  "url": "https://www.huchuhomare.com/"
  },
  "abv": 12,
  "styles": [

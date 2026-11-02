@@ -313,3 +313,47 @@ def test_the_on_disk_scan_reads_every_file_in_data_and_img_in_every_phase(tmp_pa
     text = " | ".join(e["message"] for e in bad.errors)
     for part in ("invoice", "named like an original photo", "metadata is not stripped in img/thumbs/exif.webp", "inside img/thumbs/bytes.webp"):
         assert part in text, (part, text)
+
+
+# ------------------------------------------------------------------ Plan 09 section 7: W22, the maker About-text check
+
+def test_w22_flags_about_text_that_breaks_the_writing_rules(tmp_path):
+    from liquid.producers import check_about
+    good = " ".join(["word"] * 80)
+    ok = Issues()
+    check_about("Fine", [good, good[:100]], ok)
+    assert not ok.items
+    bad = Issues()
+    check_about("Dashy", ["Brewed since 1850 — a long story. Our Finest rice, with PASSION, and a world-class cup – truly."], bad)
+    msgs = " | ".join(i["message"] for i in bad.items)
+    assert all(i["code"] == "W22" for i in bad.items)
+    for part in ("em or en dash", "'finest'", "'passion'", "'world-class'", "words (60 to 120 wanted)"):
+        assert part in msgs, (part, msgs)
+    long = Issues()
+    check_about("Long", [good] * 4, long)
+    msgs = " | ".join(i["message"] for i in long.items)
+    assert "4 paragraphs" in msgs and "320 words" in msgs
+    # in the real pipeline the fixture's approved maker (Beta Brewery, 3 words) is flagged, and the draft one is never checked
+    ship = make_project(tmp_path)
+    res = run(ship)
+    flagged = [i["drink"] for i in res.issues.items if i["code"] == "W22"]
+    assert flagged == ["Beta Brewery"]
+
+
+# ------------------------------------------------------------------ Plan 09 section 11.1: paragraphs survive the ledger load
+
+def test_a_cell_with_two_paragraphs_gives_two_about_entries(tmp_path):
+    import openpyxl
+    from liquid.common import clean_paragraphs
+    assert clean_paragraphs("A  b\r\n\n\n\nC \n") == "A b\n\nC" and clean_paragraphs("  \n ") is None
+    ship = make_project(tmp_path)
+    path = tmp_path / "Drinks Ledger.xlsx"
+    wb = openpyxl.load_workbook(path)
+    ws = wb["Producers"]
+    heads = [c.value for c in ws[1]]
+    for r in range(2, ws.max_row + 1):
+        if ws.cell(r, 1).value == "Beta Brewery":
+            ws.cell(r, heads.index("About") + 1).value = "First  paragraph here.\n\n\nSecond paragraph here."
+    wb.save(path)
+    run(ship)
+    assert load(ship, "producers/beta-brewery.json")["about"] == ["First paragraph here.", "Second paragraph here."]

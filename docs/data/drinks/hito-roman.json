@@ -6,11 +6,11 @@
  "producer": {
   "key": "hanaizumi-shuzo",
   "name": "Hanaizumi Shuzo",
-  "native": null,
-  "location": "Fukushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "花泉酒造",
+  "location": "Minamiaizu, Fukushima, Japan",
+  "founded": 1920,
+  "about": "Hanaizumi Shuzo is in the Nango area of Minamiaizu, a district of heavy snow in the mountains of southern Fukushima. It was founded in 1920, took the Hanaizumi name in 1989, and marked its centenary in 2020.",
+  "url": "https://hanaizumi.ne.jp/"
  },
  "abv": 16,
  "styles": [

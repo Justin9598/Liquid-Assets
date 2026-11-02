@@ -150,3 +150,64 @@ The permission system blocks the shipper's push, so whoever the owner names push
 | D4 | About length (Q4) | **2 or 3 short paragraphs, 60 to 120 words.** |
 | D5 | Machida merge (skeleton Q1) | **`machida-shuzoten`**, shown as "Machida Shuzoten" (町田酒造店, the company name), with "Machida Shuzo" in Brands. This replaces Plan 04 §8.1's `machida-shuzo`, and keeps the address of the 3-drink page. |
 | D6 | The rest of the skeleton (Q2 to Q7) | **Approved as recommended.** 3 merges, giving 151 pages. Display names Hakushika, RiceWine K.K. and Isekado. Odd spellings (Omoyashuzo, Katoukichibee Shoten) wait for Stage 2. Region is the part after the comma for "town, region" origins. The other old addresses go to the Makers index. |
+| D7 | Founded when there are two years (batch 1 Q5) | **The first year the business made drinks** (Isekado 1997, Mikotsuru 1912, Minoh 1997). Older family roots and revivals go in the About. |
+| D8 | Related to a partner still in `draft` (Q2) | **Link now.** The partner's page already exists. The reverse link is added in the partner's own batch. |
+| D9 | The brewery spells its name differently (Q7) | **Keep the Display Name and Page Key.** Put the brewery's own spelling in `Brands` so search finds it (Huchu Homare, HATSUMOMIDI). |
+| D10 | Japan batch 1 (2026-11-02) | **Approved, all 20 rows.** Ties for the last places are broken alphabetically by Page Key. Isekado's Master stays blank, because no romanisation is published. Iinuma keeps 1811. Strict Related rules (Q3). About paragraphs are separated by a blank line inside the cell, which `_paragraphs()` already splits on. |
+
+## 11. Batch 1 review fixes (2026-11-02)
+
+The shipper's four-size check of the first full maker pages (Akebono Shuzo, Swan Lake Beer and Machida Shuzoten) found four faults. Screenshots are in `reports/phase2/producer-*.png`. The W22 check, the W22 to W23 renumbering of the seasonal-pin warning, and the 20 approved rows are all fine.
+
+### 11.1 The Story is always one paragraph (build fault)
+
+- **Cause:** `ledger.py` runs `clean()` on every cell when it loads the sheet (line 101). That collapses whitespace, so the `\n\n` between paragraphs is gone before `_paragraphs()` in `producers.py` sees it. The ledger cells are correct.
+- **Fix:**
+  - For multi-paragraph text columns, keep the line breaks. Normalise each line (trim, collapse runs of spaces, NFC), keep `\n`, and reduce three or more newlines to two.
+  - The columns are `Producers.About`, plus `Public Notes` and `Visit Note` when they arrive (Plan 05 §7). Declare them in one list so later columns join it.
+  - Every other column keeps today's `clean()`.
+- **Check:**
+  - A unit test: a cell with two paragraphs produces two `about` entries.
+  - The real build: `akebono-shuzo.json` has 3 paragraphs, and every approved maker has 2 or 3.
+  - W22 still passes. Its word count runs across all paragraphs.
+
+### 11.2 The Japanese name breaks mid-word on phones
+
+- **Fault:** at 375 and 390 the native name wraps inside the word: "スワンレ / イクビール", "町田酒 / 造店".
+- **Fix:**
+  - **Never break inside a native name.** It is one unit with `white-space: nowrap`.
+  - **Below 768px, it gets its own line** under the English title, at about 60% of the title size, aligned left.
+  - **At 768px and up** it stays beside the title, wrapping to its own line as a whole when there's no room.
+  - **If a native name is still wider than the board** on its own line, its font steps down until it fits, to no less than 18px. It never wraps or overflows.
+- **Check:** the smoke test confirms that the native name's box is a single line at all four sizes on `swan-lake-beer` and `machida-shuzoten`.
+
+### 11.3 The Facts board is squeezed beside the Story on desktop
+
+- **Fault:** at 1440×900 on Akebono, the Facts board shares a row with the Story, and its map takes the right half. The text column is left so narrow that:
+  - "The Facts" wraps to two lines;
+  - the location wraps;
+  - the website breaks inside its host name ("akebono- / syuzou.com").
+- **Fix:**
+  - **Container query:** the Facts board lays itself out by its own width, not the screen's. When its inner width is under 560px, the map goes **below** the facts list at full board width, capped at 260px tall. That's the same arrangement as on phones.
+  - **Board headings never wrap:** `white-space: nowrap` for "The Facts", "The Story" and the rest.
+  - **The website link never breaks inside the host.** It shows the host only (as today). If even that doesn't fit, it's cut off with an ellipsis, and the full link stays in `title`.
+  - **Label column:** the facts list keeps the label column at a fixed width, about 9em, and the value column gets the rest. A value may wrap between words, never mid-word.
+- **Check:** the smoke test confirms, at all four sizes on the three pages, that:
+  - "The Facts" is one line;
+  - the website link is one line with no overflow;
+  - no fact value breaks inside a word.
+
+### 11.4 The Sources line repeats the same site
+
+- **Fault:** Akebono shows "akebono-syuzou.com" three times, then "sakenowa.com".
+- **Fix:**
+  - **Group by host.** Each host appears once, in source order (official site first), linking to its first URL. This is a display-only change in `producer.js`.
+  - The full source list stays in the ledger, and in the data as it is today.
+- **Check:** Akebono shows "Sources: akebono-syuzou.com · sakenowa.com".
+
+### 11.5 Acceptance
+
+- [ ] §11.1 to §11.4 each pass their check, with screenshots retaken for the three pages at the four sizes, into `reports/phase2/producer-<key>-<size>.png`.
+- [ ] The full test suite passes, including the new checks.
+- [ ] The build has 0 errors and 0 W22. 20 makers publish research and 131 publish none.
+- [ ] Then commit as in the batch 1 brief (Plan 06 §5.2 checks, message "Ledger update 2026-11-02: maker stories for Japan batch 1 (20 producers), W22 about-text check", `Co-Authored-By: Claude Opus 5.5`). **No push.** The designer pushes on the owner's word.

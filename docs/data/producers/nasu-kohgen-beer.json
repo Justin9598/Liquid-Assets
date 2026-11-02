@@ -1,16 +1,25 @@
 {
  "key": "nasu-kohgen-beer",
  "name": "Nasu Kohgen Beer",
- "native": null,
- "location": "Tochigi",
+ "native": "那須高原ビール",
+ "location": "Nasu, Tochigi",
  "region": "Tochigi",
  "country": "Japan",
- "founded": null,
+ "founded": 1996,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.nasukohgenbeer.co.jp/",
+ "brands": [
+  "Nasu Kohgen Beer"
+ ],
+ "about": [
+  "Nasu Kohgen Beer is a brewery with a shop and restaurant in Nasu, a highland resort in northern Tochigi. It opened in the autumn of 1996 and brews with snowmelt water from the Nasu mountains.",
+  "Its best-known beer, Ai, takes its name from Princess Aiko, whose emblem is the white azalea that grows wild near the imperial villa in Nasu. The brewery also makes Nine-Tailed Fox, a strong barley wine sold as dated vintages, and says it was the first Japanese brewery to win awards at three World Beer Cups in a row."
+ ],
+ "sources": [
+  "https://www.nasukohgenbeer.co.jp/about.html",
+  "https://www.nasukohgenbeer.co.jp/item.html",
+  "https://nasukohgenbeer.ocnk.net/product/52"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

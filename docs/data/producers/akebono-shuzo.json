@@ -1,17 +1,35 @@
 {
  "key": "akebono-shuzo",
  "name": "Akebono Shuzo",
- "native": null,
- "location": "Fukushima",
+ "native": "曙酒造",
+ "location": "Aizubange, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
- "founded": null,
+ "founded": 1904,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://akebono-syuzou.com/",
+ "brands": [
+  "Tenmei",
+  "Isshou Seishun"
+ ],
+ "about": [
+  "Akebono Shuzo is a brewery in Aizubange, in the Aizu region of Fukushima. It was founded in 1904, and its sixth-generation head took charge in 2013.",
+  "In 1995 the brewery stopped using a visiting tōji and began brewing with a husband-and-wife team and local staff. Contract rice growing in Aizubange started in 1997, and Tenmei, now its core label, first appeared around the end of that decade.",
+  "The 2011 earthquake destroyed three of its buildings. Since then it has planted wine grapes and obtained a licence to make fruit wine."
+ ],
+ "sources": [
+  "https://akebono-syuzou.com/company/",
+  "https://akebono-syuzou.com/story/",
+  "https://akebono-syuzou.com/",
+  "https://sakenowa.com/en/checkin/7TtDAsQ"
+ ],
+ "related": [
+  {
+   "key": "machida-shuzoten",
+   "name": "Machida Shuzoten",
+   "relationship": "collaboration partner"
+  }
+ ],
  "tally": {
   "drinks": 12,
   "categories": 2,

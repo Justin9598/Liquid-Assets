@@ -5,6 +5,8 @@ fields that come from Core (name, location, region, country, drinks) plus the st
 """
 from __future__ import annotations
 
+import re
+
 from . import taxonomy as T
 from .common import clean, norm_key, slugify, sort_key
 from .ledger import to_number
@@ -21,6 +23,30 @@ def _split(value, sep):
     if not value:
         return []
     return [p for p in (clean(x) for x in str(value).split(sep)) if p]
+
+
+_BANNED = re.compile(r"finest|passion|world-class", re.I)
+
+
+def check_about(name, paragraphs, issues, key=None):
+    """W22 (Plan 09 section 7, D4): an approved maker's published About must have no em or en dash, none of the words
+    finest, passion or world-class, 60 to 120 words, and at most 3 paragraphs."""
+    if not paragraphs:
+        return
+    text = " ".join(paragraphs)
+    words = len(text.split())
+    problems = []
+    if "—" in text or "–" in text:
+        problems.append("an em or en dash")
+    banned = sorted({m.group(0).casefold() for m in _BANNED.finditer(text)})
+    if banned:
+        problems.append("the word " + ", ".join(f"'{b}'" for b in banned))
+    if words < 60 or words > 120:
+        problems.append(f"{words} words (60 to 120 wanted)")
+    if len(paragraphs) > 3:
+        problems.append(f"{len(paragraphs)} paragraphs (3 at most)")
+    for pr in problems:
+        issues.warn("W22", f"About of '{name}' has {pr}", sheet="Producers", drink=name)
 
 
 def _paragraphs(text):
@@ -169,6 +195,8 @@ def build_producers(ledger, drinks, issues):
             "raw_gated": {k: row.get(k) for k in ("About", "Founded", "Master", "Website", "Native Name",
                                                   "Brands", "Sources", "Related")} if (facts and not approved) else {},
         }
+        if approved:
+            check_about(name, page["about"], issues)
         pages[key] = page
 
     # sort A-Z for stable output

@@ -1,16 +1,25 @@
 {
  "key": "swan-lake-beer",
  "name": "Swan Lake Beer",
- "native": null,
- "location": "Niigata",
+ "native": "スワンレイクビール",
+ "location": "Agano, Niigata",
  "region": "Niigata",
  "country": "Japan",
- "founded": null,
+ "founded": 1997,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.swanlake.co.jp/",
+ "brands": [
+  "Swan Lake",
+  "Hyoko Yashiki no Mori Brewery"
+ ],
+ "about": [
+  "Swan Lake Beer comes from the Hyoko Yashiki no Mori Brewery in Agano, Niigata, close to Lake Hyoko, where swans spend the winter. The brewery opened in 1997 on the estate of the Igarashi family, wealthy Echigo farmers, at the foot of Mount Gozu. It is part of the Tenchokaku group.",
+  "By October 2026 its beers had won 187 medals. The Porter was named the world's best porter at the World Beer Awards in 2010, 2020 and 2026."
+ ],
+ "sources": [
+  "https://www.swanlake.co.jp/main/outline/",
+  "https://www.swanlake.co.jp/main/beer/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

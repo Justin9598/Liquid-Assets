@@ -6,11 +6,11 @@
  "producer": {
   "key": "swan-lake-beer",
   "name": "Swan Lake Beer",
-  "native": null,
-  "location": "Niigata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "スワンレイクビール",
+  "location": "Agano, Niigata, Japan",
+  "founded": 1997,
+  "about": "Swan Lake Beer comes from the Hyoko Yashiki no Mori Brewery in Agano, Niigata, close to Lake Hyoko, where swans spend the winter. The brewery opened in 1997 on the estate of the Igarashi family, wealthy Echigo farmers, at the foot of Mount Gozu. It is part of the Tenchokaku group.",
+  "url": "https://www.swanlake.co.jp/"
  },
  "abv": 5,
  "styles": [],

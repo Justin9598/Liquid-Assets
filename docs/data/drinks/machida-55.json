@@ -6,11 +6,11 @@
  "producer": {
   "key": "machida-shuzoten",
   "name": "Machida Shuzoten",
-  "native": null,
-  "location": "Gunma, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "町田酒造店",
+  "location": "Maebashi, Gunma, Japan",
+  "founded": 1883,
+  "about": "Machida Shuzoten was founded in 1883 in Komagata, now part of Maebashi in Gunma. Seiryo is its long-standing local label.",
+  "url": "https://www.seiryo-sake.co.jp/"
  },
  "abv": 16,
  "styles": [],

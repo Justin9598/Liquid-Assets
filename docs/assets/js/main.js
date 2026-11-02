@@ -4,7 +4,7 @@
 // stays in place while the page changes in front of it, and the same split burger menu sits at the top right of every
 // inner page (Plan 08 sections 3 and 5).
 import { fixedBurgerHTML, mountBurger } from './burger.js';
-import { fitCrumbs, emptyHTML, loadGlossary, wireGlossary } from './chrome.js';
+import { fitCrumbs, fitNative, emptyHTML, loadGlossary, wireGlossary } from './chrome.js';
 import { mountBackdrop } from './backdrop.js';
 import { getBuild, getIndex, getSections, initData } from './data.js';
 import { ensureDefs } from './labels.js';
@@ -163,6 +163,7 @@ async function route() {
     window.scrollTo(0, 0);
     backdrop?.relayout();
     fitCrumbs(app);
+    fitNative(app);
     $('h1', app)?.focus({ preventScroll: true });
   }
   enter(ctx.name, from);
@@ -209,9 +210,9 @@ async function boot() {
     try { await setupChrome(await getIndex()); } catch { /* the page still works on a plain dark background */ }
   }
   window.addEventListener('hashchange', route);
-  const refit = debounce(() => fitCrumbs(app), 120);
+  const refit = debounce(() => { fitCrumbs(app); fitNative(app); }, 120);
   window.addEventListener('resize', refit);
-  document.fonts?.ready.then(() => fitCrumbs(app));
+  document.fonts?.ready.then(() => { fitCrumbs(app); fitNative(app); });
   route();
 }
 

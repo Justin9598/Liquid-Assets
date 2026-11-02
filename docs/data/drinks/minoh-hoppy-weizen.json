@@ -6,11 +6,11 @@
  "producer": {
   "key": "minoh-beer",
   "name": "Minoh Beer",
-  "native": null,
-  "location": "Osaka, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "箕面ビール",
+  "location": "Minoh, Osaka, Japan",
+  "founded": 1997,
+  "about": "Minoh Beer is a family brewery in Minoh, just north of Osaka, a town known for its waterfall, autumn leaves and wild monkeys. The company was set up in 1996 and began brewing the following year in a town the founder picked himself. His daughter, Kaori Oshita, now runs it.",
+  "url": "https://www.minoh-beer.jp/"
  },
  "abv": 5,
  "styles": [],

@@ -1,16 +1,29 @@
 {
  "key": "fuchu-homare",
  "name": "Fuchu Homare",
- "native": null,
- "location": "Ibaraki",
+ "native": "府中誉",
+ "location": "Ishioka, Ibaraki",
  "region": "Ibaraki",
  "country": "Japan",
- "founded": null,
+ "founded": 1854,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.huchuhomare.com/",
+ "brands": [
+  "Wataribune",
+  "Taiheikai",
+  "Huchu Homare"
+ ],
+ "about": [
+  "Fuchu Homare is a family brewery in Ishioka, Ibaraki, founded in 1854 and now run by the seventh generation. Seven of its buildings, including the main house, are registered national cultural properties. Taiheikai was its original label.",
+  "It is best known for bringing back Wataribune, a sake rice from the Meiji and Taisho eras that ripens late, suffers in typhoons and had vanished from the fields. In 1989 the brewery found stored seed at a national research institute in Tsukuba and, starting from just 14 grams, grew the crop back up with local farmers. Its Wataribune sake is named after the rice."
+ ],
+ "sources": [
+  "https://www.huchuhomare.com/",
+  "https://www.huchuhomare.com/story/",
+  "https://www.huchuhomare.com/en/",
+  "https://www.mapple.net/station/283409/spot/",
+  "https://kobrandwineandspirits.com/brand-page/taiheikai-sake/about"
+ ],
  "related": [],
  "tally": {
   "drinks": 5,

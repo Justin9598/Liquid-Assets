@@ -61,7 +61,7 @@ export async function mount(root, ctx) {
   add('Founded', p.founded ? esc(p.founded) : '');
   add('Brands', p.brands.length ? esc(p.brands.join(', ')) : '');
   add('Master brewer', esc(p.master || ''));
-  add('Website', p.website ? `<a class="chalk-link" href="${esc(p.website)}" target="_blank" rel="noopener noreferrer">${esc(hostOf(p.website) || p.website)} ${icon('arrow-up-right', 14)}</a>` : '');
+  add('Website', p.website ? `<a class="chalk-link site" href="${esc(p.website)}" title="${esc(p.website)}" target="_blank" rel="noopener noreferrer"><span class="host">${esc(hostOf(p.website) || p.website)}</span>${icon('arrow-up-right', 14)}</a>` : '');
   const wantsMap = p.country === 'Japan' && !!p.region;
   const factsBoard = board(`<div class="facts-grid${wantsMap ? '' : ' nomap'}" id="facts-grid">
   <div><h2 class="t-head" id="h-facts">The Facts</h2><dl class="spec">${facts.join('')}</dl></div>
@@ -69,7 +69,7 @@ export async function mount(root, ctx) {
 </div>`, 'facts', 'aria-labelledby="h-facts"');
   const storyBoard = p.about.length ? board(`<h2 class="t-head" id="h-story">The Story</h2>
   ${p.about.map((x) => `<p class="t-body">${esc(x)}</p>`).join('')}
-  ${p.sources.length ? `<p class="t-small sources">Sources: ${p.sources.map((u, i) => `<a class="chalk-link" href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(hostOf(u) || `source ${i + 1}`)} ${icon('arrow-up-right', 12)}</a>`).join(' · ')}</p>` : ''}`, 'story', 'aria-labelledby="h-story"') : '';
+  ${p.sources.length ? `<p class="t-small sources">Sources: ${sourceLinks(p.sources)}</p>` : ''}`, 'story', 'aria-labelledby="h-story"') : '';
 
   // ---- their bottles on my shelf -----------------------------------------------------------------------------
   const catOrder = ix.shelf.categories.map((c) => c.key);
@@ -115,6 +115,13 @@ export async function mount(root, ctx) {
     }
   }
   return {};
+}
+
+/** Each host once, in source order (the official site first), linking to its first URL (Plan 09 section 11.4). */
+function sourceLinks(urls) {
+  const seen = new Map();
+  urls.forEach((u, i) => { const h = hostOf(u) || `source ${i + 1}`; if (!seen.has(h)) seen.set(h, u); });
+  return [...seen].map(([h, u]) => `<a class="chalk-link" href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(h)} ${icon('arrow-up-right', 12)}</a>`).join(' · ');
 }
 
 function hostOf(u) {

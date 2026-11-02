@@ -20,6 +20,19 @@ def clean(value):
     return value
 
 
+def clean_paragraphs(value):
+    """Like clean(), but for text written in paragraphs: each line is trimmed, runs of spaces collapse and NFC applies, the line
+    breaks stay, and three or more newlines become two. Empty text becomes None."""
+    if value is None:
+        return None
+    if not isinstance(value, str):
+        return value
+    flat = value.replace("\r\n", "\n").replace("\r", "\n")
+    lines = [_WS.sub(" ", unicodedata.normalize("NFC", ln.replace(" ", " "))).strip() for ln in flat.split("\n")]
+    text = re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip("\n")
+    return text or None
+
+
 def strip_accents(text: str) -> str:
     text = unicodedata.normalize("NFKC", text)
     decomposed = unicodedata.normalize("NFKD", text)

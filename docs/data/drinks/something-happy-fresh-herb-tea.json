@@ -6,11 +6,11 @@
  "producer": {
   "key": "happy-taro-brewery",
   "name": "Happy Taro Brewery",
-  "native": null,
-  "location": "Shiga, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "ハッピー太郎醸造所",
+  "location": "Nagahama, Shiga, Japan",
+  "founded": 2022,
+  "about": "Happy Taro Brewery belongs to Kotaro Ikejima, a Kyoto University graduate who brewed sake at three breweries in Shimane and Shiga before going independent. In October 2017 he opened a fermented-food workshop in Hikone, making koji, miso and amazake.",
+  "url": "https://happytaro.jp/"
  },
  "abv": null,
  "styles": [

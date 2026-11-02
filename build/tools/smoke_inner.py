@@ -339,6 +339,7 @@ def run(base, shots_dir=None, sizes=SIZES, log=print):
                 problems.append(f"{tag}: the backdrop moved or the page did not scroll (backdrop top {mid[0]}, scrollY {mid[2]})")
             if shots_dir:
                 page.screenshot(f"{shots_dir}/drink-scrolled-{tag}.png")
+            problems += producer_checks(page, base, tag)
             problems += menu_checks(page, base, tag, shots_dir)
             problems += transition_checks(page, base, tag)
             if (w, h) == sizes[0]:
@@ -348,6 +349,85 @@ def run(base, shots_dir=None, sizes=SIZES, log=print):
             problems += list_perf(b, base, w, h, stats, tag) if mobile else []
             page.close()
     return problems, stats
+
+
+PRODUCER_JS = r"""(() => {
+  const out = [];
+  const bad = (m) => out.push(m);
+  const title = document.querySelector('h1.t-title');
+  const nat = title && title.querySelector('.native');
+  if (nat) {
+    const board = nat.closest('.chalkboard').getBoundingClientRect();
+    const rg = document.createRange(); rg.selectNodeContents(nat);
+    const tops = new Set([...rg.getClientRects()].map((r) => Math.round(r.top)));
+    if (tops.size !== 1) bad('the native name is broken over ' + tops.size + ' lines');
+    const r = nat.getBoundingClientRect();
+    if (r.right > board.right - 4 || r.left < board.left) bad('the native name overflows its board');
+    const fs = parseFloat(getComputedStyle(nat).fontSize);
+    if (fs < 18) bad('the native name is ' + fs + 'px (18px at least)');
+    if (innerWidth < 768 && getComputedStyle(nat).display !== 'block') bad('on a phone the native name is not on its own line');
+  }
+  for (const h of document.querySelectorAll('#page .t-head, #page .head-board')) {
+    if (!h.getBoundingClientRect().height) continue;
+    const tops = new Set();
+    const tw = document.createTreeWalker(h, NodeFilter.SHOW_TEXT);
+    for (let n = tw.nextNode(); n; n = tw.nextNode()) {
+      if (!n.nodeValue.trim()) continue;
+      const rg = document.createRange(); rg.selectNodeContents(n);
+      for (const r of rg.getClientRects()) tops.add(Math.round(r.top / 6));
+    }
+    if (tops.size > 1) bad('the heading "' + h.textContent.trim().slice(0, 24) + '" wraps');
+  }
+  const site = document.querySelector('.facts .site');
+  if (site) {
+    const host = site.querySelector('.host');
+    const board = site.closest('.chalkboard').getBoundingClientRect();
+    if (host.scrollWidth > host.clientWidth + 1) bad('the website host is cut off at ' + innerWidth + 'px');
+    if (site.getBoundingClientRect().right > board.right - 8) bad('the website link overflows the Facts board');
+    const rg = document.createRange(); rg.selectNodeContents(host);
+    if (new Set([...rg.getClientRects()].map((r) => Math.round(r.top))).size !== 1) bad('the website host wraps');
+    if (!site.title) bad('the website link has no title');
+  }
+  // no fact value breaks inside a word
+  for (const v of document.querySelectorAll('.facts .spec .val')) {
+    const tw = document.createTreeWalker(v, NodeFilter.SHOW_TEXT);
+    for (let n = tw.nextNode(); n; n = tw.nextNode()) {
+      for (const m of n.nodeValue.matchAll(/\S+/g)) {
+        const rg = document.createRange(); rg.setStart(n, m.index); rg.setEnd(n, m.index + m[0].length);
+        if (new Set([...rg.getClientRects()].map((r) => Math.round(r.top))).size > 1) bad('a fact value breaks inside the word "' + m[0] + '"');
+      }
+    }
+  }
+  const story = document.querySelector('.story');
+  const paras = story ? story.querySelectorAll('.t-body').length : 0;
+  const src = story && story.querySelector('.sources');
+  const hosts = src ? [...src.querySelectorAll('a')].map((a) => a.textContent.trim()) : [];
+  if (new Set(hosts).size !== hosts.length) bad('the Sources line repeats a host: ' + hosts.join(', '));
+  const facts = document.querySelector('.facts');
+  const grid = document.querySelector('.facts-grid');
+  let layout = null;
+  if (grid && document.querySelector('#locator')) {
+    const list = grid.children[0].getBoundingClientRect(), map = document.querySelector('#locator').getBoundingClientRect();
+    layout = map.top >= list.bottom - 1 ? 'map below' : 'map beside';
+    const inner = facts.clientWidth - 2 * parseFloat(getComputedStyle(facts).paddingLeft);
+    if ((inner < 560) !== (layout === 'map below')) bad('the Facts layout (' + layout + ') does not follow its own width (' + Math.round(inner) + 'px)');
+    if (layout === 'map below' && map.height > 262) bad('the map below the facts is ' + Math.round(map.height) + 'px tall (260px at most)');
+  }
+  return { out, paras, hosts, layout };
+})()"""
+
+
+def producer_checks(page, base, tag):
+    probs = []
+    for key, paras in (("akebono-shuzo", (3, 3)), ("swan-lake-beer", (2, 3)), ("machida-shuzoten", (2, 3))):
+        load(page, base, f"#/producer/{key}")
+        r = page.eval(PRODUCER_JS)
+        probs += [f"{tag} producer {key}: {m}" for m in r["out"]]
+        if not paras[0] <= r["paras"] <= paras[1]:
+            probs.append(f"{tag} producer {key}: {r['paras']} Story paragraphs, expected {paras[0]} to {paras[1]}")
+        if key == "akebono-shuzo" and r["hosts"][:2] != ["akebono-syuzou.com", "sakenowa.com"]:
+            probs.append(f"{tag} producer {key}: Sources are {r['hosts']}")
+    return probs
 
 
 def menu_checks(page, base, tag, shots_dir):

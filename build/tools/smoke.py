@@ -137,6 +137,9 @@ class Server:
             request_queue_size = 256
             allow_reuse_address = True
             daemon_threads = True
+
+            def handle_error(self, request, client_address):      # a browser closing a connection is not news
+                pass
         self.httpd = Quick(("127.0.0.1", 0), Handler)
         self.port = self.httpd.server_address[1]
         threading.Thread(target=self.httpd.serve_forever, daemon=True).start()

@@ -1,17 +1,34 @@
 {
  "key": "machida-shuzoten",
  "name": "Machida Shuzoten",
- "native": null,
- "location": "Gunma",
+ "native": "町田酒造店",
+ "location": "Maebashi, Gunma",
  "region": "Gunma",
  "country": "Japan",
- "founded": null,
+ "founded": 1883,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://www.seiryo-sake.co.jp/",
+ "brands": [
+  "Machida Shuzo",
+  "Seiryo"
+ ],
+ "about": [
+  "Machida Shuzoten was founded in 1883 in Komagata, now part of Maebashi in Gunma. Seiryo is its long-standing local label.",
+  "The fifth-generation head, who married into the family, created the Machida Shuzo label, and brews alongside his wife, one of the few women tōji in Japan. Everything is made by hand in small batches, using soft well water drawn on site from the underground flow of the Tone River.",
+  "To keep the sake fresh, it is bottled within three minutes of leaving the press."
+ ],
+ "sources": [
+  "https://www.seiryo-sake.co.jp/",
+  "https://www.pref.gunma.jp/site/sake/500059.html",
+  "https://sakenowa.com/en/checkin/7TtDAsQ"
+ ],
+ "related": [
+  {
+   "key": "akebono-shuzo",
+   "name": "Akebono Shuzo",
+   "relationship": "collaboration partner"
+  }
+ ],
  "tally": {
   "drinks": 4,
   "categories": 1,

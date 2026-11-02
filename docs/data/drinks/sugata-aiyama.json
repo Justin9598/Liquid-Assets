@@ -6,11 +6,11 @@
  "producer": {
   "key": "iinuma-meijo",
   "name": "Iinuma Meijo",
-  "native": null,
-  "location": "Tochigi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "飯沼銘醸",
+  "location": "Tochigi City, Tochigi, Japan",
+  "founded": 1811,
+  "about": "Iinuma Meijo is a brewery in the Nishikata district of Tochigi City. It dates from 1811, when Iwajiro Iinuma, who had come from Nagaoka in Niigata to work, set up here.",
+  "url": "https://www.iinumameijo.com/"
  },
  "abv": 17.5,
  "styles": [

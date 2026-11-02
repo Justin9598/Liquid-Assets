@@ -6,11 +6,11 @@
  "producer": {
   "key": "nagai-shuzo",
   "name": "Nagai Shuzo",
-  "native": null,
-  "location": "Gunma, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "永井酒造",
+  "location": "Kawaba, Gunma, Japan",
+  "founded": 1886,
+  "about": "Nagai Shuzo was founded in 1886 in Kawaba, a mountain village in northern Gunma, by Shoji Nagai, who chose the place for its water. Rain and snow on Mount Hotaka filter through the Oze area to reach it, and the family later bought the forest along both banks of the stream to protect it.",
+  "url": "https://nagai-sake.co.jp/"
  },
  "abv": 12,
  "styles": [

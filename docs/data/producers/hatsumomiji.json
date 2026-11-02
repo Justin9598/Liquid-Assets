@@ -1,16 +1,28 @@
 {
  "key": "hatsumomiji",
  "name": "Hatsumomiji",
- "native": null,
- "location": "Yamaguchi",
+ "native": "はつもみぢ",
+ "location": "Shunan, Yamaguchi",
  "region": "Yamaguchi",
  "country": "Japan",
- "founded": null,
+ "founded": 1819,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.hatsumomidi.co.jp/",
+ "brands": [
+  "Harada",
+  "Hatsumomiji",
+  "HATSUMOMIDI"
+ ],
+ "about": [
+  "Hatsumomiji is a brewery in central Shunan, Yamaguchi, a short walk from Tokuyama Station. The Harada family has run it since 1819, and the current head is the twelfth generation.",
+  "As demand fell, it stopped brewing in 1985 and for some years sold sake made by other breweries under its own name. Brewing later resumed in an air-conditioned brewery that can work all year, and seasonal releases are now central to what it does.",
+  "Its main label, Harada, uses rice such as Yamadanishiki and the Yamaguchi variety Saito no Shizuku. Some releases use spring water from the Kano district of northern Shunan."
+ ],
+ "sources": [
+  "https://www.hatsumomidi.co.jp/",
+  "https://craftsake.mottox.co.jp/?p=6798",
+  "https://en.sake-times.com/breweries/hatsumomidi"
+ ],
  "related": [],
  "tally": {
   "drinks": 4,

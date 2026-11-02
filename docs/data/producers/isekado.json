@@ -1,16 +1,26 @@
 {
  "key": "isekado",
  "name": "Isekado",
- "native": null,
- "location": "Mie",
+ "native": "伊勢角屋麦酒",
+ "location": "Ise, Mie",
  "region": "Mie",
  "country": "Japan",
- "founded": null,
+ "founded": 1997,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.biyagura.jp/",
+ "brands": [
+  "ISEKADO",
+  "Ise Kadoya"
+ ],
+ "about": [
+  "Isekado is the beer arm of Nikenchaya Mochi Kadoya Honten, a family business in Ise, Mie, that began in 1575 as a teahouse at a boat landing. It still makes rice cakes, miso and soy sauce, and the family is now in its twenty-first generation.",
+  "The current president, Narihiro Suzuki, founded the brewery in 1997, close to Ise Grand Shrine. Its first medal came at the Japan Beer Cup in 2000. It won gold at the International Brewing Awards in Britain in 2017, 2019 and 2021, which the company describes as a first for a Japanese brewery."
+ ],
+ "sources": [
+  "https://www.biyagura.jp/f/corporate",
+  "https://www.biyagura.jp/f/awards",
+  "https://www.atpress.ne.jp/news/4402078"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

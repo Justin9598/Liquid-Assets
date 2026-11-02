@@ -6,11 +6,11 @@
  "producer": {
   "key": "yamamoto-shuzoten",
   "name": "Yamamoto Shuzoten",
-  "native": null,
-  "location": "Akita, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "山本酒造店",
+  "location": "Happo, Akita, Japan",
+  "founded": 1901,
+  "about": "Yamamoto Shuzoten is in Happo, a coastal town in northern Akita at the foot of the Shirakami Mountains. It was founded in 1901 and first sold its sake as Shirataki, after the waterfall behind the brewery. It traded as Yamamoto Gomei Kaisha until 2020, when it went back to its original name.",
+  "url": "https://yamamoto-brewery.com/"
  },
  "abv": 15,
  "styles": [
