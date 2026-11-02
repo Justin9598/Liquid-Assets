@@ -6,11 +6,11 @@
  "producer": {
   "key": "daishinshu-shuzo",
   "name": "Daishinshu Shuzo",
-  "native": null,
-  "location": "Nagano, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "大信州酒造",
+  "location": "Matsumoto, Nagano, Japan",
+  "founded": 1880,
+  "about": "Daishinshu Shuzo is in Matsumoto, Nagano, and gives May 1880 as its founding date. Its predecessor was the Haradaya sake shop. It brewed at two sites, Matsumoto and Toyono, until the 2019 brewing year, and since 2020 all brewing has been in Matsumoto.",
+  "url": "https://www.daishinsyu.com/"
  },
  "abv": 16,
  "styles": [],

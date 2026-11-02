@@ -1,17 +1,34 @@
 {
  "key": "hagino-shuzo",
  "name": "Hagino Shuzo",
- "native": null,
- "location": "Miyagi",
+ "native": "萩野酒造",
+ "location": "Kurihara, Miyagi",
  "region": "Miyagi",
  "country": "Japan",
- "founded": null,
+ "founded": 1840,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://www.hagino-shuzou.co.jp/",
+ "brands": [
+  "Hagi no Tsuru",
+  "Haginotsuru",
+  "Nichirinda"
+ ],
+ "about": [
+  "Hagino Shuzo is in Kurihara, in northern Miyagi, and gives 1840 as its start. It became a company in July 1923 and makes Hagi no Tsuru and Nichirinda.",
+  "Its brewing water springs from a hill the company owns and is piped straight to the brewery. It uses Miyagi rice such as Kura no Hana, and picks yeasts to suit each sake. It follows the idea of making a little of something good, and takes part in Date Seven, the Miyagi collaboration."
+ ],
+ "sources": [
+  "https://www.hagino-shuzou.co.jp/profile.php",
+  "https://www.hagino-shuzou.co.jp/concept.php",
+  "https://media.jreast.co.jp/articles/1420"
+ ],
+ "related": [
+  {
+   "key": "date-seven",
+   "name": "Date Seven",
+   "relationship": "Date Seven member"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,

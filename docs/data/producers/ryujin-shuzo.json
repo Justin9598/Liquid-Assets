@@ -1,16 +1,26 @@
 {
  "key": "ryujin-shuzo",
  "name": "Ryujin Shuzo",
- "native": null,
- "location": "Gunma",
+ "native": "龍神酒造",
+ "location": "Tatebayashi, Gunma",
  "region": "Gunma",
  "country": "Japan",
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Ryujin",
+  "Oze no Yukidoke"
+ ],
+ "about": [
+  "Ryujin Shuzo is in Tatebayashi, Gunma, and brews with very soft water from Ryujin no Ido, a well on its own grounds. Its labels are Ryujin and Oze no Yukidoke, which is the flagship.",
+  "It works with rice such as Yamada Nishiki, Omachi and Gohyakumangoku, and keeps traditional methods while trying new ones each year. Sakenomy and HelloSake place its start in the Edo period."
+ ],
+ "sources": [
+  "https://www.sakenomy.jp/en/brewery/K01N010025",
+  "https://hellosake.com/en/breweries/6eMIQmAhVertNWxFB2qV",
+  "https://en.sake-times.com/breweries/ryujin-shuzo"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

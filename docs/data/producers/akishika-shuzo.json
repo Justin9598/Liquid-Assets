@@ -1,16 +1,25 @@
 {
  "key": "akishika-shuzo",
  "name": "Akishika Shuzo",
- "native": null,
- "location": "Osaka",
+ "native": "秋鹿酒造",
+ "location": "Nose, Osaka",
  "region": "Osaka",
  "country": "Japan",
- "founded": null,
+ "founded": 1886,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Akishika"
+ ],
+ "about": [
+  "Akishika Shuzo is in Nose, the northernmost town in Osaka, and dates to 1886. The brewery grows rice itself on about 25 hectares, mainly Yamada Nishiki and Omachi, and makes sake from field to bottle.",
+  "It moved to all junmai in 2003. Its brewhouse, more than a century old, was renovated in two stages that finished in November 2023. Hiroaki Oku is president, and Kotaro Oku, born in 1990, is the 7th generation heir."
+ ],
+ "sources": [
+  "https://sakeworld.jp/special/20240201-akishika/",
+  "https://en.sake-times.com/breweries/akishika-shuzo",
+  "https://www.saketime.jp/brands/1520/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

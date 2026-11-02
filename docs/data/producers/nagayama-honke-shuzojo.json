@@ -1,16 +1,25 @@
 {
  "key": "nagayama-honke-shuzojo",
  "name": "Nagayama Honke Shuzojo",
- "native": null,
- "location": "Yamaguchi",
+ "native": "永山本家酒造場",
+ "location": "Ube, Yamaguchi",
  "region": "Yamaguchi",
  "country": "Japan",
- "founded": null,
+ "founded": 1888,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.domainetaka.com/",
+ "brands": [
+  "Taka"
+ ],
+ "about": [
+  "Nagayama Honke Shuzojo is in Futamatase, Ube, Yamaguchi, where Kittaro Nagayama founded it in 1888. After his death in 1905 the business was split between two sons, and this brewery passed to the younger. Its office is a former village hall, listed as a national registered cultural property in 2016.",
+  "The fifth head came back in 2001, trained as a brewer, and made his first sake in 2002. He named the label Taka, and it went on national sale that year, aimed at the junmai market."
+ ],
+ "sources": [
+  "https://www.domainetaka.com/company-2/",
+  "https://www.domainetaka.com/history1-2/",
+  "https://www.domainetaka.com/history2-2/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

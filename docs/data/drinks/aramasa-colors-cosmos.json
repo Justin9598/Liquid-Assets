@@ -6,11 +6,11 @@
  "producer": {
   "key": "aramasa-shuzo",
   "name": "Aramasa Shuzo",
-  "native": null,
-  "location": "Akita, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "新政酒造",
+  "location": "Akita, Akita, Japan",
+  "founded": 1852,
+  "about": "Aramasa Shuzo has brewed in Omachi, Akita city, since 1852. Its founder was Uhee Sato, which gave the house its local name, and Aramasa comes from a Meiji government phrase about governing with virtue. In 1930 yeast taken from its mash became Kyokai No.6, a cold tolerant strain that the brewery says is the oldest still sold.",
+  "url": "http://aramasa.jp/"
  },
  "abv": 13,
  "styles": [

@@ -1,17 +1,32 @@
 {
  "key": "aramasa-shuzo",
  "name": "Aramasa Shuzo",
- "native": null,
- "location": "Akita",
+ "native": "新政酒造",
+ "location": "Akita, Akita",
  "region": "Akita",
  "country": "Japan",
- "founded": null,
+ "founded": 1852,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "http://aramasa.jp/",
+ "brands": [
+  "Aramasa"
+ ],
+ "about": [
+  "Aramasa Shuzo has brewed in Omachi, Akita city, since 1852. Its founder was Uhee Sato, which gave the house its local name, and Aramasa comes from a Meiji government phrase about governing with virtue. In 1930 yeast taken from its mash became Kyokai No.6, a cold tolerant strain that the brewery says is the oldest still sold.",
+  "From the 2008 brewing year it moved to staff brewers in their early thirties. From 2009 it limited itself to No.6 yeast lines, and from 2010 to Akita rice. Yusuke Sato is president, and the house belongs to the Akita NEXT5 group."
+ ],
+ "sources": [
+  "http://aramasa.jp/company/",
+  "http://aramasa.jp/around/",
+  "https://yousakana.jp/akit-next-five/"
+ ],
+ "related": [
+  {
+   "key": "yamamoto-shuzoten",
+   "name": "Yamamoto Shuzoten",
+   "relationship": "fellow NEXT5 member"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,

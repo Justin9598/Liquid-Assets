@@ -1,16 +1,25 @@
 {
  "key": "noguchi-naohiko-sake-institute",
  "name": "Noguchi Naohiko Sake Institute",
- "native": null,
- "location": "Ishikawa",
+ "native": "農口尚彦研究所",
+ "location": "Komatsu, Ishikawa",
  "region": "Ishikawa",
  "country": "Japan",
- "founded": null,
- "master": null,
+ "founded": 2017,
+ "master": "Naohiko Noguchi",
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Noguchi Naohiko"
+ ],
+ "about": [
+  "Noguchi Naohiko Sake Institute is in Komatsu, Ishikawa. It was set up in November 2017 to pass on the methods of the master brewer Naohiko Noguchi. Born in 1932 in the Noto area into a brewing family, he began work at 16 and has won 27 golds at the national sake competition.",
+  "He is credited with reviving the yamahai method. About eight younger brewers work with him, following his detailed records alongside modern equipment, and the site includes a gallery on his career and a tasting room."
+ ],
+ "sources": [
+  "https://www.kanazawa-u.ac.jp/en/news/150409",
+  "https://nihonmono.jp/en/article/28239/",
+  "https://en.sake-times.com/breweries/noguchi-naohiko-sake-institute"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

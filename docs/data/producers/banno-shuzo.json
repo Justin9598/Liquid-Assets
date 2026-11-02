@@ -1,16 +1,26 @@
 {
  "key": "banno-shuzo",
- "name": "Banno Shuzo",
- "native": null,
- "location": "Nagano",
+ "name": "Tomono Shuzo",
+ "native": "伴野酒造",
+ "location": "Saku, Nagano",
  "region": "Nagano",
  "country": "Japan",
- "founded": null,
+ "founded": 1901,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://sawanohana.com/",
+ "brands": [
+  "Sawanohana",
+  "Beau Michelle",
+  "Raiden"
+ ],
+ "about": [
+  "Tomono Shuzo, written 伴野酒造, is in Nozawa, Saku, Nagano, and has made sake since 1901. Its labels are Sawanohana, Beau Michelle and Raiden, each with a theme, calm for Sawanohana and a little excitement for Beau Michelle.",
+  "It uses Nagano rice such as Hitogokochi and Miyama Nishiki, with water from the Yatsugatake area. Each batch is pasteurised in the bottle and then kept cold."
+ ],
+ "sources": [
+  "https://sawanohana.com/",
+  "https://sawanohana.com/en/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

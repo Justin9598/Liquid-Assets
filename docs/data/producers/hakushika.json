@@ -1,16 +1,26 @@
 {
  "key": "hakushika",
  "name": "Hakushika",
- "native": null,
- "location": "Hyogo",
+ "native": "辰馬本家酒造",
+ "location": "Nishinomiya, Hyogo",
  "region": "Hyogo",
  "country": "Japan",
- "founded": null,
+ "founded": 1662,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.hakushika.co.jp/",
+ "brands": [
+  "Hakushika",
+  "Kuromatsu Hakushika",
+  "Tatsuuma Honke"
+ ],
+ "about": [
+  "Tatsuuma Honke Brewing makes Hakushika in Nishinomiya, in the Nada sake region of Hyogo. By the company's account, the first head, Kichizaemon, dug a well on his grounds in 1662 and began brewing with its clear water, making sake casks as a sideline. The name comes from a Chinese tale of a white deer that lived a thousand years.",
+  "Later the family sold water from the same well to other Nada brewers, who called it Miyamizu. In 1920 a Tamba tōji brewed the first Kuromatsu Hakushika. The war destroyed 35 of its 53 storehouses, and the 1995 earthquake wrecked its historic brick brewery."
+ ],
+ "sources": [
+  "https://www.hakushika.co.jp/company/history.php",
+  "https://www.hakushika.co.jp/company/about.php"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

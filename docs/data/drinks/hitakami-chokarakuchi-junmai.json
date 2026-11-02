@@ -6,11 +6,11 @@
  "producer": {
   "key": "hirako-shuzo",
   "name": "Hirako Shuzo",
-  "native": null,
-  "location": "Miyagi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "平孝酒造",
+  "location": "Ishinomaki, Miyagi, Japan",
+  "founded": 1861,
+  "about": "Hirako Shuzo has brewed sake in Ishinomaki, a fishing port in Miyagi, since 1861. Its main label is Hitakami, from an old name of the Kitakami River, which reaches the sea there. The brewery aims for sake that goes with fresh fish, and makes an ultra dry junmai to suit seafood.",
+  "url": "https://www.hirakoushuzou.jp/"
  },
  "abv": 15,
  "styles": [],

@@ -6,11 +6,11 @@
  "producer": {
   "key": "hagino-shuzo",
   "name": "Hagino Shuzo",
-  "native": null,
-  "location": "Miyagi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "萩野酒造",
+  "location": "Kurihara, Miyagi, Japan",
+  "founded": 1840,
+  "about": "Hagino Shuzo is in Kurihara, in northern Miyagi, and gives 1840 as its start. It became a company in July 1923 and makes Hagi no Tsuru and Nichirinda.",
+  "url": "https://www.hagino-shuzou.co.jp/"
  },
  "abv": 15,
  "styles": [],

@@ -6,10 +6,10 @@
  "producer": {
   "key": "akishika-shuzo",
   "name": "Akishika Shuzo",
-  "native": null,
-  "location": "Osaka, Japan",
-  "founded": null,
-  "about": null,
+  "native": "秋鹿酒造",
+  "location": "Nose, Osaka, Japan",
+  "founded": 1886,
+  "about": "Akishika Shuzo is in Nose, the northernmost town in Osaka, and dates to 1886. The brewery grows rice itself on about 25 hectares, mainly Yamada Nishiki and Omachi, and makes sake from field to bottle.",
   "url": null
  },
  "abv": 15,

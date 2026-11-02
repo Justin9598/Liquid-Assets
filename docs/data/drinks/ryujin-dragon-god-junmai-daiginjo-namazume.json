@@ -6,10 +6,10 @@
  "producer": {
   "key": "ryujin-shuzo",
   "name": "Ryujin Shuzo",
-  "native": null,
-  "location": "Gunma, Japan",
+  "native": "龍神酒造",
+  "location": "Tatebayashi, Gunma, Japan",
   "founded": null,
-  "about": null,
+  "about": "Ryujin Shuzo is in Tatebayashi, Gunma, and brews with very soft water from Ryujin no Ido, a well on its own grounds. Its labels are Ryujin and Oze no Yukidoke, which is the flagship.",
   "url": null
  },
  "abv": 16,

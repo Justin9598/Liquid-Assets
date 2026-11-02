@@ -1,16 +1,24 @@
 {
  "key": "imanishi-shuzo",
  "name": "Imanishi Shuzo",
- "native": null,
- "location": "Nara",
+ "native": "今西酒造",
+ "location": "Sakurai, Nara",
  "region": "Nara",
  "country": "Japan",
- "founded": null,
+ "founded": 1660,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://imanishisyuzou.com/",
+ "brands": [
+  "Mimurosugi"
+ ],
+ "about": [
+  "Imanishi Shuzo stands in Miwa, Sakurai, Nara, at the foot of Mount Miwa. It began in 1660 and is the only sake brewery left in Miwa. Mimurosugi takes its name from Mimuro, an old name for the mountain, and from the cedar its god is said to inhabit.",
+  "The Nihon Shoki links Miwa to the first sacred sake, and the cedar balls hung at breweries are given out from Omiwa Shrine, which stands there. The brewery's lines include a Roman series and a bodaimoto series, and the 14th head runs it today."
+ ],
+ "sources": [
+  "https://imanishisyuzou.com/company/",
+  "https://imanishisyuzou.com/history/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

@@ -1,16 +1,25 @@
 {
  "key": "kobayashi-shuzo",
  "name": "Kobayashi Shuzo",
- "native": null,
- "location": "Tochigi",
+ "native": "小林酒造",
+ "location": "Oyama, Tochigi",
  "region": "Tochigi",
  "country": "Japan",
- "founded": null,
+ "founded": 1872,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://hououbiden.jp/",
+ "brands": [
+  "Hououbiden"
+ ],
+ "about": [
+  "Kobayashi Shuzo has brewed in Oyama, Tochigi, since 1872, in the former Mitamura district of rice fields and wells. It makes Hououbiden, a ginjo sake, with water that reaches the brewery through the ground from the Nikko mountains.",
+  "It signs regional contracts with rice growers in the places where each rice variety began, so that each bottle shows where its rice came from. It also makes a spirit stored in Nikko oak casks."
+ ],
+ "sources": [
+  "https://hououbiden.jp/kura/",
+  "https://hououbiden.jp/hououbiden/",
+  "https://hououbiden.jp/nikko/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

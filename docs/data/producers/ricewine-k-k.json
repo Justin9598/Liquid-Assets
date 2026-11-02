@@ -1,16 +1,25 @@
 {
  "key": "ricewine-k-k",
  "name": "RiceWine K.K.",
- "native": null,
- "location": "Kanagawa",
+ "native": "株式会社RiceWine",
+ "location": "Odawara, Kanagawa",
  "region": "Kanagawa",
  "country": "Japan",
- "founded": null,
+ "founded": 2019,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://ricewine.co.jp/",
+ "brands": [
+  "HINEMOS"
+ ],
+ "about": [
+  "RiceWine was founded in Odawara, Kanagawa, in August 2018 by Yuta Sakai, who had worked in web marketing. It has no brewery of its own and sells the HINEMOS brand, whose name means all day.",
+  "Each HINEMOS sake is named for an hour of the day, such as Shichiji for 7pm and Reiji for midnight, and the labels and packaging follow the theme of time. The first two bottles were pre-sold on Makuake in spring 2019."
+ ],
+ "sources": [
+  "https://ricewine.co.jp/",
+  "https://www.makuake.com/project/hinemos/",
+  "https://note.com/fukanoki/n/nbb7df9dd9202"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

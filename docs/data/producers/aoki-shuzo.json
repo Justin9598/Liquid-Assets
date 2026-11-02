@@ -1,16 +1,24 @@
 {
  "key": "aoki-shuzo",
  "name": "Aoki Shuzo",
- "native": null,
- "location": "Aichi",
+ "native": "青木酒造",
+ "location": "Aisai, Aichi",
  "region": "Aichi",
  "country": "Japan",
- "founded": null,
+ "founded": 1805,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://yamahai.co.jp/",
+ "brands": [
+  "Komesou"
+ ],
+ "about": [
+  "Aoki Shuzo is in Aisai, Aichi, and has brewed since 1805. Typhoon Isewan flooded and destroyed the brewery in 1959. The 13th president rebuilt it and began making yamahai sake, which the brewery still does.",
+  "It makes honjozo grade and above, and stirs its yamahai and kimoto starters by hand with a paddle. It relies on its own house yeast and adds no cultured yeast, and it ferments fully dry. Its label is Komesou."
+ ],
+ "sources": [
+  "https://yamahai.co.jp/company/",
+  "https://yamahai.co.jp/company/kuramoto.html"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

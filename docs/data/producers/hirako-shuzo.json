@@ -1,16 +1,25 @@
 {
  "key": "hirako-shuzo",
  "name": "Hirako Shuzo",
- "native": null,
- "location": "Miyagi",
+ "native": "平孝酒造",
+ "location": "Ishinomaki, Miyagi",
  "region": "Miyagi",
  "country": "Japan",
- "founded": null,
+ "founded": 1861,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.hirakoushuzou.jp/",
+ "brands": [
+  "Hitakami"
+ ],
+ "about": [
+  "Hirako Shuzo has brewed sake in Ishinomaki, a fishing port in Miyagi, since 1861. Its main label is Hitakami, from an old name of the Kitakami River, which reaches the sea there. The brewery aims for sake that goes with fresh fish, and makes an ultra dry junmai to suit seafood.",
+  "The 2011 tsunami left its koji, yeast starter and fermentation rooms unusable. It rebuilt them in stainless steel with tighter control of temperature and hygiene, and released the junmai ginjo Yasuke in 2012. Takahiro Hirai is the president."
+ ],
+ "sources": [
+  "https://www.sakenomy.jp/en/brewery/K01N004021",
+  "https://nihonmono.jp/en/article/54236/",
+  "https://en.sake-times.com/breweries/hirako-shuzo"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

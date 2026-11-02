@@ -6,11 +6,11 @@
  "producer": {
   "key": "akita-seishu",
   "name": "Akita Seishu",
-  "native": null,
-  "location": "Akita, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "秋田清酒",
+  "location": "Daisen, Akita, Japan",
+  "founded": 1865,
+  "about": "Akita Seishu bottles, stores and sells the sake of two breweries in Daisen, Akita, Dewatsuru and Kariho. The company was set up in 1972 and traces its start to 1865, when the Ito family opened Yamato Shuzoten in Minami Naraoka.",
+  "url": "https://www.igeta.jp/"
  },
  "abv": 15.8,
  "styles": [

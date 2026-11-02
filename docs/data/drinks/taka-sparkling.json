@@ -6,11 +6,11 @@
  "producer": {
   "key": "nagayama-honke-shuzojo",
   "name": "Nagayama Honke Shuzojo",
-  "native": null,
-  "location": "Yamaguchi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "永山本家酒造場",
+  "location": "Ube, Yamaguchi, Japan",
+  "founded": 1888,
+  "about": "Nagayama Honke Shuzojo is in Futamatase, Ube, Yamaguchi, where Kittaro Nagayama founded it in 1888. After his death in 1905 the business was split between two sons, and this brewery passed to the younger. Its office is a former village hall, listed as a national registered cultural property in 2016.",
+  "url": "https://www.domainetaka.com/"
  },
  "abv": 14,
  "styles": [

@@ -2,14 +2,17 @@
  {
   "key": "akabu-shuzo",
   "name": "Akabu Shuzo",
-  "native": null,
+  "native": "赤武酒造",
   "region": "Iwate",
   "country": "Japan",
-  "location": "Iwate",
-  "brands": [],
+  "location": "Morioka, Iwate",
+  "brands": [
+   "Akabu",
+   "Hamamusume"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "akebono-shuzo",
@@ -29,26 +32,32 @@
  {
   "key": "akishika-shuzo",
   "name": "Akishika Shuzo",
-  "native": null,
+  "native": "秋鹿酒造",
   "region": "Osaka",
   "country": "Japan",
-  "location": "Osaka",
-  "brands": [],
+  "location": "Nose, Osaka",
+  "brands": [
+   "Akishika"
+  ],
   "drinkCount": 1,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "akita-seishu",
   "name": "Akita Seishu",
-  "native": null,
+  "native": "秋田清酒",
   "region": "Akita",
   "country": "Japan",
-  "location": "Akita",
-  "brands": [],
+  "location": "Daisen, Akita",
+  "brands": [
+   "Dewatsuru",
+   "Kariho",
+   "Yamato Shizuku"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "akiu-heart-rock-sake",
@@ -68,26 +77,30 @@
  {
   "key": "aoki-shuzo",
   "name": "Aoki Shuzo",
-  "native": null,
+  "native": "青木酒造",
   "region": "Aichi",
   "country": "Japan",
-  "location": "Aichi",
-  "brands": [],
+  "location": "Aisai, Aichi",
+  "brands": [
+   "Komesou"
+  ],
   "drinkCount": 1,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "aramasa-shuzo",
   "name": "Aramasa Shuzo",
-  "native": null,
+  "native": "新政酒造",
   "region": "Akita",
   "country": "Japan",
-  "location": "Akita",
-  "brands": [],
+  "location": "Akita, Akita",
+  "brands": [
+   "Aramasa"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "ardbeg",
@@ -147,18 +160,6 @@
   "hasStory": true
  },
  {
-  "key": "banno-shuzo",
-  "name": "Banno Shuzo",
-  "native": null,
-  "region": "Nagano",
-  "country": "Japan",
-  "location": "Nagano",
-  "brands": [],
-  "drinkCount": 1,
-  "favourites": 0,
-  "hasStory": false
- },
- {
   "key": "bruichladdich",
   "name": "Bruichladdich",
   "native": null,
@@ -212,14 +213,17 @@
  {
   "key": "daishinshu-shuzo",
   "name": "Daishinshu Shuzo",
-  "native": null,
+  "native": "大信州酒造",
   "region": "Nagano",
   "country": "Japan",
-  "location": "Nagano",
-  "brands": [],
+  "location": "Matsumoto, Nagano",
+  "brands": [
+   "Daishinshu",
+   "Daishinsyu"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "dassai-blue",
@@ -405,14 +409,16 @@
  {
   "key": "gekkeikan",
   "name": "Gekkeikan",
-  "native": null,
+  "native": "月桂冠",
   "region": "Kyoto",
   "country": "Japan",
-  "location": "Kyoto",
-  "brands": [],
+  "location": "Fushimi, Kyoto",
+  "brands": [
+   "Gekkeikan"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "gyokusendo-shuzo",
@@ -432,35 +438,46 @@
   "native": null,
   "region": "Fukushima",
   "country": "Japan",
-  "location": "Fukushima",
-  "brands": [],
+  "location": "Minamisoma, Fukushima",
+  "brands": [
+   "haccoba",
+   "Hanauta Hops"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "hagino-shuzo",
   "name": "Hagino Shuzo",
-  "native": null,
+  "native": "萩野酒造",
   "region": "Miyagi",
   "country": "Japan",
-  "location": "Miyagi",
-  "brands": [],
+  "location": "Kurihara, Miyagi",
+  "brands": [
+   "Hagi no Tsuru",
+   "Haginotsuru",
+   "Nichirinda"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "hakushika",
   "name": "Hakushika",
-  "native": null,
+  "native": "辰馬本家酒造",
   "region": "Hyogo",
   "country": "Japan",
-  "location": "Hyogo",
-  "brands": [],
+  "location": "Nishinomiya, Hyogo",
+  "brands": [
+   "Hakushika",
+   "Kuromatsu Hakushika",
+   "Tatsuuma Honke"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "hakutsuru-shuzo",
@@ -573,14 +590,16 @@
  {
   "key": "hirako-shuzo",
   "name": "Hirako Shuzo",
-  "native": null,
+  "native": "平孝酒造",
   "region": "Miyagi",
   "country": "Japan",
-  "location": "Miyagi",
-  "brands": [],
+  "location": "Ishinomaki, Miyagi",
+  "brands": [
+   "Hitakami"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "hiraroku-jozo",
@@ -688,14 +707,16 @@
  {
   "key": "imanishi-shuzo",
   "name": "Imanishi Shuzo",
-  "native": null,
+  "native": "今西酒造",
   "region": "Nara",
   "country": "Japan",
-  "location": "Nara",
-  "brands": [],
+  "location": "Sakurai, Nara",
+  "brands": [
+   "Mimurosugi"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "ine-to-agave",
@@ -967,14 +988,16 @@
  {
   "key": "kobayashi-shuzo",
   "name": "Kobayashi Shuzo",
-  "native": null,
+  "native": "小林酒造",
   "region": "Tochigi",
   "country": "Japan",
-  "location": "Tochigi",
-  "brands": [],
+  "location": "Oyama, Tochigi",
+  "brands": [
+   "Hououbiden"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kojima-sohonten",
@@ -1246,14 +1269,16 @@
  {
   "key": "nagayama-honke-shuzojo",
   "name": "Nagayama Honke Shuzojo",
-  "native": null,
+  "native": "永山本家酒造場",
   "region": "Yamaguchi",
   "country": "Japan",
-  "location": "Yamaguchi",
-  "brands": [],
+  "location": "Ube, Yamaguchi",
+  "brands": [
+   "Taka"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "nanbu-bijin",
@@ -1351,14 +1376,16 @@
  {
   "key": "noguchi-naohiko-sake-institute",
   "name": "Noguchi Naohiko Sake Institute",
-  "native": null,
+  "native": "農口尚彦研究所",
   "region": "Ishikawa",
   "country": "Japan",
-  "location": "Ishikawa",
-  "brands": [],
+  "location": "Komatsu, Ishikawa",
+  "brands": [
+   "Noguchi Naohiko"
+  ],
   "drinkCount": 2,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "nyu-shuzo",
@@ -1403,14 +1430,18 @@
  {
   "key": "okura-honke",
   "name": "Okura Honke",
-  "native": null,
+  "native": "大倉本家",
   "region": "Nara",
   "country": "Japan",
-  "location": "Nara",
-  "brands": [],
+  "location": "Kashiba, Nara",
+  "brands": [
+   "Kinko",
+   "Okura",
+   "Ookura"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "omoyashuzo",
@@ -1463,14 +1494,17 @@
  {
   "key": "ozawa-shuzojo",
   "name": "Ozawa Shuzojo",
-  "native": null,
+  "native": "尾澤酒造場",
   "region": "Nagano",
   "country": "Japan",
-  "location": "Nagano",
-  "brands": [],
+  "location": "Nagano, Nagano",
+  "brands": [
+   "Jukyu",
+   "Misuzunishiki"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "puku-puku-brewing",
@@ -1489,14 +1523,16 @@
  {
   "key": "ricewine-k-k",
   "name": "RiceWine K.K.",
-  "native": null,
+  "native": "株式会社RiceWine",
   "region": "Kanagawa",
   "country": "Japan",
-  "location": "Kanagawa",
-  "brands": [],
+  "location": "Odawara, Kanagawa",
+  "brands": [
+   "HINEMOS"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "rikyugura",
@@ -1525,14 +1561,17 @@
  {
   "key": "ryujin-shuzo",
   "name": "Ryujin Shuzo",
-  "native": null,
+  "native": "龍神酒造",
   "region": "Gunma",
   "country": "Japan",
-  "location": "Gunma",
-  "brands": [],
+  "location": "Tatebayashi, Gunma",
+  "brands": [
+   "Ryujin",
+   "Oze no Yukidoke"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "santa-helena",
@@ -1819,6 +1858,22 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": false
+ },
+ {
+  "key": "banno-shuzo",
+  "name": "Tomono Shuzo",
+  "native": "伴野酒造",
+  "region": "Nagano",
+  "country": "Japan",
+  "location": "Saku, Nagano",
+  "brands": [
+   "Sawanohana",
+   "Beau Michelle",
+   "Raiden"
+  ],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": true
  },
  {
   "key": "tosa-shuzo",

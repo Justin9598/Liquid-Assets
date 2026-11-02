@@ -6,11 +6,11 @@
  "producer": {
   "key": "gekkeikan",
   "name": "Gekkeikan",
-  "native": null,
-  "location": "Kyoto, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "月桂冠",
+  "location": "Fushimi, Kyoto, Japan",
+  "founded": 1637,
+  "about": "Gekkeikan brews in Fushimi, the sake district in the south of Kyoto, and its head office has stood there since the start. The Okura family opened a sake shop in 1637, after moving from Kasagi upstream on the Kizu River, and traded as Kasagiya.",
+  "url": "https://www.gekkeikan.co.jp/"
  },
  "abv": 5,
  "styles": [],

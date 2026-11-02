@@ -6,11 +6,11 @@
  "producer": {
   "key": "ricewine-k-k",
   "name": "RiceWine K.K.",
-  "native": null,
-  "location": "Kanagawa, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "株式会社RiceWine",
+  "location": "Odawara, Kanagawa, Japan",
+  "founded": 2019,
+  "about": "RiceWine was founded in Odawara, Kanagawa, in August 2018 by Yuta Sakai, who had worked in web marketing. It has no brewery of its own and sells the HINEMOS brand, whose name means all day.",
+  "url": "https://ricewine.co.jp/"
  },
  "abv": 15,
  "styles": [],
