@@ -6,11 +6,11 @@
  "producer": {
   "key": "akabu-shuzo",
   "name": "Akabu Shuzo",
-  "native": null,
-  "location": "Iwate, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "赤武酒造",
+  "location": "Morioka, Iwate, Japan",
+  "founded": 1896,
+  "about": "Akabu Shuzo began in 1896 in Otsuchi on the Iwate coast, and took its name from the Akahama district facing Otsuchi Bay. The 2011 tsunami destroyed the brewery and the family home, and brewing resumed that autumn at another brewery in Morioka.",
+  "url": "https://www.akabu1.com/"
  },
  "abv": 16,
  "styles": [],

@@ -6,10 +6,10 @@
  "producer": {
   "key": "ozawa-shuzojo",
   "name": "Ozawa Shuzojo",
-  "native": null,
-  "location": "Nagano, Japan",
+  "native": "尾澤酒造場",
+  "location": "Nagano, Nagano, Japan",
   "founded": null,
-  "about": null,
+  "about": "Ozawa Shuzojo is a very small brewery in Shinshu Shinmachi, now part of Nagano city. It once sold sake locally as Misuzunishiki.",
   "url": null
  },
  "abv": 16,

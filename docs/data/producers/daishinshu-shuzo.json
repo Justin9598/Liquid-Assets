@@ -1,16 +1,26 @@
 {
  "key": "daishinshu-shuzo",
  "name": "Daishinshu Shuzo",
- "native": null,
- "location": "Nagano",
+ "native": "大信州酒造",
+ "location": "Matsumoto, Nagano",
  "region": "Nagano",
  "country": "Japan",
- "founded": null,
+ "founded": 1880,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.daishinsyu.com/",
+ "brands": [
+  "Daishinshu",
+  "Daishinsyu"
+ ],
+ "about": [
+  "Daishinshu Shuzo is in Matsumoto, Nagano, and gives May 1880 as its founding date. Its predecessor was the Haradaya sake shop. It brewed at two sites, Matsumoto and Toyono, until the 2019 brewing year, and since 2020 all brewing has been in Matsumoto.",
+  "It uses snowmelt from the Northern Alps and rice grown with contract farmers, and sells sake brewed from single fields and single growers."
+ ],
+ "sources": [
+  "https://www.daishinsyu.com/about",
+  "https://www.daishinsyu.com/story",
+  "https://www.daishinsyu.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,
@@ -30,7 +40,7 @@
   "obuse-winery",
   "endo-shuzojo",
   "ozawa-shuzojo",
-  "banno-shuzo",
-  "shinshu-meijo"
+  "shinshu-meijo",
+  "banno-shuzo"
  ]
 }

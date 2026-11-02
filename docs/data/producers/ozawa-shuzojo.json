@@ -1,16 +1,26 @@
 {
  "key": "ozawa-shuzojo",
  "name": "Ozawa Shuzojo",
- "native": null,
- "location": "Nagano",
+ "native": "尾澤酒造場",
+ "location": "Nagano, Nagano",
  "region": "Nagano",
  "country": "Japan",
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Jukyu",
+  "Misuzunishiki"
+ ],
+ "about": [
+  "Ozawa Shuzojo is a very small brewery in Shinshu Shinmachi, now part of Nagano city. It once sold sake locally as Misuzunishiki.",
+  "Miyuki Ozawa, wife of the fourth head, brews as tōji and makes the Jukyu label. The name means 19, for a brewer who has not yet reached the age of 20 and has more to learn. Output is about 70 koku a year, with three staff."
+ ],
+ "sources": [
+  "https://www.winentaste.com/products/14234",
+  "https://en.sake-times.com/breweries/ozawa-sake-brewery",
+  "https://www.nta.go.jp/about/organization/kantoshinetsu/sake/sake_breweries_map/pdf/sake_jp/sake_nagano_jp.pdf"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,
@@ -34,8 +44,8 @@
   "suwa-mikotsuru-shuzojo",
   "obuse-winery",
   "endo-shuzojo",
-  "banno-shuzo",
   "daishinshu-shuzo",
-  "shinshu-meijo"
+  "shinshu-meijo",
+  "banno-shuzo"
  ]
 }

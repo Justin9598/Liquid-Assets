@@ -2,15 +2,24 @@
  "key": "haccoba-craft-sake-brewery",
  "name": "Haccoba Craft Sake Brewery",
  "native": null,
- "location": "Fukushima",
+ "location": "Minamisoma, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
- "founded": null,
+ "founded": 2021,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://haccoba.com/",
+ "brands": [
+  "haccoba",
+  "Hanauta Hops"
+ ],
+ "about": [
+  "Haccoba is a craft sake brewery in Odaka, Minamisoma, Fukushima, a town that was emptied by the evacuation after 2011. The company was registered in February 2020 and opened its first brewery in Odaka in February 2021. A second brewery followed in nearby Namie in July 2023.",
+  "It builds on hana-moto, a home doburoku method from parts of Tohoku, and borrows from craft beer, adding hops during fermentation. Its core lines include the hopped Hanauta Hops and the Jam series, and it makes one-off experiments under a LAB label."
+ ],
+ "sources": [
+  "https://haccoba.com/",
+  "https://prtimes.jp/main/html/rd/p/000000094.000107076.html"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

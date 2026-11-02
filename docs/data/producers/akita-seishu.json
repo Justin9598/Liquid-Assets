@@ -1,16 +1,27 @@
 {
  "key": "akita-seishu",
  "name": "Akita Seishu",
- "native": null,
- "location": "Akita",
+ "native": "秋田清酒",
+ "location": "Daisen, Akita",
  "region": "Akita",
  "country": "Japan",
- "founded": null,
+ "founded": 1865,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.igeta.jp/",
+ "brands": [
+  "Dewatsuru",
+  "Kariho",
+  "Yamato Shizuku"
+ ],
+ "about": [
+  "Akita Seishu bottles, stores and sells the sake of two breweries in Daisen, Akita, Dewatsuru and Kariho. The company was set up in 1972 and traces its start to 1865, when the Ito family opened Yamato Shuzoten in Minami Naraoka.",
+  "Dewatsuru got its name in 1913. Kariho brews in a storehouse built in 1850 beside the Omono River, and takes its name from a poem by Emperor Tenji. It makes a yamahai starter by a patented method and presses its sake in a traditional box press."
+ ],
+ "sources": [
+  "https://www.igeta.jp/about/",
+  "https://www.igeta.jp/dewatsuru/",
+  "https://www.igeta.jp/kariho/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

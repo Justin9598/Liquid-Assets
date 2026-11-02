@@ -1,16 +1,26 @@
 {
  "key": "okura-honke",
  "name": "Okura Honke",
- "native": null,
- "location": "Nara",
+ "native": "大倉本家",
+ "location": "Kashiba, Nara",
  "region": "Nara",
  "country": "Japan",
- "founded": null,
+ "founded": 1896,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.kinko-ookura.com/",
+ "brands": [
+  "Kinko",
+  "Okura",
+  "Ookura"
+ ],
+ "about": [
+  "Okura Honke is in Kamada, Kashiba, Nara, at the foot of Mount Nijo. It began in 1896 as Okura Katsuji Shoten and makes the Kinko and Okura labels. Apart from its ginjo, it uses the yamahai starter for everything, down to ordinary grade.",
+  "It grows its own Hinohikari rice and brews a mizumoto nigori, started from a rice and water ferment. Brewing stopped after the autumn of 2000 and began again three years later, when the fourth head returned from Yokohama. He now brews as head of the family and tōji."
+ ],
+ "sources": [
+  "http://www.kinko-ookura.com/kura/index.html",
+  "http://www.kinko-ookura.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

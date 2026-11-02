@@ -1,16 +1,25 @@
 {
  "key": "gekkeikan",
  "name": "Gekkeikan",
- "native": null,
- "location": "Kyoto",
+ "native": "月桂冠",
+ "location": "Fushimi, Kyoto",
  "region": "Kyoto",
  "country": "Japan",
- "founded": null,
+ "founded": 1637,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.gekkeikan.co.jp/",
+ "brands": [
+  "Gekkeikan"
+ ],
+ "about": [
+  "Gekkeikan brews in Fushimi, the sake district in the south of Kyoto, and its head office has stood there since the start. The Okura family opened a sake shop in 1637, after moving from Kasagi upstream on the Kizu River, and traded as Kasagiya.",
+  "The Gekkeikan name was registered as a trademark in 1905. In 1909 the 11th head, Tsunekichi Okura, founded the first research laboratory run by a sake maker, and the company went on to sell sake bottled without preservatives. It became a limited company in 1927 and is now led by the 14th head."
+ ],
+ "sources": [
+  "https://www.gekkeikan.co.jp/company/guide/overview/",
+  "https://www.gekkeikan.co.jp/company/history/tradition/",
+  "https://www.gekkeikan.co.jp/company/history/origin/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

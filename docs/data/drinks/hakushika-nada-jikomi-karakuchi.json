@@ -6,11 +6,11 @@
  "producer": {
   "key": "hakushika",
   "name": "Hakushika",
-  "native": null,
-  "location": "Hyogo, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "辰馬本家酒造",
+  "location": "Nishinomiya, Hyogo, Japan",
+  "founded": 1662,
+  "about": "Tatsuuma Honke Brewing makes Hakushika in Nishinomiya, in the Nada sake region of Hyogo. By the company's account, the first head, Kichizaemon, dug a well on his grounds in 1662 and began brewing with its clear water, making sake casks as a sideline. The name comes from a Chinese tale of a white deer that lived a thousand years.",
+  "url": "https://www.hakushika.co.jp/"
  },
  "abv": 14.5,
  "styles": [],

@@ -1,16 +1,27 @@
 {
  "key": "akabu-shuzo",
  "name": "Akabu Shuzo",
- "native": null,
- "location": "Iwate",
+ "native": "赤武酒造",
+ "location": "Morioka, Iwate",
  "region": "Iwate",
  "country": "Japan",
- "founded": null,
+ "founded": 1896,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.akabu1.com/",
+ "brands": [
+  "Akabu",
+  "Hamamusume"
+ ],
+ "about": [
+  "Akabu Shuzo began in 1896 in Otsuchi on the Iwate coast, and took its name from the Akahama district facing Otsuchi Bay. The 2011 tsunami destroyed the brewery and the family home, and brewing resumed that autumn at another brewery in Morioka.",
+  "The company built a new brewery in Morioka in autumn 2013, staffed mostly by people new to sake. The Akabu label began in 2014 beside the older Hamamusume, and it now makes up over 90 percent of output. The brewery uses Ginga rice and Giovanni no Chikara yeast."
+ ],
+ "sources": [
+  "https://www.akabu1.com/info/",
+  "https://www.akabu1.com/staff/",
+  "https://nihonmono.jp/en/article/37281/",
+  "https://en.sake-times.com/breweries/akabu-shuzo"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

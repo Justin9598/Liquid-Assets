@@ -6,11 +6,11 @@
  "producer": {
   "key": "aoki-shuzo",
   "name": "Aoki Shuzo",
-  "native": null,
-  "location": "Aichi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "青木酒造",
+  "location": "Aisai, Aichi, Japan",
+  "founded": 1805,
+  "about": "Aoki Shuzo is in Aisai, Aichi, and has brewed since 1805. Typhoon Isewan flooded and destroyed the brewery in 1959. The 13th president rebuilt it and began making yamahai sake, which the brewery still does.",
+  "url": "https://yamahai.co.jp/"
  },
  "abv": 21,
  "styles": [
