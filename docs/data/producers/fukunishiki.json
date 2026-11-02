@@ -1,16 +1,27 @@
 {
  "key": "fukunishiki",
  "name": "Fukunishiki",
- "native": null,
- "location": "Hyogo",
+ "native": "富久錦",
+ "location": "Kasai, Hyogo",
  "region": "Hyogo",
  "country": "Japan",
- "founded": null,
+ "founded": 1839,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.fukunishiki.co.jp/",
+ "brands": [
+  "Fukunishiki",
+  "Junsei"
+ ],
+ "about": [
+  "Fukunishiki is a brewery in Kasai, in the Harima area of inland Hyogo, founded in 1839. The Inaoka family runs it, and it traded as Inaoka Honke Shoten until 1964.",
+  "In 1987 it set itself five years to move entirely to junmai sake and got there in 1992. Since 1996 every product has used only sake rice grown in Kasai, and in 1997 it began contracting local farming groups to grow that rice with fewer pesticides and organic fertiliser.",
+  "Junsei, launched in 2014, is its more experimental label, and includes several kimoto releases."
+ ],
+ "sources": [
+  "https://www.fukunishiki.co.jp/about.html",
+  "https://www.fukunishiki.co.jp/",
+  "https://www.saketime.jp/brands/5364/"
+ ],
  "related": [],
  "tally": {
   "drinks": 4,

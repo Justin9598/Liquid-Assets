@@ -6,11 +6,11 @@
  "producer": {
   "key": "akebono-shuzo",
   "name": "Akebono Shuzo",
-  "native": null,
-  "location": "Fukushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "曙酒造",
+  "location": "Aizubange, Fukushima, Japan",
+  "founded": 1904,
+  "about": "Akebono Shuzo is a brewery in Aizubange, in the Aizu region of Fukushima. It was founded in 1904, and its sixth-generation head took charge in 2013.",
+  "url": "https://akebono-syuzou.com/"
  },
  "abv": 15,
  "styles": [],

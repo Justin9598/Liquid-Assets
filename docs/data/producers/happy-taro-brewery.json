@@ -1,16 +1,26 @@
 {
  "key": "happy-taro-brewery",
  "name": "Happy Taro Brewery",
- "native": null,
- "location": "Shiga",
+ "native": "ハッピー太郎醸造所",
+ "location": "Nagahama, Shiga",
  "region": "Shiga",
  "country": "Japan",
- "founded": null,
+ "founded": 2022,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://happytaro.jp/",
+ "brands": [
+  "something happy",
+  "Happy Doburoku"
+ ],
+ "about": [
+  "Happy Taro Brewery belongs to Kotaro Ikejima, a Kyoto University graduate who brewed sake at three breweries in Shimane and Shiga before going independent. In October 2017 he opened a fermented-food workshop in Hikone, making koji, miso and amazake.",
+  "The business now sits inside Umi no Schole, a fermentation-themed complex in Nagahama on Lake Biwa. It gained a brewing licence in January 2022 and specialises in doburoku, sake that is left unpressed and cloudy. Under the something happy name it adds hops, fruit, herbs or tea. Some releases use naturally farmed rice from Shiga, Okayama and Akita."
+ ],
+ "sources": [
+  "https://happytaro.jp/",
+  "https://en.imadeya.co.jp/blogs/brewery/happy-tarou",
+  "https://locally.matcha-jp.com/en/26039"
+ ],
  "related": [],
  "tally": {
   "drinks": 4,

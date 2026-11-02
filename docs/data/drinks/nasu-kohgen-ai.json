@@ -6,11 +6,11 @@
  "producer": {
   "key": "nasu-kohgen-beer",
   "name": "Nasu Kohgen Beer",
-  "native": null,
-  "location": "Tochigi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "那須高原ビール",
+  "location": "Nasu, Tochigi, Japan",
+  "founded": 1996,
+  "about": "Nasu Kohgen Beer is a brewery with a shop and restaurant in Nasu, a highland resort in northern Tochigi. It opened in the autumn of 1996 and brews with snowmelt water from the Nasu mountains.",
+  "url": "https://www.nasukohgenbeer.co.jp/"
  },
  "abv": 5,
  "styles": [],

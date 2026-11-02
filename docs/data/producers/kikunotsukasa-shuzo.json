@@ -1,16 +1,28 @@
 {
  "key": "kikunotsukasa-shuzo",
  "name": "Kikunotsukasa Shuzo",
- "native": null,
- "location": "Iwate",
+ "native": "菊の司酒造",
+ "location": "Shizukuishi, Iwate",
  "region": "Iwate",
  "country": "Japan",
- "founded": null,
+ "founded": 1772,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://kikunotsukasa.jp/",
+ "brands": [
+  "Kikunotsukasa",
+  "Shichifukujin",
+  "innocent"
+ ],
+ "about": [
+  "Kikunotsukasa Shuzo is the oldest sake brewery in Iwate. The Hirai family kept an inn in Shiwa from the early 1600s and began making sake in 1772. The business later moved to Morioka and took its present name in 1968.",
+  "In 1975 it merged with the maker of Shichifukujin, a label it still brews. A new owning company took over in 2021.",
+  "In 2022, its 250th year, the brewery left Morioka for a new site in Shizukuishi. There it uses underground water from the Mount Iwate area and local sake rice such as Yui no Ka and Gin Ginga. Its innocent series is unfiltered nama genshu."
+ ],
+ "sources": [
+  "https://kikunotsukasa.jp/company",
+  "https://kikunotsukasa.jp/",
+  "https://craftsake.mottox.co.jp/?p=9758"
+ ],
  "related": [],
  "tally": {
   "drinks": 5,

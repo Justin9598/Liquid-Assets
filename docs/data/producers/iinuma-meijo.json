@@ -1,16 +1,28 @@
 {
  "key": "iinuma-meijo",
  "name": "Iinuma Meijo",
- "native": null,
- "location": "Tochigi",
+ "native": "飯沼銘醸",
+ "location": "Tochigi City, Tochigi",
  "region": "Tochigi",
  "country": "Japan",
- "founded": null,
+ "founded": 1811,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.iinumameijo.com/",
+ "brands": [
+  "Sugata",
+  "Suginamiki"
+ ],
+ "about": [
+  "Iinuma Meijo is a brewery in the Nishikata district of Tochigi City. It dates from 1811, when Iwajiro Iinuma, who had come from Nagaoka in Niigata to work, set up here.",
+  "Its water comes from a deep well on site and is thought to be underground flow from the Oya River, which rises on Mount Nantai. The brewing follows the Niigata tōji tradition.",
+  "Suginamiki, named after the cedar avenue to Nikko, is the dry label made with Tochigi rice and yeast. Sugata, named after a mirror pond in a local legend, is the more aromatic, fuller label, and also uses rice from other prefectures."
+ ],
+ "sources": [
+  "https://www.iinumameijo.com/company",
+  "https://www.iinumameijo.com/",
+  "https://www.tochinavi.net/spot/home/?id=12549",
+  "https://www.sakenomy.jp/en/brewery/K01N009015"
+ ],
  "related": [],
  "tally": {
   "drinks": 8,

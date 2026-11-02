@@ -6,11 +6,11 @@
  "producer": {
   "key": "hatsumomiji",
   "name": "Hatsumomiji",
-  "native": null,
-  "location": "Yamaguchi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "はつもみぢ",
+  "location": "Shunan, Yamaguchi, Japan",
+  "founded": 1819,
+  "about": "Hatsumomiji is a brewery in central Shunan, Yamaguchi, a short walk from Tokuyama Station. The Harada family has run it since 1819, and the current head is the twelfth generation.",
+  "url": "https://www.hatsumomidi.co.jp/"
  },
  "abv": 16,
  "styles": [

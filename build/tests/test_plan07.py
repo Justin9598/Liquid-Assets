@@ -121,7 +121,7 @@ def test_season_picks_match_whole_words_cap_categories_and_honour_pins_and_exclu
     issues = Issues()
     picks = counter_mod.season_picks(ds, {}, cfg, issues)
     ids = [p[0]["id"] for p in picks["autumn"]]
-    assert ids[0] == "d6" and "d2" not in ids and any(i["code"] == "W22" for i in issues.items)
+    assert ids[0] == "d6" and "d2" not in ids and any(i["code"] == "W23" for i in issues.items)
 
 
 def test_seasonal_config_is_validated():

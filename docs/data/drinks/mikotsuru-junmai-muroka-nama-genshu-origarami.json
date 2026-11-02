@@ -6,11 +6,11 @@
  "producer": {
   "key": "suwa-mikotsuru-shuzojo",
   "name": "Suwa Mikotsuru Shuzojo",
-  "native": null,
-  "location": "Nagano, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "諏訪御湖鶴酒造場",
+  "location": "Shimosuwa, Nagano, Japan",
+  "founded": 1912,
+  "about": "Suwa Mikotsuru Shuzojo makes Mikotsuru in Shimosuwa, on the shore of Lake Suwa in Nagano, near Suwa Taisha shrine. The brewery dates from the early Taisho era, and the name recalls a crane said to have appeared over the lake.",
+  "url": "https://www.mikotsuru.com/"
  },
  "abv": 16,
  "styles": [

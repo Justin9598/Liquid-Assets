@@ -1,16 +1,23 @@
 {
  "key": "minoh-beer",
  "name": "Minoh Beer",
- "native": null,
- "location": "Osaka",
+ "native": "箕面ビール",
+ "location": "Minoh, Osaka",
  "region": "Osaka",
  "country": "Japan",
- "founded": null,
+ "founded": 1997,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.minoh-beer.jp/",
+ "brands": [
+  "Minoh Beer"
+ ],
+ "about": [
+  "Minoh Beer is a family brewery in Minoh, just north of Osaka, a town known for its waterfall, autumn leaves and wild monkeys. The company was set up in 1996 and began brewing the following year in a town the founder picked himself. His daughter, Kaori Oshita, now runs it.",
+  "The brewery's stated aim is everyday beer. Its core range sticks to classic styles, and seasonal releases bring in local ingredients such as Minoh yuzu."
+ ],
+ "sources": [
+  "https://www.minoh-beer.jp/company/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

@@ -1,16 +1,28 @@
 {
  "key": "niida-honke",
  "name": "Niida Honke",
- "native": null,
- "location": "Fukushima",
+ "native": "仁井田本家",
+ "location": "Koriyama, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
- "founded": null,
+ "founded": 1711,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://1711.jp/",
+ "brands": [
+  "Shizenshu",
+  "Odayaka"
+ ],
+ "about": [
+  "Niida Honke has brewed in Tamuramachi, on the edge of Koriyama in Fukushima, since 1711. The family that runs it is now in its eighteenth generation.",
+  "It makes only junmai sake from natural rice, grown without pesticides or chemical fertiliser, some of it in the brewery's own paddies. It set this as its standard for its 300th anniversary in 2011. Its starters follow the kimoto method and rely on the yeast and lactic bacteria living in the brewery rather than added cultures.",
+  "The family also owns a forested hillside, and uses its cedar and bamboo to make wooden vats."
+ ],
+ "sources": [
+  "https://1711.jp/",
+  "https://www.tohokukanko.jp/en/attractions/detail_1009372.html",
+  "https://en.imadeya.co.jp/blogs/brewery/niidahonke",
+  "https://en.sake-times.com/breweries/niida-honke"
+ ],
  "related": [],
  "tally": {
   "drinks": 9,

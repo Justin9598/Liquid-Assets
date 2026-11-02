@@ -14,14 +14,17 @@
  {
   "key": "akebono-shuzo",
   "name": "Akebono Shuzo",
-  "native": null,
+  "native": "曙酒造",
   "region": "Fukushima",
   "country": "Japan",
-  "location": "Fukushima",
-  "brands": [],
+  "location": "Aizubange, Fukushima",
+  "brands": [
+   "Tenmei",
+   "Isshou Seishun"
+  ],
   "drinkCount": 12,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "akishika-shuzo",
@@ -290,14 +293,18 @@
  {
   "key": "fuchu-homare",
   "name": "Fuchu Homare",
-  "native": null,
+  "native": "府中誉",
   "region": "Ibaraki",
   "country": "Japan",
-  "location": "Ibaraki",
-  "brands": [],
+  "location": "Ishioka, Ibaraki",
+  "brands": [
+   "Wataribune",
+   "Taiheikai",
+   "Huchu Homare"
+  ],
   "drinkCount": 5,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "fuji-shuzo",
@@ -326,14 +333,16 @@
  {
   "key": "fukuchiyo-shuzo",
   "name": "Fukuchiyo Shuzo",
-  "native": null,
+  "native": "富久千代酒造",
   "region": "Saga",
   "country": "Japan",
-  "location": "Saga",
-  "brands": [],
+  "location": "Kashima, Saga",
+  "brands": [
+   "Nabeshima"
+  ],
   "drinkCount": 6,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "fukumitsuya",
@@ -350,14 +359,17 @@
  {
   "key": "fukunishiki",
   "name": "Fukunishiki",
-  "native": null,
+  "native": "富久錦",
   "region": "Hyogo",
   "country": "Japan",
-  "location": "Hyogo",
-  "brands": [],
+  "location": "Kasai, Hyogo",
+  "brands": [
+   "Fukunishiki",
+   "Junsei"
+  ],
   "drinkCount": 4,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "gekkeikan",
@@ -422,14 +434,16 @@
  {
   "key": "hakutsuru-shuzo",
   "name": "Hakutsuru Shuzo",
-  "native": null,
+  "native": "白鶴酒造",
   "region": "Hyogo",
   "country": "Japan",
-  "location": "Hyogo",
-  "brands": [],
+  "location": "Kobe, Hyogo",
+  "brands": [
+   "Hakutsuru"
+  ],
   "drinkCount": 4,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "hamada-shoten",
@@ -458,38 +472,48 @@
  {
   "key": "hanaizumi-shuzo",
   "name": "Hanaizumi Shuzo",
-  "native": null,
+  "native": "花泉酒造",
   "region": "Fukushima",
   "country": "Japan",
-  "location": "Fukushima",
-  "brands": [],
+  "location": "Minamiaizu, Fukushima",
+  "brands": [
+   "Roman",
+   "Hanaizumi"
+  ],
   "drinkCount": 4,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "happy-taro-brewery",
   "name": "Happy Taro Brewery",
-  "native": null,
+  "native": "ハッピー太郎醸造所",
   "region": "Shiga",
   "country": "Japan",
-  "location": "Shiga",
-  "brands": [],
+  "location": "Nagahama, Shiga",
+  "brands": [
+   "something happy",
+   "Happy Doburoku"
+  ],
   "drinkCount": 4,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "hatsumomiji",
   "name": "Hatsumomiji",
-  "native": null,
+  "native": "はつもみぢ",
   "region": "Yamaguchi",
   "country": "Japan",
-  "location": "Yamaguchi",
-  "brands": [],
+  "location": "Shunan, Yamaguchi",
+  "brands": [
+   "Harada",
+   "Hatsumomiji",
+   "HATSUMOMIDI"
+  ],
   "drinkCount": 4,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "hijiri-shuzo",
@@ -602,14 +626,17 @@
  {
   "key": "iinuma-meijo",
   "name": "Iinuma Meijo",
-  "native": null,
+  "native": "飯沼銘醸",
   "region": "Tochigi",
   "country": "Japan",
-  "location": "Tochigi",
-  "brands": [],
+  "location": "Tochigi City, Tochigi",
+  "brands": [
+   "Sugata",
+   "Suginamiki"
+  ],
   "drinkCount": 8,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "imada-shuzo",
@@ -650,26 +677,31 @@
  {
   "key": "inoue-seikichi-shoten",
   "name": "Inoue Seikichi Shoten",
-  "native": null,
+  "native": "井上清吉商店",
   "region": "Tochigi",
   "country": "Japan",
-  "location": "Tochigi",
-  "brands": [],
+  "location": "Utsunomiya, Tochigi",
+  "brands": [
+   "Sawahime"
+  ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "isekado",
   "name": "Isekado",
-  "native": null,
+  "native": "伊勢角屋麦酒",
   "region": "Mie",
   "country": "Japan",
-  "location": "Mie",
-  "brands": [],
+  "location": "Ise, Mie",
+  "brands": [
+   "ISEKADO",
+   "Ise Kadoya"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "ishimoto-shuzo",
@@ -866,14 +898,18 @@
  {
   "key": "kikunotsukasa-shuzo",
   "name": "Kikunotsukasa Shuzo",
-  "native": null,
+  "native": "菊の司酒造",
   "region": "Iwate",
   "country": "Japan",
-  "location": "Iwate",
-  "brands": [],
+  "location": "Shizukuishi, Iwate",
+  "brands": [
+   "Kikunotsukasa",
+   "Shichifukujin",
+   "innocent"
+  ],
   "drinkCount": 5,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kitanishi-shuzo",
@@ -998,14 +1034,17 @@
  {
   "key": "machida-shuzoten",
   "name": "Machida Shuzoten",
-  "native": null,
+  "native": "町田酒造店",
   "region": "Gunma",
   "country": "Japan",
-  "location": "Gunma",
-  "brands": [],
+  "location": "Maebashi, Gunma",
+  "brands": [
+   "Machida Shuzo",
+   "Seiryo"
+  ],
   "drinkCount": 4,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "masuda-tokubee-shoten",
@@ -1058,14 +1097,16 @@
  {
   "key": "minoh-beer",
   "name": "Minoh Beer",
-  "native": null,
+  "native": "箕面ビール",
   "region": "Osaka",
   "country": "Japan",
-  "location": "Osaka",
-  "brands": [],
+  "location": "Minoh, Osaka",
+  "brands": [
+   "Minoh Beer"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "miyaizumi-meijo",
@@ -1142,14 +1183,17 @@
  {
   "key": "nagai-shuzo",
   "name": "Nagai Shuzo",
-  "native": null,
+  "native": "永井酒造",
   "region": "Gunma",
   "country": "Japan",
-  "location": "Gunma",
-  "brands": [],
+  "location": "Kawaba, Gunma",
+  "brands": [
+   "Mizubasho",
+   "Tanigawadake"
+  ],
   "drinkCount": 5,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "nagayama-honke-shuzojo",
@@ -1190,14 +1234,16 @@
  {
   "key": "nasu-kohgen-beer",
   "name": "Nasu Kohgen Beer",
-  "native": null,
+  "native": "那須高原ビール",
   "region": "Tochigi",
   "country": "Japan",
-  "location": "Tochigi",
-  "brands": [],
+  "location": "Nasu, Tochigi",
+  "brands": [
+   "Nasu Kohgen Beer"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "nihonsakari",
@@ -1214,14 +1260,17 @@
  {
   "key": "niida-honke",
   "name": "Niida Honke",
-  "native": null,
+  "native": "仁井田本家",
   "region": "Fukushima",
   "country": "Japan",
-  "location": "Fukushima",
-  "brands": [],
+  "location": "Koriyama, Fukushima",
+  "brands": [
+   "Shizenshu",
+   "Odayaka"
+  ],
   "drinkCount": 9,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "niizawa-brewery",
@@ -1586,26 +1635,31 @@
  {
   "key": "suwa-mikotsuru-shuzojo",
   "name": "Suwa Mikotsuru Shuzojo",
-  "native": null,
+  "native": "諏訪御湖鶴酒造場",
   "region": "Nagano",
   "country": "Japan",
-  "location": "Nagano",
-  "brands": [],
+  "location": "Shimosuwa, Nagano",
+  "brands": [
+   "Mikotsuru"
+  ],
   "drinkCount": 4,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "swan-lake-beer",
   "name": "Swan Lake Beer",
-  "native": null,
+  "native": "スワンレイクビール",
   "region": "Niigata",
   "country": "Japan",
-  "location": "Niigata",
-  "brands": [],
+  "location": "Agano, Niigata",
+  "brands": [
+   "Swan Lake",
+   "Hyoko Yashiki no Mori Brewery"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "taikai-shuzo",
@@ -1766,14 +1820,18 @@
  {
   "key": "yamamoto-shuzoten",
   "name": "Yamamoto Shuzoten",
-  "native": null,
+  "native": "山本酒造店",
   "region": "Akita",
   "country": "Japan",
-  "location": "Akita",
-  "brands": [],
+  "location": "Happo, Akita",
+  "brands": [
+   "Yamamoto",
+   "Shirataki",
+   "Yamamoto Gomei Kaisha"
+  ],
   "drinkCount": 6,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "yamawa-shuzoten",

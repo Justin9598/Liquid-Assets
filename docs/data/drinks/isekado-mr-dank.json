@@ -6,11 +6,11 @@
  "producer": {
   "key": "isekado",
   "name": "Isekado",
-  "native": null,
-  "location": "Mie, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "伊勢角屋麦酒",
+  "location": "Ise, Mie, Japan",
+  "founded": 1997,
+  "about": "Isekado is the beer arm of Nikenchaya Mochi Kadoya Honten, a family business in Ise, Mie, that began in 1575 as a teahouse at a boat landing. It still makes rice cakes, miso and soy sauce, and the family is now in its twenty-first generation.",
+  "url": "https://www.biyagura.jp/"
  },
  "abv": 7,
  "styles": [],

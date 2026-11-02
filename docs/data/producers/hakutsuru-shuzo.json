@@ -1,17 +1,33 @@
 {
  "key": "hakutsuru-shuzo",
  "name": "Hakutsuru Shuzo",
- "native": null,
- "location": "Hyogo",
+ "native": "白鶴酒造",
+ "location": "Kobe, Hyogo",
  "region": "Hyogo",
  "country": "Japan",
- "founded": null,
+ "founded": 1743,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://www.hakutsuru.co.jp/",
+ "brands": [
+  "Hakutsuru"
+ ],
+ "about": [
+  "Hakutsuru Shuzo brews in Mikage, one of the five historic sake districts of Nada in Kobe. It traces its start to 1743, when a timber merchant named Jihei began brewing, and the Hakutsuru name was adopted in 1747. The family shares its ancestry with the Kano family behind Kiku-Masamune.",
+  "In 1952 it built Japan's first reinforced concrete sake brewery. It also bred its own sake rice, Hakutsuru Nishiki, registered as a variety in 2007.",
+  "Since 1982 a restored early brewery building has housed the company's sake museum."
+ ],
+ "sources": [
+  "https://www.hakutsuru.co.jp/corporate/",
+  "https://www.hakutsuru.co.jp/community/history/",
+  "https://tabi-mag.jp/hg0213/"
+ ],
+ "related": [
+  {
+   "key": "kiku-masamune-shuzo",
+   "name": "Kiku-Masamune Shuzo",
+   "relationship": "shared family roots"
+  }
+ ],
  "tally": {
   "drinks": 4,
   "categories": 1,

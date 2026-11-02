@@ -6,11 +6,11 @@
  "producer": {
   "key": "hakutsuru-shuzo",
   "name": "Hakutsuru Shuzo",
-  "native": null,
-  "location": "Hyogo, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "白鶴酒造",
+  "location": "Kobe, Hyogo, Japan",
+  "founded": 1743,
+  "about": "Hakutsuru Shuzo brews in Mikage, one of the five historic sake districts of Nada in Kobe. It traces its start to 1743, when a timber merchant named Jihei began brewing, and the Hakutsuru name was adopted in 1747. The family shares its ancestry with the Kano family behind Kiku-Masamune.",
+  "url": "https://www.hakutsuru.co.jp/"
  },
  "abv": 16,
  "styles": [],

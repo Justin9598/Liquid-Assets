@@ -1,16 +1,25 @@
 {
  "key": "inoue-seikichi-shoten",
  "name": "Inoue Seikichi Shoten",
- "native": null,
- "location": "Tochigi",
+ "native": "井上清吉商店",
+ "location": "Utsunomiya, Tochigi",
  "region": "Tochigi",
  "country": "Japan",
- "founded": null,
+ "founded": 1868,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://sawahime.co.jp/",
+ "brands": [
+  "Sawahime"
+ ],
+ "about": [
+  "Inoue Seikichi Shoten was founded in 1868 in Shirasawa, a former post town on the old Oshu Kaido road that is now part of Utsunomiya, Tochigi. Its sake is sold as Sawahime.",
+  "Since the 2004 brewing season every bottle, from everyday sake to competition daiginjo, has been made from rice grown in Tochigi. The brewery calls this its Shin Jizake Sengen, a commitment to local rice, local water and the local climate. Hiroshi Inoue has led it since 2013.",
+  "Sawahime was named Champion Sake at the International Wine Challenge in 2010 and again in 2022, and joined the IWC Sake Hall of Fame in 2026."
+ ],
+ "sources": [
+  "https://sawahime.co.jp/",
+  "https://sakestreet.com/en/media/sakagura-inoueseikichi-shoten-tochigi"
+ ],
  "related": [],
  "tally": {
   "drinks": 3,

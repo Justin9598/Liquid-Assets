@@ -1,16 +1,27 @@
 {
  "key": "fukuchiyo-shuzo",
  "name": "Fukuchiyo Shuzo",
- "native": null,
- "location": "Saga",
+ "native": "富久千代酒造",
+ "location": "Kashima, Saga",
  "region": "Saga",
  "country": "Japan",
- "founded": null,
+ "founded": 1923,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://nabeshima.biz/",
+ "brands": [
+  "Nabeshima"
+ ],
+ "about": [
+  "Fukuchiyo Shuzo brews Nabeshima in Hamamachi, an old street of clay-walled storehouses in Kashima, Saga, near the Ariake Sea. The brewery was founded in 1923 and marked its centenary in 2023.",
+  "Nabeshima, which shares its name with the clan that ruled Saga, was launched in 1998. In 2011 it was named Champion Sake at the International Wine Challenge.",
+  "Several of the brewery's buildings, including its koji room and an old rice mill, are registered cultural properties. The mill, about a century old, kept its clay walls when it reopened as a gallery in 2014."
+ ],
+ "sources": [
+  "https://nabeshima.biz/",
+  "https://nabeshima.biz/overview.html",
+  "https://www.sakenomy.jp/en/brewery/K01N041024",
+  "https://online.bunka.go.jp/heritages/search/page:6096"
+ ],
  "related": [],
  "tally": {
   "drinks": 6,

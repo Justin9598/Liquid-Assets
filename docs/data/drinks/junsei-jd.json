@@ -6,11 +6,11 @@
  "producer": {
   "key": "fukunishiki",
   "name": "Fukunishiki",
-  "native": null,
-  "location": "Hyogo, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "富久錦",
+  "location": "Kasai, Hyogo, Japan",
+  "founded": 1839,
+  "about": "Fukunishiki is a brewery in Kasai, in the Harima area of inland Hyogo, founded in 1839. The Inaoka family runs it, and it traded as Inaoka Honke Shoten until 1964.",
+  "url": "https://www.fukunishiki.co.jp/"
  },
  "abv": 14,
  "styles": [

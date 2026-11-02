@@ -1,17 +1,36 @@
 {
  "key": "yamamoto-shuzoten",
  "name": "Yamamoto Shuzoten",
- "native": null,
- "location": "Akita",
+ "native": "山本酒造店",
+ "location": "Happo, Akita",
  "region": "Akita",
  "country": "Japan",
- "founded": null,
+ "founded": 1901,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://yamamoto-brewery.com/",
+ "brands": [
+  "Yamamoto",
+  "Shirataki",
+  "Yamamoto Gomei Kaisha"
+ ],
+ "about": [
+  "Yamamoto Shuzoten is in Happo, a coastal town in northern Akita at the foot of the Shirakami Mountains. It was founded in 1901 and first sold its sake as Shirataki, after the waterfall behind the brewery. It traded as Yamamoto Gomei Kaisha until 2020, when it went back to its original name.",
+  "Very soft spring water from the Shirakami range has been piped straight to the brewery since 1932. In 2007, close to bankruptcy, it dropped the tōji system and the family took over the brewing, which led to the Yamamoto label.",
+  "It polishes its own rice, to about 50% on average, and is one of the five Akita breweries in the NEXT5 group."
+ ],
+ "sources": [
+  "https://yamamoto-brewery.com/company",
+  "https://yamamoto-brewery.com/our-story",
+  "https://tabi-mag.jp/shirataki/",
+  "https://yousakana.jp/akit-next-five/"
+ ],
+ "related": [
+  {
+   "key": "aramasa-shuzo",
+   "name": "Aramasa Shuzo",
+   "relationship": "fellow NEXT5 member"
+  }
+ ],
  "tally": {
   "drinks": 6,
   "categories": 1,

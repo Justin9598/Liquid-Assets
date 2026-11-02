@@ -6,11 +6,11 @@
  "producer": {
   "key": "fukuchiyo-shuzo",
   "name": "Fukuchiyo Shuzo",
-  "native": null,
-  "location": "Saga, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "富久千代酒造",
+  "location": "Kashima, Saga, Japan",
+  "founded": 1923,
+  "about": "Fukuchiyo Shuzo brews Nabeshima in Hamamachi, an old street of clay-walled storehouses in Kashima, Saga, near the Ariake Sea. The brewery was founded in 1923 and marked its centenary in 2023.",
+  "url": "https://nabeshima.biz/"
  },
  "abv": 15,
  "styles": [],
