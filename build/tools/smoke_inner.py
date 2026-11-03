@@ -612,6 +612,17 @@ VIEW_STATE_JS = r"""(() => {
 })()"""
 
 
+ROW_JS = r"""(() => {
+  const row = document.querySelector('.lowrow .row-items'); if (!row) return null;
+  const rr = row.getBoundingClientRect();
+  const arts = [...row.querySelectorAll('.slot.drink .art > *')].map((e) => e.getBoundingClientRect()).sort((a, b) => a.left - b.left);
+  const whole = arts.filter((r) => r.left >= rr.left - 1 && r.right <= rr.right + 1 && r.left >= 0 && r.right <= innerWidth).length;
+  let overlaps = 0; for (let i = 1; i < arts.length; i++) if (arts[i].left < arts[i - 1].right - 0.5) overlaps++;
+  const cue = document.querySelector('.lowrow .more-cue');
+  return { whole, total: arts.length, overlaps, cue: cue ? parseFloat(getComputedStyle(cue).opacity) : null, more: row.scrollWidth - row.clientWidth > 4, last: row.lastElementChild ? row.lastElementChild.className : '' };
+})()"""
+
+
 def settle(page):
     page.eval(SETTLE_JS, await_promise=True)
 
@@ -640,6 +651,12 @@ def welcome_checks(page, base, tag, shots_dir=None):
     def check(label):
         s = view_state(page)
         probs.extend(f"{tag} welcome {label}: {m}" for m in s["problems"])
+        if tall and s["mode"] == "drinks":                        # Plan 10 section 11.1: at least 6 whole bottles side by side on phones
+            r = page.eval(ROW_JS)
+            if r["whole"] < min(6, r["total"]) or r["overlaps"]:
+                probs.append(f"{tag} welcome {label}: {r['whole']} whole bottle(s) of {r['total']} in view, {r['overlaps']} overlap(s)")
+            if r["more"] != (r["cue"] is not None and r["cue"] > 0.5):
+                probs.append(f"{tag} welcome {label}: the arrow cue is {'shown' if r['cue'] else 'hidden'} while more bottles are {'hidden' if r['more'] else 'not hidden'}")
         return s
 
     # top shelf, and the menu's Shelves submenu match it; Liquid is empty so it is left out

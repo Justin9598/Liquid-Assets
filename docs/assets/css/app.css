@@ -266,6 +266,16 @@ a.chalkboard:focus-visible, button.chalkboard:focus-visible { outline: 3px solid
 /* the longest category name may wrap onto two lines, centred, inside its slot (Plan 10 section 2.1) */
 .scene3 .vessel-cap { white-space: normal; text-align: center; width: max-content; max-width: 5.6em; line-height: 1.1; }
 
+/* phones, a view of drinks: tight spacing, a swipe row, a chalk arrow while more are hidden (Plan 10 section 11.1) */
+.scene3[data-plate='tall'] .lowrow.drinks .row-items { scroll-snap-type: x proximity; }
+.scene3[data-plate='tall'] .lowrow.drinks .slot { scroll-snap-align: start; }
+.scene3 .more-cue { position: absolute; right: 0; bottom: 12%; z-index: 5; opacity: 0; transition: opacity 140ms; padding: 0 .45em; --cb-fs: 16px; font-weight: 700; pointer-events: none; }
+.scene3 .lowrow.has-more .more-cue { opacity: 1; }
+
+/* phones: the category tags are smaller (12px at the least) and sit a little higher, so the longest name stays whole on one line
+   and clear of the bottle below it (Plan 10 section 11.2) */
+@media (max-width: 767px) { .scene3[data-plate='tall'] .vessel-cap { --cb-fs: 12px; white-space: nowrap; max-width: none; top: calc(100% - 3px); padding: 1px 2px; letter-spacing: -.2px; } }
+
 /* the reset clock */
 .scene3 .clock { position: absolute; z-index: 6; transform: translate(-50%, -50%); height: var(--clock-h); aspect-ratio: 1; min-width: 44px; min-height: 44px; padding: 0; border: 0; background: none; cursor: pointer; filter: drop-shadow(0 .3cqw .5cqw rgba(20, 8, 2, .55)); transition: transform 140ms ease-out; }
 .scene3 .clock svg { display: block; width: 100%; height: 100%; }

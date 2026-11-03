@@ -41,7 +41,7 @@ export async function run(ctx) {
   for (const { c, r } of caps) {
     const cs = getComputedStyle(c);
     if (cs.opacity !== '1' || cs.visibility !== 'visible') bad(`caption "${c.textContent.trim()}" is not visible`);
-    if (parseFloat(cs.fontSize) < 14) bad(`caption "${c.textContent.trim()}" is under 14px`);
+    if (parseFloat(cs.fontSize) < (kind === 'tall' ? 12 : 14)) bad(`caption "${c.textContent.trim()}" is under ${kind === 'tall' ? 12 : 14}px`);
     if (r.left < area.left || r.right > area.right) bad(`caption "${c.textContent.trim()}" leaves the shelf area`);
   }
   for (let i = 0; i < caps.length; i++) for (let j = i + 1; j < caps.length; j++) if (hit(caps[i].r, caps[j].r)) bad(`captions overlap: ${caps[i].c.textContent.trim()} / ${caps[j].c.textContent.trim()}`);

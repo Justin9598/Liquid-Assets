@@ -84,6 +84,14 @@
   "explainer": "Distilled from fermented grain and aged in wooden casks.",
   "facts": []
  },
+ "spirits/gin": {
+  "explainer": "Neutral spirit flavoured with juniper and other botanicals.",
+  "facts": []
+ },
+ "spirits/brandy": {
+  "explainer": "Distilled from fermented fruit, here apples.",
+  "facts": []
+ },
  "spirits/shochu": {
   "explainer": "Japan's distilled spirit, made from barley, sweet potato, rice and more, with kōji.",
   "facts": []
