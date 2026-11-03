@@ -6,11 +6,11 @@
  "producer": {
   "key": "kankiku-meijo",
   "name": "Kankiku Meijo",
-  "native": null,
-  "location": "Chiba, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "寒菊銘醸",
+  "location": "Sanmu, Chiba, Japan",
+  "founded": 1883,
+  "about": "Kankiku Meijo is in Matsuo, Sanmu, Chiba, near the Kujukuri coast. Sase Gensaku began brewing a clean, dry sake there in 1883, using spring water and local rice. The company was formally set up in 1930.",
+  "url": "https://kankiku.com/"
  },
  "abv": 15,
  "styles": [

@@ -1,16 +1,28 @@
 {
  "key": "eigashima-shuzo",
  "name": "Eigashima Shuzo",
- "native": null,
- "location": "Hyogo",
+ "native": "江井ヶ嶋酒造",
+ "location": "Akashi, Hyogo",
  "region": "Hyogo",
  "country": "Japan",
- "founded": null,
+ "founded": 1679,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "http://www.ei-sake.jp/",
+ "brands": [
+  "Kamitaka",
+  "Yamato Damashii",
+  "Akashi"
+ ],
+ "about": [
+  "Eigashima Shuzo stands in Nishijima, Okubo, Akashi, on the Hyogo coast. Its history starts in 1679, when the Urabe family began brewing in Nishinada, and the company was incorporated in 1888. Kamitaka, its main sake brand, was registered in 1895.",
+  "It opened a distillery in 1919 and makes shochu, mirin, wine and whisky. A whisky distillery opened beside the head office in 1984, and a winery opened in Yamanashi in 1963. Several of its Meiji-era cellars are still used."
+ ],
+ "sources": [
+  "http://www.ei-sake.jp/company.html",
+  "http://www.ei-sake.jp/history.html",
+  "https://english.harima-sake.jp/introduction/eigashima/",
+  "https://www.saketime.jp/brands/1554/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

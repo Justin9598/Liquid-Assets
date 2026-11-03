@@ -5,12 +5,12 @@
  "sub": "junmai-daiginjo",
  "producer": {
   "key": "katoukichibee-shoten",
-  "name": "Katoukichibee Shoten",
-  "native": null,
-  "location": "Fukui, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "name": "Kato Kichibee Shoten",
+  "native": "加藤吉平商店",
+  "location": "Sabae, Fukui, Japan",
+  "founded": 1860,
+  "about": "Kato Kichibee Shoten is in Sabae, Fukui. Its founders had been money changers and village heads, and they began brewing sake in 1860. The tenth head, Kichibee, wrote the character for the Born brand, which replaced the earlier names in the 1960s.",
+  "url": "https://www.born.co.jp/"
  },
  "abv": 15,
  "styles": [],

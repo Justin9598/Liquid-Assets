@@ -6,11 +6,11 @@
  "producer": {
   "key": "kanbai-shuzo",
   "name": "Kanbai Shuzo",
-  "native": null,
-  "location": "Miyagi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "寒梅酒造",
+  "location": "Osaki, Miyagi, Japan",
+  "founded": 1918,
+  "about": "Kanbai Shuzo is in Furukawa, Osaki, Miyagi. A landowner named Iwasaki founded the brewery in 1918. Production stopped for a time during the war, and the company was re-established in 1957. It has stayed in family hands.",
+  "url": "http://miyakanbai.com/"
  },
  "abv": null,
  "styles": [

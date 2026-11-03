@@ -1,16 +1,29 @@
 {
  "key": "hijiri-shuzo",
  "name": "Hijiri Shuzo",
- "native": null,
- "location": "Gunma",
+ "native": "聖酒造",
+ "location": "Shibukawa, Gunma",
  "region": "Gunma",
  "country": "Japan",
- "founded": null,
+ "founded": 1841,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.hijiri-sake.co.jp/",
+ "brands": [
+  "Kanto no Hana",
+  "Hijiri",
+  "HIZIRIZM",
+  "Meiho Akagi"
+ ],
+ "about": [
+  "Hijiri Shuzo has brewed since 1841 in Kitatachibana, Shibukawa, Gunma, on the south-western slope of Mount Akagi. The name comes from a poem by Otomo no Tabito, in which hijiri means clear sake. The eighth generation now runs the company.",
+  "Its flagship is Kanto no Hana, with Hijiri, Hizirizm and Meiho Akagi alongside it. Since 2006 the main rice has been Hitomebore, grown by local farmers, and contract-grown Gohyakumangoku has been added since 2019. The brewery has used its own toji since 2010."
+ ],
+ "sources": [
+  "https://www.hijiri-sake.co.jp/pages/company",
+  "https://www.hijiri-sake.co.jp/pages/about",
+  "https://www.hijiri-sake.co.jp/",
+  "https://www.pref.gunma.jp/site/sake/500061.html"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

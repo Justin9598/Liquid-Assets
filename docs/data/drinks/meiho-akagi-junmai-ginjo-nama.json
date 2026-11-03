@@ -6,11 +6,11 @@
  "producer": {
   "key": "hijiri-shuzo",
   "name": "Hijiri Shuzo",
-  "native": null,
-  "location": "Gunma, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "聖酒造",
+  "location": "Shibukawa, Gunma, Japan",
+  "founded": 1841,
+  "about": "Hijiri Shuzo has brewed since 1841 in Kitatachibana, Shibukawa, Gunma, on the south-western slope of Mount Akagi. The name comes from a poem by Otomo no Tabito, in which hijiri means clear sake. The eighth generation now runs the company.",
+  "url": "https://www.hijiri-sake.co.jp/"
  },
  "abv": 16,
  "styles": [

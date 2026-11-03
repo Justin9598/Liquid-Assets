@@ -6,10 +6,10 @@
  "producer": {
   "key": "kamenoi-shuzo",
   "name": "Kamenoi Shuzo",
-  "native": null,
-  "location": "Yamagata, Japan",
-  "founded": null,
-  "about": null,
+  "native": "亀の井酒造",
+  "location": "Tsuruoka, Yamagata, Japan",
+  "founded": 1875,
+  "about": "Kamenoi Shuzo was founded in 1875 in Haguro, Tsuruoka, Yamagata. The fifth head, Imai Shunji, also serves as toji. Its sake is sold under the Kudoki Jozu name.",
   "url": null
  },
  "abv": 15,

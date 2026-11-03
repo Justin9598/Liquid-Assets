@@ -5,12 +5,12 @@
  "sub": "umeshu",
  "producer": {
   "key": "hamada-shoten",
-  "name": "Hamada Shoten",
-  "native": null,
-  "location": "Wakayama, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "name": "Hamada",
+  "native": "濱田",
+  "location": "Kamihaya, Tanabe, Wakayama, Japan",
+  "founded": 2006,
+  "about": "Hamada makes umeshu and umeboshi in Kamihaya, Tanabe, Wakayama. The current president began making seasoned umeboshi in the Ishigami district in 1981, set up the company in 1988, and received a liqueur licence in 2006, when umeshu production began.",
+  "url": "https://ume-hamada.co.jp/"
  },
  "abv": 13.5,
  "styles": [],

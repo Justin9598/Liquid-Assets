@@ -6,11 +6,11 @@
  "producer": {
   "key": "imada-shuzo",
   "name": "Imada Shuzo",
-  "native": null,
-  "location": "Hiroshima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "今田酒造本店",
+  "location": "Higashihiroshima, Hiroshima, Japan",
+  "founded": 1868,
+  "about": "Imada Shuzo Honten was founded in 1868 in Akitsu, Higashihiroshima, a port town on the Seto Inland Sea. Its Fukucho trademark was registered in 1910, and the company was incorporated in 1950. Fukucho exports began in 1997.",
+  "url": "https://fukucho.jp/"
  },
  "abv": 13,
  "styles": [

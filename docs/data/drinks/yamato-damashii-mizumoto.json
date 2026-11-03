@@ -6,11 +6,11 @@
  "producer": {
   "key": "eigashima-shuzo",
   "name": "Eigashima Shuzo",
-  "native": null,
-  "location": "Hyogo, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "江井ヶ嶋酒造",
+  "location": "Akashi, Hyogo, Japan",
+  "founded": 1679,
+  "about": "Eigashima Shuzo stands in Nishijima, Okubo, Akashi, on the Hyogo coast. Its history starts in 1679, when the Urabe family began brewing in Nishinada, and the company was incorporated in 1888. Kamitaka, its main sake brand, was registered in 1895.",
+  "url": "http://www.ei-sake.jp/"
  },
  "abv": 17,
  "styles": [

@@ -6,11 +6,11 @@
  "producer": {
   "key": "hinomaru-jozo",
   "name": "Hinomaru Jozo",
-  "native": null,
-  "location": "Akita, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "日の丸醸造",
+  "location": "Yokote, Akita, Japan",
+  "founded": 1689,
+  "about": "Hinomaru Jozo has brewed in Masuda, Yokote, Akita, since 1689. Its name comes from the sun crest of the Akita domain lords. Wartime restrictions closed it in 1943, and it reopened in 1948.",
+  "url": "https://hinomaru-sake.com/"
  },
  "abv": 16,
  "styles": [

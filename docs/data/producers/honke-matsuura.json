@@ -1,16 +1,27 @@
 {
  "key": "honke-matsuura",
  "name": "Honke Matsuura",
- "native": null,
- "location": "Tokushima",
+ "native": "本家松浦酒造場",
+ "location": "Naruto, Tokushima",
  "region": "Tokushima",
  "country": "Japan",
- "founded": null,
+ "founded": 1804,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://narutotai.jp/",
+ "brands": [
+  "Naruto Tai",
+  "Narutotai"
+ ],
+ "about": [
+  "Honke Matsuura Shuzoba brews in Oasa, Naruto, Tokushima. The second-generation Matsuura Naozo began brewing in 1804, and the Naruto Tai trademark was registered in 1886.",
+  "The brewery uses Tokushima rice and yeast. In 1993 it released a sudachi liqueur, in 2000 it sold what it calls the first mist-brewed nama sake, and in 2005 it released a cloudy umeshu. Its old brewhouse was registered as a tangible cultural property in 2002."
+ ],
+ "sources": [
+  "https://narutotai.jp/about/history/",
+  "https://narutotai.jp/about/profile/",
+  "https://narutotai.jp/",
+  "https://www.saketime.jp/brands/1910/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

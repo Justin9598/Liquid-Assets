@@ -1,16 +1,26 @@
 {
  "key": "kameizumi-shuzo",
  "name": "Kameizumi Shuzo",
- "native": null,
- "location": "Kochi",
+ "native": "亀泉酒造",
+ "location": "Tosa, Kochi",
  "region": "Kochi",
  "country": "Japan",
- "founded": null,
+ "founded": 1897,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.kameizumi.co.jp/",
+ "brands": [
+  "Kameizumi"
+ ],
+ "about": [
+  "Kameizumi Shuzo was founded in 1897 in Tosa, Kochi, when eleven people set up a sake shop to brew the sake they drank themselves. The name, meaning turtle spring, comes from the spring that supplies its brewing water.",
+  "The brewery is known mainly for sake made with CEL-24, a yeast developed by Kochi's Industrial Technology Center in 1993. It has used the yeast since its release in 1998, and its CEL-24 junmai ginjo came to make up about 70 percent of its output."
+ ],
+ "sources": [
+  "https://www.sakenomy.jp/en/brewery/K01N039013/",
+  "https://www.kameizumi.co.jp/",
+  "https://sakeindustrynews.substack.com/p/sake-industry-news-issue-106",
+  "https://umamimart.com/blogs/main/happy-new-yeast-january-2026"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,
