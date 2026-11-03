@@ -98,25 +98,23 @@ export async function mount(root, ctx) {
     const out = [];
     for (let i = 0; i < 12; i++) {
       const c = cats[i % cats.length];
-      const pool = c.subcategories.flatMap((s) => s.labels);
-      const label = randomPick(pool, used);
+      const owner = new Map(c.subcategories.flatMap((s) => (s.drinks || []).filter((d) => d.label).map((d) => [d.label, d])));   // label -> the drink it belongs to
+      const label = randomPick([...owner.keys()], used);
       const def = DEFAULT_LABEL[c.key] || {};
-      out.push({ mix: true, cat: c.key, shape: shapeFor(c.key), label: label && img(label), native: def.native, name: def.name, motif: def.motif });
+      out.push({ mix: true, cat: c.key, shape: shapeFor(c.key), label: label && img(label), native: def.native, name: def.name, motif: def.motif, drink: label ? owner.get(label) : null, catName: c.name });
     }
     return out;
   }
 
-  /** One bottle per subcategory. It stands for a drink: the one whose label it wears, or the newest drink when it wears the
-   * illustrated label (Plan 10 section 3). The choice holds until the page is reloaded. */
+  /** One bottle per subcategory; tapping it shows that subcategory's drinks (Plan 10 section 12). */
   function subItems(c) {
     const used = new Set();
     return c.subcategories.map((s) => {
       const label = randomPick(s.labels, used);
       state.picked = { ...state.picked, [`${c.key}/${s.key}`]: label };   // the shelf page shows the bottle the visitor tapped
-      const drink = (s.drinks || []).find((d) => d.label === label) || (s.drinks || [])[0] || null;
       return {
         sub: true, cat: c.key, subKey: s.key, shape: shapeFor(c.key, s.key), label: label && img(label), native: s.native, name: s.name,
-        motif: motifFor(c.key, s.key), count: s.drinkCount, drink,
+        motif: motifFor(c.key, s.key), count: s.drinkCount,
       };
     });
   }
@@ -143,7 +141,13 @@ export async function mount(root, ctx) {
         : `<div class="slot seeall"><button type="button" class="seeall-board chalkboard chalkboard--s" data-soon>${esc(label)}</button></div>`;
     }
     const a = art(it.shape, { label: it.label, native: it.native, name: it.name, motif: it.motif });
-    if (it.mix) {
+    if (it.mix) {                                                // at Rest a lower-shelf bottle opens the drink whose label it wears
+      if (it.drink && getSections().drinks) {
+        return `<a class="slot mix" href="#/drink/${encodeURIComponent(it.drink.id)}" aria-label="${esc(it.drink.name)}, open drink" data-cat="${esc(it.cat)}" data-shape="${it.shape}"><span class="art">${a}</span></a>`;
+      }
+      if (it.drink) {
+        return `<button type="button" class="slot mix" data-drink-soon data-name="${esc(it.drink.name)}" data-cat="${esc(it.catName)}" aria-label="${esc(it.drink.name)}, open drink. Its page opens soon." data-shape="${it.shape}"><span class="art">${a}</span></button>`;
+      }
       return `<button type="button" class="slot mix" tabindex="-1" aria-hidden="true" data-cat="${esc(it.cat)}" data-shape="${it.shape}"><span class="art">${a}</span></button>`;
     }
     if (it.drink === true) {                                     // a single drink in a view: the bottle opens it, a small tag names it on hover
@@ -153,9 +157,8 @@ export async function mount(root, ctx) {
     if (it.native) second.push(`<span class="nat" lang="${langOf(it.native)}">${esc(it.native)}</span>`);
     second.push(`<span class="ct">${it.count}</span>`);
     const tagHTML = `<span class="nm">${esc(it.name)}</span><span class="l2">${second.join('<i> · </i>')}</span>`;
-    // a bottle and its board are two focus stops: the bottle opens its drink, the board shows the subcategory (Plan 10 section 3)
-    const bottle = it.drink ? bottleLink(a, it.drink.id, it.drink.name, it.name) : `<span class="art">${a}</span>`;
-    return `<div class="slot sub" data-shape="${it.shape}">${bottle}<button type="button" class="hang chalkboard chalkboard--s" data-sub="${esc(it.subKey)}" data-cat="${esc(it.cat)}" aria-label="${esc(it.name)}, ${plural(it.count, 'drink')}, show on the shelves">${tagHTML}</button></div>`;
+    // in category view a bottle and its board do the same thing, so they are one button (Plan 10 section 12)
+    return `<button type="button" class="slot sub" data-shape="${it.shape}" data-sub="${esc(it.subKey)}" data-cat="${esc(it.cat)}" aria-label="${esc(it.name)}, ${plural(it.count, 'drink')}, show on the shelves"><span class="art">${a}</span><span class="hang chalkboard chalkboard--s" aria-hidden="true">${tagHTML}</span></button>`;
   }
 
   // ---- placing rows ----------------------------------------------------------------------------------------------
@@ -510,14 +513,14 @@ export async function mount(root, ctx) {
       location.hash = sel === v.dataset.cat ? '#/' : `#/${v.dataset.cat}`;
       return;
     }
-    const sb = ev.target.closest('button[data-sub]');
+    const sb = ev.target.closest('button.slot.sub[data-sub]');
     if (sb) { view = 'sub'; subSel = { cat: sb.dataset.cat, sub: sb.dataset.sub }; show(true); return; }
     const pv = ev.target.closest('.placard[data-view]');
     if (pv) { view = pv.dataset.view; subSel = null; show(true); return; }
     const cb = ev.target.closest('[data-drink-soon]');
     if (cb) { soon(`${cb.dataset.name}, ${cb.dataset.cat}. Its page opens soon.`); return; }
     if (ev.target.closest('[data-soon]')) { soon(); return; }
-    const mix = ev.target.closest('.slot.mix');
+    const mix = ev.target.closest('button.slot.mix');
     if (mix) location.hash = `#/${mix.dataset.cat}`;
   };
   root.addEventListener('click', onClick);
