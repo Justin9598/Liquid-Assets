@@ -1,16 +1,27 @@
 {
  "key": "enoki-shuzo",
  "name": "Enoki Shuzo",
- "native": null,
- "location": "Hiroshima",
+ "native": "榎酒造",
+ "location": "Ondo, Kure, Hiroshima",
  "region": "Hiroshima",
  "country": "Japan",
- "founded": null,
+ "founded": 1899,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://hanahato.ocnk.net/",
+ "brands": [
+  "Hanahato",
+  "Kiyomori"
+ ],
+ "about": [
+  "Enoki Shuzo was founded in 1899 in Ondo, Kure, Hiroshima. Hanahato is its main brand and Kiyomori the second. The brewery says it was the first in Japan to make kijoshu, a sake brewed with sake in place of some of the water, and it began with the 1974 brewing year.",
+  "Its eight-year aged kijoshu has won trophies at the International Wine Challenge many times since 2008, including a champion title in 2010. The toji, who is from Miyazaki, brews in the Hiroshima style and also grows rice for the brewery in Otose."
+ ],
+ "sources": [
+  "https://hanahato.ocnk.net/page/1",
+  "https://hanahato.ocnk.net/page/2",
+  "https://hanahato.ocnk.net/",
+  "https://www.saketime.jp/brands/1701/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

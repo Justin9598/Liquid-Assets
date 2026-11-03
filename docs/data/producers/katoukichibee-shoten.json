@@ -1,16 +1,25 @@
 {
  "key": "katoukichibee-shoten",
- "name": "Katoukichibee Shoten",
- "native": null,
- "location": "Fukui",
+ "name": "Kato Kichibee Shoten",
+ "native": "加藤吉平商店",
+ "location": "Sabae, Fukui",
  "region": "Fukui",
  "country": "Japan",
- "founded": null,
+ "founded": 1860,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.born.co.jp/",
+ "brands": [
+  "Born",
+  "Katoukichibee Shouten"
+ ],
+ "about": [
+  "Kato Kichibee Shoten is in Sabae, Fukui. Its founders had been money changers and village heads, and they began brewing sake in 1860. The tenth head, Kichibee, wrote the character for the Born brand, which replaced the earlier names in the 1960s.",
+  "The brewery says it makes only additive-free junmai, polishes rice to a very high degree, and ages sake at ice temperature. Its 1969 Bon Cho-Tokusen is described on its site as Japan's first commercial daiginjo."
+ ],
+ "sources": [
+  "https://www.born.co.jp/history",
+  "https://www.born.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

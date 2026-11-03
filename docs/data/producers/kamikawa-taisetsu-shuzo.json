@@ -1,16 +1,27 @@
 {
  "key": "kamikawa-taisetsu-shuzo",
  "name": "Kamikawa Taisetsu Shuzo",
- "native": null,
- "location": "Hokkaido",
+ "native": "上川大雪酒造",
+ "location": "Kamikawa, Hokkaido",
  "region": "Hokkaido",
  "country": "Japan",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "founded": 2017,
+ "master": "Shinji Kawabata",
+ "website": "https://kamikawa-taisetsu.co.jp/",
+ "brands": [
+  "Kamikawa Taisetsu",
+  "Tokachi"
+ ],
+ "about": [
+  "Kamikawa Taisetsu Shuzo moved a sake company that had paused production in Mie to Kamikawa, Hokkaido, in 2016. Brewing began there in 2017 at Ryokkyugura, below the Daisetsuzan mountains.",
+  "In 2020 it opened Hekiun-gura on the campus of Obihiro University of Agriculture and Veterinary Medicine, the first brewery inside a university in Japan. It uses Hokkaido sake rice and small tanks, and a third brewery in Abashiri received its licence in October 2026. Shinji Kawabata is chief toji."
+ ],
+ "sources": [
+  "https://kamikawa-taisetsu.co.jp/",
+  "https://kamikawa-taisetsu.co.jp/toji/",
+  "https://kamikawa-taisetsu.co.jp/company/",
+  "https://en.sake-times.com/breweries/kamikawa-taisetsu-sake-brewery"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

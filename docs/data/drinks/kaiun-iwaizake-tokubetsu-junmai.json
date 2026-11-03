@@ -6,11 +6,11 @@
  "producer": {
   "key": "doi-shuzojo",
   "name": "Doi Shuzojo",
-  "native": null,
-  "location": "Shizuoka, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "土井酒造場",
+  "location": "Kakegawa, Shizuoka, Japan",
+  "founded": 1872,
+  "about": "Doi Shuzojo makes sake in Onuki, Kakegawa, in Shizuoka. The Doi family, wealthy farmers since the sixteenth century, started the brewery in 1872, later than many houses that date from the Edo period.",
+  "url": "https://kaiunsake.com/"
  },
  "abv": 16,
  "styles": [],

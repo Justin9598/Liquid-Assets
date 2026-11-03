@@ -1,16 +1,25 @@
 {
  "key": "homare-shuzo",
  "name": "Homare Shuzo",
- "native": null,
- "location": "Fukushima",
+ "native": "ほまれ酒造",
+ "location": "Kitakata, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
- "founded": null,
+ "founded": 1918,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.aizuhomare.jp/",
+ "brands": [
+  "Aizu Homare"
+ ],
+ "about": [
+  "Homare Shuzo is in Matsuyama, Kitakata, Fukushima. Karahashi Kosaku, a rice dealer who also made miso and koji, took over a sake brewery in Atsushio-Kano, now part of Kitakata, in 1918 and ran it as Kano Shuzo. The company later moved to Matsuyama and took its present name.",
+  "Its main brand is Aizu Homare. The name carries Aizu to spread the region's sake, and the word homare is written in hiragana, which was unusual for sake of that time. Its junmai daiginjo won the champion sake trophy at the International Wine Challenge in 2015."
+ ],
+ "sources": [
+  "https://www.aizuhomare.jp/about",
+  "https://www.aizuhomare.jp/companyprofile",
+  "https://www.aizuhomare.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

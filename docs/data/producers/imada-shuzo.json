@@ -1,16 +1,26 @@
 {
  "key": "imada-shuzo",
  "name": "Imada Shuzo",
- "native": null,
- "location": "Hiroshima",
+ "native": "今田酒造本店",
+ "location": "Higashihiroshima, Hiroshima",
  "region": "Hiroshima",
  "country": "Japan",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "founded": 1868,
+ "master": "Miho Imada",
+ "website": "https://fukucho.jp/",
+ "brands": [
+  "Fukucho",
+  "Imada Sake Brewing"
+ ],
+ "about": [
+  "Imada Shuzo Honten was founded in 1868 in Akitsu, Higashihiroshima, a port town on the Seto Inland Sea. Its Fukucho trademark was registered in 1910, and the company was incorporated in 1950. Fukucho exports began in 1997.",
+  "The brewery follows the soft water ginjo method developed in Akitsu by Miura Senzaburo. Since 2001 it has been reviving Hattanso, an old Hiroshima rice. Miho Imada became toji in 2000 and now serves as president."
+ ],
+ "sources": [
+  "https://fukucho.jp/en/pages/company",
+  "https://fukucho.jp/pages/philosophy",
+  "https://fukucho.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

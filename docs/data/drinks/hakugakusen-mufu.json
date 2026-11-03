@@ -6,11 +6,11 @@
  "producer": {
   "key": "gyokusendo-shuzo",
   "name": "Gyokusendo Shuzo",
-  "native": null,
-  "location": "Gifu, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "玉泉堂酒造",
+  "location": "Yoro, Gifu, Japan",
+  "founded": 1806,
+  "about": "Gyokusendo Shuzo was founded in 1806 in Yoro, Gifu, a town known for its spring water. It brews with the very soft water of the Yoro hills, and its main sake brand is Reisen.",
+  "url": "https://www.gyokusendo.jp/"
  },
  "abv": null,
  "styles": [],

@@ -6,11 +6,11 @@
  "producer": {
   "key": "honke-matsuura",
   "name": "Honke Matsuura",
-  "native": null,
-  "location": "Tokushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "本家松浦酒造場",
+  "location": "Naruto, Tokushima, Japan",
+  "founded": 1804,
+  "about": "Honke Matsuura Shuzoba brews in Oasa, Naruto, Tokushima. The second-generation Matsuura Naozo began brewing in 1804, and the Naruto Tai trademark was registered in 1886.",
+  "url": "https://narutotai.jp/"
  },
  "abv": 18.5,
  "styles": [

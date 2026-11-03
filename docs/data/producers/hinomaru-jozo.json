@@ -1,16 +1,26 @@
 {
  "key": "hinomaru-jozo",
  "name": "Hinomaru Jozo",
- "native": null,
- "location": "Akita",
+ "native": "日の丸醸造",
+ "location": "Yokote, Akita",
  "region": "Akita",
  "country": "Japan",
- "founded": null,
+ "founded": 1689,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://hinomaru-sake.com/",
+ "brands": [
+  "Mansaku no Hana",
+  "Mansakunohana"
+ ],
+ "about": [
+  "Hinomaru Jozo has brewed in Masuda, Yokote, Akita, since 1689. Its name comes from the sun crest of the Akita domain lords. Wartime restrictions closed it in 1943, and it reopened in 1948.",
+  "The sake brand is Mansaku no Hana, launched in 1981 and linked to an NHK morning drama set in Yokote. The company has about 15 employees and uses a wide range of rice, with 13 varieties listed on its site, among them Yamada Nishiki, Akita Sake Komachi, Misato Nishiki and Kame no O."
+ ],
+ "sources": [
+  "https://hinomaru-sake.com/company",
+  "https://hinomaru-sake.com/",
+  "https://www.saketime.jp/brands/142/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

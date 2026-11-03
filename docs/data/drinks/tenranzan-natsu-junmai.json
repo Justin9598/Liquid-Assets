@@ -6,11 +6,11 @@
  "producer": {
   "key": "igarashi-shuzo",
   "name": "Igarashi Shuzo",
-  "native": null,
-  "location": "Saitama, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "五十嵐酒造",
+  "location": "Hanno, Saitama, Japan",
+  "founded": 1897,
+  "about": "Igarashi Shuzo is in Kawadera, Hanno, Saitama. The first head, Kyuzo, came from Niigata and had worked at Sawanoi in Ome, and his family had been Echigo toji. The brewery started in 1897 and moved to its present site in 1937.",
+  "url": "https://www.tenranzan.jp/"
  },
  "abv": null,
  "styles": [],

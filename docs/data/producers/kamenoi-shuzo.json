@@ -1,16 +1,25 @@
 {
  "key": "kamenoi-shuzo",
  "name": "Kamenoi Shuzo",
- "native": null,
- "location": "Yamagata",
+ "native": "亀の井酒造",
+ "location": "Tsuruoka, Yamagata",
  "region": "Yamagata",
  "country": "Japan",
- "founded": null,
+ "founded": 1875,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Kudoki Jozu",
+  "Fujishima"
+ ],
+ "about": [
+  "Kamenoi Shuzo was founded in 1875 in Haguro, Tsuruoka, Yamagata. The fifth head, Imai Shunji, also serves as toji. Its sake is sold under the Kudoki Jozu name.",
+  "The brewery bottles only ginjo-grade sake, with an average milling rate of 50 percent or less. It favours the soft, gentle style of Ogawa yeast, from the No. 10 family. It uses more than ten rice varieties, including Miyama Nishiki and Dewa Sansan from Haguro."
+ ],
+ "sources": [
+  "https://www.ginjyoshu.jp/brewery/detail/?d=13",
+  "https://www.urbansake.com/sake-guide/kamenoi-shuzo-yamagata/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

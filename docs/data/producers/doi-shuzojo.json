@@ -1,16 +1,25 @@
 {
  "key": "doi-shuzojo",
  "name": "Doi Shuzojo",
- "native": null,
- "location": "Shizuoka",
+ "native": "土井酒造場",
+ "location": "Kakegawa, Shizuoka",
  "region": "Shizuoka",
  "country": "Japan",
- "founded": null,
+ "founded": 1872,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://kaiunsake.com/",
+ "brands": [
+  "Kaiun"
+ ],
+ "about": [
+  "Doi Shuzojo makes sake in Onuki, Kakegawa, in Shizuoka. The Doi family, wealthy farmers since the sixteenth century, started the brewery in 1872, later than many houses that date from the Edo period.",
+  "Its brand is Kaiun. The brewery follows the Noto toji style of brewing, mills its own rice, and grows some of its rice in its own fields, with more from growers in Hyogo and Okayama. The fifth head of the family, Yaichi Doi, now leads the brewery."
+ ],
+ "sources": [
+  "https://kaiunsake.com/english",
+  "https://kaiunsake.com/company",
+  "https://kaiunsake.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

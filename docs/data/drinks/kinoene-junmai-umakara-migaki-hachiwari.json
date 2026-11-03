@@ -6,11 +6,11 @@
  "producer": {
   "key": "iinuma-honke",
   "name": "Iinuma Honke",
-  "native": null,
-  "location": "Chiba, Japan",
+  "native": "飯沼本家",
+  "location": "Shisui, Chiba, Japan",
   "founded": null,
-  "about": null,
-  "url": null
+  "about": "Iinuma Honke is in Mabashi, Shisui, Chiba. The family farmed and worked forests, and in the Genroku era (1688 to 1703) it received permission to brew sake for shrines and temples. It became a commercial sake house late in the Edo period.",
+  "url": "https://www.iinumahonke.co.jp/"
  },
  "abv": 15,
  "styles": [],

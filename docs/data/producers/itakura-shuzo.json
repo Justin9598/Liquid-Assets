@@ -1,16 +1,26 @@
 {
  "key": "itakura-shuzo",
  "name": "Itakura Shuzo",
- "native": null,
- "location": "Shimane",
+ "native": "板倉酒造",
+ "location": "Izumo, Shimane",
  "region": "Shimane",
  "country": "Japan",
- "founded": null,
+ "founded": 1871,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.tenon.jp/",
+ "brands": [
+  "Tenon",
+  "Mukyu Tenon"
+ ],
+ "about": [
+  "Itakura Shuzo has brewed in Izumo, Shimane, since 1871. The name Tenon was given in 1916 by the head priest of a Nichiren temple, taken from a Buddhist phrase meaning a calm sky and peace for the world.",
+  "The brewery makes sake in the San'in ginjo style of the Izumo toji. This means limited rice soaking, a koji with mould spread through the centre of the grain, and long cold fermentation. Mukyu Tenon is a second label, and the brewery keeps machine work to a minimum."
+ ],
+ "sources": [
+  "https://www.tenon.jp/?mode=f1",
+  "https://www.tenon.jp/?mode=f2",
+  "https://www.tenon.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

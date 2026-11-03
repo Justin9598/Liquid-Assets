@@ -6,11 +6,11 @@
  "producer": {
   "key": "homare-shuzo",
   "name": "Homare Shuzo",
-  "native": null,
-  "location": "Fukushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "ほまれ酒造",
+  "location": "Kitakata, Fukushima, Japan",
+  "founded": 1918,
+  "about": "Homare Shuzo is in Matsuyama, Kitakata, Fukushima. Karahashi Kosaku, a rice dealer who also made miso and koji, took over a sake brewery in Atsushio-Kano, now part of Kitakata, in 1918 and ran it as Kano Shuzo. The company later moved to Matsuyama and took its present name.",
+  "url": "https://www.aizuhomare.jp/"
  },
  "abv": 16.5,
  "styles": [],

@@ -1,16 +1,27 @@
 {
  "key": "igarashi-shuzo",
  "name": "Igarashi Shuzo",
- "native": null,
- "location": "Saitama",
+ "native": "五十嵐酒造",
+ "location": "Hanno, Saitama",
  "region": "Saitama",
  "country": "Japan",
- "founded": null,
+ "founded": 1897,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.tenranzan.jp/",
+ "brands": [
+  "Tenranzan",
+  "Igarashi"
+ ],
+ "about": [
+  "Igarashi Shuzo is in Kawadera, Hanno, Saitama. The first head, Kyuzo, came from Niigata and had worked at Sawanoi in Ome, and his family had been Echigo toji. The brewery started in 1897 and moved to its present site in 1937.",
+  "Its main brand is Tenranzan, named after a hill in Hanno. The brewery draws groundwater from the Okuchichibu area, and it marked its 100th year in 1997. It also sells narazuke pickles made at the brewery."
+ ],
+ "sources": [
+  "https://www.tenranzan.jp/hpgen/HPB/entries/1.html",
+  "https://www.tenranzan.jp/hpgen/HPB/entries/2.html",
+  "https://www.tenranzan.jp/",
+  "https://www.saketime.jp/brands/4874/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

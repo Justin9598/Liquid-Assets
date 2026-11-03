@@ -160,6 +160,7 @@ The permission system blocks the shipper's push, so whoever the owner names push
 | D14 | A Display Name that misreads the brewery's name | **Fix the Display Name and keep the Page Key.** `banno-shuzo` displays as "Tomono Shuzo" (伴野酒造), and its address doesn't change. Core's Producer text stays as the owner wrote it. A rule for later batches: only owner-approved name fixes change a Display Name. |
 | D15 | Rule for websites | **Publish only a website that the researcher has loaded and confirmed as official.** A site listed only by a database, or one that doesn't load, is left blank. |
 | D16 | Hirako Shuzo's website (2026-11-03) | **The owner chose to keep it.** `https://www.hirakoushuzou.jp/` loads as a blank page for both the researcher and the designer, but it stays published as an owner-approved exception to D15. |
+| D17 | Japan batch 4 (2026-11-03) | **Approved.** `hamada-shoten` displays as "Hamada": the maker is 株式会社濱田, confirmed from the bottle label (濱田, 紀州石神). `katoukichibee-shoten` displays as "Kato Kichibee Shoten", with the brewery's own "Katoukichibee Shouten" in Brands. Page Keys are unchanged (D14). Iinuma Honke's Founded is blank. Gyokusendo's 無風 reading is dropped from Brands. Kameizumi's and Kato Kichibee's websites are kept, because their home pages load (D15). Miho Imada and Shinji Kawabata are Masters, romanised on the official sites. |
 
 ## 11. Batch 1 review fixes (2026-11-02)
 

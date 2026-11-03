@@ -6,11 +6,11 @@
  "producer": {
   "key": "enoki-shuzo",
   "name": "Enoki Shuzo",
-  "native": null,
-  "location": "Hiroshima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "榎酒造",
+  "location": "Ondo, Kure, Hiroshima, Japan",
+  "founded": 1899,
+  "about": "Enoki Shuzo was founded in 1899 in Ondo, Kure, Hiroshima. Hanahato is its main brand and Kiyomori the second. The brewery says it was the first in Japan to make kijoshu, a sake brewed with sake in place of some of the water, and it began with the 1974 brewing year.",
+  "url": "https://hanahato.ocnk.net/"
  },
  "abv": 16.5,
  "styles": [

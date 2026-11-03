@@ -1,16 +1,26 @@
 {
  "key": "ishimoto-shuzo",
  "name": "Ishimoto Shuzo",
- "native": null,
- "location": "Niigata",
+ "native": "石本酒造",
+ "location": "Niigata, Niigata",
  "region": "Niigata",
  "country": "Japan",
- "founded": null,
+ "founded": 1907,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://koshinokanbai.co.jp/",
+ "brands": [
+  "Koshi no Kanbai"
+ ],
+ "about": [
+  "Ishimoto Shuzo was founded in 1907 by Ishimoto Ryuzo in Konan, Niigata, in the Kamedago lowlands. He wanted to make a sake that would refresh the local farm workers.",
+  "The second head, Shogo, dug more than a hundred wells before finding the soft water under the family garden, and he used it with highly milled rice and long cold fermentation. The result is the light, clean style of Koshi no Kanbai. Since 2015 every grain of rice it uses has been sake brewing rice."
+ ],
+ "sources": [
+  "https://koshinokanbai.co.jp/pages/about",
+  "https://koshinokanbai.co.jp/pages/progress",
+  "https://koshinokanbai.co.jp/pages/thought",
+  "https://koshinokanbai.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

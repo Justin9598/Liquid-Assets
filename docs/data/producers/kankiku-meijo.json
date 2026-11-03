@@ -1,16 +1,27 @@
 {
  "key": "kankiku-meijo",
  "name": "Kankiku Meijo",
- "native": null,
- "location": "Chiba",
+ "native": "寒菊銘醸",
+ "location": "Sanmu, Chiba",
  "region": "Chiba",
  "country": "Japan",
- "founded": null,
+ "founded": 1883,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://kankiku.com/",
+ "brands": [
+  "Kankiku",
+  "Fusa no Kankiku",
+  "Matsuo Jiman",
+  "Ocean99"
+ ],
+ "about": [
+  "Kankiku Meijo is in Matsuo, Sanmu, Chiba, near the Kujukuri coast. Sase Gensaku began brewing a clean, dry sake there in 1883, using spring water and local rice. The company was formally set up in 1930.",
+  "It makes five sake brands, including Fusa no Kankiku and Matsuo Jiman. It also produces Ocean99 and brews craft beer under the name Kujukuri Ocean, using what it has learned from sake brewing."
+ ],
+ "sources": [
+  "https://kankiku.com/japanese/company",
+  "https://kankiku.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

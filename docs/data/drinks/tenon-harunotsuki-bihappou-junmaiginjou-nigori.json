@@ -6,11 +6,11 @@
  "producer": {
   "key": "itakura-shuzo",
   "name": "Itakura Shuzo",
-  "native": null,
-  "location": "Shimane, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "板倉酒造",
+  "location": "Izumo, Shimane, Japan",
+  "founded": 1871,
+  "about": "Itakura Shuzo has brewed in Izumo, Shimane, since 1871. The name Tenon was given in 1916 by the head priest of a Nichiren temple, taken from a Buddhist phrase meaning a calm sky and peace for the world.",
+  "url": "https://www.tenon.jp/"
  },
  "abv": 17,
  "styles": [

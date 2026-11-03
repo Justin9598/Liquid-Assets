@@ -1,16 +1,26 @@
 {
  "key": "iinuma-honke",
  "name": "Iinuma Honke",
- "native": null,
- "location": "Chiba",
+ "native": "飯沼本家",
+ "location": "Shisui, Chiba",
  "region": "Chiba",
  "country": "Japan",
  "founded": null,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.iinumahonke.co.jp/",
+ "brands": [
+  "Kinoene"
+ ],
+ "about": [
+  "Iinuma Honke is in Mabashi, Shisui, Chiba. The family farmed and worked forests, and in the Genroku era (1688 to 1703) it received permission to brew sake for shrines and temples. It became a commercial sake house late in the Edo period.",
+  "The tenth head, Jiemon, built a brewery in the early Meiji years. Kinoene is the main brand. The site today also holds a shop, a restaurant, a gallery and a farm, and the brewers, led by the factory manager as toji, make all of the sake themselves."
+ ],
+ "sources": [
+  "https://www.iinumahonke.co.jp/about/history",
+  "https://www.iinumahonke.co.jp/about/company",
+  "https://www.iinumahonke.co.jp/about/kurando",
+  "https://www.iinumahonke.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

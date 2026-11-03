@@ -1,16 +1,26 @@
 {
  "key": "hamada-shoten",
- "name": "Hamada Shoten",
- "native": null,
- "location": "Wakayama",
+ "name": "Hamada",
+ "native": "濱田",
+ "location": "Kamihaya, Tanabe, Wakayama",
  "region": "Wakayama",
  "country": "Japan",
- "founded": null,
+ "founded": 2006,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://ume-hamada.co.jp/",
+ "brands": [
+  "HAMADA",
+  "ishigami&"
+ ],
+ "about": [
+  "Hamada makes umeshu and umeboshi in Kamihaya, Tanabe, Wakayama. The current president began making seasoned umeboshi in the Ishigami district in 1981, set up the company in 1988, and received a liqueur licence in 2006, when umeshu production began.",
+  "The ume are Nanko plums from its own farm and neighbouring growers. Ripe fruit that has dropped naturally is collected each day and soaked the same day. The liqueur then ages for more than a year in tanks kept outdoors, and no flavouring, colouring or antioxidant is added."
+ ],
+ "sources": [
+  "https://ume-hamada.co.jp/about/",
+  "https://ume-hamada.co.jp/product_umeshu/",
+  "https://furunavi.jp/product_detail.aspx?pid=959505"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

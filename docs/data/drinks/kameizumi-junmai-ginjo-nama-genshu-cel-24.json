@@ -6,11 +6,11 @@
  "producer": {
   "key": "kameizumi-shuzo",
   "name": "Kameizumi Shuzo",
-  "native": null,
-  "location": "Kochi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "亀泉酒造",
+  "location": "Tosa, Kochi, Japan",
+  "founded": 1897,
+  "about": "Kameizumi Shuzo was founded in 1897 in Tosa, Kochi, when eleven people set up a sake shop to brew the sake they drank themselves. The name, meaning turtle spring, comes from the spring that supplies its brewing water.",
+  "url": "https://www.kameizumi.co.jp/"
  },
  "abv": 14,
  "styles": [
