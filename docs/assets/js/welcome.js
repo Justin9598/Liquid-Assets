@@ -33,8 +33,7 @@ export async function mount(root, ctx) {
   const debug = q.get('debug') === 'scene';
 
   let sel = ctx.cat || null;
-  let view = 'rest';                                 // rest | sub | new | season (Plan 10 section 4); the category view is `sel` alone
-  let subSel = null;                                 // { cat, sub } while view is 'sub'
+  let view = 'rest';                                 // rest | new | season (Plan 10 section 4); the category view is `sel` alone
   let clockCtl = null;
   const season = seasonNow(q);
   const counterData = ix.shelf.counter || {};
@@ -157,8 +156,12 @@ export async function mount(root, ctx) {
     if (it.native) second.push(`<span class="nat" lang="${langOf(it.native)}">${esc(it.native)}</span>`);
     second.push(`<span class="ct">${it.count}</span>`);
     const tagHTML = `<span class="nm">${esc(it.name)}</span><span class="l2">${second.join('<i> · </i>')}</span>`;
-    // in category view a bottle and its board do the same thing, so they are one button (Plan 10 section 12)
-    return `<button type="button" class="slot sub" data-shape="${it.shape}" data-sub="${esc(it.subKey)}" data-cat="${esc(it.cat)}" aria-label="${esc(it.name)}, ${plural(it.count, 'drink')}, show on the shelves"><span class="art">${a}</span><span class="hang chalkboard chalkboard--s" aria-hidden="true">${tagHTML}</span></button>`;
+    // in category view a bottle and its board are one link to that subcategory's list page, the page "See all" opens (Plan 10 section 13)
+    const inner = `<span class="art">${a}</span><span class="hang chalkboard chalkboard--s" aria-hidden="true">${tagHTML}</span>`;
+    if (!getSections().shelves) {                                                    // Phase 1: the list pages are not published yet
+      return `<button type="button" class="slot sub" data-soon data-shape="${it.shape}" aria-label="${esc(it.name)}, ${plural(it.count, 'drink')}. This shelf opens soon.">${inner}</button>`;
+    }
+    return `<a class="slot sub" href="#/${esc(it.cat)}/${esc(it.subKey)}" data-shape="${it.shape}" aria-label="${esc(it.name)}, ${plural(it.count, 'drink')}, see all">${inner}</a>`;
   }
 
   // ---- placing rows ----------------------------------------------------------------------------------------------
@@ -392,7 +395,7 @@ export async function mount(root, ctx) {
       return { list: its, caption: view === 'new' ? `New arrivals · ${its.length}` : `In season: ${SEASON_NAMES[season]} · ${its.length}` };
     }
     const c = sel && ix.cats.get(sel);
-    const eff = view === 'sub' ? subSel : (c?.direct ? { cat: c.key, sub: c.subcategories[0].key } : null);
+    const eff = c?.direct ? { cat: c.key, sub: c.subcategories[0].key } : null;               // only Umeshu fills the shelves with its drinks
     if (eff) {
       const info = ix.subs.get(`${eff.cat}/${eff.sub}`);
       const ds = info.sub.drinks || [];
@@ -417,7 +420,7 @@ export async function mount(root, ctx) {
   let counterKey = null;
   function updateCounter() {
     const c = sel && ix.cats.get(sel);
-    const eff = view === 'sub' ? subSel : (c?.direct && view === 'rest' ? { cat: c.key, sub: c.subcategories[0].key } : null);
+    const eff = c?.direct && view === 'rest' ? { cat: c.key, sub: c.subcategories[0].key } : null;
     const info = eff && ix.subs.get(`${eff.cat}/${eff.sub}`);
     const key = `${mode}|${eff ? `${eff.cat}/${eff.sub}` : ''}`;
     if (key === counterKey) return;
@@ -453,7 +456,7 @@ export async function mount(root, ctx) {
     if (animate) await swap(list); else { token++; setRows(list); }
     clearBehindCounter();
     avoidCounter();
-    if (view === 'new' || view === 'season' || view === 'sub' || c?.direct) announce(caption);
+    if (view === 'new' || view === 'season' || c?.direct) announce(caption);
     else if (c) announce(c.subcategories.length === 1 ? `Showing ${c.name}: ${plural(c.drinkCount, 'drink')}` : `Showing ${c.name}: ${c.subcategories.length} kinds`);
     else announce('Showing a mixed selection');
   }
@@ -462,7 +465,6 @@ export async function mount(root, ctx) {
   function select(key, animate) {
     sel = key;
     view = 'rest';
-    subSel = null;
     return show(animate);
   }
 
@@ -488,7 +490,7 @@ export async function mount(root, ctx) {
     const P = manifest.plates[mode];
     burgerCtl = manifest.burger && P.counter ? mountBurger(root, { B: manifest.burger, ix }) : null;
     counterKey = null;
-    tabsCtl = P.counter?.mode === 'tabs' ? mountTabs(root, { onTab: (tab) => { view = tab === 'new' ? 'new' : 'season'; subSel = null; show(true); } }) : null;
+    tabsCtl = P.counter?.mode === 'tabs' ? mountTabs(root, { onTab: (tab) => { view = tab === 'new' ? 'new' : 'season'; show(true); } }) : null;
     clockCtl?.destroy();
     clockCtl = P.clock ? mountClock(root, goRest) : null;
     lower = $('#lower', root);
@@ -509,14 +511,12 @@ export async function mount(root, ctx) {
   const onClick = (ev) => {
     const v = ev.target.closest('.vessel');
     if (v) {
-      if (sel === v.dataset.cat && view !== 'rest') { view = 'rest'; subSel = null; show(true); return; }     // back to that category's own view
+      if (sel === v.dataset.cat && view !== 'rest') { view = 'rest'; show(true); return; }     // back to that category's own view
       location.hash = sel === v.dataset.cat ? '#/' : `#/${v.dataset.cat}`;
       return;
     }
-    const sb = ev.target.closest('button.slot.sub[data-sub]');
-    if (sb) { view = 'sub'; subSel = { cat: sb.dataset.cat, sub: sb.dataset.sub }; show(true); return; }
     const pv = ev.target.closest('.placard[data-view]');
-    if (pv) { view = pv.dataset.view; subSel = null; show(true); return; }
+    if (pv) { view = pv.dataset.view; show(true); return; }
     const cb = ev.target.closest('[data-drink-soon]');
     if (cb) { soon(`${cb.dataset.name}, ${cb.dataset.cat}. Its page opens soon.`); return; }
     if (ev.target.closest('[data-soon]')) { soon(); return; }

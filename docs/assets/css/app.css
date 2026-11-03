@@ -248,8 +248,6 @@ a.chalkboard:focus-visible, button.chalkboard:focus-visible { outline: 3px solid
 .slot button.art { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
 .slot a.art { cursor: pointer; }
 .slot .art:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; border-radius: var(--r-sm); box-shadow: none; }
-.scene3 button.hang { cursor: pointer; text-align: center; }
-.scene3 .slot.sub .hang:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; box-shadow: none; }
 .slot.drink .art { transition: transform 140ms ease-out; }
 .slot.drink:hover .art, .slot.drink:focus-within .art { transform: translateY(-3px); }
 .scene3 .slot.drink .hang { opacity: 0; transition: opacity 140ms; width: max-content; max-width: 20cqw; z-index: 7; pointer-events: none; }

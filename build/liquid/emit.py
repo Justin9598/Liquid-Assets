@@ -86,7 +86,9 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
                      "drinkCount": len(sub["drinks"]), "labels": labels}
             views = (content.get("sub_views") or {}).get(f"{cat['key']}/{sub['key']}")
             if views:                                                     # Plan 10 section 4.7: names and labels only
-                entry.update(drinks=views["drinks"], new=views["new"], season=views["season"])
+                entry.update(drinks=views["drinks"])
+                if cat["key"] in T.DIRECT_CATEGORIES:                      # only Umeshu fills the shelves and filters the counter (Plan 10 section 13)
+                    entry.update(new=views["new"], season=views["season"])
             subs_out.append(entry)
         cat_out = {"key": cat["key"], "name": cat["name"], "vessel": cat["vessel"],
                    "drinkCount": cat["count"], "subcategories": subs_out}

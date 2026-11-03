@@ -601,7 +601,7 @@ VIEW_STATE_JS = r"""(() => {
   out.caption = document.querySelector('#viewcap')?.textContent || '';
   out.captionVisible = !document.querySelector('#viewcap')?.hasAttribute('data-empty');
   out.drinks = [...document.querySelectorAll('#lower .slot.drink a.art, #lower .slot.drink button.art')].map((a) => a.getAttribute('href') || a.dataset.name);
-  out.subs = [...document.querySelectorAll('#lower button.slot.sub')].map((b) => b.dataset.sub);
+  out.subs = [...document.querySelectorAll('#lower .slot.sub')].map((b) => (b.getAttribute('href') || '').split('/').pop());
   out.seeAll = document.querySelector('.seeall-board')?.getAttribute('href') || null;
   out.hash = location.hash;
   out.hasSelection = !!document.querySelector('.scene3.has-selection');
@@ -690,61 +690,44 @@ def welcome_checks(page, base, tag, shots_dir=None):
     sake = next(c for c in cats if c["key"] == "sake")
     if s["mode"] != "sub" or s["subs"] != [x["key"] for x in sake["subcategories"]] or not s["hasSelection"]:
         P(f"Sake opens as {s['mode']} {s['subs']}")
-    # in category view a bottle and its board are one button with one name (Plan 10 section 12)
-    one = page.eval("""[...document.querySelectorAll('#lower .slot.sub')].map((s) => [s.tagName, s.querySelectorAll('a, button').length, s.getAttribute('aria-label') || ''])""")
-    if not one or any(x[0] != "BUTTON" or x[1] != 0 or "show on the shelves" not in x[2] or "drinks" not in x[2] and "1 drink" not in x[2] for x in one):
-        P(f"a subcategory bottle and its board are not one labelled button: {one[:2]}")
-    # at Rest a lower-shelf bottle opens a drink
-    # tapping the bottle (not the board) opens the subcategory view
-    page.eval("document.querySelector('#lower .slot.sub .art').click()")
-    settle(page)
-    s = check("a subcategory bottle")
-    if s["mode"] != "drinks" or not s["caption"].endswith(" drinks") or not s["drinks"] or s["hash"] != "#/sake":
-        P(f"tapping a subcategory bottle gave {s['mode']} with caption '{s['caption']}'")
-    if not all((d or "").startswith("#/drink/") for d in s["drinks"]):
-        P("a bottle in the subcategory view does not open its drink")
-    vclick(page, ".vessel[data-cat=sake]")
-    vclick(page, "button[data-sub=junmai-ginjo]")
-    s = check("Junmai Ginjo")
-    jg = next(x for x in sake["subcategories"] if x["key"] == "junmai-ginjo")
-    if s["mode"] != "drinks" or not s["captionVisible"] or s["caption"] != f"Junmai Ginjo · {jg['drinkCount']} drinks":
-        P(f"the Junmai Ginjo view is {s['mode']} with caption '{s['caption']}'")
-    if s["hash"] != "#/sake":
-        P(f"a view changed the address to {s['hash']}")
-    if jg["drinkCount"] > len(s["drinks"]) and s["seeAll"] != "#/sake/junmai-ginjo":
-        P("'See all' is missing or points at the wrong list")
-    if not all((d or "").startswith("#/drink/") for d in s["drinks"]):
-        P("a bottle in the subcategory view does not open its drink")
-    if s["counter"]["newIn"] != "in Junmai Ginjo" or s["counter"]["seasonIn"] not in ("in Junmai Ginjo", ""):
-        P(f"the counter lines read '{s['counter']['newIn']}' and '{s['counter']['seasonIn']}'")
-    if set(s["counter"]["newIds"]) - {d["id"] for d in jg["drinks"]}:
-        P("the New arrivals group holds drinks from outside Junmai Ginjo")
-    # tapping a placard while filtered opens the whole bar's view
+    # in category view a bottle and its board are one link to the subcategory's list page (Plan 10 section 13)
+    one = page.eval("""[...document.querySelectorAll('#lower .slot.sub')].map((s) => [s.tagName, s.querySelectorAll('a, button').length, s.getAttribute('aria-label') || '', s.getAttribute('href') || ''])""")
+    want = [f"#/sake/{x['key']}" for x in sake["subcategories"]]
+    if not one or [x[3] for x in one] != want or any(x[0] != "A" or x[1] != 0 or not x[2].endswith(", see all") or "drink" not in x[2] for x in one):
+        P(f"a subcategory bottle and its board are not one 'see all' link to its list page: {one[:2]}")
+    # tapping the bottle lands on the list page, and Back returns to the bar; tapping the board does the same
+    for part in ("art", "hang"):
+        page.eval(f"document.querySelector('#lower .slot.sub[href$=junmai-ginjo] .{part}').click()")
+        if not wait_for(page, "location.hash === '#/sake/junmai-ginjo' && !!document.querySelector('.shelf-page h1')"):
+            P(f"tapping the {'bottle' if part == 'art' else 'board'} of Junmai Ginjo did not land on its list page ({page.eval('location.hash')})")
+            break
+        wait_ready(page)
+        if page.eval("document.querySelectorAll('.shelf-page .card').length") < 10:
+            P("the Junmai Ginjo list page shows no cards")
+        page.eval("history.back()")
+        if not wait_for(page, "!!document.querySelector('.scene3 .cover') && location.hash === '#/sake'"):
+            P(f"Back from the list page did not return to the bar ({page.eval('location.hash')})")
+            break
+        settle(page)
+    s = check("back at the bar")
+    if s["mode"] != "sub":
+        P(f"back at the bar the category view is {s['mode']}")
+    # New arrivals and In season still fill the shelves with drinks, with the counter at its usual set
     vclick(page, "#cg-new-h" if not tall else "#tab-new")
     s = check("New arrivals")
     if s["mode"] != "drinks" or not s["caption"].startswith("New arrivals · ") or len(s["drinks"]) <= 5:
         P(f"New arrivals view: mode {s['mode']}, caption '{s['caption']}', {len(s['drinks'])} bottles")
     if s["counter"]["newIn"]:
-        P("the counter is still filtered in the New arrivals view")
+        P("the counter is filtered in the New arrivals view")
+    if not all((d or "").startswith("#/drink/") for d in s["drinks"]):
+        P("a bottle in the New arrivals view does not open its drink")
     vclick(page, "#cg-season-h" if not tall else "#tab-season")
     s = check("In season")
     if s["mode"] != "drinks" or not s["caption"].startswith("In season: ") or len(s["drinks"]) <= 5:
         P(f"In season view: mode {s['mode']}, caption '{s['caption']}', {len(s['drinks'])} bottles")
-    n_season = len(s["drinks"])
-    # a subcategory with no picks for the season keeps the usual set in that group, and says nothing about the subcategory
-    import datetime
-    m = datetime.date.today().month
-    season = "spring" if 3 <= m <= 5 else "summer" if 6 <= m <= 8 else "autumn" if 9 <= m <= 11 else "winter"
-    plain = next(((c, x) for c in cats if not c.get("direct") for x in c["subcategories"] if x.get("drinks") and not x["season"].get(season)), None)
-    if plain:
-        vclick(page, "#clock")
-        vclick(page, f".vessel[data-cat={plain[0]['key']}]")
-        vclick(page, f"button[data-sub={plain[1]['key']}]")
-        s2 = check(f"{plain[1]['name']} with no {season} picks")
-        if s2["counter"]["seasonIds"] != rest["counter"]["seasonIds"] or s2["counter"]["seasonIn"]:
-            P(f"{plain[1]['name']} has no {season} picks, so the In season group should keep its usual set (it shows {s2['counter']['seasonIds'][:2]}, line '{s2['counter']['seasonIn']}')")
     # the clock resets any view
-    for label, setup in (("sub view", lambda: (vclick(page, ".vessel[data-cat=sake]"), vclick(page, "button[data-sub=junmai-ginjo]"))), ("In season view", lambda: None)):
+    # the clock resets any view
+    for label, setup in (("category view", lambda: vclick(page, ".vessel[data-cat=sake]")), ("In season view", lambda: vclick(page, "#cg-season-h" if not tall else "#tab-season"))):
         setup()
         vclick(page, "#clock")
         s = check(f"after the clock from the {label}")
@@ -784,9 +767,9 @@ def welcome_checks(page, base, tag, shots_dir=None):
         P(f"Umeshu opens as {s['mode']} with {len(s['drinks'])} bottles and caption '{s['caption']}'")
     if s["counter"]["newIn"] != "in Umeshu":
         P(f"the counter lines read '{s['counter']['newIn']}' in Umeshu")
-    # a top-shelf tap while in a subcategory view goes back to that category's view
+    # a top-shelf tap while in a New arrivals view goes back to that category's view
     vclick(page, ".vessel[data-cat=sake]")
-    vclick(page, "button[data-sub=junmai-ginjo]")
+    vclick(page, "#cg-new-h" if not tall else "#tab-new")
     vclick(page, ".vessel[data-cat=sake]")
     s = check("top shelf tap")
     if s["mode"] != "sub":
