@@ -282,38 +282,7 @@
        "name": "Akabu Junmai Daiginjo Red Emblem",
        "label": null
       }
-     ],
-     "new": [
-      "oze-no-yukidoke-junmai-daiginjo-halloween",
-      "kagatobi-junmai-daiginjo-gokujo-genshu",
-      "ryujin-dragon-god-junmai-daiginjo-namazume",
-      "nabeshima-the-nabeshima-junmai-daiginjo",
-      "mizubasho-junmai-daiginjo-premium"
-     ],
-     "season": {
-      "spring": [
-       "yamashiroya-fuga-junmai-daiginjo",
-       "tsuki-no-katsura-junmai-daiginjo-nigori",
-       "keigetsu-junmai-daiginjo-sparkling-hao"
-      ],
-      "summer": [
-       "keigetsu-junmai-daiginjo-sparkling-hao"
-      ],
-      "autumn": [
-       "oze-no-yukidoke-junmai-daiginjo-halloween",
-       "odayaka-kimoto-junmai-daiginjo",
-       "miyoshino-jozo-hanatomoe-jundaidai-junmai-daig",
-       "junsei-jd",
-       "yamashiroya-fuga-junmai-daiginjo"
-      ],
-      "winter": [
-       "miyoshino-jozo-hanatomoe-jundaidai-junmai-daig",
-       "yamashiroya-fuga-junmai-daiginjo",
-       "kagura-hae",
-       "odayaka-kimoto-junmai-daiginjo",
-       "mansakunohana-junmai-daiginjo-nama-genshu-kame"
-      ]
-     }
+     ]
     },
     {
      "key": "junmai-ginjo",
@@ -753,44 +722,7 @@
        "name": "Aiyama 'Galaxy' Kimoto Junmai Ginjo Origarami Nama",
        "label": null
       }
-     ],
-     "new": [
-      "yamamoto-sunset-orange-junmai-ginjo",
-      "taiheikai-junmai-ginjo-bin-gakoi",
-      "yamawa-junmai-ginjo-muroka-nama-genshu",
-      "wataribune-shiboritate-namagin-muroka",
-      "taiheikai-mukaatsu-junmai-ginjo-nama"
-     ],
-     "season": {
-      "spring": [
-       "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
-       "odayaka-junmai-ginjo-usunigori-nama",
-       "hitakami-aquarium-in-winter",
-       "nabeshima-blossoms-moon",
-       "mizubasho-junmai-ginjo-sparkling-dry"
-      ],
-      "summer": [
-       "kagura-sparkling",
-       "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
-       "natsu-odayaka",
-       "nabeshima-blossoms-moon",
-       "mizubasho-junmai-ginjo-sparkling-dry"
-      ],
-      "autumn": [
-       "aiyama-galaxy-kimoto-junmai-ginjo-origar",
-       "yamamoto-sunshine-yellow-yamahai-junmai-ginjo",
-       "izumibashi-shiboritate",
-       "aramasa-colors-cosmos",
-       "niida-shizenshu-melon-333"
-      ],
-      "winter": [
-       "izumibashi-shiboritate",
-       "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
-       "niida-shizenshu-melon-333",
-       "hitakami-aquarium-in-winter",
-       "aiyama-galaxy-kimoto-junmai-ginjo-origar"
-      ]
-     }
+     ]
     },
     {
      "key": "tokubetsu-junmai",
@@ -862,22 +794,7 @@
        "name": "Against The Grain (Normat) Tokubetsu Junmai",
        "label": "img/labels/against-the-grain-normat-tokubetsu-junma.webp"
       }
-     ],
-     "new": [
-      "taka-tokubetsu-junmai-fukamari",
-      "nabeshima-harvest-moon-classic",
-      "utama-native-tokubetsu-junmai",
-      "shizenango-bio-tokubetsu-junmai",
-      "machida-tokubetsu-junmai-55-gohyakumangoku"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [],
-      "winter": [
-       "harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu"
-      ]
-     }
+     ]
     },
     {
      "key": "junmai",
@@ -1154,44 +1071,7 @@
        "name": "Akishika Moto Plus One Junmai Muroka Nama",
        "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
       }
-     ],
-     "new": [
-      "jinya-junmai-akiagari",
-      "kinoene-junmai-umakara-migaki-hachiwari",
-      "taka-sparkling",
-      "zaku-g",
-      "yoshidagura-u-night-and-dance-junmai"
-     ],
-     "season": {
-      "spring": [
-       "kissui-hidariuma-junmai-kasseinigori-uma-uma",
-       "odayaka-sparkling",
-       "izumibashi-natsu-yago-sparkling",
-       "taka-sparkling",
-       "kyo-no-haru-houryou-karakuchi-junmai"
-      ],
-      "summer": [
-       "odayaka-sparkling",
-       "harada-natsu",
-       "kissui-hidariuma-junmai-kasseinigori-uma-uma",
-       "izumibashi-natsu-yago-sparkling",
-       "hinemos-shichiji"
-      ],
-      "autumn": [
-       "izumibashi-aki-tombo-omachi-kimoto-junmai",
-       "akishika-moto-plus-one-junmai-muroka-nam",
-       "noguchi-naohiko-sake-institute",
-       "jinya-junmai-akiagari",
-       "sawahime-yamahai-junmai-shin-jizake-sengen"
-      ],
-      "winter": [
-       "noguchi-naohiko-sake-institute",
-       "sawahime-yamahai-junmai-shin-jizake-sengen",
-       "ookura-hinohikari-yamahai-junmai-jikagumi",
-       "kujira-junmai-yamadanishiki-kimoto-nama-genshu-80",
-       "koikuma-bear-no-24-and-bear-no-25-kimoto-junma"
-      ]
-     }
+     ]
     },
     {
      "key": "daiginjo",
@@ -1234,22 +1114,7 @@
        "name": "AIZU HOMARE Daiginjo",
        "label": null
       }
-     ],
-     "new": [
-      "sawahime-daiginjo-tobingakoi-origarami-nama",
-      "kokuryu-daiginjo",
-      "hakutsuru-tokusen-daiginjo",
-      "gekkeikan-daiginjo",
-      "endo-daiginjo"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [],
-      "winter": [
-       "endo-daiginjo"
-      ]
-     }
+     ]
     },
     {
      "key": "ginjo",
@@ -1273,20 +1138,7 @@
        "name": "Kubota Senju Ginjo",
        "label": null
       }
-     ],
-     "new": [
-      "sawahime-ginjo",
-      "narutotai-ginjo-shiboritate-nama-genshu",
-      "kubota-senju-ginjo"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [],
-      "winter": [
-       "narutotai-ginjo-shiboritate-nama-genshu"
-      ]
-     }
+     ]
     },
     {
      "key": "honjozo",
@@ -1307,17 +1159,7 @@
        "name": "Asahitaka Tokusen Honjozo Namazake",
        "label": null
       }
-     ],
-     "new": [
-      "hakushika-namachozou",
-      "asahitaka-tokusen-honjozo-namazake"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "futsushu",
@@ -1341,20 +1183,7 @@
        "name": "Hakushika Nada Jikomi Karakuchi",
        "label": null
       }
-     ],
-     "new": [
-      "nihonsakari-nigiwai",
-      "kiku-masamune-kasen",
-      "hakushika-nada-jikomi-karakuchi"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "nihonsakari-nigiwai"
-      ],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "craft-sake",
@@ -1502,31 +1331,7 @@
        "name": "ALLWRIGHT Peach Craft Sake (Fukushima Akatsuki)",
        "label": "img/labels/allwright-momo.webp"
       }
-     ],
-     "new": [
-      "raizin-heart-rock-phoenix-dancong-oolong",
-      "fermenteria-yeastology-philly-sour",
-      "fermenteria-sparkling",
-      "wakaze-unique",
-      "wakaze-ispahan-rose"
-     ],
-     "season": {
-      "spring": [
-       "fermenteria-sparkling",
-       "haccoba-secret-spring"
-      ],
-      "summer": [
-       "fermenteria-sparkling",
-       "ichigoya-hana-strawberry-doburoku",
-       "raizin-heart-rock-phoenix-dancong-oolong",
-       "fermenteria-yeastology-philly-sour",
-       "wakaze-ispahan-rose"
-      ],
-      "autumn": [
-       "wakaze-unique"
-      ],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "ungraded",
@@ -1658,37 +1463,7 @@
        "name": "Chikusen \"Bamboo Spring\"",
        "label": "img/labels/takezumi-bamboo-spring.webp"
       }
-     ],
-     "new": [
-      "hagi-no-tsuru-betsu-shikomi",
-      "gekkeikan-argo",
-      "noguchi-naohiko-natsu-no-namazake-2026",
-      "wufeng-ji-qing",
-      "wataibune-terroir-ohta-valley"
-     ],
-     "season": {
-      "spring": [
-       "taiheikai-sparkling",
-       "mizubasho-artist-series-floral-sparkling-2023",
-       "takezumi-bamboo-spring",
-       "hakutsuru-awayuki-sparkling"
-      ],
-      "summer": [
-       "taiheikai-sparkling",
-       "mizubasho-artist-series-floral-sparkling-2023",
-       "hakutsuru-awayuki-sparkling",
-       "gekkeikan-argo",
-       "mimurosugi-dio-abita"
-      ],
-      "autumn": [],
-      "winter": [
-       "suppin-rumiko-no-sake-muroka-nama-genshu-no-6",
-       "jukyu-gattolibero-557-white-cat",
-       "takezumi-bamboo-spring",
-       "wakakoma-carnival",
-       "jukyu-hirvi-19"
-      ]
-     }
+     ]
     }
    ]
   },
@@ -1736,29 +1511,7 @@
        "name": "93, Hwanggeum Gotgan",
        "label": "img/labels/93-hwanggeum-gotgan.webp"
       }
-     ],
-     "new": [
-      "traditional-jeju-makgeolli",
-      "moonlight-yuja",
-      "mangwoo-yakbang-memilbogam",
-      "isibo-wonju",
-      "93-hwanggeum-gotgan"
-     ],
-     "season": {
-      "spring": [
-       "moonlight-yuja"
-      ],
-      "summer": [
-       "moonlight-yuja",
-       "traditional-jeju-makgeolli",
-       "mangwoo-yakbang-memilbogam",
-       "93-hwanggeum-gotgan"
-      ],
-      "autumn": [],
-      "winter": [
-       "isibo-wonju"
-      ]
-     }
+     ]
     },
     {
      "key": "lager",
@@ -1772,18 +1525,7 @@
        "name": "Nasu Kohgen Ai",
        "label": null
       }
-     ],
-     "new": [
-      "nasu-kohgen-ai"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "nasu-kohgen-ai"
-      ],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "pale-ale",
@@ -1797,20 +1539,7 @@
        "name": "Swanlake Amber Swan Ale",
        "label": null
       }
-     ],
-     "new": [
-      "swanlake-amber-swan-ale"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "swanlake-amber-swan-ale"
-      ],
-      "autumn": [
-       "swanlake-amber-swan-ale"
-      ],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "ipa",
@@ -1824,18 +1553,7 @@
        "name": "Isekado Mr. DANK",
        "label": null
       }
-     ],
-     "new": [
-      "isekado-mr-dank"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "isekado-mr-dank"
-      ],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "wheat",
@@ -1849,18 +1567,7 @@
        "name": "Minoh Hoppy Weizen",
        "label": null
       }
-     ],
-     "new": [
-      "minoh-hoppy-weizen"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "minoh-hoppy-weizen"
-      ],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "saison",
@@ -1874,18 +1581,7 @@
        "name": "Nara Eighty Eight",
        "label": null
       }
-     ],
-     "new": [
-      "nara-eighty-eight"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "nara-eighty-eight"
-      ],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "specialty",
@@ -1901,18 +1597,7 @@
        "name": "Underwater Luminous Sake Yeast Beer",
        "label": "img/labels/underwater-luminous-sake-yeast-beer.webp"
       }
-     ],
-     "new": [
-      "underwater-luminous-sake-yeast-beer"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "underwater-luminous-sake-yeast-beer"
-      ],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "other",
@@ -1934,20 +1619,7 @@
        "name": "Underwater Sake Yeast Beer",
        "label": "img/labels/underwater-sake-yeast-beer.webp"
       }
-     ],
-     "new": [
-      "under-15m",
-      "underwater-sake-yeast-beer"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "under-15m",
-       "underwater-sake-yeast-beer"
-      ],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     }
    ]
   },
@@ -2019,18 +1691,7 @@
        "name": "Santa Helena Varietal Cabernet Sauvignon 2025",
        "label": "img/labels/santa-helena-varietal-cabernet-sauvignon-2025.webp"
       }
-     ],
-     "new": [
-      "santa-helena-varietal-cabernet-sauvignon-2025"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "santa-helena-varietal-cabernet-sauvignon-2025"
-      ],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "merlot",
@@ -2046,16 +1707,7 @@
        "name": "Casa Silva Merlot 2025",
        "label": "img/labels/casa-silva-merlot-2025.webp"
       }
-     ],
-     "new": [
-      "casa-silva-merlot-2025"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "blend",
@@ -2071,18 +1723,7 @@
        "name": "Pierre Jean Colombard Chardonnay 2025",
        "label": "img/labels/pierre-jean-colombard-chardonnay-2025.webp"
       }
-     ],
-     "new": [
-      "pierre-jean-colombard-chardonnay-2025"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [
-       "pierre-jean-colombard-chardonnay-2025"
-      ],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     }
    ]
   },
@@ -2123,21 +1764,7 @@
        "name": "Ardbeg Smoketrails Côte Rôtie Edition",
        "label": "img/labels/ardbeg-smoketrails-cote-rotie-edition.webp"
       }
-     ],
-     "new": [
-      "woodford-reserve-distillers-select",
-      "suntory-world-whisky-ao",
-      "kavalan-distillery-reserve-peated-single-cask-strength",
-      "ardbeg-smoketrails-cote-rotie-edition"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [],
-      "winter": [
-       "suntory-world-whisky-ao"
-      ]
-     }
+     ]
     },
     {
      "key": "gin",
@@ -2153,16 +1780,7 @@
        "name": "The Botanist Islay Dry Gin",
        "label": "img/labels/the-botanist-islay-dry-gin.webp"
       }
-     ],
-     "new": [
-      "the-botanist-islay-dry-gin"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "brandy",
@@ -2178,18 +1796,7 @@
        "name": "Chusa 40",
        "label": "img/labels/chusa-40.webp"
       }
-     ],
-     "new": [
-      "chusa-40"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [
-       "chusa-40"
-      ],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "shochu",
@@ -2205,16 +1812,7 @@
        "name": "Kujira no Kuromugi",
        "label": "img/labels/kujira-no-kuromugi.webp"
       }
-     ],
-     "new": [
-      "kujira-no-kuromugi"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     },
     {
      "key": "soju",
@@ -2230,16 +1828,7 @@
        "name": "Hwanggeumbori Jeungryuju 17",
        "label": "img/labels/hwanggeumbori-jeungryuju-17.webp"
       }
-     ],
-     "new": [
-      "hwanggeumbori-jeungryuju-17"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [],
-      "winter": []
-     }
+     ]
     }
    ]
   },
@@ -2269,25 +1858,7 @@
        "name": "Kavalan Dry Single Malt Highball",
        "label": "img/labels/kavalan-dry-single-malt-highball.webp"
       }
-     ],
-     "new": [
-      "kavalan-highball-whisky-soda",
-      "kavalan-dry-single-malt-highball"
-     ],
-     "season": {
-      "spring": [
-       "kavalan-highball-whisky-soda",
-       "kavalan-dry-single-malt-highball"
-      ],
-      "summer": [
-       "kavalan-highball-whisky-soda",
-       "kavalan-dry-single-malt-highball"
-      ],
-      "autumn": [],
-      "winter": [
-       "kavalan-highball-whisky-soda"
-      ]
-     }
+     ]
     }
    ]
   }

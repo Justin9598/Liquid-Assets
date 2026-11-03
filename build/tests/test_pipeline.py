@@ -331,7 +331,9 @@ def test_plan_10_shelf_data_aliases_and_front_only_photos(tmp_path):
     ferm = [s["key"] for s in by["fermented"]["subcategories"]]
     assert "ipa" in ferm
     sake = by["sake"]["subcategories"][0]
-    assert {"id", "name", "label"} <= set(sake["drinks"][0]) and len(sake["new"]) <= 5 and set(sake["season"]) == {"spring", "summer", "autumn", "winter"}
+    assert {"id", "name", "label"} <= set(sake["drinks"][0]) and "new" not in sake and "season" not in sake        # only Umeshu follows the counter
+    um = by["umeshu"]["subcategories"][0]
+    assert len(um["new"]) <= 5 and set(um["season"]) == {"spring", "summer", "autumn", "winter"}
     assert len(shelf["counter"]["newArrivals"]) >= 5
     # old addresses: the build writes the table the router follows
     al = load(ship, "aliases.json")

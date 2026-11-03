@@ -303,3 +303,30 @@ This replaces the §3 table for the lower shelves:
   - In category view, tapping a subcategory **bottle** opens that subcategory's view, with its caption and its own drinks.
   - In that view, tapping a bottle opens its drink.
 - **Commit** as "Plan 10 §12: subcategory bottles open the subcategory", ending with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. **No push.**
+
+## 13. Subcategory bottles open the list page (2026-11-03, owner request)
+
+**The owner's words:** "when clicked on the lowest subcategory just open the see all screen for that subcategory, no need to fill and display the bottles on the shelf".
+
+This replaces §12 for **category view**:
+- **Tapping a subcategory bottle or its chalk board** opens that subcategory's **list page**, `#/{cat}/{sub}`. That's the same page "See all" opened. The shelves no longer fill with that subcategory's drinks.
+- **Address and Back:** the list page is a normal route change, so it adds a history entry, and Back returns to the bar.
+- **The single button** (bottle and board) becomes a single link to the list page. Its label is "{Subcategory}, {n} drinks, see all".
+
+**What stays:**
+- At **Rest**, lower-shelf bottles open their drink (§12).
+- **New arrivals** and **In season** still fill the shelves (§4.4, §4.5), and their bottles open drinks.
+- **Umeshu** has no subcategories, so opening it from the top shelf still fills the shelves with its 3 drinks (§4.3), and the counter still follows it (§6.2).
+- The **top shelf**, the **counter** and the **clock** are unchanged.
+
+**What goes:**
+- The subcategory view on the bar (§4.3), for every category except Umeshu.
+- The counter's "in {Subcategory}" filter (§6.2), except for Umeshu.
+
+The code for both may stay if Umeshu uses it. Remove anything else that's now unused.
+
+**Check (smoke test, all four sizes):**
+- In category view, tapping a subcategory bottle lands on `#/{cat}/{sub}` (for example `#/sake/junmai-ginjo`), the list page with its drinks. Back returns to the bar.
+- The other §12 checks still pass, for Rest, New arrivals, In season and Umeshu.
+
+**Commit** as "Plan 10 §13: subcategory bottles open the list page", ending with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. **No push.**
