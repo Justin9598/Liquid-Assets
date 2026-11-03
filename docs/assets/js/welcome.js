@@ -163,6 +163,7 @@ export async function mount(root, ctx) {
    * two lower shelves, so the pitch is as wide as it can be (the tags need it). Tall: `visible` bottles in the
    * scrolling row, 3 unless their tags need more room (Plan 07 section 8.2). */
   let visible = 3;
+  let drinkPer = 9;                                  // phones, a view of drinks: bottles across the row (Plan 10 section 11.1)
   const kindOf = (list) => (!list.length ? 'sub' : list[0].mix ? 'mix' : list[0].sub ? 'sub' : 'drinks');
   function rowsV3(list) {
     const kind = mode;
@@ -183,11 +184,12 @@ export async function mount(root, ctx) {
       groups = sizes.map((n) => { const g = list.slice(k, k + n); k += n; return g; });
     } else {
       groups = [list];                                  // phones: one shelf, a few visible, scrolling sideways
-      per = mixed ? 3 : visible;
+      per = mixed ? 3 : drinks ? drinkPer : visible;
     }
     return shelves.map((s, i) => {
       const g = groups[i] || [];
-      return `<div class="shelf-row s3 lowrow${g.length === 1 ? ' single' : ''}" data-shelf="${nTop + i}" style="${shelfStyle(s)};--per:${per}"><div class="row-items">${g.map(slotHTML).join('')}</div></div>`;
+      const cue = kind === 'tall' && drinks ? '<span class="more-cue chalkboard chalkboard--s" aria-hidden="true">→</span>' : '';
+      return `<div class="shelf-row s3 lowrow${g.length === 1 ? ' single' : ''}${drinks ? ' drinks' : ''}" data-shelf="${nTop + i}" style="${shelfStyle(s)};--per:${per}"><div class="row-items">${g.map(slotHTML).join('')}</div>${cue}</div>`;
     }).join('');
   }
 
@@ -219,6 +221,12 @@ export async function mount(root, ctx) {
     lower.dataset.mode = kindOf(list);
     if (mode === 'tall' && lower.dataset.mode === 'sub') {         // fewer bottles in view until every tag fits
       while (visible > 1 && !tagsFit()) { visible -= 1; lower.innerHTML = rowsV3(list); }
+    }
+    if (mode === 'tall' && lower.dataset.mode === 'drinks') {      // tighter spacing for drinks: about 1.15 bottle widths apart, never fewer than 6 across
+      const row = $('.lowrow .row-items', lower);
+      const widest = Math.max(0, ...$$('.art > *', row).map((e) => e.getBoundingClientRect().width));
+      const per = widest && row.clientWidth ? Math.max(6, Math.floor(row.clientWidth / (1.15 * widest))) : drinkPer;
+      if (per !== drinkPer) { drinkPer = per; lower.innerHTML = rowsV3(list); }
     }
     if (mode === 'tall') watchFades($('.lowrow .row-items', lower));
     clearBehindCounter();
@@ -313,6 +321,7 @@ export async function mount(root, ctx) {
       const max = el.scrollWidth - el.clientWidth;
       el.style.setProperty('--fl', el.scrollLeft > 4 ? '9%' : '0%');
       el.style.setProperty('--fr', max - el.scrollLeft > 4 ? '9%' : '0%');
+      el.parentElement?.classList.toggle('has-more', max - el.scrollLeft > 4);         // the chalk arrow shows only while more bottles are hidden
       cancelAnimationFrame(blockRaf);
       blockRaf = requestAnimationFrame(clearBehindCounter);
     };

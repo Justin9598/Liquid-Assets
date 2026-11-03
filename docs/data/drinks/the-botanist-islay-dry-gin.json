@@ -2,7 +2,7 @@
  "id": "the-botanist-islay-dry-gin",
  "name": "The Botanist Islay Dry Gin",
  "category": "spirits",
- "sub": "other",
+ "sub": "gin",
  "producer": {
   "key": "bruichladdich",
   "name": "Bruichladdich",
@@ -17,6 +17,10 @@
  "favourite": false,
  "rating": null,
  "spec": [
+  {
+   "label": "Type",
+   "value": "Gin"
+  },
   {
    "label": "Flavouring or botanicals",
    "value": "22 foraged Islay botanicals, nine classic gin botanicals"
@@ -51,6 +55,6 @@
   }
  ],
  "moreFromProducer": [],
- "prev": "chusa-40",
- "next": "chusa-40"
+ "prev": "the-botanist-islay-dry-gin",
+ "next": "the-botanist-islay-dry-gin"
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T03:55:43Z",
+ "generated": "2026-11-03T05:31:13Z",
  "categories": [
   {
    "key": "sake",
@@ -2140,6 +2140,58 @@
      }
     },
     {
+     "key": "gin",
+     "name": "Gin",
+     "native": null,
+     "drinkCount": 1,
+     "labels": [
+      "img/labels/the-botanist-islay-dry-gin.webp"
+     ],
+     "drinks": [
+      {
+       "id": "the-botanist-islay-dry-gin",
+       "name": "The Botanist Islay Dry Gin",
+       "label": "img/labels/the-botanist-islay-dry-gin.webp"
+      }
+     ],
+     "new": [
+      "the-botanist-islay-dry-gin"
+     ],
+     "season": {
+      "spring": [],
+      "summer": [],
+      "autumn": [],
+      "winter": []
+     }
+    },
+    {
+     "key": "brandy",
+     "name": "Brandy",
+     "native": null,
+     "drinkCount": 1,
+     "labels": [
+      "img/labels/chusa-40.webp"
+     ],
+     "drinks": [
+      {
+       "id": "chusa-40",
+       "name": "Chusa 40",
+       "label": "img/labels/chusa-40.webp"
+      }
+     ],
+     "new": [
+      "chusa-40"
+     ],
+     "season": {
+      "spring": [],
+      "summer": [],
+      "autumn": [
+       "chusa-40"
+      ],
+      "winter": []
+     }
+    },
+    {
      "key": "shochu",
      "name": "Shochu",
      "native": null,
@@ -2186,40 +2238,6 @@
       "spring": [],
       "summer": [],
       "autumn": [],
-      "winter": []
-     }
-    },
-    {
-     "key": "other",
-     "name": "Other spirits",
-     "native": null,
-     "drinkCount": 2,
-     "labels": [
-      "img/labels/chusa-40.webp",
-      "img/labels/the-botanist-islay-dry-gin.webp"
-     ],
-     "drinks": [
-      {
-       "id": "the-botanist-islay-dry-gin",
-       "name": "The Botanist Islay Dry Gin",
-       "label": "img/labels/the-botanist-islay-dry-gin.webp"
-      },
-      {
-       "id": "chusa-40",
-       "name": "Chusa 40",
-       "label": "img/labels/chusa-40.webp"
-      }
-     ],
-     "new": [
-      "the-botanist-islay-dry-gin",
-      "chusa-40"
-     ],
-     "season": {
-      "spring": [],
-      "summer": [],
-      "autumn": [
-       "chusa-40"
-      ],
       "winter": []
      }
     }
@@ -2350,7 +2368,7 @@
     "id": "the-botanist-islay-dry-gin",
     "name": "The Botanist Islay Dry Gin",
     "category": "spirits",
-    "sub": "other",
+    "sub": "gin",
     "label": "img/labels/the-botanist-islay-dry-gin.webp"
    },
    {
@@ -2819,7 +2837,7 @@
      "id": "chusa-40",
      "name": "Chusa 40",
      "category": "spirits",
-     "sub": "other",
+     "sub": "brandy",
      "label": "img/labels/chusa-40.webp"
     },
     {

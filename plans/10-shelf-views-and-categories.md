@@ -242,3 +242,42 @@ The same as today: the lower shelves show the category's subcategory bottles. On
 | D5 | Shelf views and addresses | Designer's choice: views don't change the address. Esc or the clock resets them. |
 | D6 | More than 5 | Up to 24 precomputed, shown up to the measured shelf capacity. |
 | D7 | The two untyped spirits (owner approved 2026-11-03) | `the-botanist-islay-dry-gin` is **Gin** and `chusa-40` is **Brandy** (Korean apple spirit, oak-aged, listed as brandy by the IWSC). Both fill the existing empty `Other Detail.Type` cells. They're entered after the Plan 10 build commit, so the two don't clash. |
+
+## 11. Review fixes (2026-11-03)
+
+The designer reviewed `reports/plan10/` (commit `743a4ad`).
+- **Desktop is right:** the new top shelf, the compact counter groups, the clock on the wall, and the Junmai Ginjo view (19 bottles, "See all 75", and the counter's "in Junmai Ginjo" lines).
+- **Phones have two faults.**
+
+### 11.1 Phone drink views must show more than 5 bottles at once
+
+- **Fault:** on the tall plate, the six categories now take the top two shelves. Every drink view (subcategory, Umeshu, New arrivals, In season) uses only the bottom shelf, as a scrolling row that shows **3 bottles at a time.** "New arrivals · 24" shows 3. That misses the brief ("more than 5").
+- **Fix:**
+  - In a drink view on phones, the bottom shelf shows **at least 6 bottles side by side without scrolling** at 375 and 390 wide.
+  - **Spacing:** use a tighter bottle spacing for drink views only, about 1.15 bottle widths apart. Bottle size stays as it is, and bottles may not overlap.
+  - **Overflow:** any extra bottles sit off to the right in the same row, reached by sideways swipe. A chalk "→" cue sits at the row's right end while more are hidden, and "See all {n}" is the last item when there's a list page.
+  - **Caption:** the caption board stays where it is now, in the slate's place.
+- **Check:** the smoke test confirms that at 375×812 and 390×844, every drink view shows at least 6 whole bottles inside the visible plate with no overlap. The "→" cue appears only when items are hidden.
+
+### 11.2 The "Fermented Beverages" tag overlaps the Spirits bottle on phones
+
+- **Fault:** the two-line tag on the first row touches the top of the Spirits bottle on the row below. This breaks the Plan 07 §8.2 rule: tags never overlap.
+- **Fix:** keep the full name. Keep it clear by one or both of these:
+  - smaller tag lettering on phones only, down to no less than 12px;
+  - the tag sitting a little higher on its shelf edge.
+
+  Never abbreviate it, and never move the Spirits bottle out of its row.
+- **Check:** the existing pairwise no-overlap smoke check covers category tags against every bottle on the tall plate at both phone sizes, in every view.
+
+### 11.3 With the two spirit types entered (D7)
+
+The researcher enters Gin and Brandy before this round. Spirits then opens to Whisky, Gin, Brandy, Shochu and Soju, with no "Other spirits".
+- Update the tests that expected "Other spirits".
+- Retake the Spirits category view screenshot.
+
+### 11.4 Acceptance
+
+- [ ] §11.1 to §11.3 pass their checks.
+- [ ] Retake the four phone screenshots of each drink view, plus a Spirits category view at all four sizes, into `reports/plan10/`.
+- [ ] The full pytest passes, the build has 0 errors, and the privacy scan is clean.
+- [ ] Commit as "Plan 10 review fixes: phone drink views, Fermented tag, spirit types", ending with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. **No push.**
