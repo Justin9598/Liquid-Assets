@@ -30,7 +30,7 @@
  "drinks": [
   {
    "id": "swanlake-amber-swan-ale",
-   "category": "beer",
+   "category": "fermented",
    "sub": "pale-ale"
   }
  ],

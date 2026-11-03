@@ -1,8 +1,8 @@
 {
  "id": "isibo-wonju",
  "name": "Isibo Wonju",
- "category": "makgeolli",
- "sub": "all",
+ "category": "fermented",
+ "sub": "makgeolli",
  "producer": {
   "key": "isibo-brewery",
   "name": "Isibo Brewery",
@@ -50,13 +50,6 @@
    "kind": "front",
    "caption": "Front label",
    "web": "img/web/isibo-wonju-1.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/isibo-wonju-2.webp",
    "w": 675,
    "h": 1200
   }

@@ -119,6 +119,8 @@ The seven shapes have to stay distinct when seen side by side. In particular, ke
 
 ## 4. Taxonomy: category → subcategories
 
+> *Superseded in part by [Plan 10 §2](10-shelf-views-and-categories.md) (2026-11-03): Fermented Beverages (Makgeolli and Beer), Umeshu as its own category, Liqueur hidden while empty, and one Spirits bottle per distilled type.*
+
 This section maps the owner's brief onto the ledger as it stands. The counts are unique drinks (unique `ID`s).
 
 **Shared rule:** a subcategory with 0 drinks is **hidden** and reappears once it has a drink. When a category's sub-type field hasn't been filled in yet, its drinks still get a bottle, so nothing goes missing from the shelf. Which bottle depends on the category:

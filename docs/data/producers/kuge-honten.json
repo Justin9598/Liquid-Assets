@@ -30,8 +30,8 @@
  "drinks": [
   {
    "id": "kabosu-umeshu-sakurayama",
-   "category": "liqueur",
-   "sub": "umeshu"
+   "category": "umeshu",
+   "sub": "all"
   }
  ],
  "moreFromRegion": []

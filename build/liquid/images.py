@@ -37,13 +37,9 @@ def plan_outputs(photo_map):
                              "crop": e["labelCrop"], "id": did})
             jobs.append({"out": f"img/thumbs/{did}.webp", "src": e["front"], "type": "thumb",
                          "crop": e.get("thumbCrop"), "id": did})
-        n = 0
-        ordered = ([("front", e["front"])] if e.get("front") else []) + \
-                  [(o["kind"], o["file"]) for o in e.get("others", [])]
-        for kind, f in ordered:
-            n += 1
-            jobs.append({"out": f"img/web/{did}-{n}.webp", "src": f, "type": "web", "crop": None, "id": did,
-                         "kind": kind, "n": n})
+        if e.get("front"):             # the front image only: back labels and other views are not published (Plan 10 section 7)
+            jobs.append({"out": f"img/web/{did}-1.webp", "src": e["front"], "type": "web", "crop": None, "id": did,
+                         "kind": "front", "n": 1})
     return jobs
 
 

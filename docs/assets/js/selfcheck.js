@@ -76,6 +76,13 @@ export async function run(ctx) {
   stats.categories = {};
   for (const c of ix.shelf.categories) {
     location.hash = `#/${c.key}`;
+    if (c.direct) {                                                 // Umeshu opens straight to its drinks (Plan 10 section 2.3)
+      await until(() => $('#lower')?.dataset.mode === 'drinks' && $$('#lower .slot.drink').length === Math.min(c.drinkCount, 24));
+      finishAll();
+      stats.categories[c.key] = { direct: true, drinks: $$('#lower .slot.drink').length };
+      if ($$('#lower .slot.drink').length === 0) bad(`${c.key}: no drinks on the shelves`);
+      continue;
+    }
     await until(() => $('#lower')?.dataset.mode === 'sub' && $$('#lower .slot.sub').length === c.subcategories.length);
     finishAll();
     await sleep(60);

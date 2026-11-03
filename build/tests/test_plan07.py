@@ -100,7 +100,7 @@ def test_new_arrivals_rank_by_latest_occasion_with_ties_to_the_later_row():
     got = [d["id"] for d in counter_mod.rank_recent(ds)]
     assert got[:3] == ["d3", "d2", "d1"] and len(set(got)) == len(got)
     c, _ = counter_mod.build_counter(ds, {}, CFG, Issues())
-    assert [x["id"] for x in c["newArrivals"]] == got[:5]
+    assert [x["id"] for x in c["newArrivals"]] == got and len(got) <= counter_mod.LIMIT      # the first 5 are the counter's, the rest feed the view
 
 
 def test_season_picks_match_whole_words_cap_categories_and_honour_pins_and_exclude():
@@ -112,11 +112,11 @@ def test_season_picks_match_whole_words_cap_categories_and_honour_pins_and_exclu
     picks = counter_mod.season_picks(ds, {}, CFG, issues)
     autumn = [p[0]["id"] for p in picks["autumn"]]
     assert "d1" not in autumn[:4] and autumn[0] == "d2"                       # the favourite match leads
-    assert sum(1 for p in picks["autumn"] if p[0]["category"] == "sake") <= 3  # 2 matches + a filler at most; cap is 2 first
+    assert sum(1 for p in picks["autumn"][:5] if p[0]["category"] == "sake") <= 3    # the counter's own 5 keep the category cap
     assert [p[0]["id"] for p in picks["autumn"][:4]].count("d3") <= 1
     assert "ABV 11%" in next(p for p in picks["summer"] if p[0]["id"] == "d7")[2]     # low ABV counts as a summer match
     assert "d8" in [p[0]["id"] for p in picks["winter"]]                       # 'Stout/Porter' is two keywords
-    assert all(len(picks[s]) == 5 for s in counter_mod.SEASONS)
+    assert all(5 <= len(picks[s]) <= counter_mod.LIMIT for s in counter_mod.SEASONS)         # 5 for the counter, the rest for the view
     cfg = {**CFG, "pins": {"autumn": ["d6", "nope"]}, "exclude": ["d2"]}
     issues = Issues()
     picks = counter_mod.season_picks(ds, {}, cfg, issues)

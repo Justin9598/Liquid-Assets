@@ -1,0 +1,42 @@
+{
+ "routes": [
+  {
+   "from": "makgeolli",
+   "to": "fermented/makgeolli"
+  },
+  {
+   "from": "makgeolli/*",
+   "to": "fermented/makgeolli"
+  },
+  {
+   "from": "beer",
+   "to": "fermented"
+  },
+  {
+   "from": "beer/all",
+   "to": "fermented/other"
+  },
+  {
+   "from": "beer/*",
+   "to": "fermented/*"
+  },
+  {
+   "from": "liqueur/umeshu",
+   "to": "umeshu"
+  }
+ ],
+ "producers": {
+  "asahi-shuzo": "asahi-shuzo-niigata",
+  "asahi-shuzo-dassai": "asahi-shuzo-yamaguchi",
+  "date-seven-koganesawa-style-miyagi-collective": "date-seven",
+  "date-seven-yamawa-haginotsuru-miyagi-collective": "date-seven",
+  "date-seven-yamawa-style-miyagi-collective": "date-seven",
+  "hakushika-tatsuuma-honke": "hakushika",
+  "konohana-brewery-allwright": "konohana-brewery",
+  "machida-shuzo": "machida-shuzoten",
+  "obuse-winery-sogga-pere-et-fils": "obuse-winery",
+  "ricewine-k-k-hinemos": "ricewine-k-k",
+  "wakaze-kura-grand-paris": "wakaze",
+  "yamamoto-gomei-kaisha": "yamamoto-shuzoten"
+ }
+}

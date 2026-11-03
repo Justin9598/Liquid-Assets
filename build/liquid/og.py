@@ -1,7 +1,6 @@
 """Share image and PNG favicon (Plan 06 section 8), drawn at build time from the site's own SVG artwork.
 
-The bottle outlines, colours and label areas are read out of docs/assets/js/bottles.js (the same SPECS the pages
-draw), flattened to polygons and painted with Pillow. The sign uses the Rye font kept in build/fonts (SIL OFL).
+The bottle outlines, colours and label areas are read out of build/liquid/og_specs.js (the SPECS the pages once drew), flattened to polygons and painted with Pillow. The sign uses the Rye font kept in build/fonts (SIL OFL).
 Everything is seeded, so the same inputs give the same bytes.
 """
 from __future__ import annotations
@@ -16,9 +15,10 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageOps
 W, H, S = 1200, 630, 2           # output size and supersampling factor
 GLASS_OP = {"sake": 0.92, "makgeolli": 0.3, "liqueur": 0.2, "beer": 0.9, "wine": 0.95, "spirits": 0.28,
             "cocktail": 0.35, "highball": 0.3}
-TOP = ["sake", "makgeolli", "liqueur", "beer", "wine", "spirits", "cocktail"]
-LOWER = ["sake", "makgeolli", "liqueur", "beer", "wine", "spirits", "highball"]
-LOWER_CAT = {"sake": "sake", "makgeolli": "makgeolli", "liqueur": "liqueur", "beer": "beer", "wine": "wine",
+# the six shelves of Plan 10: vessel drawn -> category whose label it wears
+TOP = ["sake", "beer", "liqueur", "wine", "spirits", "cocktail"]
+LOWER = ["sake", "beer", "liqueur", "wine", "spirits", "highball"]
+LOWER_CAT = {"sake": "sake", "beer": "fermented", "liqueur": "umeshu", "wine": "wine",
              "spirits": "spirits", "highball": "cocktails"}
 
 
@@ -487,7 +487,7 @@ def scene_image(specs, font_path, labels):
     d.line([sx1 + 2 * s, sy0, sx1 + 2 * s, sy1], fill=(165, 127, 82), width=2 * s)
     plank(scene, sx0 - 16 * s, sx1 + 16 * s, sy0 - 2 * s, 14 * s)
     side_bay(scene)
-    xs = [225 + i * 118 for i in range(7)]
+    xs = [225 + i * 138 for i in range(6)]
     for key, x in zip(TOP, xs):
         draw_vessel(scene, specs[key], key, x * s, 292 * s, 100 * s)
     plank(scene, sx0 - 16 * s, sx1 + 16 * s, 292 * s, 12 * s)
@@ -589,7 +589,7 @@ def _save_if_changed(img, path):
 def generate(docs_dir, font_path):
     """Write docs/assets/og-image.png and docs/favicon.png. Skipped when the site code is not there yet."""
     docs_dir = Path(docs_dir)
-    js = docs_dir / "assets" / "js" / "bottles.js"
+    js = Path(__file__).with_name("og_specs.js")       # the bottle outlines the share image draws (kept for the build only)
     if not js.exists() or not Path(font_path).exists():
         return []
     specs = parse_specs(js.read_text(encoding="utf-8"))

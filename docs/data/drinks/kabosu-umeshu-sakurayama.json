@@ -1,8 +1,8 @@
 {
  "id": "kabosu-umeshu-sakurayama",
  "name": "Kabosu & Umeshu Sakurayama",
- "category": "liqueur",
- "sub": "umeshu",
+ "category": "umeshu",
+ "sub": "all",
  "producer": {
   "key": "kuge-honten",
   "name": "Kuge Honten",

@@ -93,9 +93,9 @@ def test_classify_wine_blend_and_fallbacks():
     by = {d["id"]: d for d in drinks}
     assert (by["w1"]["category"], by["w1"]["sub"]) == ("wine", "blend")
     assert (by["w2"]["sub"], by["w2"]["sub_name"]) == ("merlot", "Merlot")
-    assert (by["b1"]["category"], by["b1"]["sub"]) == ("beer", "ipa")
+    assert (by["b1"]["category"], by["b1"]["sub"]) == ("fermented", "ipa")
     assert by["x1"]["category"] is None
-    assert (by["u1"]["category"], by["u1"]["sub"]) == ("liqueur", "umeshu")  # Umeshu is a kind of Liqueur; IPA only warns
+    assert (by["u1"]["category"], by["u1"]["sub"]) == ("umeshu", "all")  # Umeshu is its own category (Plan 10); IPA only warns
     assert by["s1"]["sub"] == "ungraded"
     assert sorted(w["code"] for w in issues.warnings) == ["W03", "W07"]
 
@@ -187,7 +187,7 @@ def test_other_bottle_when_some_drinks_have_a_sub_type():
     assert (by["s1"]["sub"], by["s1"]["sub_name"]) == ("other", "Other spirits")
     assert by["s2"]["sub"] == "other" and by["g"]["sub"] == "gin" and by["w"]["sub"] == "whisky"
     assert by["s1"]["sub_order"] > by["g"]["sub_order"]          # placed last
-    assert by["b1"]["sub"] == by["b2"]["sub"] == "all"           # nothing in Beer has a type: single bottle
+    assert (by["b1"]["sub"], by["b1"]["sub_name"]) == ("other", "Other beer") and by["b2"]["sub"] == "other"   # untyped beer: Other beer
 
 
 def test_dotted_front_and_back_suffixes():
@@ -213,16 +213,17 @@ def test_liqueur_kinds_and_other_bottle():
     model.join_details(L, drinks, issues)
     model.classify(L, drinks, issues)
     by = {d["id"]: d for d in drinks}
-    assert all(d["category"] == "liqueur" for d in drinks)
-    assert (by["u"]["sub"], by["u"]["sub_name"]) == ("umeshu", "Umeshu")
+    assert all(d["category"] == "liqueur" for d in drinks if d["id"] != "u")
+    assert (by["u"]["category"], by["u"]["sub"], by["u"]["sub_name"]) == ("umeshu", "all", "Umeshu")      # its own category (Plan 10)
     assert by["y"]["sub"] == "yuzushu" and by["c"]["sub"] == "cream"
     assert (by["o"]["sub"], by["o"]["sub_name"]) == ("other", "Other liqueurs")
     order = sorted(drinks, key=lambda d: d["sub_order"])
-    assert [d["id"] for d in order] == ["u", "c", "y", "o"]      # umeshu, then kinds A-Z, other last
+    assert [d["id"] for d in order if d["id"] != "u"] == ["c", "y", "o"]      # kinds A-Z, other last
     assert model.build_facts(by["u"]) == ["Classic", "Shochu"]    # umeshu flavour/base is a card fact
     assert model.build_facts(by["c"]) == ["Dairy"]
 
 
-def test_old_umeshu_category_is_gone():
+def test_categories_follow_plan_10():
     from liquid import taxonomy as T
-    assert "umeshu" not in {k for k, _, _ in T.CATEGORIES} and "liqueur" in {k for k, _, _ in T.CATEGORIES}
+    assert [k for k, _, _ in T.CATEGORIES] == ["sake", "fermented", "umeshu", "liqueur", "wine", "spirits", "cocktails"]
+    assert T.CORE_TO_CATEGORY["Makgeolli"] == T.CORE_TO_CATEGORY["Beer"] == "fermented" and T.CORE_TO_CATEGORY["Umeshu"] == "umeshu"

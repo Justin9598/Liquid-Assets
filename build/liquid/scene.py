@@ -255,6 +255,9 @@ def validate_manifest(m, issues):
             bad(f"{kind}.sign needs x0, y0, x1, y1 fractions")
         if not _frac(P.get("counterTop")):
             bad(f"{kind}.counterTop must be a fraction")
+        ck = P.get("clock")
+        if not (isinstance(ck, dict) and all(_frac(ck.get(k)) for k in ("x", "y", "size"))):
+            bad(f"{kind}.clock needs x, y and size fractions (Plan 10 section 5)")
         ct = P.get("content_top")
         if not _frac(ct) or (_frac(sg.get("y1")) and ct < sg["y1"]) or ct > 0.6:
             bad(f"{kind}.content_top must be a fraction at or below the sign's bottom edge (sign.y1) and at most 0.6")
@@ -278,7 +281,7 @@ def validate_manifest(m, issues):
     return ok
 
 
-FEATURES = ("counter", "content_top")   # desktop features that need phone values on the tall plate (Plan 07 section 5.3, Plan 08 section 3.1)
+FEATURES = ("counter", "content_top", "clock")   # desktop features that need phone values on the tall plate (Plan 07 section 5.3, Plan 08 section 3.1)
 
 
 def check_parity(manifest, info, issues):
@@ -330,13 +333,32 @@ def validate_shells(cfg, issues):
     return ok
 
 
+SHELF_VIEW_LIMIT = 24          # drinks precomputed per view (Plan 10 section 4.7)
+
+
+def lower_capacity(P, kind, shells):
+    """How many bottles the lower shelves hold at the standard spacing, never below the Plan 07 bottle size (Plan 10 section 4.7):
+    a bottle is 82% of the clear height of its shelf, and two bottle widths are allowed per place. The widest shell sets the pitch.
+    The tall plate has one scrolling shelf, so it holds the whole view and scrolls sideways. Capped at the precomputed 24."""
+    shelves = P["shelves"][1:] if kind == "wide" else P["shelves"][2:]
+    if kind == "tall":
+        return {"shelves": 1, "perShelf": SHELF_VIEW_LIMIT, "total": SHELF_VIEW_LIMIT, "scrolls": True}
+    aspect = max([s.get("aspect", 0.35) for s in shells.values()] or [0.35])
+    per = 0
+    for s in shelves:
+        bottle_w = s["clear"] * 0.82 * aspect / P["ratio"]
+        per = max(per, int((s["x1"] - s["x0"]) / (2 * bottle_w)))
+    return {"shelves": len(shelves), "perShelf": per, "total": min(SHELF_VIEW_LIMIT, per * len(shelves)), "scrolls": False}
+
+
 def merge(manifest, info):
     """data/scene.json: the measured manifest plus the converted files. `ready` needs both plates."""
     out = {"version": manifest.get("version", 1), "ready": False, "plates": {}, "shells": {}}
     for kind, P in manifest["plates"].items():
         conv = info.get("plates", {}).get(kind)
         plate = {"ratio": conv["ratio"] if conv else P["ratio"], "shelves": P["shelves"], "sign": P["sign"],
-                 "content_top": P["content_top"], "counterTop": P["counterTop"], "anchors": P["anchors"]}
+                 "content_top": P["content_top"], "clock": P["clock"], "counterTop": P["counterTop"], "anchors": P["anchors"]}
+        plate["lowerCapacity"] = lower_capacity(P, kind, info.get("shells") or {})
         if conv:
             plate["files"] = conv["files"]
         out["plates"][kind] = plate

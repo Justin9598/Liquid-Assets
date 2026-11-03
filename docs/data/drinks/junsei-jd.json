@@ -65,20 +65,6 @@
    "web": "img/web/junsei-jd-1.webp",
    "w": 675,
    "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/junsei-jd-2.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "second",
-   "caption": "Second photo",
-   "web": "img/web/junsei-jd-3.webp",
-   "w": 675,
-   "h": 1200
   }
  ],
  "moreFromProducer": [

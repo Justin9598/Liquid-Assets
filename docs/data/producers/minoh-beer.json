@@ -28,7 +28,7 @@
  "drinks": [
   {
    "id": "minoh-hoppy-weizen",
-   "category": "beer",
+   "category": "fermented",
    "sub": "wheat"
   }
  ],

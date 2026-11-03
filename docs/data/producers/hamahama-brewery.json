@@ -21,8 +21,8 @@
  "drinks": [
   {
    "id": "mangwoo-yakbang-memilbogam",
-   "category": "makgeolli",
-   "sub": "all"
+   "category": "fermented",
+   "sub": "makgeolli"
   }
  ],
  "moreFromRegion": [

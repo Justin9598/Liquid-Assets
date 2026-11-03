@@ -150,7 +150,7 @@ def test_drink_details_combination_and_photos(project):
     assert [v["where"] for v in a["visits"]] == [None, "Sake Hub"]   # newest first; "Unknown" -> null
     assert a["visits"][0]["price"] == 58.0
     assert [x["label"] for x in a["spec"]][:3] == ["Grade", "Polishing ratio", "Rice"]
-    assert [p["kind"] for p in a["photos"]] == ["front", "back"]
+    assert [p["kind"] for p in a["photos"]] == ["front"]          # the front image only (Plan 10 section 7)
     b = load(ship, "drinks/sake-b.json")
     assert b["tasting"]["palate"]["sweetness"] == "off-dry"
     assert b["tasting"]["nose"] if "nose" in b["tasting"] else True
@@ -243,7 +243,7 @@ def test_phase_1_publishes_the_welcome_page_data_only_and_deletes_leftovers(tmp_
     res = run(ship, phase=1)
     assert res.exit_code == 0
     data = ship / "docs" / "data"
-    assert sorted(p.relative_to(data).as_posix() for p in data.rglob("*") if p.is_file()) == ["build.json", "shelf.json"]
+    assert sorted(p.relative_to(data).as_posix() for p in data.rglob("*") if p.is_file()) == ["aliases.json", "build.json", "shelf.json"]
     assert not (ship / "docs" / "img" / "thumbs").exists() and not (ship / "docs" / "img" / "web").exists()
     assert (ship / "docs" / "img" / "labels" / "sake-a.webp").exists()
     assert load(ship, "build.json")["sections"] == {"welcome": True, "shelves": False, "drinks": False, "makers": False}
@@ -313,6 +313,43 @@ def test_the_on_disk_scan_reads_every_file_in_data_and_img_in_every_phase(tmp_pa
     text = " | ".join(e["message"] for e in bad.errors)
     for part in ("invoice", "named like an original photo", "metadata is not stripped in img/thumbs/exif.webp", "inside img/thumbs/bytes.webp"):
         assert part in text, (part, text)
+
+
+# ------------------------------------------------------------------ Plan 10: categories, shelf views data, aliases, front-only photos
+
+def test_plan_10_shelf_data_aliases_and_front_only_photos(tmp_path):
+    ship = make_project(tmp_path)
+    (ship / "content" / "aliases.json").write_text('{"producers": {"old-key": "alpha-shuzo"}}', encoding="utf-8")
+    res = run(ship)
+    assert res.exit_code == 0, res.issues.errors
+    shelf = load(ship, "shelf.json")
+    keys = [c["key"] for c in shelf["categories"]]
+    assert keys == ["sake", "fermented", "umeshu", "wine", "spirits"]       # Liqueur is empty, so it is left out (section 2.1)
+    by = {c["key"]: c for c in shelf["categories"]}
+    assert by["umeshu"]["direct"] is True and [s["key"] for s in by["umeshu"]["subcategories"]] == ["all"]
+    assert by["umeshu"]["subcategories"][0]["native"] == "梅酒" and by["umeshu"]["drinkCount"] == 2
+    ferm = [s["key"] for s in by["fermented"]["subcategories"]]
+    assert "ipa" in ferm
+    sake = by["sake"]["subcategories"][0]
+    assert {"id", "name", "label"} <= set(sake["drinks"][0]) and len(sake["new"]) <= 5 and set(sake["season"]) == {"spring", "summer", "autumn", "winter"}
+    assert len(shelf["counter"]["newArrivals"]) >= 5
+    # old addresses: the build writes the table the router follows
+    al = load(ship, "aliases.json")
+    assert {"from": "beer/*", "to": "fermented/*"} in al["routes"] and {"from": "liqueur/umeshu", "to": "umeshu"} in al["routes"]
+    assert {"from": "makgeolli", "to": "fermented/makgeolli"} in al["routes"] and al["producers"] == {"old-key": "alpha-shuzo"}
+    # one published photo per drink: the front image
+    web = sorted(p.name for p in (ship / "docs" / "img" / "web").iterdir())
+    assert web and all(n.endswith("-1.webp") for n in web)
+    assert [p["kind"] for p in load(ship, "drinks/sake-a.json")["photos"]] == ["front"]
+
+
+def test_the_lower_shelf_capacity_is_measured_and_capped():
+    from liquid import scene as scene_mod
+    P = json.loads((Path(__file__).resolve().parents[2] / "content" / "scene.json").read_text(encoding="utf-8"))["plates"]
+    wide = scene_mod.lower_capacity(P["wide"], "wide", {"sake": {"aspect": 0.33}, "spirits": {"aspect": 0.45}})
+    assert wide["shelves"] == 2 and 1 <= wide["perShelf"] and wide["total"] <= scene_mod.SHELF_VIEW_LIMIT
+    tall = scene_mod.lower_capacity(P["tall"], "tall", {})
+    assert tall["scrolls"] is True and tall["total"] == scene_mod.SHELF_VIEW_LIMIT
 
 
 # ------------------------------------------------------------------ Plan 09 section 7: W22, the maker About-text check

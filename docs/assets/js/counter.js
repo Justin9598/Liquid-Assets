@@ -23,11 +23,14 @@ const centre = (z) => (z.x0 + z.x1) / 2;
 /** The slate in the middle of the counter: absolute box over the centre zone. */
 export const slateStyle = (C) => `left:${pct(centre(C.slate))};top:${pct(C.slateY)};width:${pct(C.slate.x1 - C.slate.x0)}`;
 
+/** The bottles of a counter group (shared by the first draw and the later swaps when a subcategory is chosen). */
+export const rowHTML = (items, ix, art) => items.map((it) => bottleHTML(it, ix, art)).join('');
+
 function bottleHTML(it, ix, art) {
   const cat = ix.cats.get(it.category);
   const catName = cat ? cat.name : it.category;
   const def = DEFAULT_LABEL[it.category] || {};
-  const shape = shapeFor(it.category);
+  const shape = shapeFor(it.category, it.sub);
   const a = art(shape, { label: it.label && img(it.label), native: def.native, name: def.name, motif: motifFor(it.category, it.sub) });
   const tag = `<span class="cb-tag chalkboard chalkboard--s" aria-hidden="true"><span class="chalk">${esc(it.name)}</span></span>`;
   const body = `<span class="cb-art">${a}</span>${tag}`;
@@ -41,26 +44,26 @@ function bottleHTML(it, ix, art) {
 function groupHTML(id, title, zone, C, items, ix, art, tabs) {
   const top = C.baseY - C.bottleH;
   const style = `left:${pct(zone.x0)};width:${pct(zone.x1 - zone.x0)};top:${pct(top)};height:${pct(C.bottleH)}`;
-  const list = `<ul class="cg-row">${items.map((it) => bottleHTML(it, ix, art)).join('')}</ul>`;
+  const list = `<ul class="cg-row">${rowHTML(items, ix, art)}</ul>`;
   if (tabs) {                                   // phones: one group at a time behind a tab
     return `<section class="cgroup cg-${id}" id="cg-${id}" role="tabpanel" aria-labelledby="tab-${id}"${id === 'new' ? '' : ' hidden'} style="${style}">${list}</section>`;
   }
-  return `<section class="cgroup cg-${id}" aria-labelledby="cg-${id}-h" style="${style}">${list}</section>
-<p class="placard chalkboard chalkboard--m" id="cg-${id}-h" style="left:${pct(centre(zone))};top:${pct(C.slateY)}"><span class="chalk">${esc(title)}</span></p>`;
+  return `<section class="cgroup cg-${id}" id="cg-${id}" aria-labelledby="cg-${id}-h" style="${style}">${list}</section>
+<button type="button" class="placard chalkboard chalkboard--m" id="cg-${id}-h" data-view="${id === 'new' ? 'new' : 'season'}" style="left:${pct(centre(zone))};top:${pct(C.slateY)}"><span class="chalk">${esc(title)}</span><span class="in" hidden></span></button>`;
 }
 
 /** Both counter groups. Wide: two groups with placards. Tall: one group at a time behind two small tabs. */
 export function countersHTML(P, counter, season, ix, art, tabs = false) {
   const C = P.counter;
   if (!C || !counter) return '';
-  const n = counter.newArrivals || [];
-  const s = (counter.inSeason || {})[season] || [];
+  const n = (counter.newArrivals || []).slice(0, 5);                 // the counter's own set: the first 5 of each longer list
+  const s = ((counter.inSeason || {})[season] || []).slice(0, 5);
   const html = groupHTML('new', 'New arrivals', C.new, C, n, ix, art, tabs)
     + groupHTML('season', `In season: ${SEASON_NAMES[season]}`, C.season, C, s, ix, art, tabs);
   if (!tabs) return html;
   return html + `<div class="ctabs" role="tablist" aria-label="Counter" style="left:${pct(C.new.x0)};top:${pct(C.tabsY)}">
-  <button type="button" role="tab" id="tab-new" class="ctab chalkboard chalkboard--m" data-tab="new" aria-selected="true" aria-controls="cg-new" tabindex="0"><span class="chalk">New</span></button>
-  <button type="button" role="tab" id="tab-season" class="ctab chalkboard chalkboard--m" data-tab="season" aria-selected="false" aria-controls="cg-season" aria-label="In season: ${esc(SEASON_NAMES[season])}" tabindex="-1"><span class="chalk">In season</span></button>
+  <button type="button" role="tab" id="tab-new" class="ctab chalkboard chalkboard--m" data-tab="new" aria-selected="true" aria-controls="cg-new" tabindex="0"><span class="chalk">New</span><span class="in" hidden></span></button>
+  <button type="button" role="tab" id="tab-season" class="ctab chalkboard chalkboard--m" data-tab="season" aria-selected="false" aria-controls="cg-season" aria-label="In season: ${esc(SEASON_NAMES[season])}" tabindex="-1"><span class="chalk">In season</span><span class="in" hidden></span></button>
 </div>`;
 }
 
@@ -125,7 +128,7 @@ export function placeCounter(root, P, burgerRatio) {
   if (tabs) {
     set(root.querySelector('.cg-new'), nx0, sx1 - nx0);
     set(root.querySelector('.cg-season'), nx0, sx1 - nx0);
-    set(root.querySelector('.ctabs'), nx0);
+    set(root.querySelector('.ctabs'), (nx0 + sx1) / 2);
     return;
   }
   set(root.querySelector('.cg-new'), nx0, C.new.x1 - nx0);

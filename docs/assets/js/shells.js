@@ -22,5 +22,5 @@ export const shellHTML = (shape, opts = {}) => shellBottle(scene, shape, opts) |
 export function drinkShell(d, ix, labelOverride) {
   const info = d.category && ix.subs.get(`${d.category}/${d.sub}`);
   const label = labelOverride !== undefined ? labelOverride : (d.label ? img(d.label) : null);
-  return shellHTML(shapeFor(d.category), { label, native: info?.sub.native || null, name: info?.sub.name || (d.category ? ix.cats.get(d.category)?.name : null) || 'Drink', motif: motifFor(d.category, d.sub) });
+  return shellHTML(shapeFor(d.category, d.sub), { label, native: info?.sub.native || null, name: info?.sub.name || (d.category ? ix.cats.get(d.category)?.name : null) || 'Drink', motif: motifFor(d.category, d.sub) });
 }

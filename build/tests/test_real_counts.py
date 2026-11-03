@@ -17,7 +17,7 @@ def test_real_counts(tmp_path):
     assert res.exit_code == 0, res.issues.errors
     c = res.summary["counts"]
     assert c["drinks"] == 273
-    assert c["categories"] == {"Sake": 244, "Makgeolli": 5, "Liqueur": 3, "Beer": 8, "Wine": 3, "Spirits": 8,
+    assert c["categories"] == {"Sake": 244, "Fermented Beverages": 13, "Umeshu": 3, "Wine": 3, "Spirits": 8,
                                "Cocktails": 2}
     assert c["unshelved"] == 0
     assert sum(c["categories"].values()) == 273

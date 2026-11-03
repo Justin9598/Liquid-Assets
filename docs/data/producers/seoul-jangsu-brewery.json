@@ -21,8 +21,8 @@
  "drinks": [
   {
    "id": "moonlight-yuja",
-   "category": "makgeolli",
-   "sub": "all"
+   "category": "fermented",
+   "sub": "makgeolli"
   }
  ],
  "moreFromRegion": []

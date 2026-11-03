@@ -70,20 +70,6 @@
    "web": "img/web/sawahime-yamahai-junmai-shin-jizake-sengen-1.webp",
    "w": 675,
    "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/sawahime-yamahai-junmai-shin-jizake-sengen-2.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "second",
-   "caption": "Second photo",
-   "web": "img/web/sawahime-yamahai-junmai-shin-jizake-sengen-3.webp",
-   "w": 675,
-   "h": 1200
   }
  ],
  "moreFromProducer": [

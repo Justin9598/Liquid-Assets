@@ -33,7 +33,7 @@ export async function mount(root, ctx) {
   // ---- hero: the bottle the visitor tapped on the bar is the bottle they see ---------------------------------
   const key = `${cat}/${sub}`;
   const picked = ctx.state.picked?.[key] ?? randomPick(s.labels, new Set());
-  const heroShell = shellHTML(shapeFor(cat), { label: picked && img(picked), native: s.native, name: s.name, motif: motifFor(cat, sub) });
+  const heroShell = shellHTML(shapeFor(cat, sub), { label: picked && img(picked), native: s.native, name: s.name, motif: motifFor(cat, sub) });
   const producers = new Set(drinks.map((d) => d.producerKey || d.producer).filter(Boolean));
   const origins = new Set(drinks.map((d) => d.origin).filter(Boolean));
   const allJapan = drinks.length > 0 && drinks.every((d) => d.country === 'Japan');

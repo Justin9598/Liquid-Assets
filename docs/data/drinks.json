@@ -58,8 +58,8 @@
  {
   "id": "93-hwanggeum-gotgan",
   "name": "93, Hwanggeum Gotgan",
-  "category": "makgeolli",
-  "sub": "all",
+  "category": "fermented",
+  "sub": "makgeolli",
   "producer": "Daejeon Blues Brewery",
   "producerKey": "daejeon-blues-brewery",
   "origin": "Daejeon",
@@ -193,8 +193,8 @@
  {
   "id": "akebono-color-umeshu-brown-label",
   "name": "Akebono Color Umeshu Brown Label",
-  "category": "liqueur",
-  "sub": "umeshu",
+  "category": "umeshu",
+  "sub": "all",
   "producer": "Akebono Shuzo",
   "producerKey": "akebono-shuzo",
   "origin": "Fukushima",
@@ -1324,8 +1324,8 @@
  {
   "id": "hamada-ume-liqueur-gold-leaf",
   "name": "HAMADA Ume Liqueur with Gold Leaf",
-  "category": "liqueur",
-  "sub": "umeshu",
+  "category": "umeshu",
+  "sub": "all",
   "producer": "Hamada",
   "producerKey": "hamada-shoten",
   "origin": "Wakayama",
@@ -2027,7 +2027,7 @@
  {
   "id": "isekado-mr-dank",
   "name": "Isekado Mr. DANK",
-  "category": "beer",
+  "category": "fermented",
   "sub": "ipa",
   "producer": "Isekado",
   "producerKey": "isekado",
@@ -2052,8 +2052,8 @@
  {
   "id": "isibo-wonju",
   "name": "Isibo Wonju",
-  "category": "makgeolli",
-  "sub": "all",
+  "category": "fermented",
+  "sub": "makgeolli",
   "producer": "Isibo Brewery",
   "producerKey": "isibo-brewery",
   "origin": "Jeju",
@@ -2359,8 +2359,8 @@
  {
   "id": "kabosu-umeshu-sakurayama",
   "name": "Kabosu & Umeshu Sakurayama",
-  "category": "liqueur",
-  "sub": "umeshu",
+  "category": "umeshu",
+  "sub": "all",
   "producer": "Kuge Honten",
   "producerKey": "kuge-honten",
   "origin": "Oita",
@@ -3517,8 +3517,8 @@
  {
   "id": "mangwoo-yakbang-memilbogam",
   "name": "Mangwoo Yakbang Memilbogam",
-  "category": "makgeolli",
-  "sub": "all",
+  "category": "fermented",
+  "sub": "makgeolli",
   "producer": "Hamahama Brewery",
   "producerKey": "hamahama-brewery",
   "origin": "Jeju",
@@ -3788,7 +3788,7 @@
  {
   "id": "minoh-hoppy-weizen",
   "name": "Minoh Hoppy Weizen",
-  "category": "beer",
+  "category": "fermented",
   "sub": "wheat",
   "producer": "Minoh Beer",
   "producerKey": "minoh-beer",
@@ -4003,8 +4003,8 @@
  {
   "id": "moonlight-yuja",
   "name": "Moonlight Yuja",
-  "category": "makgeolli",
-  "sub": "all",
+  "category": "fermented",
+  "sub": "makgeolli",
   "producer": "Seoul Jangsu Brewery",
   "producerKey": "seoul-jangsu-brewery",
   "origin": "Chungcheongbuk-do",
@@ -4377,7 +4377,7 @@
  {
   "id": "nara-eighty-eight",
   "name": "Nara Eighty Eight",
-  "category": "beer",
+  "category": "fermented",
   "sub": "saison",
   "producer": "Nara Brewing Co.",
   "producerKey": "nara-brewing-co",
@@ -4432,7 +4432,7 @@
  {
   "id": "nasu-kohgen-ai",
   "name": "Nasu Kohgen Ai",
-  "category": "beer",
+  "category": "fermented",
   "sub": "lager",
   "producer": "Nasu Kohgen Beer",
   "producerKey": "nasu-kohgen-beer",
@@ -5906,7 +5906,7 @@
  {
   "id": "swanlake-amber-swan-ale",
   "name": "Swanlake Amber Swan Ale",
-  "category": "beer",
+  "category": "fermented",
   "sub": "pale-ale",
   "producer": "Swan Lake Beer",
   "producerKey": "swan-lake-beer",
@@ -6512,8 +6512,8 @@
  {
   "id": "traditional-jeju-makgeolli",
   "name": "Traditional Jeju Makgeolli",
-  "category": "makgeolli",
-  "sub": "all",
+  "category": "fermented",
+  "sub": "makgeolli",
   "producer": "Jeju Makgeolli",
   "producerKey": "jeju-makgeolli",
   "origin": "Jeju",
@@ -6594,7 +6594,7 @@
  {
   "id": "under-15m",
   "name": "Under 15M",
-  "category": "beer",
+  "category": "fermented",
   "sub": "other",
   "producer": "Jeju Beer Company",
   "producerKey": "jeju-beer-company",
@@ -6617,7 +6617,7 @@
  {
   "id": "underwater-luminous-sake-yeast-beer",
   "name": "Underwater Luminous Sake Yeast Beer",
-  "category": "beer",
+  "category": "fermented",
   "sub": "specialty",
   "producer": "Nara Brewing Co.",
   "producerKey": "nara-brewing-co",
@@ -6643,7 +6643,7 @@
  {
   "id": "underwater-sake-yeast-beer",
   "name": "Underwater Sake Yeast Beer",
-  "category": "beer",
+  "category": "fermented",
   "sub": "other",
   "producer": "Nara Brewing Co.",
   "producerKey": "nara-brewing-co",
