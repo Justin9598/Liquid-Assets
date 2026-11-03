@@ -281,3 +281,25 @@ The researcher enters Gin and Brandy before this round. Spirits then opens to Wh
 - [ ] Retake the four phone screenshots of each drink view, plus a Spirits category view at all four sizes, into `reports/plan10/`.
 - [ ] The full pytest passes, the build has 0 errors, and the privacy scan is clean.
 - [ ] Commit as "Plan 10 review fixes: phone drink views, Fermented tag, spirit types", ending with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. **No push.**
+
+## 12. Tap amendment (2026-11-03, owner request)
+
+**The owner's words:** "when i try to enter the sub category it doesnt show me all the items and only direct to the alcohol, amend it to show all in that sub category. direct to the bottle only applies to the items on the lower shelves when there is no main category selected".
+
+This replaces the §3 table for the lower shelves:
+
+| Where | Tap the bottle | Tap the chalk board |
+|---|---|---|
+| Top shelf | Opens the category (unchanged). | The same. |
+| Lower shelves at **Rest** (no category chosen) | **Opens that drink's page.** | (unchanged) |
+| Lower shelves in **category view** (subcategory bottles) | **Opens the subcategory view** (§4.3): the shelves fill with every drink in that subcategory, up to capacity, with "See all {n}" for the rest. | The same as the bottle. |
+| Lower shelves in a **drink view** (subcategory, Umeshu, New arrivals, In season) | Opens that drink's page (unchanged). | (no board) |
+| Counter | Opens that drink (unchanged). | The placard switches the view (unchanged). |
+
+- **One focus stop:** in category view, the subcategory bottle and its board now do the same thing, so they become **one focus stop**. The bottle and board together form one button, labelled "{Subcategory}, {n} drinks, show on the shelves".
+- **Hover:** the hover tag in category view shows the subcategory name and count, not a drink name.
+- **Check (smoke test, all four sizes):**
+  - At Rest, a lower-shelf bottle opens a drink page.
+  - In category view, tapping a subcategory **bottle** opens that subcategory's view, with its caption and its own drinks.
+  - In that view, tapping a bottle opens its drink.
+- **Commit** as "Plan 10 §12: subcategory bottles open the subcategory", ending with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. **No push.**

@@ -461,10 +461,11 @@ def menu_checks(page, base, tag, shots_dir):
 def transition_checks(page, base, tag):
     """The welcome page moves to an inner page and back with the plate staying put (Plan 08 section 5)."""
     probs = []
-    load(page, base, "#/sake")
-    first = page.eval("document.querySelector('#lower .slot.sub a.art')?.getAttribute('href')")
+    load(page, base, "#/")
+    first = page.eval("document.querySelector('#lower .slot.mix[href]')?.getAttribute('href')")       # at Rest a lower-shelf bottle opens a drink
     if not first or not first.startswith("#/drink/"):
-        return [f"{tag}: welcome sub-shelf bottles do not open their drinks ({first})"]
+        return [f"{tag}: welcome lower-shelf bottles do not open their drinks at Rest ({first})"]
+    vclick(page, ".vessel[data-cat=sake]")
     tagfull = page.eval("(() => { const h = document.querySelector('#lower .slot.sub .hang'); return getComputedStyle(h).opacity + '|' + getComputedStyle(h.querySelector('.nm')).opacity; })()")
     if tagfull != "1|1":
         probs.append(f"{tag}: sub-shelf tags are not full chalk on the welcome page ({tagfull})")
@@ -600,7 +601,7 @@ VIEW_STATE_JS = r"""(() => {
   out.caption = document.querySelector('#viewcap')?.textContent || '';
   out.captionVisible = !document.querySelector('#viewcap')?.hasAttribute('data-empty');
   out.drinks = [...document.querySelectorAll('#lower .slot.drink a.art, #lower .slot.drink button.art')].map((a) => a.getAttribute('href') || a.dataset.name);
-  out.subs = [...document.querySelectorAll('#lower .slot.sub button.hang')].map((b) => b.dataset.sub);
+  out.subs = [...document.querySelectorAll('#lower button.slot.sub')].map((b) => b.dataset.sub);
   out.seeAll = document.querySelector('.seeall-board')?.getAttribute('href') || null;
   out.hash = location.hash;
   out.hasSelection = !!document.querySelector('.scene3.has-selection');
@@ -664,6 +665,9 @@ def welcome_checks(page, base, tag, shots_dir=None):
     if caps != ["Sake", "Fermented Beverages", "Umeshu", "Wine", "Spirits", "Cocktails"] or caps != names:
         P(f"the top shelf shows {caps}, shelf.json has {names}")
     rest = check("at rest")
+    links = page.eval("[...document.querySelectorAll('#lower .slot.mix')].map((e) => e.getAttribute('href'))")
+    if not links or not all((h or "").startswith("#/drink/") for h in links if h) or sum(1 for h in links if h) < len(links) - 2:
+        P(f"at Rest the lower-shelf bottles do not open drinks: {links[:4]}")
     if rest["mode"] != "mix" or rest["captionVisible"]:
         P(f"at rest the mode is {rest['mode']} and the caption is {'shown' if rest['captionVisible'] else 'hidden'}")
     if len(rest["counter"]["newIds"]) != 5 or len(rest["counter"]["seasonIds"]) != 5:
@@ -686,12 +690,20 @@ def welcome_checks(page, base, tag, shots_dir=None):
     sake = next(c for c in cats if c["key"] == "sake")
     if s["mode"] != "sub" or s["subs"] != [x["key"] for x in sake["subcategories"]] or not s["hasSelection"]:
         P(f"Sake opens as {s['mode']} {s['subs']}")
-    hrefs = page.eval("[...document.querySelectorAll('#lower .slot.sub a.art')].map(a => a.getAttribute('href'))")
-    if not hrefs or not all(h.startswith("#/drink/") for h in hrefs):
-        P(f"a subcategory bottle does not open its drink: {hrefs}")
-    stops = page.eval("""(() => { const s = document.querySelector('#lower .slot.sub'); const f = [...s.querySelectorAll('a, button')]; return [f[0].tagName, f[1].tagName, s.querySelector('a.art').getAttribute('aria-label'), f[1].getAttribute('aria-label')]; })()""")
-    if stops[0] != "A" or stops[1] != "BUTTON" or not stops[2].endswith("open drink") or "show on the shelves" not in stops[3]:
-        P(f"the bottle and its board are not two focus stops with the right names: {stops}")
+    # in category view a bottle and its board are one button with one name (Plan 10 section 12)
+    one = page.eval("""[...document.querySelectorAll('#lower .slot.sub')].map((s) => [s.tagName, s.querySelectorAll('a, button').length, s.getAttribute('aria-label') || ''])""")
+    if not one or any(x[0] != "BUTTON" or x[1] != 0 or "show on the shelves" not in x[2] or "drinks" not in x[2] and "1 drink" not in x[2] for x in one):
+        P(f"a subcategory bottle and its board are not one labelled button: {one[:2]}")
+    # at Rest a lower-shelf bottle opens a drink
+    # tapping the bottle (not the board) opens the subcategory view
+    page.eval("document.querySelector('#lower .slot.sub .art').click()")
+    settle(page)
+    s = check("a subcategory bottle")
+    if s["mode"] != "drinks" or not s["caption"].endswith(" drinks") or not s["drinks"] or s["hash"] != "#/sake":
+        P(f"tapping a subcategory bottle gave {s['mode']} with caption '{s['caption']}'")
+    if not all((d or "").startswith("#/drink/") for d in s["drinks"]):
+        P("a bottle in the subcategory view does not open its drink")
+    vclick(page, ".vessel[data-cat=sake]")
     vclick(page, "button[data-sub=junmai-ginjo]")
     s = check("Junmai Ginjo")
     jg = next(x for x in sake["subcategories"] if x["key"] == "junmai-ginjo")
