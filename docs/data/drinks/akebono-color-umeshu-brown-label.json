@@ -1,8 +1,8 @@
 {
  "id": "akebono-color-umeshu-brown-label",
  "name": "Akebono Color Umeshu Brown Label",
- "category": "liqueur",
- "sub": "umeshu",
+ "category": "umeshu",
+ "sub": "all",
  "producer": {
   "key": "akebono-shuzo",
   "name": "Akebono Shuzo",

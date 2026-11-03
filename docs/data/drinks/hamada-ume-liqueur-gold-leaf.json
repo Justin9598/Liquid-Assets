@@ -1,8 +1,8 @@
 {
  "id": "hamada-ume-liqueur-gold-leaf",
  "name": "HAMADA Ume Liqueur with Gold Leaf",
- "category": "liqueur",
- "sub": "umeshu",
+ "category": "umeshu",
+ "sub": "all",
  "producer": {
   "key": "hamada-shoten",
   "name": "Hamada",

@@ -1,0 +1,17 @@
+{
+ "_readme": "Old maker addresses that changed in Plan 09 Stage 1 and the pages they now live on (Plan 10 section 2.5). Hand-kept: add a line when a page key changes. The router follows these before it shows the empty-shelf page.",
+ "producers": {
+  "asahi-shuzo": "asahi-shuzo-niigata",
+  "asahi-shuzo-dassai": "asahi-shuzo-yamaguchi",
+  "date-seven-koganesawa-style-miyagi-collective": "date-seven",
+  "date-seven-yamawa-haginotsuru-miyagi-collective": "date-seven",
+  "date-seven-yamawa-style-miyagi-collective": "date-seven",
+  "hakushika-tatsuuma-honke": "hakushika",
+  "konohana-brewery-allwright": "konohana-brewery",
+  "machida-shuzo": "machida-shuzoten",
+  "obuse-winery-sogga-pere-et-fils": "obuse-winery",
+  "ricewine-k-k-hinemos": "ricewine-k-k",
+  "wakaze-kura-grand-paris": "wakaze",
+  "yamamoto-gomei-kaisha": "yamamoto-shuzoten"
+ }
+}

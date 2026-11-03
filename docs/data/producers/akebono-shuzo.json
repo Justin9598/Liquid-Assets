@@ -39,8 +39,8 @@
  "drinks": [
   {
    "id": "akebono-color-umeshu-brown-label",
-   "category": "liqueur",
-   "sub": "umeshu"
+   "category": "umeshu",
+   "sub": "all"
   },
   {
    "id": "isshou-seishun-bessen-junmai-daiginjo",

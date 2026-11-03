@@ -21,7 +21,7 @@
  "drinks": [
   {
    "id": "under-15m",
-   "category": "beer",
+   "category": "fermented",
    "sub": "other"
   }
  ],

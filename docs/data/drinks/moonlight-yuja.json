@@ -1,8 +1,8 @@
 {
  "id": "moonlight-yuja",
  "name": "Moonlight Yuja",
- "category": "makgeolli",
- "sub": "all",
+ "category": "fermented",
+ "sub": "makgeolli",
  "producer": {
   "key": "seoul-jangsu-brewery",
   "name": "Seoul Jangsu Brewery",
@@ -53,13 +53,6 @@
    "kind": "front",
    "caption": "Front label",
    "web": "img/web/moonlight-yuja-1.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/moonlight-yuja-2.webp",
    "w": 675,
    "h": 1200
   }

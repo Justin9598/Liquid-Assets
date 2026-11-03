@@ -31,8 +31,8 @@
  "drinks": [
   {
    "id": "hamada-ume-liqueur-gold-leaf",
-   "category": "liqueur",
-   "sub": "umeshu"
+   "category": "umeshu",
+   "sub": "all"
   }
  ],
  "moreFromRegion": []

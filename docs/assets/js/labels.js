@@ -4,17 +4,25 @@
 import { esc, rand } from './util.js';
 
 /** Fallback-label motif: vine for wine, a plum blossom for the Umeshu subcategory (Plan 01 sections 3 and 4.3). */
-export const motifFor = (catKey, subKey) => (catKey === 'wine' ? 'vine' : catKey === 'liqueur' && subKey === 'umeshu' ? 'blossom' : null);
+export const motifFor = (catKey) => (catKey === 'wine' ? 'vine' : catKey === 'umeshu' ? 'blossom' : null);
 
 const SHAPES = new Set(['sake', 'makgeolli', 'liqueur', 'beer', 'wine', 'spirits', 'cocktail', 'highball']);
-/** Category key -> the shell used on the lower shelves, on cards and in heroes (cocktails use the highball glass). */
-export const shapeFor = (catKey) => (catKey === 'cocktails' ? 'highball' : SHAPES.has(catKey) ? catKey : 'sake');
+/** The shell for a category, and for a subcategory where it differs (Plan 10 section 2): makgeolli has its own bottle, the beer
+ * styles share the beer bottle, umeshu and liqueur use the liquor bottle, cocktails the highball glass. */
+export const shapeFor = (catKey, subKey) => {
+  if (catKey === 'fermented') return subKey === 'makgeolli' ? 'makgeolli' : 'beer';
+  if (catKey === 'umeshu') return 'liqueur';
+  if (catKey === 'cocktails') return 'highball';
+  return SHAPES.has(catKey) ? catKey : 'sake';
+};
 
 // Default labels for the mixed view when a category has no photo (Plan 01 section 3, last column)
 export const DEFAULT_LABEL = {
   sake: { native: '酒', name: 'Sake' },
   makgeolli: { native: '막걸리', name: 'Makgeolli' },
   liqueur: { name: 'LIQUEUR' },
+  fermented: { name: 'BEER' },
+  umeshu: { native: '梅酒', name: 'Umeshu', motif: 'blossom' },
   beer: { name: 'BEER' },
   wine: { name: 'Wine', motif: 'vine' },
   spirits: { name: 'Spirits' },

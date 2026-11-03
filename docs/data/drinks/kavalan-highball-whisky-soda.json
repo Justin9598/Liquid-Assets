@@ -50,20 +50,6 @@
    "web": "img/web/kavalan-highball-whisky-soda-1.webp",
    "w": 675,
    "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/kavalan-highball-whisky-soda-2.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "side",
-   "caption": "Side label",
-   "web": "img/web/kavalan-highball-whisky-soda-3.webp",
-   "w": 675,
-   "h": 1200
   }
  ],
  "moreFromProducer": [

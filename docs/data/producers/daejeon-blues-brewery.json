@@ -21,8 +21,8 @@
  "drinks": [
   {
    "id": "93-hwanggeum-gotgan",
-   "category": "makgeolli",
-   "sub": "all"
+   "category": "fermented",
+   "sub": "makgeolli"
   }
  ],
  "moreFromRegion": []

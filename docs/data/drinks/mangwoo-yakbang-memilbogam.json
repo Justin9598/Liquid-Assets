@@ -1,8 +1,8 @@
 {
  "id": "mangwoo-yakbang-memilbogam",
  "name": "Mangwoo Yakbang Memilbogam",
- "category": "makgeolli",
- "sub": "all",
+ "category": "fermented",
+ "sub": "makgeolli",
  "producer": {
   "key": "hamahama-brewery",
   "name": "Hamahama Brewery",
@@ -48,13 +48,6 @@
    "kind": "front",
    "caption": "Front label",
    "web": "img/web/mangwoo-yakbang-memilbogam-1.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/mangwoo-yakbang-memilbogam-2.webp",
    "w": 675,
    "h": 1200
   }

@@ -229,19 +229,62 @@ a.chalkboard:focus-visible, button.chalkboard:focus-visible { outline: 3px solid
 .scene3 .hang .nm, .scene3 .hang .l2 { display: block; }
 .scene3 .hang .nm { white-space: normal; overflow-wrap: normal; }
 .scene3 .hang .l2 { white-space: nowrap; }
-.scene3 .slot.sub.soon .hang .chalk, .scene3 .slot.sub.soon .hang .nm, .scene3 .slot.sub.soon .hang .l2 { opacity: .55; }
 .scene3 .slot.sub:hover .hang, .scene3 .slot.sub:focus-visible .hang { color: var(--glow); }
-.scene3 .slot.sub.soon:hover, .scene3 .slot.sub.soon:focus-visible { transform: none; }
 .scene3[data-plate='tall'] .hang { top: calc(100% - 12px); --cb-fs: 14px; }
 .scene3 .slate.s3.mid { --tilt: -.5deg; position: absolute; transform: translate(-50%, -50%) rotate(var(--tilt)); text-align: center; white-space: normal; min-width: 0; max-width: none; padding: .35em .9em; display: flex; align-items: center; justify-content: center; font-weight: 700; z-index: 5; }
 .scene3 .placard { position: absolute; z-index: 5; margin: 0; transform: translate(-50%, -50%); white-space: nowrap; letter-spacing: 0; text-transform: none; font-weight: 700; padding: .3em .85em; }
 .scene3 .cb-tag { position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translate(-50%, 4px); z-index: 8; max-width: 22cqw; white-space: nowrap; opacity: 0; transition: opacity 140ms, transform 140ms; }
 .scene3 .cbottle:hover .cb-tag, .scene3 .cbottle:focus-visible .cb-tag { opacity: 1; transform: translate(-50%, 0); }
-.scene3 .ctabs { position: absolute; z-index: 6; transform: translateY(-50%); display: flex; gap: 8px; }
+.scene3 .ctabs { position: absolute; z-index: 6; transform: translate(-50%, -50%); display: flex; gap: 8px; }
 .scene3 .ctab { min-height: 44px; min-width: 64px; padding: 0 16px; cursor: pointer; text-transform: none; letter-spacing: 0; font-weight: 700; }
 .scene3 .ctab[aria-selected='false'] .chalk { opacity: .75; }
 .scene3 .burger-tag { z-index: 5; }
 .chalkboard .count, .bd-link .count { color: inherit; }
+
+
+/* ============================================================================================ shelf views (Plan 10) */
+/* a lower-shelf bottle is a link to its drink, its chalk board a separate button: two focus stops */
+.slot .art { text-decoration: none; color: inherit; }
+.slot button.art { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
+.slot a.art { cursor: pointer; }
+.slot .art:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; border-radius: var(--r-sm); box-shadow: none; }
+.scene3 button.hang { cursor: pointer; text-align: center; }
+.scene3 .slot.sub .hang:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; box-shadow: none; }
+.slot.drink .art { transition: transform 140ms ease-out; }
+.slot.drink:hover .art, .slot.drink:focus-within .art { transform: translateY(-3px); }
+.scene3 .slot.drink .hang { opacity: 0; transition: opacity 140ms; width: max-content; max-width: 20cqw; z-index: 7; pointer-events: none; }
+.scene3 .slot.drink:hover .hang, .scene3 .slot.drink:focus-within .hang { opacity: 1; }
+.scene3 .slot.drink .hang .nm { white-space: normal; }
+.scene3 .slot.seeall { overflow: visible; justify-content: flex-end; }
+.scene3 .seeall-board { position: absolute; left: 50%; bottom: 8%; transform: translateX(-50%); white-space: nowrap; padding: .3em .8em; --cb-fs: clamp(14px, .9cqw, 16px); font-weight: 700; text-decoration: none; cursor: pointer; pointer-events: auto; z-index: 4; border-radius: var(--r-sm); }
+.scene3 .seeall-board:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; box-shadow: none; }
+.scene3 .viewcap { position: absolute; z-index: 6; margin: 0; white-space: nowrap; padding: .2em .7em; --cb-fs: clamp(14px, .95cqw, 17px); transition: opacity 140ms; }
+.scene3 .viewcap[data-empty] { opacity: 0; }
+.scene3 .viewcap.onslate { transform: translate(-50%, -50%); text-align: center; font-weight: 700; padding: .35em .9em; z-index: 6; }
+.scene3.captioned .slate { visibility: hidden; }
+
+/* the longest category name may wrap onto two lines, centred, inside its slot (Plan 10 section 2.1) */
+.scene3 .vessel-cap { white-space: normal; text-align: center; width: max-content; max-width: 5.6em; line-height: 1.1; }
+
+/* the reset clock */
+.scene3 .clock { position: absolute; z-index: 6; transform: translate(-50%, -50%); height: var(--clock-h); aspect-ratio: 1; min-width: 44px; min-height: 44px; padding: 0; border: 0; background: none; cursor: pointer; filter: drop-shadow(0 .3cqw .5cqw rgba(20, 8, 2, .55)); transition: transform 140ms ease-out; }
+.scene3 .clock svg { display: block; width: 100%; height: 100%; }
+.scene3 .clock:hover, .scene3 .clock:focus-visible { transform: translate(-50%, calc(-50% - 2px)); }
+.scene3 .clock.nudge { transform: translate(-50%, calc(-50% - 3px)); }
+.scene3 .clock:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; border-radius: 50%; box-shadow: none; }
+.scene3 .clock-tag { position: absolute; left: 50%; top: calc(100% + 6px); transform: translateX(-50%); white-space: nowrap; opacity: 0; transition: opacity 140ms; z-index: 8; padding: 1px 8px; }
+.scene3 .clock:hover .clock-tag, .scene3 .clock:focus-visible .clock-tag { opacity: 1; }
+
+/* the counter: compact groups, centred over their placards, and placards that switch the shelves' view */
+.scene3 .cg-row { justify-content: center; gap: .45cqw; }
+.scene3[data-plate='tall'] .cg-row { gap: .7cqw; }
+.scene3 .cb-cell { flex: 0 0 auto; width: auto; }
+.scene3 .cbottle { width: auto; }
+.scene3 button.placard { cursor: pointer; text-align: center; pointer-events: auto; }
+.scene3 .placard .in, .scene3 .ctab .in { display: block; font: 400 .72em/1.25 var(--chalkhand); opacity: .88; max-width: 11em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-inline: auto; }
+.scene3 .placard .in[hidden], .scene3 .ctab .in[hidden] { display: none; }
+.scene3 .ctab { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; }
+.scene3 button.placard:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; box-shadow: none; }
 
 /* ============================================================================================ inner pages (Plan 08) */
 body.menu-open { overflow: hidden; }

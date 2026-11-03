@@ -1,7 +1,7 @@
 {
  "id": "underwater-luminous-sake-yeast-beer",
  "name": "Underwater Luminous Sake Yeast Beer",
- "category": "beer",
+ "category": "fermented",
  "sub": "specialty",
  "producer": {
   "key": "nara-brewing-co",
@@ -58,13 +58,6 @@
    "kind": "front",
    "caption": "Front label",
    "web": "img/web/underwater-luminous-sake-yeast-beer-1.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/underwater-luminous-sake-yeast-beer-2.webp",
    "w": 675,
    "h": 1200
   }

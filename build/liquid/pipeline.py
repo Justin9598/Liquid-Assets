@@ -94,7 +94,8 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
         emit_mod.dumps(photos_mod.suggestions_document(suggestions, unmatched)), encoding="utf-8")
 
     content = {"subcategories": _load_json(content_dir / "subcategories.json", {}, issues, "subcategories.json"),
-               "glossary": _load_json(content_dir / "glossary.json", {}, issues, "glossary.json")}
+               "glossary": _load_json(content_dir / "glossary.json", {}, issues, "glossary.json"),
+               "aliases": _load_json(content_dir / "aliases.json", {}, issues, "aliases.json").get("producers", {})}
 
     shelf = emit_mod.build_shelf(drinks, grades, issues)
 
@@ -104,6 +105,7 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
         seasonal = None
     if not issues.errors:
         content["counter"], counter_report = counter_mod.build_counter(drinks, photo_map, seasonal, issues)
+        content["sub_views"] = counter_mod.sub_views(drinks, photo_map, seasonal)
     else:
         counter_report = None
 

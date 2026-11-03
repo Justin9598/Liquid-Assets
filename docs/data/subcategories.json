@@ -64,7 +64,7 @@
   "explainer": "Sakes whose grade hasn't been recorded yet.",
   "facts": []
  },
- "makgeolli/all": {
+ "fermented/makgeolli": {
   "explainer": "Korea's cloudy rice wine: lightly sparkling, milky and often unpasteurised, brewed with nuruk.",
   "facts": []
  },
@@ -92,7 +92,7 @@
   "explainer": "Korea's distilled spirit. Traditional versions are made with nuruk.",
   "facts": []
  },
- "liqueur/umeshu": {
+ "umeshu/all": {
   "explainer": "Japanese plum liqueur made by steeping unripe ume in alcohol and sugar.",
   "facts": []
  }

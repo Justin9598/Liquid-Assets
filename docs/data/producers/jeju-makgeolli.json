@@ -21,8 +21,8 @@
  "drinks": [
   {
    "id": "traditional-jeju-makgeolli",
-   "category": "makgeolli",
-   "sub": "all"
+   "category": "fermented",
+   "sub": "makgeolli"
   }
  ],
  "moreFromRegion": [

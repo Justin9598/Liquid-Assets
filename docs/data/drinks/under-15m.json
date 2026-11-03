@@ -1,7 +1,7 @@
 {
  "id": "under-15m",
  "name": "Under 15M",
- "category": "beer",
+ "category": "fermented",
  "sub": "other",
  "producer": {
   "key": "jeju-beer-company",
@@ -50,27 +50,6 @@
    "kind": "front",
    "caption": "Front label",
    "web": "img/web/under-15m-1.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/under-15m-2.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "side",
-   "caption": "Side label",
-   "web": "img/web/under-15m-3.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "spec",
-   "caption": "Spec panel",
-   "web": "img/web/under-15m-4.webp",
    "w": 675,
    "h": 1200
   }

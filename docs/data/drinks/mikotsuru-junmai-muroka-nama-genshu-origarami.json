@@ -84,20 +84,6 @@
    "web": "img/web/mikotsuru-junmai-muroka-nama-genshu-origarami-1.webp",
    "w": 675,
    "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/mikotsuru-junmai-muroka-nama-genshu-origarami-2.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "maker",
-   "caption": "Maker panel",
-   "web": "img/web/mikotsuru-junmai-muroka-nama-genshu-origarami-3.webp",
-   "w": 675,
-   "h": 1200
   }
  ],
  "moreFromProducer": [

@@ -27,7 +27,7 @@ def read_phase(content_dir, default=2) -> int:
 
 def published(rel: str, sec: dict) -> bool:
     """Is this data file (path relative to docs/data) published in the given sections?"""
-    if rel in ("shelf.json", "build.json", "scene.json"):
+    if rel in ("shelf.json", "build.json", "scene.json", "aliases.json"):
         return True
     if rel == "drinks.json":
         return sec["shelves"] or sec["drinks"]

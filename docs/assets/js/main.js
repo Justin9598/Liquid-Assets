@@ -6,7 +6,7 @@
 import { fixedBurgerHTML, mountBurger } from './burger.js';
 import { fitCrumbs, fitNative, emptyHTML, loadGlossary, wireGlossary } from './chrome.js';
 import { mountBackdrop } from './backdrop.js';
-import { getBuild, getIndex, getSections, initData } from './data.js';
+import { getBuild, getIndex, getJSON, getSections, initData } from './data.js';
 import { ensureDefs } from './labels.js';
 import { loadScene } from './shells.js';
 import { $, $$, debounce, esc, fmtDate, parseHash, plural, reducedMotion, setTitle } from './util.js';
@@ -31,12 +31,28 @@ function emptyShelf(message = 'This shelf is empty') {
   app.innerHTML = emptyHTML(message);
 }
 
-/** Links from before the rename: #/umeshu goes to #/liqueur, and #/umeshu/<kind> to the Umeshu bottle. */
-function redirectOld() {
+/** Old addresses (Plan 10 section 2.5): the build's alias table, data/aliases.json, says where each one lives now. The swap uses
+ * location.replace, so it adds no history entry. Returns true when it redirected. */
+let aliases = { routes: [], producers: {} };
+function applyAliases() {
   const { segs } = parseHash();
-  if (segs[0] !== 'umeshu') return;
-  const target = segs.length > 1 ? '#/liqueur/umeshu' : '#/liqueur';
-  history.replaceState(null, '', target + (location.hash.includes('?') ? location.hash.slice(location.hash.indexOf('?')) : ''));
+  if (!segs.length) return false;
+  const query = location.hash.includes('?') ? location.hash.slice(location.hash.indexOf('?')) : '';
+  let to = null;
+  if (segs[0] === 'producer' && segs.length === 2 && aliases.producers[segs[1]]) to = ['producer', aliases.producers[segs[1]]];
+  else if (segs[0] === 'umeshu' && segs.length > 1 && segs[1] !== 'all') to = ['umeshu'];       // the pre-rename #/umeshu/<kind>
+  else {
+    for (const r of aliases.routes) {
+      const from = r.from.split('/');
+      if (from.length !== segs.length || !from.every((f, i) => f === '*' || f === segs[i])) continue;
+      const star = segs[from.indexOf('*')];
+      to = r.to.split('/').map((s) => (s === '*' ? star : s));
+      break;
+    }
+  }
+  if (!to) return false;
+  location.replace(`#/${to.map(encodeURIComponent).join('/')}${query}`);
+  return true;
 }
 
 /** Phase 1 (welcome page only): every other route goes to the bar, with the category selected when there is one. */
@@ -50,7 +66,6 @@ function redirectGated(ix) {
 }
 
 function resolve(ix) {
-  redirectOld();
   redirectGated(ix);
   const { segs, params } = parseHash();
   if (!segs.length) return { name: 'welcome', cat: null, segs, params };
@@ -126,6 +141,7 @@ async function route() {
     return;
   }
   if (ticket !== routing) return;
+  if (applyAliases()) return;                          // the new address takes over through its own hashchange
   const ctx = { ...resolve(ix), ix, build: getBuild(), state };
   const from = current?.name || null;
   if (ctx.name === 'notfound') {
@@ -204,6 +220,7 @@ async function boot() {
   ensureDefs();
   wireGlossary();
   const build = await initData();
+  try { aliases = await getJSON('aliases.json'); } catch { /* old addresses then simply land on the empty-shelf page */ }
   footer(build);
   if (getSections().drinks) loadGlossary();
   if (getSections().shelves) {

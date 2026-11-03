@@ -43,6 +43,7 @@ def build_shelf(drinks, grades, issues):
         ordered = sorted(subs.values(), key=lambda s: (s["order"], sort_key(s["name"])))
         cats.append({"key": key, "name": name, "vessel": vessel, "subs": ordered,
                      "count": sum(len(s["drinks"]) for s in ordered)})
+    cats = [c for c in cats if c["count"]]                       # a category with no drinks is left out everywhere (Plan 10 section 2.1)
     # I01: sake grades without any drink
     sake = next(c for c in cats if c["key"] == "sake")
     present = {s["name"] for s in sake["subs"]}
@@ -75,14 +76,23 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
                 native = T.SAKE_NATIVE.get(sub["name"])
             elif cat["key"] == "liqueur":
                 native = T.LIQUEUR_NATIVE.get(sub["name"])
+            elif cat["key"] == "fermented" and sub["key"] == "makgeolli":
+                native = T.MAKGEOLLI_NATIVE
             elif sub["key"] == "all":
                 native = T.FALLBACK_NATIVE.get(cat["key"])
             labels = [f"img/labels/{d['id']}.webp" for d in sorted(sub["drinks"], key=lambda d: (sort_key(d["name"]), d["id"]))
                       if has_label(photo_map, d["id"])]
-            subs_out.append({"key": sub["key"], "name": sub["name"], "native": native,
-                             "drinkCount": len(sub["drinks"]), "labels": labels})
-        shelf_out["categories"].append({"key": cat["key"], "name": cat["name"], "vessel": cat["vessel"],
-                                        "drinkCount": cat["count"], "subcategories": subs_out})
+            entry = {"key": sub["key"], "name": sub["name"], "native": native,
+                     "drinkCount": len(sub["drinks"]), "labels": labels}
+            views = (content.get("sub_views") or {}).get(f"{cat['key']}/{sub['key']}")
+            if views:                                                     # Plan 10 section 4.7: names and labels only
+                entry.update(drinks=views["drinks"], new=views["new"], season=views["season"])
+            subs_out.append(entry)
+        cat_out = {"key": cat["key"], "name": cat["name"], "vessel": cat["vessel"],
+                   "drinkCount": cat["count"], "subcategories": subs_out}
+        if cat["key"] in T.DIRECT_CATEGORIES:
+            cat_out["direct"] = True
+        shelf_out["categories"].append(cat_out)
 
     # ---- drinks.json (index)
     def page_of(d):
@@ -134,8 +144,7 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
         entry = photo_map.get(d["id"], {})
         photos = []
         n = 0
-        ordered = ([("front", entry["front"])] if entry.get("front") else []) + \
-                  [(o["kind"], o["file"]) for o in entry.get("others", [])]
+        ordered = [("front", entry["front"])] if entry.get("front") else []        # the front image only (Plan 10 section 7)
         for kind, _file in ordered:
             n += 1
             path = f"img/web/{d['id']}-{n}.webp"
@@ -186,6 +195,8 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
         used_terms.add("wset-style tasting")   # caption of the tasting card (Plan 05 section 14)
     glossary = content.get("glossary", {})
     files["glossary.json"] = dumps({k: v for k, v in glossary.items() if k.casefold() in used_terms})
+
+    files["aliases.json"] = dumps({"routes": T.ROUTE_ALIASES, "producers": content.get("aliases", {})})   # Plan 10 section 2.5
 
     if content.get("scene_data"):
         files["scene.json"] = dumps(content["scene_data"])

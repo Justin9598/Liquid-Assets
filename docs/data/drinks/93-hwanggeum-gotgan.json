@@ -1,8 +1,8 @@
 {
  "id": "93-hwanggeum-gotgan",
  "name": "93, Hwanggeum Gotgan",
- "category": "makgeolli",
- "sub": "all",
+ "category": "fermented",
+ "sub": "makgeolli",
  "producer": {
   "key": "daejeon-blues-brewery",
   "name": "Daejeon Blues Brewery",
@@ -52,13 +52,6 @@
    "kind": "front",
    "caption": "Front label",
    "web": "img/web/93-hwanggeum-gotgan-1.webp",
-   "w": 675,
-   "h": 1200
-  },
-  {
-   "kind": "back",
-   "caption": "Back label",
-   "web": "img/web/93-hwanggeum-gotgan-2.webp",
    "w": 675,
    "h": 1200
   }

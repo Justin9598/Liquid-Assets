@@ -32,17 +32,17 @@
  "drinks": [
   {
    "id": "nara-eighty-eight",
-   "category": "beer",
+   "category": "fermented",
    "sub": "saison"
   },
   {
    "id": "underwater-luminous-sake-yeast-beer",
-   "category": "beer",
+   "category": "fermented",
    "sub": "specialty"
   },
   {
    "id": "underwater-sake-yeast-beer",
-   "category": "beer",
+   "category": "fermented",
    "sub": "other"
   }
  ],

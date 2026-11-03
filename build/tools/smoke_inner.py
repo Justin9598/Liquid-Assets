@@ -317,7 +317,7 @@ def run(base, shots_dir=None, sizes=SIZES, log=print):
                 page.throttle(float(os.environ["SMOKE_THROTTLE"]))
             tag = f"{w}x{h}"
             routes = [
-                ("list Junmai Ginjo", "#/sake/junmai-ginjo"), ("list Makgeolli (sparse)", "#/makgeolli/all"),
+                ("list Junmai Ginjo", "#/sake/junmai-ginjo"), ("list Makgeolli (sparse)", "#/fermented/makgeolli"),
                 ("drink with photo and tasting card", f"#/drink/{data['tasting']}"), ("drink with no photo", f"#/drink/{data['nophoto']}"),
                 ("drink had several times", f"#/drink/{data['many']}"), ("producer Akebono Shuzo", f"#/producer/{prod['akebono']}"),
                 ("Makers index", "#/makers"), ("empty shelf", "#/sake/not-a-shelf"),
@@ -340,9 +340,12 @@ def run(base, shots_dir=None, sizes=SIZES, log=print):
             if shots_dir:
                 page.screenshot(f"{shots_dir}/drink-scrolled-{tag}.png")
             problems += producer_checks(page, base, tag)
+            problems += welcome_checks(page, base, tag, shots_dir)
             problems += menu_checks(page, base, tag, shots_dir)
             problems += transition_checks(page, base, tag)
             if (w, h) == sizes[0]:
+                problems += alias_checks(page, base, tag)
+                problems += photo_checks(page, base, tag)
                 problems += map_checks(page, base, prod, tag)
             else:
                 problems += akebono_map(page, base, prod, tag)
@@ -459,9 +462,9 @@ def transition_checks(page, base, tag):
     """The welcome page moves to an inner page and back with the plate staying put (Plan 08 section 5)."""
     probs = []
     load(page, base, "#/sake")
-    first = page.eval("document.querySelector('#lower .slot.sub')?.getAttribute('href')")
-    if not first or not first.startswith("#/sake/"):
-        return [f"{tag}: welcome sub-shelf bottles do not link to their lists ({first})"]
+    first = page.eval("document.querySelector('#lower .slot.sub a.art')?.getAttribute('href')")
+    if not first or not first.startswith("#/drink/"):
+        return [f"{tag}: welcome sub-shelf bottles do not open their drinks ({first})"]
     tagfull = page.eval("(() => { const h = document.querySelector('#lower .slot.sub .hang'); return getComputedStyle(h).opacity + '|' + getComputedStyle(h.querySelector('.nm')).opacity; })()")
     if tagfull != "1|1":
         probs.append(f"{tag}: sub-shelf tags are not full chalk on the welcome page ({tagfull})")
@@ -483,7 +486,7 @@ def transition_checks(page, base, tag):
         return probs + [f"{tag}: the welcome page did not come back"]
     if page.eval("!!document.body.dataset.dim") or page.eval("!!document.querySelector('.inner')"):
         probs.append(f"{tag}: the move back to the bar left an inner page or the dimming behind")
-    ops = page.eval("[...document.querySelectorAll('.scene3 .cover > *')].map(e=>getComputedStyle(e).opacity).filter(o=>o!=='1').length")
+    ops = page.eval("[...document.querySelectorAll('.scene3 .cover > *:not([data-empty])')].map(e=>getComputedStyle(e).opacity).filter(o=>o!=='1').length")
     if ops:
         probs.append(f"{tag}: {ops} welcome layer(s) did not fade back in")
     return probs
@@ -552,3 +555,271 @@ def list_perf(browser, base, w, h, stats, tag):
     stats[f"{tag} list scroll"] = {"cards": res["cards"], "frames": len(fr), "median_ms": round(fr[len(fr) // 2], 1), "p95_ms": round(p95, 1), "max_ms": round(fr[-1], 1), "cpu_throttle": 4}
     page.close()
     return [] if res["cards"] >= 70 else [f"{tag}: only {res['cards']} cards on the Junmai Ginjo list"]
+
+# ---------------------------------------------------------------------------------------------- Plan 10: the welcome page's views
+
+SETTLE_JS = """(async () => {
+  const t0 = performance.now();
+  while (performance.now() - t0 < 4000 && document.getAnimations().some((a) => a.playState === 'running')) await new Promise((r) => setTimeout(r, 30));
+  await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+  return true;
+})()"""
+
+# what stands on the welcome page in the current view, and whether anything collides (Plan 10 sections 4 to 6, Plan 07 section 8.2)
+VIEW_STATE_JS = r"""(() => {
+  const out = { problems: [] };
+  const bad = (m) => out.problems.push(m);
+  const vis = (e) => { const r = e.getBoundingClientRect(); const cs = getComputedStyle(e); return r.width > 0 && r.height > 0 && cs.visibility !== 'hidden' && cs.display !== 'none' && parseFloat(cs.opacity) > 0.05; };
+  const hit = (a, b, pad = 2) => a.left < b.right - pad && a.right > b.left + pad && a.top < b.bottom - pad && a.bottom > b.top + pad;
+  const things = [];
+  const add = (sel, name) => document.querySelectorAll(sel).forEach((e) => { if (vis(e)) things.push({ e, name, r: e.getBoundingClientRect() }); });
+  add('#clock', 'the clock'); add('.viewcap:not([data-empty])', 'the caption'); add('.placard', 'a placard'); add('.ctab', 'a tab'); add('.slate', 'the status slate');
+  add('.burger-tag', 'the Menu label'); add('.burger-anchor', 'the burger'); add('.seeall-board', 'See all'); add('.vessel-cap', 'a category tag');
+  document.querySelectorAll('.slot.sub .hang').forEach((e) => { const row = e.closest('.row-items').getBoundingClientRect(); const r = e.getBoundingClientRect(); if (vis(e) && r.left >= row.left - 1 && r.right <= row.right + 1) things.push({ e, name: 'a subcategory tag', r }); }); add('.cgroup:not([hidden]) .cb-art > *', 'a counter bottle');
+  for (let i = 0; i < things.length; i++) for (let j = i + 1; j < things.length; j++) {
+    const a = things[i], b = things[j];
+    if (a.name === 'a counter bottle' && b.name === 'a counter bottle') continue;
+    if ([a.name, b.name].sort().join() === 'the burger,the status slate') continue;       // the slate sits under the burger by design (Plan 07)
+    if (a.e.contains(b.e) || b.e.contains(a.e)) continue;
+    if (hit(a.r, b.r)) bad(`${a.name} overlaps ${b.name}`);
+  }
+  // the clock clears every bottle on the shelves, and in a view of drinks no shelf bottle stands behind a counter bottle (wide plate)
+  const arts = [...document.querySelectorAll('#lower .slot .art > *, .topshelf3 .vessel-art > *')].filter(vis).map((e) => e.getBoundingClientRect());
+  const clock = document.querySelector('#clock');
+  if (clock) { const c = clock.getBoundingClientRect(); if (arts.some((r) => hit(c, r))) bad('the clock overlaps a shelf bottle'); }
+  const mode = document.querySelector('#lower')?.dataset.mode;
+  const wide = document.querySelector('.scene3')?.dataset.plate === 'wide';
+  const front = [...document.querySelectorAll('.cgroup:not([hidden]) .cb-art > *')].filter(vis).map((e) => e.getBoundingClientRect());
+  if (wide && mode === 'drinks' && front.length) {
+    const behind = [...document.querySelectorAll('#lower .slot.drink .art > *')].filter(vis).map((e) => e.getBoundingClientRect()).filter((r) => front.some((f) => hit(r, f, 1)));
+    if (behind.length) bad(`${behind.length} shelf bottle(s) stand behind a counter bottle`);
+  }
+  // tap targets on phones
+  if (innerWidth < 768) for (const sel of ['#clock', '.ctab']) document.querySelectorAll(sel).forEach((e) => { const r = e.getBoundingClientRect(); if (vis(e) && (r.width < 43.5 || r.height < 43.5)) bad(`${sel} is ${Math.round(r.width)}x${Math.round(r.height)}px`); });
+  out.mode = mode;
+  out.caption = document.querySelector('#viewcap')?.textContent || '';
+  out.captionVisible = !document.querySelector('#viewcap')?.hasAttribute('data-empty');
+  out.drinks = [...document.querySelectorAll('#lower .slot.drink a.art, #lower .slot.drink button.art')].map((a) => a.getAttribute('href') || a.dataset.name);
+  out.subs = [...document.querySelectorAll('#lower .slot.sub button.hang')].map((b) => b.dataset.sub);
+  out.seeAll = document.querySelector('.seeall-board')?.getAttribute('href') || null;
+  out.hash = location.hash;
+  out.hasSelection = !!document.querySelector('.scene3.has-selection');
+  out.counter = { new: [...document.querySelectorAll('#cg-new .cb-art')].length, season: [...document.querySelectorAll('#cg-season .cb-art')].length,
+    newIn: document.querySelector('#cg-new-h .in:not([hidden]), #tab-new .in:not([hidden])')?.textContent || '', seasonIn: document.querySelector('#cg-season-h .in:not([hidden]), #tab-season .in:not([hidden])')?.textContent || '',
+    newIds: [...document.querySelectorAll('#cg-new .cbottle')].map((a) => (a.getAttribute('href') || '').replace('#/drink/', '')),
+    seasonIds: [...document.querySelectorAll('#cg-season .cbottle')].map((a) => (a.getAttribute('href') || '').replace('#/drink/', '')) };
+  return out;
+})()"""
+
+
+def settle(page):
+    page.eval(SETTLE_JS, await_promise=True)
+
+
+def vclick(page, sel):
+    ok = page.eval(f"(() => {{ const e = document.querySelector({json.dumps(sel)}); if (!e) return false; e.click(); return true; }})()")
+    if not ok:
+        raise RuntimeError(f"nothing to press: {sel}")
+    settle(page)
+
+
+def view_state(page):
+    return page.eval(VIEW_STATE_JS)
+
+
+def welcome_checks(page, base, tag, shots_dir=None):
+    """Every Plan 10 section 9 item on the welcome page, at one size."""
+    probs = []
+    P = lambda m: probs.append(f"{tag} welcome: {m}")
+    load(page, base, "#/")
+    shelf = page.eval("window.__shelf = null; fetch('data/shelf.json').then(r => r.json())", await_promise=True)
+    cats = shelf["categories"]
+    names = [c["name"] for c in cats]
+    tall = page.eval("document.querySelector('.scene3').dataset.plate") == "tall"
+
+    def check(label):
+        s = view_state(page)
+        probs.extend(f"{tag} welcome {label}: {m}" for m in s["problems"])
+        return s
+
+    # top shelf, and the menu's Shelves submenu match it; Liquid is empty so it is left out
+    caps = page.eval("[...document.querySelectorAll('.vessel-cap')].map(e => e.textContent.trim())")
+    if caps != ["Sake", "Fermented Beverages", "Umeshu", "Wine", "Spirits", "Cocktails"] or caps != names:
+        P(f"the top shelf shows {caps}, shelf.json has {names}")
+    rest = check("at rest")
+    if rest["mode"] != "mix" or rest["captionVisible"]:
+        P(f"at rest the mode is {rest['mode']} and the caption is {'shown' if rest['captionVisible'] else 'hidden'}")
+    if len(rest["counter"]["newIds"]) != 5 or len(rest["counter"]["seasonIds"]) != 5:
+        P(f"the counter groups hold {len(rest['counter']['newIds'])} and {len(rest['counter']['seasonIds'])} bottles, not 5 and 5")
+    # compact groups: the bottles stand close, centred over their placard (wide) or tab row (tall)
+    geo = page.eval("""(() => { const out = {}; for (const id of ['new', 'season']) {
+      const bs = [...document.querySelectorAll('#cg-' + id + ' .cb-art > *')].map((e) => e.getBoundingClientRect()).filter((r) => r.width > 0).sort((a, b) => a.left - b.left);
+      if (!bs.length) continue;
+      const pl = document.querySelector('#cg-' + id + '-h') || document.querySelector('.ctabs'); const prect = pl && pl.getBoundingClientRect();
+      const gaps = bs.slice(1).map((r, i) => r.left - bs[i].right); const w = bs.reduce((s, r) => s + r.width, 0) / bs.length;
+      out[id] = { gapShare: Math.max(...gaps) / w, centre: (bs[0].left + bs[bs.length - 1].right) / 2, placard: prect ? (prect.left + prect.right) / 2 : null, width: bs[bs.length - 1].right - bs[0].left }; } return out; })()""")
+    for gid, g in geo.items():
+        if g["gapShare"] > 0.45:
+            P(f"the {gid} group is spread out (gaps {g['gapShare']:.2f} of a bottle width)")
+        if g["placard"] is not None and abs(g["centre"] - g["placard"]) > 14:
+            P(f"the {gid} group is {abs(g['centre'] - g['placard']):.0f}px off the centre of its placard")
+    # the top-shelf bottle opens a category; lower-shelf bottles of a category open drinks, their boards open the subcategory
+    vclick(page, ".vessel[data-cat=sake]")
+    s = check("sake")
+    sake = next(c for c in cats if c["key"] == "sake")
+    if s["mode"] != "sub" or s["subs"] != [x["key"] for x in sake["subcategories"]] or not s["hasSelection"]:
+        P(f"Sake opens as {s['mode']} {s['subs']}")
+    hrefs = page.eval("[...document.querySelectorAll('#lower .slot.sub a.art')].map(a => a.getAttribute('href'))")
+    if not hrefs or not all(h.startswith("#/drink/") for h in hrefs):
+        P(f"a subcategory bottle does not open its drink: {hrefs}")
+    stops = page.eval("""(() => { const s = document.querySelector('#lower .slot.sub'); const f = [...s.querySelectorAll('a, button')]; return [f[0].tagName, f[1].tagName, s.querySelector('a.art').getAttribute('aria-label'), f[1].getAttribute('aria-label')]; })()""")
+    if stops[0] != "A" or stops[1] != "BUTTON" or not stops[2].endswith("open drink") or "show on the shelves" not in stops[3]:
+        P(f"the bottle and its board are not two focus stops with the right names: {stops}")
+    vclick(page, "button[data-sub=junmai-ginjo]")
+    s = check("Junmai Ginjo")
+    jg = next(x for x in sake["subcategories"] if x["key"] == "junmai-ginjo")
+    if s["mode"] != "drinks" or not s["captionVisible"] or s["caption"] != f"Junmai Ginjo · {jg['drinkCount']} drinks":
+        P(f"the Junmai Ginjo view is {s['mode']} with caption '{s['caption']}'")
+    if s["hash"] != "#/sake":
+        P(f"a view changed the address to {s['hash']}")
+    if jg["drinkCount"] > len(s["drinks"]) and s["seeAll"] != "#/sake/junmai-ginjo":
+        P("'See all' is missing or points at the wrong list")
+    if not all((d or "").startswith("#/drink/") for d in s["drinks"]):
+        P("a bottle in the subcategory view does not open its drink")
+    if s["counter"]["newIn"] != "in Junmai Ginjo" or s["counter"]["seasonIn"] not in ("in Junmai Ginjo", ""):
+        P(f"the counter lines read '{s['counter']['newIn']}' and '{s['counter']['seasonIn']}'")
+    if set(s["counter"]["newIds"]) - {d["id"] for d in jg["drinks"]}:
+        P("the New arrivals group holds drinks from outside Junmai Ginjo")
+    # tapping a placard while filtered opens the whole bar's view
+    vclick(page, "#cg-new-h" if not tall else "#tab-new")
+    s = check("New arrivals")
+    if s["mode"] != "drinks" or not s["caption"].startswith("New arrivals · ") or len(s["drinks"]) <= 5:
+        P(f"New arrivals view: mode {s['mode']}, caption '{s['caption']}', {len(s['drinks'])} bottles")
+    if s["counter"]["newIn"]:
+        P("the counter is still filtered in the New arrivals view")
+    vclick(page, "#cg-season-h" if not tall else "#tab-season")
+    s = check("In season")
+    if s["mode"] != "drinks" or not s["caption"].startswith("In season: ") or len(s["drinks"]) <= 5:
+        P(f"In season view: mode {s['mode']}, caption '{s['caption']}', {len(s['drinks'])} bottles")
+    n_season = len(s["drinks"])
+    # a subcategory with no picks for the season keeps the usual set in that group, and says nothing about the subcategory
+    import datetime
+    m = datetime.date.today().month
+    season = "spring" if 3 <= m <= 5 else "summer" if 6 <= m <= 8 else "autumn" if 9 <= m <= 11 else "winter"
+    plain = next(((c, x) for c in cats if not c.get("direct") for x in c["subcategories"] if x.get("drinks") and not x["season"].get(season)), None)
+    if plain:
+        vclick(page, "#clock")
+        vclick(page, f".vessel[data-cat={plain[0]['key']}]")
+        vclick(page, f"button[data-sub={plain[1]['key']}]")
+        s2 = check(f"{plain[1]['name']} with no {season} picks")
+        if s2["counter"]["seasonIds"] != rest["counter"]["seasonIds"] or s2["counter"]["seasonIn"]:
+            P(f"{plain[1]['name']} has no {season} picks, so the In season group should keep its usual set (it shows {s2['counter']['seasonIds'][:2]}, line '{s2['counter']['seasonIn']}')")
+    # the clock resets any view
+    for label, setup in (("sub view", lambda: (vclick(page, ".vessel[data-cat=sake]"), vclick(page, "button[data-sub=junmai-ginjo]"))), ("In season view", lambda: None)):
+        setup()
+        vclick(page, "#clock")
+        s = check(f"after the clock from the {label}")
+        if s["mode"] != "mix" or s["captionVisible"] or s["hash"] != "#/" or s["counter"]["newIn"] or s["hasSelection"]:
+            P(f"the clock did not return to Rest from the {label} ({s['mode']}, hash {s['hash']}, caption '{s['caption']}')")
+    # the hands show the visitor's local time
+    t = page.eval("""(() => { const d = new Date(); const rot = (id) => parseFloat((document.querySelector(id).getAttribute('transform') || 'rotate(0)').match(/-?[\\d.]+/)[0]);
+      return { hour: rot('#clock-h'), minute: rot('#clock-m'), eh: ((d.getHours() % 12) + d.getMinutes() / 60) * 30, em: d.getMinutes() * 6 }; })()""")
+    if abs(t["minute"] - t["em"]) > 6.5 and abs(abs(t["minute"] - t["em"]) - 360) > 6.5 or abs(t["hour"] - t["eh"]) > 1.5:
+        P(f"the clock shows hands {t['hour']:.0f}/{t['minute']:.0f}, local time is {t['eh']:.0f}/{t['em']:.0f}")
+    # Esc returns to Rest too
+    vclick(page, "#cg-new-h" if not tall else "#tab-new")
+    page.eval("document.dispatchEvent(new KeyboardEvent('keydown', {key: 'Escape', bubbles: true, cancelable: true}))")
+    settle(page)
+    s = check("after Esc")
+    if s["mode"] != "mix" or s["captionVisible"]:
+        P(f"Esc did not return to Rest ({s['mode']})")
+    # Fermented Beverages, Spirits and Umeshu
+    vclick(page, ".vessel[data-cat=fermented]")
+    s = check("Fermented Beverages")
+    ferm = next(c for c in cats if c["key"] == "fermented")
+    keys = [x["key"] for x in ferm["subcategories"]]
+    if s["subs"] != keys or keys[0] != "makgeolli":
+        P(f"Fermented Beverages opens to {s['subs']}, expected Makgeolli first then {keys}")
+    shells = page.eval("[...document.querySelectorAll('#lower .slot.sub')].map(s => s.dataset.shape)")
+    if shells[0] != "makgeolli" or any(x != "beer" for x in shells[1:]):
+        P(f"Fermented Beverages shells are {shells}")
+    vclick(page, ".vessel[data-cat=spirits]")
+    s = check("Spirits")
+    spir = next(c for c in cats if c["key"] == "spirits")
+    if s["subs"] != [x["key"] for x in spir["subcategories"]] or s["subs"][0] != "whisky":
+        P(f"Spirits opens to {s['subs']}")
+    vclick(page, ".vessel[data-cat=umeshu]")
+    s = check("Umeshu")
+    um = next(c for c in cats if c["key"] == "umeshu")
+    if s["mode"] != "drinks" or len(s["drinks"]) != um["drinkCount"] or s["caption"] != f"Umeshu · {um['drinkCount']} drinks":
+        P(f"Umeshu opens as {s['mode']} with {len(s['drinks'])} bottles and caption '{s['caption']}'")
+    if s["counter"]["newIn"] != "in Umeshu":
+        P(f"the counter lines read '{s['counter']['newIn']}' in Umeshu")
+    # a top-shelf tap while in a subcategory view goes back to that category's view
+    vclick(page, ".vessel[data-cat=sake]")
+    vclick(page, "button[data-sub=junmai-ginjo]")
+    vclick(page, ".vessel[data-cat=sake]")
+    s = check("top shelf tap")
+    if s["mode"] != "sub":
+        P(f"a top-shelf tap in a view gave {s['mode']}, not its category view")
+    vclick(page, "#clock")
+    return probs
+
+
+ALIAS_JS = """(async (route) => {
+  await new Promise((resolve) => { addEventListener('hashchange', resolve, { once: true }); location.hash = route; setTimeout(resolve, 1500); });
+  const t0 = performance.now();
+  while (document.body.dataset.ready !== '1' && performance.now() - t0 < 8000) await new Promise((r) => setTimeout(r, 30));
+  await new Promise((r) => setTimeout(r, 150));
+  return { hash: location.hash, h1: (document.querySelector('h1') || {}).textContent || '', history: history.length };
+})"""
+
+
+def alias_checks(page, base, tag):
+    """Every old address lands on its new page (Plan 10 section 2.5), without adding a history entry."""
+    probs = []
+    load(page, base, "#/")
+    al = page.eval("fetch('data/aliases.json').then(r => r.json())", await_promise=True)
+    first_beer = page.eval("fetch('data/shelf.json').then(r => r.json()).then(s => s.categories.find(c => c.key === 'fermented').subcategories.find(x => x.key !== 'makgeolli').key)", await_promise=True)
+    cases = [("#/makgeolli", "#/fermented/makgeolli"), ("#/makgeolli/all", "#/fermented/makgeolli"), ("#/beer", "#/fermented"),
+             (f"#/beer/{first_beer}", f"#/fermented/{first_beer}"), ("#/beer/all", "#/fermented/other"), ("#/liqueur/umeshu", "#/umeshu")]
+    cases += [(f"#/producer/{old}", f"#/producer/{new}") for old, new in al["producers"].items()]
+    if len(al["producers"]) != 12:
+        probs.append(f"{tag} aliases: {len(al['producers'])} maker aliases, expected the 12 of Plan 09 Stage 1")
+    for old, new in cases:
+        page.eval("history.replaceState(null, '', '#/')")
+        before = page.eval("history.length")
+        r = page.eval(f"{ALIAS_JS}({json.dumps(old)})", await_promise=True)
+        if r["hash"] != new:
+            probs.append(f"{tag} aliases: {old} landed on {r['hash']}, expected {new}")
+        elif "empty" in r["h1"].lower():
+            probs.append(f"{tag} aliases: {old} shows the empty-shelf page")
+        elif r["history"] - before > 1:
+            probs.append(f"{tag} aliases: {old} added {r['history'] - before} history entries")
+    r = page.eval(f"{ALIAS_JS}('#/liqueur')", await_promise=True)
+    if "This shelf is empty" not in r["h1"]:
+        probs.append(f"{tag} aliases: #/liqueur (empty) shows '{r['h1']}'")
+    return probs
+
+
+def photo_checks(page, base, tag):
+    """Drink pages show one front photo and the data publishes no other view (Plan 10 section 7)."""
+    probs = []
+    load(page, base, "#/")
+    r = page.eval("""fetch('data/drinks.json').then(r => r.json()).then(async (ds) => { const bad = []; let withPhoto = 0;
+      for (const d of ds) { const j = await (await fetch('data/drinks/' + d.id + '.json')).json(); if (j.photos.length > 1 || j.photos.some((p) => p.kind !== 'front')) bad.push(d.id); if (j.photos.length) withPhoto++; }
+      return { bad, withPhoto, total: ds.length }; })""", await_promise=True)
+    if r["bad"]:
+        probs.append(f"{tag} photos: {len(r['bad'])} drink(s) publish more than the front photo, e.g. {r['bad'][0]}")
+    pic = page.eval("fetch('data/drinks.json').then(r => r.json()).then(ds => (ds.find(d => d.thumb) || {}).id)", await_promise=True)
+    load(page, base, f"#/drink/{pic}")
+    n = page.eval("({ thumbs: document.querySelectorAll('.thumbs, .thumb').length, prints: document.querySelectorAll('.hd-photo .print').length })")
+    if n["thumbs"] or n["prints"] != 1:
+        probs.append(f"{tag} photos: the drink page has {n['thumbs']} thumbnail element(s) and {n['prints']} photo print(s)")
+    page.eval("document.querySelector('#photo-main')?.click()")
+    settle(page)
+    lb = page.eval("({ open: !!document.querySelector('.lightbox'), nav: [...document.querySelectorAll('.lightbox .lb-nav')].filter((b) => !b.hidden && getComputedStyle(b).display !== 'none').length })")
+    if not lb["open"] or lb["nav"]:
+        probs.append(f"{tag} photos: the lightbox is {'open' if lb['open'] else 'not open'} with {lb['nav']} previous/next button(s)")
+    page.eval("document.querySelector('.lightbox .lb-close')?.click()")
+    return probs

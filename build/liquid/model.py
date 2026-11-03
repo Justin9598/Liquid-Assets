@@ -169,8 +169,8 @@ def classify(ledger, drinks, issues):
                 d["sub"], d["sub_name"], d["sub_order"] = slugify(matched), matched, (grades.index(matched), "")
             else:
                 d["sub"], d["sub_name"], d["sub_order"] = "ungraded", "Ungraded", (len(grades) + 1, "")
-        elif cat == "makgeolli":
-            _fallback(d, cat, issues, warn=False)
+        elif cat == "fermented" and raw == "Makgeolli":
+            d["sub"], d["sub_name"], d["sub_order"] = "makgeolli", "Makgeolli", (0, "")
         elif cat == "wine":
             grape = d["detail"].get("Wine Detail", {}).get("Grape(s)")
             parts = [p for p in GRAPE_SPLIT.split(grape or "") if p.strip()]
@@ -200,9 +200,9 @@ def classify(ledger, drinks, issues):
                                            f"({', '.join(T.TYPE_VALUES['spirit'])})",
                                     sheet="Other Detail", row=other.get("_row"), drink=d["name"])
                         _fallback(d, cat, issues, reason=f"Type '{typ}' is not valid", warn=False)
-        elif cat == "liqueur":
+        elif cat in ("liqueur", "umeshu"):
             if raw == "Umeshu":
-                d["sub"], d["sub_name"], d["sub_order"] = "umeshu", "Umeshu", (0, "")
+                d["sub"], d["sub_name"], d["sub_order"] = "all", "Umeshu", (0, "")
                 if typ and not _match_type(typ, T.TYPE_VALUES["umeshu"]):
                     issues.warn("W03", f"Type '{typ}' is not a valid umeshu flavour/base "
                                        f"(allowed: {', '.join(T.TYPE_VALUES['umeshu'])})",
@@ -219,14 +219,14 @@ def classify(ledger, drinks, issues):
                         issues.warn("W03", f"Type '{typ}' is not valid for Liqueur (allowed: {', '.join(valid)})",
                                     sheet="Other Detail", row=other.get("_row"), drink=d["name"])
                         _fallback(d, cat, issues, reason=f"Type '{typ}' is not valid", warn=False)
-        else:  # beer, cocktails: sub-type from Other Detail.Type
-            valid = T.TYPE_VALUES[cat]
+        else:  # beer (in Fermented Beverages) and cocktails: sub-type from Other Detail.Type
+            valid = T.TYPE_VALUES["beer" if cat == "fermented" else cat]
             if not typ:
                 _fallback(d, cat, issues, reason="Other Detail.Type is empty")
             else:
                 matched = _match_type(typ, valid)
                 if matched:
-                    d["sub"], d["sub_name"], d["sub_order"] = slugify(matched), matched, (valid.index(matched), "")
+                    d["sub"], d["sub_name"], d["sub_order"] = slugify(matched), matched, (valid.index(matched) + (1 if cat == "fermented" else 0), "")
                 else:
                     issues.warn("W03", f"Type '{typ}' is not valid for {T.CATEGORY_NAMES[cat]} "
                                        f"(allowed: {', '.join(valid)})",
@@ -259,7 +259,7 @@ def _spirit_sub(d, name):
 
 
 def _fallback(d, cat, issues, reason=None, warn=True):
-    d["sub"], d["sub_name"] = "all", T.FALLBACK_NAME[cat]
+    d["sub"], d["sub_name"] = ("other", "Other beer") if cat == "fermented" else ("all", T.FALLBACK_NAME[cat])
     d["sub_order"] = (10_000, "")
     if warn and reason:
         issues.warn("W10", f"{reason}: filed under the fallback bottle ('{T.FALLBACK_NAME[cat]}' or 'Other ...')",
@@ -349,16 +349,16 @@ def build_facts(d):
         o = detail.get("Other Detail", {})
         facts = [_fmt(o.get("Flavouring or Botanicals")) or _fmt(o.get("Base")),
                  d["styles"][0] if d["styles"] else None]
-    elif cat == "makgeolli":
+    elif raw == "Makgeolli":
         o = detail.get("Other Detail", {})
         facts = [_fmt(o.get("Base")), _fmt(o.get("Flavouring or Botanicals"))]
-    elif cat == "liqueur":
+    elif cat in ("liqueur", "umeshu"):
         o = detail.get("Other Detail", {})
         if raw == "Umeshu":   # flavour/base (Type), then base (Plan 02 section 7.2)
             facts = [_fmt(o.get("Type")), _fmt(o.get("Base"))]
         else:
             facts = [_fmt(o.get("Base")), _fmt(o.get("Flavouring or Botanicals"))]
-    elif cat == "beer":
+    elif raw == "Beer":
         o = detail.get("Other Detail", {})
         facts = [_fmt(o.get("Type")), _fmt(o.get("Yeast"))]
     elif cat == "wine":
