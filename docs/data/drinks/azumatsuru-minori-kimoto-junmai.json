@@ -1,0 +1,72 @@
+{
+ "id": "azumatsuru-minori-kimoto-junmai",
+ "name": "Azumatsuru Minori Kimoto Junmai",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "azumatsuru-shuzo",
+  "name": "Azumatsuru Shuzo",
+  "native": null,
+  "location": "Taku, Saga, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [
+  "Kimoto"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 65,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Omachi"
+  },
+  {
+   "label": "Yeast",
+   "value": "Kyokai No. 7"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "90ml Pour"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-05",
+   "size": "90ml Pour",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/azumatsuru-minori-kimoto-junmai-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "akishika-moto-plus-one-junmai-muroka-nam",
+ "next": "umifudo-sea-food"
+}

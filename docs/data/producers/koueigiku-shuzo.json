@@ -13,19 +13,25 @@
  "sources": [],
  "related": [],
  "tally": {
-  "drinks": 1,
+  "drinks": 2,
   "categories": 1,
   "favourites": 0,
-  "timesHad": 1
+  "timesHad": 2
  },
  "drinks": [
   {
    "id": "koueigiku-hello-omachi-sumizake",
    "category": "sake",
    "sub": "junmai"
+  },
+  {
+   "id": "koueigiku-gekka-burai",
+   "category": "sake",
+   "sub": "futsushu"
   }
  ],
  "moreFromRegion": [
-  "fukuchiyo-shuzo"
+  "fukuchiyo-shuzo",
+  "azumatsuru-shuzo"
  ]
 }

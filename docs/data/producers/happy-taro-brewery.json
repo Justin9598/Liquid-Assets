@@ -23,10 +23,10 @@
  ],
  "related": [],
  "tally": {
-  "drinks": 4,
+  "drinks": 5,
   "categories": 1,
   "favourites": 1,
-  "timesHad": 4
+  "timesHad": 5
  },
  "drinks": [
   {
@@ -41,6 +41,11 @@
   },
   {
    "id": "ukiuki-hops",
+   "category": "sake",
+   "sub": "craft-sake"
+  },
+  {
+   "id": "yama-no-kami-san-ohara-red-shiso",
    "category": "sake",
    "sub": "craft-sake"
   },

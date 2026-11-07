@@ -1,0 +1,50 @@
+{
+ "key": "hara-shuzo",
+ "name": "Hara Shuzo",
+ "native": "原酒造",
+ "location": "Kashiwazaki, Niigata",
+ "region": "Niigata",
+ "country": "Japan",
+ "founded": 1814,
+ "master": null,
+ "website": "https://www.harashuzou.com/",
+ "brands": [
+  "Koshinohomare",
+  "Koshi no Homare",
+  "越の誉",
+  "Qn"
+ ],
+ "about": [
+  "Hara Shuzo is a brewery in Kashiwazaki, a port city on the Sea of Japan coast of Niigata. It dates its start to the Bunka 11 era, 1814, when Hara Kotaro, from a family of salt-pan foundry workers, turned to brewing instead.",
+  "The brewery uses very soft water from Mt. Yoneyama snowmelt and works with contract farmers in Niigata, polishing the rice in house. It has bred two rice varieties of its own, Koshi-kagura and Rakufu-mai. Besides the classic Koshinohomare labels it makes an experimental 90 series and the Qn range."
+ ],
+ "sources": [
+  "https://www.harashuzou.com/history/",
+  "https://www.harashuzou.com/hometown/",
+  "https://www.harashuzou.com/brewing/",
+  "https://www.harashuzou.com/lineup/"
+ ],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "koshinohomare-qn-matsuri",
+   "category": "sake",
+   "sub": "junmai"
+  }
+ ],
+ "moreFromRegion": [
+  "asahi-shuzo-niigata",
+  "ishimoto-shuzo",
+  "koshi-meijo",
+  "kubiki-shuzo",
+  "shirataki-shuzo",
+  "swan-lake-beer",
+  "takachiyo-shuzo"
+ ]
+}

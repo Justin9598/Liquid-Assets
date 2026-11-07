@@ -1,0 +1,64 @@
+{
+ "id": "carlsberg-smooth-draught",
+ "name": "Carlsberg Smooth Draught",
+ "category": "fermented",
+ "sub": "lager",
+ "producer": {
+  "key": "carlsberg",
+  "name": "Carlsberg",
+  "native": null,
+  "location": "Copenhagen, Denmark",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 4.8,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "Lager"
+  },
+  {
+   "label": "Base",
+   "value": "Barley malt and grain"
+  },
+  {
+   "label": "Flavouring or botanicals",
+   "value": "Hops"
+  },
+  {
+   "label": "ABV",
+   "value": 4.8,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "325ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-05",
+   "size": "325ml Bottle",
+   "where": "Space Box 串梭时空",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/carlsberg-smooth-draught-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "nasu-kohgen-ai",
+ "next": "nasu-kohgen-ai"
+}

@@ -1,0 +1,83 @@
+{
+ "id": "isshou-seishun-shinshu-origarami-honnama",
+ "name": "Isshou Seishun Junmai Shinshu Origarami Honnama",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "akebono-shuzo",
+  "name": "Akebono Shuzo",
+  "native": "曙酒造",
+  "location": "Aizubange, Fukushima, Japan",
+  "founded": 1904,
+  "about": "Akebono Shuzo is a brewery in Aizubange, in the Aizu region of Fukushima. It was founded in 1904, and its sixth-generation head took charge in 2013.",
+  "url": "https://akebono-syuzou.com/"
+ },
+ "abv": 14,
+ "styles": [
+  "Nama",
+  "Origarami",
+  "Muroka"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 67,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yume no Kaori 100%"
+  },
+  {
+   "label": "ABV",
+   "value": 14,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-05",
+   "size": "60ml Tasting",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/isshou-seishun-shinshu-origarami-honnama-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "akebono-color-umeshu-brown-label",
+  "isshou-seishun-bessen-junmai-daiginjo",
+  "isshou-seishun",
+  "tenmei-arabashiri",
+  "tenmei-nakadori-urugo",
+  "tenmei-fukunoka",
+  "tenmei-junmai-ginjo-hiire-black-label",
+  "tenmei-kamenoo-65-kijoshu",
+  "tenmei-origarami",
+  "tenmei-nakadori-nigo-origarami-nama",
+  "tenmei-nakadori-zerogo-origarami-nama",
+  "tenmei-sarasara-junmai-lovely-summer"
+ ],
+ "prev": "houou-biden-tsurugi-karakuchi-junmai",
+ "next": "izumibashi-natsu-yago-sparkling"
+}

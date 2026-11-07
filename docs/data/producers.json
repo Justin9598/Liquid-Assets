@@ -25,7 +25,7 @@
    "Tenmei",
    "Isshou Seishun"
   ],
-  "drinkCount": 12,
+  "drinkCount": 13,
   "favourites": 1,
   "hasStory": true
  },
@@ -160,12 +160,36 @@
   "hasStory": true
  },
  {
+  "key": "azumatsuru-shuzo",
+  "name": "Azumatsuru Shuzo",
+  "native": null,
+  "region": "Saga",
+  "country": "Japan",
+  "location": "Taku, Saga",
+  "brands": [],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": false
+ },
+ {
   "key": "bruichladdich",
   "name": "Bruichladdich",
   "native": null,
   "region": "Islay",
   "country": "Scotland",
   "location": "Bruichladdich, Islay",
+  "brands": [],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": false
+ },
+ {
+  "key": "carlsberg",
+  "name": "Carlsberg",
+  "native": null,
+  "region": "Copenhagen",
+  "country": "Denmark",
+  "location": "Copenhagen",
   "brands": [],
   "drinkCount": 1,
   "favourites": 0,
@@ -455,7 +479,7 @@
    "haccoba",
    "Hanauta Hops"
   ],
-  "drinkCount": 2,
+  "drinkCount": 3,
   "favourites": 0,
   "hasStory": true
  },
@@ -558,8 +582,25 @@
    "something happy",
    "Happy Doburoku"
   ],
-  "drinkCount": 4,
+  "drinkCount": 5,
   "favourites": 1,
+  "hasStory": true
+ },
+ {
+  "key": "hara-shuzo",
+  "name": "Hara Shuzo",
+  "native": "原酒造",
+  "region": "Niigata",
+  "country": "Japan",
+  "location": "Kashiwazaki, Niigata",
+  "brands": [
+   "Koshinohomare",
+   "Koshi no Homare",
+   "越の誉",
+   "Qn"
+  ],
+  "drinkCount": 1,
+  "favourites": 0,
   "hasStory": true
  },
  {
@@ -1113,6 +1154,18 @@
   "region": "Saga",
   "country": "Japan",
   "location": "Saga",
+  "brands": [],
+  "drinkCount": 2,
+  "favourites": 0,
+  "hasStory": false
+ },
+ {
+  "key": "kronenbourg",
+  "name": "Kronenbourg",
+  "native": null,
+  "region": "Strasbourg",
+  "country": "France",
+  "location": "Strasbourg",
   "brands": [],
   "drinkCount": 1,
   "favourites": 0,

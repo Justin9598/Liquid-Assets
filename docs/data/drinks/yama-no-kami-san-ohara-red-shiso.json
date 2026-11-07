@@ -1,0 +1,64 @@
+{
+ "id": "yama-no-kami-san-ohara-red-shiso",
+ "name": "Yama no Kami-san Ohara Red Shiso",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "happy-taro-brewery",
+  "name": "Happy Taro Brewery",
+  "native": "ハッピー太郎醸造所",
+  "location": "Nagahama, Shiga, Japan",
+  "founded": 2022,
+  "about": "Happy Taro Brewery belongs to Kotaro Ikejima, a Kyoto University graduate who brewed sake at three breweries in Shimane and Shiga before going independent. In October 2017 he opened a fermented-food workshop in Hikone, making koji, miso and amazake.",
+  "url": "https://happytaro.jp/"
+ },
+ "abv": 7,
+ "styles": [
+  "Doburoku",
+  "Flavoured"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "Naturally grown rice (Shiga Asahi, Arigatou-mai, Kame no O No. 4)"
+  },
+  {
+   "label": "ABV",
+   "value": 7,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-05",
+   "size": "60ml Tasting",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/yama-no-kami-san-ohara-red-shiso-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "ichigoya-hana-strawberry-doburoku",
+  "oriental-whey",
+  "ukiuki-hops",
+  "something-happy-fresh-herb-tea"
+ ],
+ "prev": "wakaze-unique",
+ "next": "something-happy-fresh-herb-tea"
+}

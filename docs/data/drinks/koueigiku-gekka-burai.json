@@ -1,0 +1,68 @@
+{
+ "id": "koueigiku-gekka-burai",
+ "name": "Koueigiku Gekka Burai",
+ "category": "sake",
+ "sub": "futsushu",
+ "producer": {
+  "key": "koueigiku-shuzo",
+  "name": "Koueigiku Shuzo",
+  "native": null,
+  "location": "Saga, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 17,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Futsushu"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 93,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Shinriki"
+  },
+  {
+   "label": "ABV",
+   "value": 17,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-05",
+   "size": "60ml Tasting",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/koueigiku-gekka-burai-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "koueigiku-hello-omachi-sumizake"
+ ],
+ "prev": "kiku-masamune-kasen",
+ "next": "nihonsakari-nigiwai"
+}

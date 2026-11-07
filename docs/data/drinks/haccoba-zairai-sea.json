@@ -1,0 +1,52 @@
+{
+ "id": "haccoba-zairai-sea",
+ "name": "Haccoba Zairai Sea",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "haccoba-craft-sake-brewery",
+  "name": "Haccoba Craft Sake Brewery",
+  "native": null,
+  "location": "Minamisoma, Fukushima, Japan",
+  "founded": 2021,
+  "about": "Haccoba is a craft sake brewery in Odaka, Minamisoma, Fukushima, a town that was emptied by the evacuation after 2011. The company was registered in February 2020 and opened its first brewery in Odaka in February 2021. A second brewery followed in nearby Namie in July 2023.",
+  "url": "https://haccoba.com/"
+ },
+ "abv": null,
+ "styles": [
+  "Flavoured"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Size",
+   "value": "90ml Pour"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-05",
+   "size": "90ml Pour",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/haccoba-zairai-sea-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "haccoba-jam-2025by-no4",
+  "haccoba-secret-spring"
+ ],
+ "prev": "haccoba-secret-spring",
+ "next": "hiraroku-layer-apple-craft-sake"
+}

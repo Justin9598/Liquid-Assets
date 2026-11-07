@@ -31,10 +31,10 @@
   }
  ],
  "tally": {
-  "drinks": 12,
+  "drinks": 13,
   "categories": 2,
   "favourites": 1,
-  "timesHad": 16
+  "timesHad": 17
  },
  "drinks": [
   {
@@ -51,6 +51,11 @@
    "id": "isshou-seishun",
    "category": "sake",
    "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "isshou-seishun-shinshu-origarami-honnama",
+   "category": "sake",
+   "sub": "junmai"
   },
   {
    "id": "tenmei-arabashiri",
@@ -102,8 +107,8 @@
   "niida-honke",
   "hanaizumi-shuzo",
   "puku-puku-brewing",
-  "ariga-jozo",
   "haccoba-craft-sake-brewery",
+  "ariga-jozo",
   "homare-shuzo",
   "matsuzaki-shuzo",
   "miyaizumi-meijo",

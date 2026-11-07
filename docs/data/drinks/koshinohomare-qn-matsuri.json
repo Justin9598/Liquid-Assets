@@ -1,0 +1,69 @@
+{
+ "id": "koshinohomare-qn-matsuri",
+ "name": "Koshinohomare Qn Matsuri Junmai Muroka Genshu",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "hara-shuzo",
+  "name": "Hara Shuzo",
+  "native": "原酒造",
+  "location": "Kashiwazaki, Niigata, Japan",
+  "founded": 1814,
+  "about": "Hara Shuzo is a brewery in Kashiwazaki, a port city on the Sea of Japan coast of Niigata. It dates its start to the Bunka 11 era, 1814, when Hara Kotaro, from a family of salt-pan foundry workers, turned to brewing instead.",
+  "url": "https://www.harashuzou.com/"
+ },
+ "abv": 13,
+ "styles": [
+  "Muroka",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 65,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Niigata-grown rice (variety not disclosed); white koji"
+  },
+  {
+   "label": "ABV",
+   "value": 13,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "90ml Pour"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-05",
+   "size": "90ml Pour",
+   "where": "Omu Nomu",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/koshinohomare-qn-matsuri-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "komesou-brocken-splash-junmai-muroka-genshu",
+ "next": "kujira-junmai-yamadanishiki-kimoto-nama-genshu-80"
+}

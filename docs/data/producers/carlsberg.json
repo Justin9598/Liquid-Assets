@@ -1,0 +1,29 @@
+{
+ "key": "carlsberg",
+ "name": "Carlsberg",
+ "native": null,
+ "location": "Copenhagen",
+ "region": "Copenhagen",
+ "country": "Denmark",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "carlsberg-smooth-draught",
+   "category": "fermented",
+   "sub": "lager"
+  }
+ ],
+ "moreFromRegion": []
+}
