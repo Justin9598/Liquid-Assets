@@ -2934,7 +2934,7 @@
   "id": "kavalan-dry-single-malt-highball",
   "name": "Kavalan Dry Single Malt Highball",
   "category": "cocktails",
-  "sub": "other",
+  "sub": "highball",
   "producer": "Kavalan",
   "producerKey": "kavalan",
   "origin": "Yilan",
@@ -2961,7 +2961,7 @@
   "id": "kavalan-highball-whisky-soda",
   "name": "Kavalan Highball Whisky Soda",
   "category": "cocktails",
-  "sub": "other",
+  "sub": "highball",
   "producer": "Kavalan",
   "producerKey": "kavalan",
   "origin": "Yilan",
@@ -6971,7 +6971,7 @@
   "id": "under-15m",
   "name": "Under 15M",
   "category": "fermented",
-  "sub": "other",
+  "sub": "pale-ale",
   "producer": "Jeju Beer Company",
   "producerKey": "jeju-beer-company",
   "origin": "Jeju",
@@ -6985,7 +6985,9 @@
   "favourite": false,
   "rating": null,
   "added": "2026-10-14",
-  "facts": [],
+  "facts": [
+   "Pale Ale"
+  ],
   "hasTasting": false,
   "thumb": "img/thumbs/under-15m.webp",
   "label": "img/labels/under-15m.webp"
@@ -7020,7 +7022,7 @@
   "id": "underwater-sake-yeast-beer",
   "name": "Underwater Sake Yeast Beer",
   "category": "fermented",
-  "sub": "other",
+  "sub": "specialty",
   "producer": "Nara Brewing Co.",
   "producerKey": "nara-brewing-co",
   "origin": "Nara",
@@ -7035,6 +7037,7 @@
   "rating": null,
   "added": null,
   "facts": [
+   "Specialty",
    "Kyokai No.7"
   ],
   "hasTasting": false,

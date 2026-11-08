@@ -1,6 +1,6 @@
 # Plan 09: The Producers sheet (data task D2)
 
-Status: **Approved by the owner (2026-11-02).** The owner answered every question in §9, recorded in §10.
+Status: **Complete (2026-11-08).** All 159 maker pages publish an approved story, facts and sources. Batches 1 to 8 are recorded in §10 (D10 to D24).
 
 Plan 05 task D2: research every producer and fill the `Producers` sheet that Plan 04 §8 defines, so maker pages get their Story, Facts and Related makers.
 

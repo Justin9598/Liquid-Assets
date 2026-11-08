@@ -78,7 +78,7 @@ ROUTE_ALIASES = [
     {"from": "makgeolli", "to": "fermented/makgeolli"},
     {"from": "makgeolli/*", "to": "fermented/makgeolli"},
     {"from": "beer", "to": "fermented"},
-    {"from": "beer/all", "to": "fermented/other"},
+    {"from": "beer/all", "to": "fermented"},
     {"from": "beer/*", "to": "fermented/*"},
     {"from": "liqueur/umeshu", "to": "umeshu"},
 ]

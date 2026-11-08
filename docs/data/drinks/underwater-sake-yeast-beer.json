@@ -2,7 +2,7 @@
  "id": "underwater-sake-yeast-beer",
  "name": "Underwater Sake Yeast Beer",
  "category": "fermented",
- "sub": "other",
+ "sub": "specialty",
  "producer": {
   "key": "nara-brewing-co",
   "name": "Nara Brewing Co.",
@@ -17,6 +17,10 @@
  "favourite": false,
  "rating": null,
  "spec": [
+  {
+   "label": "Type",
+   "value": "Specialty"
+  },
   {
    "label": "Yeast",
    "value": "Kyokai No.7"
@@ -54,6 +58,6 @@
   "nara-eighty-eight",
   "underwater-luminous-sake-yeast-beer"
  ],
- "prev": "under-15m",
- "next": "under-15m"
+ "prev": "underwater-luminous-sake-yeast-beer",
+ "next": "underwater-luminous-sake-yeast-beer"
 }

@@ -301,9 +301,9 @@ These are content jobs, not code. Each produces drafts that the owner reviews **
 
 | # | Task | Output |
 |---|---|---|
-| D1 | Draft `Public Notes` and `Visit Note` from the existing `Notes` for 240 drinks, removing housekeeping | Two filled columns, marked for review |
+| D1 | ~~Draft `Public Notes` and `Visit Note` from the existing `Notes`~~ | **Dropped by the owner (2026-11-08):** no drink stories. The columns stay optional and empty, and drink pages show no Story board. |
 | D2 | Research and draft the `Producers` sheet (152 rows), with sources | Rows with `Status = draft` |
-| D3 | Propose `Other Detail.Type` values for Beer, Spirit, Cocktail and Umeshu (about 13 drinks) | Suggested values |
+| D3 | Propose `Other Detail.Type` values for Beer, Spirit, Cocktail and Umeshu (about 13 drinks) | Suggested values  **Done (owner approved 2026-11-08):** `kavalan-dry-single-malt-highball` and `kavalan-highball-whisky-soda` are Highball, `underwater-sake-yeast-beer` is Specialty, and `under-15m` is Pale Ale (a best guess, since no style is printed). The spirits were typed on 2026-11-03 (Plan 10 D7). |
 | D4 | Match the 41 unmatched photos, and check crops on the contact sheet | `content/photo-map.json` entries |
 | D5 | Write copy for `subcategories.json` and `glossary.json` from the Plan 02 §9 and Plan 03 §9 drafts | Two content files |
 

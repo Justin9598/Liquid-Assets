@@ -2,7 +2,7 @@
  "id": "kavalan-dry-single-malt-highball",
  "name": "Kavalan Dry Single Malt Highball",
  "category": "cocktails",
- "sub": "other",
+ "sub": "highball",
  "producer": {
   "key": "kavalan",
   "name": "Kavalan",
@@ -19,6 +19,10 @@
  "favourite": false,
  "rating": null,
  "spec": [
+  {
+   "label": "Type",
+   "value": "Highball"
+  },
   {
    "label": "Base",
    "value": "Kavalan single malt whisky"
@@ -56,6 +60,6 @@
   "kavalan-distillery-reserve-peated-single-cask-strength",
   "kavalan-highball-whisky-soda"
  ],
- "prev": "kavalan-highball-whisky-soda",
+ "prev": "suntory-kakubin-highball",
  "next": "kavalan-highball-whisky-soda"
 }

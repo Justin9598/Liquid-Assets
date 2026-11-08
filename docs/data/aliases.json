@@ -14,7 +14,7 @@
   },
   {
    "from": "beer/all",
-   "to": "fermented/other"
+   "to": "fermented"
   },
   {
    "from": "beer/*",

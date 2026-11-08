@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T06:17:15Z",
+ "generated": "2026-11-08T06:34:32Z",
  "categories": [
   {
    "key": "sake",
@@ -1642,13 +1642,20 @@
      "key": "pale-ale",
      "name": "Pale Ale",
      "native": null,
-     "drinkCount": 1,
-     "labels": [],
+     "drinkCount": 2,
+     "labels": [
+      "img/labels/under-15m.webp"
+     ],
      "drinks": [
       {
        "id": "swanlake-amber-swan-ale",
        "name": "Swanlake Amber Swan Ale",
        "label": null
+      },
+      {
+       "id": "under-15m",
+       "name": "Under 15M",
+       "label": "img/labels/under-15m.webp"
       }
      ]
     },
@@ -1705,32 +1712,16 @@
      "key": "specialty",
      "name": "Specialty",
      "native": null,
-     "drinkCount": 1,
+     "drinkCount": 2,
      "labels": [
-      "img/labels/underwater-luminous-sake-yeast-beer.webp"
+      "img/labels/underwater-luminous-sake-yeast-beer.webp",
+      "img/labels/underwater-sake-yeast-beer.webp"
      ],
      "drinks": [
       {
        "id": "underwater-luminous-sake-yeast-beer",
        "name": "Underwater Luminous Sake Yeast Beer",
        "label": "img/labels/underwater-luminous-sake-yeast-beer.webp"
-      }
-     ]
-    },
-    {
-     "key": "other",
-     "name": "Other beer",
-     "native": null,
-     "drinkCount": 2,
-     "labels": [
-      "img/labels/under-15m.webp",
-      "img/labels/underwater-sake-yeast-beer.webp"
-     ],
-     "drinks": [
-      {
-       "id": "under-15m",
-       "name": "Under 15M",
-       "label": "img/labels/under-15m.webp"
       },
       {
        "id": "underwater-sake-yeast-beer",
@@ -1961,8 +1952,10 @@
      "key": "highball",
      "name": "Highball",
      "native": null,
-     "drinkCount": 1,
+     "drinkCount": 3,
      "labels": [
+      "img/labels/kavalan-dry-single-malt-highball.webp",
+      "img/labels/kavalan-highball-whisky-soda.webp",
       "img/labels/suntory-kakubin-highball.webp"
      ],
      "drinks": [
@@ -1970,19 +1963,7 @@
        "id": "suntory-kakubin-highball",
        "name": "Suntory Kakubin Highball",
        "label": "img/labels/suntory-kakubin-highball.webp"
-      }
-     ]
-    },
-    {
-     "key": "other",
-     "name": "Other cocktails",
-     "native": null,
-     "drinkCount": 2,
-     "labels": [
-      "img/labels/kavalan-dry-single-malt-highball.webp",
-      "img/labels/kavalan-highball-whisky-soda.webp"
-     ],
-     "drinks": [
+      },
       {
        "id": "kavalan-highball-whisky-soda",
        "name": "Kavalan Highball Whisky Soda",
@@ -2203,7 +2184,7 @@
      "id": "kavalan-highball-whisky-soda",
      "name": "Kavalan Highball Whisky Soda",
      "category": "cocktails",
-     "sub": "other",
+     "sub": "highball",
      "label": "img/labels/kavalan-highball-whisky-soda.webp"
     },
     {
@@ -2238,7 +2219,7 @@
      "id": "kavalan-dry-single-malt-highball",
      "name": "Kavalan Dry Single Malt Highball",
      "category": "cocktails",
-     "sub": "other",
+     "sub": "highball",
      "label": "img/labels/kavalan-dry-single-malt-highball.webp"
     },
     {
@@ -2345,14 +2326,14 @@
      "id": "kavalan-highball-whisky-soda",
      "name": "Kavalan Highball Whisky Soda",
      "category": "cocktails",
-     "sub": "other",
+     "sub": "highball",
      "label": "img/labels/kavalan-highball-whisky-soda.webp"
     },
     {
      "id": "kavalan-dry-single-malt-highball",
      "name": "Kavalan Dry Single Malt Highball",
      "category": "cocktails",
-     "sub": "other",
+     "sub": "highball",
      "label": "img/labels/kavalan-dry-single-malt-highball.webp"
     },
     {
@@ -2540,11 +2521,11 @@
      "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
     },
     {
-     "id": "chusa-40",
-     "name": "Chusa 40",
-     "category": "spirits",
-     "sub": "brandy",
-     "label": "img/labels/chusa-40.webp"
+     "id": "under-15m",
+     "name": "Under 15M",
+     "category": "fermented",
+     "sub": "pale-ale",
+     "label": "img/labels/under-15m.webp"
     },
     {
      "id": "aiyama-galaxy-kimoto-junmai-ginjo-origar",
@@ -2580,6 +2561,13 @@
      "category": "sake",
      "sub": "junmai",
      "label": "img/labels/jinya-junmai-akiagari.webp"
+    },
+    {
+     "id": "chusa-40",
+     "name": "Chusa 40",
+     "category": "spirits",
+     "sub": "brandy",
+     "label": "img/labels/chusa-40.webp"
     },
     {
      "id": "yamashiroya-fuga-junmai-daiginjo",
@@ -2671,13 +2659,6 @@
      "category": "sake",
      "sub": "junmai-daiginjo",
      "label": "img/labels/junsei-jd.webp"
-    },
-    {
-     "id": "izumibashi-shiboritate",
-     "name": "Izumibashi Shiboritate",
-     "category": "sake",
-     "sub": "junmai-ginjo",
-     "label": "img/labels/izumibashi-shiboritate.webp"
     }
    ],
    "winter": [
@@ -2713,7 +2694,7 @@
      "id": "kavalan-highball-whisky-soda",
      "name": "Kavalan Highball Whisky Soda",
      "category": "cocktails",
-     "sub": "other",
+     "sub": "highball",
      "label": "img/labels/kavalan-highball-whisky-soda.webp"
     },
     {

@@ -794,7 +794,7 @@ def alias_checks(page, base, tag):
     al = page.eval("fetch('data/aliases.json').then(r => r.json())", await_promise=True)
     first_beer = page.eval("fetch('data/shelf.json').then(r => r.json()).then(s => s.categories.find(c => c.key === 'fermented').subcategories.find(x => x.key !== 'makgeolli').key)", await_promise=True)
     cases = [("#/makgeolli", "#/fermented/makgeolli"), ("#/makgeolli/all", "#/fermented/makgeolli"), ("#/beer", "#/fermented"),
-             (f"#/beer/{first_beer}", f"#/fermented/{first_beer}"), ("#/beer/all", "#/fermented/other"), ("#/liqueur/umeshu", "#/umeshu")]
+             (f"#/beer/{first_beer}", f"#/fermented/{first_beer}"), ("#/beer/all", "#/fermented"), ("#/liqueur/umeshu", "#/umeshu")]
     cases += [(f"#/producer/{old}", f"#/producer/{new}") for old, new in al["producers"].items()]
     if len(al["producers"]) != 12:
         probs.append(f"{tag} aliases: {len(al['producers'])} maker aliases, expected the 12 of Plan 09 Stage 1")

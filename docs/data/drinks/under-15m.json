@@ -2,7 +2,7 @@
  "id": "under-15m",
  "name": "Under 15M",
  "category": "fermented",
- "sub": "other",
+ "sub": "pale-ale",
  "producer": {
   "key": "jeju-beer-company",
   "name": "Jeju Beer Company",
@@ -17,6 +17,10 @@
  "favourite": false,
  "rating": null,
  "spec": [
+  {
+   "label": "Type",
+   "value": "Pale Ale"
+  },
   {
    "label": "Base",
    "value": "Barley malt (Netherlands, Germany, Slovakia)"
@@ -55,6 +59,6 @@
   }
  ],
  "moreFromProducer": [],
- "prev": "underwater-sake-yeast-beer",
- "next": "underwater-sake-yeast-beer"
+ "prev": "swanlake-amber-swan-ale",
+ "next": "swanlake-amber-swan-ale"
 }
