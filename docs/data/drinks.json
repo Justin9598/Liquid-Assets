@@ -377,7 +377,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/asahitaka-tokusen-honjozo-namazake.webp",
-  "label": null
+  "label": "img/labels/asahitaka-tokusen-honjozo-namazake.webp"
  },
  {
   "id": "azumatsuru-minori-kimoto-junmai",
@@ -616,7 +616,7 @@
   "facts": [],
   "hasTasting": false,
   "thumb": "img/thumbs/citrene.webp",
-  "label": null
+  "label": "img/labels/citrene.webp"
  },
  {
   "id": "daishinshu-chokarakuchi-junmai-ginjo",
@@ -773,7 +773,7 @@
   ],
   "hasTasting": true,
   "thumb": "img/thumbs/date-seven-season-2-episode-2.webp",
-  "label": null
+  "label": "img/labels/date-seven-season-2-episode-2.webp"
  },
  {
   "id": "date-seven-season-2-episode-5-koganesawa",
@@ -1305,7 +1305,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/jozen-hachimitsu.webp",
-  "label": null
+  "label": "img/labels/jozen-hachimitsu.webp"
  },
  {
   "id": "hagi-no-tsuru-betsu-shikomi",
@@ -1946,7 +1946,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/hitakami-aquarium-in-winter.webp",
-  "label": null
+  "label": "img/labels/hitakami-aquarium-in-winter.webp"
  },
  {
   "id": "hito-roman",
@@ -2489,7 +2489,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/jukyu-hirvi-19.webp",
-  "label": null
+  "label": "img/labels/jukyu-hirvi-19.webp"
  },
  {
   "id": "junsei-jd",
@@ -2654,7 +2654,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/kagura-hae.webp",
-  "label": null
+  "label": "img/labels/kagura-hae.webp"
  },
  {
   "id": "kagura-nojoho-junmai-ginjo",
@@ -2684,7 +2684,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/kagura-nojoho-junmai-ginjo.webp",
-  "label": null
+  "label": "img/labels/kagura-nojoho-junmai-ginjo.webp"
  },
  {
   "id": "kagura-sparkling",
@@ -2709,7 +2709,7 @@
   "facts": [],
   "hasTasting": false,
   "thumb": "img/thumbs/kagura-sparkling.webp",
-  "label": null
+  "label": "img/labels/kagura-sparkling.webp"
  },
  {
   "id": "kagura-shiro-junmai-daiginjo-ikkabi",
@@ -2738,7 +2738,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/kagura-shiro-junmai-daiginjo-ikkabi.webp",
-  "label": null
+  "label": "img/labels/kagura-shiro-junmai-daiginjo-ikkabi.webp"
  },
  {
   "id": "kaiun-iwaizake-tokubetsu-junmai",
@@ -2875,7 +2875,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/kaoruyama.webp",
-  "label": null
+  "label": "img/labels/kaoruyama.webp"
  },
  {
   "id": "kariho-junmai-yamahai-choukarakuchi",
@@ -2928,7 +2928,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/kavalan-distillery-reserve-peated-single-cask-strength.webp",
-  "label": null
+  "label": "img/labels/kavalan-distillery-reserve-peated-single-cask-strength.webp"
  },
  {
   "id": "kavalan-dry-single-malt-highball",
@@ -4884,7 +4884,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/niida-shizenshu-melon-333.webp",
-  "label": null
+  "label": "img/labels/niida-shizenshu-melon-333.webp"
  },
  {
   "id": "niida-taruzake",
@@ -4939,7 +4939,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/noguchi-naohiko-natsu-no-namazake-2026.webp",
-  "label": null
+  "label": "img/labels/noguchi-naohiko-natsu-no-namazake-2026.webp"
  },
  {
   "id": "noguchi-naohiko-sake-institute",
@@ -4969,7 +4969,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/noguchi-naohiko-sake-institute.webp",
-  "label": null
+  "label": "img/labels/noguchi-naohiko-sake-institute.webp"
  },
  {
   "id": "obuse-jamais-deux-sans-toi",
@@ -5074,7 +5074,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/odayaka-30th.webp",
-  "label": null
+  "label": "img/labels/odayaka-30th.webp"
  },
  {
   "id": "odayaka-junmai-ginjo",
@@ -5450,7 +5450,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/roman-jg.webp",
-  "label": null
+  "label": "img/labels/roman-jg.webp"
  },
  {
   "id": "roman-satsuki-junmai-daiginjo-ikkai-hi-i",
@@ -5715,7 +5715,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/setoichi-kakupi-junmai-ginjo-omachi.webp",
-  "label": null
+  "label": "img/labels/setoichi-kakupi-junmai-ginjo-omachi.webp"
  },
  {
   "id": "sharaku-junmaishu",
@@ -5768,7 +5768,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/shichifukujin-super-dry-junmai.webp",
-  "label": null
+  "label": "img/labels/shichifukujin-super-dry-junmai.webp"
  },
  {
   "id": "shinomine-aiyama-junmai-murokanamagenshu",
@@ -5962,7 +5962,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/sugata-flying.webp",
-  "label": null
+  "label": "img/labels/sugata-flying.webp"
  },
  {
   "id": "sugata-aiyama",
@@ -6222,7 +6222,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/suntory-kakubin-highball.webp",
-  "label": null
+  "label": "img/labels/suntory-kakubin-highball.webp"
  },
  {
   "id": "suntory-world-whisky-ao",
@@ -6517,7 +6517,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/tenmei-arabashiri.webp",
-  "label": null
+  "label": "img/labels/tenmei-arabashiri.webp"
  },
  {
   "id": "tenmei-nakadori-urugo",
@@ -7423,7 +7423,7 @@
   ],
   "hasTasting": true,
   "thumb": "img/thumbs/yamamoto-midnight-blue-junmai-ginjo.webp",
-  "label": null
+  "label": "img/labels/yamamoto-midnight-blue-junmai-ginjo.webp"
  },
  {
   "id": "yamamoto-no7-kobo-junmai-ginjo",
@@ -7532,7 +7532,7 @@
   "facts": [],
   "hasTasting": true,
   "thumb": "img/thumbs/yamashiroya-fuga-junmai-daiginjo.webp",
-  "label": null
+  "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
  },
  {
   "id": "yamato-damashii-mizumoto",
@@ -7594,7 +7594,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/yamawa-junmai-ginjo-muroka-nama-genshu.webp",
-  "label": null
+  "label": "img/labels/yamawa-junmai-ginjo-muroka-nama-genshu.webp"
  },
  {
   "id": "yokoyama-junmai-ginjo-silver-choukara7",
@@ -7704,7 +7704,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/zaku-m.webp",
-  "label": null
+  "label": "img/labels/zaku-m.webp"
  },
  {
   "id": "zaku-omachi-2026",
@@ -7730,7 +7730,7 @@
   ],
   "hasTasting": false,
   "thumb": "img/thumbs/zaku-omachi-2026.webp",
-  "label": null
+  "label": "img/labels/zaku-omachi-2026.webp"
  },
  {
   "id": "zaruso-hourai-junmai-ginjo-oringo-kudasai",
