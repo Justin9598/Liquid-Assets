@@ -6,11 +6,11 @@
  "producer": {
   "key": "isibo-brewery",
   "name": "Isibo Brewery",
-  "native": null,
-  "location": "Jeju, South Korea",
+  "native": "이시보",
+  "location": "Daejeong, Seogwipo, Jeju, South Korea",
   "founded": null,
-  "about": null,
-  "url": null
+  "about": "Isibo Brewery is the English form of 이시보, an agricultural company at Dowonnam-ro in Daejeong-eup, Seogwipo, on Jeju. A press piece describes its makgeolli as brewed with glutinous rice grown on Jeju.",
+  "url": "http://isibo.co.kr/"
  },
  "abv": 15.5,
  "styles": [

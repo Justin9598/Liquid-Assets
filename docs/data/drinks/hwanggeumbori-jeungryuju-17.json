@@ -6,10 +6,10 @@
  "producer": {
   "key": "hwanggeumbori-brewery",
   "name": "Hwanggeumbori Brewery",
-  "native": null,
-  "location": "Chungcheongnam-do, South Korea",
+  "native": "황금보리",
+  "location": "Hongseong, Chungcheongnam-do, South Korea",
   "founded": null,
-  "about": null,
+  "about": "Hwanggeumbori Brewery is the English form of 황금보리, a limited agricultural company on Seobu-ro in Seobu-myeon, Hongseong County, South Chungcheong. The label names it as the maker of its spirit.",
   "url": null
  },
  "abv": 17,

@@ -5,13 +5,28 @@
  "location": "Copenhagen",
  "region": "Copenhagen",
  "country": "Denmark",
- "founded": null,
+ "founded": 1847,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://www.carlsberggroup.com/",
+ "brands": [
+  "Carlsberg"
+ ],
+ "about": [
+  "Carlsberg is a brewing company founded in 1847 by J.C. Jacobsen, who built a new brewery on a hill outside Copenhagen and named it for his son Carl. In 1875 he set up the Carlsberg Research Laboratory to study the chemistry of beer and the organisms involved in brewing.",
+  "In 1883 Emil Chr. Hansen, who headed the laboratory's physiology department, made a yeast discovery that the group says changed the brewing industry. Carlsberg has owned the French brewer Kronenbourg since 2008, and its group page lists more than 180 brands."
+ ],
+ "sources": [
+  "https://www.carlsberggroup.com/175-years/a-history-of-brewing/",
+  "https://www.carlsberggroup.com/who-we-are/about-the-carlsberg-group/",
+  "https://www.kronenbourg.com/lentreprise/brasseries-kronenbourg/brasseries-kronenbourg-aujourdhui/"
+ ],
+ "related": [
+  {
+   "key": "kronenbourg",
+   "name": "Kronenbourg",
+   "relationship": "subsidiary brewery"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,

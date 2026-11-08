@@ -8,9 +8,18 @@
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Pierre Jean"
+ ],
+ "about": [
+  "Freixenet Gratien is a wine company with its head office at 208 Quai de Paludate in Bordeaux. It was registered in 1997. Business France traces its Bordeaux side to Yvon Mau, a négociant that gives 1897 as its start and that the Spanish cava house Freixenet bought in 2001.",
+  "The company makes still wines, from Vin de France to IGP and AOP, under château and brand names. The Pierre Jean Colombard Chardonnay, a Vin de France, is bottled for it."
+ ],
+ "sources": [
+  "https://www.marketplace.businessfrance.fr/seller/view/index/id/2384",
+  "https://www.xerfi.com/etudes-par-entreprise/freixenet-gratien_410381206",
+  "https://www.just-drinks.com/news/spain-freixenet-purchases-yvon-mau/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

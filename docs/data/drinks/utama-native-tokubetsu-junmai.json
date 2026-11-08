@@ -7,10 +7,10 @@
   "key": "orchid-sake-brewery",
   "name": "Orchid Sake Brewery",
   "native": null,
-  "location": "Singapore",
-  "founded": null,
-  "about": null,
-  "url": null
+  "location": "Jurong, Singapore, Singapore",
+  "founded": 2024,
+  "about": "Orchid Sake Brewery calls itself Singapore's one and only sake brewery since 2024. It works from an industrial unit at Jurong Food Hub, near Jurong Fishery Port, where early batches used beer tanks with the lids cut off and rice steamed in dim sum steamers.",
+  "url": "https://orchidsakebrewery.store/"
  },
  "abv": 15,
  "styles": [

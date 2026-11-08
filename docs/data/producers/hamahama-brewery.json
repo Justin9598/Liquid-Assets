@@ -1,15 +1,21 @@
 {
  "key": "hamahama-brewery",
  "name": "Hamahama Brewery",
- "native": null,
- "location": "Jeju",
+ "native": "하마하마",
+ "location": "Aewol, Jeju",
  "region": "Jeju",
  "country": "South Korea",
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
+ "brands": [
+  "Memilbogam",
+  "메밀보감"
+ ],
+ "about": [
+  "Hamahama Brewery is the English form of 하마하마, an agricultural company at Gwakji 1-gil in Aewol-eup, on Jeju Island. The label of its Memilbogam names it as the maker.",
+  "Memilbogam is a makgeolli, filed as takju, bottled at 8 percent in 600 millilitres. It is made with domestic glutinous rice, non-glutinous rice and buckwheat, with nuruk and yeast, contains wheat, and carries a 90 day shelf life if kept refrigerated below 10 degrees."
+ ],
  "sources": [],
  "related": [],
  "tally": {

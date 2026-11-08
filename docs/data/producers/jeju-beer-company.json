@@ -1,16 +1,24 @@
 {
  "key": "jeju-beer-company",
  "name": "Jeju Beer Company",
- "native": null,
- "location": "Jeju",
+ "native": "제주맥주",
+ "location": "Hallim, Jeju",
  "region": "Jeju",
  "country": "South Korea",
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Jeju Wit Ale"
+ ],
+ "about": [
+  "Jeju Beer Company brews at Hallim on Jeju Island. Its brewery was designed with beerBev, uses equipment from the German maker Krones, and can make about 20 million litres a year.",
+  "Its Jeju Wit Ale is a wheat beer made with tangerine peel, and it won a grand prize in the craft beer and ale class at the Korea Wine and Spirit Awards in 2019. The company listed on the KOSDAQ market in 2021, and its shares were sold to Double HM in 2024."
+ ],
+ "sources": [
+  "https://www.asiae.co.kr/en/article/2021082322012420708",
+  "https://www.koreatimes.co.kr/economy/20240320/jeju-beer-company-sold-3-years-after-kosdaq-ipo"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

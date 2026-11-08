@@ -8,9 +8,9 @@
   "name": "Carlsberg",
   "native": null,
   "location": "Copenhagen, Denmark",
-  "founded": null,
-  "about": null,
-  "url": null
+  "founded": 1847,
+  "about": "Carlsberg is a brewing company founded in 1847 by J.C. Jacobsen, who built a new brewery on a hill outside Copenhagen and named it for his son Carl. In 1875 he set up the Carlsberg Research Laboratory to study the chemistry of beer and the organisms involved in brewing.",
+  "url": "https://www.carlsberggroup.com/"
  },
  "abv": 4.8,
  "styles": [],

@@ -23,7 +23,13 @@
   "https://www.heiwashuzou.co.jp/endemic",
   "https://www.heiwashuzou.co.jp/our-story"
  ],
- "related": [],
+ "related": [
+  {
+   "key": "mua-craft-sake",
+   "name": "MÙA Craft Saké",
+   "relationship": "partner brewery"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,

@@ -6,10 +6,10 @@
  "producer": {
   "key": "hamahama-brewery",
   "name": "Hamahama Brewery",
-  "native": null,
-  "location": "Jeju, South Korea",
+  "native": "하마하마",
+  "location": "Aewol, Jeju, South Korea",
   "founded": null,
-  "about": null,
+  "about": "Hamahama Brewery is the English form of 하마하마, an agricultural company at Gwakji 1-gil in Aewol-eup, on Jeju Island. The label of its Memilbogam names it as the maker.",
   "url": null
  },
  "abv": 8,

@@ -6,10 +6,10 @@
  "producer": {
   "key": "seoul-jangsu-brewery",
   "name": "Seoul Jangsu Brewery",
-  "native": null,
-  "location": "Chungcheongbuk-do, South Korea",
+  "native": "서울장수",
+  "location": "Jincheon, Chungcheongbuk-do, South Korea",
   "founded": null,
-  "about": null,
+  "about": "Seoul Jangsu is a makgeolli maker whose roots lie in the Seoul Takju Manufacturers Association, which began in 1962 as the Seoul Brewing Association and took that name in 1980. The company itself was set up as the association's subsidiary in 2009 or 2010, and its Jangsu Saeng Makgeolli went on sale in 1996.",
   "url": null
  },
  "abv": 5,

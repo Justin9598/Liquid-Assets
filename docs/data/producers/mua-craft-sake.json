@@ -2,16 +2,33 @@
  "key": "mua-craft-sake",
  "name": "MÙA Craft Saké",
  "native": null,
- "location": "Ho Chi Minh City",
+ "location": "District 3, Ho Chi Minh City",
  "region": "Ho Chi Minh City",
  "country": "Vietnam",
- "founded": null,
+ "founded": 2022,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "brands": [
+  "MÙA Classic",
+  "MÙA Pure Rice",
+  "MÙA Pineapple Chili"
+ ],
+ "about": [
+  "MÙA Craft Saké is a small sake brewery and taproom in District 3 of Ho Chi Minh City. It was formed in 2022 by three partners: the Japanese sake brewery Heiwa Shuzo, the Vietnamese craft brewer East West Brewing and the restaurant Mùa Trà Quế. Press describe it as Vietnam's first craft sake brewery.",
+  "The taproom serves unpasteurised sake on tap. The sake is brewed with Vietnamese rice, including the ST25 variety from Sóc Trăng, and the range includes a pineapple and chili release."
+ ],
+ "sources": [
+  "https://news.tuoitre.vn/in-the-heat-of-ho-chi-minh-city-a-team-is-crafting-sake-with-vietnams-globally-acclaimed-rice-103250429165129719.htm",
+  "https://epicurevietnam.com/dining/saigon/modernist-craft-sake-taproom",
+  "https://88bamboo.co/blogs/features/vietnams-hottest-craft-brewer-arrives-in-singapore-but-were-talking-about-sake-not-beer"
+ ],
+ "related": [
+  {
+   "key": "heiwa-shuzo",
+   "name": "Heiwa Shuzo",
+   "relationship": "partner brewery"
+  }
+ ],
  "tally": {
   "drinks": 3,
   "categories": 1,

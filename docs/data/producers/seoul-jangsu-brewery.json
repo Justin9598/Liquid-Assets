@@ -1,16 +1,28 @@
 {
  "key": "seoul-jangsu-brewery",
  "name": "Seoul Jangsu Brewery",
- "native": null,
- "location": "Chungcheongbuk-do",
+ "native": "서울장수",
+ "location": "Jincheon, Chungcheongbuk-do",
  "region": "Chungcheongbuk-do",
  "country": "South Korea",
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Moonlight Yuja",
+  "달빛유자",
+  "Jangsu Saeng Makgeolli",
+  "장수 생막걸리"
+ ],
+ "about": [
+  "Seoul Jangsu is a makgeolli maker whose roots lie in the Seoul Takju Manufacturers Association, which began in 1962 as the Seoul Brewing Association and took that name in 1980. The company itself was set up as the association's subsidiary in 2009 or 2010, and its Jangsu Saeng Makgeolli went on sale in 1996.",
+  "It brews at a large plant in Jincheon, North Chungcheong, and at breweries in Seoul. Its flavoured line includes 달빛유자, Moonlight Yuja, a pasteurised yuja makgeolli whose label lists 3.048 percent Goheung yuja juice."
+ ],
+ "sources": [
+  "https://www.asiae.co.kr/en/article/2020041711095107081",
+  "https://www.asiae.co.kr/en/article/2022020316032008884",
+  "https://www.newsis.com/view/NISX20230519_0002309767"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

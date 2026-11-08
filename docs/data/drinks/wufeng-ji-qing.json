@@ -6,11 +6,11 @@
  "producer": {
   "key": "wufeng-farmers-association-winery",
   "name": "Wufeng Farmers' Association Winery",
-  "native": null,
-  "location": "Taichung, Taiwan",
+  "native": "霧峰農會酒莊",
+  "location": "Wufeng, Taichung, Taiwan",
   "founded": null,
-  "about": null,
-  "url": null
+  "about": "Wufeng Farmers' Association Winery is run by the Wufeng District farmers' association in Taichung. It occupies the renovated Wanfeng old granary at 345 Zhongzheng Road, with a sake cellar, an old rice-milling machine kept on show and a small shop.",
+  "url": "https://www.twwfsake.com/"
  },
  "abv": null,
  "styles": [],

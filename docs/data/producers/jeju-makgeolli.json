@@ -1,15 +1,21 @@
 {
  "key": "jeju-makgeolli",
  "name": "Jeju Makgeolli",
- "native": null,
- "location": "Jeju",
+ "native": "제주막걸리",
+ "location": "Aewol, Jeju",
  "region": "Jeju",
  "country": "South Korea",
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
+ "brands": [
+  "Traditional Jeju Makgeolli",
+  "전통제주막걸리"
+ ],
+ "about": [
+  "Jeju Makgeolli is the company (주)제주막걸리, at Iljuseo-ro in Aewol-eup on Jeju Island. Its label names it as the maker of 전통제주막걸리, Traditional Jeju Makgeolli.",
+  "That makgeolli is a takju bottled at 6 percent in 750 millilitres. The label lists water, imported rice and puffed rice, ipguk and seed koji, citric and lactic acid, yeast and aspartame, and says it contains wheat and milk. It is kept refrigerated below 10 degrees, and the label art shows a dol hareubang, the stone figure of Jeju."
+ ],
  "sources": [],
  "related": [],
  "tally": {

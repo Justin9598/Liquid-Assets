@@ -7,10 +7,10 @@
   "key": "casa-silva",
   "name": "Casa Silva",
   "native": null,
-  "location": "Colchagua Valley, Chile",
-  "founded": null,
-  "about": null,
-  "url": null
+  "location": "San Fernando, Colchagua Valley, Chile",
+  "founded": 1997,
+  "about": "Casa Silva is a family winery at the Angostura estate near San Fernando, in the Colchagua Valley. The family's wine story begins in 1887, when Emilio Bouchon arrived from near Saint-Emilion in Bordeaux to work as an oenologist in Chile. In 1978 Mario Silva Cifuentes began recovering the old Bouchon vineyards and cellar and sold wine in bulk.",
+  "url": "https://www.casasilva.cl/"
  },
  "abv": 14,
  "styles": [],

@@ -2,15 +2,26 @@
  "key": "orchid-sake-brewery",
  "name": "Orchid Sake Brewery",
  "native": null,
- "location": "Singapore",
+ "location": "Jurong, Singapore",
  "region": "Singapore",
  "country": "Singapore",
- "founded": null,
+ "founded": 2024,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://orchidsakebrewery.store/",
+ "brands": [
+  "uTama"
+ ],
+ "about": [
+  "Orchid Sake Brewery calls itself Singapore's one and only sake brewery since 2024. It works from an industrial unit at Jurong Food Hub, near Jurong Fishery Port, where early batches used beer tanks with the lids cut off and rice steamed in dim sum steamers.",
+  "Reuben Oh, a sake sommelier, co-founded it with head brewer Yumika, and brewers from Konohanano Brewery in Tokyo guided the project. Its uTama sakes use Japanese rice, koji and yeast, and the team has experimented with Southeast Asian grains such as Sarawak black glutinous rice."
+ ],
+ "sources": [
+  "https://orchidsakebrewery.store/",
+  "https://www.instagram.com/orchidsakebrewery/",
+  "https://eatbook.sg/orchid-sake-brewery/",
+  "https://mustsharenews.com/singapore-sake-brewery-orchid/",
+  "https://www.thepeakmagazine.com.sg/lifestyle/made-in-singapore-sake"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

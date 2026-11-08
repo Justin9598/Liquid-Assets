@@ -5,12 +5,21 @@
  "location": "Port Ellen, Islay",
  "region": "Islay",
  "country": "Scotland",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "founded": 1815,
+ "master": "Gillian Macdonald",
+ "website": "https://www.ardbeg.com/",
+ "brands": [
+  "Ardbeg"
+ ],
+ "about": [
+  "Ardbeg is a distillery on Islay, near Port Ellen. John Macdougall took out a licence there in 1815, and the site has closed twice since: in 1981, and again in 1991 after a spell of small-scale distilling. Full-time production resumed in 1997 under The Glenmorangie Company.",
+  "The water comes from Loch Uigeadail, three miles up the hill behind the distillery, and the malt is dried over peat and brought from the maltings in Port Ellen. A purifier on the spirit still returns heavy vapours to the pot, which the distillery says balances smoke with sweetness. Gillian Macdonald is its master blender, and Bryony McNiven became distillery manager in 2026."
+ ],
+ "sources": [
+  "https://www.ardbeg.com/en-gb/history",
+  "https://www.ardbeg.com/en-int/pages/about-the-process",
+  "https://www.ardbeg.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

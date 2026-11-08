@@ -5,13 +5,30 @@
  "location": "Strasbourg",
  "region": "Strasbourg",
  "country": "France",
- "founded": null,
+ "founded": 1664,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://www.kronenbourg.com/",
+ "brands": [
+  "Kronenbourg",
+  "1664",
+  "1664 Blanc"
+ ],
+ "about": [
+  "Kronenbourg traces its start to 1664, when the young cooper-brewer Jérôme IV Hatt founded the Le Canon brewery in the middle of Strasbourg. In 1850 the Hatt family moved it to Cronenbourg, on the heights above the city. The beer 1664 was launched in 1952.",
+  "In 1969 a new brewery opened at Obernai in Alsace, now the largest in France, and it makes almost all of the company's beer. Kronenbourg has been the French subsidiary of the Carlsberg Group since 2008. Its team of 15 master brewers names Strisselspalt, an Alsace hop, among the varieties it works with."
+ ],
+ "sources": [
+  "https://www.kronenbourg.com/lentreprise/brasseries-kronenbourg/lhistoire-de-brasseries-kronenbourg/",
+  "https://www.kronenbourg.com/lentreprise/brasseries-kronenbourg/brasseries-kronenbourg-aujourdhui/",
+  "https://www.kronenbourg.com/savoir-faire-innovation/notre-savoir-faire/nos-maitres-brasseurs/"
+ ],
+ "related": [
+  {
+   "key": "carlsberg",
+   "name": "Carlsberg",
+   "relationship": "parent company"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,

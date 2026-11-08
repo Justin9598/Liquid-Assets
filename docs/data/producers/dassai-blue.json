@@ -5,13 +5,28 @@
  "location": "Hyde Park, New York",
  "region": "New York",
  "country": "USA",
- "founded": null,
+ "founded": 2023,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://dassai-blue.com/",
+ "brands": [
+  "DASSAI BLUE"
+ ],
+ "about": [
+  "Dassai Blue is the American sister project of Dassai, the sake brand of Asahi Shuzo in Yamaguchi. Its brewery and tasting room are at 5 St Andrews Road in Hyde Park, New York, in a 55,000 square foot building that opened to the public in 2023.",
+  "It brews only junmai daiginjo, using New York water and Yamada Nishiki rice that it says is grown in Arkansas, after starting with rice imported from Japan. Hiroshi Sakurai is chairman and his son Kazuhiro Sakurai is president and chief executive."
+ ],
+ "sources": [
+  "https://dassai-blue.com/",
+  "https://dassai.com/us/news/info/005468.html",
+  "https://www.governor.ny.gov/news/governor-hochul-announces-grand-opening-80-million-dassai-blue-sake-brewery-dutchess-county"
+ ],
+ "related": [
+  {
+   "key": "asahi-shuzo-yamaguchi",
+   "name": "Asahi Shuzo",
+   "relationship": "parent company"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,

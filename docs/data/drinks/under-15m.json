@@ -6,10 +6,10 @@
  "producer": {
   "key": "jeju-beer-company",
   "name": "Jeju Beer Company",
-  "native": null,
-  "location": "Jeju, South Korea",
+  "native": "제주맥주",
+  "location": "Hallim, Jeju, South Korea",
   "founded": null,
-  "about": null,
+  "about": "Jeju Beer Company brews at Hallim on Jeju Island. Its brewery was designed with beerBev, uses equipment from the German maker Krones, and can make about 20 million litres a year.",
   "url": null
  },
  "abv": 5,

@@ -1,16 +1,26 @@
 {
  "key": "wufeng-farmers-association-winery",
  "name": "Wufeng Farmers' Association Winery",
- "native": null,
- "location": "Taichung",
+ "native": "霧峰農會酒莊",
+ "location": "Wufeng, Taichung",
  "region": "Taichung",
  "country": "Taiwan",
  "founded": null,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.twwfsake.com/",
+ "brands": [
+  "Chuwu",
+  "初霧"
+ ],
+ "about": [
+  "Wufeng Farmers' Association Winery is run by the Wufeng District farmers' association in Taichung. It occupies the renovated Wanfeng old granary at 345 Zhongzheng Road, with a sake cellar, an old rice-milling machine kept on show and a small shop.",
+  "The winery says it follows the Japanese toji spirit of soulful dedication. It brews sake from Yiquan aromatic rice grown in Wufeng, with spring water from Puli. Its wines have won medals at the Brussels World Wine Awards, including gold for a junmai ginjo in 2015."
+ ],
+ "sources": [
+  "https://www.twwfsake.com/en/about.php",
+  "https://www.twwfsake.com/about.php",
+  "https://www.wffa.org.tw/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

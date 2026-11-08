@@ -6,10 +6,10 @@
  "producer": {
   "key": "jeju-makgeolli",
   "name": "Jeju Makgeolli",
-  "native": null,
-  "location": "Jeju, South Korea",
+  "native": "제주막걸리",
+  "location": "Aewol, Jeju, South Korea",
   "founded": null,
-  "about": null,
+  "about": "Jeju Makgeolli is the company (주)제주막걸리, at Iljuseo-ro in Aewol-eup on Jeju Island. Its label names it as the maker of 전통제주막걸리, Traditional Jeju Makgeolli.",
   "url": null
  },
  "abv": 6,

@@ -1,16 +1,25 @@
 {
  "key": "isibo-brewery",
  "name": "Isibo Brewery",
- "native": null,
- "location": "Jeju",
+ "native": "이시보",
+ "location": "Daejeong, Seogwipo, Jeju",
  "region": "Jeju",
  "country": "South Korea",
  "founded": null,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "http://isibo.co.kr/",
+ "brands": [
+  "Isibo",
+  "이시보"
+ ],
+ "about": [
+  "Isibo Brewery is the English form of 이시보, an agricultural company at Dowonnam-ro in Daejeong-eup, Seogwipo, on Jeju. A press piece describes its makgeolli as brewed with glutinous rice grown on Jeju.",
+  "Its Isibo Wonju is a takju bottled at 15.5 percent in 330 millilitres. The label lists Jeju glutinous rice, purified water, domestic non-glutinous rice and nuruk, says it contains wheat, and gives a 150 day shelf life from bottling if kept refrigerated below 10 degrees."
+ ],
+ "sources": [
+  "http://isibo.co.kr/",
+  "https://the-edit.co.kr/83990"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

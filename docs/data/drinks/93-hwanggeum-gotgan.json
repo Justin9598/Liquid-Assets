@@ -6,10 +6,10 @@
  "producer": {
   "key": "daejeon-blues-brewery",
   "name": "Daejeon Blues Brewery",
-  "native": null,
-  "location": "Daejeon, South Korea",
+  "native": "대전부르스주조",
+  "location": "Seo-gu, Daejeon, South Korea",
   "founded": null,
-  "about": null,
+  "about": "Daejeon Blues Brewery is the English form of 대전부르스주조, which the bottle names as the maker, a limited agricultural company in Pyeongchon-dong, Seo-gu, Daejeon. The Korean name spells blues as 부르스.",
   "url": null
  },
  "abv": 7,

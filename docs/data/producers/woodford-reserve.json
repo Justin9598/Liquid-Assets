@@ -6,11 +6,20 @@
  "region": "Kentucky",
  "country": "USA",
  "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "master": "Elizabeth McCall",
+ "website": "https://www.woodfordreserve.com/",
+ "brands": [
+  "Woodford Reserve Distiller's Select"
+ ],
+ "about": [
+  "Woodford Reserve is a Kentucky bourbon made at a distillery in Versailles, a National Historic Landmark on a site where bourbon was first made in 1812. Brown-Forman owns the brand, and the whiskey is a batch of spirit from pot stills and spirit from column stills.",
+  "Brown-Forman announced in 2021 that it would add three copper pot stills to the distillery. Elizabeth McCall was appointed master distiller in 2023, and Chris Morris, who held the post before her, is now master distiller emeritus."
+ ],
+ "sources": [
+  "https://www.woodfordreserve.com/our-story/",
+  "https://www.woodfordreserve.com/",
+  "https://www.brown-forman.com/woodford-reserve-to-expand-versailles-distillery-includes-addition-of-three-copper-pot-stills/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

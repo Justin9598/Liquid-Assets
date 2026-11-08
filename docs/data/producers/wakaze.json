@@ -7,10 +7,21 @@
  "country": "France",
  "founded": null,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.wakaze-sake.com/",
+ "brands": [
+  "Kura Grand Paris",
+  "WAKAZE"
+ ],
+ "about": [
+  "Wakaze makes sake in France. Takuma Inagawa founded the company in Japan in 2016 with Shoya Imai, and in 2019 it opened Kura Grand Paris, a brewery on the outskirts of Paris.",
+  "It brews with rice from the Camargue in southern France, and its motto is Mastered in Japan, Made in France. Its releases include flavoured sakes and sakes matured in whisky barrels."
+ ],
+ "sources": [
+  "https://www.wakaze-sake.com/",
+  "https://japan.go.jp/kizuna/2020/revolutionizing_sake_from_paris.html",
+  "https://openers.jp/en/lounge/lounge_features/c0sg7",
+  "https://en.sake-times.com/breweries/wakaze-kura-grand-paris"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

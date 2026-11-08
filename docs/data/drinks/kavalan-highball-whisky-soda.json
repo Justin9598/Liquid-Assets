@@ -6,11 +6,11 @@
  "producer": {
   "key": "kavalan",
   "name": "Kavalan",
-  "native": null,
+  "native": "金車噶瑪蘭威士忌酒廠",
   "location": "Yilan, Taiwan",
   "founded": null,
-  "about": null,
-  "url": null
+  "about": "Kavalan is a whisky distillery in Yilan, in north-east Taiwan, owned by the King Car Group. The distillery was built in 2005, and it released its first single malt, Kavalan Classic, in December 2008.",
+  "url": "https://www.kavalanwhisky.com/"
  },
  "abv": 5,
  "styles": [

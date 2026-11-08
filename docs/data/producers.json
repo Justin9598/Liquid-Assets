@@ -109,10 +109,12 @@
   "region": "Islay",
   "country": "Scotland",
   "location": "Port Ellen, Islay",
-  "brands": [],
+  "brands": [
+   "Ardbeg"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "ariga-jozo",
@@ -180,10 +182,15 @@
   "region": "Islay",
   "country": "Scotland",
   "location": "Bruichladdich, Islay",
-  "brands": [],
+  "brands": [
+   "Bruichladdich",
+   "The Botanist",
+   "Port Charlotte",
+   "Octomore"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "carlsberg",
@@ -192,10 +199,12 @@
   "region": "Copenhagen",
   "country": "Denmark",
   "location": "Copenhagen",
-  "brands": [],
+  "brands": [
+   "Carlsberg"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "casa-silva",
@@ -203,11 +212,13 @@
   "native": null,
   "region": "Colchagua Valley",
   "country": "Chile",
-  "location": "Colchagua Valley",
-  "brands": [],
+  "location": "San Fernando, Colchagua Valley",
+  "brands": [
+   "Casa Silva"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "chiyo-shuzo",
@@ -227,14 +238,16 @@
  {
   "key": "daejeon-blues-brewery",
   "name": "Daejeon Blues Brewery",
-  "native": null,
+  "native": "대전부르스주조",
   "region": "Daejeon",
   "country": "South Korea",
-  "location": "Daejeon",
-  "brands": [],
+  "location": "Seo-gu, Daejeon",
+  "brands": [
+   "Hwanggeum Gotgan"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "daishinshu-shuzo",
@@ -258,10 +271,12 @@
   "region": "New York",
   "country": "USA",
   "location": "Hyde Park, New York",
-  "brands": [],
+  "brands": [
+   "DASSAI BLUE"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "date-seven",
@@ -360,10 +375,12 @@
   "region": "Bordeaux",
   "country": "France",
   "location": "Bordeaux",
-  "brands": [],
+  "brands": [
+   "Pierre Jean"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "fuchu-homare",
@@ -563,14 +580,17 @@
  {
   "key": "hamahama-brewery",
   "name": "Hamahama Brewery",
-  "native": null,
+  "native": "하마하마",
   "region": "Jeju",
   "country": "South Korea",
-  "location": "Jeju",
-  "brands": [],
+  "location": "Aewol, Jeju",
+  "brands": [
+   "Memilbogam",
+   "메밀보감"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "hanaizumi-shuzo",
@@ -745,14 +765,17 @@
  {
   "key": "hwanggeumbori-brewery",
   "name": "Hwanggeumbori Brewery",
-  "native": null,
+  "native": "황금보리",
   "region": "Chungcheongnam-do",
   "country": "South Korea",
-  "location": "Chungcheongnam-do",
-  "brands": [],
+  "location": "Hongseong, Chungcheongnam-do",
+  "brands": [
+   "Hwanggeumbori Jeungryuju",
+   "황금보리 증류주"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "igarashi-shuzo",
@@ -888,14 +911,17 @@
  {
   "key": "isibo-brewery",
   "name": "Isibo Brewery",
-  "native": null,
+  "native": "이시보",
   "region": "Jeju",
   "country": "South Korea",
-  "location": "Jeju",
-  "brands": [],
+  "location": "Daejeong, Seogwipo, Jeju",
+  "brands": [
+   "Isibo",
+   "이시보"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "itakura-shuzo",
@@ -930,26 +956,31 @@
  {
   "key": "jeju-beer-company",
   "name": "Jeju Beer Company",
-  "native": null,
+  "native": "제주맥주",
   "region": "Jeju",
   "country": "South Korea",
-  "location": "Jeju",
-  "brands": [],
+  "location": "Hallim, Jeju",
+  "brands": [
+   "Jeju Wit Ale"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "jeju-makgeolli",
   "name": "Jeju Makgeolli",
-  "native": null,
+  "native": "제주막걸리",
   "region": "Jeju",
   "country": "South Korea",
-  "location": "Jeju",
-  "brands": [],
+  "location": "Aewol, Jeju",
+  "brands": [
+   "Traditional Jeju Makgeolli",
+   "전통제주막걸리"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kameizumi-shuzo",
@@ -1044,14 +1075,17 @@
  {
   "key": "kavalan",
   "name": "Kavalan",
-  "native": null,
+  "native": "金車噶瑪蘭威士忌酒廠",
   "region": "Yilan",
   "country": "Taiwan",
   "location": "Yilan",
-  "brands": [],
+  "brands": [
+   "Kavalan",
+   "噶瑪蘭"
+  ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kawakei-shoten",
@@ -1225,10 +1259,14 @@
   "region": "Strasbourg",
   "country": "France",
   "location": "Strasbourg",
-  "brands": [],
+  "brands": [
+   "Kronenbourg",
+   "1664",
+   "1664 Blanc"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kubiki-shuzo",
@@ -1437,11 +1475,15 @@
   "native": null,
   "region": "Ho Chi Minh City",
   "country": "Vietnam",
-  "location": "Ho Chi Minh City",
-  "brands": [],
+  "location": "District 3, Ho Chi Minh City",
+  "brands": [
+   "MÙA Classic",
+   "MÙA Pure Rice",
+   "MÙA Pineapple Chili"
+  ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "mukai-shuzo",
@@ -1709,11 +1751,13 @@
   "native": null,
   "region": "Singapore",
   "country": "Singapore",
-  "location": "Singapore",
-  "brands": [],
+  "location": "Jurong, Singapore",
+  "brands": [
+   "uTama"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "oya-takashi-shuzo",
@@ -1828,10 +1872,12 @@
   "region": "Colchagua Valley",
   "country": "Chile",
   "location": "Colchagua Valley",
-  "brands": [],
+  "brands": [
+   "Santa Helena"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "sendai-station-brewery-fermenteria",
@@ -1850,14 +1896,19 @@
  {
   "key": "seoul-jangsu-brewery",
   "name": "Seoul Jangsu Brewery",
-  "native": null,
+  "native": "서울장수",
   "region": "Chungcheongbuk-do",
   "country": "South Korea",
-  "location": "Chungcheongbuk-do",
-  "brands": [],
+  "location": "Jincheon, Chungcheongbuk-do",
+  "brands": [
+   "Moonlight Yuja",
+   "달빛유자",
+   "Jangsu Saeng Makgeolli",
+   "장수 생막걸리"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "seto-shuzoten",
@@ -2277,10 +2328,13 @@
   "region": "Paris",
   "country": "France",
   "location": "Paris",
-  "brands": [],
+  "brands": [
+   "Kura Grand Paris",
+   "WAKAZE"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "woodford-reserve",
@@ -2289,22 +2343,27 @@
   "region": "Kentucky",
   "country": "USA",
   "location": "Versailles, Kentucky",
-  "brands": [],
+  "brands": [
+   "Woodford Reserve Distiller's Select"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "wufeng-farmers-association-winery",
   "name": "Wufeng Farmers' Association Winery",
-  "native": null,
+  "native": "霧峰農會酒莊",
   "region": "Taichung",
   "country": "Taiwan",
-  "location": "Taichung",
-  "brands": [],
+  "location": "Wufeng, Taichung",
+  "brands": [
+   "Chuwu",
+   "初霧"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "yamamoto-shuzoten",
@@ -2341,14 +2400,17 @@
  {
   "key": "yesan-winery",
   "name": "Yesan Winery",
-  "native": null,
+  "native": "예산사과와인",
   "region": "Chungcheongnam-do",
   "country": "South Korea",
-  "location": "Chungcheongnam-do",
-  "brands": [],
+  "location": "Godeok, Yesan, Chungcheongnam-do",
+  "brands": [
+   "Chusa",
+   "추사"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "yoshida-sake-brewery",

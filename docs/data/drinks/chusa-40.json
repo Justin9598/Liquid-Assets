@@ -6,10 +6,10 @@
  "producer": {
   "key": "yesan-winery",
   "name": "Yesan Winery",
-  "native": null,
-  "location": "Chungcheongnam-do, South Korea",
+  "native": "예산사과와인",
+  "location": "Godeok, Yesan, Chungcheongnam-do, South Korea",
   "founded": null,
-  "about": null,
+  "about": "Yesan Winery is the English form of 예산사과와인, an agricultural company at Daemong-ro in Godeok-myeon, Yesan County, South Chungcheong. It makes apple wine and apple spirits under the Chusa name, and the county is described as Chusa's home.",
   "url": null
  },
  "abv": 40,

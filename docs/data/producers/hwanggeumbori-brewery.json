@@ -1,15 +1,21 @@
 {
  "key": "hwanggeumbori-brewery",
  "name": "Hwanggeumbori Brewery",
- "native": null,
- "location": "Chungcheongnam-do",
+ "native": "황금보리",
+ "location": "Hongseong, Chungcheongnam-do",
  "region": "Chungcheongnam-do",
  "country": "South Korea",
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
+ "brands": [
+  "Hwanggeumbori Jeungryuju",
+  "황금보리 증류주"
+ ],
+ "about": [
+  "Hwanggeumbori Brewery is the English form of 황금보리, a limited agricultural company on Seobu-ro in Seobu-myeon, Hongseong County, South Chungcheong. The label names it as the maker of its spirit.",
+  "Hwanggeumbori Jeungryuju 17 is a soju, bottled at 17 percent in 375 millilitres. The label lists purified water, domestic barley at 40.27 percent, nuruk, a liquefying enzyme, yeast, fructose and citric acid. Its story says the name comes from a seed of golden barley that a monk gave to a devoted son."
+ ],
  "sources": [],
  "related": [],
  "tally": {

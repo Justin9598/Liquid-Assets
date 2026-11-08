@@ -1,15 +1,20 @@
 {
  "key": "daejeon-blues-brewery",
  "name": "Daejeon Blues Brewery",
- "native": null,
- "location": "Daejeon",
+ "native": "대전부르스주조",
+ "location": "Seo-gu, Daejeon",
  "region": "Daejeon",
  "country": "South Korea",
  "founded": null,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
+ "brands": [
+  "Hwanggeum Gotgan"
+ ],
+ "about": [
+  "Daejeon Blues Brewery is the English form of 대전부르스주조, which the bottle names as the maker, a limited agricultural company in Pyeongchon-dong, Seo-gu, Daejeon. The Korean name spells blues as 부르스.",
+  "Its 93 Hwanggeum Gotgan is a takju, the plain makgeolli category, bottled at 7 percent in 930 millilitres. The label lists purified water, glutinous rice from the farm cooperative, domestic rice flour, nuruk, yeast and stevia, and says to keep it refrigerated below 10 degrees."
+ ],
  "sources": [],
  "related": [],
  "tally": {
