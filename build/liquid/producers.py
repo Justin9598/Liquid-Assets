@@ -49,6 +49,14 @@ def check_about(name, paragraphs, issues, key=None):
         issues.warn("W22", f"About of '{name}' has {pr}", sheet="Producers", drink=name)
 
 
+def check_sources(name, sources, issues):
+    """W24 (Plan 09 D23): every Sources entry of an approved maker must be a web address (http or https)."""
+    for s in sources or []:
+        if not str(s).strip().lower().startswith(("http://", "https://")):
+            issues.warn("W24", f"Sources of '{name}' has an entry that is not a web address: '{str(s).strip()[:60]}'",
+                        sheet="Producers", drink=name)
+
+
 def _paragraphs(text):
     if not text:
         return []
@@ -197,6 +205,7 @@ def build_producers(ledger, drinks, issues):
         }
         if approved:
             check_about(name, page["about"], issues)
+            check_sources(name, page["sources"], issues)
         pages[key] = page
 
     # sort A-Z for stable output

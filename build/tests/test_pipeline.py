@@ -396,3 +396,15 @@ def test_a_cell_with_two_paragraphs_gives_two_about_entries(tmp_path):
     wb.save(path)
     run(ship)
     assert load(ship, "producers/beta-brewery.json")["about"] == ["First paragraph here.", "Second paragraph here."]
+
+
+def test_w24_flags_a_sources_entry_that_is_not_a_web_address():
+    from liquid.producers import check_sources
+    ok = Issues()
+    check_sources("Fine", ["https://a.example/x", "http://b.example"], ok)
+    check_sources("Empty", [], ok)
+    assert not ok.items
+    bad = Issues()
+    check_sources("Labelled", ["https://a.example/x", "Brewery back label", "www.no-scheme.example"], bad)
+    assert [i["code"] for i in bad.items] == ["W24", "W24"]
+    assert "Brewery back label" in bad.items[0]["message"] and bad.items[0]["drink"] == "Labelled"
