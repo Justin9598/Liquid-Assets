@@ -8,6 +8,7 @@ from pathlib import Path
 
 from . import assets as assets_mod, phase as phase_mod, scene as scene_mod, checks, emit as emit_mod, images, og as og_mod, model, photos as photos_mod, producers as producers_mod
 from . import burger as burger_mod, counter as counter_mod, report as report_mod, scene_report
+from . import cropguard
 from .common import BuildError, Issues
 from .ledger import load_ledger
 
@@ -79,6 +80,15 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
     photo_files = photos_mod.list_photos(photos_dir)
     manual = photos_mod.load_manual_map(content_dir / "photo-map.json", issues)
     photo_map, unmatched, suggestions = photos_mod.build_photo_map(drinks, photo_files, manual, issues)
+    try:                                                         # Plan 13: owner crops are read-only (E07)
+        saved = json.loads((reports_dir / "owner-saves.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        saved = {}
+    cropguard.check_owner_crops(cropguard.head_map(root), manual, saved, issues)
+    by_id = {d["id"]: d for d in drinks}                         # what the crop tool offers (Plan 13 section 2.1)
+    (reports_dir / "crop-candidates.json").write_text(json.dumps(
+        {did: {"name": by_id[did]["name"], "category": by_id[did]["category"], "sub": by_id[did]["sub"], "front": e["front"]}
+         for did, e in sorted(photo_map.items()) if e.get("front") and did in by_id}, ensure_ascii=False, indent=1), encoding="utf-8")
     for name in unmatched:
         issues.warn("W01", f"Photo not matched to any drink: {name}", sheet="Photos")
     for d in drinks:

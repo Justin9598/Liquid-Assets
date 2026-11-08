@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liquid Assets crop tool</title>
+<style>
+  :root { --bg: #1f1a16; --panel: #2b241e; --line: #5a4a3a; --text: #f1e6d3; --muted: #b9a88f; --accent: #e8a33a; --good: #6fbf73; --bad: #e0553f; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); font: 15px/1.4 system-ui, "Segoe UI", sans-serif; }
+  body { display: flex; flex-direction: column; }
+  header { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 8px 14px; background: var(--panel); border-bottom: 1px solid var(--line); }
+  header h1 { font-size: 16px; margin: 0 8px 0 0; }
+  .tabs { display: flex; gap: 4px; }
+  .tab, button { font: inherit; color: var(--text); background: #3a3027; border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+  .tab[aria-selected="true"] { background: var(--accent); color: #1b1208; border-color: var(--accent); font-weight: 700; }
+  button:hover:not(:disabled), .tab:hover { border-color: var(--accent); }
+  button:disabled { opacity: .45; cursor: default; }
+  button.primary { background: var(--good); color: #0f2411; border-color: var(--good); font-weight: 700; }
+  button.warn { background: #5a3226; }
+  #counter { margin-left: auto; color: var(--muted); }
+  main { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 14px; padding: 12px 14px; }
+  #left { min-width: 0; min-height: 0; display: flex; flex-direction: column; gap: 8px; }
+  #title { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+  #title b { font-size: 17px; }
+  .muted { color: var(--muted); }
+  .badge { font-size: 12px; padding: 1px 8px; border-radius: 10px; border: 1px solid var(--line); }
+  .badge.owner { color: var(--good); border-color: var(--good); }
+  .badge.unsure { color: var(--accent); border-color: var(--accent); }
+  #stagewrap { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; background: #120f0c; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  #stage { position: relative; line-height: 0; touch-action: none; user-select: none; cursor: crosshair; }
+  #photo { display: block; max-width: 100%; pointer-events: none; -webkit-user-drag: none; }
+  #box { position: absolute; border: 2px solid var(--accent); box-shadow: 0 0 0 9999px rgba(0, 0, 0, .5); cursor: move; display: none; }
+  #box i { position: absolute; width: 12px; height: 12px; background: var(--accent); border: 1px solid #1b1208; margin: -6px 0 0 -6px; }
+  #box i[data-h="nw"] { left: 0; top: 0; cursor: nwse-resize; }  #box i[data-h="n"] { left: 50%; top: 0; cursor: ns-resize; }
+  #box i[data-h="ne"] { left: 100%; top: 0; cursor: nesw-resize; } #box i[data-h="e"] { left: 100%; top: 50%; cursor: ew-resize; }
+  #box i[data-h="se"] { left: 100%; top: 100%; cursor: nwse-resize; } #box i[data-h="s"] { left: 50%; top: 100%; cursor: ns-resize; }
+  #box i[data-h="sw"] { left: 0; top: 100%; cursor: nesw-resize; }  #box i[data-h="w"] { left: 0; top: 50%; cursor: ew-resize; }
+  #readout { font-variant-numeric: tabular-nums; color: var(--muted); min-height: 1.4em; }
+  #right { min-width: 0; display: flex; flex-direction: column; gap: 10px; overflow: auto; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px; }
+  .card h2 { font-size: 13px; margin: 0 0 6px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+  #shell { position: relative; width: 150px; margin: 0 auto; line-height: 0; background: #d9c9a8; border-radius: 4px; }
+  #shell img { display: block; width: 100%; }
+  #shell .lab { position: absolute; overflow: hidden; }
+  #shell .lab canvas { display: block; width: 100%; height: 100%; }
+  #shell .lab.multiply { mix-blend-mode: multiply; }
+  #cutwrap { display: flex; justify-content: center; }
+  #cut { max-width: 100%; max-height: 120px; border: 1px solid var(--line); background: #120f0c; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; }
+  #msg { min-height: 1.4em; color: var(--muted); }
+  #msg.err { color: var(--bad); } #msg.ok { color: var(--good); }
+  kbd { background: #3a3027; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; font-size: 12px; }
+  button.primary kbd { background: #8fd493; color: #0f2411; border-color: #0f2411; }
+  .keys { font-size: 13px; color: var(--muted); line-height: 1.9; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Crop tool</h1>
+  <div class="tabs" role="tablist" aria-label="Lists">
+    <button class="tab" role="tab" data-tab="needs">Needs a look <span class="n"></span></button>
+    <button class="tab" role="tab" data-tab="all">All crops <span class="n"></span></button>
+    <button class="tab" role="tab" data-tab="skipped">Skipped <span class="n"></span></button>
+  </div>
+  <div id="counter">Loading...</div>
+</header>
+<main>
+  <section id="left" aria-label="Photo">
+    <div id="title"><b id="name"></b><span class="muted" id="sub"></span><span id="badges"></span></div>
+    <div id="stagewrap"><div id="stage"><img id="photo" alt="Front photo of the drink"><div id="box"><i data-h="nw"></i><i data-h="n"></i><i data-h="ne"></i><i data-h="e"></i><i data-h="se"></i><i data-h="s"></i><i data-h="sw"></i><i data-h="w"></i></div></div></div>
+    <div id="readout"></div>
+  </section>
+  <aside id="right">
+    <div class="card">
+      <div class="row">
+        <button id="save" class="primary">Save <kbd>Enter</kbd></button>
+        <button id="noLabel" class="warn">No usable label <kbd>S</kbd></button>
+        <button id="undo">Undo <kbd>Z</kbd></button>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <button id="prev">&larr; Previous <kbd>Alt+&larr;</kbd></button>
+        <button id="next">Next &rarr; <kbd>Alt+&rarr;</kbd></button>
+      </div>
+      <div id="msg" role="status" aria-live="polite"></div>
+    </div>
+    <div class="card"><h2>On the shelf</h2><div id="shell"></div><div class="muted" id="shellnote" style="margin-top:6px;font-size:13px"></div></div>
+    <div class="card"><h2>The crop as cut</h2><div id="cutwrap"><canvas id="cut" width="10" height="10"></canvas></div></div>
+    <div class="card keys">
+      <b>Draw</b> a new box by dragging on the photo. <b>Drag the edges or corners</b> to resize, and drag inside the box to move it.<br>
+      <kbd>&larr;</kbd><kbd>&rarr;</kbd><kbd>&uarr;</kbd><kbd>&darr;</kbd> nudge by 0.5%, with <kbd>Shift</kbd> by 2%. <kbd>Alt</kbd> with the arrow keys, or <kbd>PageUp</kbd> / <kbd>PageDown</kbd>, moves to the previous or next drink.
+    </div>
+  </aside>
+</main>
+<script>
+'use strict';
+const $ = (s) => document.querySelector(s);
+const state = { info: null, map: {}, tab: 'needs', list: [], i: 0, box: null, orig: null, nat: [0, 0], dirty: false };
+const MIN = 0.02;
+
+// ---- the same shell rule as docs/assets/js/labels.js shapeFor
+function shapeFor(cat, sub) {
+  if (cat === 'fermented') return sub === 'makgeolli' ? 'makgeolli' : 'beer';
+  if (cat === 'umeshu') return 'liqueur';
+  if (cat === 'cocktails') return 'highball';
+  return ['sake', 'makgeolli', 'liqueur', 'beer', 'wine', 'spirits'].includes(cat) ? cat : 'sake';
+}
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const entry = (id) => state.map[id] || {};
+const nameOf = (id) => state.info.drinks[id].name;
+
+function buildLists() {
+  const ids = Object.keys(state.info.drinks).sort((a, b) => nameOf(a).localeCompare(nameOf(b)));
+  const lists = { needs: [], all: [], skipped: [] };
+  for (const id of ids) {
+    const e = entry(id);
+    if (e.labelStatus === 'ok') lists.all.push(id);
+    if (e.labelStatus === 'skip') lists.skipped.push(id);
+    if (!e.labelStatus || (e.labelStatus === 'ok' && e.cropCheck === 'unsure' && e.cropBy !== 'owner')) lists.needs.push(id);
+  }
+  state.lists = lists;
+  document.querySelectorAll('.tab').forEach((t) => { t.querySelector('.n').textContent = `(${lists[t.dataset.tab].length})`; });
+}
+
+function setTab(tab, keepId) {
+  state.tab = tab;
+  state.list = state.lists[tab];
+  document.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === tab)));
+  state.i = keepId && state.list.includes(keepId) ? state.list.indexOf(keepId) : 0;
+  show();
+}
+
+const WORDS = { needs: 'to look at', all: 'crops', skipped: 'skipped' };
+function show() {
+  const id = state.list[state.i];
+  $('#counter').textContent = state.list.length ? `${state.i + 1} of ${state.list.length} ${WORDS[state.tab]}` : `Nothing in this list`;
+  $('#prev').disabled = state.i <= 0;
+  $('#next').disabled = state.i >= state.list.length - 1;
+  if (!id) { $('#name').textContent = 'Nothing here'; $('#photo').removeAttribute('src'); $('#box').style.display = 'none'; return; }
+  const d = state.info.drinks[id], e = entry(id);
+  history.replaceState(null, '', '#' + id);
+  $('#name').textContent = d.name;
+  $('#sub').textContent = id;
+  const b = [];
+  if (e.cropBy === 'owner') b.push('<span class="badge owner">yours</span>');
+  if (e.cropCheck === 'unsure') b.push('<span class="badge unsure">unsure</span>');
+  if (e.labelStatus === 'skip') b.push(`<span class="badge">skipped: ${esc(e.labelSkip || '')}</span>`);
+  if (!e.labelStatus) b.push('<span class="badge unsure">no crop yet</span>');
+  $('#badges').innerHTML = b.join(' ');
+  state.orig = Array.isArray(e.labelCrop) ? e.labelCrop.slice() : null;
+  state.box = state.orig ? state.orig.slice() : null;
+  setMsg('');
+  const img = $('#photo');
+  img.onload = () => { state.nat = [img.naturalWidth, img.naturalHeight]; fit(); draw(); };
+  img.src = '/photo/' + encodeURIComponent(id);
+  if (img.complete && img.naturalWidth) { state.nat = [img.naturalWidth, img.naturalHeight]; fit(); draw(); }
+}
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function setMsg(t, cls) { const m = $('#msg'); m.textContent = t; m.className = cls || ''; }
+
+// ---- fit the photo into its pane
+function fit() {
+  const wrap = $('#stagewrap'), img = $('#photo'), [W, H] = state.nat;
+  if (!W) return;
+  const s = Math.min((wrap.clientWidth - 8) / W, (wrap.clientHeight - 8) / H, 1.5);
+  img.style.width = Math.round(W * s) + 'px'; img.style.height = Math.round(H * s) + 'px'; img.style.maxWidth = 'none';
+}
+window.addEventListener('resize', () => { fit(); draw(); });
+
+// ---- drawing the box, the shell preview, the crop as cut
+function draw() {
+  const box = $('#box'), b = state.box;
+  if (!b) { box.style.display = 'none'; $('#readout').textContent = 'No box yet: drag on the photo to draw one.'; preview(); return; }
+  box.style.display = 'block';
+  box.style.left = b[0] * 100 + '%'; box.style.top = b[1] * 100 + '%'; box.style.width = b[2] * 100 + '%'; box.style.height = b[3] * 100 + '%';
+  $('#readout').textContent = `x ${(b[0] * 100).toFixed(1)}%  y ${(b[1] * 100).toFixed(1)}%  w ${(b[2] * 100).toFixed(1)}%  h ${(b[3] * 100).toFixed(1)}%`;
+  preview();
+}
+
+let shellKey = null;
+function preview() {
+  const id = state.list[state.i];
+  if (!id) return;
+  const d = state.info.drinks[id];
+  let shape = shapeFor(d.category, d.sub), sh = state.info.shells[shape], note = '';
+  if (!sh || !sh.labelRect) { note = `The ${shape} has no label on the shelf; showing it on the sake bottle.`; shape = 'sake'; sh = state.info.shells.sake; }
+  $('#shellnote').textContent = note || `Shown on the ${shape} bottle, cover-fitted like the site does.`;
+  const host = $('#shell');
+  if (shellKey !== shape) {
+    shellKey = shape;
+    const file = sh.files['2x'].split('/').pop();
+    const [lx, ly, lw, lh] = sh.labelRect;
+    host.innerHTML = `<img alt="" src="/shell/${file}"><span class="lab ${sh.labelBlend === 'multiply' ? 'multiply' : 'normal'}" style="left:${lx * 100}%;top:${ly * 100}%;width:${lw * 100}%;height:${lh * 100}%"><canvas></canvas></span>`;
+  }
+  const [lx, ly, lw, lh] = sh.labelRect;
+  const ratio = (lw * sh.aspect) / lh;                      // label box width / height, as on the site
+  const cv = host.querySelector('canvas');
+  cv.width = 240; cv.height = Math.round(240 / ratio);
+  paint(cv, ratio);
+  const cut = $('#cut');
+  paint(cut, null);
+}
+function paint(cv, ratio) {
+  const img = $('#photo'), ctx = cv.getContext('2d'), b = state.box;
+  ctx.clearRect(0, 0, cv.width, cv.height);
+  if (!b || !img.naturalWidth) { ctx.fillStyle = '#7a6a58'; ctx.fillRect(0, 0, cv.width, cv.height); return; }
+  const W = img.naturalWidth, H = img.naturalHeight;
+  let sx = b[0] * W, sy = b[1] * H, sw = b[2] * W, sh = b[3] * H;
+  if (ratio) {                                              // object-fit: cover, centred
+    if (sw / sh > ratio) { const nw = sh * ratio; sx += (sw - nw) / 2; sw = nw; }
+    else { const nh = sw / ratio; sy += (sh - nh) / 2; sh = nh; }
+  } else {
+    const k = Math.min(1, 360 / Math.max(sw, sh)); cv.width = Math.max(1, Math.round(sw * k)); cv.height = Math.max(1, Math.round(sh * k));
+  }
+  ctx.drawImage(img, sx, sy, sw, sh, 0, 0, cv.width, cv.height);
+}
+
+// ---- mouse and touch: draw, move, resize
+let drag = null;
+const stage = $('#stage');
+function pt(ev) {
+  const r = $('#photo').getBoundingClientRect();
+  return [clamp((ev.clientX - r.left) / r.width, 0, 1), clamp((ev.clientY - r.top) / r.height, 0, 1)];
+}
+stage.addEventListener('pointerdown', (ev) => {
+  if (!state.list[state.i] || !state.nat[0]) return;
+  stage.setPointerCapture(ev.pointerId);
+  const p = pt(ev), h = ev.target.dataset && ev.target.dataset.h;
+  if (h && state.box) drag = { mode: 'resize', h, start: p, box: state.box.slice() };
+  else if (state.box && ev.target.id === 'box') drag = { mode: 'move', start: p, box: state.box.slice() };
+  else drag = { mode: 'draw', start: p };
+  ev.preventDefault();
+});
+stage.addEventListener('pointermove', (ev) => {
+  if (!drag) return;
+  const p = pt(ev);
+  if (drag.mode === 'draw') {
+    const x0 = Math.min(drag.start[0], p[0]), y0 = Math.min(drag.start[1], p[1]);
+    state.box = [x0, y0, Math.max(MIN, Math.abs(p[0] - drag.start[0])), Math.max(MIN, Math.abs(p[1] - drag.start[1]))];
+  } else if (drag.mode === 'move') {
+    const b = drag.box;
+    state.box = [clamp(b[0] + p[0] - drag.start[0], 0, 1 - b[2]), clamp(b[1] + p[1] - drag.start[1], 0, 1 - b[3]), b[2], b[3]];
+  } else {
+    let [x0, y0, x1, y1] = [drag.box[0], drag.box[1], drag.box[0] + drag.box[2], drag.box[1] + drag.box[3]];
+    if (drag.h.includes('w')) x0 = clamp(p[0], 0, x1 - MIN);
+    if (drag.h.includes('e')) x1 = clamp(p[0], x0 + MIN, 1);
+    if (drag.h.includes('n')) y0 = clamp(p[1], 0, y1 - MIN);
+    if (drag.h.includes('s')) y1 = clamp(p[1], y0 + MIN, 1);
+    state.box = [x0, y0, x1 - x0, y1 - y0];
+  }
+  state.dirty = true; draw();
+});
+const endDrag = () => { drag = null; };
+stage.addEventListener('pointerup', endDrag);
+stage.addEventListener('pointercancel', endDrag);
+
+// ---- keys and buttons
+function nudge(dx, dy) {
+  if (!state.box) return;
+  const b = state.box;
+  state.box = [clamp(b[0] + dx, 0, 1 - b[2]), clamp(b[1] + dy, 0, 1 - b[3]), b[2], b[3]];
+  draw();
+}
+function go(step) {
+  const n = state.i + step;
+  if (n < 0 || n >= state.list.length) return;
+  state.i = n; show();
+}
+async function save(status) {
+  const id = state.list[state.i];
+  if (!id) return;
+  if (status === 'ok' && !state.box) { setMsg('Draw a box first.', 'err'); return; }
+  const body = { id, status };
+  if (status === 'ok') body.crop = state.box.map((v) => Math.round(v * 10000) / 10000);
+  else body.reason = 'no usable label (owner)';
+  try {
+    const r = await fetch('/save', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || r.status);
+    state.map[id] = j.entry;
+    buildLists();
+    state.list = state.lists[state.tab];
+    setMsg(status === 'ok' ? 'Saved. Run build.bat to publish it.' : 'Marked as no usable label.', 'ok');
+    if (state.i < state.list.length - 1) { state.i += 1; show(); setMsg(status === 'ok' ? 'Saved.' : 'Marked as no usable label.', 'ok'); }
+    else show();
+  } catch (err) { setMsg('Not saved: ' + err.message, 'err'); }
+}
+function undo() { state.box = state.orig ? state.orig.slice() : null; draw(); setMsg('Back to how it was when this drink opened.'); }
+
+document.addEventListener('keydown', (ev) => {
+  if (ev.target.tagName === 'INPUT' || ev.target.tagName === 'TEXTAREA') return;
+  const k = ev.key, step = ev.shiftKey ? 0.02 : 0.005;
+  if (ev.altKey && k === 'ArrowLeft') { go(-1); ev.preventDefault(); return; }
+  if (ev.altKey && k === 'ArrowRight') { go(1); ev.preventDefault(); return; }
+  if (k === 'PageUp') { go(-1); ev.preventDefault(); return; }
+  if (k === 'PageDown') { go(1); ev.preventDefault(); return; }
+  if (k === 'ArrowLeft') { nudge(-step, 0); ev.preventDefault(); }
+  else if (k === 'ArrowRight') { nudge(step, 0); ev.preventDefault(); }
+  else if (k === 'ArrowUp') { nudge(0, -step); ev.preventDefault(); }
+  else if (k === 'ArrowDown') { nudge(0, step); ev.preventDefault(); }
+  else if (k === 'Enter') { save('ok'); ev.preventDefault(); }
+  else if (k === 's' || k === 'S') { save('skip'); ev.preventDefault(); }
+  else if (k === 'z' || k === 'Z') { undo(); ev.preventDefault(); }
+});
+$('#save').onclick = () => save('ok');
+$('#noLabel').onclick = () => save('skip');
+$('#undo').onclick = undo;
+$('#prev').onclick = () => go(-1);
+$('#next').onclick = () => go(1);
+document.querySelectorAll('.tab').forEach((t) => { t.onclick = () => setTab(t.dataset.tab); });
+
+// ---- start
+(async function start() {
+  try {
+    const [info, map] = await Promise.all([fetch('/api/info').then((r) => r.json()), fetch('/api/map').then((r) => r.json())]);
+    state.info = info; state.map = map;
+    buildLists();
+    const want = decodeURIComponent(location.hash.slice(1));
+    if (want && info.drinks[want]) {
+      const e = entry(want);
+      const tab = state.lists.needs.includes(want) ? 'needs' : e.labelStatus === 'skip' ? 'skipped' : 'all';
+      setTab(tab, want);
+    } else setTab(state.lists.needs.length ? 'needs' : 'all');
+  } catch (err) {
+    $('#counter').textContent = 'Cannot reach the server: ' + err.message;
+  }
+})();
+</script>
+</body>
+</html>

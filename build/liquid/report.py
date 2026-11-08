@@ -10,7 +10,7 @@ from .photos import PHOTO_EXT
 
 CODE_TITLES = {
     "E01": "Cannot read the ledger", "E02": "Privacy leak in output", "E03": "Broken reference",
-    "E04": "Schema violation", "E05": "Image could not be processed",
+    "E04": "Schema violation", "E05": "Image could not be processed", "E07": "Owner crop changed outside the crop tool",
     "W01": "Photo not matched to any drink", "W02": "Drink has no front photo",
     "W03": "Other Detail Type not valid for the category", "W04": "Producer missing from Producers sheet",
     "W05": "Japanese Region is not one of the 47 prefectures", "W06": "Rows sharing an ID disagree",
@@ -35,6 +35,7 @@ summary{cursor:pointer;font-weight:600}li{margin:2px 0}
 .orig{width:110px;height:auto}.crop{position:relative;display:block;line-height:0}.crop i{position:absolute;border:2px solid #e8351e;box-sizing:border-box}.lab{width:160px;height:auto}.thm{width:90px;height:120px;object-fit:cover}
 .inbox{display:flex;flex-wrap:wrap;gap:10px}.inbox figure{margin:0;width:140px;font-size:12px}
 .inbox img{width:140px;height:140px;object-fit:cover;border:1px solid #ccc}
+h4{margin:18px 0 6px}.tag{font-size:11px;background:#2c6b2f;color:#fff;border-radius:8px;padding:0 6px;margin-left:4px}.tag.unsure{background:#b36b00}.fix{font-weight:600}
 code{background:#f0e8d6;padding:1px 4px;border-radius:3px}
 """
 
@@ -137,16 +138,33 @@ def write_report(reports_dir, root, drinks, shelf, photo_map, suggestions, unmat
                 fallback.append(f"{cat['name']} / {sub['name']} ({len(sub['drinks'])} drinks)")
     add("<h3>Subcategories on the illustrated fallback label</h3>")
     add("<ul>" + "".join(f"<li>{e(x)}</li>" for x in fallback) + "</ul>" if fallback else "<p class='ok'>None.</p>")
-    add("<h3>Label contact sheet</h3><p class='muted'>Original with the crop outlined, then the label as published.</p><div class='sheet'>")
-    for did in oks:
+    needs = [i for i in oks if photo_map[i].get("cropCheck") == "unsure" and photo_map[i].get("cropBy") != "owner"]
+    rest = [i for i in oks if i not in needs]
+    fix = "http://127.0.0.1:8765/#"
+
+    def crop_cell(did):
         entry = photo_map[did]
         x, y, w, h = entry["labelCrop"]
         orig = _rel(Path(photos_dir) / entry["front"], reports_dir)
         lab = _rel(docs / "img" / "labels" / f"{did}.webp", reports_dir)
-        add(f"<div class='cell'><b>{e(names.get(did, did))}</b><br><span class='muted'>{e(did)}</span><div class='imgs'>"
-            f"<span class='crop'><img class='orig' loading='lazy' src='{orig}' alt=''>"
-            f"<i style='left:{x * 100:.1f}%;top:{y * 100:.1f}%;width:{w * 100:.1f}%;height:{h * 100:.1f}%'></i></span>"
-            f"<img class='lab' loading='lazy' src='{lab}' alt=''></div></div>")
+        tags = ""
+        if entry.get("cropBy") == "owner":
+            tags += " <span class='tag'>yours</span>"
+        if entry.get("cropCheck") == "unsure":
+            tags += " <span class='tag unsure'>needs a look</span>"
+        return (f"<div class='cell'><b>{e(names.get(did, did))}</b>{tags}<br><span class='muted'>{e(did)}</span><div class='imgs'>"
+                f"<span class='crop'><img class='orig' loading='lazy' src='{orig}' alt=''>"
+                f"<i style='left:{x * 100:.1f}%;top:{y * 100:.1f}%;width:{w * 100:.1f}%;height:{h * 100:.1f}%'></i></span>"
+                f"<img class='lab' loading='lazy' src='{lab}' alt=''></div>"
+                f"<a class='fix' href='{fix}{urllib.parse.quote(did)}'>Fix</a> <span class='muted'>(opens the crop tool, if it is running)</span></div>")
+
+    add("<h3>Label contact sheet</h3><p class='muted'>Original with the crop outlined, then the label as published. "
+        "The Fix link opens the crop tool (build/crop.bat) on that drink.</p>")
+    if needs:
+        add(f"<h4>Needs a look ({len(needs)})</h4><div class='sheet'>" + "".join(crop_cell(i) for i in needs) + "</div>")
+    add(f"<h4>{'The rest' if needs else 'All accepted crops'} ({len(rest)})</h4><div class='sheet'>")
+    for did in rest:
+        add(crop_cell(did))
     add("</div>")
     add("<h3>Skipped photos</h3>")
     if skips:

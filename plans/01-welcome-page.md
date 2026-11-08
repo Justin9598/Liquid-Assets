@@ -627,7 +627,7 @@ These answer the shipper's open questions from the v3 engine build:
   - doesn't exist (for example a fully printed bottle or bare glass).
 
   A skipped photo is **left out of the label pools only**. It still appears as the card thumbnail (Plan 02) and in the drink page gallery (Plan 03).
-- **How the crops are made:** the shipper looks at every matched front photo, using downscaled previews with a coordinate grid, and records `labelCrop` plus `labelStatus` in `Ship/content/photo-map.json`. Owner-set entries are never overwritten.
+- **How the crops are made:** the shipper looks at every matched front photo, using downscaled previews with a coordinate grid, and records `labelCrop` plus `labelStatus` in `Ship/content/photo-map.json`. Owner-set entries are never overwritten. *(Replaced by [Plan 13](13-label-crops.md) (2026-11-08): crops are checked against a rendered image of the result, and owner crops carry `cropBy: "owner"`.)*
 - **Owner review:** the build report shows a **label contact sheet** of each accepted crop, plus a separate list of skipped photos with reasons. The owner can flip any decision in the photo map.
 - **Empty pool:** a subcategory left with no `ok` labels uses the §6.5 illustrated fallback label. The build report lists these subcategories.
 - **Scope:** this applies to **welcome page bottle labels only.** Card thumbnails and drink page photos are unchanged.

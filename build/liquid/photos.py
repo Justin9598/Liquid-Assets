@@ -80,7 +80,7 @@ def build_photo_map(drinks, photo_files, manual, issues):
             issues.error("E04", f"photo-map entry '{did}' must be an object")
             continue
         out = {"front": None, "others": [], "labelCrop": None, "thumbCrop": None, "source": "manual",
-               "labelStatus": None, "labelSkip": None,
+               "labelStatus": None, "labelSkip": None, "cropBy": None, "cropCheck": None,
                "_fill_front": "front" not in entry, "_fill_others": "others" not in entry}
         front = entry.get("front")
         if front is not None:
@@ -115,6 +115,15 @@ def build_photo_map(drinks, photo_files, manual, issues):
         else:
             out["labelStatus"] = status
             out["labelSkip"] = entry.get("labelSkip") if status == "skip" else None
+        for field, allowed in (("cropBy", ("owner", "shipper")), ("cropCheck", ("passed", "unsure"))):   # Plan 13 section 4
+            val = entry.get(field)
+            if val is None:
+                continue
+            if val not in allowed:
+                issues.error("E04", f"photo-map entry '{did}': {field} must be " + " or ".join(f'"{a}"' for a in allowed),
+                             drink=drink_by_id[did]["name"])
+            else:
+                out[field] = val
         result[did] = out
 
     # 2. exact auto matches for drinks without a manual entry
@@ -158,7 +167,7 @@ def build_photo_map(drinks, photo_files, manual, issues):
         used.add(name)
     for did, slot in auto.items():
         result[did] = {"front": slot["front"], "others": slot["others"], "labelCrop": None, "labelStatus": None, "labelSkip": None,
-                       "thumbCrop": None, "source": "exact"}
+                       "cropBy": None, "cropCheck": None, "thumbCrop": None, "source": "exact"}
 
     for entry in result.values():
         entry.pop("_fill_front", None)
