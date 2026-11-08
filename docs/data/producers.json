@@ -1964,50 +1964,65 @@
  {
   "key": "shintani-shuzo",
   "name": "Shintani Shuzo",
-  "native": null,
+  "native": "新谷酒造",
   "region": "Yamaguchi",
   "country": "Japan",
-  "location": "Yamaguchi",
-  "brands": [],
+  "location": "Tokuji, Yamaguchi",
+  "brands": [
+   "Wakamusume",
+   "わかむすめ"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "shirataki-shuzo",
   "name": "Shirataki Shuzo",
-  "native": null,
+  "native": "白瀧酒造",
   "region": "Niigata",
   "country": "Japan",
-  "location": "Niigata",
-  "brands": [],
+  "location": "Yuzawa, Niigata",
+  "brands": [
+   "Jozen Mizu no Gotoshi",
+   "Jozen",
+   "Minatoya Tosuke",
+   "Uonuma",
+   "by Jozen"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "suigei-shuzo",
   "name": "Suigei Shuzo",
-  "native": null,
+  "native": "酔鯨酒造",
   "region": "Kochi",
   "country": "Japan",
-  "location": "Kochi",
-  "brands": [],
+  "location": "Kochi, Kochi",
+  "brands": [
+   "Suigei",
+   "酔鯨"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "sumikawa-shuzojo",
   "name": "Sumikawa Shuzojo",
-  "native": null,
+  "native": "澄川酒造場",
   "region": "Yamaguchi",
   "country": "Japan",
-  "location": "Yamaguchi",
-  "brands": [],
+  "location": "Hagi, Yamaguchi",
+  "brands": [
+   "Toyobijin",
+   "東洋美人"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "suntory",
@@ -2058,98 +2073,137 @@
  {
   "key": "taikai-shuzo",
   "name": "Taikai Shuzo",
-  "native": null,
+  "native": "大海酒造",
   "region": "Kagoshima",
   "country": "Japan",
-  "location": "Kagoshima",
-  "brands": [],
+  "location": "Kanoya, Kagoshima",
+  "brands": [
+   "Satsuma Taikai",
+   "Kujira no Bottle",
+   "Kujira no Kuromugi",
+   "Umi"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "tajime-shuzo",
-  "name": "Tajime Shuzo",
-  "native": null,
+  "name": "Tajime Gomei",
+  "native": "田治米合名会社",
   "region": "Hyogo",
   "country": "Japan",
-  "location": "Hyogo",
-  "brands": [],
+  "location": "Asago, Hyogo",
+  "brands": [
+   "Chikusen",
+   "竹泉"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "takachiyo-shuzo",
   "name": "Takachiyo Shuzo",
-  "native": null,
+  "native": "髙千代酒造",
   "region": "Niigata",
   "country": "Japan",
-  "location": "Niigata",
-  "brands": [],
+  "location": "Minamiuonuma, Niigata",
+  "brands": [
+   "Takachiyo",
+   "髙千代",
+   "Makihata",
+   "巻機"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "takagi-shuzo",
   "name": "Takagi Shuzo",
-  "native": null,
+  "native": "高木酒造",
   "region": "Yamagata",
   "country": "Japan",
-  "location": "Yamagata",
-  "brands": [],
+  "location": "Murayama, Yamagata",
+  "brands": [
+   "Juyondai",
+   "十四代",
+   "Asahitaka",
+   "朝日鷹"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "takasago-shuzo",
   "name": "Takasago Shuzo",
-  "native": null,
+  "native": "髙砂酒造",
   "region": "Hokkaido",
   "country": "Japan",
-  "location": "Hokkaido",
-  "brands": [],
+  "location": "Asahikawa, Hokkaido",
+  "brands": [
+   "Kokushimuso",
+   "国士無双",
+   "Asahi Kamui",
+   "Taisetsu"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "takazawa-shuzojo",
   "name": "Takazawa Shuzojo",
-  "native": null,
+  "native": "髙澤酒造場",
   "region": "Toyama",
   "country": "Japan",
-  "location": "Toyama",
-  "brands": [],
+  "location": "Himi, Toyama",
+  "brands": [
+   "Ariiso Akebono",
+   "有磯曙",
+   "Hatsuarashi"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "takenoi-shuzo",
   "name": "Takenoi Shuzo",
-  "native": null,
+  "native": "武の井酒造",
   "region": "Yamanashi",
   "country": "Japan",
-  "location": "Yamanashi",
-  "brands": [],
+  "location": "Hokuto, Yamanashi",
+  "brands": [
+   "Takenoi",
+   "武の井",
+   "Saykoh",
+   "Seikoh",
+   "青煌",
+   "Yatsugatake no Mai"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "tomikawa-shuzoten",
   "name": "Tomikawa Shuzoten",
-  "native": null,
+  "native": "富川酒造店",
   "region": "Tochigi",
   "country": "Japan",
-  "location": "Tochigi",
-  "brands": [],
+  "location": "Yaita, Tochigi",
+  "brands": [
+   "Chuai",
+   "忠愛",
+   "Fumigawa",
+   "富美川"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "banno-shuzo",
@@ -2170,38 +2224,51 @@
  {
   "key": "tosa-shuzo",
   "name": "Tosa Shuzo",
-  "native": null,
+  "native": "土佐酒造",
   "region": "Kochi",
   "country": "Japan",
-  "location": "Kochi",
-  "brands": [],
+  "location": "Tosa, Kochi",
+  "brands": [
+   "Keigetsu",
+   "桂月"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "wakakoma-shuzo",
   "name": "Wakakoma Shuzo",
-  "native": null,
+  "native": "若駒酒造",
   "region": "Tochigi",
   "country": "Japan",
-  "location": "Tochigi",
-  "brands": [],
+  "location": "Oyama, Tochigi",
+  "brands": [
+   "Wakakoma",
+   "若駒"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "wakanoi-shuzo",
   "name": "Wakanoi Shuzo",
-  "native": null,
+  "native": "若乃井酒造",
   "region": "Yamagata",
   "country": "Japan",
   "location": "Iitoyo, Yamagata",
-  "brands": [],
+  "brands": [
+   "Wakanoi",
+   "若乃井",
+   "Hanamaru",
+   "華丸",
+   "Ebisu Kotobuki",
+   "えびす寿"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "wakaze",
@@ -2258,14 +2325,18 @@
  {
   "key": "yamawa-shuzoten",
   "name": "Yamawa Shuzoten",
-  "native": null,
+  "native": "山和酒造店",
   "region": "Miyagi",
   "country": "Japan",
-  "location": "Miyagi",
-  "brands": [],
+  "location": "Kami, Miyagi",
+  "brands": [
+   "Yamawa",
+   "山和",
+   "Washigakuni"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "yesan-winery",
@@ -2282,13 +2353,20 @@
  {
   "key": "yoshida-sake-brewery",
   "name": "Yoshida Sake Brewery",
-  "native": null,
+  "native": "吉田酒造店",
   "region": "Ishikawa",
   "country": "Japan",
-  "location": "Ishikawa",
-  "brands": [],
+  "location": "Hakusan, Ishikawa",
+  "brands": [
+   "Tedorigawa",
+   "手取川",
+   "Yoshidagura",
+   "吉田蔵",
+   "Yoshidagura u",
+   "吉田蔵u"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  }
 ]

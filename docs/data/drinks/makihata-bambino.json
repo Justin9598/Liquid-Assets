@@ -6,11 +6,11 @@
  "producer": {
   "key": "takachiyo-shuzo",
   "name": "Takachiyo Shuzo",
-  "native": null,
-  "location": "Niigata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "髙千代酒造",
+  "location": "Minamiuonuma, Niigata, Japan",
+  "founded": 1868,
+  "about": "Takachiyo Shuzo is a sake brewery in Nagasaki, Minamiuonuma, at the foot of Mt. Makihata in Niigata. The prefectural guide dates it to the early Meiji period, and a brewery listing gives 1868. The first head named the sake Takachiyo, hoping many people would prosper for generations.",
+  "url": "http://www.takachiyo.co.jp/"
  },
  "abv": 14,
  "styles": [

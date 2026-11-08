@@ -1,16 +1,29 @@
 {
  "key": "wakanoi-shuzo",
  "name": "Wakanoi Shuzo",
- "native": null,
+ "native": "若乃井酒造",
  "location": "Iitoyo, Yamagata",
  "region": "Yamagata",
  "country": "Japan",
- "founded": null,
+ "founded": 1890,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.wakanoi.jp/",
+ "brands": [
+  "Wakanoi",
+  "若乃井",
+  "Hanamaru",
+  "華丸",
+  "Ebisu Kotobuki",
+  "えびす寿"
+ ],
+ "about": [
+  "Wakanoi Shuzo is a sake brewery in Iitoyo, in the Okitama district of Yamagata. It was founded in 1890. The brewery tells of a well dug downstream of the Noga River near the Wakamiya Hachimangu shrine that struck spring water good for brewing, and the company and brand names come from that water.",
+  "The brewing water is Noga River water filtered through granite, with a hardness of 22, which the brewery calls very soft. Some sake is aged in a snow room at the foot of Mt. Iide, held at 0 to 3 degrees C. Its lineup includes Hanamaru junmai ginjo and Ebisu Kotobuki."
+ ],
+ "sources": [
+  "https://www.wakanoi.jp/",
+  "label of Wakanoi Hanamaru Junmai Ginjo Yukimuro (back label)"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

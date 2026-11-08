@@ -6,11 +6,11 @@
  "producer": {
   "key": "sumikawa-shuzojo",
   "name": "Sumikawa Shuzojo",
-  "native": null,
-  "location": "Yamaguchi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "澄川酒造場",
+  "location": "Hagi, Yamaguchi, Japan",
+  "founded": 1921,
+  "about": "Sumikawa Shuzojo is a sake brewery in Hagi, Yamaguchi. It was founded in 1921, when the Sumikawa family, who were rice wholesalers, took over a relative's brewery. Its only brand is Toyobijin, which the first head of the family named after his late wife.",
+  "url": "https://toyobijin.jp/"
  },
  "abv": 14,
  "styles": [],

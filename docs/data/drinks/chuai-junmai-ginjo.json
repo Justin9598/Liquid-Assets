@@ -6,11 +6,11 @@
  "producer": {
   "key": "tomikawa-shuzoten",
   "name": "Tomikawa Shuzoten",
-  "native": null,
-  "location": "Tochigi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "富川酒造店",
+  "location": "Yaita, Tochigi, Japan",
+  "founded": 1913,
+  "about": "Tomikawa Shuzoten is a small sake brewery in Otsuki, Yaita, in Tochigi. It brews Chuai and Fumigawa. Two listings date it to 1913, though the brewery's own site gives no year.",
+  "url": "http://www.kubun.jp/"
  },
  "abv": null,
  "styles": [

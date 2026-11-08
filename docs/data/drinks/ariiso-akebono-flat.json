@@ -6,11 +6,11 @@
  "producer": {
   "key": "takazawa-shuzojo",
   "name": "Takazawa Shuzojo",
-  "native": null,
-  "location": "Toyama, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "髙澤酒造場",
+  "location": "Himi, Toyama, Japan",
+  "founded": 1872,
+  "about": "Takazawa Shuzojo is a sake brewery in Himi, on the Toyama coast. The first Takazawa Riemon came to Himi at the end of the Edo period and began brewing around 1872. The name Ariiso Akebono pictures daybreak over the Ariso Sea.",
+  "url": "https://ariiso-akebono.jp/"
  },
  "abv": 13,
  "styles": [],

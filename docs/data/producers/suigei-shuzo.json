@@ -1,16 +1,26 @@
 {
  "key": "suigei-shuzo",
  "name": "Suigei Shuzo",
- "native": null,
- "location": "Kochi",
+ "native": "酔鯨酒造",
+ "location": "Kochi, Kochi",
  "region": "Kochi",
  "country": "Japan",
  "founded": null,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://suigei.co.jp/",
+ "brands": [
+  "Suigei",
+  "酔鯨"
+ ],
+ "about": [
+  "Suigei Shuzo has its head office and original brewery at Nagahama in Kochi City, and opened a second brewery, the Tosa Brewery, in Tosa City in 2018. The company says its predecessor, Ishino Shuzo, brewed at Nagahama from 1872, that the Suigei sake began in 1969, and that it became a joint-stock company in 1972.",
+  "The name comes from Yamauchi Yodo, the 15th lord of Tosa, who called himself the drunken lord of the whale sea. The Tosa Brewery focuses on junmai daiginjo and has its own rice milling machine. In 1985 the brewery invited the toji Doi Noriharu from Hiroshima to lead its move into ginjo brewing."
+ ],
+ "sources": [
+  "https://suigei.co.jp/company/about",
+  "https://suigei.co.jp/company/story",
+  "https://suigei.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

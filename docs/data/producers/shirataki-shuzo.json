@@ -1,16 +1,30 @@
 {
  "key": "shirataki-shuzo",
  "name": "Shirataki Shuzo",
- "native": null,
- "location": "Niigata",
+ "native": "白瀧酒造",
+ "location": "Yuzawa, Niigata",
  "region": "Niigata",
  "country": "Japan",
- "founded": null,
+ "founded": 1855,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.jozen.co.jp/",
+ "brands": [
+  "Jozen Mizu no Gotoshi",
+  "Jozen",
+  "Minatoya Tosuke",
+  "Uonuma",
+  "by Jozen"
+ ],
+ "about": [
+  "Shirataki Shuzo is a sake brewery in Yuzawa, in the heavy snow country of Niigata. Brewing began there in 1855 under Minatoya Tosuke, serving travellers and merchants on the old road between Echigo and Edo. The company was incorporated in 1951 and is led by Shintaro Takahashi.",
+  "The brewery draws soft water from three wells on its own grounds, and says snowmelt takes about 50 years to become clean groundwater. Its best known sake is Jozen Mizu no Gotoshi, named from a saying of Laozi that the highest good is like water."
+ ],
+ "sources": [
+  "https://www.jozen.co.jp/top/company.asp",
+  "https://www.jozen.co.jp/top/history.asp",
+  "https://www.jozen.co.jp/top/quality.asp",
+  "https://www.jozen.co.jp/top/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

@@ -1,16 +1,26 @@
 {
  "key": "tosa-shuzo",
  "name": "Tosa Shuzo",
- "native": null,
- "location": "Kochi",
+ "native": "土佐酒造",
+ "location": "Tosa, Kochi",
  "region": "Kochi",
  "country": "Japan",
- "founded": null,
+ "founded": 1877,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.keigetsu.co.jp/",
+ "brands": [
+  "Keigetsu",
+  "桂月"
+ ],
+ "about": [
+  "Tosa Shuzo is a sake brewery in the mountain town of Tosa in northern Kochi, beside Lake Sameura near the source of the Yoshino River. It was founded in 1877 and sells its sake as Keigetsu. The company brews with rice from local terraced paddies and works with traditional kimoto and yamahai methods.",
+  "Keigetsu takes its name from Katsurahama, a Kochi beach long known for its moon, and from the writer Omachi Keigetsu, who praised the sake in a poem in 1924. The artist Matsubayashi Keigetsu painted the label in 1951."
+ ],
+ "sources": [
+  "https://www.keigetsu.co.jp/profile",
+  "https://www.keigetsu.co.jp/profile/the-origin-of-keigetsu",
+  "https://www.keigetsu.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

@@ -1,16 +1,27 @@
 {
  "key": "wakakoma-shuzo",
  "name": "Wakakoma Shuzo",
- "native": null,
- "location": "Tochigi",
+ "native": "若駒酒造",
+ "location": "Oyama, Tochigi",
  "region": "Tochigi",
  "country": "Japan",
- "founded": null,
+ "founded": 1860,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.wakakoma.com/",
+ "brands": [
+  "Wakakoma",
+  "若駒"
+ ],
+ "about": [
+  "Wakakoma Shuzo is a sake brewery in Oyaku, Oyama, in Tochigi. It was founded in 1860 and is described as the oldest sake brewery in Oyama. Its main brand is Wakakoma.",
+  "Listings describe hand brewing centred on the family, using local water. The brewery building also holds a gallery and a party room for events, and the brewery has been used as a film location."
+ ],
+ "sources": [
+  "https://www.wakakoma.com/",
+  "https://en.sake-times.com/breweries/wakakoma-shuzo",
+  "https://www.sakenomy.jp/en/brewery/K01N009006/",
+  "https://tochinavi.net/spot/home/?id=8171"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

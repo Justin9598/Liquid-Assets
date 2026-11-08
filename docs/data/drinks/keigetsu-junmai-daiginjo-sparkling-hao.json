@@ -6,11 +6,11 @@
  "producer": {
   "key": "tosa-shuzo",
   "name": "Tosa Shuzo",
-  "native": null,
-  "location": "Kochi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "土佐酒造",
+  "location": "Tosa, Kochi, Japan",
+  "founded": 1877,
+  "about": "Tosa Shuzo is a sake brewery in the mountain town of Tosa in northern Kochi, beside Lake Sameura near the source of the Yoshino River. It was founded in 1877 and sells its sake as Keigetsu. The company brews with rice from local terraced paddies and works with traditional kimoto and yamahai methods.",
+  "url": "https://www.keigetsu.co.jp/"
  },
  "abv": 15,
  "styles": [

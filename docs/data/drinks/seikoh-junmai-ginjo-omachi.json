@@ -6,11 +6,11 @@
  "producer": {
   "key": "takenoi-shuzo",
   "name": "Takenoi Shuzo",
-  "native": null,
-  "location": "Yamanashi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "武の井酒造",
+  "location": "Hokuto, Yamanashi, Japan",
+  "founded": 1865,
+  "about": "Takenoi Shuzo is a sake brewery in Takane, Hokuto, at the foot of the Yatsugatake mountains in Yamanashi. It was founded by Shimizu Buzaemon in the Keio era, around 1865. The name Takenoi joins the Bu of Buzaemon with the i of a well fed by Yatsugatake groundwater.",
+  "url": "https://takenoishuzo.jp/"
  },
  "abv": 15,
  "styles": [],

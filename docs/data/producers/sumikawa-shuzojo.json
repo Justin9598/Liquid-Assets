@@ -1,16 +1,25 @@
 {
  "key": "sumikawa-shuzojo",
  "name": "Sumikawa Shuzojo",
- "native": null,
- "location": "Yamaguchi",
+ "native": "澄川酒造場",
+ "location": "Hagi, Yamaguchi",
  "region": "Yamaguchi",
  "country": "Japan",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "founded": 1921,
+ "master": "Takafumi Sumikawa",
+ "website": "https://toyobijin.jp/",
+ "brands": [
+  "Toyobijin",
+  "東洋美人"
+ ],
+ "about": [
+  "Sumikawa Shuzojo is a sake brewery in Hagi, Yamaguchi. It was founded in 1921, when the Sumikawa family, who were rice wholesalers, took over a relative's brewery. Its only brand is Toyobijin, which the first head of the family named after his late wife.",
+  "Takafumi Sumikawa became the fourth toji in 2004. Heavy rain in July 2013 flooded the brewery and destroyed equipment and more than 10,000 bottles, and over 1,500 volunteers helped it recover. A new three-storey brewery opened in 2014."
+ ],
+ "sources": [
+  "https://toyobijin.jp/en/",
+  "https://toyobijin.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

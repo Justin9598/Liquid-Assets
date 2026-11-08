@@ -6,11 +6,11 @@
  "producer": {
   "key": "yamawa-shuzoten",
   "name": "Yamawa Shuzoten",
-  "native": null,
-  "location": "Miyagi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "山和酒造店",
+  "location": "Kami, Miyagi, Japan",
+  "founded": 1896,
+  "about": "Yamawa Shuzoten is a sake brewery in Kami, Miyagi. The Ito family ran a local pharmacy before turning to sake in 1896, when Kazubei Ito began brewing. The older line is Washigakuni, and the newer limited brand is Yamawa, brewed in the Nambu toji tradition.",
+  "url": "https://www.yamawa-syuzouten.co.jp/"
  },
  "abv": 16,
  "styles": [

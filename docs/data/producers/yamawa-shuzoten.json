@@ -1,17 +1,35 @@
 {
  "key": "yamawa-shuzoten",
  "name": "Yamawa Shuzoten",
- "native": null,
- "location": "Miyagi",
+ "native": "山和酒造店",
+ "location": "Kami, Miyagi",
  "region": "Miyagi",
  "country": "Japan",
- "founded": null,
+ "founded": 1896,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://www.yamawa-syuzouten.co.jp/",
+ "brands": [
+  "Yamawa",
+  "山和",
+  "Washigakuni"
+ ],
+ "about": [
+  "Yamawa Shuzoten is a sake brewery in Kami, Miyagi. The Ito family ran a local pharmacy before turning to sake in 1896, when Kazubei Ito began brewing. The older line is Washigakuni, and the newer limited brand is Yamawa, brewed in the Nambu toji tradition.",
+  "The brewery uses groundwater from Mt. Funagata. It is one of the seven Miyagi houses behind Date Seven, the limited sake released each July, and it has its own Yamawa style edition of that series."
+ ],
+ "sources": [
+  "https://www.yamawa-syuzouten.co.jp/",
+  "https://japan-food.jetro.go.jp/sake/sg/selected_sake/Yamawa-Junmai-Ginjo-Miyamanishiki.html",
+  "https://soilair-selection.squarespace.com/yamawa",
+  "label (back label of Yamawa Junmai Ginjo Muroka Nama Genshu)"
+ ],
+ "related": [
+  {
+   "key": "date-seven",
+   "name": "Date Seven",
+   "relationship": "Date Seven member"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,

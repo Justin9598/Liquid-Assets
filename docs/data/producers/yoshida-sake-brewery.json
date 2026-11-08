@@ -1,16 +1,32 @@
 {
  "key": "yoshida-sake-brewery",
  "name": "Yoshida Sake Brewery",
- "native": null,
- "location": "Ishikawa",
+ "native": "吉田酒造店",
+ "location": "Hakusan, Ishikawa",
  "region": "Ishikawa",
  "country": "Japan",
- "founded": null,
+ "founded": 1870,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://tedorigawa.com/",
+ "brands": [
+  "Tedorigawa",
+  "手取川",
+  "Yoshidagura",
+  "吉田蔵",
+  "Yoshidagura u",
+  "吉田蔵u"
+ ],
+ "about": [
+  "Yoshida Shuzoten is a sake brewery in Hakusan, Ishikawa, founded in 1870 and incorporated in 1954. It sells sake as Tedorigawa and, in a second line, as Yoshidagura. The brewery sits on the Tedori River alluvial fan below Mt. Haku, in a village once known for sake making.",
+  "It works with about 40 contract farmers, and its brewers learn rice growing at their farms from spring to summer and join the harvest. Yoshidagura u is a modern yamahai made from rice, water and the brewery's own Kanazawa yeast, with groundwater that takes 100 years to flow out of Mt. Haku."
+ ],
+ "sources": [
+  "https://tedorigawa.com/about/company/",
+  "https://tedorigawa.com/en/",
+  "https://tedorigawa.com/connection/",
+  "https://tedorigawa.com/yoshidagura_u/",
+  "https://tedorigawa.com/150th/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

@@ -1,16 +1,29 @@
 {
  "key": "takenoi-shuzo",
  "name": "Takenoi Shuzo",
- "native": null,
- "location": "Yamanashi",
+ "native": "武の井酒造",
+ "location": "Hokuto, Yamanashi",
  "region": "Yamanashi",
  "country": "Japan",
- "founded": null,
+ "founded": 1865,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://takenoishuzo.jp/",
+ "brands": [
+  "Takenoi",
+  "武の井",
+  "Saykoh",
+  "Seikoh",
+  "青煌",
+  "Yatsugatake no Mai"
+ ],
+ "about": [
+  "Takenoi Shuzo is a sake brewery in Takane, Hokuto, at the foot of the Yatsugatake mountains in Yamanashi. It was founded by Shimizu Buzaemon in the Keio era, around 1865. The name Takenoi joins the Bu of Buzaemon with the i of a well fed by Yatsugatake groundwater.",
+  "Brewing water comes from the same foothills, near the Sanbunichi spring, one of Japan's hundred famous waters. The brewery mainly uses flower yeasts isolated by Tokyo University of Agriculture, and launched the junmai brand Saykoh in 2007. Since 1997 it has brewed entirely with its own staff instead of hired toji."
+ ],
+ "sources": [
+  "https://takenoishuzo.jp/",
+  "https://takenoishuzo.jp/company.html"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

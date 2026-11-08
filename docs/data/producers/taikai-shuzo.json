@@ -1,16 +1,30 @@
 {
  "key": "taikai-shuzo",
  "name": "Taikai Shuzo",
- "native": null,
- "location": "Kagoshima",
+ "native": "大海酒造",
+ "location": "Kanoya, Kagoshima",
  "region": "Kagoshima",
  "country": "Japan",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "founded": 1975,
+ "master": "Yoshiyuki Omure",
+ "website": "https://www.taikai.or.jp/",
+ "brands": [
+  "Satsuma Taikai",
+  "Kujira no Bottle",
+  "Kujira no Kuromugi",
+  "Umi"
+ ],
+ "about": [
+  "Taikai Shuzo is a shochu distillery in Kanoya, on the Osumi Peninsula of Kagoshima. It grew out of a joint bottling plant set up in 1967 by nine local makers. A joint factory was finished in 1975, which the company counts as its start, and it became a joint-stock company in 2012.",
+  "All its sweet potatoes come from contract farmers in Kanoya, grown on the well-drained shirasu plateau. Distilling is packed into the harvest season from late summer to early winter, and the brewers stay at the distillery overnight. Yoshiyuki Omure has been toji since 1999, with Naoki Maeda named as his successor."
+ ],
+ "sources": [
+  "https://www.taikai.or.jp/shuzou/",
+  "https://www.taikai.or.jp/en/shuzou/",
+  "https://www.taikai.or.jp/shuzou/kodawari/",
+  "https://www.taikai.or.jp/en/shuzou/commitment/",
+  "https://www.taikai.or.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

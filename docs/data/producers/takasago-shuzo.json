@@ -1,16 +1,29 @@
 {
  "key": "takasago-shuzo",
  "name": "Takasago Shuzo",
- "native": null,
- "location": "Hokkaido",
+ "native": "髙砂酒造",
+ "location": "Asahikawa, Hokkaido",
  "region": "Hokkaido",
  "country": "Japan",
- "founded": null,
+ "founded": 1899,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://takasagoshuzo.com/",
+ "brands": [
+  "Kokushimuso",
+  "国士無双",
+  "Asahi Kamui",
+  "Taisetsu"
+ ],
+ "about": [
+  "Takasago Shuzo is a sake brewery in Asahikawa, Hokkaido. Koibuyama Shuzoten began in 1899 as the fourth brewery in the city, merged with Ishizaki Shuzo in 1965 and took the name Takasago Shuzo. Its dry sake Kokushimuso, first made in 1975, is the best known, and its name honours a general praised as without equal under heaven.",
+  "The brewery uses Asahikawa groundwater and more than 80 percent Hokkaido rice. Since 1997 it has stored tanks of sake under snow at Biei, where they sit at about minus 2 degrees C."
+ ],
+ "sources": [
+  "https://takasagoshuzo.com/about/",
+  "https://takasagoshuzo.com/history/",
+  "https://takasagoshuzo.com/sakebrewing/",
+  "https://takasagoshuzo.com/brand/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

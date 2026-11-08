@@ -6,11 +6,11 @@
  "producer": {
   "key": "shirataki-shuzo",
   "name": "Shirataki Shuzo",
-  "native": null,
-  "location": "Niigata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "白瀧酒造",
+  "location": "Yuzawa, Niigata, Japan",
+  "founded": 1855,
+  "about": "Shirataki Shuzo is a sake brewery in Yuzawa, in the heavy snow country of Niigata. Brewing began there in 1855 under Minatoya Tosuke, serving travellers and merchants on the old road between Echigo and Edo. The company was incorporated in 1951 and is led by Shintaro Takahashi.",
+  "url": "https://www.jozen.co.jp/"
  },
  "abv": 8,
  "styles": [],

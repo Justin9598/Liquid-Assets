@@ -6,11 +6,11 @@
  "producer": {
   "key": "wakanoi-shuzo",
   "name": "Wakanoi Shuzo",
-  "native": null,
+  "native": "若乃井酒造",
   "location": "Iitoyo, Yamagata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "founded": 1890,
+  "about": "Wakanoi Shuzo is a sake brewery in Iitoyo, in the Okitama district of Yamagata. It was founded in 1890. The brewery tells of a well dug downstream of the Noga River near the Wakamiya Hachimangu shrine that struck spring water good for brewing, and the company and brand names come from that water.",
+  "url": "https://www.wakanoi.jp/"
  },
  "abv": null,
  "styles": [

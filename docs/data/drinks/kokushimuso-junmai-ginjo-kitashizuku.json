@@ -6,11 +6,11 @@
  "producer": {
   "key": "takasago-shuzo",
   "name": "Takasago Shuzo",
-  "native": null,
-  "location": "Hokkaido, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "髙砂酒造",
+  "location": "Asahikawa, Hokkaido, Japan",
+  "founded": 1899,
+  "about": "Takasago Shuzo is a sake brewery in Asahikawa, Hokkaido. Koibuyama Shuzoten began in 1899 as the fourth brewery in the city, merged with Ishizaki Shuzo in 1965 and took the name Takasago Shuzo. Its dry sake Kokushimuso, first made in 1975, is the best known, and its name honours a general praised as without equal under heaven.",
+  "url": "https://takasagoshuzo.com/"
  },
  "abv": 15.5,
  "styles": [],

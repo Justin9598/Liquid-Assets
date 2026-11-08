@@ -1,16 +1,27 @@
 {
  "key": "takazawa-shuzojo",
  "name": "Takazawa Shuzojo",
- "native": null,
- "location": "Toyama",
+ "native": "髙澤酒造場",
+ "location": "Himi, Toyama",
  "region": "Toyama",
  "country": "Japan",
- "founded": null,
+ "founded": 1872,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://ariiso-akebono.jp/",
+ "brands": [
+  "Ariiso Akebono",
+  "有磯曙",
+  "Hatsuarashi"
+ ],
+ "about": [
+  "Takazawa Shuzojo is a sake brewery in Himi, on the Toyama coast. The first Takazawa Riemon came to Himi at the end of the Edo period and began brewing around 1872. The name Ariiso Akebono pictures daybreak over the Ariso Sea.",
+  "Brewers open the brewery doors at dawn and expose the steamed rice to the sea wind off Toyama Bay to cool it. Every sake is pressed in a traditional tank press, which the brewery says avoids stressing the mash. The rice includes Gohyakumangoku, Oyamanishiki, Yamadanishiki and Tomi no Kaori."
+ ],
+ "sources": [
+  "https://ariiso-akebono.jp/outline/",
+  "https://ariiso-akebono.jp/english/",
+  "https://ariiso-akebono.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

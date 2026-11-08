@@ -6,10 +6,10 @@
  "producer": {
   "key": "takagi-shuzo",
   "name": "Takagi Shuzo",
-  "native": null,
-  "location": "Yamagata, Japan",
-  "founded": null,
-  "about": null,
+  "native": "高木酒造",
+  "location": "Murayama, Yamagata, Japan",
+  "founded": 1615,
+  "about": "Takagi Shuzo is a sake brewery in Tominami, Murayama, in Yamagata. The Yamagata brewers' association gives its founding as 1615 and describes more than 400 years of brewing. The current head, Tatsugoro Takagi, is the 15th generation.",
   "url": null
  },
  "abv": 15,

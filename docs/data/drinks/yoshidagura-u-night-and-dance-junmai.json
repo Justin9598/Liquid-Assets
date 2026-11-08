@@ -6,11 +6,11 @@
  "producer": {
   "key": "yoshida-sake-brewery",
   "name": "Yoshida Sake Brewery",
-  "native": null,
-  "location": "Ishikawa, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "吉田酒造店",
+  "location": "Hakusan, Ishikawa, Japan",
+  "founded": 1870,
+  "about": "Yoshida Shuzoten is a sake brewery in Hakusan, Ishikawa, founded in 1870 and incorporated in 1954. It sells sake as Tedorigawa and, in a second line, as Yoshidagura. The brewery sits on the Tedori River alluvial fan below Mt. Haku, in a village once known for sake making.",
+  "url": "https://tedorigawa.com/"
  },
  "abv": 9,
  "styles": [],

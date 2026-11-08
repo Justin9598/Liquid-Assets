@@ -6,11 +6,11 @@
  "producer": {
   "key": "shintani-shuzo",
   "name": "Shintani Shuzo",
-  "native": null,
-  "location": "Yamaguchi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "新谷酒造",
+  "location": "Tokuji, Yamaguchi, Japan",
+  "founded": 1927,
+  "about": "Shintani Shuzo makes sake in Tokuji, a town of about 6,000 people in Yamaguchi, and sells it as Wakamusume. Shintani Kumakichi founded it in 1927, after working in a local brewery and then buying one that had stopped brewing. The town once had five or more breweries, and this is the last one.",
+  "url": "https://wakamusume.com/"
  },
  "abv": 14,
  "styles": [

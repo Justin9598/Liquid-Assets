@@ -1,16 +1,29 @@
 {
  "key": "tomikawa-shuzoten",
  "name": "Tomikawa Shuzoten",
- "native": null,
- "location": "Tochigi",
+ "native": "富川酒造店",
+ "location": "Yaita, Tochigi",
  "region": "Tochigi",
  "country": "Japan",
- "founded": null,
+ "founded": 1913,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "http://www.kubun.jp/",
+ "brands": [
+  "Chuai",
+  "忠愛",
+  "Fumigawa",
+  "富美川"
+ ],
+ "about": [
+  "Tomikawa Shuzoten is a small sake brewery in Otsuki, Yaita, in Tochigi. It brews Chuai and Fumigawa. Two listings date it to 1913, though the brewery's own site gives no year.",
+  "The brewery says local sake is part of regional food culture and aims to keep traditional brewing alive. Junmai sake is made in small batches, and November to February is the busiest brewing season. A direct sales shop on the grounds opened in 1998, and an annual brewery festival ran until 2017."
+ ],
+ "sources": [
+  "http://www.kubun.jp/",
+  "http://www.kubun.jp/concept.html",
+  "https://en.sake-times.com/breweries/tomikawa-shuzoten",
+  "https://boundbywine.com/blogs/vineyard-spotlight/tomikawa"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

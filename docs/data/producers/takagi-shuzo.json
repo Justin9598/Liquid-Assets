@@ -1,16 +1,27 @@
 {
  "key": "takagi-shuzo",
  "name": "Takagi Shuzo",
- "native": null,
- "location": "Yamagata",
+ "native": "高木酒造",
+ "location": "Murayama, Yamagata",
  "region": "Yamagata",
  "country": "Japan",
- "founded": null,
+ "founded": 1615,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Juyondai",
+  "十四代",
+  "Asahitaka",
+  "朝日鷹"
+ ],
+ "about": [
+  "Takagi Shuzo is a sake brewery in Tominami, Murayama, in Yamagata. The Yamagata brewers' association gives its founding as 1615 and describes more than 400 years of brewing. The current head, Tatsugoro Takagi, is the 15th generation.",
+  "The family's long-standing brand is Asahitaka. In 1994 the 15th head, then named Akitsuna, released Juyondai. He had come home from Tokyo the year before, when the toji retired, and brewed the first batch himself at age 25."
+ ],
+ "sources": [
+  "https://yamagata-sake.or.jp/pages/55/",
+  "https://president.jp/articles/-/119293"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

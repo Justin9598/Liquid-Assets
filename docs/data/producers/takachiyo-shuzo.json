@@ -1,16 +1,28 @@
 {
  "key": "takachiyo-shuzo",
  "name": "Takachiyo Shuzo",
- "native": null,
- "location": "Niigata",
+ "native": "髙千代酒造",
+ "location": "Minamiuonuma, Niigata",
  "region": "Niigata",
  "country": "Japan",
- "founded": null,
+ "founded": 1868,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "http://www.takachiyo.co.jp/",
+ "brands": [
+  "Takachiyo",
+  "髙千代",
+  "Makihata",
+  "巻機"
+ ],
+ "about": [
+  "Takachiyo Shuzo is a sake brewery in Nagasaki, Minamiuonuma, at the foot of Mt. Makihata in Niigata. The prefectural guide dates it to the early Meiji period, and a brewery listing gives 1868. The first head named the sake Takachiyo, hoping many people would prosper for generations.",
+  "A well on the grounds draws groundwater from Mt. Makihata, described as among the softest in Niigata. The brewery keeps using Ipponjime, a rare sake rice that is hard to mill and to make koji from. It received original seed stock from the prefecture in 2005 and handles the rice from seed to milling."
+ ],
+ "sources": [
+  "http://www.takachiyo.co.jp/",
+  "https://www.pref.niigata.lg.jp/site/minamiuonuma-miryoku/1290376859118.html",
+  "https://en.sake-times.com/breweries/takachiyo-shuzo"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

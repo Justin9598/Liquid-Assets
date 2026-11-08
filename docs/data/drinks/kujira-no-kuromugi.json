@@ -6,11 +6,11 @@
  "producer": {
   "key": "taikai-shuzo",
   "name": "Taikai Shuzo",
-  "native": null,
-  "location": "Kagoshima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "大海酒造",
+  "location": "Kanoya, Kagoshima, Japan",
+  "founded": 1975,
+  "about": "Taikai Shuzo is a shochu distillery in Kanoya, on the Osumi Peninsula of Kagoshima. It grew out of a joint bottling plant set up in 1967 by nine local makers. A joint factory was finished in 1975, which the company counts as its start, and it became a joint-stock company in 2012.",
+  "url": "https://www.taikai.or.jp/"
  },
  "abv": 25,
  "styles": [],
