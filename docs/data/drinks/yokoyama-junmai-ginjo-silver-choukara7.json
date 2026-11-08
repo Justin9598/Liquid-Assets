@@ -5,12 +5,12 @@
  "sub": "junmai-ginjo",
  "producer": {
   "key": "omoyashuzo",
-  "name": "Omoyashuzo",
-  "native": null,
+  "name": "Omoya Shuzo",
+  "native": "重家酒造",
   "location": "Iki, Nagasaki, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "founded": 1924,
+  "about": "Omoya Shuzo is a sake and shochu brewery on Iki Island, Nagasaki, founded in 1924 by Yokoyama Kakuzo. Its first sake was Kin Sekai and its first shochu was Kiku Shirayuki, and in 1965 the barley shochu became Sesshu. The brewery calls Iki the birthplace of barley shochu, and the island has more than 150 shrines.",
+  "url": "https://www.omoyashuzo.com/"
  },
  "abv": 16,
  "styles": [],

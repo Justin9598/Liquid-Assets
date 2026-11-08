@@ -1,16 +1,28 @@
 {
  "key": "rikyugura",
  "name": "Rikyugura",
- "native": null,
- "location": "Osaka",
+ "native": "利休蔵",
+ "location": "Sakai, Osaka",
  "region": "Osaka",
  "country": "Japan",
- "founded": null,
+ "founded": 1899,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://rikyugura.jp/",
+ "brands": [
+  "Sen no Rikyu",
+  "Mozu",
+  "Rikyu Gura"
+ ],
+ "about": [
+  "Rikyugura is a sake brewery in Sakai, Osaka. It began in 1899 and brewed for 114 years in Higashinada, Kobe, before it started brewing in Sakai in December 2014, when the last Sakai brewery had been closed since 1971. Its first sake, Sen no Rikyu, was completed in February 2015 and is named for the tea master born in Sakai.",
+  "It brews small batches by hand with spring water from the Kongo mountains and mostly Yamadanishiki from Hyogo. The brewery says Sakai sake has long been sweet, and it uses an eight step addition for the mash, where three steps is usual. It also makes Mozu, named for a bird and a district of Sakai, and matcha liqueurs."
+ ],
+ "sources": [
+  "https://rikyugura.jp/pages/history",
+  "https://rikyugura.jp/pages/about",
+  "https://rikyugura.jp/pages/brewing",
+  "https://rikyugura.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

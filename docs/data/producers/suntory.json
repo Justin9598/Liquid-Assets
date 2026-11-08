@@ -1,16 +1,29 @@
 {
  "key": "suntory",
  "name": "Suntory",
- "native": null,
+ "native": "サントリー",
  "location": "Osaka",
  "region": "Osaka",
  "country": "Japan",
- "founded": null,
+ "founded": 1899,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.suntory.com/",
+ "brands": [
+  "Suntory",
+  "Kakubin",
+  "Yamazaki",
+  "Suntory World Whisky Ao"
+ ],
+ "about": [
+  "Suntory began in 1899, when Shinjiro Torii opened Torii Shoten in Osaka and started making and selling wine. In 1907 the shop launched Akadama Port Wine, a sweet wine whose profits later paid for whisky. Work on the Yamazaki Distillery, which the company calls Japan's first malt whisky distillery, began in 1923, and its first whisky, Shirofuda, was launched in 1929.",
+  "Suntory Whisky Kakubin, the square bottle, went on sale in 1937 and, by the company's own account, still leads Japanese whisky sales by value. The back label of Suntory World Whisky Ao says it blends malt and grain whiskies from distilleries in Ireland, Scotland, the United States, Canada and Japan, and that the blend is made in Japan."
+ ],
+ "sources": [
+  "https://www.suntory.co.jp/company/history/",
+  "https://www.suntory.co.jp/company/overview/",
+  "https://www.suntory.co.jp/company/history/timeline/index.html",
+  "https://house.suntory.com/heritage"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

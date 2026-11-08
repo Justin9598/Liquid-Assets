@@ -1,16 +1,27 @@
 {
  "key": "oya-takashi-shuzo",
  "name": "Oya Takashi Shuzo",
- "native": null,
- "location": "Kanagawa",
+ "native": "大矢孝酒造",
+ "location": "Aikawa, Kanagawa",
  "region": "Kanagawa",
  "country": "Japan",
- "founded": null,
+ "founded": 1830,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://oyatakashi-shuzo.com/",
+ "brands": [
+  "Zaruso Hourai",
+  "Shoryu Hourai",
+  "Oyatakashi Syuzo"
+ ],
+ "about": [
+  "Oya Takashi Shuzo is a sake brewery in Aikawa, in northwest Kanagawa, founded in 1830. Its origin goes back to the first Oya, a cavalry captain on the Hojo side at the 1569 Battle of Mimasetoge, who left the warrior's life after the battle and served as village head. Later the family took over a sake brewing licence from a brewer in Oiso and began making sake.",
+  "Since 2008 every sake has been junmai, with no added alcohol. The brewery makes two lines: Zaruso Hourai, started by the quick method, and Shoryu Hourai, started by kimoto. It draws underground water from the Tanzawa mountains from a well inside the building."
+ ],
+ "sources": [
+  "https://oyatakashi-shuzo.com/about/",
+  "https://oyatakashi-shuzo.com/pride/",
+  "https://oyatakashi-shuzo.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

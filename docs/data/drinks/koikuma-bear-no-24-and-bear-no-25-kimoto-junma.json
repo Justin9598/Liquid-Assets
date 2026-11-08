@@ -6,11 +6,11 @@
  "producer": {
   "key": "nyu-shuzo",
   "name": "Nyu Shuzo",
-  "native": null,
-  "location": "Fukui, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "丹生酒造",
+  "location": "Echizen, Fukui, Japan",
+  "founded": 1716,
+  "about": "Nyu Shuzo is a sake brewery in Echizen, in the Nyu district of Fukui. It was founded in 1716 and sells its sake as Asukai. The company is led by president Yuko Takahashi, and the brewery presents itself as having a woman at its head.",
+  "url": "https://www.asukai1716.com/"
  },
  "abv": 17,
  "styles": [

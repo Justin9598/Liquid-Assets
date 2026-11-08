@@ -1,16 +1,27 @@
 {
  "key": "nihonsakari",
  "name": "Nihonsakari",
- "native": null,
- "location": "Hyogo",
+ "native": "日本盛",
+ "location": "Nishinomiya, Hyogo",
  "region": "Hyogo",
  "country": "Japan",
- "founded": null,
+ "founded": 1889,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.nihonsakari.co.jp/",
+ "brands": [
+  "Nihonsakari",
+  "惣花"
+ ],
+ "about": [
+  "Nihonsakari is a sake maker in Nishinomiya, Hyogo. It began in 1889 as Nishinomiya Kigyo, became Nishinomiya Shuzo in 1896 and took its present name in 2000. It acquired the Nihonsakari trademark in 1897, the year it first shipped Nihonsakari and 惣花.",
+  "It supplied 惣花 as sake for the enthronement ceremonies of the Taisho Emperor in 1915 and the Showa Emperor in 1928, and it says it keeps the methods taught by Tamba toji. In 1980 it launched sake in a PET container, which it calls an industry first. It also sells cosmetics and health foods developed from what it learned in brewing."
+ ],
+ "sources": [
+  "https://www.nihonsakari.co.jp/company/outline.html",
+  "https://www.nihonsakari.co.jp/company/history.html",
+  "https://www.nihonsakari.co.jp/motto_oishiku_utsukushiku/shuzou.html",
+  "https://www.nihonsakari.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

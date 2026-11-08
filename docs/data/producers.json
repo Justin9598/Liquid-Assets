@@ -162,14 +162,16 @@
  {
   "key": "azumatsuru-shuzo",
   "name": "Azumatsuru Shuzo",
-  "native": null,
+  "native": "東鶴酒造",
   "region": "Saga",
   "country": "Japan",
   "location": "Taku, Saga",
-  "brands": [],
+  "brands": [
+   "Azumatsuru"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "bruichladdich",
@@ -308,14 +310,16 @@
  {
   "key": "eikun-shuzo",
   "name": "Eikun Shuzo",
-  "native": null,
+  "native": "英君酒造",
   "region": "Shizuoka",
   "country": "Japan",
   "location": "Shimizu, Shizuoka",
-  "brands": [],
+  "brands": [
+   "Eikun"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "endo-shuzojo",
@@ -634,14 +638,18 @@
  {
   "key": "heiwa-shuzo",
   "name": "Heiwa Shuzo",
-  "native": null,
+  "native": "平和酒造",
   "region": "Wakayama",
   "country": "Japan",
   "location": "Kainan, Wakayama",
-  "brands": [],
+  "brands": [
+   "Kid",
+   "Tsurumume",
+   "Heiwa Craft"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "hijiri-shuzo",
@@ -1182,14 +1190,18 @@
  {
   "key": "koshi-meijo",
   "name": "Koshi Meijo",
-  "native": null,
+  "native": "越銘醸",
   "region": "Niigata",
   "country": "Japan",
-  "location": "Niigata",
-  "brands": [],
+  "location": "Nagaoka, Niigata",
+  "brands": [
+   "Yamashiroya",
+   "Koshi no Tsuru",
+   "壱醸"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "koueigiku-shuzo",
@@ -1523,14 +1535,17 @@
  {
   "key": "nihonsakari",
   "name": "Nihonsakari",
-  "native": null,
+  "native": "日本盛",
   "region": "Hyogo",
   "country": "Japan",
-  "location": "Hyogo",
-  "brands": [],
+  "location": "Nishinomiya, Hyogo",
+  "brands": [
+   "Nihonsakari",
+   "惣花"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "niida-honke",
@@ -1550,26 +1565,34 @@
  {
   "key": "niizawa-brewery",
   "name": "Niizawa Brewery",
-  "native": null,
+  "native": "新澤醸造店",
   "region": "Miyagi",
   "country": "Japan",
-  "location": "Miyagi",
-  "brands": [],
+  "location": "Osaki, Miyagi",
+  "brands": [
+   "Hakurakusei",
+   "Atago no Matsu",
+   "Zankyo",
+   "Niizawa"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "nishida-shuzoten",
   "name": "Nishida Shuzoten",
-  "native": null,
+  "native": "西田酒造店",
   "region": "Aomori",
   "country": "Japan",
-  "location": "Aomori",
-  "brands": [],
+  "location": "Aomori, Aomori",
+  "brands": [
+   "Denshu",
+   "Kikuizumi"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "noguchi-naohiko-sake-institute",
@@ -1588,14 +1611,18 @@
  {
   "key": "nyu-shuzo",
   "name": "Nyu Shuzo",
-  "native": null,
+  "native": "丹生酒造",
   "region": "Fukui",
   "country": "Japan",
-  "location": "Fukui",
-  "brands": [],
+  "location": "Echizen, Fukui",
+  "brands": [
+   "Asukai",
+   "Sakura Mariko",
+   "Nyusyuzo"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "obuse-winery",
@@ -1616,14 +1643,18 @@
  {
   "key": "ohki-daikichi-honten",
   "name": "Ohki Daikichi Honten",
-  "native": null,
+  "native": "大木代吉本店",
   "region": "Fukushima",
   "country": "Japan",
-  "location": "Fukushima",
-  "brands": [],
+  "location": "Yabuki, Fukushima",
+  "brands": [
+   "Shizenango",
+   "Shizengo",
+   "Gakki Masamune"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "okura-honke",
@@ -1643,27 +1674,34 @@
  },
  {
   "key": "omoyashuzo",
-  "name": "Omoyashuzo",
-  "native": null,
+  "name": "Omoya Shuzo",
+  "native": "重家酒造",
   "region": "Nagasaki",
   "country": "Japan",
   "location": "Iki, Nagasaki",
-  "brands": [],
+  "brands": [
+   "Yokoyama",
+   "Chingu",
+   "Sesshu",
+   "Omoya Gin"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "onuma-shuzoten",
   "name": "Onuma Shuzoten",
-  "native": null,
+  "native": "大沼酒造店",
   "region": "Miyagi",
   "country": "Japan",
-  "location": "Miyagi",
-  "brands": [],
+  "location": "Murata, Miyagi",
+  "brands": [
+   "Kenkonichi"
+  ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "orchid-sake-brewery",
@@ -1680,14 +1718,18 @@
  {
   "key": "oya-takashi-shuzo",
   "name": "Oya Takashi Shuzo",
-  "native": null,
+  "native": "大矢孝酒造",
   "region": "Kanagawa",
   "country": "Japan",
-  "location": "Kanagawa",
-  "brands": [],
+  "location": "Aikawa, Kanagawa",
+  "brands": [
+   "Zaruso Hourai",
+   "Shoryu Hourai",
+   "Oyatakashi Syuzo"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "ozawa-shuzojo",
@@ -1735,26 +1777,34 @@
  {
   "key": "rikyugura",
   "name": "Rikyugura",
-  "native": null,
+  "native": "利休蔵",
   "region": "Osaka",
   "country": "Japan",
-  "location": "Osaka",
-  "brands": [],
+  "location": "Sakai, Osaka",
+  "brands": [
+   "Sen no Rikyu",
+   "Mozu",
+   "Rikyu Gura"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "ryozeki-shuzo",
   "name": "Ryozeki Shuzo",
-  "native": null,
+  "native": "両関酒造",
   "region": "Akita",
   "country": "Japan",
-  "location": "Akita",
-  "brands": [],
+  "location": "Yuzawa, Akita",
+  "brands": [
+   "Ryozeki",
+   "Hanamura",
+   "Suigyoku"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "ryujin-shuzo",
@@ -1812,14 +1862,19 @@
  {
   "key": "seto-shuzoten",
   "name": "Seto Shuzoten",
-  "native": null,
+  "native": "瀬戸酒造店",
   "region": "Kanagawa",
   "country": "Japan",
-  "location": "Kanagawa",
-  "brands": [],
+  "location": "Kaisei, Kanagawa",
+  "brands": [
+   "Setoichi",
+   "Sakata Nishiki",
+   "Ashigarigo",
+   "Seto Shuzo-Ten"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "shimizu-seizaburo-shoten",
@@ -1839,50 +1894,72 @@
  {
   "key": "shimomura-shuzoten",
   "name": "Shimomura Shuzoten",
-  "native": null,
+  "native": "下村酒造店",
   "region": "Hyogo",
   "country": "Japan",
-  "location": "Hyogo",
-  "brands": [],
+  "location": "Himeji, Hyogo",
+  "brands": [
+   "Okuharima",
+   "Shimomura Sake Brewing"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "shindo-shuzoten",
   "name": "Shindo Shuzoten",
-  "native": null,
+  "native": "新藤酒造店",
   "region": "Yamagata",
   "country": "Japan",
   "location": "Yonezawa, Yamagata",
-  "brands": [],
+  "brands": [
+   "Gasanryu",
+   "雅山流",
+   "Kurozaemon",
+   "九郎左衛門",
+   "泉氷鑑",
+   "雪国慕情",
+   "羽陽富久鶴",
+   "Shindo Sake Brewery"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "shinkame-shuzo",
   "name": "Shinkame Shuzo",
-  "native": null,
+  "native": "神亀酒造",
   "region": "Saitama",
   "country": "Japan",
-  "location": "Saitama",
-  "brands": [],
+  "location": "Hasuda, Saitama",
+  "brands": [
+   "Shinkame",
+   "Hikomago"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "shinshu-meijo",
   "name": "Shinshu Meijo",
-  "native": null,
+  "native": "信州銘醸",
   "region": "Nagano",
   "country": "Japan",
-  "location": "Nagano",
-  "brands": [],
+  "location": "Ueda, Nagano",
+  "brands": [
+   "Takizawa",
+   "瀧澤",
+   "Kikuzakari",
+   "Ryozanpaku",
+   "Kokuyo",
+   "ShinsyuMeijyou"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "shintani-shuzo",
@@ -1935,14 +2012,19 @@
  {
   "key": "suntory",
   "name": "Suntory",
-  "native": null,
+  "native": "サントリー",
   "region": "Osaka",
   "country": "Japan",
   "location": "Osaka",
-  "brands": [],
+  "brands": [
+   "Suntory",
+   "Kakubin",
+   "Yamazaki",
+   "Suntory World Whisky Ao"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "suwa-mikotsuru-shuzojo",

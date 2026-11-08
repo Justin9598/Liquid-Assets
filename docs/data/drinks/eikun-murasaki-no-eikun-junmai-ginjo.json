@@ -6,11 +6,11 @@
  "producer": {
   "key": "eikun-shuzo",
   "name": "Eikun Shuzo",
-  "native": null,
+  "native": "英君酒造",
   "location": "Shimizu, Shizuoka, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "founded": 1881,
+  "about": "Eikun Shuzo is a sake brewery in Yui, in the Shimizu ward of Shizuoka City. It opened in 1881 as Mochizuki Shuzoten, and its first head, Mochizuki Shosaku, named the sake Eikun after an outstanding Tokugawa ruler. He sought out good sake rice from around the country from the start.",
+  "url": "https://eikun.co.jp/"
  },
  "abv": 15,
  "styles": [],

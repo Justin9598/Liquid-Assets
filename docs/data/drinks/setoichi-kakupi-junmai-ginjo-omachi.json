@@ -6,11 +6,11 @@
  "producer": {
   "key": "seto-shuzoten",
   "name": "Seto Shuzoten",
-  "native": null,
-  "location": "Kanagawa, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "瀬戸酒造店",
+  "location": "Kaisei, Kanagawa, Japan",
+  "founded": 1865,
+  "about": "Seto Shuzoten is a sake brewery in Kaisei, on the Ashigara plain in Kanagawa, founded in 1865. The area around it was known as Sakata, meaning sake field, for its sake rice, and its main brand Sakata Nishiki once reached 600 koku a year. Brewing stopped in 1980 because it was hard to find a toji and brewers.",
+  "url": "https://setosyuzo.ashigarigo.com/"
  },
  "abv": null,
  "styles": [],

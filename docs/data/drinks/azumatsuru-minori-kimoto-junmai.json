@@ -6,11 +6,11 @@
  "producer": {
   "key": "azumatsuru-shuzo",
   "name": "Azumatsuru Shuzo",
-  "native": null,
+  "native": "東鶴酒造",
   "location": "Taku, Saga, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "founded": 1830,
+  "about": "Azumatsuru Shuzo is a sake brewery in Taku, a town ringed by mountains in the middle of Saga. Its labels read since 1830, and its own site says only that it began in the late Edo period. Brewing stopped around 1989, and the family head restarted it as his own toji about twenty years later.",
+  "url": "http://azumatsuru.com/"
  },
  "abv": 15,
  "styles": [

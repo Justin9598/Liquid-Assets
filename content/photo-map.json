@@ -2,22 +2,26 @@
  "against-the-grain-normat-tokubetsu-junma": {
   "front": "Against The Grain.jpg",
   "labelCrop": [
-   0.31,
-   0.5,
-   0.42,
-   0.16
+   0.3,
+   0.45,
+   0.45,
+   0.29
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "ariiso-akebono-flat": {
   "front": "Akebono Flat.jpg",
   "labelCrop": [
-   0.22,
-   0.5,
-   0.46,
-   0.4
+   0.15,
+   0.27,
+   0.6,
+   0.55
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "hamada-ume-liqueur-gold-leaf": {
   "front": "Ume Liquer with Gold Leaf.jpg",
@@ -27,7 +31,9 @@
    0.46,
    0.46
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kenkonichi-junmai-ginjo-tejikuri": {
   "front": "Kenkonichi Junmai Ginjo.jpg",
@@ -37,17 +43,21 @@
    0.42,
    0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kokushimuso-junmai-ginjo-kitashizuku": {
   "front": "Kokushimuso Junmai Daiginjo Kitashizuku.jpg",
   "labelCrop": [
+   0.34,
    0.25,
-   0.33,
-   0.55,
-   0.34
+   0.58,
+   0.48
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "komesou-brocken-splash-junmai-muroka-genshu": {
   "front": "Aoki Kometo Junmai Natsusake Brocken Splash.jpg",
@@ -57,27 +67,33 @@
    0.48,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kujira-junmai-yamadanishiki-kimoto-nama-genshu-80": {
   "front": "Kujira Jummai Yamadanishiki Kimoto nama Genshu 80.jpg",
   "labelCrop": [
-   0.34,
-   0.62,
-   0.3,
-   0.24
+   0.28,
+   0.52,
+   0.44,
+   0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "raikyo-phoenix-dancong-oolong-craft-sake": {
   "front": "Raikyo Phoenix Dacong Oolong Craft Sake.jpg",
   "labelCrop": [
-   0.3,
-   0.74,
-   0.3,
-   0.14
+   0.22,
+   0.7,
+   0.44,
+   0.22
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sugata-junmai-daiginjo-yamadanishiki-40": {
   "front": "Sugata MNG JDG Yamadanishiki.jpg",
@@ -92,17 +108,21 @@
    0.3,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "takezumi-bamboo-spring": {
   "front": "Takezumi Bamboo Spring.jpg",
   "labelCrop": [
    0.22,
-   0.62,
+   0.64,
    0.58,
-   0.26
+   0.21
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "unsure"
  },
  "tenmei-junmai-ginjo-hiire-black-label": {
   "front": "Tenmei Junmai Ginjo Hiire Black Label (back label).jpg",
@@ -112,12 +132,14 @@
  "tenranzan-natsu-junmai": {
   "front": "photo_2_2026-08-01_10-34-59.jpg",
   "labelCrop": [
-   0.4,
-   0.62,
-   0.26,
-   0.28
+   0.3,
+   0.56,
+   0.42,
+   0.38
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "wufeng-ji-qing": {
   "front": "Wufeng Farmers Association Winery Ji Qing Sake.jpg",
@@ -127,7 +149,9 @@
    0.32,
    0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "yamamoto-midnight-blue-junmai-ginjo": {
   "front": "Yamamoto Midnight Blue Junmai Gingo.jpg",
@@ -137,12 +161,14 @@
  "yokoyama-junmai-ginjo-silver-choukara7": {
   "front": "Yokoyama Junmai Ginjo.jpg",
   "labelCrop": [
-   0.37,
-   0.62,
-   0.34,
-   0.28
+   0.24,
+   0.55,
+   0.54,
+   0.38
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "zaruso-hourai-junmai-ginjo-oringo-kudasai": {
   "front": "Zaruso Hourai Junmai Ginjo Origokudasai Funabajiazume Muroka Namagenshu.jpg",
@@ -152,7 +178,9 @@
    0.36,
    0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "93-hwanggeum-gotgan": {
   "labelCrop": [
@@ -161,43 +189,53 @@
    0.38,
    0.26
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "akishika-moto-plus-one-junmai-muroka-nam": {
   "labelCrop": [
-   0.34,
-   0.52,
-   0.34,
-   0.34
+   0.28,
+   0.38,
+   0.47,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "allwright-momo": {
   "labelCrop": [
-   0.36,
-   0.74,
-   0.28,
-   0.2
+   0.33,
+   0.64,
+   0.39,
+   0.33
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "aramasa-colors-cosmos": {
   "labelCrop": [
-   0.38,
-   0.8,
-   0.34,
-   0.11
+   0.28,
+   0.63,
+   0.48,
+   0.31
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "ardbeg-smoketrails-cote-rotie-edition": {
   "labelCrop": [
-   0.36,
-   0.55,
-   0.28,
-   0.3
+   0.31,
+   0.5,
+   0.38,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "asahitaka-tokusen-honjozo-namazake": {
   "labelStatus": "skip",
@@ -205,12 +243,14 @@
  },
  "casa-silva-merlot-2025": {
   "labelCrop": [
-   0.26,
-   0.42,
-   0.42,
-   0.28
+   0.25,
+   0.3,
+   0.45,
+   0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "chuai-junmai-ginjo": {
   "labelCrop": [
@@ -219,16 +259,20 @@
    0.34,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "chusa-40": {
   "labelCrop": [
-   0.3,
-   0.42,
-   0.4,
-   0.3
+   0.15,
+   0.31,
+   0.66,
+   0.48
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "citrene": {
   "labelStatus": "skip",
@@ -241,25 +285,31 @@
    0.34,
    0.31
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "dassai-39-junmai-daiginjo-enshin-bunri": {
   "labelCrop": [
-   0.34,
-   0.76,
-   0.36,
-   0.18
+   0.28,
+   0.64,
+   0.55,
+   0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "dassai-45-junmai-daiginjo": {
   "labelCrop": [
-   0.33,
-   0.76,
-   0.3,
-   0.2
+   0.28,
+   0.64,
+   0.52,
+   0.33
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "date-seven-season-2-episode-2": {
   "labelStatus": "skip",
@@ -272,7 +322,9 @@
    0.32,
    0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "date-seven-season-2-episode-5-yamawa": {
   "labelCrop": [
@@ -281,34 +333,42 @@
    0.32,
    0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "endo-daiginjo": {
   "labelCrop": [
-   0.34,
-   0.6,
    0.3,
-   0.26
+   0.62,
+   0.4,
+   0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "fermenteria-sparkling": {
   "labelCrop": [
-   0.3,
-   0.74,
-   0.46,
-   0.17
+   0.17,
+   0.36,
+   0.65,
+   0.5
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "fermenteria-yeastology-philly-sour": {
   "labelCrop": [
-   0.3,
-   0.72,
-   0.42,
-   0.2
+   0.1,
+   0.4,
+   0.68,
+   0.5
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "umifudo-sea-food": {
   "labelStatus": "skip",
@@ -316,12 +376,14 @@
  },
  "gekkeikan-argo": {
   "labelCrop": [
-   0.34,
-   0.64,
    0.3,
-   0.22
+   0.54,
+   0.4,
+   0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "gekkeikan-daiginjo": {
   "labelCrop": [
@@ -330,16 +392,20 @@
    0.19,
    0.26
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "hakugakusen-mufu": {
   "labelCrop": [
-   0.36,
-   0.47,
-   0.34,
-   0.32
+   0.26,
+   0.28,
+   0.46,
+   0.52
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "haccoba-jam-2025by-no4": {
   "labelCrop": [
@@ -348,7 +414,9 @@
    0.38,
    0.24
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "haccoba-secret-spring": {
   "labelCrop": [
@@ -357,7 +425,9 @@
    0.32,
    0.2
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "jozen-hachimitsu": {
   "labelStatus": "skip",
@@ -365,12 +435,14 @@
  },
  "hagi-no-tsuru-betsu-shikomi": {
   "labelCrop": [
+   0.22,
    0.3,
-   0.4,
-   0.38,
-   0.4
+   0.62,
+   0.53
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "hakushika-namachozou": {
   "labelCrop": [
@@ -379,7 +451,9 @@
    0.4,
    0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "hanami-roman": {
   "labelCrop": [
@@ -388,7 +462,9 @@
    0.34,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "harada-junmai-daiginjo-muroka-nama-gensh": {
   "labelCrop": [
@@ -397,34 +473,42 @@
    0.34,
    0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "harada": {
   "labelCrop": [
-   0.35,
-   0.52,
-   0.32,
-   0.3
+   0.28,
+   0.42,
+   0.45,
+   0.48
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu": {
   "labelCrop": [
-   0.45,
-   0.65,
-   0.26,
-   0.24
+   0.3,
+   0.56,
+   0.42,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "koueigiku-hello-omachi-sumizake": {
   "labelCrop": [
-   0.26,
-   0.72,
-   0.42,
-   0.19
+   0.17,
+   0.4,
+   0.58,
+   0.46
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "hikomago-hikozon-junmai-ginjo-funakuchishu-nam": {
   "labelCrop": [
@@ -433,25 +517,31 @@
    0.38,
    0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "hirotogawa-tokubetsu-junmai": {
   "labelCrop": [
-   0.34,
-   0.55,
-   0.38,
-   0.32
+   0.25,
+   0.4,
+   0.5,
+   0.46
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "hitakami-chokarakuchi-junmai": {
   "labelCrop": [
-   0.32,
-   0.66,
-   0.32,
-   0.26
+   0.25,
+   0.55,
+   0.5,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "hitakami-aquarium-in-winter": {
   "labelStatus": "skip",
@@ -459,21 +549,25 @@
  },
  "hito-roman": {
   "labelCrop": [
-   0.36,
-   0.58,
-   0.28,
-   0.3
+   0.3,
+   0.5,
+   0.42,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "houou-biden-tsurugi-karakuchi-junmai": {
   "labelCrop": [
-   0.3,
-   0.54,
-   0.42,
-   0.34
+   0.22,
+   0.44,
+   0.58,
+   0.5
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "hououbiden-mikumari-junmai-daiginjo": {
   "labelStatus": "skip",
@@ -486,7 +580,9 @@
    0.46,
    0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "ine-to-agave-hanakaze": {
   "labelCrop": [
@@ -495,7 +591,9 @@
    0.28,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "ine-to-nihoncha": {
   "labelCrop": [
@@ -504,16 +602,20 @@
    0.3,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "isibo-wonju": {
   "labelCrop": [
-   0.3,
-   0.56,
-   0.4,
-   0.32
+   0.22,
+   0.38,
+   0.58,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "izumibashi-shiboritate": {
   "labelCrop": [
@@ -522,34 +624,42 @@
    0.34,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "izumibashi-aki-tombo-omachi-kimoto-junmai": {
   "labelCrop": [
-   0.3,
-   0.54,
-   0.38,
-   0.3
+   0.18,
+   0.52,
+   0.56,
+   0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "jinya-junmai-akiagari": {
   "labelCrop": [
-   0.3,
-   0.5,
-   0.38,
-   0.34
+   0.22,
+   0.36,
+   0.54,
+   0.52
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "jukyu-gattolibero-557-white-cat": {
   "labelCrop": [
-   0.32,
-   0.62,
-   0.36,
-   0.14
+   0.22,
+   0.5,
+   0.56,
+   0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "jukyu-hirvi-19": {
   "labelStatus": "skip",
@@ -557,12 +667,14 @@
  },
  "junsei-jd": {
   "labelCrop": [
-   0.38,
-   0.58,
    0.3,
-   0.26
+   0.5,
+   0.48,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kagatobi-junmai-daiginjo": {
   "labelCrop": [
@@ -571,16 +683,20 @@
    0.4,
    0.22
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kagatobi-junmai-daiginjo-gokujo-genshu": {
   "labelCrop": [
-   0.36,
-   0.56,
    0.28,
-   0.32
+   0.5,
+   0.46,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kagura-hae": {
   "labelStatus": "skip",
@@ -600,21 +716,25 @@
  },
  "kameizumi-junmai-ginjo-nama-genshu-cel-24": {
   "labelCrop": [
-   0.28,
-   0.77,
-   0.4,
-   0.18
+   0.22,
+   0.55,
+   0.55,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kankiku-seijitsu-special-yell-junmai-daiginjo": {
   "labelCrop": [
-   0.36,
-   0.66,
-   0.26,
-   0.22
+   0.29,
+   0.55,
+   0.38,
+   0.33
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kaoruyama": {
   "labelStatus": "skip",
@@ -626,21 +746,25 @@
  },
  "kavalan-dry-single-malt-highball": {
   "labelCrop": [
-   0.36,
-   0.28,
-   0.36,
-   0.36
+   0.34,
+   0.22,
+   0.4,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kavalan-highball-whisky-soda": {
   "labelCrop": [
-   0.3,
-   0.2,
-   0.42,
-   0.4
+   0.28,
+   0.17,
+   0.44,
+   0.46
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kikunotsukasa-winter": {
   "labelStatus": "skip",
@@ -653,16 +777,20 @@
    0.3,
    0.22
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kissui-hidariuma-junmai-kasseinigori-uma-uma": {
   "labelCrop": [
-   0.33,
-   0.6,
-   0.36,
-   0.32
+   0.26,
+   0.49,
+   0.5,
+   0.44
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "koganesawa-hitomebore-brut": {
   "labelCrop": [
@@ -671,7 +799,9 @@
    0.34,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "koikuma-bear-no-24-and-bear-no-25-kimoto-junma": {
   "labelCrop": [
@@ -680,16 +810,20 @@
    0.42,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "koshi-no-kanbai-junmai-ginjo-sai-mikino-": {
   "labelCrop": [
-   0.4,
-   0.6,
-   0.26,
-   0.24
+   0.36,
+   0.5,
+   0.34,
+   0.38
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kudoki-jozu-juicy-karakuchi-kai": {
   "labelCrop": [
@@ -698,70 +832,86 @@
    0.44,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kujira-no-kuromugi": {
   "labelCrop": [
-   0.28,
-   0.6,
-   0.38,
-   0.24
+   0.25,
+   0.54,
+   0.5,
+   0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kyo-no-haru-houryou-karakuchi-junmai": {
   "labelCrop": [
-   0.32,
-   0.62,
-   0.4,
-   0.3
+   0.3,
+   0.54,
+   0.5,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "machida-jungin-55-omachi": {
   "labelCrop": [
-   0.34,
-   0.6,
-   0.3,
-   0.26
+   0.28,
+   0.52,
+   0.42,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "machida-tokubetsu-junmai-55-gohyakumangoku": {
   "labelCrop": [
-   0.36,
-   0.66,
-   0.3,
-   0.26
+   0.28,
+   0.58,
+   0.44,
+   0.38
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "machida-55": {
   "labelCrop": [
-   0.37,
-   0.64,
-   0.28,
-   0.26
+   0.34,
+   0.62,
+   0.34,
+   0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "makihata-bambino": {
   "labelCrop": [
-   0.35,
-   0.6,
-   0.3,
-   0.24
+   0.27,
+   0.49,
+   0.45,
+   0.44
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "mangwoo-yakbang-memilbogam": {
   "labelCrop": [
-   0.3,
+   0.24,
+   0.42,
    0.52,
-   0.34,
-   0.26
+   0.38
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "mansakunohana-junmai-daiginjo-nama-genshu-kame": {
   "labelCrop": [
@@ -770,25 +920,31 @@
    0.4,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "meiho-akagi-junmai-ginjo-nama": {
   "labelCrop": [
-   0.18,
-   0.74,
-   0.26,
-   0.17
+   0.12,
+   0.66,
+   0.38,
+   0.27
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "michizakura-junmai-ginjo-suisei-55": {
   "labelCrop": [
+   0.34,
+   0.46,
    0.38,
-   0.58,
-   0.24,
-   0.3
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "mikotsuru-junmai-muroka-nama-genshu-origarami": {
   "labelCrop": [
@@ -797,7 +953,9 @@
    0.32,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "mimurosugi-dio-abita": {
   "labelCrop": [
@@ -806,16 +964,20 @@
    0.34,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "mimurosugi-roman-junmai-daiginjo-35": {
   "labelCrop": [
-   0.3,
-   0.62,
-   0.34,
-   0.28
+   0.25,
+   0.55,
+   0.5,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "miyoshino-jozo-hanatomoe-jundaidai-junmai-daig": {
   "labelCrop": [
@@ -824,43 +986,53 @@
    0.32,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "mizubasho-artist-series-floral-sparkling-2023": {
   "labelCrop": [
-   0.32,
-   0.62,
-   0.34,
-   0.26
+   0.22,
+   0.6,
+   0.52,
+   0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "mizubasho-junmai-daiginjo-premium": {
   "labelCrop": [
-   0.3,
-   0.55,
-   0.44,
-   0.28
+   0.22,
+   0.42,
+   0.6,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "mizubasho-junmai-ginjo-sparkling-dry": {
   "labelCrop": [
-   0.4,
-   0.56,
-   0.26,
-   0.3
+   0.33,
+   0.5,
+   0.3,
+   0.38
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "unsure"
  },
  "mizubasho-natsusake-junmai-ginjo-origarami-namachozo": {
   "labelCrop": [
-   0.18,
-   0.6,
-   0.46,
-   0.22
+   0.08,
+   0.5,
+   0.7,
+   0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "moonlight-yuja": {
   "labelCrop": [
@@ -869,7 +1041,9 @@
    0.34,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "morishima-hitachinishiki": {
   "labelCrop": [
@@ -878,7 +1052,9 @@
    0.32,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "mozu-junmai-ginjo": {
   "labelCrop": [
@@ -887,61 +1063,75 @@
    0.34,
    0.18
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "nabeshima-the-nabeshima-junmai-daiginjo": {
   "labelCrop": [
-   0.28,
-   0.45,
-   0.5,
-   0.34
+   0.2,
+   0.3,
+   0.6,
+   0.56
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "nabeshima-blossoms-moon": {
   "labelCrop": [
-   0.57,
-   0.6,
-   0.3,
-   0.22
+   0.53,
+   0.52,
+   0.37,
+   0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "nabeshima-harvest-moon-classic": {
   "labelCrop": [
-   0.3,
-   0.5,
-   0.36,
-   0.34
+   0.22,
+   0.42,
+   0.52,
+   0.44
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "nabeshima-junmai-daiginjo-aiyama": {
   "labelCrop": [
-   0.3,
-   0.58,
-   0.4,
-   0.34
+   0.2,
+   0.38,
+   0.56,
+   0.54
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "nabeshima-junmai-ginjo-akaiwa-omachi": {
   "labelCrop": [
-   0.36,
-   0.58,
-   0.36,
-   0.34
+   0.26,
+   0.48,
+   0.5,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "nabeshima-junmai-ginjo-gohyakumangoku": {
   "labelCrop": [
-   0.3,
-   0.56,
-   0.36,
-   0.32
+   0.28,
+   0.52,
+   0.42,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "nanbubijin-junmaiginjo-princess-michiko": {
   "labelCrop": [
@@ -950,7 +1140,9 @@
    0.42,
    0.26
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "natsu-odayaka": {
   "labelCrop": [
@@ -959,7 +1151,9 @@
    0.28,
    0.26
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "niida-shizenshu-melon-333": {
   "labelStatus": "skip",
@@ -980,7 +1174,9 @@
    0.3,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "obuse-numero-six": {
   "labelCrop": [
@@ -989,7 +1185,9 @@
    0.3,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "obuse-trois": {
   "labelCrop": [
@@ -998,7 +1196,9 @@
    0.34,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "odayaka-30th": {
   "labelStatus": "skip",
@@ -1011,7 +1211,9 @@
    0.28,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "odayaka-junmai-ginjo-usunigori-nama": {
   "labelCrop": [
@@ -1020,7 +1222,9 @@
    0.3,
    0.24
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "odayaka-kimoto-junmai-daiginjo": {
   "labelCrop": [
@@ -1029,7 +1233,9 @@
    0.3,
    0.26
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "odayaka-sparkling": {
   "labelCrop": [
@@ -1038,34 +1244,42 @@
    0.32,
    0.22
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "okuharima-harumachikogarete": {
   "labelCrop": [
-   0.28,
-   0.66,
-   0.4,
-   0.28
+   0.2,
+   0.46,
+   0.56,
+   0.46
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "okura-junmai-namazake": {
   "labelCrop": [
-   0.28,
-   0.52,
-   0.4,
-   0.34
+   0.2,
+   0.3,
+   0.58,
+   0.52
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "ookura-hinohikari-yamahai-junmai-jikagumi": {
   "labelCrop": [
-   0.34,
-   0.6,
-   0.34,
-   0.32
+   0.24,
+   0.48,
+   0.54,
+   0.46
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "oriental-whey": {
   "labelCrop": [
@@ -1074,16 +1288,20 @@
    0.32,
    0.26
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "librom-pear-craft-sake": {
   "labelCrop": [
-   0.34,
-   0.52,
-   0.4,
-   0.24
+   0.24,
+   0.44,
+   0.58,
+   0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "pierre-jean-colombard-chardonnay-2025": {
   "labelCrop": [
@@ -1092,16 +1310,20 @@
    0.34,
    0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "raizin-heart-rock-phoenix-dancong-oolong": {
   "labelCrop": [
-   0.3,
-   0.6,
+   0.22,
    0.38,
-   0.3
+   0.52,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "roman-jg": {
   "labelStatus": "skip",
@@ -1114,7 +1336,9 @@
    0.34,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "santa-helena-varietal-cabernet-sauvignon-2025": {
   "labelCrop": [
@@ -1123,34 +1347,42 @@
    0.38,
    0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sara-junmai-ginjo": {
   "labelCrop": [
-   0.28,
-   0.52,
+   0.2,
    0.38,
-   0.26
+   0.52,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sawahime-daiginjo-tobingakoi-origarami-nama": {
   "labelCrop": [
-   0.3,
-   0.53,
-   0.34,
-   0.32
+   0.2,
+   0.48,
+   0.56,
+   0.44
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sawahime-yamahai-junmai-shin-jizake-sengen": {
   "labelCrop": [
-   0.28,
-   0.5,
-   0.3,
-   0.38
+   0.18,
+   0.46,
+   0.48,
+   0.5
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sawanohana-sasara-super-dry-junmai-ginjo": {
   "labelCrop": [
@@ -1159,16 +1391,20 @@
    0.38,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "seikoh-junmai-ginjo-omachi": {
   "labelCrop": [
-   0.28,
-   0.68,
-   0.46,
-   0.22
+   0.2,
+   0.4,
+   0.6,
+   0.46
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "setoichi-kakupi-junmai-ginjo-omachi": {
   "labelStatus": "skip",
@@ -1180,30 +1416,36 @@
  },
  "shinomine-aiyama-junmai-murokanamagenshu": {
   "labelCrop": [
-   0.34,
-   0.52,
-   0.34,
-   0.36
+   0.28,
+   0.37,
+   0.56,
+   0.45
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "shizenango-bio-tokubetsu-junmai": {
   "labelCrop": [
-   0.18,
-   0.62,
-   0.26,
-   0.26
+   0.12,
+   0.55,
+   0.38,
+   0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sokuu-junmai-daiginjo-yamadanishiki": {
   "labelCrop": [
-   0.36,
-   0.66,
-   0.28,
-   0.22
+   0.3,
+   0.62,
+   0.4,
+   0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sokuu-junmai-ginjoshu-yamadanishiki": {
   "labelCrop": [
@@ -1212,16 +1454,20 @@
    0.5,
    0.22
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sokuu-junmai-miyamanishiki": {
   "labelCrop": [
-   0.38,
-   0.66,
    0.3,
-   0.22
+   0.62,
+   0.42,
+   0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sugata-flying": {
   "labelStatus": "skip",
@@ -1229,12 +1475,14 @@
  },
  "sugata-aiyama": {
   "labelCrop": [
-   0.36,
-   0.68,
-   0.34,
-   0.24
+   0.3,
+   0.62,
+   0.44,
+   0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sugata-hitogokochi": {
   "labelCrop": [
@@ -1243,7 +1491,9 @@
    0.34,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sugata-kitashizuku": {
   "labelCrop": [
@@ -1252,7 +1502,9 @@
    0.34,
    0.26
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sugata-omachi": {
   "labelCrop": [
@@ -1261,16 +1513,20 @@
    0.34,
    0.26
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "sugata-yumesasara": {
   "labelCrop": [
-   0.33,
-   0.62,
-   0.34,
-   0.26
+   0.3,
+   0.6,
+   0.44,
+   0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "suigei-junmai-daiginjo-joh": {
   "labelCrop": [
@@ -1279,16 +1535,20 @@
    0.4,
    0.38
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "suntory-world-whisky-ao": {
   "labelCrop": [
-   0.3,
-   0.48,
-   0.38,
-   0.26
+   0.18,
+   0.4,
+   0.6,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "suppin-rumiko-no-sake-muroka-nama-genshu-no-6": {
   "labelCrop": [
@@ -1297,43 +1557,53 @@
    0.4,
    0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "taiheikai-junmai-ginjo-bin-gakoi": {
   "labelCrop": [
-   0.28,
-   0.5,
-   0.42,
-   0.36
+   0.24,
+   0.4,
+   0.52,
+   0.48
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "taiheikai-mukaatsu-junmai-ginjo-nama": {
   "labelCrop": [
-   0.3,
-   0.52,
-   0.4,
-   0.36
+   0.22,
+   0.38,
+   0.54,
+   0.52
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "taiheikai-sparkling": {
   "labelCrop": [
-   0.26,
+   0.24,
+   0.4,
    0.52,
-   0.46,
-   0.24
+   0.44
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "taka-tokubetsu-junmai-fukamari": {
   "labelCrop": [
-   0.26,
-   0.42,
-   0.4,
-   0.36
+   0.2,
+   0.34,
+   0.56,
+   0.5
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "takizawa-junmai-ginjo": {
   "labelCrop": [
@@ -1342,16 +1612,20 @@
    0.28,
    0.22
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "tanzawa-omachi-70": {
   "labelCrop": [
-   0.36,
-   0.66,
-   0.26,
-   0.24
+   0.3,
+   0.56,
+   0.38,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "tenmei-arabashiri": {
   "labelStatus": "skip",
@@ -1359,12 +1633,14 @@
  },
  "tenmei-kamenoo-65-kijoshu": {
   "labelCrop": [
-   0.3,
-   0.52,
+   0.28,
+   0.58,
    0.4,
-   0.28
+   0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "tenmei-nakadori-nigo-origarami-nama": {
   "labelCrop": [
@@ -1373,7 +1649,9 @@
    0.32,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "tenmei-nakadori-zerogo-origarami-nama": {
   "labelCrop": [
@@ -1382,16 +1660,20 @@
    0.32,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "tenmei-x-machida-shuzo-collaborative-bre": {
   "labelCrop": [
-   0.1,
-   0.52,
-   0.34,
-   0.32
+   0.08,
+   0.5,
+   0.46,
+   0.38
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "tenon-harunotsuki-bihappou-junmaiginjou-nigori": {
   "labelCrop": [
@@ -1400,34 +1682,42 @@
    0.34,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "the-botanist-islay-dry-gin": {
   "labelCrop": [
-   0.28,
-   0.4,
-   0.42,
-   0.16
+   0.2,
+   0.37,
+   0.58,
+   0.2
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "unsure"
  },
  "toko-kenjoshu-junmai-ginjo-tosui": {
   "labelCrop": [
-   0.38,
-   0.62,
-   0.32,
-   0.28
+   0.3,
+   0.58,
+   0.46,
+   0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "toyobijin-jundou-ichizu-junmai-ginjo-omachi": {
   "labelCrop": [
-   0.36,
-   0.64,
-   0.3,
-   0.24
+   0.28,
+   0.54,
+   0.46,
+   0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "traditional-jeju-makgeolli": {
   "labelCrop": [
@@ -1436,25 +1726,31 @@
    0.4,
    0.26
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "under-15m": {
   "labelCrop": [
-   0.32,
-   0.66,
-   0.3,
-   0.26
+   0.24,
+   0.58,
+   0.44,
+   0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "underwater-sake-yeast-beer": {
   "labelCrop": [
-   0.28,
-   0.58,
-   0.46,
-   0.18
+   0.18,
+   0.5,
+   0.62,
+   0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "wakamusume-tropical-bunbun-junmai-ginjo": {
   "labelCrop": [
@@ -1463,7 +1759,9 @@
    0.38,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "wakaze-ispahan-rose": {
   "labelCrop": [
@@ -1472,16 +1770,20 @@
    0.38,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "wakaze-unique": {
   "labelCrop": [
-   0.26,
-   0.62,
-   0.46,
-   0.26
+   0.24,
+   0.54,
+   0.52,
+   0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "wataibune-terroir-ohta-valley": {
   "labelCrop": [
@@ -1490,25 +1792,31 @@
    0.44,
    0.18
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "wataribune-shiboritate-namagin-muroka": {
   "labelCrop": [
-   0.3,
+   0.22,
+   0.42,
    0.56,
-   0.4,
-   0.28
+   0.46
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "woodford-reserve-distillers-select": {
   "labelCrop": [
-   0.2,
-   0.54,
-   0.56,
-   0.12
+   0.14,
+   0.47,
+   0.6,
+   0.19
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "unsure"
  },
  "yamamoto-junmai-ginjo-uki-uki": {
   "labelCrop": [
@@ -1517,7 +1825,9 @@
    0.28,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "yamamoto-junmai-ginjo-wain": {
   "labelCrop": [
@@ -1526,7 +1836,9 @@
    0.4,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "yamamoto-no7-kobo-junmai-ginjo": {
   "labelStatus": "skip",
@@ -1539,7 +1851,9 @@
    0.34,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "yamashiroya-fuga-junmai-daiginjo": {
   "labelStatus": "skip",
@@ -1547,12 +1861,14 @@
  },
  "yamato-damashii-mizumoto": {
   "labelCrop": [
-   0.28,
-   0.5,
-   0.4,
-   0.28
+   0.2,
+   0.42,
+   0.6,
+   0.5
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "yamawa-junmai-ginjo-muroka-nama-genshu": {
   "labelStatus": "skip",
@@ -1573,7 +1889,9 @@
    0.56,
    0.28
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "underwater-luminous-sake-yeast-beer": {
   "labelCrop": [
@@ -1582,7 +1900,9 @@
    0.34,
    0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "yamamoto-sunset-orange-junmai-ginjo": {
   "labelCrop": [
@@ -1591,7 +1911,9 @@
    0.38,
    0.3
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "minoh-hoppy-weizen": {
   "labelStatus": "skip",
@@ -1616,7 +1938,9 @@
    0.36,
    0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "carlsberg-smooth-draught": {
   "labelCrop": [
@@ -1625,16 +1949,20 @@
    0.44,
    0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "haccoba-zairai-sea": {
   "labelCrop": [
    0.3,
-   0.73,
+   0.77,
    0.37,
-   0.17
+   0.12
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "unsure"
  },
  "isshou-seishun-shinshu-origarami-honnama": {
   "labelCrop": [
@@ -1643,7 +1971,9 @@
    0.49,
    0.37
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "koshinohomare-qn-matsuri": {
   "labelCrop": [
@@ -1652,7 +1982,9 @@
    0.38,
    0.38
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "koueigiku-gekka-burai": {
   "labelCrop": [
@@ -1661,7 +1993,9 @@
    0.58,
    0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kronenbourg-1664-blanc": {
   "labelCrop": [
@@ -1670,7 +2004,9 @@
    0.38,
    0.4
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "yama-no-kami-san-ohara-red-shiso": {
   "labelCrop": [
@@ -1679,7 +2015,9 @@
    0.36,
    0.34
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "eikun-murasaki-no-eikun-junmai-ginjo": {
   "labelCrop": [
@@ -1688,7 +2026,9 @@
    0.51,
    0.43
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "gakki-masamune-junjo": {
   "labelCrop": [
@@ -1697,7 +2037,9 @@
    0.56,
    0.44
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "gasanryu-gokugetsu-junmai-daiginjo": {
   "labelCrop": [
@@ -1706,7 +2048,9 @@
    0.5,
    0.47
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kenkonichi-ryu-ryu-shinka-junmai-daiginjo": {
   "labelCrop": [
@@ -1715,7 +2059,9 @@
    0.53,
    0.32
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kenkonichi-tokubetsu-junmai-sasanishiki": {
   "labelCrop": [
@@ -1724,7 +2070,9 @@
    0.42,
    0.36
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "kid-natsu-no-hayate-junmai-ginjo": {
   "labelCrop": [
@@ -1733,7 +2081,9 @@
    0.46,
    0.43
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "wakanoi-hanamaru-junmai-ginjo-yukimuro": {
   "labelCrop": [
@@ -1742,7 +2092,9 @@
    0.56,
    0.42
   ],
-  "labelStatus": "ok"
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  },
  "suntory-kakubin-highball": {
   "labelStatus": "skip",

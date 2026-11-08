@@ -1,16 +1,26 @@
 {
  "key": "shimomura-shuzoten",
  "name": "Shimomura Shuzoten",
- "native": null,
- "location": "Hyogo",
+ "native": "下村酒造店",
+ "location": "Himeji, Hyogo",
  "region": "Hyogo",
  "country": "Japan",
- "founded": null,
+ "founded": 1884,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://okuharima.jp/",
+ "brands": [
+  "Okuharima",
+  "Shimomura Sake Brewing"
+ ],
+ "about": [
+  "Shimomura Shuzoten is a sake brewery in Anji, Yasutomi, in Himeji, Hyogo, on the northwestern edge of the Banshu plain, and it was founded in 1884. About nine tenths of Yasutomi is mountain forest, and cold air blowing down from the Chugoku mountains in winter suits brewing.",
+  "The brewery makes only junmai sake, from rice and rice koji, with no added alcohol. Its family motto says that no skill surpasses brewing by hand, and it avoids mechanisation and mass production. It sells Okuharima only through specialist sake shops, favours local sake rice, and says the sake is good served warm."
+ ],
+ "sources": [
+  "https://okuharima.jp/about/",
+  "https://okuharima.jp/en/",
+  "https://okuharima.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

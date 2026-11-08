@@ -1,16 +1,26 @@
 {
  "key": "ryozeki-shuzo",
  "name": "Ryozeki Shuzo",
- "native": null,
- "location": "Akita",
+ "native": "両関酒造",
+ "location": "Yuzawa, Akita",
  "region": "Akita",
  "country": "Japan",
- "founded": null,
+ "founded": 1874,
  "master": null,
  "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "brands": [
+  "Ryozeki",
+  "Hanamura",
+  "Suigyoku"
+ ],
+ "about": [
+  "Ryozeki Shuzo is a sake brewery in Yuzawa, Akita, founded in 1874. Its brewery is a nationally registered tangible cultural property, and its stated policy is a sake born of harmony among people that in turn brews harmony among people.",
+  "Its range includes Ryozeki, Hanamura and Suigyoku. Suigyoku, named for the emerald, was developed with technical support from Takagi Shuzo, the Juyondai brewery in Yamagata, as a second line after Hanamura, and its labels deliberately print no specifications."
+ ],
+ "sources": [
+  "https://www.tohokukanko.jp/attractions/detail_1009324.html",
+  "https://www.saketime.jp/brands/3391/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

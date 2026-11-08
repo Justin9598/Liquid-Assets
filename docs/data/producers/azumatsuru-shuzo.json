@@ -1,16 +1,25 @@
 {
  "key": "azumatsuru-shuzo",
  "name": "Azumatsuru Shuzo",
- "native": null,
+ "native": "東鶴酒造",
  "location": "Taku, Saga",
  "region": "Saga",
  "country": "Japan",
- "founded": null,
+ "founded": 1830,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "http://azumatsuru.com/",
+ "brands": [
+  "Azumatsuru"
+ ],
+ "about": [
+  "Azumatsuru Shuzo is a sake brewery in Taku, a town ringed by mountains in the middle of Saga. Its labels read since 1830, and its own site says only that it began in the late Edo period. Brewing stopped around 1989, and the family head restarted it as his own toji about twenty years later.",
+  "The brewery uses soft underground water that flows down from the Taku mountains, and it brews with old tools found in the brewery as well as modern ones. Heavy rain in northern Kyushu in August 2019 badly damaged the brewery, and it raised funds to recover. In 2017 its junmai daiginjo won a gold medal at the Kura Master competition in France."
+ ],
+ "sources": [
+  "http://azumatsuru.com/?page_id=7",
+  "http://azumatsuru.com/",
+  "https://www.makuake.com/project/azumatsuru/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

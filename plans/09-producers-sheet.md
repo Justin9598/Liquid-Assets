@@ -164,6 +164,7 @@ The permission system blocks the shipper's push, so whoever the owner names push
 | D18 | New makers from the 2026-11-07 batch (owner approved) | Hara Shuzo: skeleton plus research, `approved`. Azumatsuru Shuzo, Carlsberg and Kronenbourg: skeleton only, `draft`. See `updates/2026-11-07-omu-nomu-space-box.md`. |
 | D19 | New makers from the 2026-11-08 batch (owner approved) | Heiwa Shuzo, Wakanoi Shuzo, Shindo Shuzoten and Eikun Shuzo: skeleton only, `draft`. See `updates/2026-11-08-shu-kuu-sakanahikaru.md`. |
 | D20 | Japan batch 5 (2026-11-08, owner approved) | **Approved, adjusted.** `moriki-shuzojo` displays as "Moriki Shuzo" (森喜酒造; key unchanged, D14). Konohana Brewery keeps its name, with "Konohanano Brewery" in Brands (D9). Kubiki Founded is 1697, when the family began brewing (D7). Koueigiku's Instagram counts as its Website (D11). `koshi-meijo` is held back as `draft` with its research left empty (its About is 55 words, under D4's 60). No Moriki to Shinkame Related link (the strict rule). |
+| D21 | Japan batch 6 (2026-11-08, owner approved) | **Approved, adjusted.** `omoyashuzo` displays as "Omoya Shuzo" (key unchanged, D14). Suntory's Website is `https://www.suntory.com/` as an owner exception to D15: it returns 403 to automated checks but is plainly official, as with D16. Koshi Meijo, now 120 words, publishes with Founded 1845. Shinshu Meijo's Founded is blank (1834 and 1835 conflict). Azumatsuru uses `http://azumatsuru.com/` (as D13). |
 
 ## 11. Batch 1 review fixes (2026-11-02)
 

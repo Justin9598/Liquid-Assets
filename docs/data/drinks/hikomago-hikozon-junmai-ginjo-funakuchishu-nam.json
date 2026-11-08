@@ -6,11 +6,11 @@
  "producer": {
   "key": "shinkame-shuzo",
   "name": "Shinkame Shuzo",
-  "native": null,
-  "location": "Saitama, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "神亀酒造",
+  "location": "Hasuda, Saitama, Japan",
+  "founded": 1848,
+  "about": "Shinkame Shuzo is a sake brewery in Hasuda, Saitama, founded in 1848 as Iseya Honten. In 1987 it switched all of its sake to junmai, and it says it was the first brewery to make only junmai after the war. The name Shinkame refers to a tortoise said to live in Tenjin Pond, once behind the brewery, as a messenger of the gods.",
+  "url": "https://shinkame.co.jp/"
  },
  "abv": 16,
  "styles": [

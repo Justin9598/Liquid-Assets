@@ -6,11 +6,11 @@
  "producer": {
   "key": "nishida-shuzoten",
   "name": "Nishida Shuzoten",
-  "native": null,
-  "location": "Aomori, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "西田酒造店",
+  "location": "Aomori, Aomori, Japan",
+  "founded": 1878,
+  "about": "Nishida Shuzoten is a sake brewery in Aburakawa, in Aomori City, and the only brewery in the city. It was founded in 1878 at the old port of Ohama, once the busiest harbour on the Sotogahama coast of the Tsugaru peninsula. Its two brands are Denshu and Kikuizumi.",
+  "url": "http://www.densyu.co.jp/"
  },
  "abv": null,
  "styles": [],

@@ -6,11 +6,11 @@
  "producer": {
   "key": "shimomura-shuzoten",
   "name": "Shimomura Shuzoten",
-  "native": null,
-  "location": "Hyogo, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "下村酒造店",
+  "location": "Himeji, Hyogo, Japan",
+  "founded": 1884,
+  "about": "Shimomura Shuzoten is a sake brewery in Anji, Yasutomi, in Himeji, Hyogo, on the northwestern edge of the Banshu plain, and it was founded in 1884. About nine tenths of Yasutomi is mountain forest, and cold air blowing down from the Chugoku mountains in winter suits brewing.",
+  "url": "https://okuharima.jp/"
  },
  "abv": null,
  "styles": [

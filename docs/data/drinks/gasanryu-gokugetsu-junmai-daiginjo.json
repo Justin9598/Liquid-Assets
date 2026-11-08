@@ -6,11 +6,11 @@
  "producer": {
   "key": "shindo-shuzoten",
   "name": "Shindo Shuzoten",
-  "native": null,
+  "native": "新藤酒造店",
   "location": "Yonezawa, Yamagata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "founded": 1870,
+  "about": "Shindo Shuzoten is a sake brewery in Yonezawa, Yamagata, founded in 1870 and now in its fifth generation since a revival. It sells its sake in several series, including Gasanryu, Kurozaemon, 泉氷鑑 and 羽陽富久鶴. The name Kurozaemon has been inherited by successive heads of the family.",
+  "url": "http://kurouzaemon.com/"
  },
  "abv": 16,
  "styles": [

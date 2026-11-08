@@ -6,11 +6,11 @@
  "producer": {
   "key": "shinshu-meijo",
   "name": "Shinshu Meijo",
-  "native": null,
-  "location": "Nagano, Japan",
+  "native": "信州銘醸",
+  "location": "Ueda, Nagano, Japan",
   "founded": null,
-  "about": null,
-  "url": null
+  "about": "Shinshu Meijo is a sake brewery in Maruko, now part of Ueda, Nagano. Four old breweries of the area formed the company in 1958 when they began bottling together, and in 1973 they brewed together as well. The brewery traces its start to around 1835, when it opened as Masuya.",
+  "url": "https://www.shinmei-net.com/"
  },
  "abv": 16,
  "styles": [],

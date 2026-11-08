@@ -1,16 +1,28 @@
 {
  "key": "heiwa-shuzo",
  "name": "Heiwa Shuzo",
- "native": null,
+ "native": "平和酒造",
  "location": "Kainan, Wakayama",
  "region": "Wakayama",
  "country": "Japan",
- "founded": null,
+ "founded": 1928,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.heiwashuzou.co.jp/",
+ "brands": [
+  "Kid",
+  "Tsurumume",
+  "Heiwa Craft"
+ ],
+ "about": [
+  "Heiwa Shuzo is a sake brewery in Mizonokuchi, Kainan, Wakayama, founded in 1928. A man from an old sake family married into the Yamamoto family, who had kept a Buddhist temple for generations, and started the brewery, so it is still sometimes called by the temple's trade name, Chogan-ji. The name Heiwa, meaning peace, comes from the second head's wish to brew in a peaceful era after the war.",
+  "The brewery sells sake as Kid, a plum wine range as Tsurumume, and beer as Heiwa Craft. Its brewers plant and tend sake rice each year with local help, in a basin where wells draw underground water from Koyasan."
+ ],
+ "sources": [
+  "https://www.heiwashuzou.co.jp/history",
+  "https://www.heiwashuzou.co.jp/",
+  "https://www.heiwashuzou.co.jp/endemic",
+  "https://www.heiwashuzou.co.jp/our-story"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

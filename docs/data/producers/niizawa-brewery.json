@@ -1,17 +1,36 @@
 {
  "key": "niizawa-brewery",
  "name": "Niizawa Brewery",
- "native": null,
- "location": "Miyagi",
+ "native": "新澤醸造店",
+ "location": "Osaki, Miyagi",
  "region": "Miyagi",
  "country": "Japan",
- "founded": null,
+ "founded": 1873,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://niizawa-brewery.co.jp/",
+ "brands": [
+  "Hakurakusei",
+  "Atago no Matsu",
+  "Zankyo",
+  "Niizawa"
+ ],
+ "about": [
+  "Niizawa Brewery began in 1873 as Niizawa Shoten in Sambongi, now part of Osaki, Miyagi. The earthquake of March 2011 left three brewery buildings and the family home judged a total loss, and the brewing moved to Kawasaki, 70 kilometres away, while the head office stayed in Osaki.",
+  "The brewery makes Hakurakusei, begun in 2002 as a sake to go with food and named after a local legend of a horse from Sambongi, and Atago no Matsu. It mills rice in a polisher that reaches 0.85 percent, and since 2018 its toji has been a woman who took over at 22. In 2015 it helped start Date Seven, a group of Miyagi breweries."
+ ],
+ "sources": [
+  "https://niizawa-brewery.co.jp/about/",
+  "https://niizawa-brewery.co.jp/company/",
+  "https://niizawa-brewery.co.jp/en/about/",
+  "https://niizawa-brewery.co.jp/"
+ ],
+ "related": [
+  {
+   "key": "date-seven",
+   "name": "Date Seven",
+   "relationship": "Date Seven member"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,

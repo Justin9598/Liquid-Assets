@@ -6,11 +6,11 @@
  "producer": {
   "key": "oya-takashi-shuzo",
   "name": "Oya Takashi Shuzo",
-  "native": null,
-  "location": "Kanagawa, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "大矢孝酒造",
+  "location": "Aikawa, Kanagawa, Japan",
+  "founded": 1830,
+  "about": "Oya Takashi Shuzo is a sake brewery in Aikawa, in northwest Kanagawa, founded in 1830. Its origin goes back to the first Oya, a cavalry captain on the Hojo side at the 1569 Battle of Mimasetoge, who left the warrior's life after the battle and served as village head. Later the family took over a sake brewing licence from a brewer in Oiso and began making sake.",
+  "url": "https://oyatakashi-shuzo.com/"
  },
  "abv": 15,
  "styles": [

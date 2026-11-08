@@ -1,16 +1,29 @@
 {
  "key": "omoyashuzo",
- "name": "Omoyashuzo",
- "native": null,
+ "name": "Omoya Shuzo",
+ "native": "重家酒造",
  "location": "Iki, Nagasaki",
  "region": "Nagasaki",
  "country": "Japan",
- "founded": null,
+ "founded": 1924,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.omoyashuzo.com/",
+ "brands": [
+  "Yokoyama",
+  "Chingu",
+  "Sesshu",
+  "Omoya Gin"
+ ],
+ "about": [
+  "Omoya Shuzo is a sake and shochu brewery on Iki Island, Nagasaki, founded in 1924 by Yokoyama Kakuzo. Its first sake was Kin Sekai and its first shochu was Kiku Shirayuki, and in 1965 the barley shochu became Sesshu. The brewery calls Iki the birthplace of barley shochu, and the island has more than 150 shrines.",
+  "Sake making was revived in 2013 after 23 years, and a new sake brewery, the Yokoyama kura, was finished in 2018 after the team surveyed more than 20 water sources on the island. Since 2021 the brewery has trialled and then grown the rice Gin no Sato on Iki for its junmai daiginjo."
+ ],
+ "sources": [
+  "https://www.omoyashuzo.com/company.html",
+  "https://www.omoyashuzo.com/english/company.html",
+  "https://www.omoyashuzo.com/",
+  "https://www.omoyashuzo.com/english/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

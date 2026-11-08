@@ -1,16 +1,27 @@
 {
  "key": "nyu-shuzo",
  "name": "Nyu Shuzo",
- "native": null,
- "location": "Fukui",
+ "native": "丹生酒造",
+ "location": "Echizen, Fukui",
  "region": "Fukui",
  "country": "Japan",
- "founded": null,
+ "founded": 1716,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.asukai1716.com/",
+ "brands": [
+  "Asukai",
+  "Sakura Mariko",
+  "Nyusyuzo"
+ ],
+ "about": [
+  "Nyu Shuzo is a sake brewery in Echizen, in the Nyu district of Fukui. It was founded in 1716 and sells its sake as Asukai. The company is led by president Yuko Takahashi, and the brewery presents itself as having a woman at its head.",
+  "It brews with water from a spring at the Yasaka shrine called Enmei no mizu. One autumn sake is made by the kimoto method from Kuzuryu rice that the brewery's toji grows, with yeast and lactic acid bacteria taken from the brewery itself. Other sake uses rice from Echizen, including Yamadanishiki from the Oda district, and an organically grown Hanaechizen rice."
+ ],
+ "sources": [
+  "https://www.asukai1716.com/会社概要/",
+  "https://www.asukai1716.com/",
+  "https://www.saketime.jp/brands/1072/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

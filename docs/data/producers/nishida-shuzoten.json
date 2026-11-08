@@ -1,16 +1,25 @@
 {
  "key": "nishida-shuzoten",
  "name": "Nishida Shuzoten",
- "native": null,
- "location": "Aomori",
+ "native": "西田酒造店",
+ "location": "Aomori, Aomori",
  "region": "Aomori",
  "country": "Japan",
- "founded": null,
+ "founded": 1878,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "http://www.densyu.co.jp/",
+ "brands": [
+  "Denshu",
+  "Kikuizumi"
+ ],
+ "about": [
+  "Nishida Shuzoten is a sake brewery in Aburakawa, in Aomori City, and the only brewery in the city. It was founded in 1878 at the old port of Ohama, once the busiest harbour on the Sotogahama coast of the Tsugaru peninsula. Its two brands are Denshu and Kikuizumi.",
+  "Denshu, written with the characters for rice field and sake, is a junmai sake that uses no brewing alcohol or sugars. The brewery began making pure rice sake by hand in 1970 and put it on sale in October 1974. It later revived Kojonishiki, an old Aomori brewing rice, and uses Hanaomoi, a newer local variety, in a junmai daiginjo."
+ ],
+ "sources": [
+  "http://www.densyu.co.jp/",
+  "http://www.densyu.co.jp/origin.html"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

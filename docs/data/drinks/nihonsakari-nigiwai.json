@@ -6,11 +6,11 @@
  "producer": {
   "key": "nihonsakari",
   "name": "Nihonsakari",
-  "native": null,
-  "location": "Hyogo, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "日本盛",
+  "location": "Nishinomiya, Hyogo, Japan",
+  "founded": 1889,
+  "about": "Nihonsakari is a sake maker in Nishinomiya, Hyogo. It began in 1889 as Nishinomiya Kigyo, became Nishinomiya Shuzo in 1896 and took its present name in 2000. It acquired the Nihonsakari trademark in 1897, the year it first shipped Nihonsakari and 惣花.",
+  "url": "https://www.nihonsakari.co.jp/"
  },
  "abv": 13,
  "styles": [],

@@ -1,16 +1,32 @@
 {
  "key": "shindo-shuzoten",
  "name": "Shindo Shuzoten",
- "native": null,
+ "native": "新藤酒造店",
  "location": "Yonezawa, Yamagata",
  "region": "Yamagata",
  "country": "Japan",
- "founded": null,
+ "founded": 1870,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "http://kurouzaemon.com/",
+ "brands": [
+  "Gasanryu",
+  "雅山流",
+  "Kurozaemon",
+  "九郎左衛門",
+  "泉氷鑑",
+  "雪国慕情",
+  "羽陽富久鶴",
+  "Shindo Sake Brewery"
+ ],
+ "about": [
+  "Shindo Shuzoten is a sake brewery in Yonezawa, Yamagata, founded in 1870 and now in its fifth generation since a revival. It sells its sake in several series, including Gasanryu, Kurozaemon, 泉氷鑑 and 羽陽富久鶴. The name Kurozaemon has been inherited by successive heads of the family.",
+  "The brewery makes about 1,000 koku a year over a nine month season from October to June, mainly ginjo grade sake. It uses clean underground water from the Azuma mountains, taken from its own well, and for its Senzan Bansui line it uses rice from its own fields and its brewers' fields, grown only in Yamagata."
+ ],
+ "sources": [
+  "http://kurouzaemon.com/jp/",
+  "http://kurouzaemon.com/en/",
+  "http://kurouzaemon.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

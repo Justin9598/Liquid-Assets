@@ -6,11 +6,11 @@
  "producer": {
   "key": "koshi-meijo",
   "name": "Koshi Meijo",
-  "native": null,
-  "location": "Niigata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "越銘醸",
+  "location": "Nagaoka, Niigata, Japan",
+  "founded": 1845,
+  "about": "Koshi Meijo is a sake brewery in Tochio, a snowy basin town in Nagaoka, Niigata. The company was formed in 1934 by merging Yamagaya, a brewery from the Kyoho era (1716 to 1736), with Yamashiroya, which dates from 1845, and it was the first stock company in old Tochio. The brewery stands on an old arcade street, and its building won a Nagaoka city townscape award in 2016.",
+  "url": "https://koshimeijo.jp/"
  },
  "abv": null,
  "styles": [

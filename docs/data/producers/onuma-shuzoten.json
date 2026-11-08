@@ -1,16 +1,25 @@
 {
  "key": "onuma-shuzoten",
  "name": "Onuma Shuzoten",
- "native": null,
- "location": "Miyagi",
+ "native": "大沼酒造店",
+ "location": "Murata, Miyagi",
  "region": "Miyagi",
  "country": "Japan",
- "founded": null,
+ "founded": 1712,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://kenkonichi.com/",
+ "brands": [
+  "Kenkonichi"
+ ],
+ "about": [
+  "Onuma Shuzoten is a sake brewery in Murata, a town in Miyagi that once prospered as a trading centre for safflower. It was founded in 1712 and sells its sake as Kenkonichi. In 1870 the first governor of Miyagi, Matsudaira Masanao, tasted the sake on a visit and gave it the name Kenkonichi, hoping it would be the world's best sake.",
+  "The brewery builds its sake on Sasanishiki, an eating rice grown in Miyagi, and it contracts local farmers for the old Meiji varieties Kamenoo, Shinriki and Aikoku. An earthquake on 16 March 2022 stopped brewing until November of that year. Its team includes a toji qualified in the Nambu school and brewers in their twenties to forties."
+ ],
+ "sources": [
+  "https://kenkonichi.com/",
+  "https://kenkonichi.com/about/",
+  "https://kenkonichi.com/news/"
+ ],
  "related": [],
  "tally": {
   "drinks": 3,

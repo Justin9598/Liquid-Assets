@@ -1,16 +1,28 @@
 {
  "key": "koshi-meijo",
  "name": "Koshi Meijo",
- "native": null,
- "location": "Niigata",
+ "native": "越銘醸",
+ "location": "Nagaoka, Niigata",
  "region": "Niigata",
  "country": "Japan",
- "founded": null,
+ "founded": 1845,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://koshimeijo.jp/",
+ "brands": [
+  "Yamashiroya",
+  "Koshi no Tsuru",
+  "壱醸"
+ ],
+ "about": [
+  "Koshi Meijo is a sake brewery in Tochio, a snowy basin town in Nagaoka, Niigata. The company was formed in 1934 by merging Yamagaya, a brewery from the Kyoho era (1716 to 1736), with Yamashiroya, which dates from 1845, and it was the first stock company in old Tochio. The brewery stands on an old arcade street, and its building won a Nagaoka city townscape award in 2016.",
+  "Its main brand is Koshi no Tsuru, which replaced the earlier Koshi no Kawa in 1972. 壱醸 is made from Koshitanrei rice grown on local terraced fields by a group of Tochio sake shops. Yamashiroya is brewed entirely by the kimoto method and has been sold outside Niigata and overseas since 2015."
+ ],
+ "sources": [
+  "https://koshimeijo.jp/",
+  "https://www.niigata-sake.or.jp/interview/k48.html",
+  "https://www.niigata-nippo.co.jp/articles/-/801836",
+  "https://www.niigata-sake.net/koshimeijo_home/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

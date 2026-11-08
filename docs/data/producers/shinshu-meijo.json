@@ -1,16 +1,31 @@
 {
  "key": "shinshu-meijo",
  "name": "Shinshu Meijo",
- "native": null,
- "location": "Nagano",
+ "native": "信州銘醸",
+ "location": "Ueda, Nagano",
  "region": "Nagano",
  "country": "Japan",
  "founded": null,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.shinmei-net.com/",
+ "brands": [
+  "Takizawa",
+  "瀧澤",
+  "Kikuzakari",
+  "Ryozanpaku",
+  "Kokuyo",
+  "ShinsyuMeijyou"
+ ],
+ "about": [
+  "Shinshu Meijo is a sake brewery in Maruko, now part of Ueda, Nagano. Four old breweries of the area formed the company in 1958 when they began bottling together, and in 1973 they brewed together as well. The brewery traces its start to around 1835, when it opened as Masuya.",
+  "Its brands include Takizawa, Kikuzakari, Ryozanpaku and Kokuyo. Kokuyo is brewed with very soft water from the Wada Pass, filtered through obsidian rock, and the company also draws on Yoda River underground water. The brewery says it has won gold at the national new sake awards 17 times, with an average rice polishing ratio of 57 percent."
+ ],
+ "sources": [
+  "https://www.shinmei-net.com/Company/about.html",
+  "https://www.shinmei-net.com/Products/kokuyou.html",
+  "https://www.takizawa-info.com/",
+  "https://www.shinmei-net.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

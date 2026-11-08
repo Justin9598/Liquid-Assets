@@ -6,11 +6,11 @@
  "producer": {
   "key": "rikyugura",
   "name": "Rikyugura",
-  "native": null,
-  "location": "Osaka, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "利休蔵",
+  "location": "Sakai, Osaka, Japan",
+  "founded": 1899,
+  "about": "Rikyugura is a sake brewery in Sakai, Osaka. It began in 1899 and brewed for 114 years in Higashinada, Kobe, before it started brewing in Sakai in December 2014, when the last Sakai brewery had been closed since 1971. Its first sake, Sen no Rikyu, was completed in February 2015 and is named for the tea master born in Sakai.",
+  "url": "https://rikyugura.jp/"
  },
  "abv": 16,
  "styles": [],

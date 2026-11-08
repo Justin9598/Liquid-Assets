@@ -1,16 +1,29 @@
 {
  "key": "seto-shuzoten",
  "name": "Seto Shuzoten",
- "native": null,
- "location": "Kanagawa",
+ "native": "瀬戸酒造店",
+ "location": "Kaisei, Kanagawa",
  "region": "Kanagawa",
  "country": "Japan",
- "founded": null,
+ "founded": 1865,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://setosyuzo.ashigarigo.com/",
+ "brands": [
+  "Setoichi",
+  "Sakata Nishiki",
+  "Ashigarigo",
+  "Seto Shuzo-Ten"
+ ],
+ "about": [
+  "Seto Shuzoten is a sake brewery in Kaisei, on the Ashigara plain in Kanagawa, founded in 1865. The area around it was known as Sakata, meaning sake field, for its sake rice, and its main brand Sakata Nishiki once reached 600 koku a year. Brewing stopped in 1980 because it was hard to find a toji and brewers.",
+  "It started again in 2018, after 38 years, with a new brewery on the old site. Sakata Nishiki was revived using yeast that had lived in the old brewery. The brewery also makes the Setoichi series, with 16 labels, each with its own character, and it works with local farmers to grow sake rice."
+ ],
+ "sources": [
+  "https://setosyuzo.ashigarigo.com/pages/philosophy",
+  "https://setosyuzo.ashigarigo.com/pages/company",
+  "https://setosyuzo.ashigarigo.com/pages/for-foreigners",
+  "https://setosyuzo.ashigarigo.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

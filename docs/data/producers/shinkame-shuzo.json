@@ -1,16 +1,26 @@
 {
  "key": "shinkame-shuzo",
  "name": "Shinkame Shuzo",
- "native": null,
- "location": "Saitama",
+ "native": "神亀酒造",
+ "location": "Hasuda, Saitama",
  "region": "Saitama",
  "country": "Japan",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "founded": 1848,
+ "master": "Shigenori Ohta",
+ "website": "https://shinkame.co.jp/",
+ "brands": [
+  "Shinkame",
+  "Hikomago"
+ ],
+ "about": [
+  "Shinkame Shuzo is a sake brewery in Hasuda, Saitama, founded in 1848 as Iseya Honten. In 1987 it switched all of its sake to junmai, and it says it was the first brewery to make only junmai after the war. The name Shinkame refers to a tortoise said to live in Tenjin Pond, once behind the brewery, as a messenger of the gods.",
+  "Hikomago, meaning great grandchild, is the name for sake aged three years or more. The brewery began using organically grown sake rice after finding that good sake comes from good rice. Shigenori Ohta, a former copywriter, has been chief brewer since the 2005 brewing season, and Takao Ogawahara has been president since 2017."
+ ],
+ "sources": [
+  "https://shinkame.co.jp/about/",
+  "https://shinkame.co.jp/staff/",
+  "https://shinkame.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

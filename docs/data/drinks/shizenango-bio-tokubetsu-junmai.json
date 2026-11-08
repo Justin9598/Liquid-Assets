@@ -6,11 +6,11 @@
  "producer": {
   "key": "ohki-daikichi-honten",
   "name": "Ohki Daikichi Honten",
-  "native": null,
-  "location": "Fukushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "大木代吉本店",
+  "location": "Yabuki, Fukushima, Japan",
+  "founded": 1865,
+  "about": "Ohki Daikichi Honten is a sake brewery in Yabuki, a town in the Nishishirakawa district of Fukushima. The first Daikichi began brewing there in 1865, and the company says it is the only brewery in the area. It draws soft underground water that reaches Yabuki from the Nasu mountains.",
+  "url": "https://www.daikichi-sizengo.co.jp/"
  },
  "abv": 16,
  "styles": [],

@@ -1,16 +1,26 @@
 {
  "key": "eikun-shuzo",
  "name": "Eikun Shuzo",
- "native": null,
+ "native": "英君酒造",
  "location": "Shimizu, Shizuoka",
  "region": "Shizuoka",
  "country": "Japan",
- "founded": null,
+ "founded": 1881,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://eikun.co.jp/",
+ "brands": [
+  "Eikun"
+ ],
+ "about": [
+  "Eikun Shuzo is a sake brewery in Yui, in the Shimizu ward of Shizuoka City. It opened in 1881 as Mochizuki Shuzoten, and its first head, Mochizuki Shosaku, named the sake Eikun after an outstanding Tokugawa ruler. He sought out good sake rice from around the country from the start.",
+  "All of its sake is brewed with Shizuoka yeast. Its water comes from the Sakuranosawa spring in the hills of Yui and from an old well found inside the brewery, and the brewery notes that its water is a little harder than usual, at 5.6. Since 2015 the press has run in a refrigerated room kept below 10 degrees."
+ ],
+ "sources": [
+  "https://eikun.co.jp/brewery/",
+  "https://eikun.co.jp/brewing/",
+  "https://eikun.co.jp/",
+  "https://en.eikun.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

@@ -6,11 +6,11 @@
  "producer": {
   "key": "heiwa-shuzo",
   "name": "Heiwa Shuzo",
-  "native": null,
+  "native": "平和酒造",
   "location": "Kainan, Wakayama, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "founded": 1928,
+  "about": "Heiwa Shuzo is a sake brewery in Mizonokuchi, Kainan, Wakayama, founded in 1928. A man from an old sake family married into the Yamamoto family, who had kept a Buddhist temple for generations, and started the brewery, so it is still sometimes called by the temple's trade name, Chogan-ji. The name Heiwa, meaning peace, comes from the second head's wish to brew in a peaceful era after the war.",
+  "url": "https://www.heiwashuzou.co.jp/"
  },
  "abv": 15,
  "styles": [],

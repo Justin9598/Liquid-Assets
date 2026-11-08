@@ -6,10 +6,10 @@
  "producer": {
   "key": "ryozeki-shuzo",
   "name": "Ryozeki Shuzo",
-  "native": null,
-  "location": "Akita, Japan",
-  "founded": null,
-  "about": null,
+  "native": "両関酒造",
+  "location": "Yuzawa, Akita, Japan",
+  "founded": 1874,
+  "about": "Ryozeki Shuzo is a sake brewery in Yuzawa, Akita, founded in 1874. Its brewery is a nationally registered tangible cultural property, and its stated policy is a sake born of harmony among people that in turn brews harmony among people.",
   "url": null
  },
  "abv": 16,
