@@ -137,12 +137,14 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
                         "location": _join_location(d["origin"], d["country"]),
                         "founded": None, "about": None, "url": None}
             more = []
-        # visits: date newest first, undated after in ledger order
+        # visits: cheapest first, and the price itself is never written (Plan 11). No price counts as free. Ties go
+        # newest first, undated after the dated ones in ledger order (the sort is stable).
         visits = d["visits"]
         dated = sorted([v for v in visits if v["date"]], key=lambda v: v["date"], reverse=True)
         undated = [v for v in visits if not v["date"]]
-        visits_out = [{"date": v["date"], "size": v["size"], "where": v["where"], "price": v["price"],
-                       "note": v["note"]} for v in dated + undated]
+        ordered_visits = sorted(dated + undated, key=lambda v: v["price"] or 0)
+        visits_out = [{"date": v["date"], "size": v["size"], "where": v["where"],
+                       "note": v["note"]} for v in ordered_visits]
         entry = photo_map.get(d["id"], {})
         photos = []
         n = 0

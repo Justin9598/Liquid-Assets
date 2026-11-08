@@ -40,7 +40,6 @@ export function replaceHash(hash) {
 const SIZE_SHORT = { '60ml Tasting': 'Tasting', '90ml Pour': 'Pour', '180ml Carafe': 'Carafe' };
 export const sizeShort = (s) => SIZE_SHORT[s] || s;
 
-export const money = (n) => (n == null ? '' : `S$${Number(n).toFixed(2)}`);
 
 export function fmtDate(iso) {
   if (!iso) return '';

@@ -147,8 +147,8 @@ def test_drink_details_combination_and_photos(project):
     run(ship)
     a = load(ship, "drinks/sake-a.json")
     assert a["favourite"] is True and len(a["visits"]) == 2
-    assert [v["where"] for v in a["visits"]] == [None, "Sake Hub"]   # newest first; "Unknown" -> null
-    assert a["visits"][0]["price"] == 58.0
+    assert [v["where"] for v in a["visits"]] == ["Sake Hub", None]   # no price (free) first, then the  bottle; "Unknown" -> null
+    assert all("price" not in v for v in a["visits"])               # Plan 11
     assert [x["label"] for x in a["spec"]][:3] == ["Grade", "Polishing ratio", "Rice"]
     assert [p["kind"] for p in a["photos"]] == ["front"]          # the front image only (Plan 10 section 7)
     b = load(ship, "drinks/sake-b.json")

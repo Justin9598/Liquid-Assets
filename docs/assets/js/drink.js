@@ -5,7 +5,7 @@ import { board, emptyHTML, glossaryEntry, loadGlossary, pageHTML, termHTML } fro
 import { getJSON, img } from './data.js';
 import { icon } from './icons.js';
 import { drinkShell } from './shells.js';
-import { $, $$, esc, fmtDate, money, num, setTitle, short, sizeShort, stars } from './util.js';
+import { $, $$, esc, fmtDate, num, setTitle, short, sizeShort, stars } from './util.js';
 
 const isHangul = (s) => /[ᄀ-ᇿ㄰-㆏가-힯]/.test(s || '');
 const COLOUR = { colourless: '#f4f1e4', 'lemon-green': '#e1ea9a', lemon: '#efe27a', gold: '#dfb73d', amber: '#c4842a', brown: '#774a22' };
@@ -83,13 +83,12 @@ function paragraphs(text) {
   return String(text).split(/\n\s*\n|\n/).map((p) => p.trim()).filter(Boolean).map((p) => `<p class="t-body">${esc(p)}</p>`).join('');
 }
 
-/** One visit as a chalked line on the tab: date, size, where, then the price at the right. */
+/** One visit as a chalked line on the tab: date, size and where (no price, Plan 11). */
 function visitLine(v) {
   const bits = [v.date && `<span class="v-date">${esc(fmtDate(v.date))}</span>`, v.size && `<span>${esc(sizeShort(v.size))}</span>`, v.where && `<span>${esc(v.where)}</span>`].filter(Boolean);
-  if (v.price != null) bits.push(`<span class="v-price">${esc(money(v.price))}</span>`);
   return bits.join('');
 }
-const visitText = (v) => [v.date && fmtDate(v.date), v.size && sizeShort(v.size), v.where, v.price != null && money(v.price)].filter(Boolean).join(' · ');
+const visitText = (v) => [v.date && fmtDate(v.date), v.size && sizeShort(v.size), v.where].filter(Boolean).join(' · ');
 
 export async function mount(root, ctx) {
   const { ix, id, state } = ctx;

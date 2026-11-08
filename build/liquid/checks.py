@@ -25,7 +25,7 @@ SCHEMAS = {
                      "about": "s?", "url": "s?"},
         "abv": "n?", "styles": ["s"], "favourite": "b", "rating": "n?",
         "spec": [{"label": "s", "value": "any"}], "tasting": "any", "story": "s?",
-        "visits": [{"date": "s?", "size": "s?", "where": "s?", "price": "n?", "note": "s?"}],
+        "visits": [{"date": "s?", "size": "s?", "where": "s?", "note": "s?"}],
         "photos": [{"kind": "s", "caption": "s", "web": "s", "w": "i", "h": "i"}],
         "moreFromProducer": ["s"], "prev": "s?", "next": "s?"},
     "producers.json": [{
@@ -229,6 +229,10 @@ def _webp_chunks(raw):
     return out
 
 
+_PRICE_KEY = re.compile(r'"price"\s*:')
+_PRICE_AMOUNT = re.compile(r"S\$\s*\d")
+
+
 def scan_published(docs_dir, photo_files, notes, issues, extra_markers=()):
     """The last gate (Plan 08 section 6): everything actually on disk under docs/data and docs/img.
 
@@ -253,6 +257,8 @@ def scan_published(docs_dir, photo_files, notes, issues, extra_markers=()):
             if p.name.casefold() in names:                 # a published file is never called by an original photo's name
                 issues.error("E02", f"Privacy leak: published file {rel} is named like an original photo")
             if p.suffix == ".json":
+                if _PRICE_KEY.search(p.read_text(encoding="utf-8")) or _PRICE_AMOUNT.search(p.read_text(encoding="utf-8")):
+                    issues.error("E02", f"Privacy leak: a price appears in published file {rel} (Plan 11)")
                 _scan_data_text(p.relative_to(base).as_posix(), p.read_text(encoding="utf-8"), markers, filenames, notes,
                                 issues, where=sub + "/")
                 continue

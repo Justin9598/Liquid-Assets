@@ -162,6 +162,7 @@ The permission system blocks the shipper's push, so whoever the owner names push
 | D16 | Hirako Shuzo's website (2026-11-03) | **The owner chose to keep it.** `https://www.hirakoushuzou.jp/` loads as a blank page for both the researcher and the designer, but it stays published as an owner-approved exception to D15. |
 | D17 | Japan batch 4 (2026-11-03) | **Approved.** `hamada-shoten` displays as "Hamada": the maker is 株式会社濱田, confirmed from the bottle label (濱田, 紀州石神). `katoukichibee-shoten` displays as "Kato Kichibee Shoten", with the brewery's own "Katoukichibee Shouten" in Brands. Page Keys are unchanged (D14). Iinuma Honke's Founded is blank. Gyokusendo's 無風 reading is dropped from Brands. Kameizumi's and Kato Kichibee's websites are kept, because their home pages load (D15). Miho Imada and Shinji Kawabata are Masters, romanised on the official sites. |
 | D18 | New makers from the 2026-11-07 batch (owner approved) | Hara Shuzo: skeleton plus research, `approved`. Azumatsuru Shuzo, Carlsberg and Kronenbourg: skeleton only, `draft`. See `updates/2026-11-07-omu-nomu-space-box.md`. |
+| D19 | New makers from the 2026-11-08 batch (owner approved) | Heiwa Shuzo, Wakanoi Shuzo, Shindo Shuzoten and Eikun Shuzo: skeleton only, `draft`. See `updates/2026-11-08-shu-kuu-sakanahikaru.md`. |
 
 ## 11. Batch 1 review fixes (2026-11-02)
 

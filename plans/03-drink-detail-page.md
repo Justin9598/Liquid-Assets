@@ -191,6 +191,9 @@ One line per Core row. **94%** of drinks (248 of 265) have exactly one visit, an
 | Size | `Size` | "720ml Bottle", "Tasting" … |
 | Where | `Bought From` | Shown, as decided in Plan 02 Q2. "Unknown" (20 rows) is left out. |
 | Price | `Price (S$)` | "", always 2 decimal places. Left out when empty. |
+
+> *Superseded by [Plan 11](11-no-prices.md) (2026-11-08): prices are no longer published. Visits are listed cheapest first, with no price shown.*
+
 | Visit note | `Visit Note` | Small italic text under the line |
 
 Order: by date, newest first. Rows without a date come after, in ledger order. The heading reads *"The Tab: had 4 times"*. When there is only one visit, the section shrinks to one line inside the hero's quick facts, and the separate panel is left out.
