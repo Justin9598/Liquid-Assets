@@ -45,7 +45,7 @@ def test_plans_carry_no_prices():
 
 
 def test_the_check_itself_catches_prices():
-    assert AMOUNT.search("paid  for it")
+    assert AMOUNT.search("paid " + "S" + "$" + "12.50 for it")      # built in parts so this file carries no amount itself
     table = "| Name | Price (S$) |\n|---|---|\n| A | 12 |\n"
     assert _price_column_values(table)
     assert not _price_column_values("| Name | Price (S$) |\n|---|---|\n| A |  |\n")
