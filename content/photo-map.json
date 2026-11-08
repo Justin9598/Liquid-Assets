@@ -1680,5 +1680,72 @@
    0.34
   ],
   "labelStatus": "ok"
+ },
+ "eikun-murasaki-no-eikun-junmai-ginjo": {
+  "labelCrop": [
+   0.2,
+   0.49,
+   0.51,
+   0.43
+  ],
+  "labelStatus": "ok"
+ },
+ "gakki-masamune-junjo": {
+  "labelCrop": [
+   0.2,
+   0.49,
+   0.56,
+   0.44
+  ],
+  "labelStatus": "ok"
+ },
+ "gasanryu-gokugetsu-junmai-daiginjo": {
+  "labelCrop": [
+   0.18,
+   0.48,
+   0.5,
+   0.47
+  ],
+  "labelStatus": "ok"
+ },
+ "kenkonichi-ryu-ryu-shinka-junmai-daiginjo": {
+  "labelCrop": [
+   0.24,
+   0.66,
+   0.53,
+   0.32
+  ],
+  "labelStatus": "ok"
+ },
+ "kenkonichi-tokubetsu-junmai-sasanishiki": {
+  "labelCrop": [
+   0.27,
+   0.58,
+   0.42,
+   0.36
+  ],
+  "labelStatus": "ok"
+ },
+ "kid-natsu-no-hayate-junmai-ginjo": {
+  "labelCrop": [
+   0.2,
+   0.5,
+   0.46,
+   0.43
+  ],
+  "labelStatus": "ok"
+ },
+ "wakanoi-hanamaru-junmai-ginjo-yukimuro": {
+  "labelCrop": [
+   0.24,
+   0.55,
+   0.56,
+   0.42
+  ],
+  "labelStatus": "ok"
+ },
+ "suntory-kakubin-highball": {
+  "labelStatus": "skip",
+  "labelSkip": "a highball in a mug: no bottle or paper label in the photo"
  }
 }

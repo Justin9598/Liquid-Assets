@@ -1,16 +1,30 @@
 {
  "key": "morishima-shuzo",
  "name": "Morishima Shuzo",
- "native": null,
- "location": "Ibaraki",
+ "native": "森島酒造",
+ "location": "Hitachi, Ibaraki",
  "region": "Ibaraki",
  "country": "Japan",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "founded": 1869,
+ "master": "Shoichiro Morishima",
+ "website": "https://www.morishima-sake.jp/",
+ "brands": [
+  "Morishima",
+  "Morishima 25+",
+  "Taikan",
+  "Fuji Taikan",
+  "Morishima Sake brewery"
+ ],
+ "about": [
+  "Morishima Shuzo was founded in October 1869 in Kawajiri, in northern Hitachi, Ibaraki, by Morishima Michimasa, a former samurai of the Mito domain. The site had underground water from the southern Abukuma mountains and plenty of rice. The brewery and house burned in 1945 and were rebuilt with Oya stone.",
+  "The Taikan brand dates from 1953, when the fourth head knew the painter Yokoyama Taikan. The sixth head, Shoichiro, passed the Nanbu toji exam in 2006, the first person from Ibaraki to do so, and he brews the Morishima label. The brewery won its first national sake awards gold in 1959."
+ ],
+ "sources": [
+  "https://www.morishima-sake.jp/en/histories.html",
+  "https://www.morishima-sake.jp/en/about.html",
+  "https://www.morishima-sake.jp/ja/histories.html",
+  "https://www.morishima-sake.jp/ja/about.html"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

@@ -6,11 +6,11 @@
  "producer": {
   "key": "masuda-tokubee-shoten",
   "name": "Masuda Tokubee Shoten",
-  "native": null,
-  "location": "Kyoto, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "増田德兵衞商店",
+  "location": "Fushimi, Kyoto, Japan",
+  "founded": 1675,
+  "about": "Masuda Tokubee Shoten began in 1675 beside the Toba Kaido road in Kyoto, running a sake shop and a rice shop. The brewery was damaged in the Battle of Toba-Fushimi in 1868 and rebuilt on its present site in Fushimi. The Tsuki no Katsura name comes from a poem by the courtier Ayanokoji Arinaga about drawing river water at night.",
+  "url": "https://www.tsukinokatsura.co.jp/"
  },
  "abv": 17.2,
  "styles": [

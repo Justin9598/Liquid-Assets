@@ -1,16 +1,25 @@
 {
  "key": "kojima-sohonten",
  "name": "Kojima Sohonten",
- "native": null,
- "location": "Yamagata",
+ "native": "小嶋総本店",
+ "location": "Yonezawa, Yamagata",
  "region": "Yamagata",
  "country": "Japan",
- "founded": null,
+ "founded": 1597,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.sake-toko.co.jp/",
+ "brands": [
+  "Toko"
+ ],
+ "about": [
+  "Kojima Sohonten is a sake brewery in Yonezawa, Yamagata. It began in 1597, when Kojima Yazaemon opened a sake and pawn shop. Under the Uesugi family it became the official sake supplier to the Yonezawa domain, and the brewery says it was one of the few allowed to keep brewing in years when rice shortages brought a ban on sake.",
+  "The company was incorporated in 1952. Its name, meaning main house, is said to reflect the many Yonezawa liquor businesses run by relatives. Its brand is Toko. The former brewing house became a museum in 1984, and the 23rd Yazaemon is chairman."
+ ],
+ "sources": [
+  "https://www.sake-toko.co.jp/about/",
+  "https://www.sake-toko.co.jp/company/",
+  "https://www.sake-toko.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,
@@ -28,6 +37,8 @@
  "moreFromRegion": [
   "fuji-shuzo",
   "kamenoi-shuzo",
-  "takagi-shuzo"
+  "shindo-shuzoten",
+  "takagi-shuzo",
+  "wakanoi-shuzo"
  ]
 }

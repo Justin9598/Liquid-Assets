@@ -6,11 +6,11 @@
  "producer": {
   "key": "miyaizumi-meijo",
   "name": "Miyaizumi Meijo",
-  "native": null,
-  "location": "Fukushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "宮泉銘醸",
+  "location": "Aizuwakamatsu, Fukushima, Japan",
+  "founded": 1955,
+  "about": "Miyaizumi Meijo is in Aizuwakamatsu, Fukushima. It began in December 1955 as Miyamori Keiji Shuzojo and was incorporated as Miyaizumi Meijo in April 1964. It makes sake and honkaku shochu under the names Sharaku, Aizu Miyaizumi and Genbu.",
+  "url": "https://www.miyaizumi.co.jp/"
  },
  "abv": 16,
  "styles": [],

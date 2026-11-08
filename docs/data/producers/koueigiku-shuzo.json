@@ -1,16 +1,26 @@
 {
  "key": "koueigiku-shuzo",
  "name": "Koueigiku Shuzo",
- "native": null,
- "location": "Saga",
+ "native": "光栄菊酒造",
+ "location": "Ogi, Saga",
  "region": "Saga",
  "country": "Japan",
  "founded": null,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.instagram.com/koueigiku/",
+ "brands": [
+  "Koueigiku",
+  "Hello! Koueigiku"
+ ],
+ "about": [
+  "Koueigiku Shuzo is a sake brewery in Ogi, a city in the middle of Saga Prefecture, with the Chikushi Mountains to the north and the Ariake Sea to the south. It carries on the name of an older local brewery that closed, and its present team began brewing again around 2019 in a building from the Meiji and Taisho periods.",
+  "Most of its labels leave out the sake grade, rice variety, milling rate and other figures, so that drinkers come to the sake without expectations. The brewery keeps temperatures low from brewing to bottling to limit oxidation, and it treats a measure of acidity as a good quality."
+ ],
+ "sources": [
+  "https://umamimart.com/blogs/main/interview-with-master-brewer-katsuaki-yamamoto-of-koueigiku-brewery",
+  "https://hellosake.com/en/breweries/dSGvGxcp3g3byQmXNnSB",
+  "https://www.instagram.com/koueigiku/"
+ ],
  "related": [],
  "tally": {
   "drinks": 2,

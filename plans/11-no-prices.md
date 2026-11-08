@@ -28,7 +28,11 @@ This replaces Plan 03 §8.2 and its decision Q2 ("Show it").
 - No published file under `docs/data` may contain a `"price"` key.
 - No published file may contain an amount written as `S$` followed by a number.
 
-## 4. Acceptance
+## 4. Plans carry no prices either (owner, 2026-11-08)
+
+The repo is public, so the plan files carry no amounts. Update notes leave the price out, and the researcher's private proposals keep it. On 2026-11-08 the designer took the amounts out of Plan 03's examples and the three update notes. Earlier versions are still in git history.
+
+## 5. Acceptance
 
 - [ ] `grep` finds no `"price"` in `docs/data`, and the new E02 check passes.
 - [ ] A drink with several visits at different prices lists them cheapest first, with no price shown. A test checks one real example from the ledger, with free tastings first.

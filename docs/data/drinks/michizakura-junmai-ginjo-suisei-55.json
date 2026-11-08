@@ -6,11 +6,11 @@
  "producer": {
   "key": "michizakura-shuzo",
   "name": "Michizakura Shuzo",
-  "native": null,
-  "location": "Hokkaido, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "三千櫻酒造",
+  "location": "Higashikawa, Hokkaido, Japan",
+  "founded": 1877,
+  "about": "Michizakura Shuzo began in 1877 in Nakatsugawa, Gifu. In November 2020, after 143 years there, it moved to Higashikawa, Hokkaido, and reopened as the town's publicly owned, privately run brewery, the first brewery in Higashikawa.",
+  "url": "https://www.michizakura.jp/"
  },
  "abv": 15,
  "styles": [],

@@ -6,11 +6,11 @@
  "producer": {
   "key": "kitanishi-shuzo",
   "name": "Kitanishi Shuzo",
-  "native": null,
-  "location": "Saitama, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "北西酒造",
+  "location": "Ageo, Saitama, Japan",
+  "founded": 1894,
+  "about": "Kitanishi Shuzo was founded in 1894 by Kitanishi Kamekichi in Hiratsuka, now part of Ageo, Saitama. In 1904 it moved to its present site in Kamimachi, Ageo, once a post town on the Nakasendo road. It brews with medium hard water that comes underground from Chichibu.",
+  "url": "https://www.kitanishishuzo.co.jp/"
  },
  "abv": 16,
  "styles": [],

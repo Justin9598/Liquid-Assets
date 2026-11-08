@@ -1,0 +1,55 @@
+{
+ "id": "suntory-kakubin-highball",
+ "name": "Suntory Kakubin Highball",
+ "category": "cocktails",
+ "sub": "highball",
+ "producer": {
+  "key": "suntory",
+  "name": "Suntory",
+  "native": null,
+  "location": "Osaka, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [
+  "Sparkling"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "Highball"
+  },
+  {
+   "label": "Base",
+   "value": "Suntory Kakubin whisky"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-07",
+   "size": null,
+   "where": "魚光る | SAKANAHIKARU",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/suntory-kakubin-highball-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "suntory-world-whisky-ao"
+ ],
+ "prev": "suntory-kakubin-highball",
+ "next": "suntory-kakubin-highball"
+}

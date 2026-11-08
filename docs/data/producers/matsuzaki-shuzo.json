@@ -1,16 +1,25 @@
 {
  "key": "matsuzaki-shuzo",
  "name": "Matsuzaki Shuzo",
- "native": null,
- "location": "Fukushima",
+ "native": "松崎酒造",
+ "location": "Tenei, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
- "founded": null,
+ "founded": 1892,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "http://matsuzakisyuzo.com/",
+ "brands": [
+  "Hirotogawa"
+ ],
+ "about": [
+  "Matsuzaki Shuzo was founded in 1892 in Tenei, a small rice growing village in Fukushima, and its history starts with Matsuzaki Shichinosuke, who ran a koji shop. Its brand Hirotogawa takes its name from Hirotogawa, the old name of the nearby Shakado River.",
+  "For most of its history it sold only locally, and it began national distribution in 2011. Most of its sake uses Yume no Ka, a Fukushima brewing rice developed in 2000, grown mainly around Tenei. The water is medium hard well water from the grounds, and the sixth generation head also serves as toji."
+ ],
+ "sources": [
+  "http://matsuzakisyuzo.com/about/",
+  "http://matsuzakisyuzo.com/company/",
+  "http://matsuzakisyuzo.com/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,
@@ -32,8 +41,8 @@
   "puku-puku-brewing",
   "haccoba-craft-sake-brewery",
   "ariga-jozo",
+  "ohki-daikichi-honten",
   "homare-shuzo",
-  "miyaizumi-meijo",
-  "ohki-daikichi-honten"
+  "miyaizumi-meijo"
  ]
 }

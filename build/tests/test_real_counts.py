@@ -16,8 +16,8 @@ def test_real_counts(tmp_path):
     res = run(ship, ledger_path=LEDGER, photos_dir=SHIP.parent / "Photos", new_dir=tmp_path / "New", check=True)
     assert res.exit_code == 0, res.issues.errors
     c = res.summary["counts"]
-    assert c["drinks"] == 281
-    assert c["categories"] == {"Sake": 250, "Fermented Beverages": 15, "Umeshu": 3, "Wine": 3, "Spirits": 8,
-                               "Cocktails": 2}
+    assert c["drinks"] == 289
+    assert c["categories"] == {"Sake": 257, "Fermented Beverages": 15, "Umeshu": 3, "Wine": 3, "Spirits": 8,
+                               "Cocktails": 3}
     assert c["unshelved"] == 0
-    assert sum(c["categories"].values()) == 281
+    assert sum(c["categories"].values()) == 289

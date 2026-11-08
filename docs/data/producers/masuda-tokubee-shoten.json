@@ -1,16 +1,26 @@
 {
  "key": "masuda-tokubee-shoten",
  "name": "Masuda Tokubee Shoten",
- "native": null,
- "location": "Kyoto",
+ "native": "増田德兵衞商店",
+ "location": "Fushimi, Kyoto",
  "region": "Kyoto",
  "country": "Japan",
- "founded": null,
+ "founded": 1675,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.tsukinokatsura.co.jp/",
+ "brands": [
+  "Tsuki no Katsura",
+  "Masuda Tokubee Shoten"
+ ],
+ "about": [
+  "Masuda Tokubee Shoten began in 1675 beside the Toba Kaido road in Kyoto, running a sake shop and a rice shop. The brewery was damaged in the Battle of Toba-Fushimi in 1868 and rebuilt on its present site in Fushimi. The Tsuki no Katsura name comes from a poem by the courtier Ayanokoji Arinaga about drawing river water at night.",
+  "In 1964 the 13th head made a sparkling nigori sake that the brewery calls the first in Japan. Since 1965 it has aged junmai daiginjo in porcelain jars. It has also revived local sake rice."
+ ],
+ "sources": [
+  "https://www.tsukinokatsura.co.jp/history/",
+  "https://www.tsukinokatsura.co.jp/company/",
+  "https://www.tsukinokatsura.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

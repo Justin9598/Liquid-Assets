@@ -1,16 +1,27 @@
 {
  "key": "konohana-brewery",
  "name": "Konohana Brewery",
- "native": null,
- "location": "Tokyo",
+ "native": "木花之醸造所",
+ "location": "Asakusa, Tokyo",
  "region": "Tokyo",
  "country": "Japan",
- "founded": null,
+ "founded": 2020,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://konohanano-brewery.com/",
+ "brands": [
+  "ALLWRIGHT",
+  "Konohanano Brewery"
+ ],
+ "about": [
+  "Konohana Brewery, whose own spelling is Konohanano Brewery, is a small craft sake brewery in Asakusa, Tokyo. It describes itself as Asakusa's first craft sake brewery, and trade listings date it to 2020. It has its own koji room and belongs to the Japan Craft Sake Breweries Association.",
+  "The brewery is known for doburoku, a coarse, unfiltered rice drink. The ALLWRIGHT name is also used by the bar and shop in the same building."
+ ],
+ "sources": [
+  "https://konohanano-brewery.com/",
+  "https://en.sake-times.com/breweries/konohanano-brewery",
+  "https://88bamboo.co/blogs/features/inside-konohanano-brewery-crafting-doburoku-with-the-women-brewing-up-tokyo-s-craft-sake-scene",
+  "https://hellosake.com/en/breweries/k4MejXC8IORNDjQwllBb"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

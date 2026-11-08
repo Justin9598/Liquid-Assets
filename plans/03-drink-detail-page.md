@@ -66,8 +66,8 @@ Visually it continues the bar scene (Plan 01 §7, revised). The top third is the
 │ │ More from Fukunishiki (3):  ▭ ▭ ▭ →                           ││
 │ └───────────────────────────────────────────────────────────────┘│
 │ ┌── THE TAB ────────────────────────────────────────────────────┐│
-│ │ 720ml Bottle · Mirai Sake Hall ·                       ││
-│ │ 720ml Bottle · Shu Kuu Izakaya ·                       ││
+│ │ 720ml Bottle · Mirai Sake Hall                               ││
+│ │ 720ml Bottle · Shu Kuu Izakaya                               ││
 │ └───────────────────────────────────────────────────────────────┘│
 └──────────────────────────────────────────────────────────────────┘
 ```
@@ -190,7 +190,7 @@ One line per Core row. **94%** of drinks (248 of 265) have exactly one visit, an
 | Date | `Acquired`, else `Added` (date part only) | Left out when both are empty, which is most rows today |
 | Size | `Size` | "720ml Bottle", "Tasting" … |
 | Where | `Bought From` | Shown, as decided in Plan 02 Q2. "Unknown" (20 rows) is left out. |
-| Price | `Price (S$)` | "", always 2 decimal places. Left out when empty. |
+| Price | `Price (S$)` | Not published (Plan 11). |
 
 > *Superseded by [Plan 11](11-no-prices.md) (2026-11-08): prices are no longer published. Visits are listed cheapest first, with no price shown.*
 

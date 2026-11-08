@@ -1,0 +1,31 @@
+{
+ "key": "eikun-shuzo",
+ "name": "Eikun Shuzo",
+ "native": null,
+ "location": "Shimizu, Shizuoka",
+ "region": "Shizuoka",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "eikun-murasaki-no-eikun-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "doi-shuzojo"
+ ]
+}

@@ -6,11 +6,11 @@
  "producer": {
   "key": "kubiki-shuzo",
   "name": "Kubiki Shuzo",
-  "native": null,
-  "location": "Niigata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "頚城酒造",
+  "location": "Joetsu, Niigata, Japan",
+  "founded": 1697,
+  "about": "Kubiki Shuzo is a sake brewery in Kakizaki, Joetsu, Niigata. The present company was formed in 1936, when two local breweries, Yagi Shuzo and Komatsu Shuzo, merged. The Yagi family say their sake making goes back to 1697, when the fifth head began brewing in what is now Joetsu.",
+  "url": "https://kubiki-shuzo.co.jp/"
  },
  "abv": 16,
  "styles": [],

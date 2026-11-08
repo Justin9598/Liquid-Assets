@@ -6,11 +6,11 @@
  "producer": {
   "key": "kojima-sohonten",
   "name": "Kojima Sohonten",
-  "native": null,
-  "location": "Yamagata, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "小嶋総本店",
+  "location": "Yonezawa, Yamagata, Japan",
+  "founded": 1597,
+  "about": "Kojima Sohonten is a sake brewery in Yonezawa, Yamagata. It began in 1597, when Kojima Yazaemon opened a sake and pawn shop. Under the Uesugi family it became the official sake supplier to the Yonezawa domain, and the brewery says it was one of the few allowed to keep brewing in years when rice shortages brought a ban on sake.",
+  "url": "https://www.sake-toko.co.jp/"
  },
  "abv": null,
  "styles": [],

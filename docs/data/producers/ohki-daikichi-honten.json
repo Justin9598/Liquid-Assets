@@ -13,12 +13,17 @@
  "sources": [],
  "related": [],
  "tally": {
-  "drinks": 1,
+  "drinks": 2,
   "categories": 1,
   "favourites": 0,
-  "timesHad": 1
+  "timesHad": 2
  },
  "drinks": [
+  {
+   "id": "gakki-masamune-junjo",
+   "category": "sake",
+   "sub": "junmai"
+  },
   {
    "id": "shizenango-bio-tokubetsu-junmai",
    "category": "sake",

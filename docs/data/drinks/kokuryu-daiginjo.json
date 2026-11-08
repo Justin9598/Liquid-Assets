@@ -6,11 +6,11 @@
  "producer": {
   "key": "kokuryu-shuzo",
   "name": "Kokuryu Shuzo",
-  "native": null,
-  "location": "Fukui, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "黒龍酒造",
+  "location": "Eiheiji, Fukui, Japan",
+  "founded": 1804,
+  "about": "Kokuryu Shuzo is in Matsuoka, Eiheiji, Fukui. Its predecessor, Ishidaya, was founded in 1804 by Ishidaya Nizaemon, who branched off from the main Ishidaya family. It traded as Mizuno Shuzojo until it became Kokuryu Shuzo in 1948. Old records show the Kokuryu brand, named for Kokuryu River, an old name of the Kuzuryu River.",
+  "url": "https://www.kokuryu.co.jp/"
  },
  "abv": 16,
  "styles": [],

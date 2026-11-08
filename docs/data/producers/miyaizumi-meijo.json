@@ -1,16 +1,26 @@
 {
  "key": "miyaizumi-meijo",
  "name": "Miyaizumi Meijo",
- "native": null,
- "location": "Fukushima",
+ "native": "宮泉銘醸",
+ "location": "Aizuwakamatsu, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
- "founded": null,
+ "founded": 1955,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.miyaizumi.co.jp/",
+ "brands": [
+  "Sharaku",
+  "Aizu Miyaizumi",
+  "Genbu"
+ ],
+ "about": [
+  "Miyaizumi Meijo is in Aizuwakamatsu, Fukushima. It began in December 1955 as Miyamori Keiji Shuzojo and was incorporated as Miyaizumi Meijo in April 1964. It makes sake and honkaku shochu under the names Sharaku, Aizu Miyaizumi and Genbu.",
+  "The company says Aizu's basin climate suits brewing. More than 140 days a year fall below freezing, which keeps stray microbes low, while about 100 days a year pass 25 degrees, which helps the sake mature. It uses rice from Aizu and Fukushima as well as rice from well known growing regions elsewhere."
+ ],
+ "sources": [
+  "https://www.miyaizumi.co.jp/about",
+  "https://www.miyaizumi.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,
@@ -32,8 +42,8 @@
   "puku-puku-brewing",
   "haccoba-craft-sake-brewery",
   "ariga-jozo",
+  "ohki-daikichi-honten",
   "homare-shuzo",
-  "matsuzaki-shuzo",
-  "ohki-daikichi-honten"
+  "matsuzaki-shuzo"
  ]
 }

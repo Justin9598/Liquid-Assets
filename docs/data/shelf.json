@@ -1,28 +1,30 @@
 {
- "generated": "2026-11-07T00:54:50Z",
+ "generated": "2026-11-08T00:24:00Z",
  "categories": [
   {
    "key": "sake",
    "name": "Sake",
    "vessel": "sake",
-   "drinkCount": 250,
+   "drinkCount": 257,
    "subcategories": [
     {
      "key": "junmai-daiginjo",
      "name": "Junmai Daiginjo",
      "native": "純米大吟醸",
-     "drinkCount": 49,
+     "drinkCount": 51,
      "labels": [
       "img/labels/dassai-39-junmai-daiginjo-enshin-bunri.webp",
       "img/labels/dassai-45-junmai-daiginjo.webp",
       "img/labels/date-seven-season-2-episode-5-koganesawa.webp",
       "img/labels/date-seven-season-2-episode-5-yamawa.webp",
+      "img/labels/gasanryu-gokugetsu-junmai-daiginjo.webp",
       "img/labels/harada-junmai-daiginjo-muroka-nama-gensh.webp",
       "img/labels/hito-roman.webp",
       "img/labels/junsei-jd.webp",
       "img/labels/kagatobi-junmai-daiginjo.webp",
       "img/labels/kagatobi-junmai-daiginjo-gokujo-genshu.webp",
       "img/labels/kankiku-seijitsu-special-yell-junmai-daiginjo.webp",
+      "img/labels/kenkonichi-ryu-ryu-shinka-junmai-daiginjo.webp",
       "img/labels/kudoki-jozu-juicy-karakuchi-kai.webp",
       "img/labels/mansakunohana-junmai-daiginjo-nama-genshu-kame.webp",
       "img/labels/mimurosugi-roman-junmai-daiginjo-35.webp",
@@ -37,6 +39,16 @@
       "img/labels/suigei-junmai-daiginjo-joh.webp"
      ],
      "drinks": [
+      {
+       "id": "gasanryu-gokugetsu-junmai-daiginjo",
+       "name": "Gasanryu Gokugetsu Junmai Daiginjo",
+       "label": "img/labels/gasanryu-gokugetsu-junmai-daiginjo.webp"
+      },
+      {
+       "id": "kenkonichi-ryu-ryu-shinka-junmai-daiginjo",
+       "name": "Kenkonichi Ryu Ryu Shinka Junmai Daiginjo",
+       "label": "img/labels/kenkonichi-ryu-ryu-shinka-junmai-daiginjo.webp"
+      },
       {
        "id": "oze-no-yukidoke-junmai-daiginjo-halloween",
        "name": "Oze no Yukidoke Junmai Daiginjo Halloween",
@@ -288,18 +300,20 @@
      "key": "junmai-ginjo",
      "name": "Junmai Ginjo",
      "native": "純米吟醸",
-     "drinkCount": 75,
+     "drinkCount": 78,
      "labels": [
       "img/labels/aramasa-colors-cosmos.webp",
       "img/labels/ariiso-akebono-flat.webp",
       "img/labels/chuai-junmai-ginjo.webp",
       "img/labels/daishinshu-chokarakuchi-junmai-ginjo.webp",
+      "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp",
       "img/labels/hanami-roman.webp",
       "img/labels/harada.webp",
       "img/labels/hikomago-hikozon-junmai-ginjo-funakuchishu-nam.webp",
       "img/labels/izumibashi-shiboritate.webp",
       "img/labels/kameizumi-junmai-ginjo-nama-genshu-cel-24.webp",
       "img/labels/kenkonichi-junmai-ginjo-tejikuri.webp",
+      "img/labels/kid-natsu-no-hayate-junmai-ginjo.webp",
       "img/labels/koganesawa-hitomebore-brut.webp",
       "img/labels/kokushimuso-junmai-ginjo-kitashizuku.webp",
       "img/labels/koshi-no-kanbai-junmai-ginjo-sai-mikino-.webp",
@@ -338,6 +352,7 @@
       "img/labels/toko-kenjoshu-junmai-ginjo-tosui.webp",
       "img/labels/toyobijin-jundou-ichizu-junmai-ginjo-omachi.webp",
       "img/labels/wakamusume-tropical-bunbun-junmai-ginjo.webp",
+      "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp",
       "img/labels/wataribune-shiboritate-namagin-muroka.webp",
       "img/labels/yamamoto-junmai-ginjo-uki-uki.webp",
       "img/labels/yamamoto-junmai-ginjo-wain.webp",
@@ -347,6 +362,21 @@
       "img/labels/zaruso-hourai-junmai-ginjo-oringo-kudasai.webp"
      ],
      "drinks": [
+      {
+       "id": "eikun-murasaki-no-eikun-junmai-ginjo",
+       "name": "Eikun Murasaki no Eikun Junmai Ginjo",
+       "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
+      },
+      {
+       "id": "wakanoi-hanamaru-junmai-ginjo-yukimuro",
+       "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
+       "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
+      },
+      {
+       "id": "kid-natsu-no-hayate-junmai-ginjo",
+       "name": "Kid Natsu no Hayate Junmai Ginjo",
+       "label": "img/labels/kid-natsu-no-hayate-junmai-ginjo.webp"
+      },
       {
        "id": "yamamoto-sunset-orange-junmai-ginjo",
        "name": "Yamamoto Sunset Orange Junmai Ginjo",
@@ -728,17 +758,23 @@
      "key": "tokubetsu-junmai",
      "name": "Tokubetsu Junmai",
      "native": "特別純米",
-     "drinkCount": 11,
+     "drinkCount": 12,
      "labels": [
       "img/labels/against-the-grain-normat-tokubetsu-junma.webp",
       "img/labels/harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu.webp",
       "img/labels/hirotogawa-tokubetsu-junmai.webp",
+      "img/labels/kenkonichi-tokubetsu-junmai-sasanishiki.webp",
       "img/labels/machida-tokubetsu-junmai-55-gohyakumangoku.webp",
       "img/labels/nabeshima-harvest-moon-classic.webp",
       "img/labels/shizenango-bio-tokubetsu-junmai.webp",
       "img/labels/taka-tokubetsu-junmai-fukamari.webp"
      ],
      "drinks": [
+      {
+       "id": "kenkonichi-tokubetsu-junmai-sasanishiki",
+       "name": "Kenkonichi Tokubetsu Junmai Sasanishiki",
+       "label": "img/labels/kenkonichi-tokubetsu-junmai-sasanishiki.webp"
+      },
       {
        "id": "taka-tokubetsu-junmai-fukamari",
        "name": "Taka Tokubetsu Junmai Fukamari",
@@ -800,10 +836,11 @@
      "key": "junmai",
      "name": "Junmai",
      "native": "純米",
-     "drinkCount": 51,
+     "drinkCount": 52,
      "labels": [
       "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp",
       "img/labels/azumatsuru-minori-kimoto-junmai.webp",
+      "img/labels/gakki-masamune-junjo.webp",
       "img/labels/hakugakusen-mufu.webp",
       "img/labels/koueigiku-hello-omachi-sumizake.webp",
       "img/labels/hitakami-chokarakuchi-junmai.webp",
@@ -834,6 +871,11 @@
       "img/labels/yamato-damashii-mizumoto.webp"
      ],
      "drinks": [
+      {
+       "id": "gakki-masamune-junjo",
+       "name": "Gakki Masamune Junjo",
+       "label": "img/labels/gakki-masamune-junjo.webp"
+      },
       {
        "id": "isshou-seishun-shinshu-origarami-honnama",
        "name": "Isshou Seishun Junmai Shinshu Origarami Honnama",
@@ -1887,11 +1929,25 @@
    "key": "cocktails",
    "name": "Cocktails",
    "vessel": "cocktail",
-   "drinkCount": 2,
+   "drinkCount": 3,
    "subcategories": [
     {
-     "key": "all",
-     "name": "Cocktail",
+     "key": "highball",
+     "name": "Highball",
+     "native": null,
+     "drinkCount": 1,
+     "labels": [],
+     "drinks": [
+      {
+       "id": "suntory-kakubin-highball",
+       "name": "Suntory Kakubin Highball",
+       "label": null
+      }
+     ]
+    },
+    {
+     "key": "other",
+     "name": "Other cocktails",
      "native": null,
      "drinkCount": 2,
      "labels": [
@@ -1916,6 +1972,62 @@
  ],
  "counter": {
   "newArrivals": [
+   {
+    "id": "gakki-masamune-junjo",
+    "name": "Gakki Masamune Junjo",
+    "category": "sake",
+    "sub": "junmai",
+    "label": "img/labels/gakki-masamune-junjo.webp"
+   },
+   {
+    "id": "eikun-murasaki-no-eikun-junmai-ginjo",
+    "name": "Eikun Murasaki no Eikun Junmai Ginjo",
+    "category": "sake",
+    "sub": "junmai-ginjo",
+    "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
+   },
+   {
+    "id": "gasanryu-gokugetsu-junmai-daiginjo",
+    "name": "Gasanryu Gokugetsu Junmai Daiginjo",
+    "category": "sake",
+    "sub": "junmai-daiginjo",
+    "label": "img/labels/gasanryu-gokugetsu-junmai-daiginjo.webp"
+   },
+   {
+    "id": "wakanoi-hanamaru-junmai-ginjo-yukimuro",
+    "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
+    "category": "sake",
+    "sub": "junmai-ginjo",
+    "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
+   },
+   {
+    "id": "kenkonichi-tokubetsu-junmai-sasanishiki",
+    "name": "Kenkonichi Tokubetsu Junmai Sasanishiki",
+    "category": "sake",
+    "sub": "tokubetsu-junmai",
+    "label": "img/labels/kenkonichi-tokubetsu-junmai-sasanishiki.webp"
+   },
+   {
+    "id": "kenkonichi-ryu-ryu-shinka-junmai-daiginjo",
+    "name": "Kenkonichi Ryu Ryu Shinka Junmai Daiginjo",
+    "category": "sake",
+    "sub": "junmai-daiginjo",
+    "label": "img/labels/kenkonichi-ryu-ryu-shinka-junmai-daiginjo.webp"
+   },
+   {
+    "id": "kid-natsu-no-hayate-junmai-ginjo",
+    "name": "Kid Natsu no Hayate Junmai Ginjo",
+    "category": "sake",
+    "sub": "junmai-ginjo",
+    "label": "img/labels/kid-natsu-no-hayate-junmai-ginjo.webp"
+   },
+   {
+    "id": "suntory-kakubin-highball",
+    "name": "Suntory Kakubin Highball",
+    "category": "cocktails",
+    "sub": "highball",
+    "label": null
+   },
    {
     "id": "yama-no-kami-san-ohara-red-shiso",
     "name": "Yama no Kami-san Ohara Red Shiso",
@@ -2027,62 +2139,6 @@
     "category": "sake",
     "sub": "junmai-daiginjo",
     "label": "img/labels/oze-no-yukidoke-junmai-daiginjo-halloween.webp"
-   },
-   {
-    "id": "yamamoto-sunset-orange-junmai-ginjo",
-    "name": "Yamamoto Sunset Orange Junmai Ginjo",
-    "category": "sake",
-    "sub": "junmai-ginjo",
-    "label": "img/labels/yamamoto-sunset-orange-junmai-ginjo.webp"
-   },
-   {
-    "id": "woodford-reserve-distillers-select",
-    "name": "Woodford Reserve Distiller's Select",
-    "category": "spirits",
-    "sub": "whisky",
-    "label": "img/labels/woodford-reserve-distillers-select.webp"
-   },
-   {
-    "id": "the-botanist-islay-dry-gin",
-    "name": "The Botanist Islay Dry Gin",
-    "category": "spirits",
-    "sub": "gin",
-    "label": "img/labels/the-botanist-islay-dry-gin.webp"
-   },
-   {
-    "id": "suntory-world-whisky-ao",
-    "name": "Suntory World Whisky Ao",
-    "category": "spirits",
-    "sub": "whisky",
-    "label": "img/labels/suntory-world-whisky-ao.webp"
-   },
-   {
-    "id": "kujira-no-kuromugi",
-    "name": "Kujira no Kuromugi",
-    "category": "spirits",
-    "sub": "shochu",
-    "label": "img/labels/kujira-no-kuromugi.webp"
-   },
-   {
-    "id": "kavalan-distillery-reserve-peated-single-cask-strength",
-    "name": "Kavalan Distillery Reserve Peated Single Cask Strength",
-    "category": "spirits",
-    "sub": "whisky",
-    "label": null
-   },
-   {
-    "id": "ardbeg-smoketrails-cote-rotie-edition",
-    "name": "Ardbeg Smoketrails Côte Rôtie Edition",
-    "category": "spirits",
-    "sub": "whisky",
-    "label": "img/labels/ardbeg-smoketrails-cote-rotie-edition.webp"
-   },
-   {
-    "id": "santa-helena-varietal-cabernet-sauvignon-2025",
-    "name": "Santa Helena Varietal Cabernet Sauvignon 2025",
-    "category": "wine",
-    "sub": "cabernet-sauvignon",
-    "label": "img/labels/santa-helena-varietal-cabernet-sauvignon-2025.webp"
    }
   ],
   "inSeason": {
@@ -2112,14 +2168,14 @@
      "id": "kavalan-highball-whisky-soda",
      "name": "Kavalan Highball Whisky Soda",
      "category": "cocktails",
-     "sub": "all",
+     "sub": "other",
      "label": "img/labels/kavalan-highball-whisky-soda.webp"
     },
     {
      "id": "kavalan-dry-single-malt-highball",
      "name": "Kavalan Dry Single Malt Highball",
      "category": "cocktails",
-     "sub": "all",
+     "sub": "other",
      "label": "img/labels/kavalan-dry-single-malt-highball.webp"
     },
     {
@@ -2228,6 +2284,13 @@
      "label": "img/labels/takezumi-bamboo-spring.webp"
     },
     {
+     "id": "suntory-kakubin-highball",
+     "name": "Suntory Kakubin Highball",
+     "category": "cocktails",
+     "sub": "highball",
+     "label": null
+    },
+    {
      "id": "yamashiroya-fuga-junmai-daiginjo",
      "name": "Yamashiroya Fuga Junmai Daiginjo",
      "category": "sake",
@@ -2247,13 +2310,6 @@
      "category": "sake",
      "sub": "junmai-ginjo",
      "label": null
-    },
-    {
-     "id": "mikotsuru-nigori",
-     "name": "Mikotsuru Junmai Ginjo Sankeinishiki Nigori Nama",
-     "category": "sake",
-     "sub": "junmai-ginjo",
-     "label": null
     }
    ],
    "summer": [
@@ -2261,14 +2317,14 @@
      "id": "kavalan-highball-whisky-soda",
      "name": "Kavalan Highball Whisky Soda",
      "category": "cocktails",
-     "sub": "all",
+     "sub": "other",
      "label": "img/labels/kavalan-highball-whisky-soda.webp"
     },
     {
      "id": "kavalan-dry-single-malt-highball",
      "name": "Kavalan Dry Single Malt Highball",
      "category": "cocktails",
-     "sub": "all",
+     "sub": "other",
      "label": "img/labels/kavalan-dry-single-malt-highball.webp"
     },
     {
@@ -2335,6 +2391,13 @@
      "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
     },
     {
+     "id": "suntory-kakubin-highball",
+     "name": "Suntory Kakubin Highball",
+     "category": "cocktails",
+     "sub": "highball",
+     "label": null
+    },
+    {
      "id": "nasu-kohgen-ai",
      "name": "Nasu Kohgen Ai",
      "category": "fermented",
@@ -2391,6 +2454,20 @@
      "label": null
     },
     {
+     "id": "gakki-masamune-junjo",
+     "name": "Gakki Masamune Junjo",
+     "category": "sake",
+     "sub": "junmai",
+     "label": "img/labels/gakki-masamune-junjo.webp"
+    },
+    {
+     "id": "kid-natsu-no-hayate-junmai-ginjo",
+     "name": "Kid Natsu no Hayate Junmai Ginjo",
+     "category": "sake",
+     "sub": "junmai-ginjo",
+     "label": "img/labels/kid-natsu-no-hayate-junmai-ginjo.webp"
+    },
+    {
      "id": "yama-no-kami-san-ohara-red-shiso",
      "name": "Yama no Kami-san Ohara Red Shiso",
      "category": "sake",
@@ -2403,27 +2480,6 @@
      "category": "sake",
      "sub": "junmai",
      "label": "img/labels/koshinohomare-qn-matsuri.webp"
-    },
-    {
-     "id": "underwater-luminous-sake-yeast-beer",
-     "name": "Underwater Luminous Sake Yeast Beer",
-     "category": "fermented",
-     "sub": "specialty",
-     "label": "img/labels/underwater-luminous-sake-yeast-beer.webp"
-    },
-    {
-     "id": "santa-helena-varietal-cabernet-sauvignon-2025",
-     "name": "Santa Helena Varietal Cabernet Sauvignon 2025",
-     "category": "wine",
-     "sub": "cabernet-sauvignon",
-     "label": "img/labels/santa-helena-varietal-cabernet-sauvignon-2025.webp"
-    },
-    {
-     "id": "raizin-heart-rock-phoenix-dancong-oolong",
-     "name": "RAIZIN Heart Rock Prototype",
-     "category": "sake",
-     "sub": "craft-sake",
-     "label": "img/labels/raizin-heart-rock-phoenix-dancong-oolong.webp"
     }
    ],
    "autumn": [
@@ -2468,6 +2524,13 @@
      "category": "sake",
      "sub": "junmai-ginjo",
      "label": null
+    },
+    {
+     "id": "wakanoi-hanamaru-junmai-ginjo-yukimuro",
+     "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
+     "category": "sake",
+     "sub": "junmai-ginjo",
+     "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
     },
     {
      "id": "azumatsuru-minori-kimoto-junmai",
@@ -2587,13 +2650,6 @@
      "category": "sake",
      "sub": "junmai-ginjo",
      "label": null
-    },
-    {
-     "id": "kariho-junmai-yamahai-choukarakuchi",
-     "name": "Kariho Junmai Yamahai Choukarakuchi",
-     "category": "sake",
-     "sub": "junmai",
-     "label": null
     }
    ],
    "winter": [
@@ -2629,7 +2685,7 @@
      "id": "kavalan-highball-whisky-soda",
      "name": "Kavalan Highball Whisky Soda",
      "category": "cocktails",
-     "sub": "all",
+     "sub": "other",
      "label": "img/labels/kavalan-highball-whisky-soda.webp"
     },
     {

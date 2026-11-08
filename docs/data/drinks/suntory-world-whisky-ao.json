@@ -58,7 +58,9 @@
    "h": 1200
   }
  ],
- "moreFromProducer": [],
+ "moreFromProducer": [
+  "suntory-kakubin-highball"
+ ],
  "prev": "kavalan-distillery-reserve-peated-single-cask-strength",
  "next": "woodford-reserve-distillers-select"
 }

@@ -1,16 +1,25 @@
 {
  "key": "kokuryu-shuzo",
  "name": "Kokuryu Shuzo",
- "native": null,
- "location": "Fukui",
+ "native": "黒龍酒造",
+ "location": "Eiheiji, Fukui",
  "region": "Fukui",
  "country": "Japan",
- "founded": null,
+ "founded": 1804,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.kokuryu.co.jp/",
+ "brands": [
+  "Kokuryu",
+  "Kuzuryu"
+ ],
+ "about": [
+  "Kokuryu Shuzo is in Matsuoka, Eiheiji, Fukui. Its predecessor, Ishidaya, was founded in 1804 by Ishidaya Nizaemon, who branched off from the main Ishidaya family. It traded as Mizuno Shuzojo until it became Kokuryu Shuzo in 1948. Old records show the Kokuryu brand, named for Kokuryu River, an old name of the Kuzuryu River.",
+  "The brewery sells its sake as Kokuryu and Kuzuryu. When the Kanesadajima ageing village was built for low temperature maturing of undiluted sake, the eighth head became president. In 2022 the family company opened ESHIKOTO, a complex that promotes Fukui and Hokuriku culture."
+ ],
+ "sources": [
+  "https://www.kokuryu.co.jp/",
+  "https://www.kokuryu.co.jp/en/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

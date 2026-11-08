@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-07T00:54:50Z",
- "drinkCount": 281,
- "producerCount": 155,
+ "generated": "2026-11-08T00:24:00Z",
+ "drinkCount": 289,
+ "producerCount": 159,
  "sections": {
   "welcome": true,
   "shelves": true,
   "drinks": true,
   "makers": true
  },
- "version": "d222f58322"
+ "version": "ac96fefb06"
 }

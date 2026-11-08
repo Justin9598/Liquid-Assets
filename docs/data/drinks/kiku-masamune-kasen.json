@@ -6,11 +6,11 @@
  "producer": {
   "key": "kiku-masamune-shuzo",
   "name": "Kiku-Masamune Shuzo",
-  "native": null,
-  "location": "Hyogo, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "菊正宗酒造",
+  "location": "Kobe, Hyogo, Japan",
+  "founded": 1659,
+  "about": "Kiku-Masamune is a sake brewery in Mikage, in the Nada district of Kobe. Its history begins in 1659, when Kano Jirodayu Munenori, a timber merchant of the Kano family, moved into sake brewing. The Kiku-Masamune name was registered as a trademark in 1886.",
+  "url": "https://www.kikumasamune.co.jp/"
  },
  "abv": 16,
  "styles": [],

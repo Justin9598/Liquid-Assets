@@ -6,11 +6,11 @@
  "producer": {
   "key": "koueigiku-shuzo",
   "name": "Koueigiku Shuzo",
-  "native": null,
-  "location": "Saga, Japan",
+  "native": "光栄菊酒造",
+  "location": "Ogi, Saga, Japan",
   "founded": null,
-  "about": null,
-  "url": null
+  "about": "Koueigiku Shuzo is a sake brewery in Ogi, a city in the middle of Saga Prefecture, with the Chikushi Mountains to the north and the Ariake Sea to the south. It carries on the name of an older local brewery that closed, and its present team began brewing again around 2019 in a building from the Meiji and Taisho periods.",
+  "url": "https://www.instagram.com/koueigiku/"
  },
  "abv": 14,
  "styles": [

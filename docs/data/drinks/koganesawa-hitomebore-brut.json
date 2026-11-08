@@ -6,11 +6,11 @@
  "producer": {
   "key": "kawakei-shoten",
   "name": "Kawakei Shoten",
-  "native": null,
-  "location": "Miyagi, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "川敬商店",
+  "location": "Misato, Miyagi, Japan",
+  "founded": 1902,
+  "about": "Kawakei Shoten is a sake brewery in Misato, Miyagi. Its first head, Takaharu Kawana, founded it in 1902 in Wakuya, a town the brewery calls Japan's oldest gold mining area, and the family later moved to its present site in what was Nango. Before brewing, the Kawana family were hardware merchants to the Date lords of Wakuya.",
+  "url": "https://koganesawa.com/"
  },
  "abv": null,
  "styles": [

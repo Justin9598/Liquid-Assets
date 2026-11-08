@@ -6,11 +6,11 @@
  "producer": {
   "key": "mukai-shuzo",
   "name": "Mukai Shuzo",
-  "native": null,
-  "location": "Kyoto, Japan",
+  "native": "向井酒造",
+  "location": "Ine, Kyoto, Japan",
   "founded": null,
-  "about": null,
-  "url": null
+  "about": "Mukai Shuzo is a sake brewery at Hirata in Ine, a fishing town on the Sea of Japan coast of northern Kyoto. It calls itself the brewery closest to the sea, and says it makes sake to go with the local food from the sea and the mountains.",
+  "url": "https://www.kuramoto-mukai.jp/"
  },
  "abv": 15,
  "styles": [],

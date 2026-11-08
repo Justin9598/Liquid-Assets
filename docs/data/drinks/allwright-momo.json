@@ -6,11 +6,11 @@
  "producer": {
   "key": "konohana-brewery",
   "name": "Konohana Brewery",
-  "native": null,
-  "location": "Tokyo, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "木花之醸造所",
+  "location": "Asakusa, Tokyo, Japan",
+  "founded": 2020,
+  "about": "Konohana Brewery, whose own spelling is Konohanano Brewery, is a small craft sake brewery in Asakusa, Tokyo. It describes itself as Asakusa's first craft sake brewery, and trade listings date it to 2020. It has its own koji room and belongs to the Japan Craft Sake Breweries Association.",
+  "url": "https://konohanano-brewery.com/"
  },
  "abv": 6,
  "styles": [

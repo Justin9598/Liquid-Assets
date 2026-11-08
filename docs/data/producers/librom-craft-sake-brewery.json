@@ -1,16 +1,26 @@
 {
  "key": "librom-craft-sake-brewery",
  "name": "Librom Craft Sake Brewery",
- "native": null,
- "location": "Fukuoka",
+ "native": "リブロム",
+ "location": "Fukuoka, Fukuoka",
  "region": "Fukuoka",
  "country": "Japan",
  "founded": null,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://librom.jp/",
+ "brands": [
+  "Librom",
+  "LIBROM Craft Sake Brewery"
+ ],
+ "about": [
+  "Librom is a craft sake brewery in the middle of Fukuoka, in Takasago, close to Tenjin. It brews inside the city, with a pub attached so that visitors can watch the work and drink the sake fresh.",
+  "Its sake is made by parallel multiple fermentation, as in traditional sake, with fruit, vegetables, herbs or spices added to give new flavours. It favours ingredients from Kyushu, and especially Fukuoka. The name joins the Italian words for freedom and romance, and the brewery's motto is to brew freely and be romantic."
+ ],
+ "sources": [
+  "https://librom.jp/pages/brewery",
+  "https://librom.jp/",
+  "https://en.sake-times.com/breweries/librom-craft-sake-brewery"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

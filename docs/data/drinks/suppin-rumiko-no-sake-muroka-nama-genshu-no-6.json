@@ -5,12 +5,12 @@
  "sub": "ungraded",
  "producer": {
   "key": "moriki-shuzojo",
-  "name": "Moriki Shuzojo",
-  "native": null,
-  "location": "Mie, Japan",
+  "name": "Moriki Shuzo",
+  "native": "森喜酒造",
+  "location": "Iga, Mie, Japan",
   "founded": null,
-  "about": null,
-  "url": null
+  "about": "Moriki Shuzo is a sake brewery in Iga, Mie. Its founder had a well dug by a priest and opened the brewery there, and named the first brand Tae no Hana after the Lotus Sutra. In 1992 the creator of the manga Natsuko no Sake named a new sake Rumiko no Sake, after Rumiko Moriki of the brewery.",
+  "url": "https://morikishuzo.co.jp/"
  },
  "abv": null,
  "styles": [

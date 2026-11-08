@@ -6,11 +6,11 @@
  "producer": {
   "key": "matsuzaki-shuzo",
   "name": "Matsuzaki Shuzo",
-  "native": null,
-  "location": "Fukushima, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "松崎酒造",
+  "location": "Tenei, Fukushima, Japan",
+  "founded": 1892,
+  "about": "Matsuzaki Shuzo was founded in 1892 in Tenei, a small rice growing village in Fukushima, and its history starts with Matsuzaki Shichinosuke, who ran a koji shop. Its brand Hirotogawa takes its name from Hirotogawa, the old name of the nearby Shakado River.",
+  "url": "http://matsuzakisyuzo.com/"
  },
  "abv": 15,
  "styles": [],

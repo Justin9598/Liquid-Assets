@@ -1,0 +1,69 @@
+{
+ "id": "kenkonichi-tokubetsu-junmai-sasanishiki",
+ "name": "Kenkonichi Tokubetsu Junmai Sasanishiki",
+ "category": "sake",
+ "sub": "tokubetsu-junmai",
+ "producer": {
+  "key": "onuma-shuzoten",
+  "name": "Onuma Shuzoten",
+  "native": null,
+  "location": "Miyagi, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Tokubetsu Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Sasanishiki"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-07",
+   "size": "60ml Tasting",
+   "where": "Shu Kuu Izakaya",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kenkonichi-tokubetsu-junmai-sasanishiki-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kenkonichi-junmai-ginjo-tejikuri",
+  "kenkonichi-ryu-ryu-shinka-junmai-daiginjo"
+ ],
+ "prev": "kaiun-iwaizake-tokubetsu-junmai",
+ "next": "machida-tokubetsu-junmai-55-gohyakumangoku"
+}

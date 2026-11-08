@@ -1,16 +1,26 @@
 {
  "key": "mukai-shuzo",
  "name": "Mukai Shuzo",
- "native": null,
- "location": "Kyoto",
+ "native": "向井酒造",
+ "location": "Ine, Kyoto",
  "region": "Kyoto",
  "country": "Japan",
  "founded": null,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.kuramoto-mukai.jp/",
+ "brands": [
+  "Kyo no Haru",
+  "Ine Mankai"
+ ],
+ "about": [
+  "Mukai Shuzo is a sake brewery at Hirata in Ine, a fishing town on the Sea of Japan coast of northern Kyoto. It calls itself the brewery closest to the sea, and says it makes sake to go with the local food from the sea and the mountains.",
+  "Its main brands are Kyo no Haru and Ine Mankai, a sake made with ancient purple black rice together with white rice. The brewery's chairman has said it makes kimoto style Kyo no Haru."
+ ],
+ "sources": [
+  "https://www.kuramoto-mukai.jp/",
+  "https://www.saketime.jp/brands/3482/",
+  "https://president.jp/articles/-/119883"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

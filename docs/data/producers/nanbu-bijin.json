@@ -1,16 +1,27 @@
 {
  "key": "nanbu-bijin",
  "name": "Nanbu Bijin",
- "native": null,
- "location": "Iwate",
+ "native": "南部美人",
+ "location": "Ninohe, Iwate",
  "region": "Iwate",
  "country": "Japan",
- "founded": null,
+ "founded": 1902,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.nanbubijin.co.jp/",
+ "brands": [
+  "Nanbu Bijin",
+  "Nanbubijin"
+ ],
+ "about": [
+  "Nanbu Bijin is in Ninohe, Iwate. The Kuji family, who brewed soy sauce in Ichinohe, began making sake in 1902 when Sueta Kuji founded the brewery in Ninohe, using soy sauce techniques. His first brand was Hori no Tomo. The Nanbu Bijin name was chosen in 1951, on the advice of the local tax office head, to link a clean, light taste with the word for a beautiful woman and the old Nanbu region.",
+  "The brewery began hiring Nanbu toji from that time and started exporting in 1997. The fifth head, Kosuke Kuji, is now president. Besides sake the company makes liqueur, gin, vodka and whisky."
+ ],
+ "sources": [
+  "https://www.nanbubijin.co.jp/company/history/",
+  "https://www.nanbubijin.co.jp/en/company/history/",
+  "https://www.nanbubijin.co.jp/company/",
+  "https://www.nanbubijin.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

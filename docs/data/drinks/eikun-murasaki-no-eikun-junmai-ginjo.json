@@ -1,0 +1,75 @@
+{
+ "id": "eikun-murasaki-no-eikun-junmai-ginjo",
+ "name": "Eikun Murasaki no Eikun Junmai Ginjo",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "eikun-shuzo",
+  "name": "Eikun Shuzo",
+  "native": null,
+  "location": "Shimizu, Shizuoka, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki"
+  },
+  {
+   "label": "SMV",
+   "value": 1,
+   "viz": "smv"
+  },
+  {
+   "label": "Acidity",
+   "value": 1.8
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-07",
+   "size": "60ml Tasting",
+   "where": "Shu Kuu Izakaya",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/eikun-murasaki-no-eikun-junmai-ginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "daishinshu-chokarakuchi-junmai-ginjo",
+ "next": "hanami-roman"
+}

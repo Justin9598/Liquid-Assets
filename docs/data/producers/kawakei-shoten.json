@@ -1,17 +1,32 @@
 {
  "key": "kawakei-shoten",
  "name": "Kawakei Shoten",
- "native": null,
- "location": "Miyagi",
+ "native": "川敬商店",
+ "location": "Misato, Miyagi",
  "region": "Miyagi",
  "country": "Japan",
- "founded": null,
- "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "founded": 1902,
+ "master": "Yuri Kawana",
+ "website": "https://koganesawa.com/",
+ "brands": [
+  "Koganesawa",
+  "Tachibanaya"
+ ],
+ "about": [
+  "Kawakei Shoten is a sake brewery in Misato, Miyagi. Its first head, Takaharu Kawana, founded it in 1902 in Wakuya, a town the brewery calls Japan's oldest gold mining area, and the family later moved to its present site in what was Nango. Before brewing, the Kawana family were hardware merchants to the Date lords of Wakuya.",
+  "The main brand, Koganesawa, means golden stream. The brewery has made yamahai sake since its start, letting lactic acid bacteria in the brewery build the starter. The owner, Yuri Kawana, is also the master brewer, and the brewery is one of the seven Miyagi makers behind Date Seven."
+ ],
+ "sources": [
+  "https://koganesawa.com/",
+  "https://koganesawa.com/koganesawa.html"
+ ],
+ "related": [
+  {
+   "key": "date-seven",
+   "name": "Date Seven",
+   "relationship": "Date Seven member"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,
@@ -27,13 +42,13 @@
  ],
  "moreFromRegion": [
   "date-seven",
+  "onuma-shuzoten",
   "sendai-station-brewery-fermenteria",
   "akiu-heart-rock-sake",
   "hirako-shuzo",
   "hagino-shuzo",
   "kanbai-shuzo",
   "niizawa-brewery",
-  "onuma-shuzoten",
   "yamawa-shuzoten"
  ]
 }

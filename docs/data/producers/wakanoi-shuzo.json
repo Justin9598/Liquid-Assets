@@ -1,0 +1,35 @@
+{
+ "key": "wakanoi-shuzo",
+ "name": "Wakanoi Shuzo",
+ "native": null,
+ "location": "Iitoyo, Yamagata",
+ "region": "Yamagata",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "wakanoi-hanamaru-junmai-ginjo-yukimuro",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "fuji-shuzo",
+  "kamenoi-shuzo",
+  "kojima-sohonten",
+  "shindo-shuzoten",
+  "takagi-shuzo"
+ ]
+}

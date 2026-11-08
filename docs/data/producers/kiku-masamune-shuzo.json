@@ -1,17 +1,33 @@
 {
  "key": "kiku-masamune-shuzo",
  "name": "Kiku-Masamune Shuzo",
- "native": null,
- "location": "Hyogo",
+ "native": "菊正宗酒造",
+ "location": "Kobe, Hyogo",
  "region": "Hyogo",
  "country": "Japan",
- "founded": null,
+ "founded": 1659,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
- "related": [],
+ "website": "https://www.kikumasamune.co.jp/",
+ "brands": [
+  "Kiku-Masamune",
+  "Kikumasamune"
+ ],
+ "about": [
+  "Kiku-Masamune is a sake brewery in Mikage, in the Nada district of Kobe. Its history begins in 1659, when Kano Jirodayu Munenori, a timber merchant of the Kano family, moved into sake brewing. The Kiku-Masamune name was registered as a trademark in 1886.",
+  "The brewery uses Rokko mountain water, known as Miyamizu, and Tamba toji, and its honjozo range has been brewed by the kimoto method since 2009. It began making its own casks in 2013 and opened a cask sake workshop in 2017. The president carries the name Kano Jiroemon."
+ ],
+ "sources": [
+  "https://www.kikumasamune.co.jp/about/",
+  "https://www.kikumasamune.co.jp/profile/",
+  "https://www.kikumasamune.co.jp/"
+ ],
+ "related": [
+  {
+   "key": "hakutsuru-shuzo",
+   "name": "Hakutsuru Shuzo",
+   "relationship": "shared family roots"
+  }
+ ],
  "tally": {
   "drinks": 1,
   "categories": 1,

@@ -6,11 +6,11 @@
  "producer": {
   "key": "nanbu-bijin",
   "name": "Nanbu Bijin",
-  "native": null,
-  "location": "Iwate, Japan",
-  "founded": null,
-  "about": null,
-  "url": null
+  "native": "南部美人",
+  "location": "Ninohe, Iwate, Japan",
+  "founded": 1902,
+  "about": "Nanbu Bijin is in Ninohe, Iwate. The Kuji family, who brewed soy sauce in Ichinohe, began making sake in 1902 when Sueta Kuji founded the brewery in Ninohe, using soy sauce techniques. His first brand was Hori no Tomo. The Nanbu Bijin name was chosen in 1951, on the advice of the local tax office head, to link a clean, light taste with the word for a beautiful woman and the old Nanbu region.",
+  "url": "https://www.nanbubijin.co.jp/"
  },
  "abv": 16,
  "styles": [],

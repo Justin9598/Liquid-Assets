@@ -306,6 +306,18 @@
   "hasStory": true
  },
  {
+  "key": "eikun-shuzo",
+  "name": "Eikun Shuzo",
+  "native": null,
+  "region": "Shizuoka",
+  "country": "Japan",
+  "location": "Shimizu, Shizuoka",
+  "brands": [],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": false
+ },
+ {
   "key": "endo-shuzojo",
   "name": "Endo Shuzojo",
   "native": "遠藤酒造場",
@@ -618,6 +630,18 @@
   "drinkCount": 4,
   "favourites": 1,
   "hasStory": true
+ },
+ {
+  "key": "heiwa-shuzo",
+  "name": "Heiwa Shuzo",
+  "native": null,
+  "region": "Wakayama",
+  "country": "Japan",
+  "location": "Kainan, Wakayama",
+  "brands": [],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": false
  },
  {
   "key": "hijiri-shuzo",
@@ -1024,38 +1048,47 @@
  {
   "key": "kawakei-shoten",
   "name": "Kawakei Shoten",
-  "native": null,
+  "native": "川敬商店",
   "region": "Miyagi",
   "country": "Japan",
-  "location": "Miyagi",
-  "brands": [],
+  "location": "Misato, Miyagi",
+  "brands": [
+   "Koganesawa",
+   "Tachibanaya"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kawanishiya-shuzoten",
   "name": "Kawanishiya Shuzoten",
-  "native": null,
+  "native": "川西屋酒造店",
   "region": "Kanagawa",
   "country": "Japan",
-  "location": "Kanagawa",
-  "brands": [],
+  "location": "Yamakita, Kanagawa",
+  "brands": [
+   "Tanzawasan",
+   "Ryu"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kiku-masamune-shuzo",
   "name": "Kiku-Masamune Shuzo",
-  "native": null,
+  "native": "菊正宗酒造",
   "region": "Hyogo",
   "country": "Japan",
-  "location": "Hyogo",
-  "brands": [],
+  "location": "Kobe, Hyogo",
+  "brands": [
+   "Kiku-Masamune",
+   "Kikumasamune"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kikunotsukasa-shuzo",
@@ -1076,14 +1109,17 @@
  {
   "key": "kitanishi-shuzo",
   "name": "Kitanishi Shuzo",
-  "native": null,
+  "native": "北西酒造",
   "region": "Saitama",
   "country": "Japan",
-  "location": "Saitama",
-  "brands": [],
+  "location": "Ageo, Saitama",
+  "brands": [
+   "Bunraku",
+   "Sara"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kobayashi-shuzo",
@@ -1102,38 +1138,46 @@
  {
   "key": "kojima-sohonten",
   "name": "Kojima Sohonten",
-  "native": null,
+  "native": "小嶋総本店",
   "region": "Yamagata",
   "country": "Japan",
-  "location": "Yamagata",
-  "brands": [],
+  "location": "Yonezawa, Yamagata",
+  "brands": [
+   "Toko"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kokuryu-shuzo",
   "name": "Kokuryu Shuzo",
-  "native": null,
+  "native": "黒龍酒造",
   "region": "Fukui",
   "country": "Japan",
-  "location": "Fukui",
-  "brands": [],
+  "location": "Eiheiji, Fukui",
+  "brands": [
+   "Kokuryu",
+   "Kuzuryu"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "konohana-brewery",
   "name": "Konohana Brewery",
-  "native": null,
+  "native": "木花之醸造所",
   "region": "Tokyo",
   "country": "Japan",
-  "location": "Tokyo",
-  "brands": [],
+  "location": "Asakusa, Tokyo",
+  "brands": [
+   "ALLWRIGHT",
+   "Konohanano Brewery"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "koshi-meijo",
@@ -1150,14 +1194,17 @@
  {
   "key": "koueigiku-shuzo",
   "name": "Koueigiku Shuzo",
-  "native": null,
+  "native": "光栄菊酒造",
   "region": "Saga",
   "country": "Japan",
-  "location": "Saga",
-  "brands": [],
+  "location": "Ogi, Saga",
+  "brands": [
+   "Koueigiku",
+   "Hello! Koueigiku"
+  ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kronenbourg",
@@ -1174,14 +1221,18 @@
  {
   "key": "kubiki-shuzo",
   "name": "Kubiki Shuzo",
-  "native": null,
+  "native": "頚城酒造",
   "region": "Niigata",
   "country": "Japan",
-  "location": "Niigata",
-  "brands": [],
+  "location": "Joetsu, Niigata",
+  "brands": [
+   "Koshiji no Kobai",
+   "Hakkei Kubiki",
+   "Kubiki"
+  ],
   "drinkCount": 1,
   "favourites": 1,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "kuge-honten",
@@ -1201,14 +1252,17 @@
  {
   "key": "librom-craft-sake-brewery",
   "name": "Librom Craft Sake Brewery",
-  "native": null,
+  "native": "リブロム",
   "region": "Fukuoka",
   "country": "Japan",
-  "location": "Fukuoka",
-  "brands": [],
+  "location": "Fukuoka, Fukuoka",
+  "brands": [
+   "Librom",
+   "LIBROM Craft Sake Brewery"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "machida-shuzoten",
@@ -1228,14 +1282,17 @@
  {
   "key": "masuda-tokubee-shoten",
   "name": "Masuda Tokubee Shoten",
-  "native": null,
+  "native": "増田德兵衞商店",
   "region": "Kyoto",
   "country": "Japan",
-  "location": "Kyoto",
-  "brands": [],
+  "location": "Fushimi, Kyoto",
+  "brands": [
+   "Tsuki no Katsura",
+   "Masuda Tokubee Shoten"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "matsui-shuzo",
@@ -1256,26 +1313,30 @@
  {
   "key": "matsuzaki-shuzo",
   "name": "Matsuzaki Shuzo",
-  "native": null,
+  "native": "松崎酒造",
   "region": "Fukushima",
   "country": "Japan",
-  "location": "Fukushima",
-  "brands": [],
+  "location": "Tenei, Fukushima",
+  "brands": [
+   "Hirotogawa"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "michizakura-shuzo",
   "name": "Michizakura Shuzo",
-  "native": null,
+  "native": "三千櫻酒造",
   "region": "Hokkaido",
   "country": "Japan",
-  "location": "Hokkaido",
-  "brands": [],
+  "location": "Higashikawa, Hokkaido",
+  "brands": [
+   "Michizakura"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "minoh-beer",
@@ -1294,50 +1355,69 @@
  {
   "key": "miyaizumi-meijo",
   "name": "Miyaizumi Meijo",
-  "native": null,
+  "native": "宮泉銘醸",
   "region": "Fukushima",
   "country": "Japan",
-  "location": "Fukushima",
-  "brands": [],
+  "location": "Aizuwakamatsu, Fukushima",
+  "brands": [
+   "Sharaku",
+   "Aizu Miyaizumi",
+   "Genbu"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "miyoshino-jozo",
   "name": "Miyoshino Jozo",
-  "native": null,
+  "native": "美吉野醸造",
   "region": "Nara",
   "country": "Japan",
-  "location": "Nara",
-  "brands": [],
+  "location": "Yoshino, Nara",
+  "brands": [
+   "Hanatomoe",
+   "Miyoshino Jozo"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "moriki-shuzojo",
-  "name": "Moriki Shuzojo",
-  "native": null,
+  "name": "Moriki Shuzo",
+  "native": "森喜酒造",
   "region": "Mie",
   "country": "Japan",
-  "location": "Mie",
-  "brands": [],
+  "location": "Iga, Mie",
+  "brands": [
+   "Rumiko no Sake",
+   "Hanabusa",
+   "Rie Style",
+   "Tae no Hana",
+   "Moriki Shuzo"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "morishima-shuzo",
   "name": "Morishima Shuzo",
-  "native": null,
+  "native": "森島酒造",
   "region": "Ibaraki",
   "country": "Japan",
-  "location": "Ibaraki",
-  "brands": [],
+  "location": "Hitachi, Ibaraki",
+  "brands": [
+   "Morishima",
+   "Morishima 25+",
+   "Taikan",
+   "Fuji Taikan",
+   "Morishima Sake brewery"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "mua-craft-sake",
@@ -1354,14 +1434,17 @@
  {
   "key": "mukai-shuzo",
   "name": "Mukai Shuzo",
-  "native": null,
+  "native": "向井酒造",
   "region": "Kyoto",
   "country": "Japan",
-  "location": "Kyoto",
-  "brands": [],
+  "location": "Ine, Kyoto",
+  "brands": [
+   "Kyo no Haru",
+   "Ine Mankai"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "nagai-shuzo",
@@ -1395,14 +1478,17 @@
  {
   "key": "nanbu-bijin",
   "name": "Nanbu Bijin",
-  "native": null,
+  "native": "南部美人",
   "region": "Iwate",
   "country": "Japan",
-  "location": "Iwate",
-  "brands": [],
+  "location": "Ninohe, Iwate",
+  "brands": [
+   "Nanbu Bijin",
+   "Nanbubijin"
+  ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": false
+  "hasStory": true
  },
  {
   "key": "nara-brewing-co",
@@ -1535,7 +1621,7 @@
   "country": "Japan",
   "location": "Fukushima",
   "brands": [],
-  "drinkCount": 1,
+  "drinkCount": 2,
   "favourites": 0,
   "hasStory": false
  },
@@ -1575,7 +1661,7 @@
   "country": "Japan",
   "location": "Miyagi",
   "brands": [],
-  "drinkCount": 1,
+  "drinkCount": 3,
   "favourites": 0,
   "hasStory": false
  },
@@ -1763,6 +1849,18 @@
   "hasStory": false
  },
  {
+  "key": "shindo-shuzoten",
+  "name": "Shindo Shuzoten",
+  "native": null,
+  "region": "Yamagata",
+  "country": "Japan",
+  "location": "Yonezawa, Yamagata",
+  "brands": [],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": false
+ },
+ {
   "key": "shinkame-shuzo",
   "name": "Shinkame Shuzo",
   "native": null,
@@ -1842,7 +1940,7 @@
   "country": "Japan",
   "location": "Osaka",
   "brands": [],
-  "drinkCount": 1,
+  "drinkCount": 2,
   "favourites": 0,
   "hasStory": false
  },
@@ -2006,6 +2104,18 @@
   "region": "Tochigi",
   "country": "Japan",
   "location": "Tochigi",
+  "brands": [],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": false
+ },
+ {
+  "key": "wakanoi-shuzo",
+  "name": "Wakanoi Shuzo",
+  "native": null,
+  "region": "Yamagata",
+  "country": "Japan",
+  "location": "Iitoyo, Yamagata",
   "brands": [],
   "drinkCount": 1,
   "favourites": 0,

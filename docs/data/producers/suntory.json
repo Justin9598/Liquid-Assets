@@ -13,12 +13,17 @@
  "sources": [],
  "related": [],
  "tally": {
-  "drinks": 1,
-  "categories": 1,
+  "drinks": 2,
+  "categories": 2,
   "favourites": 0,
-  "timesHad": 1
+  "timesHad": 2
  },
  "drinks": [
+  {
+   "id": "suntory-kakubin-highball",
+   "category": "cocktails",
+   "sub": "highball"
+  },
   {
    "id": "suntory-world-whisky-ao",
    "category": "spirits",

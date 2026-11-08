@@ -7,7 +7,7 @@ All 8 are new drinks, with `Acquired` 2026-11-07 (owner: "the new drinks were al
 | Drink | Where | Size |
 |---|---|---|
 | Suntory Kakubin Highball | 魚光る \| SAKANAHIKARU (new place) | blank (owner's choice) |
-| Gakki Masamune Junjo | Shu Kuu Izakaya | **360ml Carafe** (owner: "I had a 360ml Carafe for "); add it to the Size list if it's missing |
+| Gakki Masamune Junjo | Shu Kuu Izakaya | **360ml Carafe** (owner confirmed a 360ml carafe); add it to the Size list if it's missing |
 | Kid Natsu no Hayate Junmai Ginjo | Shu Kuu Izakaya | 60ml Tasting |
 | Kenkonichi Ryu Ryu Shinka Junmai Daiginjo | Shu Kuu Izakaya | 60ml Tasting |
 | Kenkonichi Tokubetsu Junmai Sasanishiki | Shu Kuu Izakaya | 60ml Tasting |

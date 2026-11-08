@@ -1,0 +1,31 @@
+{
+ "key": "heiwa-shuzo",
+ "name": "Heiwa Shuzo",
+ "native": null,
+ "location": "Kainan, Wakayama",
+ "region": "Wakayama",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "kid-natsu-no-hayate-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "hamada-shoten"
+ ]
+}

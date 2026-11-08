@@ -6,11 +6,11 @@
  "producer": {
   "key": "kawanishiya-shuzoten",
   "name": "Kawanishiya Shuzoten",
-  "native": null,
-  "location": "Kanagawa, Japan",
+  "native": "川西屋酒造店",
+  "location": "Yamakita, Kanagawa, Japan",
   "founded": null,
-  "about": null,
-  "url": null
+  "about": "Kawanishiya Shuzoten is a small sake brewery in Yamakita, a town in western Kanagawa. Its main brand, Tanzawasan, is named for the Tanzawa mountains, and it also makes a series called Ryu.",
+  "url": "https://kawanishiya.wixsite.com/kawanishiya"
  },
  "abv": 16,
  "styles": [],

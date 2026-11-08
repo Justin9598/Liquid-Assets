@@ -1,16 +1,28 @@
 {
  "key": "kubiki-shuzo",
  "name": "Kubiki Shuzo",
- "native": null,
- "location": "Niigata",
+ "native": "頚城酒造",
+ "location": "Joetsu, Niigata",
  "region": "Niigata",
  "country": "Japan",
- "founded": null,
+ "founded": 1697,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://kubiki-shuzo.co.jp/",
+ "brands": [
+  "Koshiji no Kobai",
+  "Hakkei Kubiki",
+  "Kubiki"
+ ],
+ "about": [
+  "Kubiki Shuzo is a sake brewery in Kakizaki, Joetsu, Niigata. The present company was formed in 1936, when two local breweries, Yagi Shuzo and Komatsu Shuzo, merged. The Yagi family say their sake making goes back to 1697, when the fifth head began brewing in what is now Joetsu.",
+  "Kakizaki is the home of the Kubiki toji, a guild of brewers, and the brewery brews with local spring water, including one named among Japan's Heisei famous waters. Its main brands are Koshiji no Kobai, Hakkei Kubiki and Kubiki, and it makes about 300 koku a year."
+ ],
+ "sources": [
+  "https://kubiki-shuzo.co.jp/about/",
+  "https://kubiki-shuzo.co.jp/sakezukuri/",
+  "https://kubiki-shuzo.co.jp/kakizaki/",
+  "https://kubiki-shuzo.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

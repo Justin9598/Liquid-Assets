@@ -1,16 +1,26 @@
 {
  "key": "miyoshino-jozo",
  "name": "Miyoshino Jozo",
- "native": null,
- "location": "Nara",
+ "native": "美吉野醸造",
+ "location": "Yoshino, Nara",
  "region": "Nara",
  "country": "Japan",
- "founded": null,
+ "founded": 1912,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.hanatomoe.com/",
+ "brands": [
+  "Hanatomoe",
+  "Miyoshino Jozo"
+ ],
+ "about": [
+  "Miyoshino Jozo is a sake brewery at Muda, beside the Yoshino River in Yoshino, Nara. Its brand Hanatomoe was once brewed at a brewery on Mount Yoshino until a fire destroyed it. In 1912 four local families formed a partnership company at the present site and took over the brand. Hana means the mountain cherry, and tomoe its spread.",
+  "The brewery uses yeast living in the brewery rather than commercial yeast, and it makes sake by the water starter, yamahai and quick starter methods. Its Yoshino cedar koji room has gone 50 years without replacement. It describes its approach as releasing acid, not suppressing it."
+ ],
+ "sources": [
+  "https://www.hanatomoe.com/company-profile/",
+  "https://www.hanatomoe.com/hanatomoe/",
+  "https://www.hanatomoe.com/san/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

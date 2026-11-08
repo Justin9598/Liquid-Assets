@@ -1,16 +1,26 @@
 {
  "key": "kitanishi-shuzo",
  "name": "Kitanishi Shuzo",
- "native": null,
- "location": "Saitama",
+ "native": "北西酒造",
+ "location": "Ageo, Saitama",
  "region": "Saitama",
  "country": "Japan",
- "founded": null,
+ "founded": 1894,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.kitanishishuzo.co.jp/",
+ "brands": [
+  "Bunraku",
+  "Sara"
+ ],
+ "about": [
+  "Kitanishi Shuzo was founded in 1894 by Kitanishi Kamekichi in Hiratsuka, now part of Ageo, Saitama. In 1904 it moved to its present site in Kamimachi, Ageo, once a post town on the Nakasendo road. It brews with medium hard water that comes underground from Chichibu.",
+  "Kamekichi loved the bunraku puppet theatre and named the main brand Bunraku, hoping to put the same harmony of three parts into rice, koji and water. The brewery replaced its toji system with employee brewers in 1996 and began making liqueurs in 2006. It traded as Bunraku Co. from 1997 to 2017."
+ ],
+ "sources": [
+  "https://www.kitanishishuzo.co.jp/about/",
+  "https://www.kitanishishuzo.co.jp/company/",
+  "https://www.kitanishishuzo.co.jp/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,

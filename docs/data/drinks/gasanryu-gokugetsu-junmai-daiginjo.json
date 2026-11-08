@@ -1,0 +1,70 @@
+{
+ "id": "gasanryu-gokugetsu-junmai-daiginjo",
+ "name": "Gasanryu Gokugetsu Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "shindo-shuzoten",
+  "name": "Shindo Shuzoten",
+  "native": null,
+  "location": "Yonezawa, Yamagata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 16,
+ "styles": [
+  "Muroka",
+  "Shizukudori",
+  "Nama-zume"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Dewasansan"
+  },
+  {
+   "label": "ABV",
+   "value": 16,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "60ml Tasting"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-07",
+   "size": "60ml Tasting",
+   "where": "Shu Kuu Izakaya",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/gasanryu-gokugetsu-junmai-daiginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "eiko-fuji-snake-eye-junmai-daiginjo",
+ "next": "hakutsuru-junmai-daiginjo"
+}

@@ -1,16 +1,24 @@
 {
  "key": "michizakura-shuzo",
  "name": "Michizakura Shuzo",
- "native": null,
- "location": "Hokkaido",
+ "native": "三千櫻酒造",
+ "location": "Higashikawa, Hokkaido",
  "region": "Hokkaido",
  "country": "Japan",
- "founded": null,
+ "founded": 1877,
  "master": null,
- "website": null,
- "brands": [],
- "about": [],
- "sources": [],
+ "website": "https://www.michizakura.jp/",
+ "brands": [
+  "Michizakura"
+ ],
+ "about": [
+  "Michizakura Shuzo began in 1877 in Nakatsugawa, Gifu. In November 2020, after 143 years there, it moved to Higashikawa, Hokkaido, and reopened as the town's publicly owned, privately run brewery, the first brewery in Higashikawa.",
+  "In Gifu its brewing water was spring water from the brewery's own hill, and it chose not to cut the trees there. In Hokkaido it works with local farm cooperative volunteers on two brewing rices, Suisei and Kitashizuku. The brewery says its approach has not changed with the move: face the water, the rice and the koji, and trust nature while waiting for the sake."
+ ],
+ "sources": [
+  "https://www.michizakura.jp/",
+  "https://michizakura.jp/about/"
+ ],
  "related": [],
  "tally": {
   "drinks": 1,
