@@ -582,6 +582,8 @@ VIEW_STATE_JS = r"""(() => {
     if (a.name === 'a counter bottle' && b.name === 'a counter bottle') continue;
     if ([a.name, b.name].sort().join() === 'the burger,the status slate') continue;       // the slate sits under the burger by design (Plan 07)
     if (a.e.contains(b.e) || b.e.contains(a.e)) continue;
+    // phones, category view: the counter bottles stand right behind the tag band under shelf 3, so the tags draw in front of them (Plan 14 section 4)
+    if (document.querySelector('.scene3')?.dataset.plate === 'tall' && [a.name, b.name].sort().join() === 'a counter bottle,a subcategory tag') continue;
     if (hit(a.r, b.r)) bad(`${a.name} overlaps ${b.name}`);
   }
   // the clock clears every bottle on the shelves, and in a view of drinks no shelf bottle stands behind a counter bottle (wide plate)
@@ -690,6 +692,9 @@ def welcome_checks(page, base, tag, shots_dir=None):
     sake = next(c for c in cats if c["key"] == "sake")
     if s["mode"] != "sub" or s["subs"] != [x["key"] for x in sake["subcategories"]] or not s["hasSelection"]:
         P(f"Sake opens as {s['mode']} {s['subs']}")
+    # Plan 14 section 3: the counter stays in category view, 5 and 5, with "in Sake" (Sake needs no top-up)
+    if s["counter"]["new"] != 5 or s["counter"]["season"] != 5 or s["counter"]["newIn"] != "in Sake" or s["counter"]["seasonIn"] != "in Sake":
+        P(f"Sake's counter: {s['counter']}")
     # in category view a bottle and its board are one link to the subcategory's list page (Plan 10 section 13)
     one = page.eval("""[...document.querySelectorAll('#lower .slot.sub')].map((s) => [s.tagName, s.querySelectorAll('a, button').length, s.getAttribute('aria-label') || '', s.getAttribute('href') || ''])""")
     want = [f"#/sake/{x['key']}" for x in sake["subcategories"]]
@@ -765,7 +770,7 @@ def welcome_checks(page, base, tag, shots_dir=None):
     um = next(c for c in cats if c["key"] == "umeshu")
     if s["mode"] != "drinks" or len(s["drinks"]) != um["drinkCount"] or s["caption"] != f"Umeshu · {um['drinkCount']} drinks":
         P(f"Umeshu opens as {s['mode']} with {len(s['drinks'])} bottles and caption '{s['caption']}'")
-    if s["counter"]["newIn"] != "in Umeshu":
+    if s["counter"]["newIn"] != "in Umeshu + more" or s["counter"]["new"] != 5:       # 3 drinks: topped up from other categories (Plan 14 section 3)
         P(f"the counter lines read '{s['counter']['newIn']}' in Umeshu")
     # a top-shelf tap while in a New arrivals view goes back to that category's view
     vclick(page, ".vessel[data-cat=sake]")

@@ -94,6 +94,9 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
                    "drinkCount": cat["count"], "subcategories": subs_out}
         if cat["key"] in T.DIRECT_CATEGORIES:
             cat_out["direct"] = True
+        cc = (content.get("category_counters") or {}).get(cat["key"])
+        if cc:
+            cat_out["counter"] = cc                                  # Plan 14 section 3.2
         shelf_out["categories"].append(cat_out)
 
     # ---- drinks.json (index)

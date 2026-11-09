@@ -24,15 +24,17 @@ const centre = (z) => (z.x0 + z.x1) / 2;
 export const slateStyle = (C) => `left:${pct(centre(C.slate))};top:${pct(C.slateY)};width:${pct(C.slate.x1 - C.slate.x0)}`;
 
 /** The bottles of a counter group (shared by the first draw and the later swaps when a subcategory is chosen). */
-export const rowHTML = (items, ix, art) => items.map((it) => bottleHTML(it, ix, art)).join('');
+export const rowHTML = (items, ix, art, own = null) => items.map((it) => bottleHTML(it, ix, art, own)).join('');
 
-function bottleHTML(it, ix, art) {
+/** `own`: the open category's key. A bottle from another category then names its own category on its hover tag (Plan 14 section 3.1). */
+function bottleHTML(it, ix, art, own) {
   const cat = ix.cats.get(it.category);
   const catName = cat ? cat.name : it.category;
   const def = DEFAULT_LABEL[it.category] || {};
   const shape = shapeFor(it.category, it.sub);
   const a = art(shape, { label: it.label && img(it.label), native: def.native, name: def.name, motif: motifFor(it.category, it.sub) });
-  const tag = `<span class="cb-tag chalkboard chalkboard--s" aria-hidden="true"><span class="chalk">${esc(it.name)}</span></span>`;
+  const other = own && it.category !== own ? `<span class="cb-cat">${esc(catName)}</span>` : '';
+  const tag = `<span class="cb-tag chalkboard chalkboard--s" aria-hidden="true"><span class="chalk">${esc(it.name)}${other}</span></span>`;
   const body = `<span class="cb-art">${a}</span>${tag}`;
   // Phase 1: no drink pages yet, so a press says so on the slate (Plan 07 section 4.1)
   if (!getSections().drinks) {

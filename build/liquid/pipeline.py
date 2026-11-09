@@ -116,6 +116,8 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
     if not issues.errors:
         content["counter"], counter_report = counter_mod.build_counter(drinks, photo_map, seasonal, issues)
         content["sub_views"] = counter_mod.sub_views(drinks, photo_map, seasonal)
+        content["category_counters"] = counter_mod.category_counters(
+            drinks, photo_map, seasonal, content["counter"], [c["key"] for c in shelf])     # Plan 14 section 3
     else:
         counter_report = None
 

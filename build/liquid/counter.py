@@ -192,3 +192,41 @@ def build_counter(drinks, photo_map, cfg, issues):
         s: [{"id": p[0]["id"], "name": p[0]["name"], "category": p[0]["category"], "score": p[1], "hits": p[2], "flags": p[3]}
            for p in picks[s][:COUNT]] for s in SEASONS}}
     return counter, report
+
+
+def category_counters(drinks, photo_map, cfg, whole, categories):
+    """Per top-shelf category (Plan 14 section 3): the counter's 5 New arrivals and 5 In season bottles while that category is
+    open. Own drinks first (new: newest first; season: keyword matches in score order, as in Plan 07 section 4.3), then topped up
+    from the whole-bar lists (`whole`, the shelf.json `counter`) in their usual order, skipping any drink already shown.
+    {category key: {"new": [items], "newMore": bool, "season": {season: [items]}, "seasonMore": {season: bool}}}.
+    `more` is true when at least one bottle comes from another category (the placard reads "in Sake + more")."""
+    recent = rank_recent(drinks)
+    rank = {d["id"]: i for i, d in enumerate(recent)}
+    recent_ids = {d["id"] for d in recent[: (cfg or {}).get("recentWindow", 30)]}
+    scored = {s: _scored(drinks, photo_map, cfg, s, recent_ids) for s in SEASONS} if cfg else {s: [] for s in SEASONS}
+
+    def top_up(own, extra, cat):
+        shown = {i["id"] for i in own}
+        out = list(own)
+        for it in extra:
+            if len(out) >= COUNT:
+                break
+            if it["id"] not in shown:
+                out.append(it)
+                shown.add(it["id"])
+        return out, any(i["category"] != cat for i in out)
+
+    out = {}
+    for cat in categories:
+        own_new = [_item(d, photo_map) for d in recent if d["category"] == cat][:COUNT]
+        new, new_more = top_up(own_new, whole.get("newArrivals", []), cat)
+        entry = {"new": new, "newMore": new_more, "season": {}, "seasonMore": {}}
+        for s in SEASONS:
+            hit = [e for e in scored[s] if e[0]["category"] == cat and e[2]]
+            hit.sort(key=lambda e: (-e[1], rank[e[0]["id"]], e[0]["id"]))
+            own = [_item(e[0], photo_map) for e in hit[:COUNT]]
+            items, more = top_up(own, (whole.get("inSeason") or {}).get(s, []), cat)
+            entry["season"][s] = items
+            entry["seasonMore"][s] = more
+        out[cat] = entry
+    return out

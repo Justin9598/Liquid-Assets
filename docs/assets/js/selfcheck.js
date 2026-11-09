@@ -1,6 +1,7 @@
 // Self-check for the welcome page, run only when the page is opened with ?check=1 (build/tools/smoke.py does this at four
 // screen sizes). It checks what Plan 07 sections 8 to 10 promise and writes the result as JSON into <pre id="check-result">.
 // Nothing here runs for visitors.
+import { seasonNow } from './counter.js';
 import { $, $$ } from './util.js';
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -72,6 +73,42 @@ export async function run(ctx) {
   for (let i = 0; i < boards.length; i++) for (let j = i + 1; j < boards.length; j++) if (hit(boards[i].r, boards[j].r)) bad(`labels overlap: ${boards[i].e.textContent.trim()} / ${boards[j].e.textContent.trim()}`);
   for (const { e } of boards) if (parseFloat(getComputedStyle(e).fontSize) < 14) bad(`label "${e.textContent.trim()}" is under 14px`);
 
+  // Plan 14 section 3: in a category view the counter is back, 5 and 5, with its "in {Category}" line, and no lower-shelf bottle
+  // or tag stands behind a counter bottle.
+  const season = seasonNow(new URLSearchParams(location.search));
+  const counterOf = (c, tags) => {
+    const out = {};
+    const front = $$('.cgroup:not([hidden]) .cb-art > *').map(rect).filter((r) => r.width > 0);
+    for (const id of ['new', 'season']) {
+      const g = $(`#cg-${id}`);
+      const n = $$('.cbottle', g).length;
+      const more = id === 'new' ? c.counter?.newMore : (c.counter?.seasonMore || {})[season];
+      const want = `in ${c.name}${more ? ' + more' : ''}`;
+      const line = $(`#cg-${id}-h .in`) || $(`#tab-${id} .in`);
+      out[id] = { n, line: line?.textContent, more };
+      if (n !== 5) bad(`${c.key}: the ${id} counter group holds ${n} bottles, not 5`);
+      if (!line || line.hidden || line.textContent !== want) bad(`${c.key}: the ${id} placard line reads "${line?.textContent}", not "${want}"`);
+      for (const b of $$('.cbottle', g)) if (!(b.getAttribute('aria-label') || '').includes(',')) bad(`${c.key}: a counter bottle has no category in its label`);
+    }
+    const g = [...$$('.cgroup:not([hidden])')];
+    if (g.some((e) => getComputedStyle(e).opacity !== '1' || getComputedStyle(e).visibility !== 'visible')) bad(`${c.key}: the counter bottles are not showing`);
+    const rr = $('.lowrow .row-items') ? rect($('.lowrow .row-items')) : null;
+    const inRow = (r) => kind === 'wide' || !rr || (r.left >= rr.left - 1 && r.right <= rr.right + 1);
+    const arts = $$('#lower .slot .art > *').map(rect).filter((r) => r.width > 0 && inRow(r));
+    const share = (a) => {
+      let sum = 0;
+      for (const f of front) { const w = Math.min(a.right, f.right) - Math.max(a.left, f.left); const h = Math.min(a.bottom, f.bottom) - Math.max(a.top, f.top); if (w > 0 && h > 0) sum += w * h; }
+      return sum / (a.width * a.height);
+    };
+    // wide: not at all. Phones: the counter bottles stand right under shelf 3, so the shelf draws in front; no bottle more than 35% covered
+    const behind = arts.filter((r) => (kind === 'wide' ? front.some((f) => hit(r, f)) : share(r) > 0.35));
+    if (behind.length) bad(`${c.key}: ${behind.length} lower-shelf bottle(s) drawn behind a counter bottle`);
+    if (kind === 'wide') for (const t of tags || []) if (front.some((f) => hit(t.r, f, 1))) bad(`${c.key}: tag ${t.name} overlaps a counter bottle`);
+    out.shelf2 = $('#lower').dataset.shelf2;
+    out.shelf3 = $('#lower').dataset.shelf3;
+    return out;
+  };
+
   // ---- 3. every category: tags fit, are 14px or more, do not overlap and stay inside the shelf area -------------------
   stats.categories = {};
   for (const c of ix.shelf.categories) {
@@ -79,7 +116,8 @@ export async function run(ctx) {
     if (c.direct) {                                                 // Umeshu opens straight to its drinks (Plan 10 section 2.3)
       await until(() => $('#lower')?.dataset.mode === 'drinks' && $$('#lower .slot.drink').length === Math.min(c.drinkCount, 24));
       finishAll();
-      stats.categories[c.key] = { direct: true, drinks: $$('#lower .slot.drink').length };
+      await sleep(60);
+      stats.categories[c.key] = { direct: true, drinks: $$('#lower .slot.drink').length, counter: counterOf(c) };
       if ($$('#lower .slot.drink').length === 0) bad(`${c.key}: no drinks on the shelves`);
       continue;
     }
@@ -95,7 +133,7 @@ export async function run(ctx) {
       const h = $('.hang', slot);
       tags.push({ h, r: rect(h), name: $('.nm', h).textContent.trim() });
     }
-    stats.categories[c.key] = { tags: tags.length, per: $('.lowrow')?.style.getPropertyValue('--per'), fitFail: $('#lower').dataset.fitFail };
+    stats.categories[c.key] = { counter: counterOf(c, tags), tags: tags.length, per: $('.lowrow')?.style.getPropertyValue('--per'), fitFail: $('#lower').dataset.fitFail };
     if (tags.length === 0) bad(`${c.key}: no visible tags`);
     for (const t of tags) {
       const cs = getComputedStyle(t.h);
@@ -107,8 +145,6 @@ export async function run(ctx) {
     }
     for (let i = 0; i < tags.length; i++) for (let j = i + 1; j < tags.length; j++) if (hit(tags[i].r, tags[j].r)) bad(`${c.key}: tags overlap: ${tags[i].name} / ${tags[j].name}`);
     for (const { c: cap, r } of caps) for (const t of tags) if (hit(rect(cap), t.r)) bad(`${c.key}: caption ${cap.textContent.trim()} overlaps tag ${t.name}`);
-    const groups = $$('.cgroup:not([hidden])');
-    if (groups.some((g) => getComputedStyle(g).opacity !== '0')) bad(`${c.key}: counter bottles did not fade out`);
     const placards = $$('.placard, .ctab').filter((e) => e.offsetParent !== null);
     for (const t of tags) for (const p of placards) if (hit(t.r, rect(p))) bad(`${c.key}: tag ${t.name} overlaps counter label ${p.textContent.trim()}`);
     const slate = rect($('#plaque'));

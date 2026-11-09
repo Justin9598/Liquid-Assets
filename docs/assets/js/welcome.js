@@ -134,7 +134,7 @@ export async function mount(root, ctx) {
 
   function slotHTML(it) {
     if (it.seeall) {
-      const label = `See all ${it.count}`;
+      const label = it.text || `See all ${it.count}`;
       return getSections().shelves
         ? `<div class="slot seeall"><a class="seeall-board chalkboard chalkboard--s" href="${esc(it.href)}">${esc(label)}</a></div>`
         : `<div class="slot seeall"><button type="button" class="seeall-board chalkboard chalkboard--s" data-soon>${esc(label)}</button></div>`;
@@ -171,7 +171,7 @@ export async function mount(root, ctx) {
   let visible = 3;
   let drinkPer = 9;                                  // phones, a view of drinks: bottles across the row (Plan 10 section 11.1)
   const kindOf = (list) => (!list.length ? 'sub' : list[0].mix ? 'mix' : list[0].sub ? 'sub' : 'drinks');
-  function rowsV3(list) {
+  function rowsV3(list, plan = null) {
     const kind = mode;
     const P = manifest.plates[kind];
     const nTop = kind === 'wide' ? 1 : 2;
@@ -180,7 +180,10 @@ export async function mount(root, ctx) {
     const drinks = kindOf(list) === 'drinks';
     let groups;
     let per;
-    if (kind === 'wide' && drinks) {                    // a view of drinks: the shelf fills from the left shelf's centre outwards, measured capacity per shelf
+    if (plan) {                                         // category view on the wide plate: shelf 2 first, shelf 3 only what fits clear of the counter (Plan 14 section 4)
+      groups = plan.groups;
+      per = plan.pers[0];
+    } else if (kind === 'wide' && drinks) {                    // a view of drinks: the shelf fills from the left shelf's centre outwards, measured capacity per shelf
       per = Math.max(4, P.lowerCapacity?.perShelf || 12);
       groups = [list.slice(0, per), list.slice(per)];
     } else if (kind === 'wide') {
@@ -195,13 +198,25 @@ export async function mount(root, ctx) {
     return shelves.map((s, i) => {
       const g = groups[i] || [];
       const cue = kind === 'tall' && drinks ? '<span class="more-cue chalkboard chalkboard--s" aria-hidden="true">→</span>' : '';
-      return `<div class="shelf-row s3 lowrow${g.length === 1 ? ' single' : ''}${drinks ? ' drinks' : ''}" data-shelf="${nTop + i}" style="${shelfStyle(s)};--per:${per}"><div class="row-items">${g.map(slotHTML).join('')}</div>${cue}</div>`;
+      return `<div class="shelf-row s3 lowrow${g.length === 1 ? ' single' : ''}${drinks ? ' drinks' : ''}" data-shelf="${nTop + i}" style="${shelfStyle(s)};--per:${plan ? +plan.pers[i].toFixed(4) : per}"><div class="row-items"${plan?.pads[i] ? ` style="padding-left:${plan.pads[i][0]}px;padding-right:${plan.pads[i][1]}px"` : ''}>${g.map(slotHTML).join('')}</div>${cue}</div>`;
     }).join('');
   }
 
   /** Do all the subcategory tags fit at the smallest type size: no wrapped Japanese line, at most 2 name lines, and a
    * height that stays inside the room under their shelf (Plan 07 section 8.2)? */
   function tagsFit() {
+    if (mode === 'wide') {                                   // wide: no clipped or 3-line tag, and no two tags on a shelf touching (the shelf area is checked by selfcheck)
+      const ok = $$('.hang', lower).every((h) => {
+        const nm = $('.nm', h);
+        const lh = parseFloat(getComputedStyle(nm).lineHeight) || 15;
+        return h.scrollWidth <= h.clientWidth + 1 && nm.getBoundingClientRect().height <= lh * 2 + 1;
+      });
+      const apart = $$('.lowrow', lower).every((row) => {
+        const rs = $$('.hang', row).map((h) => h.getBoundingClientRect()).sort((a, b) => a.left - b.left);
+        return rs.every((r, i) => i === 0 || r.left >= rs[i - 1].right + 2);
+      });
+      return ok && apart;
+    }
     const P = manifest.plates[mode];
     const H = $('.cover', root).getBoundingClientRect().height;
     const shelves = P.shelves;
@@ -235,28 +250,79 @@ export async function mount(root, ctx) {
       if (per !== drinkPer) { drinkPer = per; lower.innerHTML = rowsV3(list); }
     }
     if (mode === 'tall') watchFades($('.lowrow .row-items', lower));
+    if (mode === 'wide' && lower.dataset.mode === 'sub') fitSubShelves(list);
     clearBehindCounter();
     avoidCounter();
+  }
+
+  /** Room a row must leave on each side so its bottles do not stand behind the counter bottles level with it. */
+  function counterPads(r, front, seeall = false) {
+    const rr = r.getBoundingClientRect();
+    const mid = (rr.left + rr.right) / 2;
+    let padL = 0;
+    let padR = 0;
+    for (const f of front) {
+      if (f.bottom < rr.top + rr.height * 0.18 || f.top > rr.bottom) continue;      // not level with this shelf's bottles
+      const extra = seeall ? 16 : 0;                                              // the See all board is a little wider than its place
+      if (f.right > rr.left && f.left < mid) padL = Math.max(padL, f.right - rr.left + 8 + extra);
+      else if (f.left < rr.right && f.right > mid) padR = Math.max(padR, rr.right - f.left + 8 + extra);
+    }
+    return [Math.ceil(padL), Math.ceil(padR)];
+  }
+
+  /** Category view, wide plate (Plan 14 section 4): the counter groups stand in front of the ends of shelf 3. Shelf 3 gets only
+   * the room between them, at the same bottle pitch as shelf 2, and shelf 2 takes the rest, filling first. The widest pitch
+   * that holds every kind on the two shelves wins. If none does at a pitch where the tags still fit, the last place on
+   * shelf 3 becomes a "See all {n} kinds" board. */
+  function fitSubShelves(list) {
+    const rowEls = $$('.lowrow .row-items', lower);
+    const front = frontBottles();
+    if (rowEls.length < 2) return;
+    rowEls.forEach((r) => { r.style.paddingLeft = ''; r.style.paddingRight = ''; });
+    const w2 = rowEls[0].clientWidth;
+    const [padL, padR] = counterPads(rowEls[1], front);
+    const clear3 = rowEls[1].clientWidth - padL - padR;
+    const n = list.length;
+    const cap3Of = (per2) => Math.max(0, Math.floor(clear3 / (w2 / per2) + 1e-6));
+    const make = (per2, seeAll) => {
+      const p = w2 / per2;
+      const cap3 = cap3Of(per2);
+      let g3 = list.slice(per2);
+      if (seeAll) {
+        g3 = list.slice(per2, per2 + Math.max(0, cap3 - 1));
+        const c = ix.cats.get(sel);
+        g3.push({ seeall: true, count: list.length, text: `See all ${list.length} kinds`, href: `#/${c.key}` });
+      }
+      const empty = !g3.length;
+      return { groups: [list.slice(0, per2), g3], pers: [per2, empty ? per2 : clear3 / p], pads: [null, empty ? null : [padL, padR]] };
+    };
+    let per2 = 3;
+    while (per2 + cap3Of(per2) < n && per2 < 16) per2++;
+    const fits = per2 + cap3Of(per2) >= n;
+    let plan = make(per2, !fits);
+    lower.innerHTML = rowsV3(list, plan);
+    if (!fits || !tagsFit()) {                                // the tags cannot use so narrow a pitch: fewer bottles and a See all board
+      lower.dataset.fitFail = '';
+      for (let k = Math.min(per2, 16); k >= 3; k--) {
+        plan = make(k, true);
+        lower.innerHTML = rowsV3(list, plan);
+        if (tagsFit()) break;
+      }
+    }
+    lower.dataset.shelf2 = String(plan.groups[0].length);
+    lower.dataset.shelf3 = String(plan.groups[1].length);
   }
 
   /** In a view of drinks the counter bottles stay up (filtered, or the usual set), so on the wide plate the lower shelves give
    * way: a row's room shrinks where a counter bottle would stand in front of it, instead of drawing one bottle behind another. */
   function avoidCounter() {
+    if (mode === 'wide' && lower.dataset.mode === 'sub') return;          // fitSubShelves places its own padding
     $$('.lowrow .row-items', lower).forEach((r) => { r.style.paddingLeft = ''; r.style.paddingRight = ''; });
     if (mode !== 'wide' || lower.dataset.mode !== 'drinks') return;
     const front = frontBottles();
     if (!front.length) return;
     for (const r of $$('.lowrow .row-items', lower)) {
-      const rr = r.getBoundingClientRect();
-      const mid = (rr.left + rr.right) / 2;
-      let padL = 0;
-      let padR = 0;
-      for (const f of front) {
-        if (f.bottom < rr.top + rr.height * 0.18 || f.top > rr.bottom) continue;      // not level with this shelf's bottles
-        const extra = r.querySelector('.seeall') ? 16 : 0;                       // the See all board is a little wider than its place
-        if (f.right > rr.left && f.left < mid) padL = Math.max(padL, f.right - rr.left + 8 + extra);
-        else if (f.left < rr.right && f.right > mid) padR = Math.max(padR, rr.right - f.left + 8 + extra);
-      }
+      const [padL, padR] = counterPads(r, front, !!r.querySelector('.seeall'));
       r.style.paddingLeft = padL ? `${padL}px` : '';
       r.style.paddingRight = padR ? `${padR}px` : '';
     }
@@ -415,30 +481,29 @@ export async function mount(root, ctx) {
     $('.bar', root).classList.toggle('captioned', !!text && el.classList.contains('onslate'));
   }
 
-  /** The counter's two groups: the usual 5, or, when a subcategory is chosen, that subcategory's own new and seasonal bottles
-   * (Plan 10 section 6.2). A group with none of its own keeps the usual set. */
+  /** The counter's two groups: the usual whole-bar 5, or, in a category view, that category's own 5 topped up from other
+   * categories by the build (Plan 14 section 3). The placard's second line says "in Sake" or "in Wine + more". */
   let counterKey = null;
   function updateCounter() {
-    const c = sel && ix.cats.get(sel);
-    const eff = c?.direct && view === 'rest' ? { cat: c.key, sub: c.subcategories[0].key } : null;
-    const info = eff && ix.subs.get(`${eff.cat}/${eff.sub}`);
-    const key = `${mode}|${eff ? `${eff.cat}/${eff.sub}` : ''}`;
+    const c = sel && view === 'rest' ? ix.cats.get(sel) : null;
+    const data = c?.counter || null;
+    const key = `${mode}|${data ? c.key : ''}`;
     if (key === counterKey) return;
     counterKey = key;
     const rest = { new: (counterData.newArrivals || []).slice(0, 5), season: ((counterData.inSeason || {})[season] || []).slice(0, 5) };
     for (const id of ['new', 'season']) {
-      const ids = info ? (id === 'new' ? info.sub.new : (info.sub.season || {})[season]) || [] : [];
-      const own = ids.map((did) => (info.sub.drinks || []).find((d) => d.id === did)).filter(Boolean)
-        .map((d) => ({ id: d.id, name: d.name, category: eff.cat, sub: eff.sub, label: d.label }));
+      const own = data ? (id === 'new' ? data.new : (data.season || {})[season]) || [] : [];
+      const more = data ? !!(id === 'new' ? data.newMore : (data.seasonMore || {})[season]) : false;
       const useOwn = own.length > 0;
       const row = $(`#cg-${id} .cg-row`, root);
-      if (row) row.innerHTML = rowHTML(useOwn ? own : rest[id], ix, art);
-      const line = useOwn ? `in ${info.sub.name}` : '';
+      if (row) row.innerHTML = rowHTML(useOwn ? own : rest[id], ix, art, useOwn ? c.key : null);
+      const line = useOwn ? `in ${c.name}${more ? ' + more' : ''}` : '';
       for (const el of [$(`#cg-${id}-h .in`, root), $(`#tab-${id} .in`, root)]) {
         if (!el) continue;
         el.textContent = line;
         el.hidden = !line;
       }
+      if (id === 'season') $('#tab-season', root)?.setAttribute('aria-label', `In season: ${SEASON_NAMES[season]}${line ? `, ${line}` : ''}`);
     }
   }
 
@@ -527,7 +592,7 @@ export async function mount(root, ctx) {
   const onMq = () => {
     if (plateKind() !== mode) render(); else if (items.length) setRows(items);
   };
-  const onResize = () => { if (mode) { placeCounter(root, manifest.plates[mode], manifest.burger?.ratio); if (lower?.dataset.mode === 'sub' && mode === 'tall') show(false); else { clearBehindCounter(); avoidCounter(); } } };
+  const onResize = () => { if (mode) { placeCounter(root, manifest.plates[mode], manifest.burger?.ratio); if (lower?.dataset.mode === 'sub') { if (mode === 'tall') show(false); else setRows(items); } else { clearBehindCounter(); avoidCounter(); } } };
   const onKey = (ev) => {
     if (ev.key !== 'Escape' || ev.defaultPrevented || document.body.classList.contains('menu-open')) return;
     if (view !== 'rest' || sel) goRest();

@@ -335,6 +335,11 @@ def test_plan_10_shelf_data_aliases_and_front_only_photos(tmp_path):
     um = by["umeshu"]["subcategories"][0]
     assert len(um["new"]) <= 5 and set(um["season"]) == {"spring", "summer", "autumn", "winter"}
     assert len(shelf["counter"]["newArrivals"]) >= 5
+    for c in shelf["categories"]:                                            # Plan 14 section 3: every category's counter is 5 and 5
+        cc = c["counter"]
+        assert 1 <= len(cc["new"]) <= 5 and all(len(cc["season"][s]) <= 5 for s in ("spring", "summer", "autumn", "winter")), c["key"]
+        assert isinstance(cc["newMore"], bool) and set(cc["seasonMore"]) == {"spring", "summer", "autumn", "winter"}
+    assert by["umeshu"]["counter"]["newMore"] is True                         # 2 drinks: topped up from other categories
     # old addresses: the build writes the table the router follows
     al = load(ship, "aliases.json")
     assert {"from": "beer/*", "to": "fermented/*"} in al["routes"] and {"from": "liqueur/umeshu", "to": "umeshu"} in al["routes"]

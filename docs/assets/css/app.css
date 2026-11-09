@@ -101,6 +101,8 @@ body[data-page='welcome'][data-scene='v3'] { overflow: hidden; background: #1b14
 
 /* ---- counter displays (Plan 07 section 4) */
 .scene3 .cgroup { position: absolute; z-index: 4; }
+/* phones, category view: the counter bottles stand right behind the tag band under shelf 3, so the shelf and its tags draw in front (Plan 14 section 4) */
+.scene3[data-plate='tall'] .shelf-row.s3.lowrow { z-index: 5; }
 .scene3 .cg-row { list-style: none; margin: 0; padding: 0; height: 100%; display: flex; justify-content: space-around; align-items: flex-end; }
 .scene3 .cb-cell { flex: 1 1 0; min-width: 0; height: 100%; display: flex; justify-content: center; align-items: flex-end; }
 .scene3 .cbottle { position: relative; display: flex; align-items: flex-end; justify-content: center; height: 100%; width: 100%; padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; text-decoration: none; transition: transform 140ms ease-out; }
@@ -137,7 +139,6 @@ body[data-page='welcome'][data-scene='v3'] { overflow: hidden; background: #1b14
 .scene3[data-plate='tall'] .lowrow .slot:last-child { margin-right: auto; }
 /* the counter on phones: one group at a time behind two tabs (Plan 07 section 7.2) */
 .scene3 .cgroup { transition: opacity 200ms ease-out, visibility 0s linear 0s; }
-.scene3.has-selection .cgroup { opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 200ms ease-out, visibility 0s linear 200ms; }
 /* ?debug=scene guides */
 
 /* ---- the chalkboard component (Plan 07 sections 9 and 10): one board, three sizes ------------------------------------
@@ -234,6 +235,7 @@ a.chalkboard:focus-visible, button.chalkboard:focus-visible { outline: 3px solid
 .scene3 .slate.s3.mid { --tilt: -.5deg; position: absolute; transform: translate(-50%, -50%) rotate(var(--tilt)); text-align: center; white-space: normal; min-width: 0; max-width: none; padding: .35em .9em; display: flex; align-items: center; justify-content: center; font-weight: 700; z-index: 5; }
 .scene3 .placard { position: absolute; z-index: 5; margin: 0; transform: translate(-50%, -50%); white-space: nowrap; letter-spacing: 0; text-transform: none; font-weight: 700; padding: .3em .85em; }
 .scene3 .cb-tag { position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translate(-50%, 4px); z-index: 8; max-width: 22cqw; white-space: nowrap; opacity: 0; transition: opacity 140ms, transform 140ms; }
+.scene3 .cb-cat { display: block; font-size: .85em; opacity: .85; }
 .scene3 .cbottle:hover .cb-tag, .scene3 .cbottle:focus-visible .cb-tag { opacity: 1; transform: translate(-50%, 0); }
 .scene3 .ctabs { position: absolute; z-index: 6; transform: translate(-50%, -50%); display: flex; gap: 8px; }
 .scene3 .ctab { min-height: 44px; min-width: 64px; padding: 0 16px; cursor: pointer; text-transform: none; letter-spacing: 0; font-weight: 700; }
@@ -289,8 +291,9 @@ a.chalkboard:focus-visible, button.chalkboard:focus-visible { outline: 3px solid
 .scene3 .cb-cell { flex: 0 0 auto; width: auto; }
 .scene3 .cbottle { width: auto; }
 .scene3 button.placard { cursor: pointer; text-align: center; pointer-events: auto; }
-.scene3 .placard .in, .scene3 .ctab .in { display: block; font: 400 .72em/1.25 var(--chalkhand); opacity: .88; max-width: 11em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-inline: auto; }
+.scene3 .placard .in, .scene3 .ctab .in { display: block; font: 400 .72em/1.25 var(--chalkhand); opacity: .88; max-width: 16em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-inline: auto; }
 .scene3 .placard .in[hidden], .scene3 .ctab .in[hidden] { display: none; }
+.scene3 .ctab .in { max-width: 8.5em; }          /* phones: a long category name is cut with an ellipsis so the tabs stay clear of Menu (Plan 14 section 3.1) */
 .scene3 .ctab { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; }
 .scene3 button.placard:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; box-shadow: none; }
 

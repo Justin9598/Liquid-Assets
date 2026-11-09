@@ -124,6 +124,41 @@ def test_season_picks_match_whole_words_cap_categories_and_honour_pins_and_exclu
     assert ids[0] == "d6" and "d2" not in ids and any(i["code"] == "W23" for i in issues.items)
 
 
+def test_plan_14_category_counters_fill_to_five_and_flag_other_categories():
+    """A category with enough drinks shows only its own; one with too few is topped up from the whole-bar lists, in order,
+    skipping drinks already shown, with `more` set only when a bottle comes from another category."""
+    ds = [_drink(i, f"Sake {i}", visits=[{"date": f"2026-10-{i:02d}", "_row": i}]) for i in range(1, 9)]
+    ds += [_drink(20, "Beer A", cat="beer", visits=[{"date": "2026-10-25", "_row": 20}]),
+           _drink(21, "Beer B", cat="beer", visits=[{"date": "2026-10-26", "_row": 21}]),
+           _drink(22, "Beer C", cat="beer", visits=[{"date": "2026-10-27", "_row": 22}])]
+    whole, _ = counter_mod.build_counter(ds, {}, CFG, Issues())
+    cc = counter_mod.category_counters(ds, {}, CFG, whole, ["sake", "beer"])
+    sake, beer = cc["sake"], cc["beer"]
+    assert len(sake["new"]) == 5 and sake["newMore"] is False and all(i["category"] == "sake" for i in sake["new"])
+    assert [i["id"] for i in sake["new"]] == ["d8", "d7", "d6", "d5", "d4"]                       # newest first
+    assert len(beer["new"]) == 5 and beer["newMore"] is True
+    assert [i["id"] for i in beer["new"][:3]] == ["d22", "d21", "d20"]                              # its own first
+    assert [i["id"] for i in beer["new"][3:]] == [i["id"] for i in whole["newArrivals"] if i["category"] != "beer"][:2]
+    for s in counter_mod.SEASONS:
+        for cat in (sake, beer):
+            ids = [i["id"] for i in cat["season"][s]]
+            assert len(ids) == 5 and len(set(ids)) == 5
+        assert beer["seasonMore"][s] is True or all(i["category"] == "beer" for i in beer["season"][s])
+    assert {i["category"] for i in beer["new"][3:]} == {"sake"}                                     # topped-up bottles keep their own category
+
+
+def test_plan_14_built_shelf_json_has_five_and_five_for_every_category():
+    """The shipped shelf.json: Sake needs no top-up, Umeshu (3 drinks) does."""
+    shelf = json.loads((SHIP / "docs" / "data" / "shelf.json").read_text(encoding="utf-8"))
+    by = {c["key"]: c for c in shelf["categories"]}
+    for c in by.values():
+        cc = c["counter"]
+        assert len(cc["new"]) == 5 and all(len(cc["season"][s]) == 5 for s in counter_mod.SEASONS), c["key"]
+    assert by["sake"]["counter"]["newMore"] is False and all(i["category"] == "sake" for i in by["sake"]["counter"]["new"])
+    assert by["umeshu"]["counter"]["newMore"] is True
+    assert sum(1 for i in by["umeshu"]["counter"]["new"] if i["category"] == "umeshu") == by["umeshu"]["drinkCount"]
+
+
 def test_seasonal_config_is_validated():
     ok = Issues()
     cfg = json.loads((SHIP / "content" / "seasonal.json").read_text(encoding="utf-8"))

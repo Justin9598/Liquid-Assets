@@ -1569,7 +1569,203 @@
       }
      ]
     }
-   ]
+   ],
+   "counter": {
+    "new": [
+     {
+      "id": "gakki-masamune-junjo",
+      "name": "Gakki Masamune Junjo",
+      "category": "sake",
+      "sub": "junmai",
+      "label": "img/labels/gakki-masamune-junjo.webp"
+     },
+     {
+      "id": "eikun-murasaki-no-eikun-junmai-ginjo",
+      "name": "Eikun Murasaki no Eikun Junmai Ginjo",
+      "category": "sake",
+      "sub": "junmai-ginjo",
+      "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
+     },
+     {
+      "id": "gasanryu-gokugetsu-junmai-daiginjo",
+      "name": "Gasanryu Gokugetsu Junmai Daiginjo",
+      "category": "sake",
+      "sub": "junmai-daiginjo",
+      "label": "img/labels/gasanryu-gokugetsu-junmai-daiginjo.webp"
+     },
+     {
+      "id": "wakanoi-hanamaru-junmai-ginjo-yukimuro",
+      "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
+      "category": "sake",
+      "sub": "junmai-ginjo",
+      "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
+     },
+     {
+      "id": "kenkonichi-tokubetsu-junmai-sasanishiki",
+      "name": "Kenkonichi Tokubetsu Junmai Sasanishiki",
+      "category": "sake",
+      "sub": "tokubetsu-junmai",
+      "label": "img/labels/kenkonichi-tokubetsu-junmai-sasanishiki.webp"
+     }
+    ],
+    "newMore": false,
+    "season": {
+     "spring": [
+      {
+       "id": "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
+       "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
+      },
+      {
+       "id": "odayaka-junmai-ginjo-usunigori-nama",
+       "name": "Odayaka Junmai Ginjo Usunigori Nama",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
+      },
+      {
+       "id": "kissui-hidariuma-junmai-kasseinigori-uma-uma",
+       "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
+      },
+      {
+       "id": "hitakami-aquarium-in-winter",
+       "name": "Hitakami Junmai Ginjo Usunigori Nama Aquarium in Winter",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/hitakami-aquarium-in-winter.webp"
+      },
+      {
+       "id": "odayaka-sparkling",
+       "name": "Odayaka Sparkling",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/odayaka-sparkling.webp"
+      }
+     ],
+     "summer": [
+      {
+       "id": "odayaka-sparkling",
+       "name": "Odayaka Sparkling",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/odayaka-sparkling.webp"
+      },
+      {
+       "id": "harada-natsu",
+       "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
+       "category": "sake",
+       "sub": "junmai",
+       "label": null
+      },
+      {
+       "id": "fermenteria-sparkling",
+       "name": "Fermenteria Sparkling",
+       "category": "sake",
+       "sub": "craft-sake",
+       "label": "img/labels/fermenteria-sparkling.webp"
+      },
+      {
+       "id": "taiheikai-sparkling",
+       "name": "Taiheikai Sparkling",
+       "category": "sake",
+       "sub": "ungraded",
+       "label": "img/labels/taiheikai-sparkling.webp"
+      },
+      {
+       "id": "mizubasho-artist-series-floral-sparkling-2023",
+       "name": "Mizubasho Artist Series Floral Sparkling 2023",
+       "category": "sake",
+       "sub": "ungraded",
+       "label": "img/labels/mizubasho-artist-series-floral-sparkling-2023.webp"
+      }
+     ],
+     "autumn": [
+      {
+       "id": "izumibashi-aki-tombo-omachi-kimoto-junmai",
+       "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "akishika-moto-plus-one-junmai-muroka-nam",
+       "name": "Akishika Moto Plus One Junmai Muroka Nama",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
+      },
+      {
+       "id": "aiyama-galaxy-kimoto-junmai-ginjo-origar",
+       "name": "Aiyama 'Galaxy' Kimoto Junmai Ginjo Origarami Nama",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": null
+      },
+      {
+       "id": "wakanoi-hanamaru-junmai-ginjo-yukimuro",
+       "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
+      }
+     ],
+     "winter": [
+      {
+       "id": "izumibashi-shiboritate",
+       "name": "Izumibashi Shiboritate",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/izumibashi-shiboritate.webp"
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "yamashiroya-fuga-junmai-daiginjo",
+       "name": "Yamashiroya Fuga Junmai Daiginjo",
+       "category": "sake",
+       "sub": "junmai-daiginjo",
+       "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
+      },
+      {
+       "id": "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
+       "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
+      },
+      {
+       "id": "sawahime-yamahai-junmai-shin-jizake-sengen",
+       "name": "Sawahime Yamahai Junmai Shin Jizake Sengen",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/sawahime-yamahai-junmai-shin-jizake-sengen.webp"
+      }
+     ]
+    },
+    "seasonMore": {
+     "spring": false,
+     "summer": false,
+     "autumn": false,
+     "winter": false
+    }
+   }
   },
   {
    "key": "fermented",
@@ -1730,7 +1926,203 @@
       }
      ]
     }
-   ]
+   ],
+   "counter": {
+    "new": [
+     {
+      "id": "kronenbourg-1664-blanc",
+      "name": "Kronenbourg 1664 Blanc",
+      "category": "fermented",
+      "sub": "wheat",
+      "label": "img/labels/kronenbourg-1664-blanc.webp"
+     },
+     {
+      "id": "carlsberg-smooth-draught",
+      "name": "Carlsberg Smooth Draught",
+      "category": "fermented",
+      "sub": "lager",
+      "label": "img/labels/carlsberg-smooth-draught.webp"
+     },
+     {
+      "id": "isekado-mr-dank",
+      "name": "Isekado Mr. DANK",
+      "category": "fermented",
+      "sub": "ipa",
+      "label": null
+     },
+     {
+      "id": "swanlake-amber-swan-ale",
+      "name": "Swanlake Amber Swan Ale",
+      "category": "fermented",
+      "sub": "pale-ale",
+      "label": null
+     },
+     {
+      "id": "nasu-kohgen-ai",
+      "name": "Nasu Kohgen Ai",
+      "category": "fermented",
+      "sub": "lager",
+      "label": null
+     }
+    ],
+    "newMore": false,
+    "season": {
+     "spring": [
+      {
+       "id": "moonlight-yuja",
+       "name": "Moonlight Yuja",
+       "category": "fermented",
+       "sub": "makgeolli",
+       "label": "img/labels/moonlight-yuja.webp"
+      },
+      {
+       "id": "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
+       "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
+      },
+      {
+       "id": "odayaka-junmai-ginjo-usunigori-nama",
+       "name": "Odayaka Junmai Ginjo Usunigori Nama",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
+      },
+      {
+       "id": "kissui-hidariuma-junmai-kasseinigori-uma-uma",
+       "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
+      },
+      {
+       "id": "suntory-kakubin-highball",
+       "name": "Suntory Kakubin Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/suntory-kakubin-highball.webp"
+      }
+     ],
+     "summer": [
+      {
+       "id": "kronenbourg-1664-blanc",
+       "name": "Kronenbourg 1664 Blanc",
+       "category": "fermented",
+       "sub": "wheat",
+       "label": "img/labels/kronenbourg-1664-blanc.webp"
+      },
+      {
+       "id": "carlsberg-smooth-draught",
+       "name": "Carlsberg Smooth Draught",
+       "category": "fermented",
+       "sub": "lager",
+       "label": "img/labels/carlsberg-smooth-draught.webp"
+      },
+      {
+       "id": "moonlight-yuja",
+       "name": "Moonlight Yuja",
+       "category": "fermented",
+       "sub": "makgeolli",
+       "label": "img/labels/moonlight-yuja.webp"
+      },
+      {
+       "id": "nasu-kohgen-ai",
+       "name": "Nasu Kohgen Ai",
+       "category": "fermented",
+       "sub": "lager",
+       "label": null
+      },
+      {
+       "id": "minoh-hoppy-weizen",
+       "name": "Minoh Hoppy Weizen",
+       "category": "fermented",
+       "sub": "wheat",
+       "label": null
+      }
+     ],
+     "autumn": [
+      {
+       "id": "swanlake-amber-swan-ale",
+       "name": "Swanlake Amber Swan Ale",
+       "category": "fermented",
+       "sub": "pale-ale",
+       "label": null
+      },
+      {
+       "id": "under-15m",
+       "name": "Under 15M",
+       "category": "fermented",
+       "sub": "pale-ale",
+       "label": "img/labels/under-15m.webp"
+      },
+      {
+       "id": "izumibashi-aki-tombo-omachi-kimoto-junmai",
+       "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "akishika-moto-plus-one-junmai-muroka-nam",
+       "name": "Akishika Moto Plus One Junmai Muroka Nama",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
+      }
+     ],
+     "winter": [
+      {
+       "id": "isibo-wonju",
+       "name": "Isibo Wonju",
+       "category": "fermented",
+       "sub": "makgeolli",
+       "label": "img/labels/isibo-wonju.webp"
+      },
+      {
+       "id": "izumibashi-shiboritate",
+       "name": "Izumibashi Shiboritate",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/izumibashi-shiboritate.webp"
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "yamashiroya-fuga-junmai-daiginjo",
+       "name": "Yamashiroya Fuga Junmai Daiginjo",
+       "category": "sake",
+       "sub": "junmai-daiginjo",
+       "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
+      },
+      {
+       "id": "suntory-world-whisky-ao",
+       "name": "Suntory World Whisky Ao",
+       "category": "spirits",
+       "sub": "whisky",
+       "label": "img/labels/suntory-world-whisky-ao.webp"
+      }
+     ]
+    },
+    "seasonMore": {
+     "spring": true,
+     "summer": false,
+     "autumn": true,
+     "winter": true
+    }
+   }
   },
   {
    "key": "umeshu",
@@ -1778,7 +2170,203 @@
      }
     }
    ],
-   "direct": true
+   "direct": true,
+   "counter": {
+    "new": [
+     {
+      "id": "kabosu-umeshu-sakurayama",
+      "name": "Kabosu & Umeshu Sakurayama",
+      "category": "umeshu",
+      "sub": "all",
+      "label": null
+     },
+     {
+      "id": "hamada-ume-liqueur-gold-leaf",
+      "name": "HAMADA Ume Liqueur with Gold Leaf",
+      "category": "umeshu",
+      "sub": "all",
+      "label": "img/labels/hamada-ume-liqueur-gold-leaf.webp"
+     },
+     {
+      "id": "akebono-color-umeshu-brown-label",
+      "name": "Akebono Color Umeshu Brown Label",
+      "category": "umeshu",
+      "sub": "all",
+      "label": null
+     },
+     {
+      "id": "gakki-masamune-junjo",
+      "name": "Gakki Masamune Junjo",
+      "category": "sake",
+      "sub": "junmai",
+      "label": "img/labels/gakki-masamune-junjo.webp"
+     },
+     {
+      "id": "eikun-murasaki-no-eikun-junmai-ginjo",
+      "name": "Eikun Murasaki no Eikun Junmai Ginjo",
+      "category": "sake",
+      "sub": "junmai-ginjo",
+      "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
+     }
+    ],
+    "newMore": true,
+    "season": {
+     "spring": [
+      {
+       "id": "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
+       "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
+      },
+      {
+       "id": "odayaka-junmai-ginjo-usunigori-nama",
+       "name": "Odayaka Junmai Ginjo Usunigori Nama",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
+      },
+      {
+       "id": "kissui-hidariuma-junmai-kasseinigori-uma-uma",
+       "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
+      },
+      {
+       "id": "suntory-kakubin-highball",
+       "name": "Suntory Kakubin Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/suntory-kakubin-highball.webp"
+      },
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      }
+     ],
+     "summer": [
+      {
+       "id": "kabosu-umeshu-sakurayama",
+       "name": "Kabosu & Umeshu Sakurayama",
+       "category": "umeshu",
+       "sub": "all",
+       "label": null
+      },
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      },
+      {
+       "id": "kavalan-dry-single-malt-highball",
+       "name": "Kavalan Dry Single Malt Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-dry-single-malt-highball.webp"
+      },
+      {
+       "id": "odayaka-sparkling",
+       "name": "Odayaka Sparkling",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/odayaka-sparkling.webp"
+      },
+      {
+       "id": "harada-natsu",
+       "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
+       "category": "sake",
+       "sub": "junmai",
+       "label": null
+      }
+     ],
+     "autumn": [
+      {
+       "id": "izumibashi-aki-tombo-omachi-kimoto-junmai",
+       "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
+      },
+      {
+       "id": "swanlake-amber-swan-ale",
+       "name": "Swanlake Amber Swan Ale",
+       "category": "fermented",
+       "sub": "pale-ale",
+       "label": null
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "akishika-moto-plus-one-junmai-muroka-nam",
+       "name": "Akishika Moto Plus One Junmai Muroka Nama",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
+      },
+      {
+       "id": "under-15m",
+       "name": "Under 15M",
+       "category": "fermented",
+       "sub": "pale-ale",
+       "label": "img/labels/under-15m.webp"
+      }
+     ],
+     "winter": [
+      {
+       "id": "izumibashi-shiboritate",
+       "name": "Izumibashi Shiboritate",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/izumibashi-shiboritate.webp"
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "yamashiroya-fuga-junmai-daiginjo",
+       "name": "Yamashiroya Fuga Junmai Daiginjo",
+       "category": "sake",
+       "sub": "junmai-daiginjo",
+       "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
+      },
+      {
+       "id": "suntory-world-whisky-ao",
+       "name": "Suntory World Whisky Ao",
+       "category": "spirits",
+       "sub": "whisky",
+       "label": "img/labels/suntory-world-whisky-ao.webp"
+      },
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      }
+     ]
+    },
+    "seasonMore": {
+     "spring": true,
+     "summer": true,
+     "autumn": true,
+     "winter": true
+    }
+   }
   },
   {
    "key": "wine",
@@ -1834,7 +2422,203 @@
       }
      ]
     }
-   ]
+   ],
+   "counter": {
+    "new": [
+     {
+      "id": "santa-helena-varietal-cabernet-sauvignon-2025",
+      "name": "Santa Helena Varietal Cabernet Sauvignon 2025",
+      "category": "wine",
+      "sub": "cabernet-sauvignon",
+      "label": "img/labels/santa-helena-varietal-cabernet-sauvignon-2025.webp"
+     },
+     {
+      "id": "pierre-jean-colombard-chardonnay-2025",
+      "name": "Pierre Jean Colombard Chardonnay 2025",
+      "category": "wine",
+      "sub": "blend",
+      "label": "img/labels/pierre-jean-colombard-chardonnay-2025.webp"
+     },
+     {
+      "id": "casa-silva-merlot-2025",
+      "name": "Casa Silva Merlot 2025",
+      "category": "wine",
+      "sub": "merlot",
+      "label": "img/labels/casa-silva-merlot-2025.webp"
+     },
+     {
+      "id": "gakki-masamune-junjo",
+      "name": "Gakki Masamune Junjo",
+      "category": "sake",
+      "sub": "junmai",
+      "label": "img/labels/gakki-masamune-junjo.webp"
+     },
+     {
+      "id": "eikun-murasaki-no-eikun-junmai-ginjo",
+      "name": "Eikun Murasaki no Eikun Junmai Ginjo",
+      "category": "sake",
+      "sub": "junmai-ginjo",
+      "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
+     }
+    ],
+    "newMore": true,
+    "season": {
+     "spring": [
+      {
+       "id": "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
+       "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
+      },
+      {
+       "id": "odayaka-junmai-ginjo-usunigori-nama",
+       "name": "Odayaka Junmai Ginjo Usunigori Nama",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
+      },
+      {
+       "id": "kissui-hidariuma-junmai-kasseinigori-uma-uma",
+       "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
+      },
+      {
+       "id": "suntory-kakubin-highball",
+       "name": "Suntory Kakubin Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/suntory-kakubin-highball.webp"
+      },
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      }
+     ],
+     "summer": [
+      {
+       "id": "santa-helena-varietal-cabernet-sauvignon-2025",
+       "name": "Santa Helena Varietal Cabernet Sauvignon 2025",
+       "category": "wine",
+       "sub": "cabernet-sauvignon",
+       "label": "img/labels/santa-helena-varietal-cabernet-sauvignon-2025.webp"
+      },
+      {
+       "id": "pierre-jean-colombard-chardonnay-2025",
+       "name": "Pierre Jean Colombard Chardonnay 2025",
+       "category": "wine",
+       "sub": "blend",
+       "label": "img/labels/pierre-jean-colombard-chardonnay-2025.webp"
+      },
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      },
+      {
+       "id": "kavalan-dry-single-malt-highball",
+       "name": "Kavalan Dry Single Malt Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-dry-single-malt-highball.webp"
+      },
+      {
+       "id": "odayaka-sparkling",
+       "name": "Odayaka Sparkling",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/odayaka-sparkling.webp"
+      }
+     ],
+     "autumn": [
+      {
+       "id": "izumibashi-aki-tombo-omachi-kimoto-junmai",
+       "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
+      },
+      {
+       "id": "swanlake-amber-swan-ale",
+       "name": "Swanlake Amber Swan Ale",
+       "category": "fermented",
+       "sub": "pale-ale",
+       "label": null
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "akishika-moto-plus-one-junmai-muroka-nam",
+       "name": "Akishika Moto Plus One Junmai Muroka Nama",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
+      },
+      {
+       "id": "under-15m",
+       "name": "Under 15M",
+       "category": "fermented",
+       "sub": "pale-ale",
+       "label": "img/labels/under-15m.webp"
+      }
+     ],
+     "winter": [
+      {
+       "id": "izumibashi-shiboritate",
+       "name": "Izumibashi Shiboritate",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/izumibashi-shiboritate.webp"
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "yamashiroya-fuga-junmai-daiginjo",
+       "name": "Yamashiroya Fuga Junmai Daiginjo",
+       "category": "sake",
+       "sub": "junmai-daiginjo",
+       "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
+      },
+      {
+       "id": "suntory-world-whisky-ao",
+       "name": "Suntory World Whisky Ao",
+       "category": "spirits",
+       "sub": "whisky",
+       "label": "img/labels/suntory-world-whisky-ao.webp"
+      },
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      }
+     ]
+    },
+    "seasonMore": {
+     "spring": true,
+     "summer": true,
+     "autumn": true,
+     "winter": true
+    }
+   }
   },
   {
    "key": "spirits",
@@ -1940,7 +2724,203 @@
       }
      ]
     }
-   ]
+   ],
+   "counter": {
+    "new": [
+     {
+      "id": "woodford-reserve-distillers-select",
+      "name": "Woodford Reserve Distiller's Select",
+      "category": "spirits",
+      "sub": "whisky",
+      "label": "img/labels/woodford-reserve-distillers-select.webp"
+     },
+     {
+      "id": "the-botanist-islay-dry-gin",
+      "name": "The Botanist Islay Dry Gin",
+      "category": "spirits",
+      "sub": "gin",
+      "label": "img/labels/the-botanist-islay-dry-gin.webp"
+     },
+     {
+      "id": "suntory-world-whisky-ao",
+      "name": "Suntory World Whisky Ao",
+      "category": "spirits",
+      "sub": "whisky",
+      "label": "img/labels/suntory-world-whisky-ao.webp"
+     },
+     {
+      "id": "kujira-no-kuromugi",
+      "name": "Kujira no Kuromugi",
+      "category": "spirits",
+      "sub": "shochu",
+      "label": "img/labels/kujira-no-kuromugi.webp"
+     },
+     {
+      "id": "kavalan-distillery-reserve-peated-single-cask-strength",
+      "name": "Kavalan Distillery Reserve Peated Single Cask Strength",
+      "category": "spirits",
+      "sub": "whisky",
+      "label": "img/labels/kavalan-distillery-reserve-peated-single-cask-strength.webp"
+     }
+    ],
+    "newMore": false,
+    "season": {
+     "spring": [
+      {
+       "id": "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
+       "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
+      },
+      {
+       "id": "odayaka-junmai-ginjo-usunigori-nama",
+       "name": "Odayaka Junmai Ginjo Usunigori Nama",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
+      },
+      {
+       "id": "kissui-hidariuma-junmai-kasseinigori-uma-uma",
+       "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
+      },
+      {
+       "id": "suntory-kakubin-highball",
+       "name": "Suntory Kakubin Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/suntory-kakubin-highball.webp"
+      },
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      }
+     ],
+     "summer": [
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      },
+      {
+       "id": "kavalan-dry-single-malt-highball",
+       "name": "Kavalan Dry Single Malt Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-dry-single-malt-highball.webp"
+      },
+      {
+       "id": "odayaka-sparkling",
+       "name": "Odayaka Sparkling",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/odayaka-sparkling.webp"
+      },
+      {
+       "id": "harada-natsu",
+       "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
+       "category": "sake",
+       "sub": "junmai",
+       "label": null
+      },
+      {
+       "id": "suntory-kakubin-highball",
+       "name": "Suntory Kakubin Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/suntory-kakubin-highball.webp"
+      }
+     ],
+     "autumn": [
+      {
+       "id": "chusa-40",
+       "name": "Chusa 40",
+       "category": "spirits",
+       "sub": "brandy",
+       "label": "img/labels/chusa-40.webp"
+      },
+      {
+       "id": "izumibashi-aki-tombo-omachi-kimoto-junmai",
+       "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
+      },
+      {
+       "id": "swanlake-amber-swan-ale",
+       "name": "Swanlake Amber Swan Ale",
+       "category": "fermented",
+       "sub": "pale-ale",
+       "label": null
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "akishika-moto-plus-one-junmai-muroka-nam",
+       "name": "Akishika Moto Plus One Junmai Muroka Nama",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
+      }
+     ],
+     "winter": [
+      {
+       "id": "suntory-world-whisky-ao",
+       "name": "Suntory World Whisky Ao",
+       "category": "spirits",
+       "sub": "whisky",
+       "label": "img/labels/suntory-world-whisky-ao.webp"
+      },
+      {
+       "id": "izumibashi-shiboritate",
+       "name": "Izumibashi Shiboritate",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/izumibashi-shiboritate.webp"
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "yamashiroya-fuga-junmai-daiginjo",
+       "name": "Yamashiroya Fuga Junmai Daiginjo",
+       "category": "sake",
+       "sub": "junmai-daiginjo",
+       "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
+      },
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      }
+     ]
+    },
+    "seasonMore": {
+     "spring": true,
+     "summer": true,
+     "autumn": true,
+     "winter": true
+    }
+   }
   },
   {
    "key": "cocktails",
@@ -1976,7 +2956,203 @@
       }
      ]
     }
-   ]
+   ],
+   "counter": {
+    "new": [
+     {
+      "id": "suntory-kakubin-highball",
+      "name": "Suntory Kakubin Highball",
+      "category": "cocktails",
+      "sub": "highball",
+      "label": "img/labels/suntory-kakubin-highball.webp"
+     },
+     {
+      "id": "kavalan-highball-whisky-soda",
+      "name": "Kavalan Highball Whisky Soda",
+      "category": "cocktails",
+      "sub": "highball",
+      "label": "img/labels/kavalan-highball-whisky-soda.webp"
+     },
+     {
+      "id": "kavalan-dry-single-malt-highball",
+      "name": "Kavalan Dry Single Malt Highball",
+      "category": "cocktails",
+      "sub": "highball",
+      "label": "img/labels/kavalan-dry-single-malt-highball.webp"
+     },
+     {
+      "id": "gakki-masamune-junjo",
+      "name": "Gakki Masamune Junjo",
+      "category": "sake",
+      "sub": "junmai",
+      "label": "img/labels/gakki-masamune-junjo.webp"
+     },
+     {
+      "id": "eikun-murasaki-no-eikun-junmai-ginjo",
+      "name": "Eikun Murasaki no Eikun Junmai Ginjo",
+      "category": "sake",
+      "sub": "junmai-ginjo",
+      "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
+     }
+    ],
+    "newMore": true,
+    "season": {
+     "spring": [
+      {
+       "id": "suntory-kakubin-highball",
+       "name": "Suntory Kakubin Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/suntory-kakubin-highball.webp"
+      },
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      },
+      {
+       "id": "kavalan-dry-single-malt-highball",
+       "name": "Kavalan Dry Single Malt Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-dry-single-malt-highball.webp"
+      },
+      {
+       "id": "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
+       "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
+      },
+      {
+       "id": "odayaka-junmai-ginjo-usunigori-nama",
+       "name": "Odayaka Junmai Ginjo Usunigori Nama",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
+      }
+     ],
+     "summer": [
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      },
+      {
+       "id": "kavalan-dry-single-malt-highball",
+       "name": "Kavalan Dry Single Malt Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-dry-single-malt-highball.webp"
+      },
+      {
+       "id": "suntory-kakubin-highball",
+       "name": "Suntory Kakubin Highball",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/suntory-kakubin-highball.webp"
+      },
+      {
+       "id": "odayaka-sparkling",
+       "name": "Odayaka Sparkling",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/odayaka-sparkling.webp"
+      },
+      {
+       "id": "harada-natsu",
+       "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
+       "category": "sake",
+       "sub": "junmai",
+       "label": null
+      }
+     ],
+     "autumn": [
+      {
+       "id": "izumibashi-aki-tombo-omachi-kimoto-junmai",
+       "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
+      },
+      {
+       "id": "swanlake-amber-swan-ale",
+       "name": "Swanlake Amber Swan Ale",
+       "category": "fermented",
+       "sub": "pale-ale",
+       "label": null
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "akishika-moto-plus-one-junmai-muroka-nam",
+       "name": "Akishika Moto Plus One Junmai Muroka Nama",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
+      },
+      {
+       "id": "under-15m",
+       "name": "Under 15M",
+       "category": "fermented",
+       "sub": "pale-ale",
+       "label": "img/labels/under-15m.webp"
+      }
+     ],
+     "winter": [
+      {
+       "id": "kavalan-highball-whisky-soda",
+       "name": "Kavalan Highball Whisky Soda",
+       "category": "cocktails",
+       "sub": "highball",
+       "label": "img/labels/kavalan-highball-whisky-soda.webp"
+      },
+      {
+       "id": "izumibashi-shiboritate",
+       "name": "Izumibashi Shiboritate",
+       "category": "sake",
+       "sub": "junmai-ginjo",
+       "label": "img/labels/izumibashi-shiboritate.webp"
+      },
+      {
+       "id": "noguchi-naohiko-sake-institute",
+       "name": "Noguchi Naohiko Sake Institute",
+       "category": "sake",
+       "sub": "junmai",
+       "label": "img/labels/noguchi-naohiko-sake-institute.webp"
+      },
+      {
+       "id": "yamashiroya-fuga-junmai-daiginjo",
+       "name": "Yamashiroya Fuga Junmai Daiginjo",
+       "category": "sake",
+       "sub": "junmai-daiginjo",
+       "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
+      },
+      {
+       "id": "suntory-world-whisky-ao",
+       "name": "Suntory World Whisky Ao",
+       "category": "spirits",
+       "sub": "whisky",
+       "label": "img/labels/suntory-world-whisky-ao.webp"
+      }
+     ]
+    },
+    "seasonMore": {
+     "spring": true,
+     "summer": true,
+     "autumn": true,
+     "winter": true
+    }
+   }
   }
  ],
  "counter": {
