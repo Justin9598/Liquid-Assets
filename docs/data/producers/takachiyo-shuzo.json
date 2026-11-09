@@ -46,8 +46,8 @@
   "shirataki-shuzo",
   "swan-lake-beer"
  ],
- "lat": 37.918,
- "lon": 139.04,
+ "lat": 37.006,
+ "lon": 138.883,
  "cid": "japan",
  "prov": "niigata",
  "provName": "Niigata",
@@ -55,5 +55,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

@@ -35,8 +35,8 @@
   }
  ],
  "moreFromRegion": [],
- "lat": 37.535,
- "lon": -85.285,
+ "lat": 38.08,
+ "lon": -84.766,
  "cid": "usa",
  "prov": "kentucky",
  "provName": "Kentucky",
@@ -44,5 +44,5 @@
  "cont": "North America",
  "reg": "North America",
  "main": "spirits",
- "exact": false
+ "exact": true
 }

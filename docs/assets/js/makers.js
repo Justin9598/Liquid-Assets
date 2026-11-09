@@ -100,11 +100,18 @@ ${board(`    <div class="m-controls">
     const item = (n, i) => (i === trail.length - 1
       ? `<li aria-current="location"><span class="chalk">${esc(n.label)}</span></li>`
       : `<li><button type="button" class="mm-crumb" data-at="${esc(n.path)}"><span class="chalk">${esc(n.label)}</span></button></li>`);
-    // phones: one line. Back, then "… › Japan › Tohoku"; the dots open the whole path as a small chalk menu (Plan 14 section 11.3)
-    const short = window.innerWidth < 768 && trail.length > 3;
-    $('#mm-crumbs', root).innerHTML = (short ? `<li><button type="button" class="mm-crumb mm-more" id="mm-more" aria-haspopup="true" aria-expanded="false" aria-label="Show the whole path"><span class="chalk">…</span></button></li>` : '')
-      + trail.map((n, i) => [n, i]).slice(short ? -2 : 0).map(([n, i]) => item(n, i)).join('');
-    $('#mm-menu', root).innerHTML = short ? trail.map(item).join('') : '';
+    // phones: one line that ends before the Menu button (Plan 14 sections 11.3 and 12.2). Back, then the whole path if it fits, else
+    // "… › Japan › Tohoku", then "… › Tohoku", then just "Tohoku"; the dots open the whole path as a small chalk menu
+    const dots = '<li><button type="button" class="mm-crumb mm-more" id="mm-more" aria-haspopup="true" aria-expanded="false" aria-label="Show the whole path"><span class="chalk">…</span></button></li>';
+    const tail = (k) => trail.map((n, i) => [n, i]).slice(-k).map(([n, i]) => item(n, i)).join('');
+    const ol = $('#mm-crumbs', root);
+    const phone = window.innerWidth < 768;
+    const tries = phone ? [tail(trail.length), dots + tail(Math.min(2, trail.length)), dots + tail(1), tail(1)] : [tail(trail.length)];
+    for (const html of tries) {
+      ol.innerHTML = html;
+      if (!phone || ol.scrollWidth <= ol.clientWidth + 1) break;
+    }
+    $('#mm-menu', root).innerHTML = phone && trail.length > 1 ? trail.map(item).join('') : '';
     $('#mm-menu', root).hidden = true;
     $('#mm-back', root).disabled = !node.parent;
     const t = tally(list);

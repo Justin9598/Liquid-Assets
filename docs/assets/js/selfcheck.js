@@ -103,7 +103,7 @@ export async function run(ctx) {
     // wide: not at all. Phones: the counter bottles stand right under shelf 3, so the shelf draws in front; no bottle more than 35% covered
     const behind = arts.filter((r) => (kind === 'wide' ? front.some((f) => hit(r, f)) : share(r) > 0.35));
     if (behind.length) bad(`${c.key}: ${behind.length} lower-shelf bottle(s) drawn behind a counter bottle`);
-    if (kind === 'wide') for (const t of tags || []) if (front.some((f) => hit(t.r, f, 1))) bad(`${c.key}: tag ${t.name} overlaps a counter bottle`);
+    for (const t of tags || []) if (front.some((f) => hit(t.r, f, 1))) bad(`${c.key}: tag ${t.name} overlaps a counter bottle`);
     out.shelf2 = $('#lower').dataset.shelf2;
     out.shelf3 = $('#lower').dataset.shelf3;
     return out;
@@ -137,7 +137,7 @@ export async function run(ctx) {
     if (tags.length === 0) bad(`${c.key}: no visible tags`);
     for (const t of tags) {
       const cs = getComputedStyle(t.h);
-      if (parseFloat(cs.fontSize) < 14) bad(`${c.key}/${t.name}: tag under 14px`);
+      if (parseFloat(cs.fontSize) < (kind === 'tall' ? 12 : 14)) bad(`${c.key}/${t.name}: tag under ${kind === 'tall' ? 12 : 14}px`);
       if (t.h.scrollWidth > t.h.clientWidth + 1) bad(`${c.key}/${t.name}: tag text is clipped`);
       const lh = parseFloat(getComputedStyle($('.nm', t.h)).lineHeight);
       if ($('.nm', t.h).getBoundingClientRect().height > lh * 2 + 1) bad(`${c.key}/${t.name}: name needs more than 2 lines`);

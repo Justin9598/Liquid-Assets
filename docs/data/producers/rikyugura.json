@@ -42,8 +42,8 @@
   "akishika-shuzo",
   "minoh-beer"
  ],
- "lat": 34.693,
- "lon": 135.505,
+ "lat": 34.582,
+ "lon": 135.469,
  "cid": "japan",
  "prov": "osaka",
  "provName": "Osaka",
@@ -51,5 +51,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

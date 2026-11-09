@@ -53,6 +53,7 @@ MAP_STATE = r"""(() => {
     info: document.querySelector('#map-info').textContent, crumbs: [...document.querySelectorAll('#mm-crumbs li')].map((l) => l.textContent.trim()),
     count: document.querySelector('#mcount').textContent, tiles: document.querySelectorAll('#mlist .tile').length, hash: location.hash,
     chip: document.querySelector('#region-chip')?.textContent.trim() || '', back: !document.querySelector('#mm-back').disabled,
+    crumbRight: document.querySelector('#mm-crumbs').getBoundingClientRect().right, crumbClipped: (() => { const o = document.querySelector('#mm-crumbs'); return o.scrollWidth > o.clientWidth + 1; })(), menuLeft: (document.querySelector('#chrome') || document.body).getBoundingClientRect().left, crumbText: document.querySelector('#mm-crumbs').textContent,
     crumbH: document.querySelector('.mm-bar').getBoundingClientRect().height, more: !!document.querySelector('#mm-more'),
     boardVh: mb.height / innerHeight, sideways: document.documentElement.scrollWidth > innerWidth + 1,
     card: !document.querySelector('#mm-card').hidden, legend: [...document.querySelectorAll('.mm-key')].map((k) => k.textContent.trim()),
@@ -256,6 +257,8 @@ def map_checks(page, base, tag, full=True):
     for st in tree["states"]:
         s = open_at(page, st["path"])
         probs += pin_problems(s, f"{tag} {st['path'] or 'World'}")
+        if phone and (s['crumbClipped'] or s['crumbRight'] > s['menuLeft'] - 2):
+            probs.append(f"{tag} {st['path'] or 'World'}: the breadcrumb '{s['crumbText']}' runs under the Menu button (ends {s['crumbRight']:.0f}, Menu starts {s['menuLeft']:.0f}) or is clipped")
         if st["kind"] == "groups" and not all(p["id"].startswith("g:") or p["id"].startswith("m:") for p in s["pins"]):
             probs.append(f"{tag} {st['path']}: group view shows {[p['id'] for p in s['pins']][:3]}")
         if st["kind"] == "makers" and s["pins"] and any(p["id"].startswith("g:") for p in s["pins"]):
@@ -366,7 +369,7 @@ def shoot(page, base, tag, out):
         load(page, base, route)
         page.eval("new Promise(r => setTimeout(r, 700))", await_promise=True)
         page.screenshot(f"{out}/{name}-{tag}.png")
-    for name, key in (("iwate-labels", "akabu-shuzo"), ("japan", "akabu-shuzo"), ("korea", "daejeon-blues-brewery"), ("france", "kronenbourg"), ("singapore", "orchid-sake-brewery")):
+    for name, key in (("daejeon", "daejeon-blues-brewery"), ("yamaguchi", "asahi-shuzo-yamaguchi"), ("iwate-labels", "akabu-shuzo"), ("japan", "akabu-shuzo"), ("korea", "daejeon-blues-brewery"), ("france", "kronenbourg"), ("singapore", "orchid-sake-brewery")):
         go(page, f"#/producer/{key}")
         wait_for(page, "!!document.querySelector('#locator .mm-labels')", 15)
         page.scroll_to(int(page.eval("(document.querySelector('.facts').getBoundingClientRect().top + scrollY) - 8")))

@@ -65,8 +65,8 @@
   "lat": 34.977,
   "lon": 135.464,
   "cid": "japan",
-  "prov": "kyoto",
-  "provName": "Kyoto",
+  "prov": "osaka",
+  "provName": "Osaka",
   "area": "kansai",
   "cont": "Asia",
   "reg": "East Asia",
@@ -411,8 +411,8 @@
   "lat": 36.24,
   "lon": 127.311,
   "cid": "south-korea",
-  "prov": "southchungcheong",
-  "provName": "South Chungcheong",
+  "prov": "daejeon",
+  "provName": "Daejeon",
   "area": null,
   "cont": "Asia",
   "reg": "East Asia",
@@ -884,8 +884,8 @@
   "lat": 38.866,
   "lon": 141.129,
   "cid": "japan",
-  "prov": "iwate",
-  "provName": "Iwate",
+  "prov": "miyagi",
+  "provName": "Miyagi",
   "area": "tohoku",
   "cont": "Asia",
   "reg": "East Asia",
@@ -2096,7 +2096,7 @@
   "key": "kronenbourg",
   "name": "Kronenbourg",
   "native": null,
-  "region": "Strasbourg",
+  "region": "Obernai",
   "country": "France",
   "location": "Obernai",
   "brands": [
@@ -3017,8 +3017,8 @@
   "drinkCount": 2,
   "favourites": 0,
   "hasStory": true,
-  "lat": 35.401,
-  "lon": 139.326,
+  "lat": 35.309,
+  "lon": 139.157,
   "cid": "japan",
   "prov": "kanagawa",
   "provName": "Kanagawa",
@@ -3026,7 +3026,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "rikyugura",
@@ -3043,8 +3043,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 34.693,
-  "lon": 135.505,
+  "lat": 34.582,
+  "lon": 135.469,
   "cid": "japan",
   "prov": "osaka",
   "provName": "Osaka",
@@ -3052,7 +3052,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "ryozeki-shuzo",
@@ -3069,8 +3069,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 39.709,
-  "lon": 140.09,
+  "lat": 39.171,
+  "lon": 140.494,
   "cid": "japan",
   "prov": "akita",
   "provName": "Akita",
@@ -3078,7 +3078,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "ryujin-shuzo",
@@ -3094,8 +3094,8 @@
   "drinkCount": 2,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.498,
-  "lon": 138.96,
+  "lat": 36.251,
+  "lon": 139.532,
   "cid": "japan",
   "prov": "gunma",
   "provName": "Gunma",
@@ -3103,7 +3103,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "santa-helena",
@@ -3118,8 +3118,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": -34.6,
-  "lon": -71.0,
+  "lat": -34.64,
+  "lon": -71.366,
   "cid": "chile",
   "prov": "libertadorgeneralbernardoohiggins",
   "provName": "Libertador General Bernardo O'Higgins",
@@ -3127,7 +3127,7 @@
   "cont": "South America",
   "reg": "South America",
   "main": "wine",
-  "exact": false
+  "exact": true
  },
  {
   "key": "sendai-station-brewery-fermenteria",
@@ -3142,8 +3142,8 @@
   "drinkCount": 3,
   "favourites": 0,
   "hasStory": true,
-  "lat": 38.267,
-  "lon": 140.87,
+  "lat": 38.26,
+  "lon": 140.88,
   "cid": "japan",
   "prov": "miyagi",
   "provName": "Miyagi",
@@ -3151,7 +3151,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "seoul-jangsu-brewery",
@@ -3169,8 +3169,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.706,
-  "lon": 127.81,
+  "lat": 36.953,
+  "lon": 127.421,
   "cid": "south-korea",
   "prov": "northchungcheong",
   "provName": "North Chungcheong",
@@ -3178,7 +3178,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "fermented",
-  "exact": false
+  "exact": true
  },
  {
   "key": "seto-shuzoten",
@@ -3196,8 +3196,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 35.401,
-  "lon": 139.326,
+  "lat": 35.345,
+  "lon": 139.113,
   "cid": "japan",
   "prov": "kanagawa",
   "provName": "Kanagawa",
@@ -3205,7 +3205,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "shimizu-seizaburo-shoten",
@@ -3221,8 +3221,8 @@
   "drinkCount": 3,
   "favourites": 0,
   "hasStory": true,
-  "lat": 34.883,
-  "lon": 136.585,
+  "lat": 34.869,
+  "lon": 136.623,
   "cid": "japan",
   "prov": "mie",
   "provName": "Mie",
@@ -3230,7 +3230,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "shimomura-shuzoten",
@@ -3246,8 +3246,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 34.817,
-  "lon": 134.685,
+  "lat": 34.985,
+  "lon": 134.595,
   "cid": "japan",
   "prov": "hyogo",
   "provName": "Hyogo",
@@ -3255,7 +3255,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "shindo-shuzoten",
@@ -3277,8 +3277,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 37.923,
-  "lon": 140.115,
+  "lat": 37.925,
+  "lon": 140.153,
   "cid": "japan",
   "prov": "yamagata",
   "provName": "Yamagata",
@@ -3286,7 +3286,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "shinkame-shuzo",
@@ -3302,8 +3302,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 35.987,
-  "lon": 139.322,
+  "lat": 35.965,
+  "lon": 139.651,
   "cid": "japan",
   "prov": "saitama",
   "provName": "Saitama",
@@ -3311,7 +3311,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "shinshu-meijo",
@@ -3331,8 +3331,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.403,
-  "lon": 138.25,
+  "lat": 36.35,
+  "lon": 138.282,
   "cid": "japan",
   "prov": "nagano",
   "provName": "Nagano",
@@ -3340,7 +3340,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "shintani-shuzo",
@@ -3356,8 +3356,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 34.203,
-  "lon": 131.546,
+  "lat": 34.209,
+  "lon": 131.661,
   "cid": "japan",
   "prov": "yamaguchi",
   "provName": "Yamaguchi",
@@ -3365,7 +3365,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "shirataki-shuzo",
@@ -3384,8 +3384,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 37.918,
-  "lon": 139.04,
+  "lat": 36.939,
+  "lon": 138.809,
   "cid": "japan",
   "prov": "niigata",
   "provName": "Niigata",
@@ -3393,7 +3393,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "suigei-shuzo",
@@ -3409,8 +3409,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 33.564,
-  "lon": 133.54,
+  "lat": 33.502,
+  "lon": 133.55,
   "cid": "japan",
   "prov": "kochi",
   "provName": "Kochi",
@@ -3418,7 +3418,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "sumikawa-shuzojo",
@@ -3434,8 +3434,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 34.203,
-  "lon": 131.546,
+  "lat": 34.596,
+  "lon": 131.68,
   "cid": "japan",
   "prov": "yamaguchi",
   "provName": "Yamaguchi",
@@ -3443,7 +3443,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "suntory",
@@ -3461,8 +3461,8 @@
   "drinkCount": 2,
   "favourites": 0,
   "hasStory": true,
-  "lat": 34.693,
-  "lon": 135.505,
+  "lat": 34.694,
+  "lon": 135.501,
   "cid": "japan",
   "prov": "osaka",
   "provName": "Osaka",
@@ -3470,7 +3470,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "spirits",
-  "exact": false
+  "exact": true
  },
  {
   "key": "suwa-mikotsuru-shuzojo",
@@ -3485,8 +3485,8 @@
   "drinkCount": 4,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.652,
-  "lon": 138.17,
+  "lat": 36.07,
+  "lon": 138.08,
   "cid": "japan",
   "prov": "nagano",
   "provName": "Nagano",
@@ -3494,7 +3494,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "swan-lake-beer",
@@ -3510,8 +3510,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 37.918,
-  "lon": 139.04,
+  "lat": 37.828,
+  "lon": 139.263,
   "cid": "japan",
   "prov": "niigata",
   "provName": "Niigata",
@@ -3519,7 +3519,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "fermented",
-  "exact": false
+  "exact": true
  },
  {
   "key": "taikai-shuzo",
@@ -3537,8 +3537,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 31.384,
-  "lon": 130.85,
+  "lat": 31.38,
+  "lon": 130.856,
   "cid": "japan",
   "prov": "kagoshima",
   "provName": "Kagoshima",
@@ -3546,7 +3546,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "spirits",
-  "exact": false
+  "exact": true
  },
  {
   "key": "tajime-shuzo",
@@ -3562,8 +3562,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 35.092,
-  "lon": 134.82,
+  "lat": 35.318,
+  "lon": 134.886,
   "cid": "japan",
   "prov": "hyogo",
   "provName": "Hyogo",
@@ -3571,7 +3571,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "takachiyo-shuzo",
@@ -3589,8 +3589,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 37.918,
-  "lon": 139.04,
+  "lat": 37.006,
+  "lon": 138.883,
   "cid": "japan",
   "prov": "niigata",
   "provName": "Niigata",
@@ -3598,7 +3598,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "takagi-shuzo",
@@ -3616,8 +3616,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 38.272,
-  "lon": 140.32,
+  "lat": 38.534,
+  "lon": 140.228,
   "cid": "japan",
   "prov": "yamagata",
   "provName": "Yamagata",
@@ -3625,7 +3625,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "takasago-shuzo",
@@ -3643,8 +3643,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 43.753,
-  "lon": 142.38,
+  "lat": 43.76,
+  "lon": 142.372,
   "cid": "japan",
   "prov": "hokkaido",
   "provName": "Hokkaido",
@@ -3652,7 +3652,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "takazawa-shuzojo",
@@ -3669,8 +3669,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.7,
-  "lon": 137.23,
+  "lat": 36.865,
+  "lon": 136.985,
   "cid": "japan",
   "prov": "toyama",
   "provName": "Toyama",
@@ -3678,7 +3678,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "takenoi-shuzo",
@@ -3698,8 +3698,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 35.601,
-  "lon": 138.593,
+  "lat": 35.828,
+  "lon": 138.428,
   "cid": "japan",
   "prov": "yamanashi",
   "provName": "Yamanashi",
@@ -3707,7 +3707,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "tomikawa-shuzoten",
@@ -3725,8 +3725,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.381,
-  "lon": 139.735,
+  "lat": 36.734,
+  "lon": 139.94,
   "cid": "japan",
   "prov": "tochigi",
   "provName": "Tochigi",
@@ -3734,7 +3734,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "banno-shuzo",
@@ -3751,8 +3751,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.25,
-  "lon": 138.475,
+  "lat": 36.224,
+  "lon": 138.462,
   "cid": "japan",
   "prov": "nagano",
   "provName": "Nagano",
@@ -3760,7 +3760,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "tosa-shuzo",
@@ -3776,8 +3776,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 33.564,
-  "lon": 133.54,
+  "lat": 33.739,
+  "lon": 133.561,
   "cid": "japan",
   "prov": "kochi",
   "provName": "Kochi",
@@ -3785,7 +3785,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "wakakoma-shuzo",
@@ -3801,8 +3801,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.316,
-  "lon": 139.8,
+  "lat": 36.364,
+  "lon": 139.773,
   "cid": "japan",
   "prov": "tochigi",
   "provName": "Tochigi",
@@ -3810,7 +3810,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "wakanoi-shuzo",
@@ -3830,8 +3830,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 38.272,
-  "lon": 140.32,
+  "lat": 38.077,
+  "lon": 139.997,
   "cid": "japan",
   "prov": "yamagata",
   "provName": "Yamagata",
@@ -3839,7 +3839,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "wakaze",
@@ -3855,8 +3855,8 @@
   "drinkCount": 2,
   "favourites": 0,
   "hasStory": true,
-  "lat": 48.859,
-  "lon": 2.355,
+  "lat": 48.853,
+  "lon": 2.348,
   "cid": "france",
   "prov": "paris",
   "provName": "Paris",
@@ -3864,7 +3864,7 @@
   "cont": "Europe",
   "reg": "Europe",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "woodford-reserve",
@@ -3879,8 +3879,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 37.535,
-  "lon": -85.285,
+  "lat": 38.08,
+  "lon": -84.766,
   "cid": "usa",
   "prov": "kentucky",
   "provName": "Kentucky",
@@ -3888,7 +3888,7 @@
   "cont": "North America",
   "reg": "North America",
   "main": "spirits",
-  "exact": false
+  "exact": true
  },
  {
   "key": "wufeng-farmers-association-winery",
@@ -3904,8 +3904,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 24.154,
-  "lon": 120.68,
+  "lat": 24.038,
+  "lon": 120.693,
   "cid": "taiwan",
   "prov": "taichungcity",
   "provName": "Taichung City",
@@ -3913,7 +3913,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "yamamoto-shuzoten",
@@ -3930,8 +3930,8 @@
   "drinkCount": 6,
   "favourites": 0,
   "hasStory": true,
-  "lat": 39.709,
-  "lon": 140.09,
+  "lat": 40.319,
+  "lon": 140.039,
   "cid": "japan",
   "prov": "akita",
   "provName": "Akita",
@@ -3939,7 +3939,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "yamawa-shuzoten",
@@ -3956,8 +3956,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 38.441,
-  "lon": 140.921,
+  "lat": 38.571,
+  "lon": 140.856,
   "cid": "japan",
   "prov": "miyagi",
   "provName": "Miyagi",
@@ -3965,7 +3965,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  },
  {
   "key": "yesan-winery",
@@ -3981,8 +3981,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.504,
-  "lon": 126.87,
+  "lat": 36.755,
+  "lon": 126.725,
   "cid": "south-korea",
   "prov": "southchungcheong",
   "provName": "South Chungcheong",
@@ -3990,7 +3990,7 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "spirits",
-  "exact": false
+  "exact": true
  },
  {
   "key": "yoshida-sake-brewery",
@@ -4010,8 +4010,8 @@
   "drinkCount": 1,
   "favourites": 0,
   "hasStory": true,
-  "lat": 36.512,
-  "lon": 136.57,
+  "lat": 36.487,
+  "lon": 136.566,
   "cid": "japan",
   "prov": "ishikawa",
   "provName": "Ishikawa",
@@ -4019,6 +4019,6 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
-  "exact": false
+  "exact": true
  }
 ]

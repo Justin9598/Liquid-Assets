@@ -54,8 +54,8 @@
   "niizawa-brewery",
   "yamawa-shuzoten"
  ],
- "lat": 38.267,
- "lon": 140.87,
+ "lat": 38.26,
+ "lon": 140.88,
  "cid": "japan",
  "prov": "miyagi",
  "provName": "Miyagi",
@@ -63,5 +63,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

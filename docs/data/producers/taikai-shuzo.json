@@ -40,8 +40,8 @@
   }
  ],
  "moreFromRegion": [],
- "lat": 31.384,
- "lon": 130.85,
+ "lat": 31.38,
+ "lon": 130.856,
  "cid": "japan",
  "prov": "kagoshima",
  "provName": "Kagoshima",
@@ -49,5 +49,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "spirits",
- "exact": false
+ "exact": true
 }

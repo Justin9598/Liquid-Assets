@@ -43,8 +43,8 @@
   "shindo-shuzoten",
   "wakanoi-shuzo"
  ],
- "lat": 38.272,
- "lon": 140.32,
+ "lat": 38.534,
+ "lon": 140.228,
  "cid": "japan",
  "prov": "yamagata",
  "provName": "Yamagata",
@@ -52,5 +52,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

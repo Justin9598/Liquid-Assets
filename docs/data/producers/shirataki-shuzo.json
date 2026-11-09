@@ -48,8 +48,8 @@
   "swan-lake-beer",
   "takachiyo-shuzo"
  ],
- "lat": 37.918,
- "lon": 139.04,
+ "lat": 36.939,
+ "lon": 138.809,
  "cid": "japan",
  "prov": "niigata",
  "provName": "Niigata",
@@ -57,5 +57,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

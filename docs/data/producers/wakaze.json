@@ -42,8 +42,8 @@
   }
  ],
  "moreFromRegion": [],
- "lat": 48.859,
- "lon": 2.355,
+ "lat": 48.853,
+ "lon": 2.348,
  "cid": "france",
  "prov": "paris",
  "provName": "Paris",
@@ -51,5 +51,5 @@
  "cont": "Europe",
  "reg": "Europe",
  "main": "sake",
- "exact": false
+ "exact": true
 }

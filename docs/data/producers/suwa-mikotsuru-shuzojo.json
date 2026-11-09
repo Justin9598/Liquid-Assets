@@ -60,8 +60,8 @@
   "shinshu-meijo",
   "banno-shuzo"
  ],
- "lat": 36.652,
- "lon": 138.17,
+ "lat": 36.07,
+ "lon": 138.08,
  "cid": "japan",
  "prov": "nagano",
  "provName": "Nagano",
@@ -69,5 +69,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

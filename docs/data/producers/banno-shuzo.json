@@ -43,8 +43,8 @@
   "daishinshu-shuzo",
   "shinshu-meijo"
  ],
- "lat": 36.25,
- "lon": 138.475,
+ "lat": 36.224,
+ "lon": 138.462,
  "cid": "japan",
  "prov": "nagano",
  "provName": "Nagano",
@@ -52,5 +52,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

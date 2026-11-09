@@ -38,8 +38,8 @@
   }
  ],
  "moreFromRegion": [],
- "lat": 36.706,
- "lon": 127.81,
+ "lat": 36.953,
+ "lon": 127.421,
  "cid": "south-korea",
  "prov": "northchungcheong",
  "provName": "North Chungcheong",
@@ -47,5 +47,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "fermented",
- "exact": false
+ "exact": true
 }

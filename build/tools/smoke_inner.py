@@ -573,8 +573,6 @@ VIEW_STATE_JS = r"""(() => {
     if (a.name === 'a counter bottle' && b.name === 'a counter bottle') continue;
     if ([a.name, b.name].sort().join() === 'the burger,the status slate') continue;       // the slate sits under the burger by design (Plan 07)
     if (a.e.contains(b.e) || b.e.contains(a.e)) continue;
-    // phones, category view: the counter bottles stand right behind the tag band under shelf 3, so the tags draw in front of them (Plan 14 section 4)
-    if (document.querySelector('.scene3')?.dataset.plate === 'tall' && [a.name, b.name].sort().join() === 'a counter bottle,a subcategory tag') continue;
     if (hit(a.r, b.r)) bad(`${a.name} overlaps ${b.name}`);
   }
   // the clock clears every bottle on the shelves, and in a view of drinks no shelf bottle stands behind a counter bottle (wide plate)

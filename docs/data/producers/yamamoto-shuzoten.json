@@ -76,8 +76,8 @@
   "hinomaru-jozo",
   "ryozeki-shuzo"
  ],
- "lat": 39.709,
- "lon": 140.09,
+ "lat": 40.319,
+ "lon": 140.039,
  "cid": "japan",
  "prov": "akita",
  "provName": "Akita",
@@ -85,5 +85,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

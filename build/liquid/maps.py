@@ -29,6 +29,11 @@ _FOLD = str.maketrans({"đ": "d", "Đ": "d", "ð": "d", "Ð": "d", "ł": "l", "�
 _RING = re.compile(r"M(-?\d+) (-?\d+)l([-\d ]*)z")
 
 
+def km_units(lat, km):
+    """Map units that span `km` kilometres east to west at this latitude."""
+    return km / (111.3 * max(0.2, math.cos(math.radians(lat))) * UNIT)
+
+
 def key(name) -> str:
     """The same key makemaps.py gives provinces: accents and case ignored, letters and digits only."""
     n = unicodedata.normalize("NFKD", str(name or "").translate(_FOLD))
@@ -147,24 +152,31 @@ class Maps:
         return self._country[cid]
 
     # ---- finding things -------------------------------------------------------------------------------------
-    def province_at(self, cid, lon, lat):
-        """The id of the province of country `cid` that holds the point (or is within about 5 km of it), else None."""
+    def province_at(self, cid, lon, lat, prefer=None):
+        """The id of the province of country `cid` the point is in, else None. The outlines are coarse near borders, so a province
+        within 3 km of the point counts as holding it, and `prefer` (the province the maker's own Region or Location names) wins
+        when it is one of those. Otherwise the smallest outline that holds the point: outlines have no holes, so a city-province
+        (Daejeon) lies inside the province round it (Chungcheongnam-do)."""
         x, y = proj(lon, lat)
         doc = self.country(cid)
-        # outlines have no holes, so a city-province (Daejeon) lies inside its surrounding province (Chungcheongnam-do): the
-        # smallest outline that holds the point is the one it is in
-        holding = [p for p in doc["provinces"] if any(_inside(r, x, y) for r in p["_rings"])]
-        if holding:
-            return min(holding, key=lambda p: (p["bb"][2] - p["bb"][0]) * (p["bb"][3] - p["bb"][1]))["id"]
-        best, bd = None, NEAR
+        reach = km_units(lat, 3)
+        holding, near = [], []
         for p in doc["provinces"]:
             x0, y0, x1, y1 = p["bb"]
-            if x < x0 - NEAR or x > x1 + NEAR or y < y0 - NEAR or y > y1 + NEAR:
+            if x < x0 - reach or x > x1 + reach or y < y0 - reach or y > y1 + reach:
                 continue
-            d = min(_dist(r, x, y) for r in p["_rings"])
-            if d < bd:
-                best, bd = p["id"], d
-        return best
+            if any(_inside(r, x, y) for r in p["_rings"]):
+                holding.append(p)
+            elif min(_dist(r, x, y) for r in p["_rings"]) <= reach:
+                near.append(p)
+        if prefer and any(p["id"] == prefer for p in holding + near):
+            return prefer
+        area = lambda p: (p["bb"][2] - p["bb"][0]) * (p["bb"][3] - p["bb"][1])
+        if holding:
+            return min(holding, key=area)["id"]
+        if near:
+            return min(near, key=lambda p: min(_dist(r, x, y) for r in p["_rings"]))["id"]
+        return None
 
     def match_province(self, cid, *words):
         """The province a word names (the maker's Region, or a part of its Location), else None."""
@@ -243,10 +255,12 @@ def place_pages(pages, maps, issues):
         have = lat is not None and lon is not None
         prov, exact = None, False
         if have:
+            words0 = [w.strip() for w in str(page.get("location") or "").split(",") if w.strip()]
+            named = maps.match_province(cid, page.get("region"), *reversed(words0))
             if not (-90 <= lat <= 90 and -180 <= lon <= 180):
                 prov = None
             else:
-                prov = maps.province_at(cid, lon, lat)
+                prov = maps.province_at(cid, lon, lat, prefer=named)
             if prov is None:
                 issues.warn("W25", f"Coordinates of '{name}' ({lat}, {lon}) are outside {page['country']}: "
                                    f"latitude and longitude swapped? The maker is placed by its town or region instead",
@@ -254,8 +268,6 @@ def place_pages(pages, maps, issues):
                 have = False
             else:
                 exact = True
-                words = [w.strip() for w in str(page.get("location") or "").split(",") if w.strip()]
-                named = maps.match_province(cid, page.get("region"), *reversed(words))
                 if named and named != prov:
                     issues.warn("W27", f"The pin of '{name}' falls in {maps.country(cid)['_prov'][prov]['name']}, but its Region and "
                                        f"Location name {maps.country(cid)['_prov'][named]['name']}: check its coordinates",

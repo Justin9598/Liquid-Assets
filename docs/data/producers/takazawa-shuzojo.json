@@ -37,8 +37,8 @@
   }
  ],
  "moreFromRegion": [],
- "lat": 36.7,
- "lon": 137.23,
+ "lat": 36.865,
+ "lon": 136.985,
  "cid": "japan",
  "prov": "toyama",
  "provName": "Toyama",
@@ -46,5 +46,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

@@ -45,8 +45,8 @@
   "machida-shuzoten",
   "hijiri-shuzo"
  ],
- "lat": 36.498,
- "lon": 138.96,
+ "lat": 36.251,
+ "lon": 139.532,
  "cid": "japan",
  "prov": "gunma",
  "provName": "Gunma",
@@ -54,5 +54,5 @@
  "cont": "Asia",
  "reg": "East Asia",
  "main": "sake",
- "exact": false
+ "exact": true
 }

@@ -1,5 +1,5 @@
 {
-  "_about": "Hand-kept corrections to the capitals and towns on the maps (Plan 14 section 6). build/tools/makemaps.py reads this when it writes docs/assets/maps/<country>.json, so run it again after editing. For each country id: 'rename' maps a Natural Earth name to the name shown, 'remove' lists names to drop, 'city' lists provinces to treat as city-provinces on the maker page, and 'add' lists places Natural Earth lacks (n, lat, lon, pop, and cap: true for the capital of its province or state). The build (not makemaps.py) also reads two more sections until every maker has coordinates: 'regions' (a country id, then a Region or Location word the maps do not know, with [latitude, longitude] for its pin) and 'provinceAlias' (a country id, then another name for a province id).",
+  "_about": "Hand-kept corrections to the capitals and towns on the maps (Plan 14 section 6). build/tools/makemaps.py reads this when it writes docs/assets/maps/<country>.json, so run it again after editing. For each country id: 'rename' maps a Natural Earth name to the name shown, 'remove' lists names to drop, 'city' lists provinces to treat as city-provinces on the maker page, and 'add' lists places Natural Earth lacks (n, lat, lon, pop, and cap: true for the capital of its province or state). The build (not makemaps.py) also reads two more sections until every maker has coordinates: 'regions' (a country id, then a Region or Location word the maps do not know, with [latitude, longitude] for its pin) and 'provinceAlias' (a country id, then another name for a province id). 'capitals' maps a province id to the place that is its capital (a checked list: the biggest town is not always the capital), and 'provinceNames' corrects a province's spelling (its id follows). Both are read by makemaps.py (Plan 14 section 12.5).",
   "japan": {
     "add": [
       {
@@ -354,12 +354,6 @@
         "pop": 92000
       },
       {
-        "n": "Nanto",
-        "lat": 36.55,
-        "lon": 136.96,
-        "pop": 51000
-      },
-      {
         "n": "Komatsu",
         "lat": 36.408,
         "lon": 136.446,
@@ -415,15 +409,9 @@
       },
       {
         "n": "Fuefuki",
-        "lat": 35.7,
+        "lat": 35.647,
         "lon": 138.64,
         "pop": 70000
-      },
-      {
-        "n": "Fujiyoshida",
-        "lat": 35.49,
-        "lon": 138.8,
-        "pop": 50000
       },
       {
         "n": "Matsumoto",
@@ -654,12 +642,6 @@
         "pop": 62000
       },
       {
-        "n": "Kainan",
-        "lat": 34.155,
-        "lon": 135.208,
-        "pop": 50000
-      },
-      {
         "n": "Izumo",
         "lat": 35.367,
         "lon": 132.755,
@@ -844,20 +826,39 @@
         "lat": 42.924,
         "lon": 143.196,
         "pop": 165000
+      },
+      {
+        "n": "Yamaguchi",
+        "lat": 34.186,
+        "lon": 131.471,
+        "pop": 190000
+      },
+      {
+        "n": "Saitama",
+        "lat": 35.862,
+        "lon": 139.646,
+        "pop": 1320000
       }
     ],
     "city": [
       "osaka"
-    ]
+    ],
+    "capitals": {
+      "yamaguchi": "Yamaguchi",
+      "saitama": "Saitama"
+    }
   },
   "denmark": {
     "rename": {
       "København": "Copenhagen",
       "Århus": "Aarhus"
     },
-    "city": [
-      "hovedstaden"
-    ]
+    "capitals": {
+      "hovedstaden": "Hillerød"
+    },
+    "provinceNames": {
+      "Sjaælland": "Sjælland"
+    }
   },
   "regions": {
     "scotland": {
@@ -895,8 +896,73 @@
         "lat": 44.8,
         "lon": -0.63,
         "pop": 62000
+      },
+      {
+        "n": "Pau",
+        "lat": 43.295,
+        "lon": -0.371,
+        "pop": 77000
+      },
+      {
+        "n": "Vannes",
+        "lat": 47.658,
+        "lon": -2.761,
+        "pop": 53000
+      },
+      {
+        "n": "Saint-Lô",
+        "lat": 49.116,
+        "lon": -1.091,
+        "pop": 19000
+      },
+      {
+        "n": "Arras",
+        "lat": 50.291,
+        "lon": 2.778,
+        "pop": 41000
+      },
+      {
+        "n": "Tulle",
+        "lat": 45.266,
+        "lon": 1.769,
+        "pop": 15000
+      },
+      {
+        "n": "Colmar",
+        "lat": 48.079,
+        "lon": 7.359,
+        "pop": 68000
+      },
+      {
+        "n": "Châlons-en-Champagne",
+        "lat": 48.957,
+        "lon": 4.363,
+        "pop": 45000
+      },
+      {
+        "n": "Quimper",
+        "lat": 47.996,
+        "lon": -4.102,
+        "pop": 63000
       }
-    ]
+    ],
+    "capitals": {
+      "pyreneesatlantiques": "Pau",
+      "morbihan": "Vannes",
+      "manche": "Saint-Lô",
+      "pasdecalais": "Arras",
+      "correze": "Tulle",
+      "hautrhin": "Colmar",
+      "hauterhin": "Colmar",
+      "marne": "Châlons-en-Champagne",
+      "finistere": "Quimper"
+    },
+    "provinceNames": {
+      "Seien-et-Marne": "Seine-et-Marne"
+    },
+    "rename": {
+      "Poitier": "Poitiers"
+    }
   },
   "vietnam": {
     "city": [
@@ -905,7 +971,43 @@
       "danang",
       "haiphong",
       "cantho"
-    ]
+    ],
+    "add": [
+      {
+        "n": "Dien Bien Phu",
+        "lat": 21.386,
+        "lon": 103.016,
+        "pop": 70000
+      },
+      {
+        "n": "Vi Thanh",
+        "lat": 9.784,
+        "lon": 105.47,
+        "pop": 75000
+      },
+      {
+        "n": "Ha Long",
+        "lat": 20.951,
+        "lon": 107.073,
+        "pop": 230000
+      },
+      {
+        "n": "Ben Tre",
+        "lat": 10.241,
+        "lon": 106.375,
+        "pop": 120000
+      }
+    ],
+    "capitals": {
+      "dienbien": "Dien Bien Phu",
+      "haugiang": "Vi Thanh",
+      "quangninh": "Ha Long",
+      "bentre": "Ben Tre"
+    },
+    "provinceNames": {
+      "Quàng Nam": "Quảng Nam",
+      "Lao Chi": "Lào Cai"
+    }
   },
   "south-korea": {
     "add": [
@@ -950,8 +1052,38 @@
         "lat": 33.253,
         "lon": 126.56,
         "pop": 155000
+      },
+      {
+        "n": "Hongseong",
+        "lat": 36.601,
+        "lon": 126.661,
+        "pop": 100000
+      },
+      {
+        "n": "Andong",
+        "lat": 36.568,
+        "lon": 128.729,
+        "pop": 160000
+      },
+      {
+        "n": "Muan",
+        "lat": 34.99,
+        "lon": 126.482,
+        "pop": 90000
+      },
+      {
+        "n": "Sejong",
+        "lat": 36.48,
+        "lon": 127.289,
+        "pop": 380000
       }
-    ]
+    ],
+    "capitals": {
+      "southchungcheong": "Hongseong",
+      "northgyeongsang": "Andong",
+      "southjeolla": "Muan",
+      "sejong": "Sejong"
+    }
   },
   "taiwan": {
     "add": [
@@ -972,6 +1104,9 @@
         "pop": 2500,
         "cap": true
       }
-    ]
+    ],
+    "provinceNames": {
+      "North Ayshire": "North Ayrshire"
+    }
   }
 }

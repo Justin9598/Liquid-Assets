@@ -186,7 +186,7 @@ def test_every_maker_pin_is_inside_its_hatched_province(real_maps):
         x, y = bmaps.proj(p["lon"], p["lat"])
         doc = real_maps.country(p["cid"])
         mine = doc["_prov"][p["prov"]]
-        assert any(bmaps._inside(r, x, y) for r in mine["_rings"]) or min(bmaps._dist(r, x, y) for r in mine["_rings"]) <= bmaps.NEAR, p["key"]
+        assert any(bmaps._inside(r, x, y) for r in mine["_rings"]) or min(bmaps._dist(r, x, y) for r in mine["_rings"]) <= bmaps.km_units(p["lat"], 3), p["key"]
         area = lambda q: (q["bb"][2] - q["bb"][0]) * (q["bb"][3] - q["bb"][1])
         smaller = [q["id"] for q in doc["provinces"] if q["id"] != mine["id"] and area(q) < area(mine) and any(bmaps._inside(r, x, y) for r in q["_rings"])]
         assert not smaller, f"{p['key']} is in {smaller}, not {p['prov']}"
@@ -194,5 +194,39 @@ def test_every_maker_pin_is_inside_its_hatched_province(real_maps):
     assert real_maps.country("south-korea")["_prov"]["daejeon"].get("city")           # (the ledger's Daejeon Blues pin is in Chungcheongnam-do: W27)
     # a point in Daejeon's own streets is in Daejeon, not in the province round it
     assert real_maps.province_at("south-korea", 127.385, 36.35) == "daejeon"
-    for cid, prov in (("japan", "tokyo"), ("japan", "osaka"), ("singapore", "singapore"), ("denmark", "hovedstaden"), ("vietnam", "hochiminhcity"), ("taiwan", "taichungcity")):
+    for cid, prov in (("japan", "tokyo"), ("japan", "osaka"), ("singapore", "singapore"), ("vietnam", "hochiminhcity"), ("taiwan", "taichungcity")):
         assert real_maps.country(cid)["_prov"][prov].get("city"), (cid, prov)
+
+
+def test_border_pins_use_the_province_the_maker_names_within_3_km(real_maps):
+    """Plan 14 section 12.5: Natural Earth's outlines are coarse near borders. The three W27 makers are right: their pins are within
+    3 km of the province their Region names, so that one is used and W27 stays quiet."""
+    prods = {p["key"]: p for p in json.loads((SHIP / "docs" / "data" / "producers.json").read_text(encoding="utf-8"))}
+    assert (prods["daejeon-blues-brewery"]["prov"], prods["akishika-shuzo"]["prov"], prods["hagino-shuzo"]["prov"]) == ("daejeon", "osaka", "miyagi")
+    pages = {"a": page("Akishika", region="Osaka", location="Nose, Osaka", lat=34.977, lon=135.4635)}
+    issues = Issues()
+    bmaps.place_pages(pages, real_maps, issues)
+    assert pages["a"]["pin"]["prov"] == "osaka" and "W27" not in codes(issues)
+    far = {"a": page("Far", region="Osaka", location="Nose, Osaka", lat=35.3, lon=135.6)}       # well inside Kyoto, not a border case
+    issues = Issues()
+    bmaps.place_pages(far, real_maps, issues)
+    assert "W27" in codes(issues)
+
+
+def test_province_capitals_come_from_the_checked_list():
+    """Plan 14 section 12.5: the biggest town is not the capital."""
+    def caps(c):
+        d = load(f"{c}.json")
+        return {p["p"]: p["n"] for p in d["places"] if p.get("cap")}
+    jp = caps("japan")
+    assert jp["yamaguchi"] == "Yamaguchi" and jp["saitama"] == "Saitama" and jp["iwate"] == "Morioka"
+    kr = caps("south-korea")
+    assert (kr["southchungcheong"], kr["northgyeongsang"], kr["southjeolla"], kr["sejong"]) == ("Hongseong", "Andong", "Muan", "Sejong")
+    fr = caps("france")
+    assert (fr["pyreneesatlantiques"], fr["morbihan"], fr["manche"], fr["pasdecalais"], fr["correze"], fr["hauterhin"], fr["marne"], fr["finistere"]) == (
+        "Pau", "Vannes", "Saint-Lô", "Arras", "Tulle", "Colmar", "Châlons-en-Champagne", "Quimper")
+    assert caps("denmark")["hovedstaden"] == "Hillerød"
+    towns = {p["n"] for p in load("japan.json")["places"]}
+    assert not ({"Fujiyoshida", "Kainan", "Nanto"} & towns) and "Fuefuki" in towns
+    names = {p["name"] for c in ("denmark", "scotland", "vietnam", "france") for p in load(f"{c}.json")["provinces"]}
+    assert {"Sjælland", "North Ayrshire", "Quảng Nam", "Lào Cai", "Seine-et-Marne"} <= names

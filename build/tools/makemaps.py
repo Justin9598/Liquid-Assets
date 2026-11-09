@@ -276,6 +276,7 @@ def make_country(cid, conf, admin1, places):
         for f in feats:
             p = f["properties"]
             name = p["name"] or p["name_en"]
+            name = (CORRECTIONS.get(cid, {}).get("provinceNames") or {}).get(name, name)
             if cid == "japan":                                       # "Osaka", not "Osaka" with a macron
                 name = "".join(ch for ch in unicodedata.normalize("NFKD", name) if not unicodedata.combining(ch))
             provinces.append({"name": name, "native": p.get("name_local") if p.get("name_local") and p["name_local"] != name else None,
@@ -371,6 +372,8 @@ def make_country(cid, conf, admin1, places):
             for e in lst:
                 e.pop("cap", None)
             pick = max(flagged or lst, key=lambda e: e["pop"])
+            named = (fix.get("capitals") or {}).get(pid)                  # a checked capital beats Natural Earth's flag and the biggest town
+            pick = next((e for e in lst if named and key(e["n"]) == key(named)), pick)
             pick["cap"] = 1
         doc["places"] = sorted(pl, key=lambda e: (-e["pop"], e["n"]))
         text = dumps(doc)

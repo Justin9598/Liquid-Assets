@@ -240,9 +240,7 @@ export async function mount(root, ctx) {
     visible = 3;
     lower.innerHTML = rowsV3(list);
     lower.dataset.mode = kindOf(list);
-    if (mode === 'tall' && lower.dataset.mode === 'sub') {         // fewer bottles in view until every tag fits
-      while (visible > 1 && !tagsFit()) { visible -= 1; lower.innerHTML = rowsV3(list); }
-    }
+    if (mode === 'tall' && lower.dataset.mode === 'sub') placeTags();
     if (mode === 'tall' && lower.dataset.mode === 'drinks') {      // tighter spacing for drinks: about 1.15 bottle widths apart, never fewer than 6 across
       const row = $('.lowrow .row-items', lower);
       const widest = Math.max(0, ...$$('.art > *', row).map((e) => e.getBoundingClientRect().width));
@@ -272,8 +270,7 @@ export async function mount(root, ctx) {
 
   /** Category view, wide plate (Plan 14 section 4): the counter groups stand in front of the ends of shelf 3. Shelf 3 gets only
    * the room between them, at the same bottle pitch as shelf 2, and shelf 2 takes the rest, filling first. The widest pitch
-   * that holds every kind on the two shelves wins. If none does at a pitch where the tags still fit, the last place on
-   * shelf 3 becomes a "See all {n} kinds" board. */
+   * that holds every kind on the two shelves wins. */
   function fitSubShelves(list) {
     const rowEls = $$('.lowrow .row-items', lower);
     const front = frontBottles();
@@ -284,33 +281,23 @@ export async function mount(root, ctx) {
     const clear3 = rowEls[1].clientWidth - padL - padR;
     const n = list.length;
     const cap3Of = (per2) => Math.max(0, Math.floor(clear3 / (w2 / per2) + 1e-6));
-    const make = (per2, seeAll) => {
-      const p = w2 / per2;
-      const cap3 = cap3Of(per2);
-      let g3 = list.slice(per2);
-      if (seeAll) {
-        g3 = list.slice(per2, per2 + Math.max(0, cap3 - 1));
-        const c = ix.cats.get(sel);
-        g3.push({ seeall: true, count: list.length, text: `See all ${list.length} kinds`, href: `#/${c.key}` });
-      }
-      const empty = !g3.length;
-      return { groups: [list.slice(0, per2), g3], pers: [per2, empty ? per2 : clear3 / p], pads: [null, empty ? null : [padL, padR]] };
-    };
     let per2 = 3;
     while (per2 + cap3Of(per2) < n && per2 < 16) per2++;
-    const fits = per2 + cap3Of(per2) >= n;
-    let plan = make(per2, !fits);
+    const g3 = list.slice(per2);
+    const plan = { groups: [list.slice(0, per2), g3], pers: [per2, g3.length ? clear3 / (w2 / per2) : per2], pads: [null, g3.length ? [padL, padR] : null] };
     lower.innerHTML = rowsV3(list, plan);
-    if (!fits || !tagsFit()) {                                // the tags cannot use so narrow a pitch: fewer bottles and a See all board
-      lower.dataset.fitFail = '';
-      for (let k = Math.min(per2, 16); k >= 3; k--) {
-        plan = make(k, true);
-        lower.innerHTML = rowsV3(list, plan);
-        if (tagsFit()) break;
-      }
-    }
     lower.dataset.shelf2 = String(plan.groups[0].length);
     lower.dataset.shelf3 = String(plan.groups[1].length);
+  }
+
+  /** Phones, category view (Plan 14 section 12.1): the counter bottles stand in front of the tags, so each tag is one line on the
+   * lip of its shelf, ending above the counter bottles' tops. A name too long for its place wraps to two lines, still on the lip: the back wall above holds the category captions. */
+  function placeTags() {
+    $$('.slot.sub', lower).forEach((sl) => {
+      sl.classList.remove('tag-wrap');
+      const h = $('.hang', sl);
+      if (h && h.getBoundingClientRect().width > sl.getBoundingClientRect().width - 4) sl.classList.add('tag-wrap');
+    });
   }
 
   /** In a view of drinks the counter bottles stay up (filtered, or the usual set), so on the wide plate the lower shelves give

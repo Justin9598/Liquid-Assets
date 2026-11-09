@@ -101,8 +101,14 @@ body[data-page='welcome'][data-scene='v3'] { overflow: hidden; background: #1b14
 
 /* ---- counter displays (Plan 07 section 4) */
 .scene3 .cgroup { position: absolute; z-index: 4; }
-/* phones, category view: the counter bottles stand right behind the tag band under shelf 3, so the shelf and its tags draw in front (Plan 14 section 4) */
-.scene3[data-plate='tall'] .shelf-row.s3.lowrow { z-index: 5; }
+/* phones, category view (Plan 14 section 12.1): the counter bottles stand in front of the subcategory tags, so each tag is one line on its
+   shelf's lip, ending above the counter bottles' tops, or two lines when the name will not fit */
+.scene3[data-plate='tall'] .slot.sub .hang { top: auto; bottom: 15px; --cb-fs: 12px; width: max-content; max-width: none; }
+.scene3[data-plate='tall'] .slot.sub .hang .nm { white-space: nowrap; }
+.scene3[data-plate='tall'] .slot.sub .hang .l2 { display: none; }
+.scene3[data-plate='tall'] .slot.sub.tag-wrap .hang { max-width: calc(100% - 2px); }      /* a name too long for one line wraps, still standing on the lip (the back wall above has the category captions) */
+.scene3[data-plate='tall'] .slot.sub.tag-wrap .hang .nm { white-space: normal; }
+
 .scene3 .cg-row { list-style: none; margin: 0; padding: 0; height: 100%; display: flex; justify-content: space-around; align-items: flex-end; }
 .scene3 .cb-cell { flex: 1 1 0; min-width: 0; height: 100%; display: flex; justify-content: center; align-items: flex-end; }
 .scene3 .cbottle { position: relative; display: flex; align-items: flex-end; justify-content: center; height: 100%; width: 100%; padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; text-decoration: none; transition: transform 140ms ease-out; }
@@ -677,7 +683,7 @@ a.tile:hover .nm, a.tile:focus-visible .nm { color: var(--glow); }
   .map-board { max-height: 55vh; display: flex; flex-direction: column; padding-block: 10px; }
   .map-board .mm-host { height: calc(55vh - 225px); min-height: 180px; flex: none; }
   .map-board .t-body { margin-top: 6px; font-size: 17px; }
-  .mm-bar { margin-bottom: 4px; padding-right: 150px; }      /* the fixed Menu and burger sit above the board's corner */
+  .mm-bar { margin-bottom: 4px; padding-right: 122px; }      /* the row ends before the fixed Menu button's left edge */
   .mm-crumbs { min-width: 0; flex: 1 1 auto; }
   .mm-crumbs ol { font-size: 15px; flex-wrap: nowrap; white-space: nowrap; overflow: hidden; }
   .mm-legend { margin-top: 6px; font-size: 14px; gap: 2px 12px; }

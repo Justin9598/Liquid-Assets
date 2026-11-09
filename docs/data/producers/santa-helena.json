@@ -36,8 +36,8 @@
  "moreFromRegion": [
   "casa-silva"
  ],
- "lat": -34.6,
- "lon": -71.0,
+ "lat": -34.64,
+ "lon": -71.366,
  "cid": "chile",
  "prov": "libertadorgeneralbernardoohiggins",
  "provName": "Libertador General Bernardo O'Higgins",
@@ -45,5 +45,5 @@
  "cont": "South America",
  "reg": "South America",
  "main": "wine",
- "exact": false
+ "exact": true
 }
