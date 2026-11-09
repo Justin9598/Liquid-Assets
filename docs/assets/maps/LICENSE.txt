@@ -1,0 +1,16 @@
+Map files (assets/maps/*.json)
+
+Source:   Natural Earth (https://www.naturalearthdata.com/), also at https://github.com/nvkelso/natural-earth-vector
+          - ne_50m_admin_0_map_units            (world.json: the countries, with map units so that Scotland stands alone)
+          - ne_10m_admin_1_states_provinces     (<country>.json: provinces and states, for the countries with makers)
+          - ne_10m_populated_places_simple      (<country>.json: capitals and towns of 50,000 people or more)
+Licence:  Public domain. Natural Earth terms of use (https://www.naturalearthdata.com/about/terms-of-use/):
+          "All versions of Natural Earth raster + vector map data found on this website are in the public
+          domain. You may use the maps in any manner, including modifying the content and design ... No
+          permission is needed to use Natural Earth. Crediting the authors is unnecessary."
+          The repository's LICENSE.md says the same ("Everything here is public domain.").
+          Verified 2026-11-09.
+Changes:  Outlines simplified (Douglas-Peucker), tiny islands and the remote islands of Japan dropped, overseas
+          departments of France dropped, holes in outlines dropped, one Miller cylindrical projection for every file,
+          written as integer SVG paths by Ship/build/tools/makemaps.py.
+Credit:   The site footer reads "Map: Natural Earth (public domain)".
