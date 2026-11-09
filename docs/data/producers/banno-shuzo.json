@@ -42,5 +42,15 @@
   "ozawa-shuzojo",
   "daishinshu-shuzo",
   "shinshu-meijo"
- ]
+ ],
+ "lat": 36.652,
+ "lon": 138.17,
+ "cid": "japan",
+ "prov": "nagano",
+ "provName": "Nagano",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

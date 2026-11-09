@@ -39,5 +39,15 @@
    "sub": "shochu"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 31.384,
+ "lon": 130.85,
+ "cid": "japan",
+ "prov": "kagoshima",
+ "provName": "Kagoshima",
+ "area": "kyushu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "spirits",
+ "exact": false
 }

@@ -52,5 +52,15 @@
    "sub": "ungraded"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 10.777,
+ "lon": 106.685,
+ "cid": "vietnam",
+ "prov": "hochiminhcity",
+ "provName": "Hồ Chí Minh city",
+ "area": null,
+ "cont": "Asia",
+ "reg": "Southeast Asia",
+ "main": "sake",
+ "exact": true
 }

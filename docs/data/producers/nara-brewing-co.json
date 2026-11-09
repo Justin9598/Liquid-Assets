@@ -51,5 +51,15 @@
   "imanishi-shuzo",
   "okura-honke",
   "miyoshino-jozo"
- ]
+ ],
+ "lat": 34.652,
+ "lon": 135.808,
+ "cid": "japan",
+ "prov": "nara",
+ "provName": "Nara",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "fermented",
+ "exact": true
 }

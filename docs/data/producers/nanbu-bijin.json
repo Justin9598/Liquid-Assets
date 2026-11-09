@@ -40,5 +40,15 @@
   "kikunotsukasa-shuzo",
   "hiraroku-jozo",
   "akabu-shuzo"
- ]
+ ],
+ "lat": 40.273,
+ "lon": 141.301,
+ "cid": "japan",
+ "prov": "iwate",
+ "provName": "Iwate",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

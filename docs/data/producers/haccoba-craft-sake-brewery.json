@@ -2,7 +2,7 @@
  "key": "haccoba-craft-sake-brewery",
  "name": "Haccoba Craft Sake Brewery",
  "native": null,
- "location": "Minamisoma, Fukushima",
+ "location": "Namie, Fukushima",
  "region": "Fukushima",
  "country": "Japan",
  "founded": 2021,
@@ -54,5 +54,15 @@
   "homare-shuzo",
   "matsuzaki-shuzo",
   "miyaizumi-meijo"
- ]
+ ],
+ "lat": 37.502,
+ "lon": 141.002,
+ "cid": "japan",
+ "prov": "fukushima",
+ "provName": "Fukushima",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

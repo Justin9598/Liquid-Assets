@@ -4,9 +4,9 @@ import { cardHTML } from './cards.js';
 import { board, emptyHTML, headBoard, pageHTML } from './chrome.js';
 import { getJSON } from './data.js';
 import { icon } from './icons.js';
-import { addRing, insertMap } from './map.js';
+import { drawProvinceMap } from './map.js';
 import { drinkShell } from './shells.js';
-import { $, esc, plural, regionKey, setTitle } from './util.js';
+import { $, esc, plural, setTitle } from './util.js';
 
 const isHangul = (s) => /[ᄀ-ᇿ㄰-㆏가-힯]/.test(s || '');
 
@@ -62,10 +62,10 @@ export async function mount(root, ctx) {
   add('Brands', p.brands.length ? esc(p.brands.join(', ')) : '');
   add('Master brewer', esc(p.master || ''));
   add('Website', p.website ? `<a class="chalk-link site" href="${esc(p.website)}" title="${esc(p.website)}" target="_blank" rel="noopener noreferrer"><span class="host">${esc(hostOf(p.website) || p.website)}</span>${icon('arrow-up-right', 14)}</a>` : '');
-  const wantsMap = p.country === 'Japan' && !!p.region;
+  const wantsMap = !!p.cid && p.lat != null && !!p.prov;                 // every maker with a pin, in every country (Plan 14 section 6)
   const factsBoard = board(`<div class="facts-grid${wantsMap ? '' : ' nomap'}" id="facts-grid">
   <div><h2 class="t-head" id="h-facts">The Facts</h2><dl class="spec">${facts.join('')}</dl></div>
-  ${wantsMap ? '<div class="map-chalk" id="locator"></div>' : ''}
+  ${wantsMap ? '<div class="map-chalk mm-mini" id="locator"></div>' : ''}
 </div>`, 'facts', 'aria-labelledby="h-facts"');
   const storyBoard = p.about.length ? board(`<h2 class="t-head" id="h-story">The Story</h2>
   ${p.about.map((x) => `<p class="t-body">${esc(x)}</p>`).join('')}
@@ -104,13 +104,9 @@ export async function mount(root, ctx) {
 
   if (wantsMap) {
     const loc = $('#locator', root);
-    const svg = await insertMap(loc, { label: `Map of Japan with ${p.region} highlighted` });
-    const path = svg && svg.querySelector(`path[data-key="${CSS.escape(regionKey(p.region))}"]`);
-    if (path) {
-      path.classList.add('hl');
-      addRing(svg, path);
-    } else {
-      loc.remove();                                   // a map that cannot place the prefecture is left out, never shown unmarked
+    const drawn = await drawProvinceMap(loc, { p });
+    if (!drawn) {
+      loc.remove();                                   // a map that cannot place the province is left out, never shown unmarked
       $('#facts-grid', root)?.classList.add('nomap');
     }
   }

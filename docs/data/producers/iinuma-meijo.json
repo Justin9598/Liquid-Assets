@@ -78,5 +78,15 @@
   "nasu-kohgen-beer",
   "tomikawa-shuzoten",
   "wakakoma-shuzo"
- ]
+ ],
+ "lat": 36.46,
+ "lon": 139.738,
+ "cid": "japan",
+ "prov": "tochigi",
+ "provName": "Tochigi",
+ "area": "kanto",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

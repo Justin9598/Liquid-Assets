@@ -38,5 +38,15 @@
   "hamahama-brewery",
   "jeju-beer-company",
   "jeju-makgeolli"
- ]
+ ],
+ "lat": 33.233,
+ "lon": 126.25,
+ "cid": "south-korea",
+ "prov": "jeju",
+ "provName": "Jeju",
+ "area": null,
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "fermented",
+ "exact": true
 }

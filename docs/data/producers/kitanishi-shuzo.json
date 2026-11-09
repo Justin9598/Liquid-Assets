@@ -38,5 +38,15 @@
  "moreFromRegion": [
   "igarashi-shuzo",
   "shinkame-shuzo"
- ]
+ ],
+ "lat": 35.978,
+ "lon": 139.589,
+ "cid": "japan",
+ "prov": "saitama",
+ "provName": "Saitama",
+ "area": "kanto",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

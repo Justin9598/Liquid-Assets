@@ -40,5 +40,15 @@
    "sub": "lager"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 55.667,
+ "lon": 12.529,
+ "cid": "denmark",
+ "prov": "hovedstaden",
+ "provName": "Hovedstaden",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "fermented",
+ "exact": true
 }

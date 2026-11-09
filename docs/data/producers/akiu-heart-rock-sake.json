@@ -46,5 +46,15 @@
   "kawakei-shoten",
   "niizawa-brewery",
   "yamawa-shuzoten"
- ]
+ ],
+ "lat": 38.268,
+ "lon": 140.869,
+ "cid": "japan",
+ "prov": "miyagi",
+ "provName": "Miyagi",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import sys
 import unicodedata
 import urllib.request
@@ -205,8 +206,10 @@ def shape(geom, tol, min_area, keep=None):
         polys = sorted(polys_of(geom), key=lambda p: -ring_area(p[0]))
         s = simplify([tuple(p[:2]) for p in polys[0][0]], tol / 4)
         rings = [s] if len(s) >= 4 else [[tuple(p[:2]) for p in polys[0][0]]]
-    xs = [p[0] for r in rings for p in r]
-    ys = [p[1] for r in rings for p in r]
+    big = max(ring_area(r) for r in rings)
+    main = [r for r in rings if ring_area(r) >= 0.04 * big]          # the box ignores far specks (Easter Island, the Aleutians' tail)
+    xs = [p[0] for r in main for p in r]
+    ys = [p[1] for r in main for p in r]
     return rings, (min(xs), min(ys), max(xs), max(ys))
 
 
@@ -273,6 +276,8 @@ def make_country(cid, conf, admin1, places):
         for f in feats:
             p = f["properties"]
             name = p["name"] or p["name_en"]
+            if cid == "japan":                                       # "Osaka", not "Osaka" with a macron
+                name = "".join(ch for ch in unicodedata.normalize("NFKD", name) if not unicodedata.combining(ch))
             provinces.append({"name": name, "native": p.get("name_local") if p.get("name_local") and p["name_local"] != name else None,
                               "type": p.get("type_en") or p.get("type"), "geom": f["geometry"], "id": key(name), "ne_name": name,
                               "region": p.get("region")})
@@ -334,6 +339,8 @@ def make_country(cid, conf, admin1, places):
                 ent["native"] = pr["native"]
             if pr["type"]:
                 ent["type"] = pr["type"]
+            if is_city(cid, pr):
+                ent["city"] = 1
             out_prov.append(ent)
         doc = {"v": 1, "unit": UNIT, "id": cid, "name": conf["ledger"], "provinces": out_prov}
         if cid in AREAS:
@@ -375,6 +382,19 @@ CORRECTIONS = {}
 _corr = SHIP / "content" / "map-places.json"
 if _corr.exists():
     CORRECTIONS = {k: v for k, v in json.loads(_corr.read_text(encoding="utf-8")).items() if not k.startswith("_")}
+
+CITY_TYPE = re.compile(r"^(metropolis|metropolitan city|capital metropolitan city|special municipality|special self-governing city"
+                       r"|provincial city|city.*|unitary district \(city\))$", re.I)
+NOT_CITY = {"northgyeongsang", "southjeolla", "shetlandislands"}          # Natural Earth types these as cities by mistake
+
+
+def is_city(cid, pr):
+    """A city-province (Tokyo, Osaka, Seoul, Singapore, Paris...): the maker page then shows the city with its neighbours and no
+    separate towns (Plan 14 section 6). By Natural Earth's type, or listed under 'city' for the country in content/map-places.json."""
+    if cid == "singapore" or pr["id"] in (CORRECTIONS.get(cid, {}).get("city") or []):
+        return True
+    return bool(CITY_TYPE.match(pr.get("type") or "")) and pr["id"] not in NOT_CITY
+
 
 LICENSE = """Map files (assets/maps/*.json)
 

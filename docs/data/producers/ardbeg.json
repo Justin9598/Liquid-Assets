@@ -36,5 +36,15 @@
  ],
  "moreFromRegion": [
   "bruichladdich"
- ]
+ ],
+ "lat": 55.641,
+ "lon": -6.108,
+ "cid": "scotland",
+ "prov": "argyllandbute",
+ "provName": "Argyll and Bute",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "spirits",
+ "exact": true
 }

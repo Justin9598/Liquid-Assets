@@ -38,5 +38,15 @@
  "moreFromRegion": [
   "suigei-shuzo",
   "tosa-shuzo"
- ]
+ ],
+ "lat": 33.474,
+ "lon": 133.388,
+ "cid": "japan",
+ "prov": "kochi",
+ "provName": "Kochi",
+ "area": "shikoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

@@ -35,5 +35,15 @@
   "isibo-brewery",
   "jeju-beer-company",
   "jeju-makgeolli"
- ]
+ ],
+ "lat": 33.448,
+ "lon": 126.305,
+ "cid": "south-korea",
+ "prov": "jeju",
+ "provName": "Jeju",
+ "area": null,
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "fermented",
+ "exact": true
 }

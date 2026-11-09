@@ -35,5 +35,15 @@
    "sub": "junmai-ginjo"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 35.355,
+ "lon": 132.752,
+ "cid": "japan",
+ "prov": "shimane",
+ "provName": "Shimane",
+ "area": "chugoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

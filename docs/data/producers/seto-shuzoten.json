@@ -43,5 +43,15 @@
   "ricewine-k-k",
   "kawanishiya-shuzoten",
   "oya-takashi-shuzo"
- ]
+ ],
+ "lat": 35.401,
+ "lon": 139.326,
+ "cid": "japan",
+ "prov": "kanagawa",
+ "provName": "Kanagawa",
+ "area": "kanto",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

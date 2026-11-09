@@ -568,26 +568,61 @@ a.card:hover .card-name, a.card:focus-visible .card-name { color: var(--glow); }
 .sources { margin-top: 12px; }
 .map-chalk { width: 100%; max-width: 380px; margin-inline: auto; }
 .facts .map-chalk { max-width: 300px; }
-.facts .jp-map { max-height: 260px; }
-@container facts (min-width: 560px) { .facts .jp-map { max-height: 70vh; } }
-.jp-map { display: block; width: 100%; height: auto; max-height: 70vh; overflow: visible; color: var(--chalk); }
-.jp-map path { fill: none; stroke: rgba(242, 237, 228, .72); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-.jp-map .inset { fill: none; stroke: rgba(242, 237, 228, .35); stroke-dasharray: 3 4; vector-effect: non-scaling-stroke; }
-.jp-map path.has { fill: url(#hatch-light); cursor: pointer; }
-.jp-map path.has:hover, .jp-map path.has:focus-visible { stroke: var(--glow); stroke-width: 2px; outline: none; }
-.jp-map path.hl, .jp-map path.sel { fill: url(#hatch-glow); stroke: var(--glow); stroke-width: 2px; }
-.jp-map .ring { fill: none; stroke: var(--chalk); stroke-width: 2px; stroke-linecap: round; vector-effect: non-scaling-stroke; }
-.jp-map .dots circle { fill: rgba(242, 237, 228, .28); stroke: rgba(242, 237, 228, .8); stroke-width: 1px; vector-effect: non-scaling-stroke; pointer-events: none; }
-.m-top { display: grid; grid-template-columns: minmax(240px, 380px) minmax(0, 1fr); gap: clamp(20px, 4vw, 44px); align-items: start; }
-@media (max-width: 1023px) { .m-top { grid-template-columns: minmax(0, 1fr); } }
+.facts .mm-mini { max-width: 300px; }
+/* ---- the pin maps (Plan 14 sections 5 and 6): chalk outlines, pins as buttons over them */
+.mm-stage { position: relative; overflow: hidden; border-radius: var(--r-sm); background: rgba(14, 12, 11, .28); }
+.mm-svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; color: var(--chalk); }
+.mm-geo path { fill: none; stroke: rgba(242, 237, 228, .26); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.mm-geo .g-world path.has { stroke: rgba(242, 237, 228, .62); }
+.mm-geo .g-world path.sel { stroke: rgba(242, 237, 228, .9); stroke-width: 1.6px; }
+.mm-geo .g-country path { stroke: rgba(242, 237, 228, .5); }
+.mm-geo .g-country path.sel { stroke: var(--glow); stroke-width: 2px; }
+.mm-pins { position: absolute; inset: 0; pointer-events: none; }
+.mm-pin { position: absolute; width: 44px; height: 44px; padding: 0; margin: 0; border: 0; background: none; border-radius: 50%; color: var(--chalk); pointer-events: auto; cursor: pointer; z-index: 1; font: inherit; }
+.mm-pin .pin-art { position: absolute; left: 22px; top: 22px; overflow: visible; pointer-events: none; transition: transform 140ms ease-out; }
+.mm-pin:hover, .mm-pin:focus-visible { z-index: 6; }
+.mm-pin:hover .pin-art, .mm-pin:focus-visible .pin-art { transform: translateY(-2px); }
+.mm-pin:focus-visible { outline: 3px solid var(--glow); outline-offset: 0; box-shadow: none; }
+.mm-pin .pin-tag { position: absolute; left: calc(50% + var(--r) + 4px); top: 50%; transform: translateY(-50%); white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity 140ms; --cb-fs: 14px; z-index: 2; }
+.mm-pin .pin-tag.flip { left: auto; right: calc(50% + var(--r) + 4px); }
+.mm-pin .pin-tag.always, .mm-pin:hover .pin-tag, .mm-pin:focus-visible .pin-tag { opacity: 1; }
+.mm-pin.fanned { z-index: 4; }
+.mm-card { position: absolute; z-index: 10; width: max-content; max-width: min(260px, calc(100% - 12px)); padding: 10px 14px; --cb-fs: 16px; font-weight: 400; }
+.mm-card[hidden] { display: none; }
+.mm-card .nm { margin: 0; font: 700 18px/1.2 var(--chalkhand); overflow-wrap: anywhere; }
+.mm-card .nat { margin: 0; font-size: 15px; opacity: .9; }
+.mm-card .loc, .mm-card .n { margin: 2px 0 0; font-size: 15px; opacity: .88; }
+.mm-card .chalk-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 6px; min-height: 32px; }
+.mm-bar { display: flex; align-items: center; gap: 10px 14px; margin-bottom: 10px; padding-right: 96px; }       /* the fixed Menu button sits in the corner above the board */
+.mm-crumbs ol { display: flex; flex-wrap: wrap; align-items: center; margin: 0; padding: 0; list-style: none; font: 700 17px/1.2 var(--chalkhand); }
+.mm-crumbs li + li::before { content: '›'; margin: 0 .55em; opacity: .6; }
+.mm-crumb { min-height: 44px; padding: 0 2px; border: 0; background: none; color: var(--chalk); font: inherit; text-decoration: underline dotted rgba(242, 237, 228, .55); text-underline-offset: 4px; cursor: pointer; }
+.mm-crumb:hover, .mm-crumb:focus-visible { color: var(--glow); }
+.mm-crumb:focus-visible, .mm-back:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; box-shadow: none; }
+.mm-back { min-height: 44px; min-width: 64px; cursor: pointer; }
+.mm-back:disabled { opacity: .35; cursor: default; }
+.mm-host { width: 100%; height: clamp(320px, 54vh, 560px); }
+.mm-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 10px; font: 400 15px/1.2 var(--chalkhand); min-height: 20px; }
+.mm-key { display: inline-flex; align-items: center; gap: 5px; }
+.mm-info { margin-top: 8px; }
+.mm-info b { font-weight: 700; }
+.mm-mini { position: relative; width: 100%; max-width: 300px; height: 256px; margin-inline: auto; }
+.mm-mini .mm-pins { pointer-events: none; }
+.mm-labels { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.mm-name { font: 700 14px var(--chalkhand); fill: var(--chalk); paint-order: stroke; stroke: #262a28; stroke-width: 3.2px; stroke-linejoin: round; }
+.mm-name.cap { font-size: 15px; fill: var(--glow); }
+.mm-star { fill: var(--glow); stroke: #262a28; stroke-width: 1px; paint-order: stroke; }
+.mm-town { fill: var(--chalk); stroke: #262a28; stroke-width: 1px; }
+.mm-inset { position: absolute; background: rgba(38, 42, 40, .94); border: 1.5px solid rgba(242, 237, 228, .5); border-radius: 6px; }
+.mm-inset path { fill: none; stroke: rgba(242, 237, 228, .6); stroke-width: .8px; vector-effect: non-scaling-stroke; }
+.mm-inset path.sel { stroke: var(--glow); stroke-width: 1.4px; }
+.m-top { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: start; }
 .m-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
 .m-top > .chalkboard { min-width: 0; }
 .controls-board { align-self: start; }
 .map-board .t-body { margin-top: 12px; }
 .m-controls { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; }
 .m-controls .search { flex: 1 1 260px; }
-.elsewhere { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; }
-.elsewhere .lead { margin-right: 4px; }
 .region-chip:empty { display: none; }
 .country-group { display: flex; flex-direction: column; gap: 16px; }
 .tile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
@@ -634,11 +669,12 @@ a.tile:hover .nm, a.tile:focus-visible .nm { color: var(--glow); }
   .tile-row .tile { flex-basis: 210px; }
   .facts-grid { gap: 18px; }
   .m-top { gap: 20px; }
-  .map-board { max-height: 48vh; display: flex; flex-direction: column; }
-  .map-board .map-chalk { height: calc(48vh - 96px); display: flex; justify-content: center; max-width: none; }
-  .map-board .map-chalk > div { height: 100%; }
-  .map-board .jp-map { height: 100%; width: auto; max-width: 100%; max-height: none; }
-  .map-board .t-body { margin-top: 8px; font-size: 17px; }
+  .map-board { max-height: 55vh; display: flex; flex-direction: column; padding-block: 10px; }
+  .map-board .mm-host { height: calc(55vh - 250px); min-height: 180px; flex: none; }
+  .map-board .t-body { margin-top: 6px; font-size: 17px; }
+  .mm-bar { margin-bottom: 4px; }
+  .mm-crumbs ol { font-size: 15px; }
+  .mm-legend { margin-top: 6px; font-size: 14px; gap: 2px 12px; }
   .m-controls { flex-direction: column; align-items: stretch; }
   .m-controls .search { flex: 0 0 auto; }
   .hd-nav .btn-s { flex: 1 1 auto; }

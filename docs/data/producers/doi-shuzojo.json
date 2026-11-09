@@ -36,5 +36,15 @@
  ],
  "moreFromRegion": [
   "eikun-shuzo"
- ]
+ ],
+ "lat": 34.717,
+ "lon": 138.045,
+ "cid": "japan",
+ "prov": "shizuoka",
+ "provName": "Shizuoka",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

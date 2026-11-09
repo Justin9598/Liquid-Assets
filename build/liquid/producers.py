@@ -198,6 +198,7 @@ def build_producers(ledger, drinks, issues):
             "about": _paragraphs(row.get("About")) if approved else [],
             "sources": _split(row.get("Sources"), ";") if approved else [],
             "related_raw": _split(row.get("Related"), ";") if approved else [],
+            "lat_raw": row.get("Latitude"), "lon_raw": row.get("Longitude"),          # Plan 14 section 5.1
             "texts": member_texts,
             "drinks": member_drinks,
             "raw_gated": {k: row.get(k) for k in ("About", "Founded", "Master", "Website", "Native Name",

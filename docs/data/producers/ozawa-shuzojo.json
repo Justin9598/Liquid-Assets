@@ -47,5 +47,15 @@
   "daishinshu-shuzo",
   "shinshu-meijo",
   "banno-shuzo"
- ]
+ ],
+ "lat": 36.649,
+ "lon": 138.195,
+ "cid": "japan",
+ "prov": "nagano",
+ "provName": "Nagano",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

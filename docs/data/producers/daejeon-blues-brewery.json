@@ -30,5 +30,15 @@
    "sub": "makgeolli"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 36.24,
+ "lon": 127.311,
+ "cid": "south-korea",
+ "prov": "southchungcheong",
+ "provName": "South Chungcheong",
+ "area": null,
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "fermented",
+ "exact": true
 }

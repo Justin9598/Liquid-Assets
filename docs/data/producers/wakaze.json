@@ -41,5 +41,15 @@
    "sub": "craft-sake"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 48.859,
+ "lon": 2.355,
+ "cid": "france",
+ "prov": "paris",
+ "provName": "Paris",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "sake",
+ "exact": false
 }

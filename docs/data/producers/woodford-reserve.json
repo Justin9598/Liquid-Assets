@@ -34,5 +34,15 @@
    "sub": "whisky"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 37.535,
+ "lon": -85.285,
+ "cid": "usa",
+ "prov": "kentucky",
+ "provName": "Kentucky",
+ "area": null,
+ "cont": "North America",
+ "reg": "North America",
+ "main": "spirits",
+ "exact": false
 }

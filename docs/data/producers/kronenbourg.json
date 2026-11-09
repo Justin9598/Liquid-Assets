@@ -2,7 +2,7 @@
  "key": "kronenbourg",
  "name": "Kronenbourg",
  "native": null,
- "location": "Strasbourg",
+ "location": "Obernai",
  "region": "Strasbourg",
  "country": "France",
  "founded": 1664,
@@ -42,5 +42,15 @@
    "sub": "wheat"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 48.473,
+ "lon": 7.5,
+ "cid": "france",
+ "prov": "basrhin",
+ "provName": "Bas-Rhin",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "fermented",
+ "exact": true
 }

@@ -36,5 +36,15 @@
   "suntory",
   "akishika-shuzo",
   "rikyugura"
- ]
+ ],
+ "lat": 34.825,
+ "lon": 135.471,
+ "cid": "japan",
+ "prov": "osaka",
+ "provName": "Osaka",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "fermented",
+ "exact": true
 }

@@ -37,5 +37,15 @@
  ],
  "moreFromRegion": [
   "kankiku-meijo"
- ]
+ ],
+ "lat": 35.707,
+ "lon": 140.269,
+ "cid": "japan",
+ "prov": "chiba",
+ "provName": "Chiba",
+ "area": "kanto",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

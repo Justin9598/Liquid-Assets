@@ -38,10 +38,10 @@ SHEET_FIELDS = {
                       "Mousse", "Flavour Intensity", "Flavour", "Palate Other", "Finish", "Quality",
                       "Category", "Ginjo?", "Production", "Special Style"],
     "Producers": ["Producer", "Page Key", "Display Name", "Native Name", "Brands", "Location", "Region",
-                  "Country", "Founded", "Master", "Website", "About", "Related", "Sources", "Status"],
+                  "Country", "Founded", "Master", "Website", "About", "Related", "Sources", "Status", "Latitude", "Longitude"],
 }
 OPTIONAL_SHEETS = ["Producers"]
-OPTIONAL_COLUMNS = {"Other Detail": ["Type"]}
+OPTIONAL_COLUMNS = {"Other Detail": ["Type"], "Producers": ["Latitude", "Longitude"]}   # Plan 14 section 5.1: W26 reports the makers still waiting
 
 _DATE_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?$")
 
@@ -152,6 +152,8 @@ def load_ledger(path: Path, issues) -> Ledger:
         ws = wb[sheet]
         rows, missing = _read_sheet(ws, fields, sheet, issues)
         for field in missing:
+            if field in OPTIONAL_COLUMNS.get(sheet, []) and sheet == "Producers":      # not in the ledger yet: W26 says which makers wait
+                continue
             issues.warn_once(("col", sheet, field), "W13",
                              f"{sheet} has no '{field}' column (treated as empty)", sheet=sheet)
         ledger.sheets[sheet] = rows

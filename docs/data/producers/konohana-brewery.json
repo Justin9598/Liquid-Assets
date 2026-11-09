@@ -36,5 +36,15 @@
    "sub": "craft-sake"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 35.707,
+ "lon": 139.796,
+ "cid": "japan",
+ "prov": "tokyo",
+ "provName": "Tokyo",
+ "area": "kanto",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

@@ -37,5 +37,15 @@
  "moreFromRegion": [
   "kokuryu-shuzo",
   "nyu-shuzo"
- ]
+ ],
+ "lat": 35.989,
+ "lon": 136.173,
+ "cid": "japan",
+ "prov": "fukui",
+ "provName": "Fukui",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

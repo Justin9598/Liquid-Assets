@@ -44,7 +44,7 @@ MEASURE = r"""(() => {
   if (window.__maxw && window.__maxw > vw) bad(`the layout viewport grew to ${window.__maxw}px wide while the page loaded (a phone would zoom out)`);
   if (de.scrollWidth > vw) bad(`sideways scroll: document is ${de.scrollWidth}px wide in a ${vw}px window`);
   if (document.body.scrollWidth > vw) bad(`sideways scroll: body is ${document.body.scrollWidth}px wide`);
-  const wide = [...document.querySelectorAll('#page *')].filter((e) => !e.closest('.strip, .mini-row, .tile-row, .thumbs, .jp-map, .bd') && e.getBoundingClientRect().right > vw + 1 && visible(e) && !fixedAncestor(e));
+  const wide = [...document.querySelectorAll('#page *')].filter((e) => !e.closest('.strip, .mini-row, .tile-row, .thumbs, .mm-stage, .bd') && e.getBoundingClientRect().right > vw + 1 && visible(e) && !fixedAncestor(e));
   if (wide.length) bad(`${wide.length} element(s) reach past the right edge, e.g. ${wide[0].className || wide[0].tagName}`);
 
   // 2. no two boards overlap (fixed things such as the menu and the filter sheet are overlays, not boards)
@@ -209,9 +209,9 @@ MEASURE = r"""(() => {
     const r = mb.getBoundingClientRect();
     out.stats.mapBoardVh = +(r.height / vh).toFixed(2);
     if (r.height > 0.55 * vh) bad(`the map board is ${(100 * r.height / vh).toFixed(0)}% of the screen height (at most 55%)`);
-    const sv = mb.querySelector('svg.jp-map');
+    const sv = mb.querySelector('.mm-stage');
     const sr = sv && sv.getBoundingClientRect();
-    if (!sr || sr.left < r.left - 1 || sr.right > r.right + 1 || sr.top < r.top - 1 || sr.bottom > r.bottom + 1 || sr.height < 200) bad('Japan is not fully visible inside the map board');
+    if (!sr || sr.left < r.left - 1 || sr.right > r.right + 1 || sr.top < r.top - 1 || sr.bottom > r.bottom + 1 || sr.height < 180) bad('the map is not fully visible inside the map board');
     const q = document.getElementById('mq');
     if (q) {
       const top = q.getBoundingClientRect().top + scrollY;
@@ -349,6 +349,8 @@ def run(base, shots_dir=None, sizes=SIZES, log=print):
                 problems += map_checks(page, base, prod, tag)
             else:
                 problems += akebono_map(page, base, prod, tag)
+                import smoke_map
+                problems += smoke_map.map_checks(page, base, tag, full=False)
             problems += list_perf(b, base, w, h, stats, tag) if mobile else []
             page.close()
     return problems, stats
@@ -513,29 +515,18 @@ MAP_LOOP = """(async (keys) => {
 
 
 def akebono_map(page, base, prod, tag):
-    load(page, base, f"#/producer/{prod['akebono']}")
-    r = page.eval("""(() => ({ hl: [...document.querySelectorAll('.jp-map path.hl')].map(p => p.dataset.key), ring: document.querySelectorAll('.jp-map .ring').length,
-      fill: getComputedStyle(document.querySelector('.jp-map path.hl')).fill }))()""")
-    if r["hl"] != ["fukushima"] or r["ring"] != 1 or "hatch-glow" not in r["fill"]:
-        return [f"{tag}: Akebono Shuzo's map shows {r}"]
-    return []
+    """A maker page map (Plan 14 section 6)."""
+    import smoke_map
+    return smoke_map.maker_map_checks(page, base, tag, [prod["akebono"]])
 
 
 def map_checks(page, base, prod, tag):
-    probs = akebono_map(page, base, prod, tag)
-    load(page, base, f"#/producer/{prod['akebono']}")
-    keys = prod["jp"]
-    for i in range(0, len(keys), 12):                       # in chunks, so no single call in the browser runs long
-        bad = page.eval(f"{MAP_LOOP}({json.dumps(keys[i:i + 12])})", await_promise=True)
-        probs += [f"{tag}: map on {m}" for m in bad]
-    # the Makers map: hatched prefectures with makers, one picked prefecture filled in glow chalk
-    load(page, base, "#/makers")
-    r = page.eval("""(() => { const has = document.querySelectorAll('.jp-map path.has').length; document.querySelector('.jp-map path.has').dispatchEvent(new MouseEvent('click', {bubbles: true}));
-      return { has }; })()""")
-    sel = page.eval("document.querySelectorAll('.jp-map path.sel').length")
-    shown = page.eval("document.querySelectorAll('#mlist .tile').length")
-    if r["has"] < 10 or sel != 1 or shown < 1:
-        probs.append(f"{tag}: Makers map: {r['has']} hatched prefectures, {sel} selected, {shown} makers listed")
+    """The Makers map walked down and up with every level checked, and a map on a maker page in each country (Plan 14 section 9).
+    smoke_map.py runs the same at all four sizes on its own; here it runs in full at the first size."""
+    import smoke_map
+    probs = smoke_map.map_checks(page, base, tag)
+    _, by_country = smoke_map.pick(page, base)
+    probs += smoke_map.maker_map_checks(page, base, tag, list(by_country.values()) + [prod["akebono"]])
     return probs
 
 

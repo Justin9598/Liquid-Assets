@@ -42,5 +42,15 @@
   "kobayashi-shuzo",
   "nasu-kohgen-beer",
   "tomikawa-shuzoten"
- ]
+ ],
+ "lat": 36.685,
+ "lon": 139.798,
+ "cid": "japan",
+ "prov": "tochigi",
+ "provName": "Tochigi",
+ "area": "kanto",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

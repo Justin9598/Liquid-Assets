@@ -30,7 +30,9 @@ SCHEMAS = {
         "moreFromProducer": ["s"], "prev": "s?", "next": "s?"},
     "producers.json": [{
         "key": "s", "name": "s", "native": "s?", "region": "s?", "country": "s?", "location": "s?",
-        "brands": ["s"], "drinkCount": "i", "favourites": "i", "hasStory": "b"}],
+        "brands": ["s"], "drinkCount": "i", "favourites": "i", "hasStory": "b",
+        "lat": "n?", "lon": "n?", "cid": "s?", "prov": "s?", "provName": "s?", "area": "s?", "cont": "s?", "reg": "s?",
+        "main": "s?", "exact": "b?"}],
     "producer": {
         "key": "s", "name": "s", "native": "s?", "location": "s?", "region": "s?", "country": "s?",
         "founded": "n?", "master": "s?", "website": "s?", "brands": ["s"], "about": ["s"], "sources": ["s"],

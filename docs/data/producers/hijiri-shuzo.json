@@ -42,5 +42,15 @@
   "nagai-shuzo",
   "machida-shuzoten",
   "ryujin-shuzo"
- ]
+ ],
+ "lat": 36.464,
+ "lon": 139.043,
+ "cid": "japan",
+ "prov": "gunma",
+ "provName": "Gunma",
+ "area": "kanto",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

@@ -60,5 +60,15 @@
  ],
  "moreFromRegion": [
   "morishima-shuzo"
- ]
+ ],
+ "lat": 36.186,
+ "lon": 140.277,
+ "cid": "japan",
+ "prov": "ibaraki",
+ "provName": "Ibaraki",
+ "area": "kanto",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

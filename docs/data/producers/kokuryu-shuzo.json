@@ -37,5 +37,15 @@
  "moreFromRegion": [
   "katoukichibee-shoten",
   "nyu-shuzo"
- ]
+ ],
+ "lat": 36.092,
+ "lon": 136.299,
+ "cid": "japan",
+ "prov": "fukui",
+ "provName": "Fukui",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

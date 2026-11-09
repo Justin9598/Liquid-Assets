@@ -50,5 +50,15 @@
   "gekkeikan",
   "masuda-tokubee-shoten",
   "mukai-shuzo"
- ]
+ ],
+ "lat": 34.935,
+ "lon": 135.762,
+ "cid": "japan",
+ "prov": "kyoto",
+ "provName": "Kyoto",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

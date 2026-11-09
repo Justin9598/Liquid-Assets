@@ -40,5 +40,15 @@
    "sub": "junmai-daiginjo"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 41.762,
+ "lon": -73.929,
+ "cid": "usa",
+ "prov": "newyork",
+ "provName": "New York",
+ "area": null,
+ "cont": "North America",
+ "reg": "North America",
+ "main": "sake",
+ "exact": true
 }

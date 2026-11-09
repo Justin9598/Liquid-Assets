@@ -36,5 +36,15 @@
  ],
  "moreFromRegion": [
   "santa-helena"
- ]
+ ],
+ "lat": -34.54,
+ "lon": -70.967,
+ "cid": "chile",
+ "prov": "libertadorgeneralbernardoohiggins",
+ "provName": "Libertador General Bernardo O'Higgins",
+ "area": null,
+ "cont": "South America",
+ "reg": "South America",
+ "main": "wine",
+ "exact": true
 }

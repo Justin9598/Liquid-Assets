@@ -47,5 +47,15 @@
   "shindo-shuzoten",
   "takagi-shuzo",
   "wakanoi-shuzo"
- ]
+ ],
+ "lat": 38.753,
+ "lon": 139.763,
+ "cid": "japan",
+ "prov": "yamagata",
+ "provName": "Yamagata",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

@@ -37,5 +37,15 @@
  ],
  "moreFromRegion": [
   "heiwa-shuzo"
- ]
+ ],
+ "lat": 33.807,
+ "lon": 135.376,
+ "cid": "japan",
+ "prov": "wakayama",
+ "provName": "Wakayama",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "umeshu",
+ "exact": true
 }

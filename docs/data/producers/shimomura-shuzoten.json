@@ -43,5 +43,15 @@
   "kiku-masamune-shuzo",
   "nihonsakari",
   "tajime-shuzo"
- ]
+ ],
+ "lat": 35.092,
+ "lon": 134.82,
+ "cid": "japan",
+ "prov": "hyogo",
+ "provName": "Hyogo",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

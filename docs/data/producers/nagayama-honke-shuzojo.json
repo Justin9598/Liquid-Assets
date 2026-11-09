@@ -44,5 +44,15 @@
   "asahi-shuzo-yamaguchi",
   "shintani-shuzo",
   "sumikawa-shuzojo"
- ]
+ ],
+ "lat": 34.044,
+ "lon": 131.296,
+ "cid": "japan",
+ "prov": "yamaguchi",
+ "provName": "Yamaguchi",
+ "area": "chugoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

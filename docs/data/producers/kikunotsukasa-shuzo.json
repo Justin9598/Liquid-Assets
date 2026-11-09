@@ -61,5 +61,15 @@
   "hiraroku-jozo",
   "akabu-shuzo",
   "nanbu-bijin"
- ]
+ ],
+ "lat": 39.79,
+ "lon": 140.974,
+ "cid": "japan",
+ "prov": "iwate",
+ "provName": "Iwate",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

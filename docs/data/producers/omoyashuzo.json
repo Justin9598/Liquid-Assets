@@ -38,5 +38,15 @@
    "sub": "junmai-ginjo"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 33.745,
+ "lon": 129.757,
+ "cid": "japan",
+ "prov": "nagasaki",
+ "provName": "Nagasaki",
+ "area": "kyushu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

@@ -50,5 +50,15 @@
   "kawanishiya-shuzoten",
   "oya-takashi-shuzo",
   "seto-shuzoten"
- ]
+ ],
+ "lat": 35.466,
+ "lon": 139.39,
+ "cid": "japan",
+ "prov": "kanagawa",
+ "provName": "Kanagawa",
+ "area": "kanto",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

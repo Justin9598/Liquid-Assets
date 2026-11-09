@@ -64,5 +64,15 @@
  "moreFromRegion": [
   "koueigiku-shuzo",
   "azumatsuru-shuzo"
- ]
+ ],
+ "lat": 33.088,
+ "lon": 130.119,
+ "cid": "japan",
+ "prov": "saga",
+ "provName": "Saga",
+ "area": "kyushu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

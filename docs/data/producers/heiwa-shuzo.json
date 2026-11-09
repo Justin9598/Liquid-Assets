@@ -45,5 +45,15 @@
  ],
  "moreFromRegion": [
   "hamada-shoten"
- ]
+ ],
+ "lat": 34.16,
+ "lon": 135.29,
+ "cid": "japan",
+ "prov": "wakayama",
+ "provName": "Wakayama",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

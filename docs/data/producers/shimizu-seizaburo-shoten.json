@@ -48,5 +48,15 @@
  "moreFromRegion": [
   "isekado",
   "moriki-shuzojo"
- ]
+ ],
+ "lat": 34.507,
+ "lon": 136.373,
+ "cid": "japan",
+ "prov": "mie",
+ "provName": "Mie",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

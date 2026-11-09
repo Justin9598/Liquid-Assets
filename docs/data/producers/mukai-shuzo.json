@@ -40,5 +40,15 @@
   "fujioka-shuzo",
   "gekkeikan",
   "masuda-tokubee-shoten"
- ]
+ ],
+ "lat": 35.675,
+ "lon": 135.286,
+ "cid": "japan",
+ "prov": "kyoto",
+ "provName": "Kyoto",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

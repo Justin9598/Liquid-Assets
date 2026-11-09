@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T06:34:32Z",
+ "generated": "2026-11-09T05:04:30Z",
  "drinkCount": 289,
  "producerCount": 159,
  "sections": {
@@ -8,5 +8,5 @@
   "drinks": true,
   "makers": true
  },
- "version": "6551e7df0e"
+ "version": "385b7b5068"
 }

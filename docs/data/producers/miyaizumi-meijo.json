@@ -45,5 +45,15 @@
   "ohki-daikichi-honten",
   "homare-shuzo",
   "matsuzaki-shuzo"
- ]
+ ],
+ "lat": 37.492,
+ "lon": 139.931,
+ "cid": "japan",
+ "prov": "fukushima",
+ "provName": "Fukushima",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

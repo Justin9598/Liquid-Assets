@@ -64,3 +64,111 @@ def test_country_files_have_provinces_one_capital_each_and_japan_areas():
     assert sorted(x for a in j["areas"] for x in a["provinces"]) == sorted(p["id"] for p in j["provinces"])
     assert {"iwate", "hyogo", "tokyo", "osaka"} <= {p["id"] for p in j["provinces"]}               # the keys the build uses for regions
     assert [len(load("singapore.json")["provinces"]), len(load("denmark.json")["provinces"])] == [1, 5]
+
+
+# ------------------------------------------------------------------ the build: where each maker is (liquid/maps.py)
+
+import pytest  # noqa: E402
+
+from liquid import maps as bmaps  # noqa: E402
+from liquid.common import Issues  # noqa: E402
+
+HAND = json.loads((SHIP / "content" / "map-places.json").read_text(encoding="utf-8"))
+
+
+@pytest.fixture(scope="module")
+def real_maps():
+    return bmaps.load_maps(MAPS, HAND)
+
+
+def page(name="Test Maker", country="Japan", region="Iwate", location="Morioka, Iwate", lat=None, lon=None, cat="sake"):
+    return {"name": name, "country": country, "region": region, "location": location, "lat_raw": lat, "lon_raw": lon,
+            "drinks": [{"category": cat}]}
+
+
+def codes(issues):
+    return sorted({i["code"] for i in issues.items})
+
+
+def test_both_projections_agree():
+    for lon, lat in [(141.15, 39.7), (-70.6, -33.4), (103.8, 1.35)]:
+        x, y = makemaps.proj(lon, lat)
+        bx, by = bmaps.proj(lon, lat)
+        assert abs(x - bx) <= 0.5 and abs(y - by) <= 0.5
+
+
+def test_ledger_coordinates_give_the_province_and_publish_three_decimals(real_maps):
+    pages = {"akabu": page(lat=39.7217123, lon=141.1303456)}
+    issues = Issues()
+    bmaps.place_pages(pages, real_maps, issues)
+    pin = pages["akabu"]["pin"]
+    assert (pin["lat"], pin["lon"]) == (39.722, 141.13) and pin["exact"] is True
+    assert (pin["cid"], pin["prov"], pin["area"], pin["cont"], pin["reg"], pin["main"]) == ("japan", "iwate", "tohoku", "Asia", "East Asia", "sake")
+    assert not issues.items                                                  # no W25 and no W26 for a maker with coordinates
+
+
+def test_swapped_coordinates_raise_w25_and_fall_back_to_the_town(real_maps):
+    pages = {"akabu": page(lat=141.13, lon=39.72)}                           # latitude and longitude the wrong way round
+    issues = Issues()
+    bmaps.place_pages(pages, real_maps, issues)
+    assert codes(issues) == ["W25", "W26"] and pages["akabu"]["pin"]["exact"] is False
+    assert pages["akabu"]["pin"]["prov"] == "iwate"
+    far = {"x": page(lat=48.85, lon=2.35)}                                   # Paris for a Japanese maker
+    issues = Issues()
+    bmaps.place_pages(far, real_maps, issues)
+    assert "W25" in codes(issues)
+
+
+def test_missing_coordinates_use_town_then_region_then_country_with_w26(real_maps):
+    pages = {"town": page(), "region": page("R", location="Daisen, Akita", region="Akita"),
+             "country": page("C", region=None, location=None)}
+    issues = Issues()
+    bmaps.place_pages(pages, real_maps, issues)
+    assert codes(issues) == ["W26"] and sum(1 for i in issues.items if i["code"] == "W26") == 3
+    assert abs(pages["town"]["pin"]["lat"] - 39.7) < 0.2 and pages["town"]["pin"]["prov"] == "iwate"          # Morioka
+    assert pages["region"]["pin"]["prov"] == "akita" and pages["region"]["pin"]["area"] == "tohoku"
+    assert pages["country"]["pin"]["prov"] is None and pages["country"]["pin"]["cid"] == "japan"
+    for p in pages.values():                                                  # every maker still gets a pin, inside Japan
+        assert real_maps.province_at("japan", p["pin"]["lon"], p["pin"]["lat"]) or p["pin"]["prov"] is None
+
+
+def test_missing_country_file_is_e08_and_a_hand_set_spot_is_used(real_maps):
+    issues = Issues()
+    bmaps.place_pages({"x": page("Nowhere", country="Atlantis")}, real_maps, issues)
+    assert codes(issues) == ["E08"] and issues.errors
+    islay = {"a": page("Ardbeg", country="Scotland", region="Islay", location="Port Ellen, Islay")}
+    issues = Issues()
+    bmaps.place_pages(islay, real_maps, issues)
+    assert islay["a"]["pin"]["prov"] == "argyllandbute" and codes(issues) == ["W26"]
+
+
+def test_main_category_is_the_most_common_with_ties_to_the_top_shelf_order():
+    ds = [{"category": "wine"}, {"category": "sake"}, {"category": "wine"}, {"category": "sake"}, {"category": None}]
+    assert bmaps.main_category(ds) == "sake" and bmaps.main_category([]) is None
+
+
+def test_every_real_maker_gets_a_pin_in_its_own_country():
+    prods = json.loads((SHIP / "docs" / "data" / "producers.json").read_text(encoding="utf-8"))
+    assert len(prods) >= 150
+    for p in prods:
+        assert p.get("cid") and p.get("lat") is not None and p["cont"] and p["reg"] and p["main"], p["key"]
+        assert abs(round(p["lat"], 3) - p["lat"]) < 1e-9 and abs(round(p["lon"], 3) - p["lon"]) < 1e-9
+
+
+# ------------------------------------------------------------------ the pin maps in a real browser (tools/smoke_map.py)
+
+def test_pin_maps_in_a_browser_at_all_four_sizes():
+    """World down to a prefecture and back up, the fewer-than-10 and one-child rules over the whole tree, no two pin heads
+    overlapping at any level, 44px buttons, map and list together, old links, and a map on a maker page in every country."""
+    import smoke
+    import smoke_map
+    pytest.importorskip("websockets")
+    if not smoke.edge_path():
+        pytest.skip("no Edge or Chrome to run the smoke test")
+    from cdp import Browser
+    with smoke.Server() as srv:
+        probs = smoke_map.run(f"http://127.0.0.1:{srv.port}", None, log=lambda *_: None)
+        with Browser() as b:                                   # the World-level load stays under 300 KB (Plan 14 section 9)
+            kb, rows = smoke_map.weight(b.page(1440, 900), f"http://127.0.0.1:{srv.port}", smoke.DOCS)
+    assert not probs, probs[:8]
+    assert kb < 300, f"{kb:.0f} KB: {rows[:5]}"

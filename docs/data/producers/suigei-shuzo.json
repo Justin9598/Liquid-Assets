@@ -38,5 +38,15 @@
  "moreFromRegion": [
   "kameizumi-shuzo",
   "tosa-shuzo"
- ]
+ ],
+ "lat": 33.564,
+ "lon": 133.54,
+ "cid": "japan",
+ "prov": "kochi",
+ "provName": "Kochi",
+ "area": "shikoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

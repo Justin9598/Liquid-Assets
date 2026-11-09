@@ -75,5 +75,15 @@
   "aramasa-shuzo",
   "hinomaru-jozo",
   "ryozeki-shuzo"
- ]
+ ],
+ "lat": 39.709,
+ "lon": 140.09,
+ "cid": "japan",
+ "prov": "akita",
+ "provName": "Akita",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

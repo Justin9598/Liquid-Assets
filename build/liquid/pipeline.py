@@ -7,7 +7,7 @@ import shutil
 from pathlib import Path
 
 from . import assets as assets_mod, phase as phase_mod, scene as scene_mod, checks, emit as emit_mod, images, og as og_mod, model, photos as photos_mod, producers as producers_mod
-from . import burger as burger_mod, counter as counter_mod, report as report_mod, scene_report
+from . import burger as burger_mod, counter as counter_mod, maps as maps_mod, report as report_mod, scene_report
 from . import cropguard
 from .common import BuildError, Issues
 from .ledger import load_ledger
@@ -75,6 +75,8 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
 
     # S6
     pages, key_by_text = producers_mod.build_producers(ledger, drinks, issues)
+    hand_maps = _load_json(content_dir / "map-places.json", {}, issues, "map-places.json")           # Plan 14 section 5.1
+    maps_mod.place_pages(pages, maps_mod.load_maps(docs / "assets" / "maps", hand_maps), issues)
 
     # S7
     photo_files = photos_mod.list_photos(photos_dir)

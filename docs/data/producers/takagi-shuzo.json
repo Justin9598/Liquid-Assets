@@ -42,5 +42,15 @@
   "kojima-sohonten",
   "shindo-shuzoten",
   "wakanoi-shuzo"
- ]
+ ],
+ "lat": 38.272,
+ "lon": 140.32,
+ "cid": "japan",
+ "prov": "yamagata",
+ "provName": "Yamagata",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

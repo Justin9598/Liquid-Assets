@@ -43,5 +43,15 @@
  "moreFromRegion": [
   "noguchi-naohiko-sake-institute",
   "yoshida-sake-brewery"
- ]
+ ],
+ "lat": 36.554,
+ "lon": 136.672,
+ "cid": "japan",
+ "prov": "ishikawa",
+ "provName": "Ishikawa",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

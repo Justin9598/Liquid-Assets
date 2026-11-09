@@ -43,5 +43,15 @@
  "moreFromRegion": [
   "fukuchiyo-shuzo",
   "azumatsuru-shuzo"
- ]
+ ],
+ "lat": 33.274,
+ "lon": 130.217,
+ "cid": "japan",
+ "prov": "saga",
+ "provName": "Saga",
+ "area": "kyushu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

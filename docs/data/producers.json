@@ -12,7 +12,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 39.679,
+  "lon": 141.132,
+  "cid": "japan",
+  "prov": "iwate",
+  "provName": "Iwate",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "akebono-shuzo",
@@ -27,7 +37,17 @@
   ],
   "drinkCount": 13,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.561,
+  "lon": 139.828,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "akishika-shuzo",
@@ -41,7 +61,17 @@
   ],
   "drinkCount": 1,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.977,
+  "lon": 135.464,
+  "cid": "japan",
+  "prov": "kyoto",
+  "provName": "Kyoto",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "akita-seishu",
@@ -57,7 +87,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 39.472,
+  "lon": 140.502,
+  "cid": "japan",
+  "prov": "akita",
+  "provName": "Akita",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "akiu-heart-rock-sake",
@@ -72,7 +112,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.268,
+  "lon": 140.869,
+  "cid": "japan",
+  "prov": "miyagi",
+  "provName": "Miyagi",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "aoki-shuzo",
@@ -86,7 +136,17 @@
   ],
   "drinkCount": 1,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.133,
+  "lon": 136.741,
+  "cid": "japan",
+  "prov": "aichi",
+  "provName": "Aichi",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "aramasa-shuzo",
@@ -100,7 +160,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 39.711,
+  "lon": 140.114,
+  "cid": "japan",
+  "prov": "akita",
+  "provName": "Akita",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "ardbeg",
@@ -114,7 +184,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 55.641,
+  "lon": -6.108,
+  "cid": "scotland",
+  "prov": "argyllandbute",
+  "provName": "Argyll and Bute",
+  "area": null,
+  "cont": "Europe",
+  "reg": "Europe",
+  "main": "spirits",
+  "exact": true
  },
  {
   "key": "ariga-jozo",
@@ -130,7 +210,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.103,
+  "lon": 140.35,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "asahi-shuzo-niigata",
@@ -145,7 +235,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.395,
+  "lon": 138.769,
+  "cid": "japan",
+  "prov": "niigata",
+  "provName": "Niigata",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "asahi-shuzo-yamaguchi",
@@ -159,7 +259,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.121,
+  "lon": 131.979,
+  "cid": "japan",
+  "prov": "yamaguchi",
+  "provName": "Yamaguchi",
+  "area": "chugoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "azumatsuru-shuzo",
@@ -173,7 +283,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.286,
+  "lon": 130.141,
+  "cid": "japan",
+  "prov": "saga",
+  "provName": "Saga",
+  "area": "kyushu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "bruichladdich",
@@ -190,7 +310,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 55.767,
+  "lon": -6.363,
+  "cid": "scotland",
+  "prov": "argyllandbute",
+  "provName": "Argyll and Bute",
+  "area": null,
+  "cont": "Europe",
+  "reg": "Europe",
+  "main": "spirits",
+  "exact": true
  },
  {
   "key": "carlsberg",
@@ -204,7 +334,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 55.667,
+  "lon": 12.529,
+  "cid": "denmark",
+  "prov": "hovedstaden",
+  "provName": "Hovedstaden",
+  "area": null,
+  "cont": "Europe",
+  "reg": "Europe",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "casa-silva",
@@ -218,7 +358,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": -34.54,
+  "lon": -70.967,
+  "cid": "chile",
+  "prov": "libertadorgeneralbernardoohiggins",
+  "provName": "Libertador General Bernardo O'Higgins",
+  "area": null,
+  "cont": "South America",
+  "reg": "South America",
+  "main": "wine",
+  "exact": true
  },
  {
   "key": "chiyo-shuzo",
@@ -233,7 +383,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.464,
+  "lon": 135.719,
+  "cid": "japan",
+  "prov": "nara",
+  "provName": "Nara",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "daejeon-blues-brewery",
@@ -247,7 +407,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.24,
+  "lon": 127.311,
+  "cid": "south-korea",
+  "prov": "southchungcheong",
+  "provName": "South Chungcheong",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "daishinshu-shuzo",
@@ -262,7 +432,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.224,
+  "lon": 137.936,
+  "cid": "japan",
+  "prov": "nagano",
+  "provName": "Nagano",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "dassai-blue",
@@ -276,7 +456,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 41.762,
+  "lon": -73.929,
+  "cid": "usa",
+  "prov": "newyork",
+  "provName": "New York",
+  "area": null,
+  "cont": "North America",
+  "reg": "North America",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "date-seven",
@@ -290,7 +480,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.441,
+  "lon": 140.921,
+  "cid": "japan",
+  "prov": "miyagi",
+  "provName": "Miyagi",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "doi-shuzojo",
@@ -304,7 +504,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.717,
+  "lon": 138.045,
+  "cid": "japan",
+  "prov": "shizuoka",
+  "provName": "Shizuoka",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "eigashima-shuzo",
@@ -320,7 +530,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.682,
+  "lon": 134.906,
+  "cid": "japan",
+  "prov": "hyogo",
+  "provName": "Hyogo",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "eikun-shuzo",
@@ -334,7 +554,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.144,
+  "lon": 138.561,
+  "cid": "japan",
+  "prov": "shizuoka",
+  "provName": "Shizuoka",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "endo-shuzojo",
@@ -351,7 +581,17 @@
   ],
   "drinkCount": 2,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.657,
+  "lon": 138.31,
+  "cid": "japan",
+  "prov": "nagano",
+  "provName": "Nagano",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "enoki-shuzo",
@@ -366,7 +606,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.188,
+  "lon": 132.53,
+  "cid": "japan",
+  "prov": "hiroshima",
+  "provName": "Hiroshima",
+  "area": "chugoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "freixenet-gratien",
@@ -380,7 +630,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 44.841,
+  "lon": -0.58,
+  "cid": "france",
+  "prov": "gironde",
+  "provName": "Gironde",
+  "area": null,
+  "cont": "Europe",
+  "reg": "Europe",
+  "main": "wine",
+  "exact": true
  },
  {
   "key": "fuchu-homare",
@@ -396,7 +656,17 @@
   ],
   "drinkCount": 5,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.186,
+  "lon": 140.277,
+  "cid": "japan",
+  "prov": "ibaraki",
+  "provName": "Ibaraki",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "fuji-shuzo",
@@ -410,7 +680,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.753,
+  "lon": 139.763,
+  "cid": "japan",
+  "prov": "yamagata",
+  "provName": "Yamagata",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "fujioka-shuzo",
@@ -425,7 +705,17 @@
   ],
   "drinkCount": 3,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.935,
+  "lon": 135.762,
+  "cid": "japan",
+  "prov": "kyoto",
+  "provName": "Kyoto",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "fukuchiyo-shuzo",
@@ -439,7 +729,17 @@
   ],
   "drinkCount": 6,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.088,
+  "lon": 130.119,
+  "cid": "japan",
+  "prov": "saga",
+  "provName": "Saga",
+  "area": "kyushu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "fukumitsuya",
@@ -455,7 +755,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.554,
+  "lon": 136.672,
+  "cid": "japan",
+  "prov": "ishikawa",
+  "provName": "Ishikawa",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "fukunishiki",
@@ -470,7 +780,17 @@
   ],
   "drinkCount": 4,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.868,
+  "lon": 134.841,
+  "cid": "japan",
+  "prov": "hyogo",
+  "provName": "Hyogo",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "gekkeikan",
@@ -484,7 +804,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.929,
+  "lon": 135.762,
+  "cid": "japan",
+  "prov": "kyoto",
+  "provName": "Kyoto",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "gyokusendo-shuzo",
@@ -499,7 +829,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.306,
+  "lon": 136.569,
+  "cid": "japan",
+  "prov": "gifu",
+  "provName": "Gifu",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "haccoba-craft-sake-brewery",
@@ -507,14 +847,24 @@
   "native": null,
   "region": "Fukushima",
   "country": "Japan",
-  "location": "Minamisoma, Fukushima",
+  "location": "Namie, Fukushima",
   "brands": [
    "haccoba",
    "Hanauta Hops"
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.502,
+  "lon": 141.002,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hagino-shuzo",
@@ -530,7 +880,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.866,
+  "lon": 141.129,
+  "cid": "japan",
+  "prov": "iwate",
+  "provName": "Iwate",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hakushika",
@@ -546,7 +906,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.729,
+  "lon": 135.334,
+  "cid": "japan",
+  "prov": "hyogo",
+  "provName": "Hyogo",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hakutsuru-shuzo",
@@ -560,7 +930,17 @@
   ],
   "drinkCount": 4,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.711,
+  "lon": 135.261,
+  "cid": "japan",
+  "prov": "hyogo",
+  "provName": "Hyogo",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hamada-shoten",
@@ -575,7 +955,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.807,
+  "lon": 135.376,
+  "cid": "japan",
+  "prov": "wakayama",
+  "provName": "Wakayama",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "umeshu",
+  "exact": true
  },
  {
   "key": "hamahama-brewery",
@@ -590,7 +980,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.448,
+  "lon": 126.305,
+  "cid": "south-korea",
+  "prov": "jeju",
+  "provName": "Jeju",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "hanaizumi-shuzo",
@@ -605,7 +1005,17 @@
   ],
   "drinkCount": 4,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.267,
+  "lon": 139.54,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "happy-taro-brewery",
@@ -620,7 +1030,17 @@
   ],
   "drinkCount": 5,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.382,
+  "lon": 136.268,
+  "cid": "japan",
+  "prov": "shiga",
+  "provName": "Shiga",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hara-shuzo",
@@ -637,7 +1057,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.365,
+  "lon": 138.552,
+  "cid": "japan",
+  "prov": "niigata",
+  "provName": "Niigata",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hatsumomiji",
@@ -653,7 +1083,17 @@
   ],
   "drinkCount": 4,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.051,
+  "lon": 131.809,
+  "cid": "japan",
+  "prov": "yamaguchi",
+  "provName": "Yamaguchi",
+  "area": "chugoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "heiwa-shuzo",
@@ -669,7 +1109,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.16,
+  "lon": 135.29,
+  "cid": "japan",
+  "prov": "wakayama",
+  "provName": "Wakayama",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hijiri-shuzo",
@@ -686,7 +1136,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.464,
+  "lon": 139.043,
+  "cid": "japan",
+  "prov": "gunma",
+  "provName": "Gunma",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hinomaru-jozo",
@@ -701,7 +1161,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 39.202,
+  "lon": 140.546,
+  "cid": "japan",
+  "prov": "akita",
+  "provName": "Akita",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hirako-shuzo",
@@ -715,7 +1185,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.437,
+  "lon": 141.298,
+  "cid": "japan",
+  "prov": "miyagi",
+  "provName": "Miyagi",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hiraroku-jozo",
@@ -731,7 +1211,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 39.553,
+  "lon": 141.169,
+  "cid": "japan",
+  "prov": "iwate",
+  "provName": "Iwate",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "homare-shuzo",
@@ -745,7 +1235,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.672,
+  "lon": 139.871,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "honke-matsuura",
@@ -760,7 +1260,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.159,
+  "lon": 134.528,
+  "cid": "japan",
+  "prov": "tokushima",
+  "provName": "Tokushima",
+  "area": "shikoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "hwanggeumbori-brewery",
@@ -775,7 +1285,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.601,
+  "lon": 126.661,
+  "cid": "south-korea",
+  "prov": "southchungcheong",
+  "provName": "South Chungcheong",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "spirits",
+  "exact": true
  },
  {
   "key": "igarashi-shuzo",
@@ -790,7 +1310,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.838,
+  "lon": 139.325,
+  "cid": "japan",
+  "prov": "saitama",
+  "provName": "Saitama",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "iinuma-honke",
@@ -804,7 +1334,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.707,
+  "lon": 140.269,
+  "cid": "japan",
+  "prov": "chiba",
+  "provName": "Chiba",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "iinuma-meijo",
@@ -819,7 +1359,17 @@
   ],
   "drinkCount": 8,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.46,
+  "lon": 139.738,
+  "cid": "japan",
+  "prov": "tochigi",
+  "provName": "Tochigi",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "imada-shuzo",
@@ -834,7 +1384,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.344,
+  "lon": 132.801,
+  "cid": "japan",
+  "prov": "hiroshima",
+  "provName": "Hiroshima",
+  "area": "chugoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "imanishi-shuzo",
@@ -848,7 +1408,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.527,
+  "lon": 135.849,
+  "cid": "japan",
+  "prov": "nara",
+  "provName": "Nara",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "ine-to-agave",
@@ -863,7 +1433,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 39.882,
+  "lon": 139.843,
+  "cid": "japan",
+  "prov": "akita",
+  "provName": "Akita",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "inoue-seikichi-shoten",
@@ -877,7 +1457,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.63,
+  "lon": 139.941,
+  "cid": "japan",
+  "prov": "tochigi",
+  "provName": "Tochigi",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "isekado",
@@ -892,7 +1482,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.516,
+  "lon": 136.738,
+  "cid": "japan",
+  "prov": "mie",
+  "provName": "Mie",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "ishimoto-shuzo",
@@ -906,7 +1506,17 @@
   ],
   "drinkCount": 1,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.875,
+  "lon": 139.12,
+  "cid": "japan",
+  "prov": "niigata",
+  "provName": "Niigata",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "isibo-brewery",
@@ -921,7 +1531,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.233,
+  "lon": 126.25,
+  "cid": "south-korea",
+  "prov": "jeju",
+  "provName": "Jeju",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "itakura-shuzo",
@@ -936,7 +1556,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.355,
+  "lon": 132.752,
+  "cid": "japan",
+  "prov": "shimane",
+  "provName": "Shimane",
+  "area": "chugoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "izumibashi-shuzo",
@@ -951,7 +1581,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.466,
+  "lon": 139.39,
+  "cid": "japan",
+  "prov": "kanagawa",
+  "provName": "Kanagawa",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "jeju-beer-company",
@@ -965,7 +1605,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.375,
+  "lon": 126.236,
+  "cid": "south-korea",
+  "prov": "jeju",
+  "provName": "Jeju",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "jeju-makgeolli",
@@ -980,7 +1630,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.467,
+  "lon": 126.35,
+  "cid": "south-korea",
+  "prov": "jeju",
+  "provName": "Jeju",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "kameizumi-shuzo",
@@ -994,7 +1654,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.474,
+  "lon": 133.388,
+  "cid": "japan",
+  "prov": "kochi",
+  "provName": "Kochi",
+  "area": "shikoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kamenoi-shuzo",
@@ -1009,7 +1679,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.722,
+  "lon": 139.925,
+  "cid": "japan",
+  "prov": "yamagata",
+  "provName": "Yamagata",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kamikawa-taisetsu-shuzo",
@@ -1024,7 +1704,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 43.846,
+  "lon": 142.778,
+  "cid": "japan",
+  "prov": "hokkaido",
+  "provName": "Hokkaido",
+  "area": "hokkaido",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kanbai-shuzo",
@@ -1038,7 +1728,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.587,
+  "lon": 140.888,
+  "cid": "japan",
+  "prov": "miyagi",
+  "provName": "Miyagi",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kankiku-meijo",
@@ -1055,7 +1755,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.627,
+  "lon": 140.492,
+  "cid": "japan",
+  "prov": "chiba",
+  "provName": "Chiba",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "katoukichibee-shoten",
@@ -1070,7 +1780,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.989,
+  "lon": 136.173,
+  "cid": "japan",
+  "prov": "fukui",
+  "provName": "Fukui",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kavalan",
@@ -1085,7 +1805,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 24.714,
+  "lon": 121.692,
+  "cid": "taiwan",
+  "prov": "yilan",
+  "provName": "Yilan",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "cocktails",
+  "exact": true
  },
  {
   "key": "kawakei-shoten",
@@ -1100,7 +1830,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.474,
+  "lon": 141.132,
+  "cid": "japan",
+  "prov": "miyagi",
+  "provName": "Miyagi",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kawanishiya-shuzoten",
@@ -1115,7 +1855,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.361,
+  "lon": 139.084,
+  "cid": "japan",
+  "prov": "kanagawa",
+  "provName": "Kanagawa",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kiku-masamune-shuzo",
@@ -1130,7 +1880,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.709,
+  "lon": 135.268,
+  "cid": "japan",
+  "prov": "hyogo",
+  "provName": "Hyogo",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kikunotsukasa-shuzo",
@@ -1146,7 +1906,17 @@
   ],
   "drinkCount": 5,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 39.79,
+  "lon": 140.974,
+  "cid": "japan",
+  "prov": "iwate",
+  "provName": "Iwate",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kitanishi-shuzo",
@@ -1161,7 +1931,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.978,
+  "lon": 139.589,
+  "cid": "japan",
+  "prov": "saitama",
+  "provName": "Saitama",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kobayashi-shuzo",
@@ -1175,7 +1955,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.353,
+  "lon": 139.762,
+  "cid": "japan",
+  "prov": "tochigi",
+  "provName": "Tochigi",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kojima-sohonten",
@@ -1189,7 +1979,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.902,
+  "lon": 140.109,
+  "cid": "japan",
+  "prov": "yamagata",
+  "provName": "Yamagata",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kokuryu-shuzo",
@@ -1204,7 +2004,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.092,
+  "lon": 136.299,
+  "cid": "japan",
+  "prov": "fukui",
+  "provName": "Fukui",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "konohana-brewery",
@@ -1219,7 +2029,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.707,
+  "lon": 139.796,
+  "cid": "japan",
+  "prov": "tokyo",
+  "provName": "Tokyo",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "koshi-meijo",
@@ -1235,7 +2055,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.476,
+  "lon": 138.992,
+  "cid": "japan",
+  "prov": "niigata",
+  "provName": "Niigata",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "koueigiku-shuzo",
@@ -1250,7 +2080,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.274,
+  "lon": 130.217,
+  "cid": "japan",
+  "prov": "saga",
+  "provName": "Saga",
+  "area": "kyushu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kronenbourg",
@@ -1258,7 +2098,7 @@
   "native": null,
   "region": "Strasbourg",
   "country": "France",
-  "location": "Strasbourg",
+  "location": "Obernai",
   "brands": [
    "Kronenbourg",
    "1664",
@@ -1266,7 +2106,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 48.473,
+  "lon": 7.5,
+  "cid": "france",
+  "prov": "basrhin",
+  "provName": "Bas-Rhin",
+  "area": null,
+  "cont": "Europe",
+  "reg": "Europe",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "kubiki-shuzo",
@@ -1282,7 +2132,17 @@
   ],
   "drinkCount": 1,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.276,
+  "lon": 138.393,
+  "cid": "japan",
+  "prov": "niigata",
+  "provName": "Niigata",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "kuge-honten",
@@ -1297,7 +2157,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.127,
+  "lon": 131.784,
+  "cid": "japan",
+  "prov": "oita",
+  "provName": "Oita",
+  "area": "kyushu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "umeshu",
+  "exact": true
  },
  {
   "key": "librom-craft-sake-brewery",
@@ -1312,7 +2182,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.581,
+  "lon": 130.402,
+  "cid": "japan",
+  "prov": "fukuoka",
+  "provName": "Fukuoka",
+  "area": "kyushu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "machida-shuzoten",
@@ -1327,7 +2207,17 @@
   ],
   "drinkCount": 4,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.344,
+  "lon": 139.137,
+  "cid": "japan",
+  "prov": "gunma",
+  "provName": "Gunma",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "masuda-tokubee-shoten",
@@ -1342,7 +2232,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.941,
+  "lon": 135.744,
+  "cid": "japan",
+  "prov": "kyoto",
+  "provName": "Kyoto",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "matsui-shuzo",
@@ -1358,7 +2258,17 @@
   ],
   "drinkCount": 4,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.025,
+  "lon": 135.774,
+  "cid": "japan",
+  "prov": "kyoto",
+  "provName": "Kyoto",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "matsuzaki-shuzo",
@@ -1372,7 +2282,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.253,
+  "lon": 140.238,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "michizakura-shuzo",
@@ -1386,7 +2306,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 43.707,
+  "lon": 142.534,
+  "cid": "japan",
+  "prov": "hokkaido",
+  "provName": "Hokkaido",
+  "area": "hokkaido",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "minoh-beer",
@@ -1400,7 +2330,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.825,
+  "lon": 135.471,
+  "cid": "japan",
+  "prov": "osaka",
+  "provName": "Osaka",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "miyaizumi-meijo",
@@ -1416,7 +2356,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.492,
+  "lon": 139.931,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "miyoshino-jozo",
@@ -1431,7 +2381,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.389,
+  "lon": 135.831,
+  "cid": "japan",
+  "prov": "nara",
+  "provName": "Nara",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "moriki-shuzojo",
@@ -1449,7 +2409,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.792,
+  "lon": 136.169,
+  "cid": "japan",
+  "prov": "mie",
+  "provName": "Mie",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "morishima-shuzo",
@@ -1467,7 +2437,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.652,
+  "lon": 140.699,
+  "cid": "japan",
+  "prov": "ibaraki",
+  "provName": "Ibaraki",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "mua-craft-sake",
@@ -1483,7 +2463,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 10.777,
+  "lon": 106.685,
+  "cid": "vietnam",
+  "prov": "hochiminhcity",
+  "provName": "Hồ Chí Minh city",
+  "area": null,
+  "cont": "Asia",
+  "reg": "Southeast Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "mukai-shuzo",
@@ -1498,7 +2488,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.675,
+  "lon": 135.286,
+  "cid": "japan",
+  "prov": "kyoto",
+  "provName": "Kyoto",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "nagai-shuzo",
@@ -1513,7 +2513,17 @@
   ],
   "drinkCount": 5,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.694,
+  "lon": 139.093,
+  "cid": "japan",
+  "prov": "gunma",
+  "provName": "Gunma",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "nagayama-honke-shuzojo",
@@ -1527,7 +2537,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.044,
+  "lon": 131.296,
+  "cid": "japan",
+  "prov": "yamaguchi",
+  "provName": "Yamaguchi",
+  "area": "chugoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "nanbu-bijin",
@@ -1542,7 +2562,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 40.273,
+  "lon": 141.301,
+  "cid": "japan",
+  "prov": "iwate",
+  "provName": "Iwate",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "nara-brewing-co",
@@ -1558,7 +2588,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.652,
+  "lon": 135.808,
+  "cid": "japan",
+  "prov": "nara",
+  "provName": "Nara",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "nasu-kohgen-beer",
@@ -1572,7 +2612,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.999,
+  "lon": 140.066,
+  "cid": "japan",
+  "prov": "tochigi",
+  "provName": "Tochigi",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": true
  },
  {
   "key": "nihonsakari",
@@ -1587,7 +2637,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.73,
+  "lon": 135.345,
+  "cid": "japan",
+  "prov": "hyogo",
+  "provName": "Hyogo",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "niida-honke",
@@ -1602,7 +2662,17 @@
   ],
   "drinkCount": 9,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.341,
+  "lon": 140.441,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "niizawa-brewery",
@@ -1619,7 +2689,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.529,
+  "lon": 140.946,
+  "cid": "japan",
+  "prov": "miyagi",
+  "provName": "Miyagi",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "nishida-shuzoten",
@@ -1634,7 +2714,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 40.857,
+  "lon": 140.69,
+  "cid": "japan",
+  "prov": "aomori",
+  "provName": "Aomori",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "noguchi-naohiko-sake-institute",
@@ -1648,7 +2738,17 @@
   ],
   "drinkCount": 2,
   "favourites": 1,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.333,
+  "lon": 136.526,
+  "cid": "japan",
+  "prov": "ishikawa",
+  "provName": "Ishikawa",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "nyu-shuzo",
@@ -1664,7 +2764,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.982,
+  "lon": 136.122,
+  "cid": "japan",
+  "prov": "fukui",
+  "provName": "Fukui",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "obuse-winery",
@@ -1680,7 +2790,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.712,
+  "lon": 138.315,
+  "cid": "japan",
+  "prov": "nagano",
+  "provName": "Nagano",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "ohki-daikichi-honten",
@@ -1696,7 +2816,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.208,
+  "lon": 140.326,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "okura-honke",
@@ -1712,7 +2842,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.524,
+  "lon": 135.711,
+  "cid": "japan",
+  "prov": "nara",
+  "provName": "Nara",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "omoyashuzo",
@@ -1729,7 +2869,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.745,
+  "lon": 129.757,
+  "cid": "japan",
+  "prov": "nagasaki",
+  "provName": "Nagasaki",
+  "area": "kyushu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "onuma-shuzoten",
@@ -1743,7 +2893,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.119,
+  "lon": 140.725,
+  "cid": "japan",
+  "prov": "miyagi",
+  "provName": "Miyagi",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "orchid-sake-brewery",
@@ -1757,7 +2917,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 1.344,
+  "lon": 103.695,
+  "cid": "singapore",
+  "prov": "singapore",
+  "provName": "Singapore",
+  "area": null,
+  "cont": "Asia",
+  "reg": "Southeast Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "oya-takashi-shuzo",
@@ -1773,7 +2943,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.526,
+  "lon": 139.286,
+  "cid": "japan",
+  "prov": "kanagawa",
+  "provName": "Kanagawa",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "ozawa-shuzojo",
@@ -1788,7 +2968,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.649,
+  "lon": 138.195,
+  "cid": "japan",
+  "prov": "nagano",
+  "provName": "Nagano",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "puku-puku-brewing",
@@ -1802,7 +2992,17 @@
   ],
   "drinkCount": 4,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.555,
+  "lon": 140.894,
+  "cid": "japan",
+  "prov": "fukushima",
+  "provName": "Fukushima",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": true
  },
  {
   "key": "ricewine-k-k",
@@ -1816,7 +3016,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.401,
+  "lon": 139.326,
+  "cid": "japan",
+  "prov": "kanagawa",
+  "provName": "Kanagawa",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "rikyugura",
@@ -1832,7 +3042,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.693,
+  "lon": 135.505,
+  "cid": "japan",
+  "prov": "osaka",
+  "provName": "Osaka",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "ryozeki-shuzo",
@@ -1848,7 +3068,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 39.709,
+  "lon": 140.09,
+  "cid": "japan",
+  "prov": "akita",
+  "provName": "Akita",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "ryujin-shuzo",
@@ -1863,7 +3093,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.498,
+  "lon": 138.96,
+  "cid": "japan",
+  "prov": "gunma",
+  "provName": "Gunma",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "santa-helena",
@@ -1877,7 +3117,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": -34.6,
+  "lon": -71.0,
+  "cid": "chile",
+  "prov": "libertadorgeneralbernardoohiggins",
+  "provName": "Libertador General Bernardo O'Higgins",
+  "area": null,
+  "cont": "South America",
+  "reg": "South America",
+  "main": "wine",
+  "exact": false
  },
  {
   "key": "sendai-station-brewery-fermenteria",
@@ -1891,7 +3141,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.267,
+  "lon": 140.87,
+  "cid": "japan",
+  "prov": "miyagi",
+  "provName": "Miyagi",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "seoul-jangsu-brewery",
@@ -1908,7 +3168,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.706,
+  "lon": 127.81,
+  "cid": "south-korea",
+  "prov": "northchungcheong",
+  "provName": "North Chungcheong",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": false
  },
  {
   "key": "seto-shuzoten",
@@ -1925,7 +3195,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.401,
+  "lon": 139.326,
+  "cid": "japan",
+  "prov": "kanagawa",
+  "provName": "Kanagawa",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "shimizu-seizaburo-shoten",
@@ -1940,7 +3220,17 @@
   ],
   "drinkCount": 3,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.507,
+  "lon": 136.373,
+  "cid": "japan",
+  "prov": "mie",
+  "provName": "Mie",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "shimomura-shuzoten",
@@ -1955,7 +3245,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.092,
+  "lon": 134.82,
+  "cid": "japan",
+  "prov": "hyogo",
+  "provName": "Hyogo",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "shindo-shuzoten",
@@ -1976,7 +3276,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.272,
+  "lon": 140.32,
+  "cid": "japan",
+  "prov": "yamagata",
+  "provName": "Yamagata",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "shinkame-shuzo",
@@ -1991,7 +3301,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.987,
+  "lon": 139.322,
+  "cid": "japan",
+  "prov": "saitama",
+  "provName": "Saitama",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "shinshu-meijo",
@@ -2010,7 +3330,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.652,
+  "lon": 138.17,
+  "cid": "japan",
+  "prov": "nagano",
+  "provName": "Nagano",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "shintani-shuzo",
@@ -2025,7 +3355,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.203,
+  "lon": 131.546,
+  "cid": "japan",
+  "prov": "yamaguchi",
+  "provName": "Yamaguchi",
+  "area": "chugoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "shirataki-shuzo",
@@ -2043,7 +3383,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.918,
+  "lon": 139.04,
+  "cid": "japan",
+  "prov": "niigata",
+  "provName": "Niigata",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "suigei-shuzo",
@@ -2058,7 +3408,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.564,
+  "lon": 133.54,
+  "cid": "japan",
+  "prov": "kochi",
+  "provName": "Kochi",
+  "area": "shikoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "sumikawa-shuzojo",
@@ -2073,7 +3433,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.203,
+  "lon": 131.546,
+  "cid": "japan",
+  "prov": "yamaguchi",
+  "provName": "Yamaguchi",
+  "area": "chugoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "suntory",
@@ -2090,7 +3460,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 34.693,
+  "lon": 135.505,
+  "cid": "japan",
+  "prov": "osaka",
+  "provName": "Osaka",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "spirits",
+  "exact": false
  },
  {
   "key": "suwa-mikotsuru-shuzojo",
@@ -2104,7 +3484,17 @@
   ],
   "drinkCount": 4,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.652,
+  "lon": 138.17,
+  "cid": "japan",
+  "prov": "nagano",
+  "provName": "Nagano",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "swan-lake-beer",
@@ -2119,7 +3509,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.918,
+  "lon": 139.04,
+  "cid": "japan",
+  "prov": "niigata",
+  "provName": "Niigata",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "fermented",
+  "exact": false
  },
  {
   "key": "taikai-shuzo",
@@ -2136,7 +3536,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 31.384,
+  "lon": 130.85,
+  "cid": "japan",
+  "prov": "kagoshima",
+  "provName": "Kagoshima",
+  "area": "kyushu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "spirits",
+  "exact": false
  },
  {
   "key": "tajime-shuzo",
@@ -2151,7 +3561,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.092,
+  "lon": 134.82,
+  "cid": "japan",
+  "prov": "hyogo",
+  "provName": "Hyogo",
+  "area": "kansai",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "takachiyo-shuzo",
@@ -2168,7 +3588,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.918,
+  "lon": 139.04,
+  "cid": "japan",
+  "prov": "niigata",
+  "provName": "Niigata",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "takagi-shuzo",
@@ -2185,7 +3615,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.272,
+  "lon": 140.32,
+  "cid": "japan",
+  "prov": "yamagata",
+  "provName": "Yamagata",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "takasago-shuzo",
@@ -2202,7 +3642,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 43.753,
+  "lon": 142.38,
+  "cid": "japan",
+  "prov": "hokkaido",
+  "provName": "Hokkaido",
+  "area": "hokkaido",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "takazawa-shuzojo",
@@ -2218,7 +3668,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.7,
+  "lon": 137.23,
+  "cid": "japan",
+  "prov": "toyama",
+  "provName": "Toyama",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "takenoi-shuzo",
@@ -2237,7 +3697,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 35.601,
+  "lon": 138.593,
+  "cid": "japan",
+  "prov": "yamanashi",
+  "provName": "Yamanashi",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "tomikawa-shuzoten",
@@ -2254,7 +3724,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.685,
+  "lon": 139.798,
+  "cid": "japan",
+  "prov": "tochigi",
+  "provName": "Tochigi",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "banno-shuzo",
@@ -2270,7 +3750,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.652,
+  "lon": 138.17,
+  "cid": "japan",
+  "prov": "nagano",
+  "provName": "Nagano",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "tosa-shuzo",
@@ -2285,7 +3775,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 33.564,
+  "lon": 133.54,
+  "cid": "japan",
+  "prov": "kochi",
+  "provName": "Kochi",
+  "area": "shikoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "wakakoma-shuzo",
@@ -2300,7 +3800,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.685,
+  "lon": 139.798,
+  "cid": "japan",
+  "prov": "tochigi",
+  "provName": "Tochigi",
+  "area": "kanto",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "wakanoi-shuzo",
@@ -2319,7 +3829,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.272,
+  "lon": 140.32,
+  "cid": "japan",
+  "prov": "yamagata",
+  "provName": "Yamagata",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "wakaze",
@@ -2334,7 +3854,17 @@
   ],
   "drinkCount": 2,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 48.859,
+  "lon": 2.355,
+  "cid": "france",
+  "prov": "paris",
+  "provName": "Paris",
+  "area": null,
+  "cont": "Europe",
+  "reg": "Europe",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "woodford-reserve",
@@ -2348,7 +3878,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 37.535,
+  "lon": -85.285,
+  "cid": "usa",
+  "prov": "kentucky",
+  "provName": "Kentucky",
+  "area": null,
+  "cont": "North America",
+  "reg": "North America",
+  "main": "spirits",
+  "exact": false
  },
  {
   "key": "wufeng-farmers-association-winery",
@@ -2363,7 +3903,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 24.154,
+  "lon": 120.68,
+  "cid": "taiwan",
+  "prov": "taichungcity",
+  "provName": "Taichung City",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "yamamoto-shuzoten",
@@ -2379,7 +3929,17 @@
   ],
   "drinkCount": 6,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 39.709,
+  "lon": 140.09,
+  "cid": "japan",
+  "prov": "akita",
+  "provName": "Akita",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "yamawa-shuzoten",
@@ -2395,7 +3955,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 38.441,
+  "lon": 140.921,
+  "cid": "japan",
+  "prov": "miyagi",
+  "provName": "Miyagi",
+  "area": "tohoku",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  },
  {
   "key": "yesan-winery",
@@ -2410,7 +3980,17 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.504,
+  "lon": 126.87,
+  "cid": "south-korea",
+  "prov": "southchungcheong",
+  "provName": "South Chungcheong",
+  "area": null,
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "spirits",
+  "exact": false
  },
  {
   "key": "yoshida-sake-brewery",
@@ -2429,6 +4009,16 @@
   ],
   "drinkCount": 1,
   "favourites": 0,
-  "hasStory": true
+  "hasStory": true,
+  "lat": 36.771,
+  "lon": 136.761,
+  "cid": "japan",
+  "prov": "ishikawa",
+  "provName": "Ishikawa",
+  "area": "chubu",
+  "cont": "Asia",
+  "reg": "East Asia",
+  "main": "sake",
+  "exact": false
  }
 ]

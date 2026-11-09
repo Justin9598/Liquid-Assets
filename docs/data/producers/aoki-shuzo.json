@@ -33,5 +33,15 @@
    "sub": "junmai"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 35.133,
+ "lon": 136.741,
+ "cid": "japan",
+ "prov": "aichi",
+ "provName": "Aichi",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

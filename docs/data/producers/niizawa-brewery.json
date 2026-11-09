@@ -54,5 +54,15 @@
   "kanbai-shuzo",
   "kawakei-shoten",
   "yamawa-shuzoten"
- ]
+ ],
+ "lat": 38.529,
+ "lon": 140.946,
+ "cid": "japan",
+ "prov": "miyagi",
+ "provName": "Miyagi",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

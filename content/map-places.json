@@ -1,13 +1,74 @@
 {
-  "_about": "Hand-kept corrections to the capitals and towns on the maps (Plan 14 section 6). build/tools/makemaps.py reads this when it writes docs/assets/maps/<country>.json, so run it again after editing. For each country id: 'rename' maps a Natural Earth name to the name shown, 'remove' lists names to drop, and 'add' lists places Natural Earth lacks (n, lat, lon, pop, and cap: true for the capital of its province or state).",
+  "_about": "Hand-kept corrections to the capitals and towns on the maps (Plan 14 section 6). build/tools/makemaps.py reads this when it writes docs/assets/maps/<country>.json, so run it again after editing. For each country id: 'rename' maps a Natural Earth name to the name shown, 'remove' lists names to drop, 'city' lists provinces to treat as city-provinces on the maker page, and 'add' lists places Natural Earth lacks (n, lat, lon, pop, and cap: true for the capital of its province or state). The build (not makemaps.py) also reads two more sections until every maker has coordinates: 'regions' (a country id, then a Region or Location word the maps do not know, with [latitude, longitude] for its pin) and 'provinceAlias' (a country id, then another name for a province id).",
   "japan": {
     "add": [
-      {"n": "Chiba", "lat": 35.607, "lon": 140.106, "pop": 980000, "cap": true},
-      {"n": "Saga", "lat": 33.249, "lon": 130.299, "pop": 230000, "cap": true},
-      {"n": "Nara", "lat": 34.685, "lon": 135.805, "pop": 355000, "cap": true}
+      {
+        "n": "Chiba",
+        "lat": 35.607,
+        "lon": 140.106,
+        "pop": 980000,
+        "cap": true
+      },
+      {
+        "n": "Saga",
+        "lat": 33.249,
+        "lon": 130.299,
+        "pop": 230000,
+        "cap": true
+      },
+      {
+        "n": "Nara",
+        "lat": 34.685,
+        "lon": 135.805,
+        "pop": 355000,
+        "cap": true
+      }
+    ],
+    "city": [
+      "osaka"
     ]
   },
   "denmark": {
-    "rename": {"København": "Copenhagen", "Århus": "Aarhus"}
+    "rename": {
+      "København": "Copenhagen",
+      "Århus": "Aarhus"
+    },
+    "city": [
+      "hovedstaden"
+    ]
+  },
+  "regions": {
+    "scotland": {
+      "Islay": [
+        55.77,
+        -6.2
+      ]
+    },
+    "chile": {
+      "Colchagua Valley": [
+        -34.6,
+        -71.0
+      ]
+    }
+  },
+  "provinceAlias": {
+    "south-korea": {
+      "Chungcheongnam-do": "southchungcheong",
+      "Chungcheongbuk-do": "northchungcheong"
+    }
+  },
+  "france": {
+    "city": [
+      "paris"
+    ]
+  },
+  "vietnam": {
+    "city": [
+      "hochiminhcity",
+      "hanoi",
+      "danang",
+      "haiphong",
+      "cantho"
+    ]
   }
 }

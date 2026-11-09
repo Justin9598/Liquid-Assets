@@ -41,5 +41,15 @@
   "akita-seishu",
   "aramasa-shuzo",
   "ryozeki-shuzo"
- ]
+ ],
+ "lat": 39.202,
+ "lon": 140.546,
+ "cid": "japan",
+ "prov": "akita",
+ "provName": "Akita",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

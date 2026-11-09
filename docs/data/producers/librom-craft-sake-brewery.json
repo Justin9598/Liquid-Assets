@@ -35,5 +35,15 @@
    "sub": "craft-sake"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 33.581,
+ "lon": 130.402,
+ "cid": "japan",
+ "prov": "fukuoka",
+ "provName": "Fukuoka",
+ "area": "kyushu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

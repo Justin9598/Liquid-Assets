@@ -38,5 +38,15 @@
    "sub": "junmai-ginjo"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 35.601,
+ "lon": 138.593,
+ "cid": "japan",
+ "prov": "yamanashi",
+ "provName": "Yamanashi",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

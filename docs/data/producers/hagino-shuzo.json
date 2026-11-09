@@ -52,5 +52,15 @@
   "kawakei-shoten",
   "niizawa-brewery",
   "yamawa-shuzoten"
- ]
+ ],
+ "lat": 38.866,
+ "lon": 141.129,
+ "cid": "japan",
+ "prov": "iwate",
+ "provName": "Iwate",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

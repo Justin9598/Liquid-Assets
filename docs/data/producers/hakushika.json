@@ -48,5 +48,15 @@
   "nihonsakari",
   "shimomura-shuzoten",
   "tajime-shuzo"
- ]
+ ],
+ "lat": 34.729,
+ "lon": 135.334,
+ "cid": "japan",
+ "prov": "hyogo",
+ "provName": "Hyogo",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

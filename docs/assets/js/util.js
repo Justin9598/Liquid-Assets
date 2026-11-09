@@ -27,7 +27,7 @@ export function parseHash(hash = location.hash) {
 export function buildHash(segs, params) {
   let h = '#/' + segs.map(encodeURIComponent).join('/');
   const q = [];
-  if (params) for (const [k, v] of Object.entries(params)) if (v !== '' && v != null && v !== false) q.push(`${k}=${encodeURIComponent(v).replace(/%2C/gi, ',')}`);
+  if (params) for (const [k, v] of Object.entries(params)) if (v !== '' && v != null && v !== false) q.push(`${k}=${encodeURIComponent(v).replace(/%2C/gi, ',').replace(/%2F/gi, '/')}`);
   if (q.length) h += '?' + q.join('&');
   return h;
 }

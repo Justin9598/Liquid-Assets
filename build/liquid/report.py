@@ -10,7 +10,7 @@ from .photos import PHOTO_EXT
 
 CODE_TITLES = {
     "E01": "Cannot read the ledger", "E02": "Privacy leak in output", "E03": "Broken reference",
-    "E04": "Schema violation", "E05": "Image could not be processed", "E07": "Owner crop changed outside the crop tool",
+    "E04": "Schema violation", "E05": "Image could not be processed", "E07": "Owner crop changed outside the crop tool", "E08": "No map file for a maker's country",
     "W01": "Photo not matched to any drink", "W02": "Drink has no front photo",
     "W03": "Other Detail Type not valid for the category", "W04": "Producer missing from Producers sheet",
     "W05": "Japanese Region is not one of the 47 prefectures", "W06": "Rows sharing an ID disagree",
@@ -18,7 +18,7 @@ CODE_TITLES = {
     "W10": "Category falling back to a single bottle (Type unfilled)", "W11": "Detail row with no matching Core ID",
     "W12": "Count dropped sharply since the last build", "W13": "Optional ledger column or sheet missing",
     "W14": "Ledger is open in Excel", "W15": "Value could not be parsed", "W16": "photo-map entry for an unknown drink",
-    "W17": "Duplicate row", "W18": "Related maker not found", "W20": "Content file missing", "W22": "Maker About text breaks the writing rules", "W23": "Seasonal pin names an unknown drink", "W24": "Maker Sources entry is not a web address",
+    "W17": "Duplicate row", "W18": "Related maker not found", "W20": "Content file missing", "W22": "Maker About text breaks the writing rules", "W23": "Seasonal pin names an unknown drink", "W24": "Maker Sources entry is not a web address", "W25": "Maker coordinates are outside its country", "W26": "Maker placed by its town or region, not its address",
     "I01": "Empty subcategory hidden", "I02": "No rendered scene images yet", "I03": "Label skipped (not used on bottles)", "W21": "Front photo has no label judgement yet",
 }
 

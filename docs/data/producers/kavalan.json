@@ -46,5 +46,15 @@
    "sub": "highball"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 24.714,
+ "lon": 121.692,
+ "cid": "taiwan",
+ "prov": "yilan",
+ "provName": "Yilan",
+ "area": null,
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "cocktails",
+ "exact": true
 }

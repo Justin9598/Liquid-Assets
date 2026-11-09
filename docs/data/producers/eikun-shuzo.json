@@ -37,5 +37,15 @@
  ],
  "moreFromRegion": [
   "doi-shuzojo"
- ]
+ ],
+ "lat": 35.144,
+ "lon": 138.561,
+ "cid": "japan",
+ "prov": "shizuoka",
+ "provName": "Shizuoka",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

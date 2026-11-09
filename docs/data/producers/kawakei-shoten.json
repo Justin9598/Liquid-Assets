@@ -50,5 +50,15 @@
   "kanbai-shuzo",
   "niizawa-brewery",
   "yamawa-shuzoten"
- ]
+ ],
+ "lat": 38.474,
+ "lon": 141.132,
+ "cid": "japan",
+ "prov": "miyagi",
+ "provName": "Miyagi",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

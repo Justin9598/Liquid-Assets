@@ -47,5 +47,15 @@
   "kubiki-shuzo",
   "swan-lake-beer",
   "takachiyo-shuzo"
- ]
+ ],
+ "lat": 37.918,
+ "lon": 139.04,
+ "cid": "japan",
+ "prov": "niigata",
+ "provName": "Niigata",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

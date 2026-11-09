@@ -55,5 +55,15 @@
    "sub": "craft-sake"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 35.382,
+ "lon": 136.268,
+ "cid": "japan",
+ "prov": "shiga",
+ "provName": "Shiga",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

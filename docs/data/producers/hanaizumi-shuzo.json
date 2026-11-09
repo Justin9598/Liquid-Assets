@@ -62,5 +62,15 @@
   "homare-shuzo",
   "matsuzaki-shuzo",
   "miyaizumi-meijo"
- ]
+ ],
+ "lat": 37.267,
+ "lon": 139.54,
+ "cid": "japan",
+ "prov": "fukushima",
+ "provName": "Fukushima",
+ "area": "tohoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

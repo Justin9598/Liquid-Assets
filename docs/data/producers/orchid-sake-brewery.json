@@ -36,5 +36,15 @@
    "sub": "tokubetsu-junmai"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 1.344,
+ "lon": 103.695,
+ "cid": "singapore",
+ "prov": "singapore",
+ "provName": "Singapore",
+ "area": null,
+ "cont": "Asia",
+ "reg": "Southeast Asia",
+ "main": "sake",
+ "exact": true
 }

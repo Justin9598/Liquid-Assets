@@ -53,6 +53,15 @@ def build_shelf(drinks, grades, issues):
     return cats
 
 
+def _pin_fields(p):
+    """Where the maker's pin is (Plan 14 section 5): coordinates to 3 decimal places, and the place names the maps group by."""
+    pin = p.get("pin")
+    if not pin:                                   # no map files (a test project): the keys stay, empty
+        return {k: None for k in ("lat", "lon", "cid", "prov", "provName", "area", "cont", "reg", "main", "exact")}
+    return {"lat": pin["lat"], "lon": pin["lon"], "cid": pin["cid"], "prov": pin["prov"], "provName": pin["provName"],
+            "area": pin["area"], "cont": pin["cont"], "reg": pin["reg"], "main": pin["main"], "exact": pin["exact"]}
+
+
 def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, content, image_signatures, sections=None):
     files = {}
     drinks_sorted = sorted(drinks, key=lambda d: (sort_key(d["name"]), d["id"]))
@@ -173,7 +182,7 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
         pindex.append({"key": key, "name": p["name"], "native": p["native"], "region": p["region"],
                        "country": p["country"], "location": p["location"], "brands": p["brands"],
                        "drinkCount": p["drinkCount"], "favourites": p["favourites"],
-                       "hasStory": bool(p["about"])})
+                       "hasStory": bool(p["about"]), **_pin_fields(p)})
         doc = {
             "key": key, "name": p["name"], "native": p["native"], "location": p["location"],
             "region": p["region"], "country": p["country"], "founded": p["founded"], "master": p["master"],
@@ -182,7 +191,7 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
             "tally": {"drinks": p["drinkCount"], "categories": len(p["categories"]),
                       "favourites": p["favourites"], "timesHad": p["timesHad"]},
             "drinks": [{"id": d["id"], "category": d["category"], "sub": d["sub"]} for d in p["drinks"]],
-            "moreFromRegion": p["moreFromRegion"],
+            "moreFromRegion": p["moreFromRegion"], **_pin_fields(p),
         }
         files[f"producers/{key}.json"] = dumps(doc)
     files["producers.json"] = dumps(pindex)

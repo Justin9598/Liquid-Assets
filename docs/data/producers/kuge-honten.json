@@ -34,5 +34,15 @@
    "sub": "all"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 33.127,
+ "lon": 131.784,
+ "cid": "japan",
+ "prov": "oita",
+ "provName": "Oita",
+ "area": "kyushu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "umeshu",
+ "exact": true
 }

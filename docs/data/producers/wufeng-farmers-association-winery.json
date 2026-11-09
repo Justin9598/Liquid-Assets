@@ -35,5 +35,15 @@
    "sub": "ungraded"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 24.154,
+ "lon": 120.68,
+ "cid": "taiwan",
+ "prov": "taichungcity",
+ "provName": "Taichung City",
+ "area": null,
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

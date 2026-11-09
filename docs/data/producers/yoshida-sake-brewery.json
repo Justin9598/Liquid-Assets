@@ -44,5 +44,15 @@
  "moreFromRegion": [
   "fukumitsuya",
   "noguchi-naohiko-sake-institute"
- ]
+ ],
+ "lat": 36.771,
+ "lon": 136.761,
+ "cid": "japan",
+ "prov": "ishikawa",
+ "provName": "Ishikawa",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

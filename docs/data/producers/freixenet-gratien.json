@@ -34,5 +34,15 @@
    "sub": "blend"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 44.841,
+ "lon": -0.58,
+ "cid": "france",
+ "prov": "gironde",
+ "provName": "Gironde",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "wine",
+ "exact": true
 }

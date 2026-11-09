@@ -36,5 +36,15 @@
    "sub": "junmai-ginjo"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 36.7,
+ "lon": 137.23,
+ "cid": "japan",
+ "prov": "toyama",
+ "provName": "Toyama",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

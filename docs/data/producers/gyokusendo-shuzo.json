@@ -35,5 +35,15 @@
    "sub": "junmai"
   }
  ],
- "moreFromRegion": []
+ "moreFromRegion": [],
+ "lat": 35.306,
+ "lon": 136.569,
+ "cid": "japan",
+ "prov": "gifu",
+ "provName": "Gifu",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

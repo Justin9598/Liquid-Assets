@@ -41,5 +41,15 @@
  "moreFromRegion": [
   "kamikawa-taisetsu-shuzo",
   "michizakura-shuzo"
- ]
+ ],
+ "lat": 43.753,
+ "lon": 142.38,
+ "cid": "japan",
+ "prov": "hokkaido",
+ "provName": "Hokkaido",
+ "area": "hokkaido",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": false
 }

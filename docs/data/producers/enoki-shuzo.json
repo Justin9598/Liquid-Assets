@@ -38,5 +38,15 @@
  ],
  "moreFromRegion": [
   "imada-shuzo"
- ]
+ ],
+ "lat": 34.188,
+ "lon": 132.53,
+ "cid": "japan",
+ "prov": "hiroshima",
+ "provName": "Hiroshima",
+ "area": "chugoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

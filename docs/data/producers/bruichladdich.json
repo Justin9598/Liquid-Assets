@@ -39,5 +39,15 @@
  ],
  "moreFromRegion": [
   "ardbeg"
- ]
+ ],
+ "lat": 55.767,
+ "lon": -6.363,
+ "cid": "scotland",
+ "prov": "argyllandbute",
+ "provName": "Argyll and Bute",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "spirits",
+ "exact": true
 }

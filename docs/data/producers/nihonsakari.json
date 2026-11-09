@@ -44,5 +44,15 @@
   "kiku-masamune-shuzo",
   "shimomura-shuzoten",
   "tajime-shuzo"
- ]
+ ],
+ "lat": 34.73,
+ "lon": 135.345,
+ "cid": "japan",
+ "prov": "hyogo",
+ "provName": "Hyogo",
+ "area": "kansai",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }

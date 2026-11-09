@@ -56,5 +56,15 @@
   "nagayama-honke-shuzojo",
   "shintani-shuzo",
   "sumikawa-shuzojo"
- ]
+ ],
+ "lat": 34.121,
+ "lon": 131.979,
+ "cid": "japan",
+ "prov": "yamaguchi",
+ "provName": "Yamaguchi",
+ "area": "chugoku",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
 }
