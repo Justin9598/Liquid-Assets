@@ -12,9 +12,10 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from smoke_inner import SIZES, load, settle, wait_for, wait_ready, go as _go  # noqa: E402
+from smoke_inner import SIZES as _SIZES, load, settle, wait_for, wait_ready, go as _go  # noqa: E402
 
 SHIP = Path(__file__).resolve().parents[2]
+SIZES = _SIZES + [(745, 527)]          # and the narrow desktop pane the designer previews in (Plan 14 section 13.4)
 
 MAP_STATE = r"""(() => {
   const host = document.querySelector('#mapbox');
@@ -53,6 +54,12 @@ MAP_STATE = r"""(() => {
     info: document.querySelector('#map-info').textContent, crumbs: [...document.querySelectorAll('#mm-crumbs li')].map((l) => l.textContent.trim()),
     count: document.querySelector('#mcount').textContent, tiles: document.querySelectorAll('#mlist .tile').length, hash: location.hash,
     chip: document.querySelector('#region-chip')?.textContent.trim() || '', back: !document.querySelector('#mm-back').disabled,
+    sign: (() => { const g = document.querySelector('.mm-sign'); if (!g) return null; g.getAnimations().forEach((x) => x.finish()); const r = g.getBoundingClientRect(); const pin = [...host.querySelectorAll('.pin-head, .pin-tag.always')].some((e) => { const q = e.getBoundingClientRect(); return q.left < r.right && q.right > r.left && q.top < r.bottom && q.bottom > r.top; });
+      return { shown: !g.hidden, words: [...g.querySelectorAll('small, b')].map((e) => e.textContent), hitsPin: pin, right: g.classList.contains('right'), inside: r.left >= hr.left - 1 && r.right <= hr.right + 1 && r.top >= hr.top - 1, font: Math.min(...[...g.querySelectorAll('small, b')].map((e) => parseFloat(getComputedStyle(e).fontSize))), width: r.width }; })(),
+    shape: (() => { const all = [...host.querySelectorAll('.g-country path')]; if (!all.length) return null; const sel = all.filter((p) => p.classList.contains('sel')); const use = sel.length ? sel : all.filter((p) => !['okinawa', 'alaska', 'hawaii'].includes(p.dataset.id));
+      let l = 1e9, t = 1e9, r = -1e9, b = -1e9; for (const p of use) { const q = p.getBoundingClientRect(); l = Math.min(l, q.left); t = Math.min(t, q.top); r = Math.max(r, q.right); b = Math.max(b, q.bottom); }
+      const strokes = all.map((p) => { const cs = getComputedStyle(p); return [parseFloat(cs.strokeWidth), parseFloat((cs.stroke.match(/[\d.]+\)$/) || ['1)'])[0])]; });
+      return { paths: all.length, selN: sel.length, padL: (l - hr.left) / hr.width, padR: (hr.right - r) / hr.width, padT: (t - hr.top) / hr.height, padB: (hr.bottom - b) / hr.height, minStroke: Math.min(...strokes.map((s) => s[0])), minAlpha: Math.min(...strokes.map((s) => s[1])), hatched: all.filter((p) => /url/.test(p.style.fill)).length }; })(),
     crumbRight: document.querySelector('#mm-crumbs').getBoundingClientRect().right, crumbClipped: (() => { const o = document.querySelector('#mm-crumbs'); return o.scrollWidth > o.clientWidth + 1; })(), menuLeft: (document.querySelector('#chrome') || document.body).getBoundingClientRect().left, crumbText: document.querySelector('#mm-crumbs').textContent,
     crumbH: document.querySelector('.mm-bar').getBoundingClientRect().height, more: !!document.querySelector('#mm-more'),
     boardVh: mb.height / innerHeight, sideways: document.documentElement.scrollWidth > innerWidth + 1,
@@ -137,6 +144,44 @@ def tree_checks(page, tag):
     return [f"{tag}: tree: {m}" for m in r["problems"]], r
 
 
+FRAMED = [("asia/east-asia/japan", "Japan", ["Japan"]), ("asia/east-asia/japan/tohoku", "Tohoku", ["Japan", "Tohoku"]), ("asia/east-asia/japan/kanto", "Kanto", ["Japan", "Kanto"]),
+          ("asia/east-asia/japan/tohoku/iwate", "Iwate", ["Japan", "Iwate"]), ("asia/east-asia/japan/kanto/tokyo", "Tokyo", ["Japan", "Tokyo"]),
+          ("asia/east-asia/south-korea", "South Korea", ["South Korea"]), ("europe/europe/france", "France", ["France"]), ("asia/southeast-asia/singapore", "Singapore", ["Singapore"])]
+
+
+def frame_checks(page, tag):
+    """Plan 14 section 13.4: the chosen shape is whole, centred and padded; every province outline is drawn and visible from the
+    country level down; the place sign says the right words and never covers a pin; no sign above the country level."""
+    probs = []
+    for at, name, words in FRAMED:
+        s = open_at(page, at)
+        sh = s["shape"]
+        if not sh:
+            probs.append(f"{tag} {name}: no province outlines drawn")
+            continue
+        pads = [sh["padL"], sh["padR"], sh["padT"], sh["padB"]]
+        if min(pads) < 0.05 - 1e-3:
+            probs.append(f"{tag} {name}: the shape has {min(pads) * 100:.1f}% padding on its tightest side (at least 5%): {[round(p, 3) for p in pads]}")
+        if abs(sh["padL"] - sh["padR"]) > 0.03 and abs(sh["padT"] - sh["padB"]) > 0.03:
+            probs.append(f"{tag} {name}: the shape is off-centre both ways: {[round(p, 3) for p in pads]}")
+        if sh["paths"] < 1 or sh["minStroke"] < 1 or sh["minAlpha"] < 0.35:
+            probs.append(f"{tag} {name}: province outlines are too faint (width {sh['minStroke']}, alpha {sh['minAlpha']})")
+        if name not in ("Singapore", "Tokyo") and sh["hatched"] < 1:
+            probs.append(f"{tag} {name}: no province with makers is hatched")
+        sg = s["sign"]
+        if not sg or not sg["shown"] or [w.lower() for w in sg["words"]] != [w.lower() for w in words]:
+            probs.append(f"{tag} {name}: the place sign reads {sg and sg['words']}, expected {words}")
+        elif sg["hitsPin"] or not sg["inside"]:
+            probs.append(f"{tag} {name}: the place sign covers a pin (hit {sg['hitsPin']}) or leaves the map (inside {sg['inside']}, right {sg['right']}, width {sg['width']:.0f})")
+        elif sg["font"] < 13 - 1e-6:
+            probs.append(f"{tag} {name}: the place sign lettering is {sg['font']}px (13px at least)")
+    for at in ("", "asia", "asia/east-asia", "europe"):
+        s = open_at(page, at)
+        if s["sign"] and s["sign"]["shown"]:
+            probs.append(f"{tag}: a place sign shows at '{at or 'World'}'")
+    return probs
+
+
 def pin_problems(s, label):
     out = []
     if s["overlaps"]:
@@ -219,7 +264,7 @@ def map_checks(page, base, tag, full=True):
         esc(page)
         if state(page)["card"]:
             probs.append(f"{tag}: Esc did not close the maker card")
-    if phone:                                               # one line: Back, then "... > Japan > Tohoku" (Plan 14 section 11.3)
+    if w < 500:                                             # one line: Back, then "... > Japan > Tohoku" (Plan 14 section 11.3)
         s5 = open_at(page, "asia/east-asia/japan/tohoku/iwate")
         if s5["crumbH"] > 56 or not s5["more"]:
             probs.append(f"{tag}: the phone breadcrumb is {s5['crumbH']:.0f}px tall (more button: {s5['more']})")
@@ -251,6 +296,7 @@ def map_checks(page, base, tag, full=True):
         probs.append(f"{tag}: back to the World gave '{s['at']}'")
     if not full:
         return probs
+    probs += frame_checks(page, tag)
     # the whole tree: the two rules, and no pin heads overlapping anywhere
     p2, tree = tree_checks(page, tag)
     probs += p2
@@ -365,6 +411,10 @@ def shoot(page, base, tag, out):
         click(page, f'.mm-pin[data-id="{mk["id"]}"]')
     board()
     page.screenshot(f"{out}/map-card-{tag}.png")
+    for name, at in (("kanto", "asia/east-asia/japan/kanto"), ("iwate", "asia/east-asia/japan/tohoku/iwate")):
+        open_at(page, at)
+        board()
+        page.screenshot(f"{out}/map-{name}-{tag}.png")
     for name, route in (("counter-topup", "#/wine"), ("sake-shelves", "#/sake")):
         load(page, base, route)
         page.eval("new Promise(r => setTimeout(r, 700))", await_promise=True)

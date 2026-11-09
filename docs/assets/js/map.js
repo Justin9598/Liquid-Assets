@@ -171,7 +171,9 @@ export class MapStage {
   }
 
   /** `has`: countries with makers, hatched lightly. `sel`: the chosen countries or provinces, hatched in glow chalk. */
-  mark({ has = [], sel = [], edge = [], provSel = [], provAll = false } = {}) {
+  mark({ has = [], sel = [], edge = [], provSel = [], provAll = false, provHas = [], focus = false } = {}) {
+    this.gCountry.classList.toggle('focus', focus);
+    const provHasSet = new Set(provHas);
     const hasSet = new Set(has);
     const selSet = new Set(sel);
     const edgeSet = new Set(edge);
@@ -185,8 +187,20 @@ export class MapStage {
     for (const el of this.gCountry.children) {
       const on = provSet.has(el.dataset.id);
       el.classList.toggle('sel', on);
-      el.style.fill = on ? `url(#mm-hg-${this.uid})` : provAll ? `url(#mm-hl-${this.uid})` : '';
+      el.style.fill = on ? `url(#mm-hg-${this.uid})` : provAll || provHasSet.has(el.dataset.id) ? `url(#mm-hl-${this.uid})` : '';
     }
+  }
+
+  /** The box (map units) that holds the drawn outlines of these provinces, from the real path geometry. */
+  boxOf(ids) {
+    const want = new Set(ids);
+    let b = null;
+    for (const el of this.gCountry.children) {
+      if (!want.has(el.dataset.id)) continue;
+      const r = el.getBBox();
+      b = b ? [Math.min(b[0], r.x), Math.min(b[1], r.y), Math.max(b[2], r.x + r.width), Math.max(b[3], r.y + r.height)] : [r.x, r.y, r.x + r.width, r.y + r.height];
+    }
+    return b;
   }
 
   // -- the view
@@ -341,6 +355,62 @@ export class MapStage {
     }).join('');
   }
 }
+
+// ---- a point inside a province (Plan 14 section 13.2) ----------------------------------------------------------------
+const ringsOf = (prov) => {
+  if (!prov._rings) {
+    prov._rings = [...prov.d.matchAll(/M(-?\d+) (-?\d+)l([-\d ]*)z/g)].map((m) => {
+      let x = +m[1];
+      let y = +m[2];
+      const pts = [[x, y]];
+      const n = m[3].split(' ').filter(Boolean).map(Number);
+      for (let i = 0; i + 1 < n.length; i += 2) { x += n[i]; y += n[i + 1]; pts.push([x, y]); }
+      return pts;
+    });
+  }
+  return prov._rings;
+};
+const inRing = (ring, x, y) => {
+  let c = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi || 1e-9) + xi) c = !c;
+  }
+  return c;
+};
+/** The visual centre of a province, in map units: the centroid of its biggest piece, or when that falls outside the shape (a
+ * curved coast) the nearest point that is inside. Unlike the bounding-box centre it always stands on land. */
+export function innerPoint(prov) {
+  if (prov._inner) return prov._inner;
+  const area = (r) => Math.abs(r.reduce((a, p, i) => a + p[0] * r[(i + 1) % r.length][1] - r[(i + 1) % r.length][0] * p[1], 0)) / 2;
+  const ring = ringsOf(prov).reduce((a, r) => (area(r) > area(a) ? r : a));
+  let a2 = 0;
+  let cx = 0;
+  let cy = 0;
+  ring.forEach((p, i) => {
+    const q = ring[(i + 1) % ring.length];
+    const f = p[0] * q[1] - q[0] * p[1];
+    a2 += f; cx += (p[0] + q[0]) * f; cy += (p[1] + q[1]) * f;
+  });
+  cx /= 3 * a2; cy /= 3 * a2;
+  let best = [cx, cy];
+  if (!inRing(ring, cx, cy)) {
+    const xs = ring.map((p) => p[0]);
+    const ys = ring.map((p) => p[1]);
+    let bd = Infinity;
+    for (let i = 0; i <= 40; i++) for (let j = 0; j <= 40; j++) {
+      const x = Math.min(...xs) + ((Math.max(...xs) - Math.min(...xs)) * i) / 40;
+      const y = Math.min(...ys) + ((Math.max(...ys) - Math.min(...ys)) * j) / 40;
+      if (inRing(ring, x, y) && Math.hypot(x - cx, y - cy) < bd) { best = [x, y]; bd = Math.hypot(x - cx, y - cy); }
+    }
+  }
+  prov._inner = best;
+  return best;
+}
+
+/** Provinces that stay out of a whole-country frame (far outliers). */
+export const FRAME_SKIP = { usa: ['alaska', 'hawaii'], japan: ['okinawa'] };
 
 // ---- the map on a maker page (Plan 14 section 6) ---------------------------------------------------------------------
 const INSET_SKIP = { usa: ['alaska', 'hawaii'] };          // so the continental states fill the inset

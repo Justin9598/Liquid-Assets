@@ -4,7 +4,7 @@
 import { board, headBoard, pageHTML } from './chrome.js';
 import { getJSON } from './data.js';
 import { icon } from './icons.js';
-import { MapStage, loadCountry, loadWorld, pinColor, project } from './map.js';
+import { FRAME_SKIP, MapStage, innerPoint, loadCountry, loadWorld, pinColor, project, unproject } from './map.js';
 import { buildTree, chainOf, countryNode, crumbs, findNode, provinceNode, smallestHolding, tally, upFrom, viewOf } from './maptree.js';
 import { makerTile } from './producer.js';
 import { $, buildHash, debounce, esc, fold, plural, regionKey, replaceHash, setTitle, slug } from './util.js';
@@ -130,7 +130,7 @@ ${board(`    <div class="m-controls">
     world = await loadWorld();
     stage = new MapStage(host);
     stage.setWorld(world);
-    host.insertAdjacentHTML('beforeend', '<div class="mm-card chalkboard" id="mm-card" hidden role="dialog" aria-label="Maker"></div>');
+    host.insertAdjacentHTML('beforeend', '<div class="mm-card chalkboard" id="mm-card" hidden role="dialog" aria-label="Maker"></div><div class="mm-sign" hidden aria-hidden="true"><div class="plank"></div></div>');
   } catch {
     $('.map-board', root)?.remove();
     $('.m-top', root).style.gridTemplateColumns = 'minmax(0, 1fr)';
@@ -146,8 +146,17 @@ ${board(`    <div class="m-controls">
     return { id: `m:${p.key}`, kind: 'maker', x, y, r: 9, color: pinColor(p.main), name: p.name, tag: false, key: p.key,
       aria: `${p.name}, ${p.location || p.region || p.country || ''}, open card` };
   };
+  let countryData = null;                                  // the open country's outlines, when a province or area is open
+  /** A group pin stands on a point inside its shape: the visual centre of its province, or of the province with most makers in
+   * its area; above the country level, the middle of its makers. */
   const groupItem = (g) => {
-    const [x, y] = centreOf(g.producers);
+    let spot = null;
+    if (countryData && (g.level === 'province' || g.level === 'area')) {
+      const pid = g.level === 'province' ? g.id : [...g.children].sort((a, b) => b.producers.length - a.producers.length)[0]?.id;
+      const pv = countryData.provinces.find((q) => q.id === pid);
+      if (pv) spot = innerPoint(pv);
+    }
+    const [x, y] = spot || centreOf(g.producers);
     return { id: `g:${g.path}`, kind: 'group', x, y, r: radiusFor(g.producers.length), count: g.producers.length, name: g.name, tag: true, path: g.path,
       aria: `${g.name}, ${plural(g.producers.length, 'maker')}, zoom in` };
   };
@@ -195,6 +204,7 @@ ${board(`    <div class="m-controls">
       if (my !== token) return;
     }
     stage.setCountry(data);
+    countryData = data;
     const cids = [...new Set(view.node.producers.map((p) => p.cid))];
     const allCids = [...new Set(producers.map((p) => p.cid).filter(Boolean))];
     let provSel = [];
@@ -202,13 +212,22 @@ ${board(`    <div class="m-controls">
     else if (data && view.node.level === 'area') provSel = [...new Set(view.node.producers.map((p) => p.prov))];
     // the countries with makers are hatched lightly above the country level; a country opened whole is hatched, and below it only the chosen provinces are
     const hatch = view.node.level === 'country' ? cids : [];
-    stage.mark({ has: view.node.level === 'world' || !countryLevel ? allCids : [], sel: hatch, edge: view.node.level === 'world' ? [] : cids, provSel, provAll: !!data && view.node.level === 'country' });
+    // from the country level down every province of the country stays drawn as a clear outline, with makers' provinces lightly hatched
+    const cidOpen = data ? (() => { for (let n = view.node; n; n = n.parent) if (n.level === 'country') return n.id; return null; })() : null;
+    const provHas = data ? [...new Set(producers.filter((p) => p.cid === cidOpen && p.prov).map((p) => p.prov))] : [];
+    stage.mark({ has: view.node.level === 'world' || !countryLevel ? allCids : [], sel: hatch, edge: view.node.level === 'world' ? [] : cids, provSel, provHas, focus: !!data && view.node.level !== 'country' });
     stage.clearPins();
     // where to look
     const pad = padding();
     let spec;
     if (view.node.level === 'world' && view.kind === 'groups') spec = { box: WORLD_BOX, pad: { l: 10, r: 10, t: 24, b: 10 } };
-    else {
+    else if (data && stage.boxOf(provIds(view.node, data, cidOpen)) ) {
+      // a country, area or province is framed whole, centred, with 8% round it (Plan 14 section 13.2); at least about 60 km across
+      const box = stage.boxOf(provIds(view.node, data, cidOpen));
+      const midLat = unproject(0, (box[1] + box[3]) / 2)[1];
+      const km60 = 60 / (111.3 * Math.max(0.2, Math.cos((midLat * Math.PI) / 180)) * 0.005);
+      spec = { box, minW: km60, minH: km60, pad: { l: stage.W * 0.08, r: stage.W * 0.08, t: stage.H * 0.08, b: stage.H * 0.08 } };
+    } else {
       const pts = (view.kind === 'groups' ? view.node.producers : view.makers).filter((p) => p.lat != null).map((p) => project(p.lon, p.lat));
       if (view.node.level === 'province' && data) {                     // a province fills the view, outline and all
         const pv = data.provinces.find((x) => x.id === view.node.id);
@@ -223,8 +242,44 @@ ${board(`    <div class="m-controls">
     if (my !== token) return;
     const items = view.kind === 'groups' ? [...view.groups.map(groupItem), ...view.makers.map(makerItem)] : view.makers.map(makerItem);
     stage.setPins(items);
+    updateSign(view.node);
     host.dataset.pins = String(items.length);
     host.dataset.ready = '1';                       // the pins are drawn: tests wait on this
+  }
+
+  /** The provinces whose outlines make up the chosen place: the country (without far outliers), an area, or one province. */
+  function provIds(n, data, cid) {
+    if (n.level === 'province') return [n.id];
+    if (n.level === 'area') return data.areas?.find((a) => a.id === n.id)?.provinces || [...new Set(n.producers.map((p) => p.prov))];
+    const skip = (FRAME_SKIP[cid] || []).filter((id) => !n.producers.some((p) => p.prov === id));      // outliers without makers stay out of the frame
+    return data.provinces.map((p) => p.id).filter((id) => !skip.includes(id));
+  }
+
+  /** The small hanging wooden sign in the map's corner (Plan 14 section 13.3): "JAPAN" at a country, "JAPAN / Tohoku" below it.
+   * Decoration only. It moves to the other corner when it would cover a pin. */
+  let signText = '';
+  function updateSign(node) {
+    const sg = $('.mm-sign', host);
+    if (!sg) return;
+    const show = ['country', 'area', 'province'].includes(node.level);
+    sg.hidden = !show;
+    if (!show) { signText = ''; return; }
+    let country = node;
+    while (country && country.level !== 'country') country = country.parent;
+    const text = node.level === 'country' ? [country.name] : [country.name, node.name];
+    sg.firstElementChild.innerHTML = node.level === 'country' ? `<b>${esc(text[0])}</b>` : `<small>${esc(text[0])}</small><b>${esc(text[1])}</b>`;
+    sg.classList.remove('right');
+    const hitsPin = () => {
+      const r = sg.getBoundingClientRect();
+      return [...host.querySelectorAll('.pin-head, .pin-tag.always')].some((e) => { const q = e.getBoundingClientRect(); return q.left < r.right && q.right > r.left && q.top < r.bottom && q.bottom > r.top; });
+    };
+    if (hitsPin()) sg.classList.add('right');
+    if (text.join('/') !== signText) {
+      signText = text.join('/');
+      sg.classList.remove('swing');
+      void sg.offsetWidth;
+      sg.classList.add('swing');
+    }
   }
 
   let busy = Promise.resolve();

@@ -189,25 +189,61 @@ def to_path(rings):
     return "".join(parts)
 
 
+def ledger_pins(country):
+    """(lon, lat) of the makers of one country, read from the ledger's Producers sheet (read only), so an island with a maker on it
+    is never dropped from the outlines."""
+    path = SHIP.parent / "Drinks Ledger.xlsx"
+    if not path.exists():
+        return []
+    import io
+    import openpyxl
+    wb = openpyxl.load_workbook(io.BytesIO(path.read_bytes()), read_only=True, data_only=True)
+    try:
+        rows = list(wb["Producers"].iter_rows(values_only=True))
+    except KeyError:
+        return []
+    finally:
+        wb.close()
+    head = [str(h).strip() if h else "" for h in rows[0]]
+    if "Latitude" not in head or "Longitude" not in head:
+        return []
+    ci, la, lo = head.index("Country"), head.index("Latitude"), head.index("Longitude")
+    out = []
+    for r in rows[1:]:
+        try:
+            if r[ci] == country and r[la] is not None and r[lo] is not None:
+                out.append((float(r[lo]), float(r[la])))
+        except (TypeError, ValueError):
+            pass
+    return out
+
+
+PINS = []          # (lon, lat) of the makers in the country being written, from docs/data/producers.json when it exists
+
+
 def shape(geom, tol, min_area, keep=None):
     """Simplified rings (outer rings only: holes are dropped, none matters at this scale) of a Polygon or MultiPolygon.
     `keep(ring)` can drop rings (far islands). Returns (rings, bbox in lon/lat)."""
-    rings = []
+    rings, pinned = [], []
     for poly in polys_of(geom):
         outer = poly[0]
         if keep and not keep(outer):
             continue
-        if ring_area(outer) < min_area:
+        has_pin = any(inside(outer, lon, lat) for lon, lat in PINS)          # an island with a maker on it stays (Iki, Sado)
+        if ring_area(outer) < min_area and not has_pin:
             continue
         s = simplify([tuple(p[:2]) for p in outer], tol)
         if len(s) >= 4:
             rings.append(s)
+            pinned.append(has_pin)
     if not rings:       # everything was tiny: keep the biggest piece so the place still exists
         polys = sorted(polys_of(geom), key=lambda p: -ring_area(p[0]))
         s = simplify([tuple(p[:2]) for p in polys[0][0]], tol / 4)
         rings = [s] if len(s) >= 4 else [[tuple(p[:2]) for p in polys[0][0]]]
+        pinned = [True]
     big = max(ring_area(r) for r in rings)
-    main = [r for r in rings if ring_area(r) >= 0.04 * big]          # the box ignores far specks (Easter Island, the Aleutians' tail)
+    rings = [r for r, pn in zip(rings, pinned) if pn or ring_area(r) >= 0.10 * big]          # far specks (Easter Island, Tokyo's Izu islands) are dropped, so a province frames its main land (Plan 14 section 13.2)
+    main = rings
     xs = [p[0] for r in main for p in r]
     ys = [p[1] for r in main for p in r]
     return rings, (min(xs), min(ys), max(xs), max(ys))
@@ -259,6 +295,8 @@ def make_world(feats):
 
 # ---- one country --------------------------------------------------------------------------------------------------
 def make_country(cid, conf, admin1, places):
+    PINS.clear()
+    PINS.extend(ledger_pins(conf["ledger"]))
     feats = [f for f in admin1 if f["properties"]["admin"] == conf["admin"]
              and (not conf.get("geonunit") or f["properties"].get("geonunit") == conf["geonunit"])]
     if conf.get("mainland"):

@@ -581,7 +581,9 @@ a.card:hover .card-name, a.card:focus-visible .card-name { color: var(--glow); }
 .mm-geo path { fill: none; stroke: rgba(242, 237, 228, .26); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
 .mm-geo .g-world path.has { stroke: rgba(242, 237, 228, .62); }
 .mm-geo .g-world path.sel { stroke: rgba(242, 237, 228, .9); stroke-width: 1.6px; }
-.mm-geo .g-country path { stroke: rgba(242, 237, 228, .5); fill: #1c1f1e; }      /* opaque, so a city-province drawn over its surroundings hides their hatch */
+.mm-geo .g-country path { stroke: rgba(242, 237, 228, .78); stroke-width: 1.4px; fill: #1c1f1e; }      /* opaque, so a city-province drawn over its surroundings hides their hatch */
+.mm-geo .g-country.focus path:not(.sel) { stroke: rgba(242, 237, 228, .4); }      /* the neighbours of the chosen place, dimmed to about half */
+.mm-geo .g-country.focus path.sel { stroke: var(--glow); stroke-width: 2.4px; }
 .mm-geo .g-country path.sel { stroke: var(--glow); stroke-width: 2px; }
 .mm-pins { position: absolute; inset: 0; pointer-events: none; }
 .mm-pin { position: absolute; width: 44px; height: 44px; padding: 0; margin: 0; border: 0; background: none; border-radius: 50%; color: var(--chalk); pointer-events: auto; cursor: pointer; z-index: 1; font: inherit; }
@@ -595,6 +597,20 @@ a.card:hover .card-name, a.card:focus-visible .card-name { color: var(--glow); }
 .mm-pin.fanned { z-index: 4; }
 .mm-card { position: absolute; z-index: 10; width: max-content; max-width: min(260px, calc(100% - 12px)); padding: 10px 14px; --cb-fs: 16px; font-weight: 400; }
 .mm-card[hidden] { display: none; }
+/* the place sign (Plan 14 section 13.3): a short plank on two little chains, in the map's top-left corner */
+.mm-sign { position: absolute; top: 0; left: 12px; z-index: 8; pointer-events: none; width: max-content; min-width: 18%; max-width: 200px; transform-origin: 50% 0; }
+.mm-sign.right { left: auto; right: 12px; }
+.mm-sign[hidden] { display: none; }
+.mm-sign.swing { animation: sign-swing 400ms ease-out; }
+@keyframes sign-swing { from { transform: rotate(6deg); } to { transform: rotate(0); } }
+.mm-sign::before, .mm-sign::after { content: ''; position: absolute; top: 0; width: 2px; height: 14px; background: repeating-linear-gradient(#b9b2a6 0 3px, #5f5a52 3px 5px); }
+.mm-sign::before { left: 18%; }
+.mm-sign::after { right: 18%; }
+.mm-sign .plank { margin-top: 13px; padding: 4px 12px 6px; text-align: center; color: #f6e7c8; font-family: var(--chalkhand); line-height: 1.1; border: 2px solid #4a2f19; border-radius: 4px; box-shadow: 0 4px 8px rgba(0, 0, 0, .5), inset 0 0 0 1px rgba(255, 220, 160, .18);
+  background: repeating-linear-gradient(90deg, rgba(0, 0, 0, .07) 0 2px, transparent 2px 7px), linear-gradient(#8b6039, #6c4727); text-shadow: 0 1px 0 rgba(0, 0, 0, .55); }
+.mm-sign small { display: block; font: 700 13px/1.1 var(--chalkhand); letter-spacing: .1em; text-transform: uppercase; opacity: .9; }
+.mm-sign b { display: block; font: 700 17px/1.15 var(--chalkhand); overflow-wrap: anywhere; }
+.mm-sign .plank > b:only-child { text-transform: uppercase; letter-spacing: .1em; }
 .mm-card .nm { margin: 0; font: 700 18px/1.2 var(--chalkhand); overflow-wrap: anywhere; }
 .mm-card .nat { margin: 0; font-size: 15px; opacity: .9; }
 .mm-card .loc, .mm-card .n { margin: 2px 0 0; font-size: 15px; opacity: .88; }
@@ -619,6 +635,8 @@ a.card:hover .card-name, a.card:focus-visible .card-name { color: var(--glow); }
 .mm-info b { font-weight: 700; }
 .mm-mini { position: relative; width: 100%; max-width: 300px; height: 256px; margin-inline: auto; }
 .mm-mini .mm-pins { pointer-events: none; }
+.mm-mini .g-country path { stroke: rgba(242, 237, 228, .5); stroke-width: 1px; }      /* a maker page keeps its neighbours faint */
+.mm-mini .g-country path.sel { stroke: var(--glow); stroke-width: 2px; }
 .mm-labels { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
 .mm-name { font: 700 14px var(--chalkhand); fill: var(--chalk); paint-order: stroke; stroke: #262a28; stroke-width: 3.2px; stroke-linejoin: round; }
 .mm-name.cap { font-size: 15px; fill: var(--glow); }
