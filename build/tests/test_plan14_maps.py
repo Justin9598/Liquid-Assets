@@ -172,3 +172,27 @@ def test_pin_maps_in_a_browser_at_all_four_sizes():
             kb, rows = smoke_map.weight(b.page(1440, 900), f"http://127.0.0.1:{srv.port}", smoke.DOCS)
     assert not probs, probs[:8]
     assert kb < 300, f"{kb:.0f} KB: {rows[:5]}"
+
+
+def test_every_maker_pin_is_inside_its_hatched_province(real_maps):
+    """Plan 14 section 11.2: the province a maker page hatches (and the Makers map groups by) holds the maker's own pin, and no
+    smaller province does (Daejeon sits inside Chungcheongnam-do's outline)."""
+    prods = json.loads((SHIP / "docs" / "data" / "producers.json").read_text(encoding="utf-8"))
+    n = 0
+    for p in prods:
+        if p.get("lat") is None or not p.get("prov"):
+            continue
+        n += 1
+        x, y = bmaps.proj(p["lon"], p["lat"])
+        doc = real_maps.country(p["cid"])
+        mine = doc["_prov"][p["prov"]]
+        assert any(bmaps._inside(r, x, y) for r in mine["_rings"]) or min(bmaps._dist(r, x, y) for r in mine["_rings"]) <= bmaps.NEAR, p["key"]
+        area = lambda q: (q["bb"][2] - q["bb"][0]) * (q["bb"][3] - q["bb"][1])
+        smaller = [q["id"] for q in doc["provinces"] if q["id"] != mine["id"] and area(q) < area(mine) and any(bmaps._inside(r, x, y) for r in q["_rings"])]
+        assert not smaller, f"{p['key']} is in {smaller}, not {p['prov']}"
+    assert n >= 150
+    assert real_maps.country("south-korea")["_prov"]["daejeon"].get("city")           # (the ledger's Daejeon Blues pin is in Chungcheongnam-do: W27)
+    # a point in Daejeon's own streets is in Daejeon, not in the province round it
+    assert real_maps.province_at("south-korea", 127.385, 36.35) == "daejeon"
+    for cid, prov in (("japan", "tokyo"), ("japan", "osaka"), ("singapore", "singapore"), ("denmark", "hovedstaden"), ("vietnam", "hochiminhcity"), ("taiwan", "taichungcity")):
+        assert real_maps.country(cid)["_prov"][prov].get("city"), (cid, prov)

@@ -570,12 +570,12 @@ a.card:hover .card-name, a.card:focus-visible .card-name { color: var(--glow); }
 .facts .map-chalk { max-width: 300px; }
 .facts .mm-mini { max-width: 300px; }
 /* ---- the pin maps (Plan 14 sections 5 and 6): chalk outlines, pins as buttons over them */
-.mm-stage { position: relative; overflow: hidden; border-radius: var(--r-sm); background: rgba(14, 12, 11, .28); }
+.mm-stage { position: relative; overflow: hidden; border-radius: var(--r-sm); background: #1c1f1e; }
 .mm-svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; color: var(--chalk); }
 .mm-geo path { fill: none; stroke: rgba(242, 237, 228, .26); stroke-width: 1px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
 .mm-geo .g-world path.has { stroke: rgba(242, 237, 228, .62); }
 .mm-geo .g-world path.sel { stroke: rgba(242, 237, 228, .9); stroke-width: 1.6px; }
-.mm-geo .g-country path { stroke: rgba(242, 237, 228, .5); }
+.mm-geo .g-country path { stroke: rgba(242, 237, 228, .5); fill: #1c1f1e; }      /* opaque, so a city-province drawn over its surroundings hides their hatch */
 .mm-geo .g-country path.sel { stroke: var(--glow); stroke-width: 2px; }
 .mm-pins { position: absolute; inset: 0; pointer-events: none; }
 .mm-pin { position: absolute; width: 44px; height: 44px; padding: 0; margin: 0; border: 0; background: none; border-radius: 50%; color: var(--chalk); pointer-events: auto; cursor: pointer; z-index: 1; font: inherit; }
@@ -593,8 +593,13 @@ a.card:hover .card-name, a.card:focus-visible .card-name { color: var(--glow); }
 .mm-card .nat { margin: 0; font-size: 15px; opacity: .9; }
 .mm-card .loc, .mm-card .n { margin: 2px 0 0; font-size: 15px; opacity: .88; }
 .mm-card .chalk-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 6px; min-height: 32px; }
-.mm-bar { display: flex; align-items: center; gap: 10px 14px; margin-bottom: 10px; padding-right: 96px; }       /* the fixed Menu button sits in the corner above the board */
+.mm-bar { position: relative; display: flex; align-items: center; gap: 10px 14px; margin-bottom: 10px; padding-right: 96px; }       /* the fixed Menu button sits in the corner above the board */
 .mm-crumbs ol { display: flex; flex-wrap: wrap; align-items: center; margin: 0; padding: 0; list-style: none; font: 700 17px/1.2 var(--chalkhand); }
+.mm-menu { position: absolute; left: 0; top: 100%; z-index: 20; margin: 4px 0 0; padding: 6px 10px; list-style: none; min-width: 180px; --cb-fs: 16px; font-weight: 700; }
+.mm-menu[hidden] { display: none; }
+.mm-menu li { display: block; }
+.mm-menu li[aria-current] { color: var(--glow); min-height: 44px; display: flex; align-items: center; }
+.mm-menu .mm-crumb { display: block; width: 100%; text-align: left; text-decoration: none; }
 .mm-crumbs li + li::before { content: '›'; margin: 0 .55em; opacity: .6; }
 .mm-crumb { min-height: 44px; padding: 0 2px; border: 0; background: none; color: var(--chalk); font: inherit; text-decoration: underline dotted rgba(242, 237, 228, .55); text-underline-offset: 4px; cursor: pointer; }
 .mm-crumb:hover, .mm-crumb:focus-visible { color: var(--glow); }
@@ -670,10 +675,11 @@ a.tile:hover .nm, a.tile:focus-visible .nm { color: var(--glow); }
   .facts-grid { gap: 18px; }
   .m-top { gap: 20px; }
   .map-board { max-height: 55vh; display: flex; flex-direction: column; padding-block: 10px; }
-  .map-board .mm-host { height: calc(55vh - 250px); min-height: 180px; flex: none; }
+  .map-board .mm-host { height: calc(55vh - 225px); min-height: 180px; flex: none; }
   .map-board .t-body { margin-top: 6px; font-size: 17px; }
-  .mm-bar { margin-bottom: 4px; }
-  .mm-crumbs ol { font-size: 15px; }
+  .mm-bar { margin-bottom: 4px; padding-right: 150px; }      /* the fixed Menu and burger sit above the board's corner */
+  .mm-crumbs { min-width: 0; flex: 1 1 auto; }
+  .mm-crumbs ol { font-size: 15px; flex-wrap: nowrap; white-space: nowrap; overflow: hidden; }
   .mm-legend { margin-top: 6px; font-size: 14px; gap: 2px 12px; }
   .m-controls { flex-direction: column; align-items: stretch; }
   .m-controls .search { flex: 0 0 auto; }

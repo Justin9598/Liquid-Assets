@@ -30,6 +30,21 @@ MAP_STATE = r"""(() => {
     const a = pins[i].head, b = pins[j].head;
     if (a[0] < b[2] - 0.5 && a[2] > b[0] + 0.5 && a[1] < b[3] - 0.5 && a[3] > b[1] + 0.5) overlaps.push(pins[i].id + ' / ' + pins[j].id);
   }
+  // name tags that are always showing must keep clear of each other and of every other pin's head (Plan 14 section 11.4)
+  const tags = [...host.querySelectorAll('.pin-tag.always')].map((t) => ({ id: t.closest('.mm-pin').dataset.id, r: t.getBoundingClientRect() }));
+  for (let i = 0; i < tags.length; i++) {
+    for (let j = i + 1; j < tags.length; j++) {
+      const a = tags[i].r, b = tags[j].r;
+      if (a.left < b.right - 0.5 && a.right > b.left + 0.5 && a.top < b.bottom - 0.5 && a.bottom > b.top + 0.5) overlaps.push('tag ' + tags[i].id + ' / tag ' + tags[j].id);
+    }
+    for (const p of pins) {
+      if (p.id === tags[i].id) continue;
+      const a = tags[i].r, h = p.head;
+      if (a.left < h[2] - 0.5 && a.right > h[0] + 0.5 && a.top < h[3] - 0.5 && a.bottom > h[1] + 0.5) overlaps.push('tag ' + tags[i].id + ' / head ' + p.id);
+    }
+    const hr2 = host.getBoundingClientRect(), a = tags[i].r;
+    if (a.left < hr2.left - 0.5 || a.right > hr2.right + 0.5) overlaps.push('tag ' + tags[i].id + ' leaves the map');
+  }
   const small = pins.filter((p) => p.w < 43.5 || p.h < 43.5 || p.tag !== 'BUTTON').map((p) => p.id);
   const outside = pins.filter((p) => p.head[0] < hr.left - 0.5 || p.head[2] > hr.right + 0.5 || p.head[1] < hr.top - 0.5 || p.head[3] > hr.bottom + 0.5).map((p) => p.id);
   const mb = document.querySelector('.map-board').getBoundingClientRect();
@@ -38,11 +53,15 @@ MAP_STATE = r"""(() => {
     info: document.querySelector('#map-info').textContent, crumbs: [...document.querySelectorAll('#mm-crumbs li')].map((l) => l.textContent.trim()),
     count: document.querySelector('#mcount').textContent, tiles: document.querySelectorAll('#mlist .tile').length, hash: location.hash,
     chip: document.querySelector('#region-chip')?.textContent.trim() || '', back: !document.querySelector('#mm-back').disabled,
+    crumbH: document.querySelector('.mm-bar').getBoundingClientRect().height, more: !!document.querySelector('#mm-more'),
     boardVh: mb.height / innerHeight, sideways: document.documentElement.scrollWidth > innerWidth + 1,
     card: !document.querySelector('#mm-card').hidden, legend: [...document.querySelectorAll('.mm-key')].map((k) => k.textContent.trim()),
     country: document.querySelector('#mcountry').value, q: document.querySelector('#mq').value,
   };
 })()"""
+
+CAPITALS = set()          # maker keys whose province has a capital in the map data, filled by run()
+
 
 def go(page, route):
     """smoke_inner.go, with one retry: a headless tab now and then goes a few seconds without an animation frame."""
@@ -199,6 +218,19 @@ def map_checks(page, base, tag, full=True):
         esc(page)
         if state(page)["card"]:
             probs.append(f"{tag}: Esc did not close the maker card")
+    if phone:                                               # one line: Back, then "... > Japan > Tohoku" (Plan 14 section 11.3)
+        s5 = open_at(page, "asia/east-asia/japan/tohoku/iwate")
+        if s5["crumbH"] > 56 or not s5["more"]:
+            probs.append(f"{tag}: the phone breadcrumb is {s5['crumbH']:.0f}px tall (more button: {s5['more']})")
+        page.eval("document.querySelector('#mm-more').click()")
+        menu = page.eval("[...document.querySelectorAll('#mm-menu li')].map(l => l.textContent.trim())")
+        if menu != ["World", "Asia", "East Asia", "Japan", "Tohoku", "Iwate"]:
+            probs.append(f"{tag}: the breadcrumb menu lists {menu}")
+        page.eval("document.querySelector('#mm-menu .mm-crumb[data-at=\"asia\"]').click()")
+        wait_for(page, READY, 20)
+        if state(page)["at"] != "asia":
+            probs.append(f"{tag}: the breadcrumb menu did not go to Asia")
+        open_at(page, "asia/east-asia/japan/tohoku/iwate")
     # up: Esc goes up a level, Back too, the breadcrumb jumps
     esc(page)
     s = state(page)
@@ -257,7 +289,7 @@ def map_checks(page, base, tag, full=True):
     return probs
 
 
-def maker_map_checks(page, base, tag, keys):
+def maker_map_checks(page, base, tag, keys, want_capital=True):
     """A maker page: the province hatched, the pin, the capital, towns and no overlapping labels."""
     probs = []
     for key in keys:
@@ -278,18 +310,25 @@ def maker_map_checks(page, base, tag, keys):
             if (head && a.left < head.right && a.right > head.left && a.top < head.bottom && a.bottom > head.top) bad.push(names[i].t + ' covers the pin');
           }
           const inset = loc.querySelector('.mm-inset');
+          const caps = [...loc.querySelectorAll('.mm-name.cap')].map((t) => t.textContent);
           return { svg: !!loc.querySelector('.mm-svg'), sel: loc.querySelectorAll('.g-country path.sel').length, pin: !!head, headIn: !!head && head.left >= lr.left && head.right <= lr.right && head.top >= lr.top, names: names.map((n) => n.t), stars: loc.querySelectorAll('.mm-star').length,
             towns: loc.querySelectorAll('.mm-town').length, inset: !!inset, insetSel: inset ? inset.querySelectorAll('path.sel').length : 0, label: loc.getAttribute('aria-label'), bad,
-            w: lr.width, sideways: document.documentElement.scrollWidth > innerWidth + 1 };
+            caps, w: lr.width, sideways: document.documentElement.scrollWidth > innerWidth + 1 };
         })()""")
         if r.get("none"):
             probs.append(f"{tag} {key}: no map on the maker page")
             continue
         label = f"{tag} {key}"
+        if want_capital and key in CAPITALS and not r["caps"]:
+            probs.append(f"{label}: the capital of its province is not labelled")
+        if key == "akabu-shuzo" and ("Morioka" not in r["caps"] or r["towns"] < 2 or len(r["names"]) < 3):
+            probs.append(f"{label}: expected Morioka plus at least 2 towns, got {r['names']}")
         if not (r["svg"] and r["sel"] == 1 and r["pin"] and r["headIn"] and r["inset"] and r["insetSel"] == 1):
             probs.append(f"{label}: map incomplete {{svg {r['svg']}, province paths {r['sel']}, pin {r['pin']}, pin in view {r['headIn']}, inset {r['inset']}/{r['insetSel']}}}")
         if r["bad"]:
             probs.append(f"{label}: labels {r['bad'][:3]}")
+        if r["stars"] != len(r["caps"]) or r["stars"] > 1:
+            probs.append(f"{label}: capital stars {r['stars']} and capital labels {r['caps']}")
         if r["stars"] > 1 or r["towns"] > 4:
             probs.append(f"{label}: {r['stars']} capital stars, {r['towns']} towns")
         if not r["label"] or not r["label"].startswith("Map of ") or "showing" not in r["label"]:
@@ -327,7 +366,7 @@ def shoot(page, base, tag, out):
         load(page, base, route)
         page.eval("new Promise(r => setTimeout(r, 700))", await_promise=True)
         page.screenshot(f"{out}/{name}-{tag}.png")
-    for name, key in (("japan", "akabu-shuzo"), ("korea", "daejeon-blues-brewery"), ("france", "kronenbourg"), ("singapore", "orchid-sake-brewery")):
+    for name, key in (("iwate-labels", "akabu-shuzo"), ("japan", "akabu-shuzo"), ("korea", "daejeon-blues-brewery"), ("france", "kronenbourg"), ("singapore", "orchid-sake-brewery")):
         go(page, f"#/producer/{key}")
         wait_for(page, "!!document.querySelector('#locator .mm-labels')", 15)
         page.scroll_to(int(page.eval("(document.querySelector('.facts').getBoundingClientRect().top + scrollY) - 8")))
@@ -354,6 +393,15 @@ def weight(page, base, docs):
     return sum(r[1] for r in rows) / 1024, sorted(rows, key=lambda r: -r[1])
 
 
+def fill_capitals(page, prods):
+    """Makers whose province has a flagged capital in its country file: their map must label it."""
+    CAPITALS.clear()
+    for cid in sorted({p["cid"] for p in prods if p.get("cid")}):
+        d = page.eval(f"fetch('assets/maps/{cid}.json').then(r => r.json())", await_promise=True)
+        have = {x["p"] for x in d["places"] if x.get("cap")}
+        CAPITALS.update(p["key"] for p in prods if p.get("cid") == cid and p.get("prov") in have)
+
+
 def pick(page, base):
     """One maker per country (the first with a capital shown), plus Akabu Shuzo, from producers.json."""
     prods = page.eval("fetch('data/producers.json').then(r => r.json())", await_promise=True)
@@ -373,9 +421,13 @@ def run(base, shots_dir=None, sizes=SIZES, log=print):
             tag = f"{w}x{h}"
             load(page, base, "#/makers")
             prods, by_country = pick(page, base)
+            fill_capitals(page, prods)
             log(f"{tag}: Makers map")
             problems += map_checks(page, base, tag)
-            keys = list(by_country.values()) + [k for k in ("akabu-shuzo", "daejeon-blues-brewery", "kronenbourg", "orchid-sake-brewery") if k not in by_country.values()]
+            if (w, h) == sizes[0]:                          # every maker page at the first size, one per country at the others
+                keys = [p["key"] for p in prods if p.get("cid") and p.get("prov")]
+            else:
+                keys = list(by_country.values()) + ["akabu-shuzo"]
             log(f"{tag}: {len(keys)} maker page maps")
             problems += maker_map_checks(page, base, tag, keys)
             if shots_dir:

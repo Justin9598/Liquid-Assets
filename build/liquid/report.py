@@ -18,7 +18,7 @@ CODE_TITLES = {
     "W10": "Category falling back to a single bottle (Type unfilled)", "W11": "Detail row with no matching Core ID",
     "W12": "Count dropped sharply since the last build", "W13": "Optional ledger column or sheet missing",
     "W14": "Ledger is open in Excel", "W15": "Value could not be parsed", "W16": "photo-map entry for an unknown drink",
-    "W17": "Duplicate row", "W18": "Related maker not found", "W20": "Content file missing", "W22": "Maker About text breaks the writing rules", "W23": "Seasonal pin names an unknown drink", "W24": "Maker Sources entry is not a web address", "W25": "Maker coordinates are outside its country", "W26": "Maker placed by its town or region, not its address",
+    "W17": "Duplicate row", "W18": "Related maker not found", "W20": "Content file missing", "W22": "Maker About text breaks the writing rules", "W23": "Seasonal pin names an unknown drink", "W24": "Maker Sources entry is not a web address", "W25": "Maker coordinates are outside its country", "W26": "Maker placed by its town or region, not its address", "W27": "Maker pin is in a different province from its Region and Location",
     "I01": "Empty subcategory hidden", "I02": "No rendered scene images yet", "I03": "Label skipped (not used on bottles)", "W21": "Front photo has no label judgement yet",
 }
 

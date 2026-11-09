@@ -165,11 +165,13 @@ export class MapStage {
 
   /** Province outlines of one country (or none), drawn above the world. */
   setCountry(data) {
-    this.gCountry.innerHTML = data ? data.provinces.map((p) => `<path data-id="${esc(p.id)}" d="${p.d}"/>`).join('') : '';
+    // big outlines first, so a city-province (Daejeon) is drawn over the province round it
+    const area = (p) => (p.bb[2] - p.bb[0]) * (p.bb[3] - p.bb[1]);
+    this.gCountry.innerHTML = data ? [...data.provinces].sort((a, b) => area(b) - area(a)).map((p) => `<path data-id="${esc(p.id)}" d="${p.d}"/>`).join('') : '';
   }
 
   /** `has`: countries with makers, hatched lightly. `sel`: the chosen countries or provinces, hatched in glow chalk. */
-  mark({ has = [], sel = [], edge = [], provSel = [] } = {}) {
+  mark({ has = [], sel = [], edge = [], provSel = [], provAll = false } = {}) {
     const hasSet = new Set(has);
     const selSet = new Set(sel);
     const edgeSet = new Set(edge);
@@ -183,7 +185,7 @@ export class MapStage {
     for (const el of this.gCountry.children) {
       const on = provSet.has(el.dataset.id);
       el.classList.toggle('sel', on);
-      el.style.fill = on ? `url(#mm-hg-${this.uid})` : '';
+      el.style.fill = on ? `url(#mm-hg-${this.uid})` : provAll ? `url(#mm-hl-${this.uid})` : '';
     }
   }
 
@@ -313,6 +315,14 @@ export class MapStage {
     // a crowded corner (a phone, Japan's eight areas): pins that still touch give up their always-on name tag, which shows on
     // hover and focus instead, and the layout runs again; heads never overlap
     const touching = () => laid.filter((a, i) => laid.some((b, j) => j !== i && a.cx - a.bl < b.cx + b.br && a.cx + a.br > b.cx - b.bl && a.cy - a.bt < b.cy + b.bb && a.cy + a.bb > b.cy - b.bt));
+    // first try the tag on the other side of its pin; only then give the tag up
+    for (const l of touching()) {
+      if (!l.tagW) continue;
+      const before = touching().length;
+      [l.bl, l.br] = [l.br, l.bl];
+      l.flip = !l.flip;
+      if (touching().length >= before) { [l.bl, l.br] = [l.br, l.bl]; l.flip = !l.flip; }
+    }
     for (let k = 0; k < 4 && touching().length; k++) {
       for (const l of touching()) if (l.tagW) { l.tagW = 0; l.bl = l.br = l.it.r; l.noTag = true; }
       relax(laid, W, H, 3 + k * 3);
@@ -326,7 +336,7 @@ export class MapStage {
       const { it } = l;
       const art = pinArt({ r: it.r, color: it.kind === 'group' ? GROUP_COLOR : it.color, count: it.count, tip: [l.tip[0] - l.cx, l.tip[1] - l.cy] });
       const tag = it.kind === 'group' || it.kind === 'maker'
-        ? `<span class="pin-tag chalkboard chalkboard--s${l.flip || l.cx > W / 2 ? ' flip' : ''}${it.tag && !l.noTag ? ' always' : ''}" aria-hidden="true"><span class="chalk">${esc(it.name)}</span></span>` : '';
+        ? `<span class="pin-tag chalkboard chalkboard--s${(l.tagW ? l.flip : l.cx > W / 2) ? ' flip' : ''}${it.tag && !l.noTag ? ' always' : ''}" aria-hidden="true"><span class="chalk">${esc(it.name)}</span></span>` : '';
       return `<button type="button" class="mm-pin ${it.kind}${l.fanned ? ' fanned' : ''}" data-id="${esc(it.id)}" aria-label="${esc(it.aria)}" style="left:${(l.cx - 22).toFixed(1)}px;top:${(l.cy - 22).toFixed(1)}px;--r:${it.r}px"><svg class="pin-art" width="1" height="1" aria-hidden="true" focusable="false">${art}</svg>${tag}</button>`;
     }).join('');
   }
@@ -368,26 +378,44 @@ export async function drawProvinceMap(host, { p }) {
   const L = r + 11;
   const hx = tx + 0.3 * L;
   const hy = ty - L;
-  const used = [{ l: hx - r - 2, r: hx + r + 2, t: hy - r - 2, b: ty + 3 }];
+  const used = [{ l: hx - r - 2, r: hx + r + 2, t: hy - r - 2, b: hy + r + 2 }, { l: tx - 4, r: tx + 4, t: ty - 9, b: ty + 3 }];   // the head, and the needle's foot
   const hit = (a, b) => a.l < b.r + 3 && a.r > b.l - 3 && a.t < b.b + 3 && a.b > b.t - 3;
   const W = stage.W;
   const H = stage.H;
   const marks = [];
+  /** Puts a capital or town on the map with its name. A place under the pin (Akabu stands in Morioka) is marked beside the pin,
+   * so the reader still sees it named. The capital is always placed: when nothing clear is found it takes the first spot in range. */
   const label = (pl, kind) => {
     const [x, y] = stage.toPx([pl.x, pl.y]);
-    if (x < 6 || x > W - 6 || y < 6 || y > H - 6) return;
-    const w = textW(pl.n, kind === "cap" ? 15 : 14);
-    const dot = kind === 'cap' ? 6 : 3.5;
-    for (const side of [1, -1]) {
-      const l = side > 0 ? x + dot + 3 : x - dot - 3 - w;
-      const box = { l, r: l + w, t: y - 10, b: y + 10 };
-      const dotBox = { l: x - dot, r: x + dot, t: y - dot, b: y + dot };
-      if (box.l < 2 || box.r > W - 2 || box.t < 2 || box.b > H - 2) continue;
-      if (used.some((u) => hit(u, box)) || used.some((u) => hit(u, dotBox))) continue;
-      used.push(box, dotBox);
-      marks.push({ pl, kind, x, y, side, l, w });
-      return;
+    const must = kind === 'cap';
+    if (!must && (x < 6 || x > W - 6 || y < 6 || y > H - 6)) return;
+    const w = textW(pl.n, must ? 15 : 14);
+    const dot = must ? 6 : 3.5;
+    const near = Math.hypot(x - tx, y - ty) < 16;
+    const tries = [];
+    for (const dy of [0, 14, -14, 26, -26]) for (const side of [1, -1]) tries.push({ side, dy, off: near ? 15 : 0 });
+    for (const dy of [16, -16, 30, -30, 44, -44]) tries.push({ side: 0, dy, off: 0 });          // a long name that fits on neither side: centred under or over its mark
+    const spot = (t) => {
+      const dx = Math.min(Math.max(x + t.side * t.off, 8), W - 8);
+      const dyy = Math.min(Math.max(y + (near ? 3 : 0) + t.dy, 10), H - 10);
+      const l = t.side === 0 ? dx - w / 2 : t.side > 0 ? dx + dot + 3 : dx - dot - 3 - w;
+      return { dx, dy: dyy, l, box: { l, r: l + w, t: dyy - 10, b: dyy + 10 }, dotBox: { l: dx - dot, r: dx + dot, t: dyy - dot, b: dyy + dot } };
+    };
+    const inside = (b) => b.l >= 2 && b.r <= W - 2 && b.t >= 2 && b.b <= H - 2;
+    let pick = null;
+    for (const t of tries) {
+      const sp = spot(t);
+      if (!inside(sp.box) || used.some((u) => hit(u, sp.box) || hit(u, sp.dotBox))) continue;
+      pick = { t, sp };
+      break;
     }
+    if (!pick && must) {                               // nothing clear: the first spot that at least stays off the pin
+      for (const t of tries) { const sp = spot(t); if (inside(sp.box) && !used.slice(0, 2).some((u) => hit(u, sp.box) || hit(u, sp.dotBox))) { pick = { t, sp }; break; } }
+      if (!pick) for (const t of tries) { const sp = spot(t); if (inside(sp.box)) { pick = { t, sp }; break; } }
+    }
+    if (!pick) return;
+    used.push(pick.sp.box, pick.sp.dotBox);
+    marks.push({ pl, kind, x: pick.sp.dx, y: pick.sp.dy, side: pick.t.side, l: pick.sp.l, w });
   };
   if (capital) label(capital, 'cap');
   towns.forEach((t) => label(t, 'town'));
@@ -395,7 +423,7 @@ export async function drawProvinceMap(host, { p }) {
     const mark = m.kind === 'cap'
       ? `<text class="mm-star" x="${m.x}" y="${m.y + 5}" text-anchor="middle" font-size="15">★</text>`
       : `<circle class="mm-town" cx="${m.x}" cy="${m.y}" r="3.2"/>`;
-    return `${mark}<text class="mm-name${m.kind === 'cap' ? ' cap' : ''}" x="${m.side > 0 ? m.l : m.l + m.w}" y="${m.y + 4.5}" text-anchor="${m.side > 0 ? 'start' : 'end'}">${esc(m.pl.n)}</text>`;
+    return `${mark}<text class="mm-name${m.kind === 'cap' ? ' cap' : ''}" x="${m.side === 0 ? m.l + m.w / 2 : m.side > 0 ? m.l : m.l + m.w}" y="${m.y + 4.5}" text-anchor="${m.side === 0 ? 'middle' : m.side > 0 ? 'start' : 'end'}">${esc(m.pl.n)}</text>`;
   }).join('');
   const color = pinColor(p.main);
   stage.pinsEl.innerHTML = `<svg class="mm-labels" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-hidden="true" focusable="false">${overlay}<g transform="translate(${hx.toFixed(1)} ${hy.toFixed(1)})" class="mm-maker-pin">${pinArt({ r, color, tip: [tx - hx, ty - hy] })}</g></svg>`;

@@ -151,9 +151,11 @@ class Maps:
         """The id of the province of country `cid` that holds the point (or is within about 5 km of it), else None."""
         x, y = proj(lon, lat)
         doc = self.country(cid)
-        for p in doc["provinces"]:
-            if any(_inside(r, x, y) for r in p["_rings"]):
-                return p["id"]
+        # outlines have no holes, so a city-province (Daejeon) lies inside its surrounding province (Chungcheongnam-do): the
+        # smallest outline that holds the point is the one it is in
+        holding = [p for p in doc["provinces"] if any(_inside(r, x, y) for r in p["_rings"])]
+        if holding:
+            return min(holding, key=lambda p: (p["bb"][2] - p["bb"][0]) * (p["bb"][3] - p["bb"][1]))["id"]
         best, bd = None, NEAR
         for p in doc["provinces"]:
             x0, y0, x1, y1 = p["bb"]
@@ -252,6 +254,12 @@ def place_pages(pages, maps, issues):
                 have = False
             else:
                 exact = True
+                words = [w.strip() for w in str(page.get("location") or "").split(",") if w.strip()]
+                named = maps.match_province(cid, page.get("region"), *reversed(words))
+                if named and named != prov:
+                    issues.warn("W27", f"The pin of '{name}' falls in {maps.country(cid)['_prov'][prov]['name']}, but its Region and "
+                                       f"Location name {maps.country(cid)['_prov'][named]['name']}: check its coordinates",
+                                sheet="Producers", drink=name)
         if not have:
             words = [p.strip() for p in str(page.get("location") or "").split(",") if p.strip()]
             region = maps.match_province(cid, page.get("region"), *reversed(words))

@@ -28,7 +28,7 @@ export async function mount(root, ctx) {
 
   const title = board(`<h1 class="t-title" tabindex="-1">The Makers</h1>
   <p class="t-data" style="margin-top:10px">${esc(plural(producers.length, 'producer'))} · ${esc(plural(countries.length, 'country', 'countries'))}</p>`, 'title-board');
-  const mapBoard = `<div class="m-top">${board(`<div class="mm-bar"><button type="button" class="chalkboard chalkboard--s btn-s mm-back" id="mm-back"><span class="chalk">Back</span></button><nav class="mm-crumbs" aria-label="Place on the map"><ol id="mm-crumbs"></ol></nav></div>
+  const mapBoard = `<div class="m-top">${board(`<div class="mm-bar"><button type="button" class="chalkboard chalkboard--s btn-s mm-back" id="mm-back"><span class="chalk">Back</span></button><nav class="mm-crumbs" aria-label="Place on the map"><ol id="mm-crumbs"></ol></nav><ul class="mm-menu chalkboard chalkboard--s" id="mm-menu" hidden aria-label="The whole path"></ul></div>
     <div id="mapbox" class="mm-host"></div>
     <div class="mm-legend" id="mm-legend" aria-label="Pin colours"></div>
     <p class="t-body mm-info" id="map-info" aria-live="polite"></p>`, 'map-board', 'aria-label="Map of the makers. The list below does the same job."')}
@@ -97,9 +97,15 @@ ${board(`    <div class="m-controls">
     $('#msort', root).value = st.sort;
     $('#region-chip', root).innerHTML = st.at ? `<button type="button" class="chalkboard chalkboard--s btn-s" id="clear-place" aria-label="Remove filter ${esc(at.name)}"><span class="chalk">${esc(at.name)} ${icon('x', 14)}</span></button>` : '';
     const trail = crumbs(node);
-    $('#mm-crumbs', root).innerHTML = trail.map((n, i) => (i === trail.length - 1
+    const item = (n, i) => (i === trail.length - 1
       ? `<li aria-current="location"><span class="chalk">${esc(n.label)}</span></li>`
-      : `<li><button type="button" class="mm-crumb" data-at="${esc(n.path)}"><span class="chalk">${esc(n.label)}</span></button></li>`)).join('');
+      : `<li><button type="button" class="mm-crumb" data-at="${esc(n.path)}"><span class="chalk">${esc(n.label)}</span></button></li>`);
+    // phones: one line. Back, then "… › Japan › Tohoku"; the dots open the whole path as a small chalk menu (Plan 14 section 11.3)
+    const short = window.innerWidth < 768 && trail.length > 3;
+    $('#mm-crumbs', root).innerHTML = (short ? `<li><button type="button" class="mm-crumb mm-more" id="mm-more" aria-haspopup="true" aria-expanded="false" aria-label="Show the whole path"><span class="chalk">…</span></button></li>` : '')
+      + trail.map((n, i) => [n, i]).slice(short ? -2 : 0).map(([n, i]) => item(n, i)).join('');
+    $('#mm-menu', root).innerHTML = short ? trail.map(item).join('') : '';
+    $('#mm-menu', root).hidden = true;
     $('#mm-back', root).disabled = !node.parent;
     const t = tally(list);
     $('#map-info', root).innerHTML = `<b>${esc(node.parent ? node.name : 'Everywhere')}</b> · ${plural(t.makers, 'maker')} · ${plural(t.drinks, 'drink')} · ${plural(t.favourites, 'favourite')}`;
@@ -189,7 +195,7 @@ ${board(`    <div class="m-controls">
     else if (data && view.node.level === 'area') provSel = [...new Set(view.node.producers.map((p) => p.prov))];
     // the countries with makers are hatched lightly above the country level; a country opened whole is hatched, and below it only the chosen provinces are
     const hatch = view.node.level === 'country' ? cids : [];
-    stage.mark({ has: view.node.level === 'world' || !countryLevel ? allCids : [], sel: hatch, edge: view.node.level === 'world' ? [] : cids, provSel });
+    stage.mark({ has: view.node.level === 'world' || !countryLevel ? allCids : [], sel: hatch, edge: view.node.level === 'world' ? [] : cids, provSel, provAll: !!data && view.node.level === 'country' });
     stage.clearPins();
     // where to look
     const pad = padding();
@@ -258,14 +264,20 @@ ${board(`    <div class="m-controls">
     }
     if (ev.target.closest('#mm-card')) return;
     if (ev.target.closest('.mm-stage') && (cardFor || stage?.fan)) { closeCard(); if (stage.fan) { stage.fan = null; stage.setPins(stage.lastItems || []); } return; }
+    const more = ev.target.closest('#mm-more');
+    if (more) { const m = $('#mm-menu', root); m.hidden = !m.hidden; more.setAttribute('aria-expanded', String(!m.hidden)); if (!m.hidden) $('button', m)?.focus(); return; }
     const crumb = ev.target.closest('.mm-crumb');
     if (crumb) { goTo(crumb.dataset.at); return; }
+    const menu = $('#mm-menu', root);
+    if (menu && !menu.hidden) { menu.hidden = true; $('#mm-more', root)?.setAttribute('aria-expanded', 'false'); }
     if (ev.target.closest('#mm-back')) { goUp(); return; }
     if (ev.target.closest('#clear-place')) { goTo(''); }
   };
   root.addEventListener('click', onClick);
   const onKey = (ev) => {
     if (ev.key !== 'Escape' || ev.defaultPrevented || document.body.classList.contains('menu-open')) return;
+    const menu = $('#mm-menu', root);
+    if (menu && !menu.hidden) { menu.hidden = true; const mo = $('#mm-more', root); mo?.setAttribute('aria-expanded', 'false'); mo?.focus(); ev.preventDefault(); return; }
     if (cardFor) { const k = cardFor; closeCard(); $(`.mm-pin[data-id="m:${CSS.escape(k)}"]`, root)?.focus(); ev.preventDefault(); return; }
     if (stage?.fan) { stage.fan = null; stage.setPins(stage.lastItems || []); ev.preventDefault(); return; }
     if (st.at && !st.q.trim()) { goUp(); ev.preventDefault(); }

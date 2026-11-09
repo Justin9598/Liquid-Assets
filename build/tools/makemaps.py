@@ -307,6 +307,8 @@ def make_country(cid, conf, admin1, places):
             name = "".join(ch for ch in unicodedata.normalize("NFKD", name) if not unicodedata.combining(ch))
         c[0]["name"] = (fix.get("rename") or {}).get(c[0]["name"], name)
     for a in fix.get("add") or []:
+        if key(a["n"]) in {key(c[0]["name"]) for c in chosen}:        # Natural Earth already has it
+            continue
         chosen.append(({"name": a["n"], "pop_max": a.get("pop", 0), "featurecla": "Admin-1 capital" if a.get("cap") else "Populated place"},
                        a["lon"], a["lat"], bool(a.get("cap"))))
     pol = [(pr, polys_of(pr["geom"])) for pr in provinces]
