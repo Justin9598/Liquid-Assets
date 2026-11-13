@@ -120,7 +120,7 @@ def emit(drinks, shelf, pages, key_by_text, photo_map, dims, ledger, generated, 
         d["_facts"] = build_facts(d)
         d["_tasting"] = build_tasting(d, ledger)
         index.append({
-            "id": d["id"], "name": d["name"], "category": d["category"], "sub": d["sub"],
+            "id": d["id"], "name": d["name"], "category": d["category"], "sub": d["sub"], "shell": d.get("shell"),
             "producer": page["name"] if page else None,
             "producerKey": page["key"] if page else None,
             "origin": d["origin"], "country": d["country"], "abv": d["abv"], "sizes": d["sizes"],

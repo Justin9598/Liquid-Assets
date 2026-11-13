@@ -2,7 +2,7 @@
 // (a card with no photo, a hero, a producer's row) stands the shell for the drink's category instead, with the drink's own
 // label crop on it when it has one, and the illustrated fallback label when it does not.
 import { getJSON, img } from './data.js';
-import { motifFor, shapeFor } from './labels.js';
+import { motifFor, shellOf } from './labels.js';
 import { shellBottle } from './scene3.js';
 
 let scene = null;
@@ -22,5 +22,5 @@ export const shellHTML = (shape, opts = {}) => shellBottle(scene, shape, opts) |
 export function drinkShell(d, ix, labelOverride) {
   const info = d.category && ix.subs.get(`${d.category}/${d.sub}`);
   const label = labelOverride !== undefined ? labelOverride : (d.label ? img(d.label) : null);
-  return shellHTML(shapeFor(d.category, d.sub), { label, native: info?.sub.native || null, name: info?.sub.name || (d.category ? ix.cats.get(d.category)?.name : null) || 'Drink', motif: motifFor(d.category, d.sub) });
+  return shellHTML(shellOf(d), { label, native: info?.sub.native || null, name: info?.sub.name || (d.category ? ix.cats.get(d.category)?.name : null) || 'Drink', motif: motifFor(d.category, d.sub) });
 }

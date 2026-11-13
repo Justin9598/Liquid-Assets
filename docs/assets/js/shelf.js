@@ -33,7 +33,8 @@ export async function mount(root, ctx) {
   // ---- hero: the bottle the visitor tapped on the bar is the bottle they see ---------------------------------
   const key = `${cat}/${sub}`;
   const picked = ctx.state.picked?.[key] ?? randomPick(s.labels, new Set());
-  const heroShell = shellHTML(shapeFor(cat, sub), { label: picked && img(picked), native: s.native, name: s.name, motif: motifFor(cat, sub) });
+  const pickedDrink = picked ? (s.drinks || []).find((x) => img(x.label) === img(picked)) : null;   // the hero wears one drink's label, so it stands in that drink's shell (Plan 15 section 4.4)
+  const heroShell = shellHTML((pickedDrink && pickedDrink.shell) || shapeFor(cat, sub), { label: picked && img(picked), native: s.native, name: s.name, motif: motifFor(cat, sub) });
   const producers = new Set(drinks.map((d) => d.producerKey || d.producer).filter(Boolean));
   const origins = new Set(drinks.map((d) => d.origin).filter(Boolean));
   const allJapan = drinks.length > 0 && drinks.every((d) => d.country === 'Japan');

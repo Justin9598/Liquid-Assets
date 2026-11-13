@@ -10,7 +10,7 @@ from .photos import PHOTO_EXT
 
 CODE_TITLES = {
     "E01": "Cannot read the ledger", "E02": "Privacy leak in output", "E03": "Broken reference",
-    "E04": "Schema violation", "E05": "Image could not be processed", "E07": "Owner crop changed outside the crop tool", "E08": "No map file for a maker's country",
+    "E04": "Schema violation", "E05": "Image could not be processed", "E07": "Owner crop changed outside the crop tool", "E09": "bottles.json names a shell that does not exist", "E08": "No map file for a maker's country",
     "W01": "Photo not matched to any drink", "W02": "Drink has no front photo",
     "W03": "Other Detail Type not valid for the category", "W04": "Producer missing from Producers sheet",
     "W05": "Japanese Region is not one of the 47 prefectures", "W06": "Rows sharing an ID disagree",
@@ -18,7 +18,7 @@ CODE_TITLES = {
     "W10": "Category falling back to a single bottle (Type unfilled)", "W11": "Detail row with no matching Core ID",
     "W12": "Count dropped sharply since the last build", "W13": "Optional ledger column or sheet missing",
     "W14": "Ledger is open in Excel", "W15": "Value could not be parsed", "W16": "photo-map entry for an unknown drink",
-    "W17": "Duplicate row", "W18": "Related maker not found", "W20": "Content file missing", "W22": "Maker About text breaks the writing rules", "W23": "Seasonal pin names an unknown drink", "W24": "Maker Sources entry is not a web address", "W25": "Maker coordinates are outside its country", "W26": "Maker placed by its town or region, not its address", "W27": "Maker pin is in a different province from its Region and Location",
+    "W17": "Duplicate row", "W18": "Related maker not found", "W20": "Content file missing", "W22": "Maker About text breaks the writing rules", "W23": "Seasonal pin names an unknown drink", "W24": "Maker Sources entry is not a web address", "W25": "Maker coordinates are outside its country", "W26": "Maker placed by its town or region, not its address", "W27": "Maker pin is in a different province from its Region and Location", "W28": "bottles.json names a drink that is not in Core", "W29": "A shell's crop no longer fits its source sheet",
     "I01": "Empty subcategory hidden", "I02": "No rendered scene images yet", "I03": "Label skipped (not used on bottles)", "W21": "Front photo has no label judgement yet",
 }
 
@@ -196,13 +196,24 @@ def write_report(reports_dir, root, drinks, shelf, photo_map, suggestions, unmat
     add("<h2>5. Welcome page scene</h2>")
     for key, title, note in (("shells_sheet", "Shells on the plates",
                               "Each cut-out standing on the lowest shelf of the wide plate and the third shelf of the tall plate, enlarged. "
-                              "A dark halo or a missing rim would show here."),
+                              "A dark halo, a missing rim or floor glow would show here."),
+                             ("labels_sheet", "Labels on the shells",
+                              "Every labelled shell wearing a sample label photo, as the page draws it (multiply on paper labels). "
+                              "Each label should sit inside its paper label, with nothing hanging past the bottle."),
                              ("burger_sheet", "Burger layers",
                               "Left: the burger on its plate as it rests on the counter. Right: the same layers split apart.")):
         if extras.get(key):
             add(f"<h3>{title}</h3><p class='muted'>{note}</p><img style='max-width:100%;border:1px solid #d8ccb3' src='{_rel(extras[key], reports_dir)}' alt=''>")
         else:
             add(f"<h3>{title}</h3><p class='muted'>Not made in this run.</p>")
+    b = extras.get("bottles")
+    if b:
+        add("<h3>Drinks by bottle shell</h3><p class='muted'>Edit <code>content/bottles.json</code> to change a drink's shell; "
+            f"{b['listed']} drinks are on that list, the rest use the default for their category.</p><table>"
+            + "".join(f"<tr><td>{e(k)}</td><td>{n}</td></tr>" for k, n in b["counts"].items()) + "</table>")
+        sk = b["sakes_default"]
+        add(f"<h3>Sakes on the default shell ({len(sk)})</h3><p class='muted'>No entry in bottles.json, so they stand in the green bottle.</p>"
+            "<details><summary>Show the list</summary><ul>" + "".join(f"<li>{e(n)}</li>" for n in sk) + "</ul></details>")
     c = extras.get("counter")
     if c:
         add("<h3>New arrivals (counter, left)</h3><p class='muted'>Latest occasion first: Acquired, else Added; ties go to the later ledger row.</p><ol>"

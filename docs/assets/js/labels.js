@@ -6,15 +6,27 @@ import { esc, rand } from './util.js';
 /** Fallback-label motif: vine for wine, a plum blossom for the Umeshu subcategory (Plan 01 sections 3 and 4.3). */
 export const motifFor = (catKey) => (catKey === 'wine' ? 'vine' : catKey === 'umeshu' ? 'blossom' : null);
 
-const SHAPES = new Set(['sake', 'makgeolli', 'liqueur', 'beer', 'wine', 'spirits', 'cocktail', 'highball']);
-/** The shell for a category, and for a subcategory where it differs (Plan 10 section 2): makgeolli has its own bottle, the beer
- * styles share the beer bottle, umeshu and liqueur use the liquor bottle, cocktails the highball glass. */
+/** The default shell for a category or subcategory, for a bottle that stands for no particular drink (Plan 15 section 4.5). */
 export const shapeFor = (catKey, subKey) => {
-  if (catKey === 'fermented') return subKey === 'makgeolli' ? 'makgeolli' : 'beer';
-  if (catKey === 'umeshu') return 'liqueur';
-  if (catKey === 'cocktails') return 'highball';
-  return SHAPES.has(catKey) ? catKey : 'sake';
+  switch (catKey) {
+    case 'fermented':
+      if (subKey === 'makgeolli') return 'makgeolli';
+      if (subKey === 'ipa' || subKey === 'specialty' || subKey === 'saison') return 'beer-tulip';
+      if (subKey === 'wheat') return 'beer-weizen';
+      if (subKey === 'lager' || subKey === 'pale-ale') return 'beer-pint';
+      return 'beer-bottle';
+    case 'wine': return 'wine-red';
+    case 'spirits':
+      return { gin: 'gin', brandy: 'brandy', shochu: 'shochu', soju: 'soju' }[subKey] || 'whisky';
+    case 'umeshu': return 'umeshu';
+    case 'liqueur': return 'liqueur';
+    case 'cocktails': return 'cocktail-highball';
+    default: return 'sake-green';
+  }
 };
+
+/** The shell a drink stands in: its own (drinks.json `shell`, Plan 15 section 4), else its category's default. */
+export const shellOf = (d) => (d && d.shell) || shapeFor(d && d.category, d && d.sub);
 
 // Default labels for the mixed view when a category has no photo (Plan 01 section 3, last column)
 export const DEFAULT_LABEL = {

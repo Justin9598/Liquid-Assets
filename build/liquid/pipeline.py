@@ -6,8 +6,8 @@ import json
 import shutil
 from pathlib import Path
 
-from . import assets as assets_mod, phase as phase_mod, scene as scene_mod, checks, emit as emit_mod, images, og as og_mod, model, photos as photos_mod, producers as producers_mod
-from . import burger as burger_mod, counter as counter_mod, maps as maps_mod, report as report_mod, scene_report
+from . import assets as assets_mod, bottles as bottles_mod, phase as phase_mod, scene as scene_mod, checks, emit as emit_mod, images, og as og_mod, model, photos as photos_mod, producers as producers_mod
+from . import burger as burger_mod, shell_sheets, counter as counter_mod, maps as maps_mod, report as report_mod, scene_report
 from . import cropguard
 from .common import BuildError, Issues
 from .ledger import load_ledger
@@ -72,6 +72,7 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
     drinks = model.combine_drinks(ledger, issues)
     model.join_details(ledger, drinks, issues)
     grades = model.classify(ledger, drinks, issues)
+    bottle_report = bottles_mod.assign(drinks, root / "content", issues)           # Plan 15 section 4: the shell for each drink
 
     # S6
     pages, key_by_text = producers_mod.build_producers(ledger, drinks, issues)
@@ -143,6 +144,8 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
         shells_cfg = _load_json(content_dir / "shells.json", None, issues, "shells.json", code="W20")
         if shells_cfg and not scene_mod.validate_shells(shells_cfg, issues):
             shells_cfg = None
+        if shells_cfg:
+            scene_mod.check_shell_sources(shells_cfg, scene_dir, issues)             # W29
         burger_cfg = _load_json(content_dir / "burger.json", None, issues, "burger.json", code="W20")
         if burger_cfg and not burger_mod.validate(burger_cfg, issues):
             burger_cfg = None
@@ -223,10 +226,11 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
         assets_mod.stamp(docs)                                  # Plan 06 section 7
         og_mod.generate(docs, root / "build" / "fonts" / "Rye-Regular.ttf")   # Plan 06 section 8
 
-    extras = {"counter": counter_report, "shells_sheet": None, "burger_sheet": None}
+    extras = {"counter": counter_report, "shells_sheet": None, "burger_sheet": None, "labels_sheet": None, "bottles": bottle_report}
     if not check and not issues.errors and content.get("scene_data", {}).get("ready"):
         sd = content["scene_data"]
-        extras["shells_sheet"] = scene_report.shells_on_plate(docs, sd, reports_dir / "shells-on-plate.png")
+        extras["shells_sheet"] = shell_sheets.shells_on_plate(docs, sd, reports_dir / "shells-on-plate.png")
+        extras["labels_sheet"] = shell_sheets.labels_on_shells(docs, sd, reports_dir / "labels-on-shells.png")
         extras["burger_sheet"] = scene_report.burger_layers(docs, sd, reports_dir / "burger-layers.png")
     res.report_path = report_mod.write_report(
         reports_dir, root, drinks, shelf, photo_map, suggestions, unmatched, issues, state, previous,

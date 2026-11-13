@@ -2,7 +2,7 @@
 // Japanese season on the right. The build decides the picks (shelf.json `counter`); the page only chooses the season
 // from the visitor's month. Bottles stand on the counter top and are larger than the shelf bottles.
 import { getSections, img } from './data.js';
-import { DEFAULT_LABEL, motifFor, shapeFor } from './labels.js';
+import { DEFAULT_LABEL, motifFor, shellOf } from './labels.js';
 import { esc } from './util.js';
 
 const pct = (v) => `${+(v * 100).toFixed(3)}%`;
@@ -31,7 +31,7 @@ function bottleHTML(it, ix, art, own) {
   const cat = ix.cats.get(it.category);
   const catName = cat ? cat.name : it.category;
   const def = DEFAULT_LABEL[it.category] || {};
-  const shape = shapeFor(it.category, it.sub);
+  const shape = shellOf(it);
   const a = art(shape, { label: it.label && img(it.label), native: def.native, name: def.name, motif: motifFor(it.category, it.sub) });
   const other = own && it.category !== own ? `<span class="cb-cat">${esc(catName)}</span>` : '';
   const tag = `<span class="cb-tag chalkboard chalkboard--s" aria-hidden="true"><span class="chalk">${esc(it.name)}${other}</span></span>`;

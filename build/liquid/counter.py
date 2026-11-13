@@ -26,7 +26,7 @@ def rank_recent(drinks):
 
 
 def _item(d, photo_map):
-    return {"id": d["id"], "name": d["name"], "category": d["category"], "sub": d["sub"],
+    return {"id": d["id"], "name": d["name"], "category": d["category"], "sub": d["sub"], "shell": d.get("shell"),
             "label": f"img/labels/{d['id']}.webp" if has_label(photo_map, d["id"]) else None}
 
 
@@ -172,7 +172,7 @@ def sub_views(drinks, photo_map, cfg):
     rank = {d["id"]: i for i, d in enumerate(recent)}
     out = {}
     for key, ds in by_sub.items():
-        entry = {"drinks": [{"id": d["id"], "name": d["name"], "label": f"img/labels/{d['id']}.webp" if has_label(photo_map, d["id"]) else None} for d in ds],
+        entry = {"drinks": [{"id": d["id"], "name": d["name"], "shell": d.get("shell"), "label": f"img/labels/{d['id']}.webp" if has_label(photo_map, d["id"]) else None} for d in ds],
                  "new": [d["id"] for d in ds[:COUNT]], "season": {}}
         for s in SEASONS:
             hit = [seasonal[s][d["id"]] for d in ds if d["id"] in seasonal[s] and seasonal[s][d["id"]][2]]

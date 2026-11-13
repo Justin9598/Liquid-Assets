@@ -49,256 +49,307 @@
       {
        "id": "gasanryu-gokugetsu-junmai-daiginjo",
        "name": "Gasanryu Gokugetsu Junmai Daiginjo",
+       "shell": "sake-black",
        "label": "img/labels/gasanryu-gokugetsu-junmai-daiginjo.webp"
       },
       {
        "id": "kenkonichi-ryu-ryu-shinka-junmai-daiginjo",
        "name": "Kenkonichi Ryu Ryu Shinka Junmai Daiginjo",
+       "shell": "sake-green",
        "label": "img/labels/kenkonichi-ryu-ryu-shinka-junmai-daiginjo.webp"
       },
       {
        "id": "oze-no-yukidoke-junmai-daiginjo-halloween",
        "name": "Oze no Yukidoke Junmai Daiginjo Halloween",
+       "shell": "sake-green",
        "label": "img/labels/oze-no-yukidoke-junmai-daiginjo-halloween.webp"
       },
       {
        "id": "kagatobi-junmai-daiginjo-gokujo-genshu",
        "name": "Kagatobi Junmai Daiginjo Gokujo Genshu",
+       "shell": "sake-black",
        "label": "img/labels/kagatobi-junmai-daiginjo-gokujo-genshu.webp"
       },
       {
        "id": "ryujin-dragon-god-junmai-daiginjo-namazume",
        "name": "Ryujin \"Dragon God\" Junmai Daiginjo Namazume",
+       "shell": "sake-green",
        "label": "img/labels/ryujin-dragon-god-junmai-daiginjo-namazume.webp"
       },
       {
        "id": "nabeshima-the-nabeshima-junmai-daiginjo",
        "name": "Nabeshima \"The Nabeshima\" Junmai Daiginjo",
+       "shell": "sake-black",
        "label": "img/labels/nabeshima-the-nabeshima-junmai-daiginjo.webp"
       },
       {
        "id": "mizubasho-junmai-daiginjo-premium",
        "name": "Mizubasho Junmai Daiginjo Premium",
+       "shell": "sake-green",
        "label": "img/labels/mizubasho-junmai-daiginjo-premium.webp"
       },
       {
        "id": "mimurosugi-roman-junmai-daiginjo-35",
        "name": "Mimurosugi Roman Junmai Daiginjo 35",
+       "shell": "sake-green",
        "label": "img/labels/mimurosugi-roman-junmai-daiginjo-35.webp"
       },
       {
        "id": "yamashiroya-fuga-junmai-daiginjo",
        "name": "Yamashiroya Fuga Junmai Daiginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
       },
       {
        "id": "tsuki-no-katsura-junmai-daiginjo-nigori",
        "name": "TSUKI NO KATSURA Junmai Daiginjo Nigori",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "tenmei-nakadori-urugo",
        "name": "Tenmei Junmai Daiginjo Nakadori Urugo (Leap-Year Edition)",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "tenmei-arabashiri",
        "name": "Tenmei Junmai Daiginjo Arabashiri Seme Urugo (Leap-Year Edition)",
+       "shell": "sake-black",
        "label": "img/labels/tenmei-arabashiri.webp"
       },
       {
        "id": "suigei-junmai-daiginjo-joh",
        "name": "Suigei Junmai Daiginjo \"Joh\"",
+       "shell": "sake-black",
        "label": "img/labels/suigei-junmai-daiginjo-joh.webp"
       },
       {
        "id": "sugata-flying",
        "name": "Sugata Junmai Daiginjo Muroka Nama Genshu Yamadanishiki “Flying Sugata”",
+       "shell": "sake-black",
        "label": "img/labels/sugata-flying.webp"
       },
       {
        "id": "sugata-junmai-daiginjo-yamadanishiki-40",
        "name": "Sugata Junmai Daiginjo Muroka Nama Genshu Yamadanishiki",
+       "shell": "sake-black",
        "label": null
       },
       {
        "id": "sokuu-junmai-daiginjo-yamadanishiki",
        "name": "Sokuu Junmai Daiginjo Yamadanishiki",
+       "shell": "sake-frosted",
        "label": "img/labels/sokuu-junmai-daiginjo-yamadanishiki.webp"
       },
       {
        "id": "roman-satsuki-junmai-daiginjo-ikkai-hi-i",
        "name": "Roman Satsuki Junmai Daiginjo Ikkai Hi-ire",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "odayaka-kimoto-junmai-daiginjo",
        "name": "Odayaka Kimoto Junmai Daiginjo",
+       "shell": "sake-black",
        "label": "img/labels/odayaka-kimoto-junmai-daiginjo.webp"
       },
       {
        "id": "odayaka-30th",
        "name": "Odayaka Junmai Daiginjo 30th Anniversary Sake",
+       "shell": "sake-clear",
        "label": "img/labels/odayaka-30th.webp"
       },
       {
        "id": "naotora",
        "name": "Naotora Junmai Daiginjo Extra Nama Genshu",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "nabeshima-junmai-daiginjo-aiyama",
        "name": "Nabeshima Junmai Daiginjo Aiyama",
+       "shell": "sake-black",
        "label": "img/labels/nabeshima-junmai-daiginjo-aiyama.webp"
       },
       {
        "id": "mizubasho-junmai-daiginjo",
        "name": "Mizubasho Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "miyoshino-jozo-hanatomoe-jundaidai-junmai-daig",
        "name": "Miyoshino Jozo - Hanatomoe Jundaidai Junmai Daiginjo",
+       "shell": "sake-green",
        "label": "img/labels/miyoshino-jozo-hanatomoe-jundaidai-junmai-daig.webp"
       },
       {
        "id": "mansakunohana-junmai-daiginjo-nama-genshu-kame",
        "name": "Mansakunohana Junmai Daiginjo Nama Genshu Kame Label",
+       "shell": "sake-green",
        "label": "img/labels/mansakunohana-junmai-daiginjo-nama-genshu-kame.webp"
       },
       {
        "id": "kudoki-jozu-juicy-karakuchi-kai",
        "name": "Kudoki Jozu Juicy Karakuchi Kai Junmai Daiginjo Namazume",
+       "shell": "sake-black",
        "label": "img/labels/kudoki-jozu-juicy-karakuchi-kai.webp"
       },
       {
        "id": "kubota-junmai-daiginjo",
        "name": "Kubota Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "kikunotsukasa-innocent-40-junmai-daiginj",
        "name": "Kikunotsukasa Innocent 40 Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "keigetsu-junmai-daiginjo-sparkling-hao",
        "name": "KEIGETSU Junmai Daiginjo Sparkling \"Hao\"",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "kankiku-seijitsu-special-yell-junmai-daiginjo",
        "name": "Kankiku \"Seijistu -Special Yell-\" Junmai Daiginjo Muroka Nama Genshu",
+       "shell": "sake-black",
        "label": "img/labels/kankiku-seijitsu-special-yell-junmai-daiginjo.webp"
       },
       {
        "id": "kagura-shiro-junmai-daiginjo-ikkabi",
        "name": "Kagura Shiro Junmai Daiginjo Muroka Mukasui Ikkabi",
+       "shell": "sake-clear",
        "label": "img/labels/kagura-shiro-junmai-daiginjo-ikkabi.webp"
       },
       {
        "id": "kagura-hae",
        "name": "Kagura Hae Junmai Daiginjo Muroka Nama Genshu",
+       "shell": "sake-skyblue",
        "label": "img/labels/kagura-hae.webp"
       },
       {
        "id": "kagatobi-junmai-daiginjo",
        "name": "Kagatobi Junmai Daiginjo",
+       "shell": "sake-small",
        "label": "img/labels/kagatobi-junmai-daiginjo.webp"
       },
       {
        "id": "junsei-jd",
        "name": "Junsei Hyogo Yumenishiki Kimoto Junmai Daiginjo",
+       "shell": "sake-black",
        "label": "img/labels/junsei-jd.webp"
       },
       {
        "id": "isshou-seishun",
        "name": "Isshou Seishun Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "isshou-seishun-bessen-junmai-daiginjo",
        "name": "Isshou Seishun Bessen Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "ikusagami-x-hakurakusei-junmai-daiginjo-",
        "name": "Ikusagami × Hakurakusei Junmai Daiginjo Rinsen",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hououbiden-mikumari-junmai-daiginjo",
        "name": "Hououbiden Mikumari Junmai Daiginjo",
+       "shell": "sake-clear",
        "label": null
       },
       {
        "id": "hito-roman",
        "name": "Hito Roman Junmai Daiginjo Nama Genshu",
+       "shell": "sake-brown",
        "label": "img/labels/hito-roman.webp"
       },
       {
        "id": "harada-junmai-daiginjo-muroka-nama-gensh",
        "name": "HARADA Junmai Daiginjo Muroka Nama Genshu",
+       "shell": "sake-black",
        "label": "img/labels/harada-junmai-daiginjo-muroka-nama-gensh.webp"
       },
       {
        "id": "hakutsuru-junmai-daiginjo",
        "name": "Hakutsuru Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "eiko-fuji-snake-eye-junmai-daiginjo",
        "name": "Eiko Fuji Snake Eye Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "eiko-fuji-koh-rin",
        "name": "Eiko Fuji Junmai Daiginjo Muroka Nama Genshu Koh-Rin",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "date-seven-season-2-episode-5-yamawa",
        "name": "DATE SEVEN Season Ⅱ Episode 5 (Yamawa) 【DATE SEVEN SeasonⅡ Episode5 山和】",
+       "shell": "sake-black",
        "label": "img/labels/date-seven-season-2-episode-5-yamawa.webp"
       },
       {
        "id": "date-seven-season-2-episode-5-koganesawa",
        "name": "DATE SEVEN Season Ⅱ Episode 5 (Koganesawa) 【DATE SEVEN SeasonⅡ Episode5 黄金澤】",
+       "shell": "sake-black",
        "label": "img/labels/date-seven-season-2-episode-5-koganesawa.webp"
       },
       {
        "id": "date-seven-season-2-episode-2",
        "name": "DATE SEVEN Season II Episode 2",
+       "shell": "sake-sparkling",
        "label": "img/labels/date-seven-season-2-episode-2.webp"
       },
       {
        "id": "dassai-blue-type-50-junmai-daiginjo",
        "name": "DASSAI Blue Type 50 Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "dassai-45-junmai-daiginjo",
        "name": "Dassai 45 Junmai Daiginjo",
+       "shell": "sake-black",
        "label": "img/labels/dassai-45-junmai-daiginjo.webp"
       },
       {
        "id": "dassai-39-junmai-daiginjo-enshin-bunri",
        "name": "Dassai 39 Junmai Daiginjo Enshin Bunri",
+       "shell": "sake-black",
        "label": "img/labels/dassai-39-junmai-daiginjo-enshin-bunri.webp"
       },
       {
        "id": "dassai-39-junmai-daiginjo",
        "name": "Dassai 39 Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "born-gold-junmai-daiginjo",
        "name": "Born Gold Junmai Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "akabu-junmai-daiginjo-red-emblem",
        "name": "Akabu Junmai Daiginjo Red Emblem",
+       "shell": "sake-green",
        "label": null
       }
      ]
@@ -382,391 +433,469 @@
       {
        "id": "eikun-murasaki-no-eikun-junmai-ginjo",
        "name": "Eikun Murasaki no Eikun Junmai Ginjo",
+       "shell": "sake-brown",
        "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
       },
       {
        "id": "wakanoi-hanamaru-junmai-ginjo-yukimuro",
        "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
+       "shell": "sake-black",
        "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
       },
       {
        "id": "kid-natsu-no-hayate-junmai-ginjo",
        "name": "Kid Natsu no Hayate Junmai Ginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/kid-natsu-no-hayate-junmai-ginjo.webp"
       },
       {
        "id": "yamamoto-sunset-orange-junmai-ginjo",
        "name": "Yamamoto Sunset Orange Junmai Ginjo",
+       "shell": "sake-green",
        "label": "img/labels/yamamoto-sunset-orange-junmai-ginjo.webp"
       },
       {
        "id": "taiheikai-junmai-ginjo-bin-gakoi",
        "name": "Taiheikai Junmai Ginjo Bin-gakoi",
+       "shell": "sake-brown",
        "label": "img/labels/taiheikai-junmai-ginjo-bin-gakoi.webp"
       },
       {
        "id": "yamawa-junmai-ginjo-muroka-nama-genshu",
        "name": "Yamawa Junmai Ginjo Muroka Nama Genshu",
+       "shell": "sake-brown",
        "label": "img/labels/yamawa-junmai-ginjo-muroka-nama-genshu.webp"
       },
       {
        "id": "wataribune-shiboritate-namagin-muroka",
        "name": "Wataribune Shiboritate Namagin Muroka Junmai Ginjo",
+       "shell": "sake-brown",
        "label": "img/labels/wataribune-shiboritate-namagin-muroka.webp"
       },
       {
        "id": "taiheikai-mukaatsu-junmai-ginjo-nama",
        "name": "Taiheikai Mukaatsu Junmai Ginjo Nama",
+       "shell": "sake-green",
        "label": "img/labels/taiheikai-mukaatsu-junmai-ginjo-nama.webp"
       },
       {
        "id": "nabeshima-junmai-ginjo-gohyakumangoku",
        "name": "Nabeshima Junmai Ginjo Gohyakumangoku",
+       "shell": "sake-green",
        "label": "img/labels/nabeshima-junmai-ginjo-gohyakumangoku.webp"
       },
       {
        "id": "nabeshima-junmai-ginjo-akaiwa-omachi",
        "name": "Nabeshima Junmai Ginjo Akaiwa Omachi",
+       "shell": "sake-black",
        "label": "img/labels/nabeshima-junmai-ginjo-akaiwa-omachi.webp"
       },
       {
        "id": "zaruso-hourai-junmai-ginjo-oringo-kudasai",
        "name": "Zaruso Hourai Junmai Ginjo Oringo Kudasai Funaba Jikazume Muroka Nama Genshu",
+       "shell": "sake-green",
        "label": "img/labels/zaruso-hourai-junmai-ginjo-oringo-kudasai.webp"
       },
       {
        "id": "zaku-omachi-2026",
        "name": "Zaku Junmai Ginjo Omachi 2026",
+       "shell": "sake-black",
        "label": "img/labels/zaku-omachi-2026.webp"
       },
       {
        "id": "zaku-m",
        "name": "Zaku Impression Type M",
+       "shell": "sake-black",
        "label": "img/labels/zaku-m.webp"
       },
       {
        "id": "yokoyama-junmai-ginjo-silver-choukara7",
        "name": "Yokoyama Junmai Ginjo SILVER Choukara 7",
+       "shell": "sake-green",
        "label": "img/labels/yokoyama-junmai-ginjo-silver-choukara7.webp"
       },
       {
        "id": "yamamoto-sunshine-yellow-yamahai-junmai-ginjo",
        "name": "Yamamoto Sunshine Yellow Yamahai Junmai Ginjo",
+       "shell": "sake-green",
        "label": "img/labels/yamamoto-sunshine-yellow-yamahai-junmai-ginjo.webp"
       },
       {
        "id": "yamamoto-no7-kobo-junmai-ginjo",
        "name": "Yamamoto No.7 Kobo Junmai Ginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "yamamoto-midnight-blue-junmai-ginjo",
        "name": "Yamamoto Midnight Blue Junmai Ginjo",
+       "shell": "sake-green",
        "label": "img/labels/yamamoto-midnight-blue-junmai-ginjo.webp"
       },
       {
        "id": "yamamoto-junmai-ginjo-wain",
        "name": "Yamamoto Junmai Ginjo Wain",
+       "shell": "sake-green",
        "label": "img/labels/yamamoto-junmai-ginjo-wain.webp"
       },
       {
        "id": "yamamoto-junmai-ginjo-uki-uki",
        "name": "Yamamoto Junmai Ginjo Uki Uki",
+       "shell": "sake-frosted",
        "label": "img/labels/yamamoto-junmai-ginjo-uki-uki.webp"
       },
       {
        "id": "wakamusume-tropical-bunbun-junmai-ginjo",
        "name": "Wakamusume Tropical Bunbun Junmai Ginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/wakamusume-tropical-bunbun-junmai-ginjo.webp"
       },
       {
        "id": "toyobijin-jundou-ichizu-junmai-ginjo-omachi",
        "name": "Toyobijin Jundou Ichizu Gentei Junmai Ginjo Omachi",
+       "shell": "sake-green",
        "label": "img/labels/toyobijin-jundou-ichizu-junmai-ginjo-omachi.webp"
       },
       {
        "id": "toko-kenjoshu-junmai-ginjo-tosui",
        "name": "Toko Kenjoshu Junmai Ginjo Tosui Shikomi",
+       "shell": "sake-black",
        "label": "img/labels/toko-kenjoshu-junmai-ginjo-tosui.webp"
       },
       {
        "id": "tenon-harunotsuki-bihappou-junmaiginjou-nigori",
        "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
+       "shell": "sake-green",
        "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
       },
       {
        "id": "tenmei-junmai-ginjo-hiire-black-label",
        "name": "Tenmei Junmai Ginjo Hiire Black Label",
+       "shell": "sake-black",
        "label": null
       },
       {
        "id": "takizawa-junmai-ginjo",
        "name": "Takizawa Junmai Ginjo",
+       "shell": "sake-black",
        "label": "img/labels/takizawa-junmai-ginjo.webp"
       },
       {
        "id": "suigyoku-junmai-ginjo-muroka-nama-genshu",
        "name": "Suigyoku Junmai Ginjo Muroka Nama Genshu",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "sugata-sparkling",
        "name": "Sugata Junmai Ginjo Sparkling Nama Sake",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "sugata-yumesasara",
        "name": "Sugata Junmai Ginjo Muroka Nama Genshu Yume Sasara",
+       "shell": "sake-black",
        "label": "img/labels/sugata-yumesasara.webp"
       },
       {
        "id": "sugata-omachi",
        "name": "Sugata Junmai Ginjo Muroka Nama Genshu Omachi",
+       "shell": "sake-black",
        "label": "img/labels/sugata-omachi.webp"
       },
       {
        "id": "sugata-kitashizuku",
        "name": "Sugata Junmai Ginjo Muroka Nama Genshu Kita Shizuku Murasaki Label",
+       "shell": "sake-black",
        "label": "img/labels/sugata-kitashizuku.webp"
       },
       {
        "id": "sugata-hitogokochi",
        "name": "Sugata Junmai Ginjo Muroka Nama Genshu Hitogokochi Midori Label",
+       "shell": "sake-brown",
        "label": "img/labels/sugata-hitogokochi.webp"
       },
       {
        "id": "sugata-aiyama",
        "name": "Sugata Junmai Ginjo Muroka Nama Genshu Aiyama",
+       "shell": "sake-black",
        "label": "img/labels/sugata-aiyama.webp"
       },
       {
        "id": "sokuu-junmai-ginjoshu-yamadanishiki",
        "name": "Sokuu Junmai Ginjoshu Yamadanishiki",
+       "shell": "sake-frosted",
        "label": "img/labels/sokuu-junmai-ginjoshu-yamadanishiki.webp"
       },
       {
        "id": "setoichi-kakupi-junmai-ginjo-omachi",
        "name": "Setoichi Kakupi Junmai Ginjo Omachi",
+       "shell": "sake-black",
        "label": "img/labels/setoichi-kakupi-junmai-ginjo-omachi.webp"
       },
       {
        "id": "seikoh-junmai-ginjo-omachi",
        "name": "Seikoh Junmai Ginjo Omachi",
+       "shell": "sake-black",
        "label": "img/labels/seikoh-junmai-ginjo-omachi.webp"
       },
       {
        "id": "sawanohana-sasara-super-dry-junmai-ginjo",
        "name": "Sawanohana Sasara Super Dry Junmai Ginjo",
+       "shell": "sake-brown",
        "label": "img/labels/sawanohana-sasara-super-dry-junmai-ginjo.webp"
       },
       {
        "id": "sara-junmai-ginjo",
        "name": "Sara Junmai Ginjo",
+       "shell": "sake-green",
        "label": "img/labels/sara-junmai-ginjo.webp"
       },
       {
        "id": "roman-jg",
        "name": "Roman Junmai Ginjo",
+       "shell": "sake-black",
        "label": "img/labels/roman-jg.webp"
       },
       {
        "id": "okuharima-harumachikogarete",
        "name": "Okuharima \"Harumachikogarete\"",
+       "shell": "sake-black",
        "label": "img/labels/okuharima-harumachikogarete.webp"
       },
       {
        "id": "odayaka-junmai-ginjo-usunigori-nama",
        "name": "Odayaka Junmai Ginjo Usunigori Nama",
+       "shell": "sake-frosted",
        "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
       },
       {
        "id": "odayaka-junmai-ginjo",
        "name": "Odayaka Junmai Ginjo",
+       "shell": "sake-green",
        "label": "img/labels/odayaka-junmai-ginjo.webp"
       },
       {
        "id": "obuse-trois",
        "name": "Obuse Trois",
+       "shell": "sake-green",
        "label": "img/labels/obuse-trois.webp"
       },
       {
        "id": "obuse-numero-six",
        "name": "Obuse Numero Six 【小布施 Numero SIX】",
+       "shell": "sake-green",
        "label": "img/labels/obuse-numero-six.webp"
       },
       {
        "id": "obuse-jamais-deux-sans-toi",
        "name": "Obuse Jamais D'eux Sans Toi 【小布施 Jamais D'eux Sans Toi】",
+       "shell": "sake-green",
        "label": "img/labels/obuse-jamais-deux-sans-toi.webp"
       },
       {
        "id": "niida-shizenshu-melon-333",
        "name": "Niida Shizenshu Melon 3.33 Kimoto Junmai Ginjo Muroka Nama Genshu",
+       "shell": "sake-black",
        "label": "img/labels/niida-shizenshu-melon-333.webp"
       },
       {
        "id": "natsu-odayaka",
        "name": "Natsu no Odayaka Junmai Ginjo",
+       "shell": "sake-green",
        "label": "img/labels/natsu-odayaka.webp"
       },
       {
        "id": "nanbubijin-junmaiginjo-princess-michiko",
        "name": "Nanbubijin JunmaiGinjo Princess Michiko",
+       "shell": "sake-black",
        "label": "img/labels/nanbubijin-junmaiginjo-princess-michiko.webp"
       },
       {
        "id": "nabeshima-blossoms-moon",
        "name": "Nabeshima Blossoms Moon",
+       "shell": "sake-black",
        "label": "img/labels/nabeshima-blossoms-moon.webp"
       },
       {
        "id": "mozu-junmai-ginjo",
        "name": "MOZU Junmai Ginjo",
+       "shell": "sake-small",
        "label": "img/labels/mozu-junmai-ginjo.webp"
       },
       {
        "id": "morishima-hitachinishiki",
        "name": "Morishima Hitachinishiki",
+       "shell": "sake-black",
        "label": "img/labels/morishima-hitachinishiki.webp"
       },
       {
        "id": "mizubasho-natsusake-junmai-ginjo-origarami-namachozo",
        "name": "Mizubasho Natsusake Junmai Ginjo Origarami Namachozo",
+       "shell": "sake-green",
        "label": "img/labels/mizubasho-natsusake-junmai-ginjo-origarami-namachozo.webp"
       },
       {
        "id": "mizubasho-junmai-ginjo-sparkling-dry",
        "name": "Mizubasho Junmai Ginjo Sparkling Dry",
+       "shell": "sake-skyblue",
        "label": "img/labels/mizubasho-junmai-ginjo-sparkling-dry.webp"
       },
       {
        "id": "mikotsuru-nigori",
        "name": "Mikotsuru Junmai Ginjo Sankeinishiki Nigori Nama",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "mikotsuru-junmai-ginjo-gohakyu-mangoku",
        "name": "MIKOTSURU Junmai Ginjo Gohakyu Mangoku",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "michizakura-junmai-ginjo-suisei-55",
        "name": "Michizakura Junmai Ginjo Suisei 55",
+       "shell": "sake-black",
        "label": "img/labels/michizakura-junmai-ginjo-suisei-55.webp"
       },
       {
        "id": "meiho-akagi-junmai-ginjo-nama",
        "name": "Meiho Akagi Junmai Ginjo Nama",
+       "shell": "sake-green",
        "label": "img/labels/meiho-akagi-junmai-ginjo-nama.webp"
       },
       {
        "id": "machida-55",
        "name": "Machida Yamadanishiki Junmai Ginjo Jikakumi 55",
+       "shell": "sake-green",
        "label": "img/labels/machida-55.webp"
       },
       {
        "id": "machida-jungin-55-omachi",
        "name": "Machida Junmai Ginjo 55 Omachi Jikagumi",
+       "shell": "sake-green",
        "label": "img/labels/machida-jungin-55-omachi.webp"
       },
       {
        "id": "koshi-no-kanbai-junmai-ginjo-sai-mikino-",
        "name": "Koshi no Kanbai Junmai Ginjo Sai (Mikino-Mikoto Label)",
+       "shell": "sake-skyblue",
        "label": "img/labels/koshi-no-kanbai-junmai-ginjo-sai-mikino-.webp"
       },
       {
        "id": "kokushimuso-junmai-ginjo-kitashizuku",
        "name": "Kokushimuso Junmai Ginjo Kitashizuku",
+       "shell": "sake-cobalt",
        "label": "img/labels/kokushimuso-junmai-ginjo-kitashizuku.webp"
       },
       {
        "id": "koganesawa-hitomebore-brut",
        "name": "Koganesawa HITOMEBORE Brut",
+       "shell": "sake-frosted",
        "label": "img/labels/koganesawa-hitomebore-brut.webp"
       },
       {
        "id": "kiubijin-junmai-ginjo-yunagi",
        "name": "KIUBIJIN Junmai Ginjo Yunagi",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "kikunotsukasa-shinboshi-junmai-ginjo",
        "name": "Kikunotsukasa Shinboshi Junmai Ginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "kenkonichi-junmai-ginjo-tejikuri",
        "name": "Kenkonichi Junmai Ginjo (Tejikuri)",
+       "shell": "sake-green",
        "label": "img/labels/kenkonichi-junmai-ginjo-tejikuri.webp"
       },
       {
        "id": "kameizumi-junmai-ginjo-nama-genshu-cel-24",
        "name": "Kameizumi Junmai Ginjo Nama Genshu CEL-24",
+       "shell": "sake-green",
        "label": "img/labels/kameizumi-junmai-ginjo-nama-genshu-cel-24.webp"
       },
       {
        "id": "kagura-sparkling",
        "name": "Kagura Roka Sparkling Junmai Ginjo",
+       "shell": "sake-black",
        "label": "img/labels/kagura-sparkling.webp"
       },
       {
        "id": "kagura-nojoho-junmai-ginjo",
        "name": "Kagura Nojoho Junmai Ginjo",
+       "shell": "sake-cobalt",
        "label": "img/labels/kagura-nojoho-junmai-ginjo.webp"
       },
       {
        "id": "junsei-jg",
        "name": "Junsei Hyogo Yumenishiki Kimoto Junmai Ginjo Muroka Jikakumi",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "izumibashi-shiboritate",
        "name": "Izumibashi Shiboritate",
+       "shell": "sake-black",
        "label": "img/labels/izumibashi-shiboritate.webp"
       },
       {
        "id": "hitakami-aquarium-in-winter",
        "name": "Hitakami Junmai Ginjo Usunigori Nama Aquarium in Winter",
+       "shell": "sake-clear",
        "label": "img/labels/hitakami-aquarium-in-winter.webp"
       },
       {
        "id": "hikomago-hikozon-junmai-ginjo-funakuchishu-nam",
        "name": "Hikomago (Hikozon) Junmai Ginjo Funakuchishu Nama Genshu",
+       "shell": "sake-green",
        "label": "img/labels/hikomago-hikozon-junmai-ginjo-funakuchishu-nam.webp"
       },
       {
        "id": "harada",
        "name": "Harada Junmai Ginjo Muroka Nama Genshu",
+       "shell": "sake-skyblue",
        "label": "img/labels/harada.webp"
       },
       {
        "id": "hanami-roman",
        "name": "Hanami Roman Junmai Ginjo",
+       "shell": "sake-brown",
        "label": "img/labels/hanami-roman.webp"
       },
       {
        "id": "daishinshu-chokarakuchi-junmai-ginjo",
        "name": "Daishinshu Chokarakuchi Junmai Ginjo",
+       "shell": "sake-black",
        "label": "img/labels/daishinshu-chokarakuchi-junmai-ginjo.webp"
       },
       {
        "id": "chuai-junmai-ginjo",
        "name": "Chuai Junmai Ginjo",
+       "shell": "sake-black",
        "label": "img/labels/chuai-junmai-ginjo.webp"
       },
       {
        "id": "ariiso-akebono-flat",
        "name": "ARIISO Akebono Flat",
+       "shell": "sake-green",
        "label": "img/labels/ariiso-akebono-flat.webp"
       },
       {
        "id": "aramasa-colors-cosmos",
        "name": "Aramasa Colors Cosmos",
+       "shell": "sake-black",
        "label": "img/labels/aramasa-colors-cosmos.webp"
       },
       {
        "id": "aiyama-galaxy-kimoto-junmai-ginjo-origar",
        "name": "Aiyama 'Galaxy' Kimoto Junmai Ginjo Origarami Nama",
+       "shell": "sake-green",
        "label": null
       }
      ]
@@ -790,61 +919,73 @@
       {
        "id": "kenkonichi-tokubetsu-junmai-sasanishiki",
        "name": "Kenkonichi Tokubetsu Junmai Sasanishiki",
+       "shell": "sake-black",
        "label": "img/labels/kenkonichi-tokubetsu-junmai-sasanishiki.webp"
       },
       {
        "id": "taka-tokubetsu-junmai-fukamari",
        "name": "Taka Tokubetsu Junmai Fukamari",
+       "shell": "sake-clear",
        "label": "img/labels/taka-tokubetsu-junmai-fukamari.webp"
       },
       {
        "id": "nabeshima-harvest-moon-classic",
        "name": "Nabeshima Harvest Moon Classic",
+       "shell": "sake-brown",
        "label": "img/labels/nabeshima-harvest-moon-classic.webp"
       },
       {
        "id": "utama-native-tokubetsu-junmai",
        "name": "Utama Native Tokubetsu Junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "shizenango-bio-tokubetsu-junmai",
        "name": "Shizenango BIO Tokubetsu Junmai",
+       "shell": "sake-brown",
        "label": "img/labels/shizenango-bio-tokubetsu-junmai.webp"
       },
       {
        "id": "machida-tokubetsu-junmai-55-gohyakumangoku",
        "name": "Machida Tokubetsu Junmai 55 Gohyakumangoku Jikagumi",
+       "shell": "sake-green",
        "label": "img/labels/machida-tokubetsu-junmai-55-gohyakumangoku.webp"
       },
       {
        "id": "kaiun-iwaizake-tokubetsu-junmai",
        "name": "Kaiun Iwaizake Tokubetsu Junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "iamnishiki-tokubetsu-junmai",
        "name": "Iamnishiki Tokubetsu Junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hirotogawa-tokubetsu-junmai",
        "name": "Hirotogawa Tokubetsu Junmai",
+       "shell": "sake-brown",
        "label": "img/labels/hirotogawa-tokubetsu-junmai.webp"
       },
       {
        "id": "harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu",
        "name": "HARADA Saito No Shizuku Tokubetsu Junmai Muroka Nama Genshu",
+       "shell": "sake-brown",
        "label": "img/labels/harada-saito-no-shizuku-tokubetsu-junmai-muroka-nama-genshu.webp"
       },
       {
        "id": "denshu-tokubetsu-junmai",
        "name": "Denshu Tokubetsu Junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "against-the-grain-normat-tokubetsu-junma",
        "name": "Against The Grain (Normat) Tokubetsu Junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/against-the-grain-normat-tokubetsu-junma.webp"
       }
      ]
@@ -895,261 +1036,313 @@
       {
        "id": "gakki-masamune-junjo",
        "name": "Gakki Masamune Junjo",
+       "shell": "sake-black",
        "label": "img/labels/gakki-masamune-junjo.webp"
       },
       {
        "id": "isshou-seishun-shinshu-origarami-honnama",
        "name": "Isshou Seishun Junmai Shinshu Origarami Honnama",
+       "shell": "sake-frosted",
        "label": "img/labels/isshou-seishun-shinshu-origarami-honnama.webp"
       },
       {
        "id": "azumatsuru-minori-kimoto-junmai",
        "name": "Azumatsuru Minori Kimoto Junmai",
+       "shell": "sake-black",
        "label": "img/labels/azumatsuru-minori-kimoto-junmai.webp"
       },
       {
        "id": "koshinohomare-qn-matsuri",
        "name": "Koshinohomare Qn Matsuri Junmai Muroka Genshu",
+       "shell": "sake-black",
        "label": "img/labels/koshinohomare-qn-matsuri.webp"
       },
       {
        "id": "jinya-junmai-akiagari",
        "name": "Jinya Junmai Akiagari",
+       "shell": "sake-brown",
        "label": "img/labels/jinya-junmai-akiagari.webp"
       },
       {
        "id": "kinoene-junmai-umakara-migaki-hachiwari",
        "name": "Kinoene Junmai Umakara Migaki Hachiwari",
+       "shell": "sake-brown",
        "label": "img/labels/kinoene-junmai-umakara-migaki-hachiwari.webp"
       },
       {
        "id": "taka-sparkling",
        "name": "Taka's Sparkling",
+       "shell": "sake-clear",
        "label": "img/labels/taka-sparkling.webp"
       },
       {
        "id": "zaku-g",
        "name": "Zaku Impression Type G",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "yoshidagura-u-night-and-dance-junmai",
        "name": "Yoshidagura u Night & Dance Junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "yamato-damashii-mizumoto",
        "name": "Yamato Damashii Mizumoto",
+       "shell": "sake-brown",
        "label": "img/labels/yamato-damashii-mizumoto.webp"
       },
       {
        "id": "tenranzan-natsu-junmai",
        "name": "Tenranzan Natsu Junmai",
+       "shell": "sake-brown",
        "label": "img/labels/tenranzan-natsu-junmai.webp"
       },
       {
        "id": "tenmei-x-machida-shuzo-collaborative-bre",
        "name": "Tenmei x Machida Shuzo Collaborative Brewing",
+       "shell": "sake-black",
        "label": "img/labels/tenmei-x-machida-shuzo-collaborative-bre.webp"
       },
       {
        "id": "tenmei-sarasara-junmai-lovely-summer",
        "name": "Tenmei Sarasara Junmai Lovely Summer",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "tenmei-nakadori-zerogo-origarami-nama",
        "name": "Tenmei Nakadori Zerogo Origarami Nama",
+       "shell": "sake-clear",
        "label": "img/labels/tenmei-nakadori-zerogo-origarami-nama.webp"
       },
       {
        "id": "tenmei-origarami",
        "name": "Tenmei Nakadori Gogou Origarami Nama",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "tenmei-fukunoka",
        "name": "Tenmei Junmai Fuku no Ka & Yume no Kaori",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "tanzawa-omachi-70",
        "name": "Tanzawa Omachi 70",
+       "shell": "sake-green",
        "label": "img/labels/tanzawa-omachi-70.webp"
       },
       {
        "id": "sokuu-junmai-miyamanishiki",
        "name": "Sokuu Junmai Miyamanishiki",
+       "shell": "sake-clear",
        "label": "img/labels/sokuu-junmai-miyamanishiki.webp"
       },
       {
        "id": "shinomine-aiyama-junmai-murokanamagenshu",
        "name": "Shinomine Aiyama Junmai Murokanamagenshu",
+       "shell": "sake-green",
        "label": "img/labels/shinomine-aiyama-junmai-murokanamagenshu.webp"
       },
       {
        "id": "shichifukujin-super-dry-junmai",
        "name": "Shichifukujin Super Dry Junmai",
+       "shell": "sake-isshobin",
        "label": "img/labels/shichifukujin-super-dry-junmai.webp"
       },
       {
        "id": "sharaku-junmaishu",
        "name": "Sharaku Junmaishu",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "sawahime-yamahai-junmai-shin-jizake-sengen",
        "name": "Sawahime Yamahai Junmai Shin Jizake Sengen",
+       "shell": "sake-brown",
        "label": "img/labels/sawahime-yamahai-junmai-shin-jizake-sengen.webp"
       },
       {
        "id": "ookura-hinohikari-yamahai-junmai-jikagumi",
        "name": "Ookura Hinohikari Yamahai Junmai Jukadumi Seiryuu-Nama-Genshu",
+       "shell": "sake-brown",
        "label": "img/labels/ookura-hinohikari-yamahai-junmai-jikagumi.webp"
       },
       {
        "id": "okura-junmai-namazake",
        "name": "Okura Junmai Namazake",
+       "shell": "sake-frosted",
        "label": "img/labels/okura-junmai-namazake.webp"
       },
       {
        "id": "odayaka-sparkling",
        "name": "Odayaka Sparkling",
+       "shell": "sake-sparkling",
        "label": "img/labels/odayaka-sparkling.webp"
       },
       {
        "id": "noguchi-naohiko-sake-institute",
        "name": "Noguchi Naohiko Sake Institute",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
        "id": "niida-taruzake",
        "name": "Niida Shizenshu Taruzake",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "mikotsuru-karakuchi-junmai",
        "name": "MIKOTSURU Karakuchi Junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "mikotsuru-junmai-muroka-nama-genshu-origarami",
        "name": "MIKOTSURU Junmai Muroka Nama Genshu Origarami",
+       "shell": "sake-brown",
        "label": "img/labels/mikotsuru-junmai-muroka-nama-genshu-origarami.webp"
       },
       {
        "id": "makihata-bambino",
        "name": "Makihata bambino Tsuya Junmai Muroka Nama",
+       "shell": "sake-clear",
        "label": "img/labels/makihata-bambino.webp"
       },
       {
        "id": "kyo-no-haru-houryou-karakuchi-junmai",
        "name": "Kyo-no-Haru Houryou Karakuchi Junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/kyo-no-haru-houryou-karakuchi-junmai.webp"
       },
       {
        "id": "kujira-junmai-yamadanishiki-kimoto-nama-genshu-80",
        "name": "Kujira Junmai Yamadanishiki Kimoto Nama Genshu 80",
+       "shell": "sake-green",
        "label": "img/labels/kujira-junmai-yamadanishiki-kimoto-nama-genshu-80.webp"
       },
       {
        "id": "komesou-brocken-splash-junmai-muroka-genshu",
        "name": "Komesou Brocken Splash Junmai Muroka Genshu",
+       "shell": "sake-clear",
        "label": "img/labels/komesou-brocken-splash-junmai-muroka-genshu.webp"
       },
       {
        "id": "koikuma-bear-no-24-and-bear-no-25-kimoto-junma",
        "name": "Koikuma Bear No. 24 and Bear No. 25 Kimoto Junmai Muroka Nama Genshu",
+       "shell": "sake-brown",
        "label": "img/labels/koikuma-bear-no-24-and-bear-no-25-kimoto-junma.webp"
       },
       {
        "id": "kissui-hidariuma-junmai-kasseinigori-uma-uma",
        "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
+       "shell": "sake-clear",
        "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
       },
       {
        "id": "kikunotsukasa-winter",
        "name": "Kikunotsukasa Winter",
+       "shell": "sake-frosted",
        "label": null
       },
       {
        "id": "kikunotsukasa-innocent-60-junmai",
        "name": "Kikunotsukasa Innocent 60 Junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "kariho-junmai-yamahai-choukarakuchi",
        "name": "Kariho Junmai Yamahai Choukarakuchi",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "kaoruyama",
        "name": "Kaoruyama Junmai",
+       "shell": "sake-clear",
        "label": "img/labels/kaoruyama.webp"
       },
       {
        "id": "izumibashi-aki-tombo-omachi-kimoto-junmai",
        "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
+       "shell": "sake-brown",
        "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
       },
       {
        "id": "izumibashi-natsu-yago-sparkling",
        "name": "Izumibashi Natsu Yago Sparkling",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "houou-biden-tsurugi-karakuchi-junmai",
        "name": "Houou Biden Tsurugi Karakuchi Junmai",
+       "shell": "sake-black",
        "label": "img/labels/houou-biden-tsurugi-karakuchi-junmai.webp"
       },
       {
        "id": "hitakami-chokarakuchi-junmai",
        "name": "Hitakami Chokarakuchi Junmai",
+       "shell": "sake-brown",
        "label": "img/labels/hitakami-chokarakuchi-junmai.webp"
       },
       {
        "id": "hinemos-shichiji",
        "name": "HINEMOS Shichiji",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hinemos-sanji",
        "name": "HINEMOS Sanji",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "koueigiku-hello-omachi-sumizake",
        "name": "Hello! Koueigiku Omachi Sumizake Muroka Nama Genshu",
+       "shell": "sake-black",
        "label": "img/labels/koueigiku-hello-omachi-sumizake.webp"
       },
       {
        "id": "harada-natsu",
        "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hakutsuru-junmaishu",
        "name": "Hakutsuru Junmaishu",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "jozen-hachimitsu",
        "name": "Hachimitsu Yurai Kobo by Jozen Junmai (Honey-Yeast)",
+       "shell": "sake-clear",
        "label": "img/labels/jozen-hachimitsu.webp"
       },
       {
        "id": "hakugakusen-mufu",
        "name": "Gyokusendo Junmai Mukaze Betsukoshirae",
+       "shell": "sake-brown",
        "label": "img/labels/hakugakusen-mufu.webp"
       },
       {
        "id": "umifudo-sea-food",
        "name": "Fukucho \"Seafood\" Sparkling",
+       "shell": "sake-clear",
        "label": null
       },
       {
        "id": "akishika-moto-plus-one-junmai-muroka-nam",
        "name": "Akishika Moto Plus One Junmai Muroka Nama",
+       "shell": "sake-green",
        "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
       }
      ]
@@ -1168,31 +1361,37 @@
       {
        "id": "sawahime-daiginjo-tobingakoi-origarami-nama",
        "name": "Sawahime Daiginjo Tobingakoi Origarami Nama",
+       "shell": "sake-clear",
        "label": "img/labels/sawahime-daiginjo-tobingakoi-origarami-nama.webp"
       },
       {
        "id": "kokuryu-daiginjo",
        "name": "Kokuryu Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hakutsuru-tokusen-daiginjo",
        "name": "Hakutsuru Tokusen Daiginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "gekkeikan-daiginjo",
        "name": "Gekkeikan Daiginjo",
+       "shell": "sake-small",
        "label": "img/labels/gekkeikan-daiginjo.webp"
       },
       {
        "id": "endo-daiginjo",
        "name": "Endo Daiginjo Nama Genshu",
+       "shell": "sake-green",
        "label": "img/labels/endo-daiginjo.webp"
       },
       {
        "id": "aizu-homare-daiginjo",
        "name": "AIZU HOMARE Daiginjo",
+       "shell": "sake-green",
        "label": null
       }
      ]
@@ -1207,16 +1406,19 @@
       {
        "id": "sawahime-ginjo",
        "name": "Sawahime Ginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "narutotai-ginjo-shiboritate-nama-genshu",
        "name": "NARUTOTAI Ginjo Shiboritate Nama Genshu",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "kubota-senju-ginjo",
        "name": "Kubota Senju Ginjo",
+       "shell": "sake-green",
        "label": null
       }
      ]
@@ -1234,11 +1436,13 @@
       {
        "id": "hakushika-namachozou",
        "name": "Hakushika Namachozou",
+       "shell": "sake-small",
        "label": "img/labels/hakushika-namachozou.webp"
       },
       {
        "id": "asahitaka-tokusen-honjozo-namazake",
        "name": "Asahitaka Tokusen Honjozo Namazake",
+       "shell": "sake-green",
        "label": "img/labels/asahitaka-tokusen-honjozo-namazake.webp"
       }
      ]
@@ -1255,21 +1459,25 @@
       {
        "id": "koueigiku-gekka-burai",
        "name": "Koueigiku Gekka Burai",
+       "shell": "sake-brown",
        "label": "img/labels/koueigiku-gekka-burai.webp"
       },
       {
        "id": "nihonsakari-nigiwai",
        "name": "NIHONSAKARI NIGIWAI",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "kiku-masamune-kasen",
        "name": "Kiku Masamune Kasen",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hakushika-nada-jikomi-karakuchi",
        "name": "Hakushika Nada Jikomi Karakuchi",
+       "shell": "sake-green",
        "label": null
       }
      ]
@@ -1301,136 +1509,163 @@
       {
        "id": "yama-no-kami-san-ohara-red-shiso",
        "name": "Yama no Kami-san Ohara Red Shiso",
+       "shell": "sake-frosted",
        "label": "img/labels/yama-no-kami-san-ohara-red-shiso.webp"
       },
       {
        "id": "haccoba-zairai-sea",
        "name": "Haccoba Zairai Sea",
+       "shell": "sake-sparkling",
        "label": "img/labels/haccoba-zairai-sea.webp"
       },
       {
        "id": "raizin-heart-rock-phoenix-dancong-oolong",
        "name": "RAIZIN Heart Rock Prototype",
+       "shell": "sake-black",
        "label": "img/labels/raizin-heart-rock-phoenix-dancong-oolong.webp"
       },
       {
        "id": "fermenteria-yeastology-philly-sour",
        "name": "Fermenteria Yeastology Philly Sour",
+       "shell": "sake-clear",
        "label": "img/labels/fermenteria-yeastology-philly-sour.webp"
       },
       {
        "id": "fermenteria-sparkling",
        "name": "Fermenteria Sparkling",
+       "shell": "sake-frosted",
        "label": "img/labels/fermenteria-sparkling.webp"
       },
       {
        "id": "wakaze-unique",
        "name": "WAKAZE Unique",
+       "shell": "sake-black",
        "label": "img/labels/wakaze-unique.webp"
       },
       {
        "id": "wakaze-ispahan-rose",
        "name": "WAKAZE Ispahan Rose",
+       "shell": "sake-frosted",
        "label": "img/labels/wakaze-ispahan-rose.webp"
       },
       {
        "id": "wadaya-soda-pop-hop",
        "name": "#WADAYA Soda Pop Hop",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "ukiuki-hops",
        "name": "UkiUki Hops",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "something-happy-fresh-herb-tea",
        "name": "“Something Happy” Fresh Herb Tea",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "raikyo-phoenix-dancong-oolong-craft-sake",
        "name": "Raikyo Phoenix Dancong Oolong Craft Sake",
+       "shell": "sake-green",
        "label": "img/labels/raikyo-phoenix-dancong-oolong-craft-sake.webp"
       },
       {
        "id": "librom-pear-craft-sake",
        "name": "Pear",
+       "shell": "sake-craft",
        "label": "img/labels/librom-pear-craft-sake.webp"
       },
       {
        "id": "oriental-whey",
        "name": "Oriental Whey",
+       "shell": "sake-frosted",
        "label": "img/labels/oriental-whey.webp"
       },
       {
        "id": "miyakanbai-strawberry",
        "name": "Miyakanbai Hi no Shizuku Strawberry Sake",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "kikiki-hopped-sour",
        "name": "KiKiKi- Hopped Sour",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "ine-to-nihoncha",
        "name": "Ine to Nihoncha",
+       "shell": "sake-black",
        "label": "img/labels/ine-to-nihoncha.webp"
       },
       {
        "id": "ine-to-agave-hanakaze",
        "name": "Ine to Agave Hanakaze",
+       "shell": "sake-brown",
        "label": "img/labels/ine-to-agave-hanakaze.webp"
       },
       {
        "id": "ichigoya-hana-strawberry-doburoku",
        "name": "Ichigoya Hana Strawberry Doburoku",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hiraroku-layer-pear-craft-sake",
        "name": "Hiraroku Layer Pear Craft Sake",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hiraroku-layer-grape-craft-sake",
        "name": "Hiraroku Layer Grape Craft Sake",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hiraroku-layer-apple-craft-sake",
        "name": "Hiraroku Layer Apple Craft Sake",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "haccoba-secret-spring",
        "name": "Haccoba Secret Spring",
+       "shell": "sake-green",
        "label": "img/labels/haccoba-secret-spring.webp"
       },
       {
        "id": "haccoba-jam-2025by-no4",
        "name": "Haccoba Jam 2025BY No.4",
+       "shell": "sake-green",
        "label": "img/labels/haccoba-jam-2025by-no4.webp"
       },
       {
        "id": "fest-hop-doburoku",
        "name": "#FEST Hop Doburoku",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "citrene",
        "name": "Citrene",
+       "shell": "sake-frosted",
        "label": "img/labels/citrene.webp"
       },
       {
        "id": "baton-touch-no19",
        "name": "Baton Touch No.19",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "allwright-momo",
        "name": "ALLWRIGHT Peach Craft Sake (Fukushima Akatsuki)",
+       "shell": "sake-pink",
        "label": "img/labels/allwright-momo.webp"
       }
      ]
@@ -1460,111 +1695,133 @@
       {
        "id": "hagi-no-tsuru-betsu-shikomi",
        "name": "Hagi no Tsuru Betsu-shikomi",
+       "shell": "sake-green",
        "label": "img/labels/hagi-no-tsuru-betsu-shikomi.webp"
       },
       {
        "id": "gekkeikan-argo",
        "name": "Gekkeikan Argo",
+       "shell": "sake-small",
        "label": "img/labels/gekkeikan-argo.webp"
       },
       {
        "id": "noguchi-naohiko-natsu-no-namazake-2026",
        "name": "Noguchi Naohiko Natsu no Namazake 2026",
+       "shell": "sake-cobalt",
        "label": "img/labels/noguchi-naohiko-natsu-no-namazake-2026.webp"
       },
       {
        "id": "wufeng-ji-qing",
        "name": "Wufeng Ji Qing Sake",
+       "shell": "sake-black",
        "label": "img/labels/wufeng-ji-qing.webp"
       },
       {
        "id": "wataibune-terroir-ohta-valley",
        "name": "Wataibune Terroir Ohta-Valley",
+       "shell": "sake-green",
        "label": "img/labels/wataibune-terroir-ohta-valley.webp"
       },
       {
        "id": "wakakoma-carnival",
        "name": "Wakakoma Carnival",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "tenmei-nakadori-nigo-origarami-nama",
        "name": "Tenmei Nakadori Nigo Origarami Nama",
+       "shell": "sake-frosted",
        "label": "img/labels/tenmei-nakadori-nigo-origarami-nama.webp"
       },
       {
        "id": "tenmei-kamenoo-65-kijoshu",
        "name": "Tenmei Kamenoo 65 Kijoshu re Preparation Nama",
+       "shell": "sake-frosted",
        "label": "img/labels/tenmei-kamenoo-65-kijoshu.webp"
       },
       {
        "id": "taiheikai-sparkling",
        "name": "Taiheikai Sparkling",
+       "shell": "sake-green",
        "label": "img/labels/taiheikai-sparkling.webp"
       },
       {
        "id": "suppin-rumiko-no-sake-muroka-nama-genshu-no-6",
        "name": "Suppin Rumiko no Sake Muroka Nama Genshu No.6",
+       "shell": "sake-green",
        "label": "img/labels/suppin-rumiko-no-sake-muroka-nama-genshu-no-6.webp"
       },
       {
        "id": "mua-pure-rice",
        "name": "MÙA Pure Rice",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "mua-pineapple-chili",
        "name": "MÙA Pineapple Chili",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "mua-classic",
        "name": "MÙA Classic",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "mizubasho-artist-series-floral-sparkling-2023",
        "name": "Mizubasho Artist Series Floral Sparkling 2023",
+       "shell": "sake-sparkling",
        "label": "img/labels/mizubasho-artist-series-floral-sparkling-2023.webp"
       },
       {
        "id": "mimurosugi-dio-abita",
        "name": "Mimurosugi Dio Abita",
+       "shell": "sake-black",
        "label": "img/labels/mimurosugi-dio-abita.webp"
       },
       {
        "id": "kamikawa-taisetsu-tokachi-blue",
        "name": "Kamikawa Taisetsu Tokachi Blue",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "jukyu-hirvi-19",
        "name": "Jukyu HIRVI (19)",
+       "shell": "sake-green",
        "label": "img/labels/jukyu-hirvi-19.webp"
       },
       {
        "id": "jukyu-gattolibero-557-white-cat",
        "name": "Jukyu Gattolibero 557 (White Cat)",
+       "shell": "sake-cobalt",
        "label": "img/labels/jukyu-gattolibero-557-white-cat.webp"
       },
       {
        "id": "hanahato-kijoshu-8-years",
        "name": "HANAHATO Kijoshu 8 Years",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "hakutsuru-awayuki-sparkling",
        "name": "Hakutsuru Awayuki Sparkling",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "fukunishiki-low-alcohol-junmai",
        "name": "Fukunishiki Low Alcohol Junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
        "id": "takezumi-bamboo-spring",
        "name": "Chikusen \"Bamboo Spring\"",
+       "shell": "sake-green",
        "label": "img/labels/takezumi-bamboo-spring.webp"
       }
      ]
@@ -1577,6 +1834,7 @@
       "name": "Gakki Masamune Junjo",
       "category": "sake",
       "sub": "junmai",
+      "shell": "sake-black",
       "label": "img/labels/gakki-masamune-junjo.webp"
      },
      {
@@ -1584,6 +1842,7 @@
       "name": "Eikun Murasaki no Eikun Junmai Ginjo",
       "category": "sake",
       "sub": "junmai-ginjo",
+      "shell": "sake-brown",
       "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
      },
      {
@@ -1591,6 +1850,7 @@
       "name": "Gasanryu Gokugetsu Junmai Daiginjo",
       "category": "sake",
       "sub": "junmai-daiginjo",
+      "shell": "sake-black",
       "label": "img/labels/gasanryu-gokugetsu-junmai-daiginjo.webp"
      },
      {
@@ -1598,6 +1858,7 @@
       "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
       "category": "sake",
       "sub": "junmai-ginjo",
+      "shell": "sake-black",
       "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
      },
      {
@@ -1605,6 +1866,7 @@
       "name": "Kenkonichi Tokubetsu Junmai Sasanishiki",
       "category": "sake",
       "sub": "tokubetsu-junmai",
+      "shell": "sake-black",
       "label": "img/labels/kenkonichi-tokubetsu-junmai-sasanishiki.webp"
      }
     ],
@@ -1616,6 +1878,7 @@
        "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-green",
        "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
       },
       {
@@ -1623,6 +1886,7 @@
        "name": "Odayaka Junmai Ginjo Usunigori Nama",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
       },
       {
@@ -1630,6 +1894,7 @@
        "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-clear",
        "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
       },
       {
@@ -1637,6 +1902,7 @@
        "name": "Hitakami Junmai Ginjo Usunigori Nama Aquarium in Winter",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-clear",
        "label": "img/labels/hitakami-aquarium-in-winter.webp"
       },
       {
@@ -1644,6 +1910,7 @@
        "name": "Odayaka Sparkling",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-sparkling",
        "label": "img/labels/odayaka-sparkling.webp"
       }
      ],
@@ -1653,6 +1920,7 @@
        "name": "Odayaka Sparkling",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-sparkling",
        "label": "img/labels/odayaka-sparkling.webp"
       },
       {
@@ -1660,6 +1928,7 @@
        "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
@@ -1667,6 +1936,7 @@
        "name": "Fermenteria Sparkling",
        "category": "sake",
        "sub": "craft-sake",
+       "shell": "sake-frosted",
        "label": "img/labels/fermenteria-sparkling.webp"
       },
       {
@@ -1674,6 +1944,7 @@
        "name": "Taiheikai Sparkling",
        "category": "sake",
        "sub": "ungraded",
+       "shell": "sake-green",
        "label": "img/labels/taiheikai-sparkling.webp"
       },
       {
@@ -1681,6 +1952,7 @@
        "name": "Mizubasho Artist Series Floral Sparkling 2023",
        "category": "sake",
        "sub": "ungraded",
+       "shell": "sake-sparkling",
        "label": "img/labels/mizubasho-artist-series-floral-sparkling-2023.webp"
       }
      ],
@@ -1690,6 +1962,7 @@
        "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-brown",
        "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
       },
       {
@@ -1697,6 +1970,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -1704,6 +1978,7 @@
        "name": "Akishika Moto Plus One Junmai Muroka Nama",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
       },
       {
@@ -1711,6 +1986,7 @@
        "name": "Aiyama 'Galaxy' Kimoto Junmai Ginjo Origarami Nama",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-green",
        "label": null
       },
       {
@@ -1718,6 +1994,7 @@
        "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-black",
        "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
       }
      ],
@@ -1727,6 +2004,7 @@
        "name": "Izumibashi Shiboritate",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-black",
        "label": "img/labels/izumibashi-shiboritate.webp"
       },
       {
@@ -1734,6 +2012,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -1741,6 +2020,7 @@
        "name": "Yamashiroya Fuga Junmai Daiginjo",
        "category": "sake",
        "sub": "junmai-daiginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
       },
       {
@@ -1748,6 +2028,7 @@
        "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-green",
        "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
       },
       {
@@ -1755,6 +2036,7 @@
        "name": "Sawahime Yamahai Junmai Shin Jizake Sengen",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-brown",
        "label": "img/labels/sawahime-yamahai-junmai-shin-jizake-sengen.webp"
       }
      ]
@@ -1789,26 +2071,31 @@
       {
        "id": "traditional-jeju-makgeolli",
        "name": "Traditional Jeju Makgeolli",
+       "shell": "makgeolli",
        "label": "img/labels/traditional-jeju-makgeolli.webp"
       },
       {
        "id": "moonlight-yuja",
        "name": "Moonlight Yuja",
+       "shell": "makgeolli",
        "label": "img/labels/moonlight-yuja.webp"
       },
       {
        "id": "mangwoo-yakbang-memilbogam",
        "name": "Mangwoo Yakbang Memilbogam",
+       "shell": "makgeolli",
        "label": "img/labels/mangwoo-yakbang-memilbogam.webp"
       },
       {
        "id": "isibo-wonju",
        "name": "Isibo Wonju",
+       "shell": "makgeolli",
        "label": "img/labels/isibo-wonju.webp"
       },
       {
        "id": "93-hwanggeum-gotgan",
        "name": "93, Hwanggeum Gotgan",
+       "shell": "makgeolli",
        "label": "img/labels/93-hwanggeum-gotgan.webp"
       }
      ]
@@ -1825,11 +2112,13 @@
       {
        "id": "carlsberg-smooth-draught",
        "name": "Carlsberg Smooth Draught",
+       "shell": "beer-bottle",
        "label": "img/labels/carlsberg-smooth-draught.webp"
       },
       {
        "id": "nasu-kohgen-ai",
        "name": "Nasu Kohgen Ai",
+       "shell": "beer-pint",
        "label": null
       }
      ]
@@ -1846,11 +2135,13 @@
       {
        "id": "swanlake-amber-swan-ale",
        "name": "Swanlake Amber Swan Ale",
+       "shell": "beer-pint",
        "label": null
       },
       {
        "id": "under-15m",
        "name": "Under 15M",
+       "shell": "beer-bottle",
        "label": "img/labels/under-15m.webp"
       }
      ]
@@ -1865,6 +2156,7 @@
       {
        "id": "isekado-mr-dank",
        "name": "Isekado Mr. DANK",
+       "shell": "beer-tulip",
        "label": null
       }
      ]
@@ -1881,11 +2173,13 @@
       {
        "id": "kronenbourg-1664-blanc",
        "name": "Kronenbourg 1664 Blanc",
+       "shell": "beer-bottle",
        "label": "img/labels/kronenbourg-1664-blanc.webp"
       },
       {
        "id": "minoh-hoppy-weizen",
        "name": "Minoh Hoppy Weizen",
+       "shell": "beer-weizen",
        "label": null
       }
      ]
@@ -1900,6 +2194,7 @@
       {
        "id": "nara-eighty-eight",
        "name": "Nara Eighty Eight",
+       "shell": "beer-tulip",
        "label": null
       }
      ]
@@ -1917,11 +2212,13 @@
       {
        "id": "underwater-luminous-sake-yeast-beer",
        "name": "Underwater Luminous Sake Yeast Beer",
+       "shell": "beer-can",
        "label": "img/labels/underwater-luminous-sake-yeast-beer.webp"
       },
       {
        "id": "underwater-sake-yeast-beer",
        "name": "Underwater Sake Yeast Beer",
+       "shell": "beer-can",
        "label": "img/labels/underwater-sake-yeast-beer.webp"
       }
      ]
@@ -1934,6 +2231,7 @@
       "name": "Kronenbourg 1664 Blanc",
       "category": "fermented",
       "sub": "wheat",
+      "shell": "beer-bottle",
       "label": "img/labels/kronenbourg-1664-blanc.webp"
      },
      {
@@ -1941,6 +2239,7 @@
       "name": "Carlsberg Smooth Draught",
       "category": "fermented",
       "sub": "lager",
+      "shell": "beer-bottle",
       "label": "img/labels/carlsberg-smooth-draught.webp"
      },
      {
@@ -1948,6 +2247,7 @@
       "name": "Isekado Mr. DANK",
       "category": "fermented",
       "sub": "ipa",
+      "shell": "beer-tulip",
       "label": null
      },
      {
@@ -1955,6 +2255,7 @@
       "name": "Swanlake Amber Swan Ale",
       "category": "fermented",
       "sub": "pale-ale",
+      "shell": "beer-pint",
       "label": null
      },
      {
@@ -1962,6 +2263,7 @@
       "name": "Nasu Kohgen Ai",
       "category": "fermented",
       "sub": "lager",
+      "shell": "beer-pint",
       "label": null
      }
     ],
@@ -1973,6 +2275,7 @@
        "name": "Moonlight Yuja",
        "category": "fermented",
        "sub": "makgeolli",
+       "shell": "makgeolli",
        "label": "img/labels/moonlight-yuja.webp"
       },
       {
@@ -1980,6 +2283,7 @@
        "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-green",
        "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
       },
       {
@@ -1987,6 +2291,7 @@
        "name": "Odayaka Junmai Ginjo Usunigori Nama",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
       },
       {
@@ -1994,6 +2299,7 @@
        "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-clear",
        "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
       },
       {
@@ -2001,6 +2307,7 @@
        "name": "Suntory Kakubin Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-highball",
        "label": "img/labels/suntory-kakubin-highball.webp"
       }
      ],
@@ -2010,6 +2317,7 @@
        "name": "Kronenbourg 1664 Blanc",
        "category": "fermented",
        "sub": "wheat",
+       "shell": "beer-bottle",
        "label": "img/labels/kronenbourg-1664-blanc.webp"
       },
       {
@@ -2017,6 +2325,7 @@
        "name": "Carlsberg Smooth Draught",
        "category": "fermented",
        "sub": "lager",
+       "shell": "beer-bottle",
        "label": "img/labels/carlsberg-smooth-draught.webp"
       },
       {
@@ -2024,6 +2333,7 @@
        "name": "Moonlight Yuja",
        "category": "fermented",
        "sub": "makgeolli",
+       "shell": "makgeolli",
        "label": "img/labels/moonlight-yuja.webp"
       },
       {
@@ -2031,6 +2341,7 @@
        "name": "Nasu Kohgen Ai",
        "category": "fermented",
        "sub": "lager",
+       "shell": "beer-pint",
        "label": null
       },
       {
@@ -2038,6 +2349,7 @@
        "name": "Minoh Hoppy Weizen",
        "category": "fermented",
        "sub": "wheat",
+       "shell": "beer-weizen",
        "label": null
       }
      ],
@@ -2047,6 +2359,7 @@
        "name": "Swanlake Amber Swan Ale",
        "category": "fermented",
        "sub": "pale-ale",
+       "shell": "beer-pint",
        "label": null
       },
       {
@@ -2054,6 +2367,7 @@
        "name": "Under 15M",
        "category": "fermented",
        "sub": "pale-ale",
+       "shell": "beer-bottle",
        "label": "img/labels/under-15m.webp"
       },
       {
@@ -2061,6 +2375,7 @@
        "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-brown",
        "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
       },
       {
@@ -2068,6 +2383,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -2075,6 +2391,7 @@
        "name": "Akishika Moto Plus One Junmai Muroka Nama",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
       }
      ],
@@ -2084,6 +2401,7 @@
        "name": "Isibo Wonju",
        "category": "fermented",
        "sub": "makgeolli",
+       "shell": "makgeolli",
        "label": "img/labels/isibo-wonju.webp"
       },
       {
@@ -2091,6 +2409,7 @@
        "name": "Izumibashi Shiboritate",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-black",
        "label": "img/labels/izumibashi-shiboritate.webp"
       },
       {
@@ -2098,6 +2417,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -2105,6 +2425,7 @@
        "name": "Yamashiroya Fuga Junmai Daiginjo",
        "category": "sake",
        "sub": "junmai-daiginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
       },
       {
@@ -2112,6 +2433,7 @@
        "name": "Suntory World Whisky Ao",
        "category": "spirits",
        "sub": "whisky",
+       "shell": "whisky",
        "label": "img/labels/suntory-world-whisky-ao.webp"
       }
      ]
@@ -2142,16 +2464,19 @@
       {
        "id": "kabosu-umeshu-sakurayama",
        "name": "Kabosu & Umeshu Sakurayama",
+       "shell": "umeshu",
        "label": null
       },
       {
        "id": "hamada-ume-liqueur-gold-leaf",
        "name": "HAMADA Ume Liqueur with Gold Leaf",
+       "shell": "umeshu",
        "label": "img/labels/hamada-ume-liqueur-gold-leaf.webp"
       },
       {
        "id": "akebono-color-umeshu-brown-label",
        "name": "Akebono Color Umeshu Brown Label",
+       "shell": "umeshu",
        "label": null
       }
      ],
@@ -2178,6 +2503,7 @@
       "name": "Kabosu & Umeshu Sakurayama",
       "category": "umeshu",
       "sub": "all",
+      "shell": "umeshu",
       "label": null
      },
      {
@@ -2185,6 +2511,7 @@
       "name": "HAMADA Ume Liqueur with Gold Leaf",
       "category": "umeshu",
       "sub": "all",
+      "shell": "umeshu",
       "label": "img/labels/hamada-ume-liqueur-gold-leaf.webp"
      },
      {
@@ -2192,6 +2519,7 @@
       "name": "Akebono Color Umeshu Brown Label",
       "category": "umeshu",
       "sub": "all",
+      "shell": "umeshu",
       "label": null
      },
      {
@@ -2199,6 +2527,7 @@
       "name": "Gakki Masamune Junjo",
       "category": "sake",
       "sub": "junmai",
+      "shell": "sake-black",
       "label": "img/labels/gakki-masamune-junjo.webp"
      },
      {
@@ -2206,6 +2535,7 @@
       "name": "Eikun Murasaki no Eikun Junmai Ginjo",
       "category": "sake",
       "sub": "junmai-ginjo",
+      "shell": "sake-brown",
       "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
      }
     ],
@@ -2217,6 +2547,7 @@
        "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-green",
        "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
       },
       {
@@ -2224,6 +2555,7 @@
        "name": "Odayaka Junmai Ginjo Usunigori Nama",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
       },
       {
@@ -2231,6 +2563,7 @@
        "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-clear",
        "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
       },
       {
@@ -2238,6 +2571,7 @@
        "name": "Suntory Kakubin Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-highball",
        "label": "img/labels/suntory-kakubin-highball.webp"
       },
       {
@@ -2245,6 +2579,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       }
      ],
@@ -2254,6 +2589,7 @@
        "name": "Kabosu & Umeshu Sakurayama",
        "category": "umeshu",
        "sub": "all",
+       "shell": "umeshu",
        "label": null
       },
       {
@@ -2261,6 +2597,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       },
       {
@@ -2268,6 +2605,7 @@
        "name": "Kavalan Dry Single Malt Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-dry-single-malt-highball.webp"
       },
       {
@@ -2275,6 +2613,7 @@
        "name": "Odayaka Sparkling",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-sparkling",
        "label": "img/labels/odayaka-sparkling.webp"
       },
       {
@@ -2282,6 +2621,7 @@
        "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": null
       }
      ],
@@ -2291,6 +2631,7 @@
        "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-brown",
        "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
       },
       {
@@ -2298,6 +2639,7 @@
        "name": "Swanlake Amber Swan Ale",
        "category": "fermented",
        "sub": "pale-ale",
+       "shell": "beer-pint",
        "label": null
       },
       {
@@ -2305,6 +2647,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -2312,6 +2655,7 @@
        "name": "Akishika Moto Plus One Junmai Muroka Nama",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
       },
       {
@@ -2319,6 +2663,7 @@
        "name": "Under 15M",
        "category": "fermented",
        "sub": "pale-ale",
+       "shell": "beer-bottle",
        "label": "img/labels/under-15m.webp"
       }
      ],
@@ -2328,6 +2673,7 @@
        "name": "Izumibashi Shiboritate",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-black",
        "label": "img/labels/izumibashi-shiboritate.webp"
       },
       {
@@ -2335,6 +2681,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -2342,6 +2689,7 @@
        "name": "Yamashiroya Fuga Junmai Daiginjo",
        "category": "sake",
        "sub": "junmai-daiginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
       },
       {
@@ -2349,6 +2697,7 @@
        "name": "Suntory World Whisky Ao",
        "category": "spirits",
        "sub": "whisky",
+       "shell": "whisky",
        "label": "img/labels/suntory-world-whisky-ao.webp"
       },
       {
@@ -2356,6 +2705,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       }
      ]
@@ -2386,6 +2736,7 @@
       {
        "id": "santa-helena-varietal-cabernet-sauvignon-2025",
        "name": "Santa Helena Varietal Cabernet Sauvignon 2025",
+       "shell": "wine-red",
        "label": "img/labels/santa-helena-varietal-cabernet-sauvignon-2025.webp"
       }
      ]
@@ -2402,6 +2753,7 @@
       {
        "id": "casa-silva-merlot-2025",
        "name": "Casa Silva Merlot 2025",
+       "shell": "wine-red",
        "label": "img/labels/casa-silva-merlot-2025.webp"
       }
      ]
@@ -2418,6 +2770,7 @@
       {
        "id": "pierre-jean-colombard-chardonnay-2025",
        "name": "Pierre Jean Colombard Chardonnay 2025",
+       "shell": "wine-white",
        "label": "img/labels/pierre-jean-colombard-chardonnay-2025.webp"
       }
      ]
@@ -2430,6 +2783,7 @@
       "name": "Santa Helena Varietal Cabernet Sauvignon 2025",
       "category": "wine",
       "sub": "cabernet-sauvignon",
+      "shell": "wine-red",
       "label": "img/labels/santa-helena-varietal-cabernet-sauvignon-2025.webp"
      },
      {
@@ -2437,6 +2791,7 @@
       "name": "Pierre Jean Colombard Chardonnay 2025",
       "category": "wine",
       "sub": "blend",
+      "shell": "wine-white",
       "label": "img/labels/pierre-jean-colombard-chardonnay-2025.webp"
      },
      {
@@ -2444,6 +2799,7 @@
       "name": "Casa Silva Merlot 2025",
       "category": "wine",
       "sub": "merlot",
+      "shell": "wine-red",
       "label": "img/labels/casa-silva-merlot-2025.webp"
      },
      {
@@ -2451,6 +2807,7 @@
       "name": "Gakki Masamune Junjo",
       "category": "sake",
       "sub": "junmai",
+      "shell": "sake-black",
       "label": "img/labels/gakki-masamune-junjo.webp"
      },
      {
@@ -2458,6 +2815,7 @@
       "name": "Eikun Murasaki no Eikun Junmai Ginjo",
       "category": "sake",
       "sub": "junmai-ginjo",
+      "shell": "sake-brown",
       "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
      }
     ],
@@ -2469,6 +2827,7 @@
        "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-green",
        "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
       },
       {
@@ -2476,6 +2835,7 @@
        "name": "Odayaka Junmai Ginjo Usunigori Nama",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
       },
       {
@@ -2483,6 +2843,7 @@
        "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-clear",
        "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
       },
       {
@@ -2490,6 +2851,7 @@
        "name": "Suntory Kakubin Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-highball",
        "label": "img/labels/suntory-kakubin-highball.webp"
       },
       {
@@ -2497,6 +2859,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       }
      ],
@@ -2506,6 +2869,7 @@
        "name": "Santa Helena Varietal Cabernet Sauvignon 2025",
        "category": "wine",
        "sub": "cabernet-sauvignon",
+       "shell": "wine-red",
        "label": "img/labels/santa-helena-varietal-cabernet-sauvignon-2025.webp"
       },
       {
@@ -2513,6 +2877,7 @@
        "name": "Pierre Jean Colombard Chardonnay 2025",
        "category": "wine",
        "sub": "blend",
+       "shell": "wine-white",
        "label": "img/labels/pierre-jean-colombard-chardonnay-2025.webp"
       },
       {
@@ -2520,6 +2885,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       },
       {
@@ -2527,6 +2893,7 @@
        "name": "Kavalan Dry Single Malt Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-dry-single-malt-highball.webp"
       },
       {
@@ -2534,6 +2901,7 @@
        "name": "Odayaka Sparkling",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-sparkling",
        "label": "img/labels/odayaka-sparkling.webp"
       }
      ],
@@ -2543,6 +2911,7 @@
        "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-brown",
        "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
       },
       {
@@ -2550,6 +2919,7 @@
        "name": "Swanlake Amber Swan Ale",
        "category": "fermented",
        "sub": "pale-ale",
+       "shell": "beer-pint",
        "label": null
       },
       {
@@ -2557,6 +2927,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -2564,6 +2935,7 @@
        "name": "Akishika Moto Plus One Junmai Muroka Nama",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
       },
       {
@@ -2571,6 +2943,7 @@
        "name": "Under 15M",
        "category": "fermented",
        "sub": "pale-ale",
+       "shell": "beer-bottle",
        "label": "img/labels/under-15m.webp"
       }
      ],
@@ -2580,6 +2953,7 @@
        "name": "Izumibashi Shiboritate",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-black",
        "label": "img/labels/izumibashi-shiboritate.webp"
       },
       {
@@ -2587,6 +2961,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -2594,6 +2969,7 @@
        "name": "Yamashiroya Fuga Junmai Daiginjo",
        "category": "sake",
        "sub": "junmai-daiginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
       },
       {
@@ -2601,6 +2977,7 @@
        "name": "Suntory World Whisky Ao",
        "category": "spirits",
        "sub": "whisky",
+       "shell": "whisky",
        "label": "img/labels/suntory-world-whisky-ao.webp"
       },
       {
@@ -2608,6 +2985,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       }
      ]
@@ -2641,21 +3019,25 @@
       {
        "id": "woodford-reserve-distillers-select",
        "name": "Woodford Reserve Distiller's Select",
+       "shell": "whisky-round",
        "label": "img/labels/woodford-reserve-distillers-select.webp"
       },
       {
        "id": "suntory-world-whisky-ao",
        "name": "Suntory World Whisky Ao",
+       "shell": "whisky",
        "label": "img/labels/suntory-world-whisky-ao.webp"
       },
       {
        "id": "kavalan-distillery-reserve-peated-single-cask-strength",
        "name": "Kavalan Distillery Reserve Peated Single Cask Strength",
+       "shell": "whisky",
        "label": "img/labels/kavalan-distillery-reserve-peated-single-cask-strength.webp"
       },
       {
        "id": "ardbeg-smoketrails-cote-rotie-edition",
        "name": "Ardbeg Smoketrails Côte Rôtie Edition",
+       "shell": "whisky",
        "label": "img/labels/ardbeg-smoketrails-cote-rotie-edition.webp"
       }
      ]
@@ -2672,6 +3054,7 @@
       {
        "id": "the-botanist-islay-dry-gin",
        "name": "The Botanist Islay Dry Gin",
+       "shell": "gin",
        "label": "img/labels/the-botanist-islay-dry-gin.webp"
       }
      ]
@@ -2688,6 +3071,7 @@
       {
        "id": "chusa-40",
        "name": "Chusa 40",
+       "shell": "brandy",
        "label": "img/labels/chusa-40.webp"
       }
      ]
@@ -2704,6 +3088,7 @@
       {
        "id": "kujira-no-kuromugi",
        "name": "Kujira no Kuromugi",
+       "shell": "shochu",
        "label": "img/labels/kujira-no-kuromugi.webp"
       }
      ]
@@ -2720,6 +3105,7 @@
       {
        "id": "hwanggeumbori-jeungryuju-17",
        "name": "Hwanggeumbori Jeungryuju 17",
+       "shell": "soju",
        "label": "img/labels/hwanggeumbori-jeungryuju-17.webp"
       }
      ]
@@ -2732,6 +3118,7 @@
       "name": "Woodford Reserve Distiller's Select",
       "category": "spirits",
       "sub": "whisky",
+      "shell": "whisky-round",
       "label": "img/labels/woodford-reserve-distillers-select.webp"
      },
      {
@@ -2739,6 +3126,7 @@
       "name": "The Botanist Islay Dry Gin",
       "category": "spirits",
       "sub": "gin",
+      "shell": "gin",
       "label": "img/labels/the-botanist-islay-dry-gin.webp"
      },
      {
@@ -2746,6 +3134,7 @@
       "name": "Suntory World Whisky Ao",
       "category": "spirits",
       "sub": "whisky",
+      "shell": "whisky",
       "label": "img/labels/suntory-world-whisky-ao.webp"
      },
      {
@@ -2753,6 +3142,7 @@
       "name": "Kujira no Kuromugi",
       "category": "spirits",
       "sub": "shochu",
+      "shell": "shochu",
       "label": "img/labels/kujira-no-kuromugi.webp"
      },
      {
@@ -2760,6 +3150,7 @@
       "name": "Kavalan Distillery Reserve Peated Single Cask Strength",
       "category": "spirits",
       "sub": "whisky",
+      "shell": "whisky",
       "label": "img/labels/kavalan-distillery-reserve-peated-single-cask-strength.webp"
      }
     ],
@@ -2771,6 +3162,7 @@
        "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-green",
        "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
       },
       {
@@ -2778,6 +3170,7 @@
        "name": "Odayaka Junmai Ginjo Usunigori Nama",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
       },
       {
@@ -2785,6 +3178,7 @@
        "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-clear",
        "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
       },
       {
@@ -2792,6 +3186,7 @@
        "name": "Suntory Kakubin Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-highball",
        "label": "img/labels/suntory-kakubin-highball.webp"
       },
       {
@@ -2799,6 +3194,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       }
      ],
@@ -2808,6 +3204,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       },
       {
@@ -2815,6 +3212,7 @@
        "name": "Kavalan Dry Single Malt Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-dry-single-malt-highball.webp"
       },
       {
@@ -2822,6 +3220,7 @@
        "name": "Odayaka Sparkling",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-sparkling",
        "label": "img/labels/odayaka-sparkling.webp"
       },
       {
@@ -2829,6 +3228,7 @@
        "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": null
       },
       {
@@ -2836,6 +3236,7 @@
        "name": "Suntory Kakubin Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-highball",
        "label": "img/labels/suntory-kakubin-highball.webp"
       }
      ],
@@ -2845,6 +3246,7 @@
        "name": "Chusa 40",
        "category": "spirits",
        "sub": "brandy",
+       "shell": "brandy",
        "label": "img/labels/chusa-40.webp"
       },
       {
@@ -2852,6 +3254,7 @@
        "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-brown",
        "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
       },
       {
@@ -2859,6 +3262,7 @@
        "name": "Swanlake Amber Swan Ale",
        "category": "fermented",
        "sub": "pale-ale",
+       "shell": "beer-pint",
        "label": null
       },
       {
@@ -2866,6 +3270,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -2873,6 +3278,7 @@
        "name": "Akishika Moto Plus One Junmai Muroka Nama",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
       }
      ],
@@ -2882,6 +3288,7 @@
        "name": "Suntory World Whisky Ao",
        "category": "spirits",
        "sub": "whisky",
+       "shell": "whisky",
        "label": "img/labels/suntory-world-whisky-ao.webp"
       },
       {
@@ -2889,6 +3296,7 @@
        "name": "Izumibashi Shiboritate",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-black",
        "label": "img/labels/izumibashi-shiboritate.webp"
       },
       {
@@ -2896,6 +3304,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -2903,6 +3312,7 @@
        "name": "Yamashiroya Fuga Junmai Daiginjo",
        "category": "sake",
        "sub": "junmai-daiginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
       },
       {
@@ -2910,6 +3320,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       }
      ]
@@ -2942,16 +3353,19 @@
       {
        "id": "suntory-kakubin-highball",
        "name": "Suntory Kakubin Highball",
+       "shell": "cocktail-highball",
        "label": "img/labels/suntory-kakubin-highball.webp"
       },
       {
        "id": "kavalan-highball-whisky-soda",
        "name": "Kavalan Highball Whisky Soda",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       },
       {
        "id": "kavalan-dry-single-malt-highball",
        "name": "Kavalan Dry Single Malt Highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-dry-single-malt-highball.webp"
       }
      ]
@@ -2964,6 +3378,7 @@
       "name": "Suntory Kakubin Highball",
       "category": "cocktails",
       "sub": "highball",
+      "shell": "cocktail-highball",
       "label": "img/labels/suntory-kakubin-highball.webp"
      },
      {
@@ -2971,6 +3386,7 @@
       "name": "Kavalan Highball Whisky Soda",
       "category": "cocktails",
       "sub": "highball",
+      "shell": "cocktail-can",
       "label": "img/labels/kavalan-highball-whisky-soda.webp"
      },
      {
@@ -2978,6 +3394,7 @@
       "name": "Kavalan Dry Single Malt Highball",
       "category": "cocktails",
       "sub": "highball",
+      "shell": "cocktail-can",
       "label": "img/labels/kavalan-dry-single-malt-highball.webp"
      },
      {
@@ -2985,6 +3402,7 @@
       "name": "Gakki Masamune Junjo",
       "category": "sake",
       "sub": "junmai",
+      "shell": "sake-black",
       "label": "img/labels/gakki-masamune-junjo.webp"
      },
      {
@@ -2992,6 +3410,7 @@
       "name": "Eikun Murasaki no Eikun Junmai Ginjo",
       "category": "sake",
       "sub": "junmai-ginjo",
+      "shell": "sake-brown",
       "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
      }
     ],
@@ -3003,6 +3422,7 @@
        "name": "Suntory Kakubin Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-highball",
        "label": "img/labels/suntory-kakubin-highball.webp"
       },
       {
@@ -3010,6 +3430,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       },
       {
@@ -3017,6 +3438,7 @@
        "name": "Kavalan Dry Single Malt Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-dry-single-malt-highball.webp"
       },
       {
@@ -3024,6 +3446,7 @@
        "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-green",
        "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
       },
       {
@@ -3031,6 +3454,7 @@
        "name": "Odayaka Junmai Ginjo Usunigori Nama",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
       }
      ],
@@ -3040,6 +3464,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       },
       {
@@ -3047,6 +3472,7 @@
        "name": "Kavalan Dry Single Malt Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-dry-single-malt-highball.webp"
       },
       {
@@ -3054,6 +3480,7 @@
        "name": "Suntory Kakubin Highball",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-highball",
        "label": "img/labels/suntory-kakubin-highball.webp"
       },
       {
@@ -3061,6 +3488,7 @@
        "name": "Odayaka Sparkling",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-sparkling",
        "label": "img/labels/odayaka-sparkling.webp"
       },
       {
@@ -3068,6 +3496,7 @@
        "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": null
       }
      ],
@@ -3077,6 +3506,7 @@
        "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-brown",
        "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
       },
       {
@@ -3084,6 +3514,7 @@
        "name": "Swanlake Amber Swan Ale",
        "category": "fermented",
        "sub": "pale-ale",
+       "shell": "beer-pint",
        "label": null
       },
       {
@@ -3091,6 +3522,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -3098,6 +3530,7 @@
        "name": "Akishika Moto Plus One Junmai Muroka Nama",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-green",
        "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
       },
       {
@@ -3105,6 +3538,7 @@
        "name": "Under 15M",
        "category": "fermented",
        "sub": "pale-ale",
+       "shell": "beer-bottle",
        "label": "img/labels/under-15m.webp"
       }
      ],
@@ -3114,6 +3548,7 @@
        "name": "Kavalan Highball Whisky Soda",
        "category": "cocktails",
        "sub": "highball",
+       "shell": "cocktail-can",
        "label": "img/labels/kavalan-highball-whisky-soda.webp"
       },
       {
@@ -3121,6 +3556,7 @@
        "name": "Izumibashi Shiboritate",
        "category": "sake",
        "sub": "junmai-ginjo",
+       "shell": "sake-black",
        "label": "img/labels/izumibashi-shiboritate.webp"
       },
       {
@@ -3128,6 +3564,7 @@
        "name": "Noguchi Naohiko Sake Institute",
        "category": "sake",
        "sub": "junmai",
+       "shell": "sake-frosted",
        "label": "img/labels/noguchi-naohiko-sake-institute.webp"
       },
       {
@@ -3135,6 +3572,7 @@
        "name": "Yamashiroya Fuga Junmai Daiginjo",
        "category": "sake",
        "sub": "junmai-daiginjo",
+       "shell": "sake-frosted",
        "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
       },
       {
@@ -3142,6 +3580,7 @@
        "name": "Suntory World Whisky Ao",
        "category": "spirits",
        "sub": "whisky",
+       "shell": "whisky",
        "label": "img/labels/suntory-world-whisky-ao.webp"
       }
      ]
@@ -3162,6 +3601,7 @@
     "name": "Gakki Masamune Junjo",
     "category": "sake",
     "sub": "junmai",
+    "shell": "sake-black",
     "label": "img/labels/gakki-masamune-junjo.webp"
    },
    {
@@ -3169,6 +3609,7 @@
     "name": "Eikun Murasaki no Eikun Junmai Ginjo",
     "category": "sake",
     "sub": "junmai-ginjo",
+    "shell": "sake-brown",
     "label": "img/labels/eikun-murasaki-no-eikun-junmai-ginjo.webp"
    },
    {
@@ -3176,6 +3617,7 @@
     "name": "Gasanryu Gokugetsu Junmai Daiginjo",
     "category": "sake",
     "sub": "junmai-daiginjo",
+    "shell": "sake-black",
     "label": "img/labels/gasanryu-gokugetsu-junmai-daiginjo.webp"
    },
    {
@@ -3183,6 +3625,7 @@
     "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
     "category": "sake",
     "sub": "junmai-ginjo",
+    "shell": "sake-black",
     "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
    },
    {
@@ -3190,6 +3633,7 @@
     "name": "Kenkonichi Tokubetsu Junmai Sasanishiki",
     "category": "sake",
     "sub": "tokubetsu-junmai",
+    "shell": "sake-black",
     "label": "img/labels/kenkonichi-tokubetsu-junmai-sasanishiki.webp"
    },
    {
@@ -3197,6 +3641,7 @@
     "name": "Kenkonichi Ryu Ryu Shinka Junmai Daiginjo",
     "category": "sake",
     "sub": "junmai-daiginjo",
+    "shell": "sake-green",
     "label": "img/labels/kenkonichi-ryu-ryu-shinka-junmai-daiginjo.webp"
    },
    {
@@ -3204,6 +3649,7 @@
     "name": "Kid Natsu no Hayate Junmai Ginjo",
     "category": "sake",
     "sub": "junmai-ginjo",
+    "shell": "sake-frosted",
     "label": "img/labels/kid-natsu-no-hayate-junmai-ginjo.webp"
    },
    {
@@ -3211,6 +3657,7 @@
     "name": "Suntory Kakubin Highball",
     "category": "cocktails",
     "sub": "highball",
+    "shell": "cocktail-highball",
     "label": "img/labels/suntory-kakubin-highball.webp"
    },
    {
@@ -3218,6 +3665,7 @@
     "name": "Yama no Kami-san Ohara Red Shiso",
     "category": "sake",
     "sub": "craft-sake",
+    "shell": "sake-frosted",
     "label": "img/labels/yama-no-kami-san-ohara-red-shiso.webp"
    },
    {
@@ -3225,6 +3673,7 @@
     "name": "Isshou Seishun Junmai Shinshu Origarami Honnama",
     "category": "sake",
     "sub": "junmai",
+    "shell": "sake-frosted",
     "label": "img/labels/isshou-seishun-shinshu-origarami-honnama.webp"
    },
    {
@@ -3232,6 +3681,7 @@
     "name": "Koueigiku Gekka Burai",
     "category": "sake",
     "sub": "futsushu",
+    "shell": "sake-brown",
     "label": "img/labels/koueigiku-gekka-burai.webp"
    },
    {
@@ -3239,6 +3689,7 @@
     "name": "Azumatsuru Minori Kimoto Junmai",
     "category": "sake",
     "sub": "junmai",
+    "shell": "sake-black",
     "label": "img/labels/azumatsuru-minori-kimoto-junmai.webp"
    },
    {
@@ -3246,6 +3697,7 @@
     "name": "Koshinohomare Qn Matsuri Junmai Muroka Genshu",
     "category": "sake",
     "sub": "junmai",
+    "shell": "sake-black",
     "label": "img/labels/koshinohomare-qn-matsuri.webp"
    },
    {
@@ -3253,6 +3705,7 @@
     "name": "Haccoba Zairai Sea",
     "category": "sake",
     "sub": "craft-sake",
+    "shell": "sake-sparkling",
     "label": "img/labels/haccoba-zairai-sea.webp"
    },
    {
@@ -3260,6 +3713,7 @@
     "name": "Kronenbourg 1664 Blanc",
     "category": "fermented",
     "sub": "wheat",
+    "shell": "beer-bottle",
     "label": "img/labels/kronenbourg-1664-blanc.webp"
    },
    {
@@ -3267,6 +3721,7 @@
     "name": "Carlsberg Smooth Draught",
     "category": "fermented",
     "sub": "lager",
+    "shell": "beer-bottle",
     "label": "img/labels/carlsberg-smooth-draught.webp"
    },
    {
@@ -3274,6 +3729,7 @@
     "name": "Isekado Mr. DANK",
     "category": "fermented",
     "sub": "ipa",
+    "shell": "beer-tulip",
     "label": null
    },
    {
@@ -3281,6 +3737,7 @@
     "name": "Swanlake Amber Swan Ale",
     "category": "fermented",
     "sub": "pale-ale",
+    "shell": "beer-pint",
     "label": null
    },
    {
@@ -3288,6 +3745,7 @@
     "name": "Nasu Kohgen Ai",
     "category": "fermented",
     "sub": "lager",
+    "shell": "beer-pint",
     "label": null
    },
    {
@@ -3295,6 +3753,7 @@
     "name": "Minoh Hoppy Weizen",
     "category": "fermented",
     "sub": "wheat",
+    "shell": "beer-weizen",
     "label": null
    },
    {
@@ -3302,6 +3761,7 @@
     "name": "Nara Eighty Eight",
     "category": "fermented",
     "sub": "saison",
+    "shell": "beer-tulip",
     "label": null
    },
    {
@@ -3309,6 +3769,7 @@
     "name": "Underwater Luminous Sake Yeast Beer",
     "category": "fermented",
     "sub": "specialty",
+    "shell": "beer-can",
     "label": "img/labels/underwater-luminous-sake-yeast-beer.webp"
    },
    {
@@ -3316,6 +3777,7 @@
     "name": "Hagi no Tsuru Betsu-shikomi",
     "category": "sake",
     "sub": "ungraded",
+    "shell": "sake-green",
     "label": "img/labels/hagi-no-tsuru-betsu-shikomi.webp"
    },
    {
@@ -3323,6 +3785,7 @@
     "name": "Oze no Yukidoke Junmai Daiginjo Halloween",
     "category": "sake",
     "sub": "junmai-daiginjo",
+    "shell": "sake-green",
     "label": "img/labels/oze-no-yukidoke-junmai-daiginjo-halloween.webp"
    }
   ],
@@ -3333,6 +3796,7 @@
      "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-green",
      "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
     },
     {
@@ -3340,6 +3804,7 @@
      "name": "Odayaka Junmai Ginjo Usunigori Nama",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-frosted",
      "label": "img/labels/odayaka-junmai-ginjo-usunigori-nama.webp"
     },
     {
@@ -3347,6 +3812,7 @@
      "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-clear",
      "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
     },
     {
@@ -3354,6 +3820,7 @@
      "name": "Suntory Kakubin Highball",
      "category": "cocktails",
      "sub": "highball",
+     "shell": "cocktail-highball",
      "label": "img/labels/suntory-kakubin-highball.webp"
     },
     {
@@ -3361,6 +3828,7 @@
      "name": "Kavalan Highball Whisky Soda",
      "category": "cocktails",
      "sub": "highball",
+     "shell": "cocktail-can",
      "label": "img/labels/kavalan-highball-whisky-soda.webp"
     },
     {
@@ -3368,6 +3836,7 @@
      "name": "Hitakami Junmai Ginjo Usunigori Nama Aquarium in Winter",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-clear",
      "label": "img/labels/hitakami-aquarium-in-winter.webp"
     },
     {
@@ -3375,6 +3844,7 @@
      "name": "Odayaka Sparkling",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-sparkling",
      "label": "img/labels/odayaka-sparkling.webp"
     },
     {
@@ -3382,6 +3852,7 @@
      "name": "Izumibashi Natsu Yago Sparkling",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3389,6 +3860,7 @@
      "name": "Fermenteria Sparkling",
      "category": "sake",
      "sub": "craft-sake",
+     "shell": "sake-frosted",
      "label": "img/labels/fermenteria-sparkling.webp"
     },
     {
@@ -3396,6 +3868,7 @@
      "name": "Kavalan Dry Single Malt Highball",
      "category": "cocktails",
      "sub": "highball",
+     "shell": "cocktail-can",
      "label": "img/labels/kavalan-dry-single-malt-highball.webp"
     },
     {
@@ -3403,6 +3876,7 @@
      "name": "Moonlight Yuja",
      "category": "fermented",
      "sub": "makgeolli",
+     "shell": "makgeolli",
      "label": "img/labels/moonlight-yuja.webp"
     },
     {
@@ -3410,6 +3884,7 @@
      "name": "Taka's Sparkling",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-clear",
      "label": "img/labels/taka-sparkling.webp"
     },
     {
@@ -3417,6 +3892,7 @@
      "name": "Yamashiroya Fuga Junmai Daiginjo",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-frosted",
      "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
     },
     {
@@ -3424,6 +3900,7 @@
      "name": "Taiheikai Sparkling",
      "category": "sake",
      "sub": "ungraded",
+     "shell": "sake-green",
      "label": "img/labels/taiheikai-sparkling.webp"
     },
     {
@@ -3431,6 +3908,7 @@
      "name": "Nabeshima Blossoms Moon",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-black",
      "label": "img/labels/nabeshima-blossoms-moon.webp"
     },
     {
@@ -3438,6 +3916,7 @@
      "name": "Mizubasho Junmai Ginjo Sparkling Dry",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-skyblue",
      "label": "img/labels/mizubasho-junmai-ginjo-sparkling-dry.webp"
     },
     {
@@ -3445,6 +3924,7 @@
      "name": "Mizubasho Artist Series Floral Sparkling 2023",
      "category": "sake",
      "sub": "ungraded",
+     "shell": "sake-sparkling",
      "label": "img/labels/mizubasho-artist-series-floral-sparkling-2023.webp"
     },
     {
@@ -3452,6 +3932,7 @@
      "name": "Kyo-no-Haru Houryou Karakuchi Junmai",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-frosted",
      "label": "img/labels/kyo-no-haru-houryou-karakuchi-junmai.webp"
     },
     {
@@ -3459,6 +3940,7 @@
      "name": "Koganesawa HITOMEBORE Brut",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-frosted",
      "label": "img/labels/koganesawa-hitomebore-brut.webp"
     },
     {
@@ -3466,6 +3948,7 @@
      "name": "Kagura Roka Sparkling Junmai Ginjo",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-black",
      "label": "img/labels/kagura-sparkling.webp"
     },
     {
@@ -3473,6 +3956,7 @@
      "name": "Hanami Roman Junmai Ginjo",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-brown",
      "label": "img/labels/hanami-roman.webp"
     },
     {
@@ -3480,6 +3964,7 @@
      "name": "Haccoba Secret Spring",
      "category": "sake",
      "sub": "craft-sake",
+     "shell": "sake-green",
      "label": "img/labels/haccoba-secret-spring.webp"
     },
     {
@@ -3487,6 +3972,7 @@
      "name": "Chikusen \"Bamboo Spring\"",
      "category": "sake",
      "sub": "ungraded",
+     "shell": "sake-green",
      "label": "img/labels/takezumi-bamboo-spring.webp"
     },
     {
@@ -3494,6 +3980,7 @@
      "name": "TSUKI NO KATSURA Junmai Daiginjo Nigori",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-green",
      "label": null
     }
    ],
@@ -3503,6 +3990,7 @@
      "name": "Kavalan Highball Whisky Soda",
      "category": "cocktails",
      "sub": "highball",
+     "shell": "cocktail-can",
      "label": "img/labels/kavalan-highball-whisky-soda.webp"
     },
     {
@@ -3510,6 +3998,7 @@
      "name": "Kavalan Dry Single Malt Highball",
      "category": "cocktails",
      "sub": "highball",
+     "shell": "cocktail-can",
      "label": "img/labels/kavalan-dry-single-malt-highball.webp"
     },
     {
@@ -3517,6 +4006,7 @@
      "name": "Odayaka Sparkling",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-sparkling",
      "label": "img/labels/odayaka-sparkling.webp"
     },
     {
@@ -3524,6 +4014,7 @@
      "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3531,6 +4022,7 @@
      "name": "Suntory Kakubin Highball",
      "category": "cocktails",
      "sub": "highball",
+     "shell": "cocktail-highball",
      "label": "img/labels/suntory-kakubin-highball.webp"
     },
     {
@@ -3538,6 +4030,7 @@
      "name": "Kronenbourg 1664 Blanc",
      "category": "fermented",
      "sub": "wheat",
+     "shell": "beer-bottle",
      "label": "img/labels/kronenbourg-1664-blanc.webp"
     },
     {
@@ -3545,6 +4038,7 @@
      "name": "Carlsberg Smooth Draught",
      "category": "fermented",
      "sub": "lager",
+     "shell": "beer-bottle",
      "label": "img/labels/carlsberg-smooth-draught.webp"
     },
     {
@@ -3552,6 +4046,7 @@
      "name": "Fermenteria Sparkling",
      "category": "sake",
      "sub": "craft-sake",
+     "shell": "sake-frosted",
      "label": "img/labels/fermenteria-sparkling.webp"
     },
     {
@@ -3559,6 +4054,7 @@
      "name": "Moonlight Yuja",
      "category": "fermented",
      "sub": "makgeolli",
+     "shell": "makgeolli",
      "label": "img/labels/moonlight-yuja.webp"
     },
     {
@@ -3566,6 +4062,7 @@
      "name": "Taiheikai Sparkling",
      "category": "sake",
      "sub": "ungraded",
+     "shell": "sake-green",
      "label": "img/labels/taiheikai-sparkling.webp"
     },
     {
@@ -3573,6 +4070,7 @@
      "name": "Mizubasho Artist Series Floral Sparkling 2023",
      "category": "sake",
      "sub": "ungraded",
+     "shell": "sake-sparkling",
      "label": "img/labels/mizubasho-artist-series-floral-sparkling-2023.webp"
     },
     {
@@ -3580,6 +4078,7 @@
      "name": "Kissui Hidariuma Junmai Kasseinigori Uma Uma",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-clear",
      "label": "img/labels/kissui-hidariuma-junmai-kasseinigori-uma-uma.webp"
     },
     {
@@ -3587,6 +4086,7 @@
      "name": "Kagura Roka Sparkling Junmai Ginjo",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-black",
      "label": "img/labels/kagura-sparkling.webp"
     },
     {
@@ -3594,6 +4094,7 @@
      "name": "Nasu Kohgen Ai",
      "category": "fermented",
      "sub": "lager",
+     "shell": "beer-pint",
      "label": null
     },
     {
@@ -3601,6 +4102,7 @@
      "name": "Minoh Hoppy Weizen",
      "category": "fermented",
      "sub": "wheat",
+     "shell": "beer-weizen",
      "label": null
     },
     {
@@ -3608,6 +4110,7 @@
      "name": "Izumibashi Natsu Yago Sparkling",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3615,6 +4118,7 @@
      "name": "HINEMOS Shichiji",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3622,6 +4126,7 @@
      "name": "Hakutsuru Awayuki Sparkling",
      "category": "sake",
      "sub": "ungraded",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3629,6 +4134,7 @@
      "name": "Fukucho \"Seafood\" Sparkling",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-clear",
      "label": null
     },
     {
@@ -3636,6 +4142,7 @@
      "name": "Ichigoya Hana Strawberry Doburoku",
      "category": "sake",
      "sub": "craft-sake",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3643,6 +4150,7 @@
      "name": "Gakki Masamune Junjo",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-black",
      "label": "img/labels/gakki-masamune-junjo.webp"
     },
     {
@@ -3650,6 +4158,7 @@
      "name": "Kid Natsu no Hayate Junmai Ginjo",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-frosted",
      "label": "img/labels/kid-natsu-no-hayate-junmai-ginjo.webp"
     },
     {
@@ -3657,6 +4166,7 @@
      "name": "Yama no Kami-san Ohara Red Shiso",
      "category": "sake",
      "sub": "craft-sake",
+     "shell": "sake-frosted",
      "label": "img/labels/yama-no-kami-san-ohara-red-shiso.webp"
     },
     {
@@ -3664,6 +4174,7 @@
      "name": "Koshinohomare Qn Matsuri Junmai Muroka Genshu",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-black",
      "label": "img/labels/koshinohomare-qn-matsuri.webp"
     }
    ],
@@ -3673,6 +4184,7 @@
      "name": "Izumibashi “Aki Tombo” (Red Dragonfly) Omachi Kimoto Junmai",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-brown",
      "label": "img/labels/izumibashi-aki-tombo-omachi-kimoto-junmai.webp"
     },
     {
@@ -3680,6 +4192,7 @@
      "name": "Swanlake Amber Swan Ale",
      "category": "fermented",
      "sub": "pale-ale",
+     "shell": "beer-pint",
      "label": null
     },
     {
@@ -3687,6 +4200,7 @@
      "name": "Noguchi Naohiko Sake Institute",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-frosted",
      "label": "img/labels/noguchi-naohiko-sake-institute.webp"
     },
     {
@@ -3694,6 +4208,7 @@
      "name": "Akishika Moto Plus One Junmai Muroka Nama",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-green",
      "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
     },
     {
@@ -3701,6 +4216,7 @@
      "name": "Under 15M",
      "category": "fermented",
      "sub": "pale-ale",
+     "shell": "beer-bottle",
      "label": "img/labels/under-15m.webp"
     },
     {
@@ -3708,6 +4224,7 @@
      "name": "Aiyama 'Galaxy' Kimoto Junmai Ginjo Origarami Nama",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3715,6 +4232,7 @@
      "name": "Wakanoi Hanamaru Junmai Ginjo Yukimuro",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-black",
      "label": "img/labels/wakanoi-hanamaru-junmai-ginjo-yukimuro.webp"
     },
     {
@@ -3722,6 +4240,7 @@
      "name": "Azumatsuru Minori Kimoto Junmai",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-black",
      "label": "img/labels/azumatsuru-minori-kimoto-junmai.webp"
     },
     {
@@ -3729,6 +4248,7 @@
      "name": "Oze no Yukidoke Junmai Daiginjo Halloween",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-green",
      "label": "img/labels/oze-no-yukidoke-junmai-daiginjo-halloween.webp"
     },
     {
@@ -3736,6 +4256,7 @@
      "name": "Jinya Junmai Akiagari",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-brown",
      "label": "img/labels/jinya-junmai-akiagari.webp"
     },
     {
@@ -3743,6 +4264,7 @@
      "name": "Chusa 40",
      "category": "spirits",
      "sub": "brandy",
+     "shell": "brandy",
      "label": "img/labels/chusa-40.webp"
     },
     {
@@ -3750,6 +4272,7 @@
      "name": "Yamashiroya Fuga Junmai Daiginjo",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-frosted",
      "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
     },
     {
@@ -3757,6 +4280,7 @@
      "name": "Yamamoto Sunshine Yellow Yamahai Junmai Ginjo",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-green",
      "label": "img/labels/yamamoto-sunshine-yellow-yamahai-junmai-ginjo.webp"
     },
     {
@@ -3764,6 +4288,7 @@
      "name": "WAKAZE Unique",
      "category": "sake",
      "sub": "craft-sake",
+     "shell": "sake-black",
      "label": "img/labels/wakaze-unique.webp"
     },
     {
@@ -3771,6 +4296,7 @@
      "name": "Sawahime Yamahai Junmai Shin Jizake Sengen",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-brown",
      "label": "img/labels/sawahime-yamahai-junmai-shin-jizake-sengen.webp"
     },
     {
@@ -3778,6 +4304,7 @@
      "name": "Ookura Hinohikari Yamahai Junmai Jukadumi Seiryuu-Nama-Genshu",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-brown",
      "label": "img/labels/ookura-hinohikari-yamahai-junmai-jikagumi.webp"
     },
     {
@@ -3785,6 +4312,7 @@
      "name": "Odayaka Kimoto Junmai Daiginjo",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-black",
      "label": "img/labels/odayaka-kimoto-junmai-daiginjo.webp"
     },
     {
@@ -3792,6 +4320,7 @@
      "name": "Odayaka Junmai Daiginjo 30th Anniversary Sake",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-clear",
      "label": "img/labels/odayaka-30th.webp"
     },
     {
@@ -3799,6 +4328,7 @@
      "name": "Niida Shizenshu Melon 3.33 Kimoto Junmai Ginjo Muroka Nama Genshu",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-black",
      "label": "img/labels/niida-shizenshu-melon-333.webp"
     },
     {
@@ -3806,6 +4336,7 @@
      "name": "Miyoshino Jozo - Hanatomoe Jundaidai Junmai Daiginjo",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-green",
      "label": "img/labels/miyoshino-jozo-hanatomoe-jundaidai-junmai-daig.webp"
     },
     {
@@ -3813,6 +4344,7 @@
      "name": "Kujira Junmai Yamadanishiki Kimoto Nama Genshu 80",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-green",
      "label": "img/labels/kujira-junmai-yamadanishiki-kimoto-nama-genshu-80.webp"
     },
     {
@@ -3820,6 +4352,7 @@
      "name": "Koikuma Bear No. 24 and Bear No. 25 Kimoto Junmai Muroka Nama Genshu",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-brown",
      "label": "img/labels/koikuma-bear-no-24-and-bear-no-25-kimoto-junma.webp"
     },
     {
@@ -3827,6 +4360,7 @@
      "name": "Kaoruyama Junmai",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-clear",
      "label": "img/labels/kaoruyama.webp"
     },
     {
@@ -3834,6 +4368,7 @@
      "name": "Junsei Hyogo Yumenishiki Kimoto Junmai Daiginjo",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-black",
      "label": "img/labels/junsei-jd.webp"
     }
    ],
@@ -3843,6 +4378,7 @@
      "name": "Izumibashi Shiboritate",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-black",
      "label": "img/labels/izumibashi-shiboritate.webp"
     },
     {
@@ -3850,6 +4386,7 @@
      "name": "Noguchi Naohiko Sake Institute",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-frosted",
      "label": "img/labels/noguchi-naohiko-sake-institute.webp"
     },
     {
@@ -3857,6 +4394,7 @@
      "name": "Yamashiroya Fuga Junmai Daiginjo",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-frosted",
      "label": "img/labels/yamashiroya-fuga-junmai-daiginjo.webp"
     },
     {
@@ -3864,6 +4402,7 @@
      "name": "Suntory World Whisky Ao",
      "category": "spirits",
      "sub": "whisky",
+     "shell": "whisky",
      "label": "img/labels/suntory-world-whisky-ao.webp"
     },
     {
@@ -3871,6 +4410,7 @@
      "name": "Kavalan Highball Whisky Soda",
      "category": "cocktails",
      "sub": "highball",
+     "shell": "cocktail-can",
      "label": "img/labels/kavalan-highball-whisky-soda.webp"
     },
     {
@@ -3878,6 +4418,7 @@
      "name": "Tenon HarunoTsuki Bihappou Junmaiginjou Nigorinamagenshu",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-green",
      "label": "img/labels/tenon-harunotsuki-bihappou-junmaiginjou-nigori.webp"
     },
     {
@@ -3885,6 +4426,7 @@
      "name": "Sawahime Yamahai Junmai Shin Jizake Sengen",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-brown",
      "label": "img/labels/sawahime-yamahai-junmai-shin-jizake-sengen.webp"
     },
     {
@@ -3892,6 +4434,7 @@
      "name": "Ookura Hinohikari Yamahai Junmai Jukadumi Seiryuu-Nama-Genshu",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-brown",
      "label": "img/labels/ookura-hinohikari-yamahai-junmai-jikagumi.webp"
     },
     {
@@ -3899,6 +4442,7 @@
      "name": "Niida Shizenshu Melon 3.33 Kimoto Junmai Ginjo Muroka Nama Genshu",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-black",
      "label": "img/labels/niida-shizenshu-melon-333.webp"
     },
     {
@@ -3906,6 +4450,7 @@
      "name": "Miyoshino Jozo - Hanatomoe Jundaidai Junmai Daiginjo",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-green",
      "label": "img/labels/miyoshino-jozo-hanatomoe-jundaidai-junmai-daig.webp"
     },
     {
@@ -3913,6 +4458,7 @@
      "name": "Kujira Junmai Yamadanishiki Kimoto Nama Genshu 80",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-green",
      "label": "img/labels/kujira-junmai-yamadanishiki-kimoto-nama-genshu-80.webp"
     },
     {
@@ -3920,6 +4466,7 @@
      "name": "Koikuma Bear No. 24 and Bear No. 25 Kimoto Junmai Muroka Nama Genshu",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-brown",
      "label": "img/labels/koikuma-bear-no-24-and-bear-no-25-kimoto-junma.webp"
     },
     {
@@ -3927,6 +4474,7 @@
      "name": "Hitakami Junmai Ginjo Usunigori Nama Aquarium in Winter",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-clear",
      "label": "img/labels/hitakami-aquarium-in-winter.webp"
     },
     {
@@ -3934,6 +4482,7 @@
      "name": "NARUTOTAI Ginjo Shiboritate Nama Genshu",
      "category": "sake",
      "sub": "ginjo",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3941,6 +4490,7 @@
      "name": "Kagura Hae Junmai Daiginjo Muroka Nama Genshu",
      "category": "sake",
      "sub": "junmai-daiginjo",
+     "shell": "sake-skyblue",
      "label": "img/labels/kagura-hae.webp"
     },
     {
@@ -3948,6 +4498,7 @@
      "name": "Endo Daiginjo Nama Genshu",
      "category": "sake",
      "sub": "daiginjo",
+     "shell": "sake-green",
      "label": "img/labels/endo-daiginjo.webp"
     },
     {
@@ -3955,6 +4506,7 @@
      "name": "Akishika Moto Plus One Junmai Muroka Nama",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-green",
      "label": "img/labels/akishika-moto-plus-one-junmai-muroka-nam.webp"
     },
     {
@@ -3962,6 +4514,7 @@
      "name": "Harada Natsu Summer Junmai Muroka Nama Genshu",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3969,6 +4522,7 @@
      "name": "Aiyama 'Galaxy' Kimoto Junmai Ginjo Origarami Nama",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-green",
      "label": null
     },
     {
@@ -3976,6 +4530,7 @@
      "name": "Isshou Seishun Junmai Shinshu Origarami Honnama",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-frosted",
      "label": "img/labels/isshou-seishun-shinshu-origarami-honnama.webp"
     },
     {
@@ -3983,6 +4538,7 @@
      "name": "Azumatsuru Minori Kimoto Junmai",
      "category": "sake",
      "sub": "junmai",
+     "shell": "sake-black",
      "label": "img/labels/azumatsuru-minori-kimoto-junmai.webp"
     },
     {
@@ -3990,6 +4546,7 @@
      "name": "Isibo Wonju",
      "category": "fermented",
      "sub": "makgeolli",
+     "shell": "makgeolli",
      "label": "img/labels/isibo-wonju.webp"
     },
     {
@@ -3997,6 +4554,7 @@
      "name": "Yamawa Junmai Ginjo Muroka Nama Genshu",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-brown",
      "label": "img/labels/yamawa-junmai-ginjo-muroka-nama-genshu.webp"
     },
     {
@@ -4004,6 +4562,7 @@
      "name": "Wataribune Shiboritate Namagin Muroka Junmai Ginjo",
      "category": "sake",
      "sub": "junmai-ginjo",
+     "shell": "sake-brown",
      "label": "img/labels/wataribune-shiboritate-namagin-muroka.webp"
     }
    ]

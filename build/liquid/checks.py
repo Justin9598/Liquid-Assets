@@ -16,7 +16,7 @@ SAFE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
 TASTING_SCALES = "any"
 SCHEMAS = {
     "drinks.json": [{
-        "id": "s", "name": "s", "category": "s?", "sub": "s?", "producer": "s?", "producerKey": "s?",
+        "id": "s", "name": "s", "category": "s?", "sub": "s?", "shell": "s?", "producer": "s?", "producerKey": "s?",
         "origin": "s?", "country": "s?", "abv": "n?", "sizes": ["s"], "occasions": "i", "styles": ["s"],
         "favourite": "b", "rating": "n?", "added": "s?", "facts": ["s"], "hasTasting": "b", "thumb": "s?", "label": "s?"}],
     "drink": {

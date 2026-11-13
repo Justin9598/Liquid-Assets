@@ -51,7 +51,7 @@ export async function mount(root, ctx) {
   const vesselHTML = (c) => {
     const def = DEFAULT_LABEL[c.vessel] || {};
     return `<button type="button" class="vessel" data-cat="${esc(c.key)}" aria-pressed="false">
-  <span class="vessel-art">${art(c.vessel, { native: def.native, name: def.name, motif: def.motif })}</span>
+  <span class="vessel-art">${art(shapeFor(c.key), { native: def.native, name: def.name, motif: def.motif })}</span>
   <span class="vessel-cap chalkboard chalkboard--s"><span class="chalk">${esc(c.name)}</span></span>
 </button>`;
   };
@@ -100,7 +100,7 @@ export async function mount(root, ctx) {
       const owner = new Map(c.subcategories.flatMap((s) => (s.drinks || []).filter((d) => d.label).map((d) => [d.label, d])));   // label -> the drink it belongs to
       const label = randomPick([...owner.keys()], used);
       const def = DEFAULT_LABEL[c.key] || {};
-      out.push({ mix: true, cat: c.key, shape: shapeFor(c.key), label: label && img(label), native: def.native, name: def.name, motif: def.motif, drink: label ? owner.get(label) : null, catName: c.name });
+      out.push({ mix: true, cat: c.key, shape: (label && owner.get(label)?.shell) || shapeFor(c.key), label: label && img(label), native: def.native, name: def.name, motif: def.motif, drink: label ? owner.get(label) : null, catName: c.name });
     }
     return out;
   }
@@ -110,9 +110,10 @@ export async function mount(root, ctx) {
     const used = new Set();
     return c.subcategories.map((s) => {
       const label = randomPick(s.labels, used);
+      const own = label ? (s.drinks || []).find((x) => x.label === label) : null;      // the drink whose label this bottle wears stands in its own shell (Plan 15 section 4.4)
       state.picked = { ...state.picked, [`${c.key}/${s.key}`]: label };   // the shelf page shows the bottle the visitor tapped
       return {
-        sub: true, cat: c.key, subKey: s.key, shape: shapeFor(c.key, s.key), label: label && img(label), native: s.native, name: s.name,
+        sub: true, cat: c.key, subKey: s.key, shape: (own && own.shell) || shapeFor(c.key, s.key), label: label && img(label), native: s.native, name: s.name,
         motif: motifFor(c.key, s.key), count: s.drinkCount,
       };
     });
@@ -120,7 +121,7 @@ export async function mount(root, ctx) {
 
   const drinkItem = (d, cat, subKey) => {
     const info = ix.subs.get(`${cat}/${subKey}`);
-    return { drink: true, id: d.id, dname: d.name, cat, subKey, shape: shapeFor(cat, subKey), label: d.label && img(d.label),
+    return { drink: true, id: d.id, dname: d.name, cat, subKey, shape: d.shell || shapeFor(cat, subKey), label: d.label && img(d.label),
       native: info?.sub.native, name: info?.sub.name, motif: motifFor(cat, subKey) };
   };
 
@@ -444,7 +445,7 @@ export async function mount(root, ctx) {
     const cap = capacity();
     if (view === 'new' || view === 'season') {
       const src = view === 'new' ? (counterData.newArrivals || []) : ((counterData.inSeason || {})[season] || []);
-      const its = src.slice(0, cap).map((i) => drinkItem({ id: i.id, name: i.name, label: i.label }, i.category, i.sub));
+      const its = src.slice(0, cap).map((i) => drinkItem({ id: i.id, name: i.name, label: i.label, shell: i.shell }, i.category, i.sub));
       return { list: its, caption: view === 'new' ? `New arrivals · ${its.length}` : `In season: ${SEASON_NAMES[season]} · ${its.length}` };
     }
     const c = sel && ix.cats.get(sel);

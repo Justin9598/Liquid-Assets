@@ -747,7 +747,7 @@ def welcome_checks(page, base, tag, shots_dir=None):
     if s["subs"] != keys or keys[0] != "makgeolli":
         P(f"Fermented Beverages opens to {s['subs']}, expected Makgeolli first then {keys}")
     shells = page.eval("[...document.querySelectorAll('#lower .slot.sub')].map(s => s.dataset.shape)")
-    if shells[0] != "makgeolli" or any(x != "beer" for x in shells[1:]):
+    if not shells[0].startswith("makgeolli") or any(not x.startswith("beer-") for x in shells[1:]):     # a bottle wearing one drink's label stands in that drink's shell (Plan 15 section 4.4)
         P(f"Fermented Beverages shells are {shells}")
     vclick(page, ".vessel[data-cat=spirits]")
     s = check("Spirits")
