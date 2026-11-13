@@ -33,46 +33,57 @@ def _sheet(path: Path):
 
 
 def _cfg():
-    return {"version": 1, "source": "shells-sheet", "shells": {
-        "sake": {"cell": 1, "mode": "opaque", "crop": [50, 30, 130, 260], "labelSheet": [66, 120, 114, 200], "labelBlend": "multiply"},
-        "spirits": {"cell": 2, "mode": "glass", "crop": [220, 50, 340, 260], "labelSheet": [250, 130, 310, 200], "labelBlend": "normal"},
-        "liqueur": {"cell": 2, "mode": "glass", "tintAmber": True, "liquidTop": 0.2, "crop": [220, 50, 340, 260],
-                    "labelSheet": [250, 130, 310, 200], "labelBlend": "normal"},
+    return {"version": 2, "sources": {"sheet-test": {"file": "sheet-test.png", "size": [400, 300]}}, "shells": {
+        "sake-green": {"source": "sheet-test", "mode": "opaque", "scale": 1.0, "crop": [50, 30, 130, 260], "labelSheet": [66, 120, 114, 200], "labelBlend": "multiply"},
+        "spirit-clear": {"source": "sheet-test", "mode": "glass", "scale": 0.95, "crop": [220, 50, 340, 260], "labelSheet": [250, 130, 310, 200], "labelBlend": "multiply"},
     }}
 
 
 def test_shells_are_cut_clean_translucent_and_the_sheet_is_never_published(tmp_path):
     src, docs, cache = tmp_path / "scene", tmp_path / "docs", tmp_path / "c.json"
-    src.mkdir()
-    _sheet(src / "shells-sheet.png")
+    (src / "shells").mkdir(parents=True)
+    _sheet(src / "shells" / "sheet-test.png")
     info, _, stats = scene_mod.convert(src, docs, cache, shells_cfg=_cfg())
-    assert set(info["shells"]) == {"sake", "spirits", "liqueur"} and stats["encoded"] == 6
+    assert set(info["shells"]) == {"sake-green", "spirit-clear"} and stats["encoded"] == 4
     out = docs / "img" / "scene"
-    with Image.open(out / "shell-sake@2x.webp") as im:
+    with Image.open(out / "shell-sake-green@2x.webp") as im:
         assert im.mode == "RGBA" and im.size == (80, 230) and not im.getexif()
         a = np.asarray(im)[..., 3]
     assert a[2, 2] == 0 and a[-3, 3] == 0                              # corners are transparent: the black is gone
     assert a[115, 40] == 255                                           # the body is solid
-    with Image.open(out / "shell-sake@1x.webp") as im:
+    with Image.open(out / "shell-sake-green@1x.webp") as im:
         assert im.size == (40, 115)
-    # clear glass keeps partial transparency: the empty middle is almost see-through, the lit rim is not
-    with Image.open(out / "shell-spirits@2x.webp") as im:
+    # clear glass keeps partial transparency: the empty middle is almost see-through, the lit rim is not,
+    # and the blank label is forced fully opaque (Plan 15 section 3.1)
+    with Image.open(out / "shell-spirit-clear@2x.webp") as im:
         g = np.asarray(im)[..., 3]
-    assert g[100, 60] < 40 and g[10, 60] > 180
-    # liqueur is the same glass with an amber fill: more opaque and warmer in the liquid
-    with Image.open(out / "shell-liqueur@2x.webp") as im:
-        l = np.asarray(im)
-    assert l[150, 60, 3] > g[150, 60] + 60 and l[150, 60, 0] > l[150, 60, 2]
-    # the label rectangle comes out as fractions of the shell, the sake one multiplies, and the originals stay out of docs
-    sake = info["shells"]["sake"]
-    assert sake["labelRect"] == [0.2, 0.3913, 0.6, 0.3478] and sake["labelBlend"] == "multiply"
-    assert not list(docs.rglob("shells-sheet*"))
+    assert g[10, 60] > 180 and g[30, 60] < 40 and g[100, 60] == 255 and g[120, 40] == 255
+    # the label rectangle comes out as fractions of the shell, the scale is the hand-set one, and the originals stay out of docs
+    sake = info["shells"]["sake-green"]
+    assert sake["labelRect"] == [0.2, 0.3913, 0.6, 0.3478] and sake["labelBlend"] == "multiply" and sake["scale"] == 1.0
+    assert info["shells"]["spirit-clear"]["scale"] == 0.95
+    assert not list(docs.rglob("sheet-test*")) and "source" not in sake
     _, _, again = scene_mod.convert(src, docs, cache, shells_cfg=_cfg())
-    assert again["encoded"] == 0 and again["skipped"] == 6
+    assert again["encoded"] == 0 and again["skipped"] == 4
+
+
+def test_w29_flags_a_sheet_that_changed_size_and_a_crop_outside_it(tmp_path):
+    from liquid.common import Issues
+    (tmp_path / "shells").mkdir()
+    _sheet(tmp_path / "shells" / "sheet-test.png")
+    cfg = _cfg()
+    issues = Issues()
+    scene_mod.check_shell_sources(cfg, tmp_path, issues)
+    assert not issues.counts("warning")
+    cfg["sources"]["sheet-test"]["size"] = [800, 600]
+    cfg["shells"]["sake-green"]["crop"] = [50, 30, 130, 400]
+    issues = Issues()
+    scene_mod.check_shell_sources(cfg, tmp_path, issues)
+    assert issues.counts("warning") == {"W29": 2}
 
 
 def test_shells_polygon_is_trusted_over_the_picture(tmp_path):
-    cfg = _cfg()["shells"]["sake"]
+    cfg = _cfg()["shells"]["sake-green"]
     cfg["maskPolygon"] = [[10, 10], [70, 10], [70, 100], [10, 100]]
     _sheet(tmp_path / "s.png")
     with Image.open(tmp_path / "s.png") as im:

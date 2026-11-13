@@ -18,8 +18,7 @@ from . import burger as burger_mod, shells as shells_mod
 WIDE_WIDTHS = [1920, 2880, 3840]
 TALL_WIDTHS = [1170]
 PLATES = {"wide": ("bar-wide", WIDE_WIDTHS), "tall": ("bar-tall", TALL_WIDTHS)}
-SHELLS = ["sake", "makgeolli", "liqueur", "beer", "wine", "spirits"]
-SHELL_FILES = {**{k: f"shell-{k}" for k in SHELLS}, "cocktail": "glass-cocktail", "highball": "glass-highball"}
+SHELLS_SUBDIR = "shells"                 # Design/scene/shells/ holds the Gemini sheets (Plan 15 section 2)
 EXTENSIONS = (".png", ".webp")          # the owner may deliver either, for every file (Plan 01 section 15.2)
 SETTINGS_VERSION = 3
 SHEET_SCALES = ("1x", "2x")            # 2x is the cell's own size, 1x is half of it (Plan 07 section 2.2)
@@ -51,6 +50,38 @@ def _load_cache(path):
         return json.loads(Path(path).read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return {}
+
+
+def shell_sheet_paths(src_dir, cfg):
+    """{source key: path} for every sheet that exists in Design/scene/shells/ (a missing sheet just leaves its shells out)."""
+    out = {}
+    for name, meta in (cfg.get("sources") or {}).items():
+        p = Path(src_dir) / SHELLS_SUBDIR / meta["file"]
+        if p.exists():
+            out[name] = p
+    return out
+
+
+def check_shell_sources(cfg, src_dir, issues):
+    """W29: a sheet has changed size since its crops were measured, or a crop falls outside its sheet."""
+    paths = shell_sheet_paths(src_dir, cfg)
+    sizes = {}
+    for name, meta in (cfg.get("sources") or {}).items():
+        if name not in paths:
+            continue
+        with Image.open(paths[name]) as im:
+            sizes[name] = list(im.size)
+        if sizes[name] != list(meta["size"]):
+            issues.warn("W29", f"A shell sheet changed size ({meta['file']}: {meta['size'][0]}x{meta['size'][1]} when measured, "
+                               f"{sizes[name][0]}x{sizes[name][1]} now). Measure its crop boxes and polygons again "
+                               "(build/tools/measure_shell_cells.py, then derive_shell_masks.py --force)")
+    for key, spec in cfg["shells"].items():
+        size = sizes.get(spec["source"])
+        if size is None:
+            continue
+        x0, y0, x1, y1 = spec["crop"]
+        if x0 < 0 or y0 < 0 or x1 > size[0] or y1 > size[1]:
+            issues.warn("W29", f"Shell '{key}': its crop box {spec['crop']} falls outside its source sheet ({size[0]}x{size[1]})")
 
 
 def convert(src_dir, docs_dir, cache_path, force=False, write=True, shells_cfg=None, burger_cfg=None):
@@ -147,21 +178,22 @@ def convert(src_dir, docs_dir, cache_path, force=False, write=True, shells_cfg=N
                     files[name][scale] = rel
             info["burger"] = burger_mod.manifest(bcut(), burger_cfg, files)     # geometry is cheap, the files are cached
 
-    sheet_keys = set()
     if shells_cfg:
-        sheet = find_source(src_dir, shells_cfg.get("source", "shells-sheet"))
-        if sheet is not None:
-            sheet_keys = set(shells_cfg["shells"])
-            sh_hash = hashlib.sha1((_hash(sheet) + json.dumps(shells_cfg, sort_keys=True)).encode()).hexdigest()
+        sheet_paths = shell_sheet_paths(src_dir, shells_cfg)
+        usable = {k: sp for k, sp in shells_cfg["shells"].items() if sp["source"] in sheet_paths}
+        if usable:
+            digest = hashlib.sha1(json.dumps(shells_cfg, sort_keys=True).encode())
+            for name in sorted(sheet_paths):
+                digest.update(_hash(sheet_paths[name]).encode())
+            sh_hash = digest.hexdigest()
             cut_cache = {}
 
             def cut():
                 if "all" not in cut_cache:
-                    cut_cache["all"] = shells_mod.cut_all(sheet, shells_cfg)
+                    cut_cache["all"] = shells_mod.cut_all(sheet_paths, {"shells": usable})
                 return cut_cache["all"]
 
-            tallest = max(sp["crop"][3] - sp["crop"][1] for sp in shells_cfg["shells"].values())
-            for key, spec in shells_cfg["shells"].items():
+            for key, spec in usable.items():
                 x0, y0, x1, y1 = spec["crop"]
                 w_nat, h_nat = x1 - x0, y1 - y0
                 files = {}
@@ -179,12 +211,14 @@ def convert(src_dir, docs_dir, cache_path, force=False, write=True, shells_cfg=N
                     need(rel, sh_hash, ["sheet", key, scale, h_out], make)
                     files[scale] = rel
                 entry = shells_mod.manifest_entry(spec)
-                entry.update({"aspect": round(w_nat / h_nat, 5), "scale": round(h_nat / tallest, 4), "files": files, "fromSheet": True})
+                entry.update({"aspect": round(w_nat / h_nat, 5), "files": files, "fromSheet": True})
                 info["shells"][key] = entry
 
-    for shape, name in SHELL_FILES.items():
-        if shape in sheet_keys:
+    # a shell delivered as its own file (shell-<key>.png/.webp in Design/scene) still works for a key the sheets do not cut
+    for shape in ("sake", "makgeolli", "liqueur", "beer", "wine", "spirits", "cocktail", "highball"):
+        if shape in info["shells"]:
             continue
+        name = {"cocktail": "glass-cocktail", "highball": "glass-highball"}.get(shape, f"shell-{shape}")
         src = find_source(src_dir, name)
         if src is None:
             continue
@@ -197,7 +231,7 @@ def convert(src_dir, docs_dir, cache_path, force=False, write=True, shells_cfg=N
             height = min(height, size[1])
             w = round(size[0] * height / size[1])
 
-            def make(target, height=height, w=w):
+            def make(target, height=height, w=w, src=src):
                 with Image.open(src) as im0:
                     im = _clean(im0, alpha=True)
                 if height < im.height:
@@ -315,6 +349,11 @@ def validate_shells(cfg, issues):
                 and crop[2] > crop[0] and crop[3] > crop[1]):
             bad(f"{key}.crop must be [x0, y0, x1, y1] in whole sheet pixels")
             continue
+        if s.get("source") not in (cfg.get("sources") or {}):
+            bad(f"{key}.source must name one of the 'sources' sheets")
+        sc = s.get("scale", 1.0)
+        if not (isinstance(sc, (int, float)) and not isinstance(sc, bool) and 0 < sc <= 1.5):
+            bad(f"{key}.scale must be a number above 0 and at most 1.5")
         if s.get("mode") not in ("opaque", "glass"):
             bad(f"{key}.mode must be 'opaque' or 'glass'")
         if s.get("labelBlend", "normal") not in ("normal", "multiply"):
@@ -343,7 +382,7 @@ def lower_capacity(P, kind, shells):
     shelves = P["shelves"][1:] if kind == "wide" else P["shelves"][2:]
     if kind == "tall":
         return {"shelves": 1, "perShelf": SHELF_VIEW_LIMIT, "total": SHELF_VIEW_LIMIT, "scrolls": True}
-    aspect = max([s.get("aspect", 0.35) for s in shells.values()] or [0.35])
+    aspect = max([s.get("aspect", 0.35) * s.get("scale", 1.0) for s in shells.values() if not s.get("spare")] or [0.35])
     per = 0
     for s in shelves:
         bottle_w = s["clear"] * 0.82 * aspect / P["ratio"]

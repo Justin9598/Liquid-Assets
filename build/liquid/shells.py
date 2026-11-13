@@ -1,10 +1,11 @@
-"""Bottle shells cut from the owner's sheet (Plan 07 section 2).
+"""Bottle shells cut from the Gemini sheets (Plan 07 section 2, Plan 15 section 3).
 
-`Design/scene/shells-sheet.webp` is renders on pure black. `content/shells.json` lists, per shell, the cell's crop box (in
-sheet pixels), the base line (where the glass meets the shelf), a mask polygon, the label rectangle and a soft contact
-shadow. Opaque objects (sake, makgeolli, wine, beer) get a solid mask from the polygon with a 1 px feather and a 1 px
-erosion, so no black fringe survives against a bright shelf. Clear glass (liquor, martini, highball) keeps luminance
-alpha, so the shelf glow shows through it, plus a faint body tint inside the polygon. The sheet is only read.
+`Design/scene/shells/*.jpg` are renders on pure black. `content/shells.json` lists, per shell, its source sheet, the crop box
+(in sheet pixels), the base line (the crop's bottom edge: where the glass meets the shelf, so the floor glow below is cut off),
+a mask polygon, the label rectangle, a hand-set scale and a soft contact shadow. Opaque objects get a solid mask from the
+polygon with a 1 px feather and a 1 px erosion, so no black fringe survives against a bright shelf. Clear glass keeps luminance
+alpha, so the shelf glow shows through it, plus a faint body tint inside the polygon; its blank label is forced fully opaque.
+The sheets are only read.
 
 The polygon can be derived automatically (`derive_polygon`, run by build/tools/derive_shell_masks.py) and then edited
 by hand in the JSON: the build always trusts the polygon that is stored.
@@ -18,7 +19,6 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
 SS = 4                                  # supersampling for polygon masks
-AMBER = (200, 118, 28)
 
 
 def load(path):
@@ -111,22 +111,13 @@ def _glass(rgb, poly, spec):
     return col, a
 
 
-def _amber(col, a, poly, spec):
-    """Liqueur: fill the liquid with a warm amber under the glass highlights."""
-    h, w = a.shape
-    body = _poly_mask(poly, (w, h), 2.0, 1.0)
-    top = int(spec.get("liquidTop", 0.2) * h)
-    ys = np.arange(h)[:, None]
-    ramp = np.clip((ys - top) / 6.0, 0, 1)
-    fill_a = body * ramp * spec.get("amberAlpha", 0.62)
-    fill = np.array(spec.get("amber", AMBER), dtype=np.float32)
-    # slightly darker toward the sides for depth
-    xs = np.linspace(-1, 1, w)[None, :]
-    shade = (1.0 - 0.28 * xs**2)[..., None]
-    fill_rgb = fill[None, None, :] * shade
-    out_a = a + fill_a * (1 - a)
-    out_c = (col * a[..., None] + fill_rgb * (fill_a * (1 - a))[..., None]) / np.maximum(out_a, 1e-4)[..., None]
-    return np.clip(out_c, 0, 255), out_a
+def _label_box(spec):
+    """The label rectangle in crop pixels, or None."""
+    ls = spec.get("labelSheet")
+    if not ls:
+        return None
+    x0, y0 = spec["crop"][:2]
+    return ls[0] - x0, ls[1] - y0, ls[2] - x0, ls[3] - y0
 
 
 def cut_cell(sheet_rgb, spec):
@@ -138,19 +129,28 @@ def cut_cell(sheet_rgb, spec):
         poly = derive_polygon(rgb, spec.get("thr", 14))
     if spec.get("mode") == "glass":
         col, a = _glass(rgb, poly, spec)
+        lb = _label_box(spec)
+        if lb:                                                       # the blank label on clear glass is solid paper (Plan 15 section 3.1)
+            lx0, ly0, lx1, ly1 = (int(v) for v in lb)
+            col[ly0:ly1, lx0:lx1] = rgb[ly0:ly1, lx0:lx1].astype(np.float32)
+            a[ly0:ly1, lx0:lx1] = 1.0
     else:
         col, a = _opaque(rgb, poly, spec)
-    if spec.get("tintAmber"):
-        col, a = _amber(col, a, poly, spec)
     out = np.dstack([np.clip(col, 0, 255), np.clip(a, 0, 1) * 255]).astype(np.uint8)
     return Image.fromarray(out, "RGBA")
 
 
-def cut_all(sheet_path, cfg):
-    """{key: RGBA image} for every shell in the config."""
-    with Image.open(sheet_path) as im:
-        sheet = im.convert("RGB")
-    return {key: cut_cell(sheet, spec) for key, spec in cfg["shells"].items()}
+def cut_all(sheet_paths, cfg):
+    """{key: RGBA image} for every shell in the config. `sheet_paths` maps a source key to the sheet's file."""
+    sheets = {}
+    out = {}
+    for key, spec in cfg["shells"].items():
+        src = spec["source"]
+        if src not in sheets:
+            with Image.open(sheet_paths[src]) as im:
+                sheets[src] = im.convert("RGB")
+        out[key] = cut_cell(sheets[src], spec)
+    return out
 
 
 def label_rect(spec, size):
@@ -162,9 +162,12 @@ def label_rect(spec, size):
 
 
 def manifest_entry(spec):
-    """What the page needs per shell (merged into data/scene.json)."""
+    """What the page needs per shell (merged into data/scene.json). Nothing here names a source sheet."""
     out = {"labelRect": label_rect(spec, None) if spec.get("labelSheet") else None,
            "labelBlend": spec.get("labelBlend", "normal"),
+           "scale": spec.get("scale", 1.0),
            "base": 1.0,
            "shadow": spec.get("shadow", {"w": 0.8, "h": 0.07, "opacity": 0.34})}
+    if spec.get("spare"):
+        out["spare"] = True
     return out

@@ -1,8 +1,9 @@
-"""Derive the mask polygons in content/shells.json from the picture in Design/scene/shells-sheet.webp.
+"""Derive the mask polygons in content/shells.json from the pictures on the Gemini sheets (Plan 15 section 5).
 
-Run once, then edit the points by hand if a cut needs fixing (the build trusts the stored polygon).
+Run once after measure_shell_cells.py, then edit the points by hand if a cut needs fixing (the build trusts the stored
+polygon). Each shell names its `source` sheet, which is read from Design/scene/shells/ (a private folder, never published).
     python build/tools/derive_shell_masks.py [--force]
-Cells that already have a polygon are left alone unless --force is given. liqueur shares the spirits polygon.
+Shells that already have a polygon are left alone unless --force is given.
 """
 import json
 import sys
@@ -13,44 +14,30 @@ from PIL import Image
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
+sys.path.insert(0, str(HERE))
 from liquid import shells  # noqa: E402
+import measure_shell_cells as M  # noqa: E402
 
-ROOT = HERE.parents[1]                                  # Ship/
-CFG = ROOT / "content" / "shells.json"
-SHEET = ROOT.parent / "Design" / "scene" / "shells-sheet.webp"
+CFG = M.CFG
+SHEETS_DIR = M.SHEETS_DIR
 
 
 def main(force=False):
     cfg = json.loads(CFG.read_text(encoding="utf-8"))
-    with Image.open(SHEET) as im:
-        sheet = im.convert("RGB")
-    done = {}
+    sheets = {}
     for key, spec in cfg["shells"].items():
         if spec.get("maskPolygon") and not force:
             continue
-        sig = (spec["cell"], tuple(spec["crop"]))
-        if sig in done:
-            spec["maskPolygon"] = done[sig]
-            continue
+        src = spec["source"]
+        if src not in sheets:
+            with Image.open(SHEETS_DIR / cfg["sources"][src]["file"]) as im:
+                sheets[src] = im.convert("RGB")
         x0, y0, x1, y1 = spec["crop"]
-        rgb = np.asarray(sheet.crop((x0, y0, x1, y1)))
+        rgb = np.asarray(sheets[src].crop((x0, y0, x1, y1)))
         poly = shells.derive_polygon(rgb, spec.get("thr", 14))
         spec["maskPolygon"] = poly
-        done[sig] = poly
         print(f"{key}: {len(poly)} points")
-    # one line per shell, polygon on its own line, so the file stays readable and diffs stay small
-    lines = ["{", f' "_readme": {json.dumps(cfg["_readme"], ensure_ascii=False)},', f' "version": {cfg["version"]},',
-             f' "source": {json.dumps(cfg["source"])},', ' "shells": {']
-    keys = list(cfg["shells"])
-    for i, k in enumerate(keys):
-        s = dict(cfg["shells"][k])
-        poly = s.pop("maskPolygon", None)
-        body = json.dumps(s, ensure_ascii=False)
-        if poly:
-            body = body[:-1] + ', "maskPolygon": ' + json.dumps(poly) + "}"
-        lines.append(f'  {json.dumps(k)}: {body}{"," if i < len(keys) - 1 else ""}')
-    lines += [" }", "}", ""]
-    CFG.write_text("\n".join(lines), encoding="utf-8")
+    M.write(cfg)
 
 
 if __name__ == "__main__":

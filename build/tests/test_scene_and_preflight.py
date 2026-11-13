@@ -42,9 +42,9 @@ def test_shells_config_is_valid_and_bad_ones_are_rejected():
     issues = Issues()
     assert scene_mod.validate_shells(shells_cfg(), issues) and not issues.errors
     cfg = shells_cfg()
-    cfg["shells"]["wine"]["mode"] = "shiny"
-    cfg["shells"]["beer"]["labelSheet"] = [0, 0, 10, 10]               # outside the crop
-    cfg["shells"]["sake"]["maskPolygon"] = [[1, 2]]
+    cfg["shells"]["wine-red"]["mode"] = "shiny"
+    cfg["shells"]["beer-bottle"]["labelSheet"] = [0, 0, 10, 10]               # outside the crop
+    cfg["shells"]["sake-green"]["maskPolygon"] = [[1, 2]]
     bad = Issues()
     assert not scene_mod.validate_shells(cfg, bad)
     assert len(bad.errors) == 3 and all(e["code"] == "E04" for e in bad.errors)
