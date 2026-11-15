@@ -2,7 +2,7 @@
  "id": "rachelle-the-rabbit-chrysanthemum-mead",
  "name": "Rachelle the Rabbit Chrysanthemum Mead",
  "category": "wine",
- "sub": "other",
+ "sub": "blend",
  "producer": {
   "key": "rachelle-the-rabbit-distillery",
   "name": "Rachelle the Rabbit Distillery",
@@ -18,6 +18,10 @@
  "rating": null,
  "spec": [
   {
+   "label": "Grape(s)",
+   "value": "Chrysanthemum, Honey"
+  },
+  {
    "label": "ABV",
    "value": 10,
    "unit": "%"
@@ -31,7 +35,7 @@
  "story": null,
  "visits": [
   {
-   "date": null,
+   "date": "2026-11-15",
    "size": "500ml Bottle",
    "where": "Gift",
    "note": null
@@ -47,6 +51,6 @@
   }
  ],
  "moreFromProducer": [],
- "prev": "rachelle-the-rabbit-chrysanthemum-mead",
- "next": "rachelle-the-rabbit-chrysanthemum-mead"
+ "prev": "pierre-jean-colombard-chardonnay-2025",
+ "next": "pierre-jean-colombard-chardonnay-2025"
 }
