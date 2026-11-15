@@ -146,6 +146,7 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
             shells_cfg = None
         if shells_cfg:
             scene_mod.check_shell_sources(shells_cfg, scene_dir, issues)             # W29
+        scene_mod.check_clock(scene_dir, issues)                                     # W30
         burger_cfg = _load_json(content_dir / "burger.json", None, issues, "burger.json", code="W20")
         if burger_cfg and not burger_mod.validate(burger_cfg, issues):
             burger_cfg = None

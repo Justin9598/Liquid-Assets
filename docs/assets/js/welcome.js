@@ -73,7 +73,7 @@ export async function mount(root, ctx) {
     <section class="topshelf3" aria-label="Categories. Pick one to see its shelves.">${rows}</section>
     <section class="lower" id="lower" aria-label="Shelves"></section>
     ${counterOn ? countersHTML(P, ix.shelf.counter, season, ix, art, kind === 'tall') : ''}
-    ${P.clock ? clockHTML(P) : ''}
+    ${P.clock ? clockHTML(P, manifest.clock) : ''}
     ${viewCapHTML(P)}
     <p class="slate s3 chalkboard chalkboard--m${counterOn ? ' mid' : ''}" id="plaque" style="${counterOn ? slateStyle(P.counter) : anchorStyle(P.anchors.slate)}">${IDLE}</p>
     ${burgerOn ? burgerHTML(P, manifest.burger) : ''}

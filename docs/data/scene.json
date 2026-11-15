@@ -1103,5 +1103,9 @@
     "2x": "img/scene/burger-plate@2x.webp"
    }
   }
+ },
+ "clock": {
+  "1x": "img/scene/clock@1x.webp",
+  "2x": "img/scene/clock@2x.webp"
  }
 }

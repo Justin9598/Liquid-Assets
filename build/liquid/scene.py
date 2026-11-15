@@ -33,6 +33,51 @@ def find_source(src_dir: Path, stem: str):
     return None
 
 
+CLOCK_SIZES = {"1x": 128, "2x": 256}   # Plan 16 section 3: the clock shows at about 55-65 CSS px
+
+
+def find_clock(src_dir: Path):
+    """Design/scene/clock.jpg (the Gemini render); .png and .webp are accepted too."""
+    for ext in (".jpg", ".png", ".webp"):
+        p = Path(src_dir) / ("clock" + ext)
+        if p.exists():
+            return p
+    return None
+
+
+def check_clock(src_dir, issues):
+    """W30: the clock picture is missing, or is not square (Plan 16 section 3)."""
+    src = find_clock(src_dir)
+    if src is None:
+        issues.warn("W30", "Design/scene/clock.jpg is missing: the welcome page draws the plain clock face instead")
+        return
+    with Image.open(src) as im:
+        if im.width != im.height:
+            issues.warn("W30", f"The clock picture is not square ({im.width}x{im.height}): it is skipped")
+
+
+def cut_clock(src: Path, out: int) -> Image.Image:
+    """The rim circle cut out of the black render, `out` px square, with a 1 px feather and the black edge eroded by 1 px.
+    The circle (centre 511.5, 511; rim radius 466 px, black starts at 467 on the 1024 render) is measured in Plan 16 section 2."""
+    with Image.open(src) as im0:
+        im = _clean(im0, alpha=False)
+    k = im.width / 1024
+    cx, cy, r = 511.5 * k, 511.0 * k, 465.0 * k                # one pixel inside the rim's black edge
+    box = (cx - 467 * k, cy - 467 * k, cx + 467 * k, cy + 467 * k)
+    im = im.resize((out, out), Image.LANCZOS, box=box)
+    ss = 8
+    mask = Image.new("L", (out * ss, out * ss), 0)
+    from PIL import ImageDraw
+    rr = out * ss * (r / (467 * k)) / 2
+    c = out * ss / 2
+    ImageDraw.Draw(mask).ellipse((c - rr, c - rr, c + rr, c + rr), fill=255)
+    mask = mask.resize((out, out), Image.LANCZOS)               # about one output pixel of feather
+    from PIL import ImageFilter
+    im = im.filter(ImageFilter.UnsharpMask(radius=0.8, percent=60, threshold=2)).convert("RGBA")
+    im.putalpha(mask)
+    return im
+
+
 def _hash(path: Path) -> str:
     h = hashlib.sha1()
     h.update(path.read_bytes())
@@ -177,6 +222,23 @@ def convert(src_dir, docs_dir, cache_path, force=False, write=True, shells_cfg=N
                     need(rel, b_hash, ["burger", key, scale], make)
                     files[name][scale] = rel
             info["burger"] = burger_mod.manifest(bcut(), burger_cfg, files)     # geometry is cheap, the files are cached
+
+    csrc = find_clock(src_dir)
+    if csrc is not None:
+        with Image.open(csrc) as ci:
+            square = ci.width == ci.height
+        if square:
+            c_hash = _hash(csrc)
+            files = {}
+            for scale, px in CLOCK_SIZES.items():
+                rel = f"img/scene/clock@{scale}.webp"
+
+                def make(target, px=px, csrc=csrc):
+                    cut_clock(csrc, px).save(target, format="WEBP", quality=92, method=6)
+
+                need(rel, c_hash, ["clock", scale, px], make)
+                files[scale] = rel
+            info["clock"] = files
 
     if shells_cfg:
         sheet_paths = shell_sheet_paths(src_dir, shells_cfg)
@@ -403,6 +465,8 @@ def merge(manifest, info):
         out["plates"][kind] = plate
     if info.get("burger"):
         out["burger"] = info["burger"]
+    if info.get("clock"):
+        out["clock"] = info["clock"]
     for kind, P in manifest["plates"].items():
         if "counter" in P:
             out["plates"][kind]["counter"] = P["counter"]
