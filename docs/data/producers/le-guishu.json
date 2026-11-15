@@ -1,0 +1,39 @@
+{
+ "key": "le-guishu",
+ "name": "Le Guishu",
+ "native": null,
+ "location": "Arles, Camargue",
+ "region": "Camargue",
+ "country": "France",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "gardians-riz-fermente-sec",
+   "category": "sake",
+   "sub": "craft-sake"
+  }
+ ],
+ "moreFromRegion": [],
+ "lat": 43.556,
+ "lon": 4.695,
+ "cid": "france",
+ "prov": "bouchesdurhone",
+ "provName": "Bouches-du-Rhône",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "sake",
+ "exact": true
+}

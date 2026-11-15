@@ -1,0 +1,69 @@
+{
+ "id": "kagura-mitsugo-kabosu-japanese-pepper",
+ "name": "Kagura Mitsugo Kabosu & Japanese Pepper",
+ "category": "liqueur",
+ "sub": "fruit-liqueur",
+ "producer": {
+  "key": "matsui-shuzo",
+  "name": "Matsui Shuzo",
+  "native": "松井酒造",
+  "location": "Kyoto, Kyoto, Japan",
+  "founded": 1726,
+  "about": "Matsui Shuzo makes sake at its Kamogawa brewery in Sakyo Ward, Kyoto. The family began brewing in 1726 in Kasumi, a Sea of Japan port in Tajima, now in Hyogo, and moved the brewery to Kyoto late in the Edo period.",
+  "url": "https://matsuishuzo.com/"
+ },
+ "abv": 10,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "Fruit liqueur"
+  },
+  {
+   "label": "Base",
+   "value": "Sake (made in Kyoto) with kabosu juice"
+  },
+  {
+   "label": "Flavouring or botanicals",
+   "value": "Kabosu juice (Oita); sansho; sugar"
+  },
+  {
+   "label": "ABV",
+   "value": 10,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "710ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "710ml Bottle",
+   "where": "Gift",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kagura-mitsugo-kabosu-japanese-pepper-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "kagura-hae",
+  "kagura-nojoho-junmai-ginjo",
+  "kagura-sparkling",
+  "kagura-shiro-junmai-daiginjo-ikkabi"
+ ],
+ "prev": "kagura-mitsugo-kabosu-japanese-pepper",
+ "next": "kagura-mitsugo-kabosu-japanese-pepper"
+}

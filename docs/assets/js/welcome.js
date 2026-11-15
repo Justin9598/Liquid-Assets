@@ -59,7 +59,7 @@ export async function mount(root, ctx) {
   // ---- skeleton --------------------------------------------------------------------------------------------------
   function skeletonV3(kind) {
     const P = manifest.plates[kind];
-    const half = Math.ceil(cats.length / 2);                       // phones: two shelves of vessels, split evenly so each tag has room
+    const half = Math.floor(cats.length / 2);                      // phones: two shelves of vessels; with an odd count the lower shelf takes the extra one, so the long tags (Fermented Beverages) keep a roomy row of three
     const vesselRows = kind === 'wide' ? [cats] : [cats.slice(0, half), cats.slice(half)];
     const counterOn = !!P.counter;
     const burgerOn = counterOn && !!manifest.burger;

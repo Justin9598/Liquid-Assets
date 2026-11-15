@@ -206,7 +206,7 @@ def map_checks(page, base, tag, full=True):
         return [f"{tag}: the Makers page has no map"]
     probs += pin_problems(s, f"{tag} World")
     ids = sorted(p["id"] for p in s["pins"])
-    if ids != ["g:asia", "g:europe", "g:north-america", "g:south-america"]:
+    if ids != ["g:asia", "g:europe", "g:north-america", "g:oceania", "g:south-america"]:
         probs.append(f"{tag} World shows pins {ids}")
     if s["crumbs"] != ["World"] or not s["info"].startswith("Everywhere · "):
         probs.append(f"{tag} World: crumbs {s['crumbs']}, info '{s['info']}'")

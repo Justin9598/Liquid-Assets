@@ -26,14 +26,19 @@
  ],
  "related": [],
  "tally": {
-  "drinks": 1,
+  "drinks": 2,
   "categories": 1,
   "favourites": 0,
-  "timesHad": 1
+  "timesHad": 2
  },
  "drinks": [
   {
    "id": "koshinohomare-qn-matsuri",
+   "category": "sake",
+   "sub": "junmai"
+  },
+  {
+   "id": "koshinohomare-qn-miton-junmai-muroka-genshu",
    "category": "sake",
    "sub": "junmai"
   }

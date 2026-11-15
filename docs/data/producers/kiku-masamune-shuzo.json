@@ -29,12 +29,17 @@
   }
  ],
  "tally": {
-  "drinks": 1,
+  "drinks": 2,
   "categories": 1,
   "favourites": 0,
-  "timesHad": 1
+  "timesHad": 2
  },
  "drinks": [
+  {
+   "id": "kiku-masamune-hoken-junmai-ginjo",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  },
   {
    "id": "kiku-masamune-kasen",
    "category": "sake",

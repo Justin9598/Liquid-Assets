@@ -50,10 +50,10 @@ def crop_frac(im, crop):
 def on_shell(root: Path, shells, shape, label: Image.Image):
     """The label pasted on the rendered shell. Returns (image, note)."""
     note = ""
-    sh = shells.get(shape)
+    sh = shells.get(shape)                                    # `shape` is the drink's own shell key since Plan 15 (sake-green ...)
     if not sh or not sh.get("labelRect"):
-        note = f"{shape} has no label rectangle: shown on the sake bottle"
-        sh = shells["sake"]
+        note = f"{shape} has no label rectangle: shown on the green sake bottle"
+        sh = shells.get("sake-green") or shells["sake"]
     shell = Image.open(Path(root) / "docs" / sh["files"]["2x"]).convert("RGBA")
     lx, ly, lw, lh = sh["labelRect"]
     box = (round(lx * shell.width), round(ly * shell.height), round(lw * shell.width), round(lh * shell.height))
@@ -66,6 +66,18 @@ def on_shell(root: Path, shells, shape, label: Image.Image):
         lab = ImageChops.multiply(lab, region)
     base.paste(lab, (box[0], box[1]))
     return base.convert("RGB"), note
+
+
+def drink_shell(root: Path, did: str):
+    """The shell key the built site gives this drink (docs/data/drinks.json, Plan 15), or None."""
+    try:
+        import json
+        for d in json.loads((Path(root) / "docs" / "data" / "drinks.json").read_text(encoding="utf-8")):
+            if d.get("id") == did:
+                return d.get("shell")
+    except (OSError, ValueError):
+        pass
+    return None
 
 
 def find_front(root: Path, did: str):
@@ -83,7 +95,7 @@ def make_check(root: Path, did: str, crop, photos: Path | None = None, out_dir: 
         raise SystemExit(f"{did}: crop {list(crop)} is not [x, y, w, h] fractions inside the photo")
     photo = ImageOps.exif_transpose(Image.open(photos / c["front"])).convert("RGB")     # full resolution
     label = crop_frac(photo, crop)
-    shape = shape_for(c.get("category"), c.get("sub"))
+    shape = c.get("shell") or drink_shell(root, did) or shape_for(c.get("category"), c.get("sub"))
     shell, note = on_shell(root, croptool.shells(root), shape, label)
 
     def fit_h(im, h=PANEL_H):

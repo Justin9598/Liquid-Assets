@@ -57,7 +57,15 @@
    "note": null
   }
  ],
- "photos": [],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/dassai-blue-type-50-junmai-daiginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
  "moreFromProducer": [],
  "prev": "dassai-45-junmai-daiginjo",
  "next": "date-seven-season-2-episode-2"

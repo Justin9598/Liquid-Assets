@@ -1,0 +1,68 @@
+{
+ "id": "hagi-no-tsuru-junmai-daiginjo-miyamanishiki-singapore-kuroneko",
+ "name": "Hagi no Tsuru Junmai Daiginjo Miyamanishiki Singapore Kuroneko Series",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "hagino-shuzo",
+  "name": "Hagino Shuzo",
+  "native": "萩野酒造",
+  "location": "Kurihara, Miyagi, Japan",
+  "founded": 1840,
+  "about": "Hagino Shuzo is in Kurihara, in northern Miyagi, and gives 1840 as its start. It became a company in July 1923 and makes Hagi no Tsuru and Nichirinda.",
+  "url": "https://www.hagino-shuzou.co.jp/"
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 40,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Miyamanishiki"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Fermenteria by Sake Mama",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hagi-no-tsuru-junmai-daiginjo-miyamanishiki-singapore-kuroneko-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "hagi-no-tsuru-betsu-shikomi"
+ ],
+ "prev": "gasanryu-gokugetsu-junmai-daiginjo",
+ "next": "hakutsuru-junmai-daiginjo"
+}

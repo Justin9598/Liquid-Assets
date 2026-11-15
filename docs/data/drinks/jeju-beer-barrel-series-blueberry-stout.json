@@ -1,0 +1,49 @@
+{
+ "id": "jeju-beer-barrel-series-blueberry-stout",
+ "name": "Jeju Beer The Barrel Series Blueberry Stout",
+ "category": "fermented",
+ "sub": "stout-porter",
+ "producer": {
+  "key": "jeju-beer-company",
+  "name": "Jeju Beer Company",
+  "native": "제주맥주",
+  "location": "Hallim, Jeju, South Korea",
+  "founded": null,
+  "about": "Jeju Beer Company brews at Hallim on Jeju Island. Its brewery was designed with beerBev, uses equipment from the German maker Krones, and can make about 20 million litres a year.",
+  "url": null
+ },
+ "abv": null,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "Stout/Porter"
+  },
+  {
+   "label": "Base",
+   "value": "Barley malt (Germany, Netherlands), wheat malt (Germany), glucose"
+  },
+  {
+   "label": "Flavouring or botanicals",
+   "value": "Blueberry, raspberry and strawberry concentrates; vanilla bean and flavouring; US hop pellets"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": null,
+   "where": "Jeju Beer Brewery 제주맥주 양조장",
+   "note": null
+  }
+ ],
+ "photos": [],
+ "moreFromProducer": [
+  "under-15m"
+ ],
+ "prev": "jeju-beer-barrel-series-blueberry-stout",
+ "next": "jeju-beer-barrel-series-blueberry-stout"
+}

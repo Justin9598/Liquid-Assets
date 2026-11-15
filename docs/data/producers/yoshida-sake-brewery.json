@@ -29,12 +29,17 @@
  ],
  "related": [],
  "tally": {
-  "drinks": 1,
+  "drinks": 2,
   "categories": 1,
   "favourites": 0,
-  "timesHad": 1
+  "timesHad": 3
  },
  "drinks": [
+  {
+   "id": "yoshidagura-u-night-and-dance-improvisation-2-0-united-arrows",
+   "category": "sake",
+   "sub": "ungraded"
+  },
   {
    "id": "yoshidagura-u-night-and-dance-junmai",
    "category": "sake",

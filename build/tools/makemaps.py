@@ -57,6 +57,7 @@ COUNTRIES = {
     "denmark": {"ledger": "Denmark", "map": "Denmark", "admin": "Denmark"},
     "usa": {"ledger": "USA", "map": "United States of America", "admin": "United States of America", "minpop": 400_000},
     "chile": {"ledger": "Chile", "map": "Chile", "admin": "Chile"},
+    "fiji": {"ledger": "Fiji", "map": "Fiji", "admin": "Fiji", "wrap180": True},     # crosses the 180th meridian: see unwrap()
 }
 # World-file ids that differ from the plain slug of the map unit's name
 WORLD_IDS = {"United States of America": "usa"}
@@ -149,6 +150,16 @@ def ring_area(ring):
 
 def polys_of(geom):
     return geom["coordinates"] if geom["type"] == "MultiPolygon" else [geom["coordinates"]]
+
+
+def unwrap(geom):
+    """For a country that crosses the 180th meridian (Fiji): rings in the eastern hemisphere's far side (longitude below 0) are
+    shifted by +360, so the islands stay together and the outline is not smeared across the whole map."""
+    def fix(ring):
+        return [[p[0] + 360 if p[0] < 0 else p[0], *p[1:]] for p in ring]
+    if geom["type"] == "MultiPolygon":
+        return {"type": "MultiPolygon", "coordinates": [[fix(r) for r in poly] for poly in geom["coordinates"]]}
+    return {"type": "Polygon", "coordinates": [fix(r) for r in geom["coordinates"]]}
 
 
 def inside(ring, x, y):
@@ -281,7 +292,8 @@ def make_world(feats):
                 continue
             name = p["NAME_EN"] if "�" in p["NAME"] else p["NAME"]
             cid = ids.get(name) or WORLD_IDS.get(name) or slug(name)
-            rings, _ = shape(f["geometry"], tol, min_area)
+            geom = unwrap(f["geometry"]) if (COUNTRIES.get(cid) or {}).get("wrap180") else f["geometry"]
+            rings, _ = shape(geom, tol, min_area)
             region = REGION_NAMES.get(p["SUBREGION"]) or ("Europe" if "Europe" in p["SUBREGION"] else p["SUBREGION"])
             continent = p["CONTINENT"] if p["CONTINENT"] in CONTINENTS else "Oceania"
             countries.append({"id": cid, "name": name, "continent": continent, "region": region, "d": to_path(rings)})
@@ -296,13 +308,16 @@ def make_world(feats):
 # ---- one country --------------------------------------------------------------------------------------------------
 def make_country(cid, conf, admin1, places):
     PINS.clear()
-    PINS.extend(ledger_pins(conf["ledger"]))
+    PINS.extend((lon % 360 if conf.get("wrap180") and lon < 0 else lon, lat) for lon, lat in ledger_pins(conf["ledger"]))
     feats = [f for f in admin1 if f["properties"]["admin"] == conf["admin"]
              and (not conf.get("geonunit") or f["properties"].get("geonunit") == conf["geonunit"])]
     if conf.get("mainland"):
         feats = [f for f in feats if -12 < f["properties"]["longitude"] < 20 and f["properties"]["latitude"] > 35]
     if not feats:
         raise SystemExit(f"{cid}: no admin-1 features")
+    if conf.get("wrap180"):
+        feats = [{**f, "geometry": unwrap(f["geometry"])} for f in feats]
+        places = [{**f, "geometry": {**f["geometry"], "coordinates": [f["geometry"]["coordinates"][0] % 360 if f["geometry"]["coordinates"][0] < 0 else f["geometry"]["coordinates"][0], f["geometry"]["coordinates"][1]]}} for f in places]
     # far islands that would stretch a province's box (Ogasawara and the like) are dropped, as in the Japan map
     far = (lambda r: not (sum(p[1] for p in r) / len(r) < 30 and sum(p[0] for p in r) / len(r) > 136)) if cid == "japan" else None
     provinces = []

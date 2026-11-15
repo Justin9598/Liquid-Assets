@@ -1,0 +1,60 @@
+{
+ "id": "fijian-sea-snake-contemporary-gin",
+ "name": "Fijian Sea Snake Contemporary Gin",
+ "category": "spirits",
+ "sub": "gin",
+ "producer": {
+  "key": "vodco-pacific",
+  "name": "Vodco Pacific",
+  "native": null,
+  "location": "Sabeto, Viti Levu, Fiji",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 43,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "Gin"
+  },
+  {
+   "label": "Flavouring or botanicals",
+   "value": "Local and imported botanicals; sea salt"
+  },
+  {
+   "label": "ABV",
+   "value": 43,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "1L Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "1L Bottle",
+   "where": "Gift",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/fijian-sea-snake-contemporary-gin-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "the-botanist-islay-dry-gin",
+ "next": "the-botanist-islay-dry-gin"
+}

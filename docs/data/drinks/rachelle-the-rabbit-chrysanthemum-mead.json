@@ -1,0 +1,52 @@
+{
+ "id": "rachelle-the-rabbit-chrysanthemum-mead",
+ "name": "Rachelle the Rabbit Chrysanthemum Mead",
+ "category": "wine",
+ "sub": "other",
+ "producer": {
+  "key": "rachelle-the-rabbit-distillery",
+  "name": "Rachelle the Rabbit Distillery",
+  "native": null,
+  "location": "Jurong, Singapore, Singapore",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 10,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "ABV",
+   "value": 10,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "500ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "500ml Bottle",
+   "where": "Gift",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/rachelle-the-rabbit-chrysanthemum-mead-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "rachelle-the-rabbit-chrysanthemum-mead",
+ "next": "rachelle-the-rabbit-chrysanthemum-mead"
+}

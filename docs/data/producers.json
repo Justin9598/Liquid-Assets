@@ -878,7 +878,7 @@
    "Haginotsuru",
    "Nichirinda"
   ],
-  "drinkCount": 1,
+  "drinkCount": 2,
   "favourites": 0,
   "hasStory": true,
   "lat": 38.866,
@@ -1055,7 +1055,7 @@
    "越の誉",
    "Qn"
   ],
-  "drinkCount": 1,
+  "drinkCount": 2,
   "favourites": 0,
   "hasStory": true,
   "lat": 37.365,
@@ -1603,7 +1603,7 @@
   "brands": [
    "Jeju Wit Ale"
   ],
-  "drinkCount": 1,
+  "drinkCount": 2,
   "favourites": 0,
   "hasStory": true,
   "lat": 33.375,
@@ -1878,7 +1878,7 @@
    "Kiku-Masamune",
    "Kikumasamune"
   ],
-  "drinkCount": 1,
+  "drinkCount": 2,
   "favourites": 0,
   "hasStory": true,
   "lat": 34.709,
@@ -2170,6 +2170,28 @@
   "exact": true
  },
  {
+  "key": "le-guishu",
+  "name": "Le Guishu",
+  "native": null,
+  "region": "Camargue",
+  "country": "France",
+  "location": "Arles, Camargue",
+  "brands": [],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": false,
+  "lat": 43.556,
+  "lon": 4.695,
+  "cid": "france",
+  "prov": "bouchesdurhone",
+  "provName": "Bouches-du-Rhône",
+  "area": null,
+  "cont": "Europe",
+  "reg": "Europe",
+  "main": "sake",
+  "exact": true
+ },
+ {
   "key": "librom-craft-sake-brewery",
   "name": "Librom Craft Sake Brewery",
   "native": "リブロム",
@@ -2256,7 +2278,7 @@
    "Mitsugo",
    "Fuji Chitose"
   ],
-  "drinkCount": 4,
+  "drinkCount": 5,
   "favourites": 1,
   "hasStory": true,
   "lat": 35.025,
@@ -3002,6 +3024,28 @@
   "cont": "Asia",
   "reg": "East Asia",
   "main": "sake",
+  "exact": true
+ },
+ {
+  "key": "rachelle-the-rabbit-distillery",
+  "name": "Rachelle the Rabbit Distillery",
+  "native": null,
+  "region": "Singapore",
+  "country": "Singapore",
+  "location": "Jurong, Singapore",
+  "brands": [],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": false,
+  "lat": 1.337,
+  "lon": 103.712,
+  "cid": "singapore",
+  "prov": "singapore",
+  "provName": "Singapore",
+  "area": null,
+  "cont": "Asia",
+  "reg": "Southeast Asia",
+  "main": "wine",
   "exact": true
  },
  {
@@ -3788,6 +3832,28 @@
   "exact": true
  },
  {
+  "key": "vodco-pacific",
+  "name": "Vodco Pacific",
+  "native": null,
+  "region": "Western Division",
+  "country": "Fiji",
+  "location": "Sabeto, Viti Levu",
+  "brands": [],
+  "drinkCount": 1,
+  "favourites": 0,
+  "hasStory": false,
+  "lat": -17.811,
+  "lon": 177.432,
+  "cid": "fiji",
+  "prov": "western",
+  "provName": "Western",
+  "area": null,
+  "cont": "Oceania",
+  "reg": "Melanesia",
+  "main": "spirits",
+  "exact": true
+ },
+ {
   "key": "wakakoma-shuzo",
   "name": "Wakakoma Shuzo",
   "native": "若駒酒造",
@@ -4007,7 +4073,7 @@
    "Yoshidagura u",
    "吉田蔵u"
   ],
-  "drinkCount": 1,
+  "drinkCount": 2,
   "favourites": 0,
   "hasStory": true,
   "lat": 36.487,

@@ -1,0 +1,71 @@
+{
+ "id": "koshinohomare-qn-miton-junmai-muroka-genshu",
+ "name": "Koshinohomare Qn Miton Junmai Muroka Genshu",
+ "category": "sake",
+ "sub": "junmai",
+ "producer": {
+  "key": "hara-shuzo",
+  "name": "Hara Shuzo",
+  "native": "原酒造",
+  "location": "Kashiwazaki, Niigata, Japan",
+  "founded": 1814,
+  "about": "Hara Shuzo is a brewery in Kashiwazaki, a port city on the Sea of Japan coast of Niigata. It dates its start to the Bunka 11 era, 1814, when Hara Kotaro, from a family of salt-pan foundry workers, turned to brewing instead.",
+  "url": "https://www.harashuzou.com/"
+ },
+ "abv": 13,
+ "styles": [
+  "Muroka",
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 65,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Niigata-grown rice (variety not disclosed)"
+  },
+  {
+   "label": "ABV",
+   "value": 13,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/koshinohomare-qn-miton-junmai-muroka-genshu-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "koshinohomare-qn-matsuri"
+ ],
+ "prev": "koshinohomare-qn-matsuri",
+ "next": "kujira-junmai-yamadanishiki-kimoto-nama-genshu-80"
+}

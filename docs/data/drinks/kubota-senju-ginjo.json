@@ -52,11 +52,25 @@
   {
    "date": null,
    "size": "720ml Bottle",
+   "where": "Gift",
+   "note": null
+  },
+  {
+   "date": null,
+   "size": "720ml Bottle",
    "where": "Shopee",
    "note": null
   }
  ],
- "photos": [],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kubota-senju-ginjo-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
  "moreFromProducer": [
   "kubota-junmai-daiginjo"
  ],

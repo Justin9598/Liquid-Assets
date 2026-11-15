@@ -44,7 +44,15 @@
    "note": null
   }
  ],
- "photos": [],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/ichigoya-hana-strawberry-doburoku-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
  "moreFromProducer": [
   "oriental-whey",
   "ukiuki-hops",

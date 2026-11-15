@@ -2093,5 +2093,137 @@
    0.25
   ],
   "cropBy": "owner"
+ },
+ "dassai-blue-type-50-junmai-daiginjo": {
+  "labelCrop": [
+   0.27,
+   0.68,
+   0.46,
+   0.29
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "ichigoya-hana-strawberry-doburoku": {
+  "labelCrop": [
+   0.31,
+   0.61,
+   0.37,
+   0.31
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "kubota-senju-ginjo": {
+  "labelCrop": [
+   0.3,
+   0.52,
+   0.42,
+   0.4
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "yoshidagura-u-night-and-dance-junmai": {
+  "labelCrop": [
+   0.22,
+   0.52,
+   0.45,
+   0.37
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "kiku-masamune-hoken-junmai-ginjo": {
+  "labelCrop": [
+   0.17,
+   0.47,
+   0.61,
+   0.5
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "rachelle-the-rabbit-chrysanthemum-mead": {
+  "labelCrop": [
+   0.3,
+   0.38,
+   0.42,
+   0.36
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "fijian-sea-snake-contemporary-gin": {
+  "labelCrop": [
+   0.22,
+   0.4,
+   0.58,
+   0.4
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "kagura-mitsugo-kabosu-japanese-pepper": {
+  "labelCrop": [
+   0.24,
+   0.58,
+   0.5,
+   0.4
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "koshinohomare-qn-miton-junmai-muroka-genshu": {
+  "labelCrop": [
+   0.18,
+   0.48,
+   0.52,
+   0.45
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "yoshidagura-u-night-and-dance-improvisation-2-0-united-arrows": {
+  "labelCrop": [
+   0.28,
+   0.46,
+   0.46,
+   0.48
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "gardians-riz-fermente-sec": {
+  "labelCrop": [
+   0.24,
+   0.57,
+   0.52,
+   0.4
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "hagi-no-tsuru-junmai-daiginjo-miyamanishiki-singapore-kuroneko": {
+  "labelCrop": [
+   0.2,
+   0.53,
+   0.62,
+   0.42
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  }
 }

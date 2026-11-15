@@ -1,0 +1,66 @@
+{
+ "id": "yoshidagura-u-night-and-dance-improvisation-2-0-united-arrows",
+ "name": "Yoshidagura u Night & Dance Improvisation 2.0 for United Arrows",
+ "category": "sake",
+ "sub": "ungraded",
+ "producer": {
+  "key": "yoshida-sake-brewery",
+  "name": "Yoshida Sake Brewery",
+  "native": "吉田酒造店",
+  "location": "Hakusan, Ishikawa, Japan",
+  "founded": 1870,
+  "about": "Yoshida Shuzoten is a sake brewery in Hakusan, Ishikawa, founded in 1870 and incorporated in 1954. It sells sake as Tedorigawa and, in a second line, as Yoshidagura. The brewery sits on the Tedori River alluvial fan below Mt. Haku, in a village once known for sake making.",
+  "url": "https://tedorigawa.com/"
+ },
+ "abv": 8,
+ "styles": [
+  "Genshu"
+ ],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Polishing ratio",
+   "value": 45,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Hyakumangoku-no-shiro"
+  },
+  {
+   "label": "ABV",
+   "value": 8,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "720ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/yoshidagura-u-night-and-dance-improvisation-2-0-united-arrows-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [
+  "yoshidagura-u-night-and-dance-junmai"
+ ],
+ "prev": "wufeng-ji-qing",
+ "next": "takezumi-bamboo-spring"
+}

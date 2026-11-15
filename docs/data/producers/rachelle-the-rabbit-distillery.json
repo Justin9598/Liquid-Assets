@@ -1,0 +1,41 @@
+{
+ "key": "rachelle-the-rabbit-distillery",
+ "name": "Rachelle the Rabbit Distillery",
+ "native": null,
+ "location": "Jurong, Singapore",
+ "region": "Singapore",
+ "country": "Singapore",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "rachelle-the-rabbit-chrysanthemum-mead",
+   "category": "wine",
+   "sub": "other"
+  }
+ ],
+ "moreFromRegion": [
+  "orchid-sake-brewery"
+ ],
+ "lat": 1.337,
+ "lon": 103.712,
+ "cid": "singapore",
+ "prov": "singapore",
+ "provName": "Singapore",
+ "area": null,
+ "cont": "Asia",
+ "reg": "Southeast Asia",
+ "main": "wine",
+ "exact": true
+}

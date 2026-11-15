@@ -26,16 +26,21 @@
  ],
  "related": [],
  "tally": {
-  "drinks": 4,
-  "categories": 1,
+  "drinks": 5,
+  "categories": 2,
   "favourites": 1,
-  "timesHad": 4
+  "timesHad": 5
  },
  "drinks": [
   {
    "id": "kagura-hae",
    "category": "sake",
    "sub": "junmai-daiginjo"
+  },
+  {
+   "id": "kagura-mitsugo-kabosu-japanese-pepper",
+   "category": "liqueur",
+   "sub": "fruit-liqueur"
   },
   {
    "id": "kagura-nojoho-junmai-ginjo",

@@ -1,0 +1,56 @@
+{
+ "id": "gardians-riz-fermente-sec",
+ "name": "Gardian's Riz Fermenté Sec",
+ "category": "sake",
+ "sub": "craft-sake",
+ "producer": {
+  "key": "le-guishu",
+  "name": "Le Guishu",
+  "native": null,
+  "location": "Arles, Camargue, France",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 12,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Rice",
+   "value": "Camargue rice (2019 harvest)"
+  },
+  {
+   "label": "ABV",
+   "value": 12,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "750ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": null,
+   "size": "750ml Bottle",
+   "where": "Mirai Sake Hall",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/gardians-riz-fermente-sec-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "fermenteria-yeastology-philly-sour",
+ "next": "haccoba-jam-2025by-no4"
+}

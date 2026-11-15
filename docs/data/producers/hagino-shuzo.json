@@ -30,16 +30,21 @@
   }
  ],
  "tally": {
-  "drinks": 1,
+  "drinks": 2,
   "categories": 1,
   "favourites": 0,
-  "timesHad": 2
+  "timesHad": 3
  },
  "drinks": [
   {
    "id": "hagi-no-tsuru-betsu-shikomi",
    "category": "sake",
    "sub": "ungraded"
+  },
+  {
+   "id": "hagi-no-tsuru-junmai-daiginjo-miyamanishiki-singapore-kuroneko",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
   }
  ],
  "moreFromRegion": [

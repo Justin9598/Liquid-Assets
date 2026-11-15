@@ -21,12 +21,17 @@
  ],
  "related": [],
  "tally": {
-  "drinks": 1,
+  "drinks": 2,
   "categories": 1,
   "favourites": 0,
-  "timesHad": 1
+  "timesHad": 2
  },
  "drinks": [
+  {
+   "id": "jeju-beer-barrel-series-blueberry-stout",
+   "category": "fermented",
+   "sub": "stout-porter"
+  },
   {
    "id": "under-15m",
    "category": "fermented",

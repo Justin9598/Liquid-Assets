@@ -651,9 +651,9 @@ def welcome_checks(page, base, tag, shots_dir=None):
                 probs.append(f"{tag} welcome {label}: the arrow cue is {'shown' if r['cue'] else 'hidden'} while more bottles are {'hidden' if r['more'] else 'not hidden'}")
         return s
 
-    # top shelf, and the menu's Shelves submenu match it; Liquid is empty so it is left out
+    # top shelf, and the menu's Shelves submenu match it (Liqueur joined on 2026-11-15 with its first drink)
     caps = page.eval("[...document.querySelectorAll('.vessel-cap')].map(e => e.textContent.trim())")
-    if caps != ["Sake", "Fermented Beverages", "Umeshu", "Wine", "Spirits", "Cocktails"] or caps != names:
+    if caps != ["Sake", "Fermented Beverages", "Umeshu", "Liqueur", "Wine", "Spirits", "Cocktails"] or caps != names:
         P(f"the top shelf shows {caps}, shelf.json has {names}")
     rest = check("at rest")
     links = page.eval("[...document.querySelectorAll('#lower .slot.mix')].map((e) => e.getAttribute('href'))")
@@ -803,8 +803,8 @@ def alias_checks(page, base, tag):
         elif r["history"] - before > 1:
             probs.append(f"{tag} aliases: {old} added {r['history'] - before} history entries")
     r = page.eval(f"{ALIAS_JS}('#/liqueur')", await_promise=True)
-    if "This shelf is empty" not in r["h1"]:
-        probs.append(f"{tag} aliases: #/liqueur (empty) shows '{r['h1']}'")
+    if "This shelf is empty" in r["h1"] or r["hash"] != "#/liqueur":          # Liqueur has its first drink since 2026-11-15
+        probs.append(f"{tag} aliases: #/liqueur shows '{r['h1']}' at {r['hash']}")
     return probs
 
 
