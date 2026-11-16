@@ -40,7 +40,15 @@
    "note": null
   }
  ],
- "photos": [],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/jeju-beer-barrel-series-blueberry-stout-1.webp",
+   "w": 675,
+   "h": 1200
+  }
+ ],
  "moreFromProducer": [
   "under-15m"
  ],

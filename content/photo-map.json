@@ -115,7 +115,6 @@
   "cropBy": "owner"
  },
  "tenmei-junmai-ginjo-hiire-black-label": {
-  "front": "Tenmei Junmai Ginjo Hiire Black Label (back label).jpg",
   "labelStatus": "skip",
   "labelSkip": "no usable label (owner)",
   "cropBy": "owner"
@@ -2221,6 +2220,17 @@
    0.53,
    0.62,
    0.42
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "jeju-beer-barrel-series-blueberry-stout": {
+  "labelCrop": [
+   0.18,
+   0.61,
+   0.5,
+   0.36
   ],
   "labelStatus": "ok",
   "cropBy": "shipper",

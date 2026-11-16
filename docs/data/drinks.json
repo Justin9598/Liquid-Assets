@@ -2577,7 +2577,7 @@
   "name": "Jeju Beer The Barrel Series Blueberry Stout",
   "category": "fermented",
   "sub": "stout-porter",
-  "shell": "beer-stout",
+  "shell": "beer-bottle",
   "producer": "Jeju Beer Company",
   "producerKey": "jeju-beer-company",
   "origin": "Jeju",
@@ -2593,8 +2593,8 @@
    "Stout/Porter"
   ],
   "hasTasting": false,
-  "thumb": null,
-  "label": null
+  "thumb": "img/thumbs/jeju-beer-barrel-series-blueberry-stout.webp",
+  "label": "img/labels/jeju-beer-barrel-series-blueberry-stout.webp"
  },
  {
   "id": "jinya-junmai-akiagari",
@@ -7050,7 +7050,7 @@
    "Aizu Yamadanishiki 100%"
   ],
   "hasTasting": false,
-  "thumb": "img/thumbs/tenmei-junmai-ginjo-hiire-black-label.webp",
+  "thumb": null,
   "label": null
  },
  {
