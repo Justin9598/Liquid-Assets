@@ -24,7 +24,7 @@ SHELL_KEYS = [
 
 BEER_GLASS = {"wheat": "beer-weizen", "ipa": "beer-tulip", "specialty": "beer-tulip", "saison": "beer-tulip",
               "stout-porter": "beer-stout", "stout": "beer-stout", "porter": "beer-stout"}
-WINE_COLOUR = {"red": "wine-red", "white": "wine-white", "rose": "wine-rose", "sparkling": "champagne"}
+WINE_COLOUR = {"red": "wine-red", "white": "wine-white", "orange": "wine-white", "rose": "wine-rose", "sparkling": "champagne"}   # an orange wine is a skin-contact white: a pale bottle
 USA = {"usa", "us", "u.s.a.", "united states", "united states of america"}
 
 

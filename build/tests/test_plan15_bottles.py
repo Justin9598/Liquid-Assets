@@ -35,6 +35,7 @@ def D(cat, sub, sizes=(), country="Japan", wine=None, did="x"):
     (D("fermented", "lager", ["60ml Tasting", "Bottle"]), "beer-bottle"),
     (D("wine", "merlot", wine="Red"), "wine-red"),
     (D("wine", "x", wine="White"), "wine-white"),
+    (D("wine", "x", wine="Orange"), "wine-white"),   # a skin-contact white gets a pale bottle
     (D("wine", "x", wine="Rosé"), "wine-rose"),
     (D("wine", "x", wine="Sparkling"), "champagne"),
     (D("wine", "x"), "wine-red"),
