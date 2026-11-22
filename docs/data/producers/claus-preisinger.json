@@ -1,0 +1,39 @@
+{
+ "key": "claus-preisinger",
+ "name": "Claus Preisinger",
+ "native": null,
+ "location": "Gols, Burgenland",
+ "region": "Burgenland",
+ "country": "Austria",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "preisinger-kalkundkiesel-weiss-2023",
+   "category": "wine",
+   "sub": "blend"
+  }
+ ],
+ "moreFromRegion": [],
+ "lat": 47.908,
+ "lon": 16.911,
+ "cid": "austria",
+ "prov": "burgenland",
+ "provName": "Burgenland",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "wine",
+ "exact": true
+}

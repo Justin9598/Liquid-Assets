@@ -1,0 +1,76 @@
+{
+ "id": "arndorfer-die-leidenschaft-rot-2020",
+ "name": "Arndorfer Die Leidenschaft Rot 2020",
+ "category": "wine",
+ "sub": "zweigelt",
+ "producer": {
+  "key": "martin-anna-arndorfer",
+  "name": "Martin & Anna Arndorfer",
+  "native": null,
+  "location": "Straß im Straßertale, Kamptal, Austria",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 13,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Vintage",
+   "value": 2020
+  },
+  {
+   "label": "Grape(s)",
+   "value": "Zweigelt"
+  },
+  {
+   "label": "Appellation",
+   "value": "Wein aus Österreich"
+  },
+  {
+   "label": "Colour",
+   "value": "Red"
+  },
+  {
+   "label": "Sweetness",
+   "value": "dry"
+  },
+  {
+   "label": "Oak",
+   "value": "Mostly used French oak"
+  },
+  {
+   "label": "ABV",
+   "value": 13,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "Glass"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-22",
+   "size": "Glass",
+   "where": "Chaos Natural Wine Bar",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/arndorfer-die-leidenschaft-rot-2020-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "arndorfer-die-leidenschaft-rot-2020",
+ "next": "arndorfer-die-leidenschaft-rot-2020"
+}

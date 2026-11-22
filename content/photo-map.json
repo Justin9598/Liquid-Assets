@@ -2235,5 +2235,83 @@
   "labelStatus": "ok",
   "cropBy": "shipper",
   "cropCheck": "passed"
+ },
+ "hatsukame-junmai-ginjo-tojo-yamadanishiki": {
+  "labelCrop": [
+   0.25,
+   0.6,
+   0.46,
+   0.36
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "kirinzan-nagareboshi-junmai-daiginjo": {
+  "labelCrop": [
+   0.22,
+   0.5,
+   0.6,
+   0.46
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "arndorfer-die-leidenschaft-rot-2020": {
+  "labelCrop": [
+   0.2,
+   0.43,
+   0.62,
+   0.43
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "defialy-candlebark-hill-pinot-noir-2023": {
+  "labelCrop": [
+   0.25,
+   0.42,
+   0.58,
+   0.45
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "preisinger-kalkundkiesel-weiss-2023": {
+  "labelCrop": [
+   0.27,
+   0.53,
+   0.5,
+   0.45
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "domaine-la-boheme-gm-2023": {
+  "labelCrop": [
+   0.26,
+   0.62,
+   0.52,
+   0.35
+  ],
+  "labelStatus": "ok",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "leyd-marzen": {
+  "labelStatus": "skip",
+  "labelSkip": "poured glass, no label",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
+ },
+ "garage-project-tutaki-haze": {
+  "labelStatus": "skip",
+  "labelSkip": "poured glass, no label",
+  "cropBy": "shipper",
+  "cropCheck": "passed"
  }
 }

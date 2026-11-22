@@ -1,0 +1,62 @@
+{
+ "id": "kirinzan-nagareboshi-junmai-daiginjo",
+ "name": "Kirinzan Nagareboshi Junmai Daiginjo",
+ "category": "sake",
+ "sub": "junmai-daiginjo",
+ "producer": {
+  "key": "kirinzan-shuzo",
+  "name": "Kirinzan Shuzo",
+  "native": null,
+  "location": "Aga, Niigata, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Daiginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 45,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Gohyakumangoku (Okuaga, Niigata)"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-22",
+   "size": null,
+   "where": "Kyu Izakaya",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/kirinzan-nagareboshi-junmai-daiginjo-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "kikunotsukasa-innocent-40-junmai-daiginj",
+ "next": "kubota-junmai-daiginjo"
+}

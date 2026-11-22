@@ -58,6 +58,13 @@ COUNTRIES = {
     "usa": {"ledger": "USA", "map": "United States of America", "admin": "United States of America", "minpop": 400_000},
     "chile": {"ledger": "Chile", "map": "Chile", "admin": "Chile"},
     "fiji": {"ledger": "Fiji", "map": "Fiji", "admin": "Fiji", "wrap180": True},     # crosses the 180th meridian: see unwrap()
+    "austria": {"ledger": "Austria", "map": "Austria", "admin": "Austria"},
+    "australia": {"ledger": "Australia", "map": "Australia", "admin": "Australia", "minpop": 400_000,
+                  "drop": ["Macquarie Island", "Lord Howe Island"]},                     # far islands that would stretch the frame
+    "new-zealand": {"ledger": "New Zealand", "map": "New Zealand", "admin": "New Zealand",
+                    "drop": ["Auckland Islands", "Campbell Islands", "Antipodes Islands", "Chatham Islands Territory", "Kermadec Islands",
+                             "Tokelau", "The Snares", "Three Kings Islands"]},           # sub-Antarctic and Pacific outliers (some across 180 degrees)
+    "malaysia": {"ledger": "Malaysia", "map": "Malaysia", "admin": "Malaysia"},         # the peninsula and Borneo: one frame fits both
 }
 # World-file ids that differ from the plain slug of the map unit's name
 WORLD_IDS = {"United States of America": "usa"}
@@ -311,6 +318,8 @@ def make_country(cid, conf, admin1, places):
     PINS.extend((lon % 360 if conf.get("wrap180") and lon < 0 else lon, lat) for lon, lat in ledger_pins(conf["ledger"]))
     feats = [f for f in admin1 if f["properties"]["admin"] == conf["admin"]
              and (not conf.get("geonunit") or f["properties"].get("geonunit") == conf["geonunit"])]
+    if conf.get("drop"):
+        feats = [f for f in feats if f["properties"]["name"] not in conf["drop"]]
     if conf.get("mainland"):
         feats = [f for f in feats if -12 < f["properties"]["longitude"] < 20 and f["properties"]["latitude"] > 35]
     if not feats:

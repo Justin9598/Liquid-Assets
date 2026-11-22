@@ -1,0 +1,48 @@
+{
+ "key": "kirinzan-shuzo",
+ "name": "Kirinzan Shuzo",
+ "native": null,
+ "location": "Aga, Niigata",
+ "region": "Niigata",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "kirinzan-nagareboshi-junmai-daiginjo",
+   "category": "sake",
+   "sub": "junmai-daiginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "asahi-shuzo-niigata",
+  "hara-shuzo",
+  "ishimoto-shuzo",
+  "koshi-meijo",
+  "kubiki-shuzo",
+  "shirataki-shuzo",
+  "swan-lake-beer",
+  "takachiyo-shuzo"
+ ],
+ "lat": 37.681,
+ "lon": 139.46,
+ "cid": "japan",
+ "prov": "niigata",
+ "provName": "Niigata",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
+}

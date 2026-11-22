@@ -1,0 +1,39 @@
+{
+ "key": "martin-anna-arndorfer",
+ "name": "Martin & Anna Arndorfer",
+ "native": null,
+ "location": "Straß im Straßertale, Kamptal",
+ "region": "Kamptal",
+ "country": "Austria",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "arndorfer-die-leidenschaft-rot-2020",
+   "category": "wine",
+   "sub": "zweigelt"
+  }
+ ],
+ "moreFromRegion": [],
+ "lat": 48.469,
+ "lon": 15.739,
+ "cid": "austria",
+ "prov": "niederosterreich",
+ "provName": "Niederösterreich",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "wine",
+ "exact": true
+}

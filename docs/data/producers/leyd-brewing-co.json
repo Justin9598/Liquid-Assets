@@ -1,0 +1,39 @@
+{
+ "key": "leyd-brewing-co",
+ "name": "Leyd Brewing Co.",
+ "native": null,
+ "location": "Sibu, Sarawak",
+ "region": "Sarawak",
+ "country": "Malaysia",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "leyd-marzen",
+   "category": "fermented",
+   "sub": "lager"
+  }
+ ],
+ "moreFromRegion": [],
+ "lat": 2.3,
+ "lon": 111.871,
+ "cid": "malaysia",
+ "prov": "sarawak",
+ "provName": "Sarawak",
+ "area": null,
+ "cont": "Asia",
+ "reg": "Southeast Asia",
+ "main": "fermented",
+ "exact": true
+}

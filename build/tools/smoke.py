@@ -169,15 +169,37 @@ def page_url(port, w, h, query, framed=True):
     return f"{base}__phone.html?w={w}&h={h}&u=" + (base + query).replace("?", "%3F").replace("&", "%26").replace("#", "%23"), (500, h)
 
 
+def _check_size_cdp(port, w, h):
+    """The same ?check=1 run through cdp.py (a real window of w x h; phones with touch emulation). None when it gives no result."""
+    import time
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from cdp import Browser
+    with Browser() as b:
+        page = b.page(w, h, mobile=w < 500)
+        page.goto(f"http://127.0.0.1:{port}/?check=1", settle=True)
+        for _ in range(60):
+            txt = page.eval("(document.querySelector('#check-result,#out') || {}).textContent || ''")
+            if txt.startswith("{"):
+                res = json.loads(txt)
+                res["_logs"] = list(page.logs)
+                return res
+            time.sleep(0.5)
+    return None
+
+
 def check_size(port, w, h):
     url, win = page_url(port, w, h, "?check=1")
     r = run_edge([f"--window-size={win[0]},{win[1]}", "--virtual-time-budget=60000", "--enable-logging=stderr", "--v=0", "--dump-dom", url])
     console = [ln.split("CONSOLE", 1)[1][:200] for ln in r.stderr.splitlines() if ":CONSOLE" in ln]
     m = re.search(r'<pre id="(?:check-result|out)"[^>]*>(\{.*?\})</pre>', r.stdout, re.S)
     if not m:
-        return {"ok": False, "problems": ["no result: the page did not finish its self-check"], "stats": {}, "console": console}
-    import html
-    res = json.loads(html.unescape(m.group(1)))
+        res = _check_size_cdp(port, w, h)          # newer Edge builds print nothing for --dump-dom: ask the page through the DevTools driver
+        if res is None:
+            return {"ok": False, "problems": ["no result: the page did not finish its self-check"], "stats": {}, "console": console}
+        console = res.pop("_logs", console)
+    else:
+        import html
+        res = json.loads(html.unescape(m.group(1)))
     res["console"] = console
     errors = [c for c in console if re.search(r"error|failed|404|uncaught", c, re.I)]
     if errors:

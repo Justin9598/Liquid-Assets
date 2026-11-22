@@ -1,0 +1,51 @@
+{
+ "id": "leyd-marzen",
+ "name": "Leyd Marzen",
+ "category": "fermented",
+ "sub": "lager",
+ "producer": {
+  "key": "leyd-brewing-co",
+  "name": "Leyd Brewing Co.",
+  "native": null,
+  "location": "Sibu, Sarawak, Malaysia",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": null,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "Lager"
+  },
+  {
+   "label": "Size",
+   "value": "Pint"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-22",
+   "size": "Pint",
+   "where": "Shoot Taproom",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/leyd-marzen-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "carlsberg-smooth-draught",
+ "next": "nasu-kohgen-ai"
+}

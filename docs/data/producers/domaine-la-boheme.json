@@ -1,0 +1,39 @@
+{
+ "key": "domaine-la-boheme",
+ "name": "Domaine la Bohème",
+ "native": null,
+ "location": "Saint-Georges-sur-Allier, Auvergne",
+ "region": "Auvergne",
+ "country": "France",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "domaine-la-boheme-gm-2023",
+   "category": "wine",
+   "sub": "other"
+  }
+ ],
+ "moreFromRegion": [],
+ "lat": 45.711,
+ "lon": 3.244,
+ "cid": "france",
+ "prov": "puydedome",
+ "provName": "Puy-de-Dôme",
+ "area": null,
+ "cont": "Europe",
+ "reg": "Europe",
+ "main": "wine",
+ "exact": true
+}

@@ -1,0 +1,39 @@
+{
+ "key": "garage-project",
+ "name": "Garage Project",
+ "native": null,
+ "location": "Aro Valley, Wellington",
+ "region": "Wellington",
+ "country": "New Zealand",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "garage-project-tutaki-haze",
+   "category": "fermented",
+   "sub": "ipa"
+  }
+ ],
+ "moreFromRegion": [],
+ "lat": -41.295,
+ "lon": 174.768,
+ "cid": "new-zealand",
+ "prov": "wellington",
+ "provName": "Wellington",
+ "area": null,
+ "cont": "Oceania",
+ "reg": "Australia and New Zealand",
+ "main": "fermented",
+ "exact": true
+}

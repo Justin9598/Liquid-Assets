@@ -1,0 +1,66 @@
+{
+ "id": "hatsukame-junmai-ginjo-tojo-yamadanishiki",
+ "name": "Hatsukame Junmai Ginjo Tojo Yamadanishiki",
+ "category": "sake",
+ "sub": "junmai-ginjo",
+ "producer": {
+  "key": "hatsukame-shuzo",
+  "name": "Hatsukame Shuzo",
+  "native": null,
+  "location": "Fujieda, Shizuoka, Japan",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 15,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Grade",
+   "value": "Junmai Ginjo"
+  },
+  {
+   "label": "Polishing ratio",
+   "value": 55,
+   "unit": "%",
+   "viz": "polish"
+  },
+  {
+   "label": "Rice",
+   "value": "Yamadanishiki (Tojo, Hyogo)"
+  },
+  {
+   "label": "ABV",
+   "value": 15,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "720ml Bottle"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-22",
+   "size": "720ml Bottle",
+   "where": "Kyu Izakaya",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/hatsukame-junmai-ginjo-tojo-yamadanishiki-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "harada",
+ "next": "hikomago-hikozon-junmai-ginjo-funakuchishu-nam"
+}

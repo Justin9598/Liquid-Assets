@@ -1,0 +1,42 @@
+{
+ "key": "hatsukame-shuzo",
+ "name": "Hatsukame Shuzo",
+ "native": null,
+ "location": "Fujieda, Shizuoka",
+ "region": "Shizuoka",
+ "country": "Japan",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "hatsukame-junmai-ginjo-tojo-yamadanishiki",
+   "category": "sake",
+   "sub": "junmai-ginjo"
+  }
+ ],
+ "moreFromRegion": [
+  "doi-shuzojo",
+  "eikun-shuzo"
+ ],
+ "lat": 34.918,
+ "lon": 138.282,
+ "cid": "japan",
+ "prov": "shizuoka",
+ "provName": "Shizuoka",
+ "area": "chubu",
+ "cont": "Asia",
+ "reg": "East Asia",
+ "main": "sake",
+ "exact": true
+}

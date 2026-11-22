@@ -1,0 +1,39 @@
+{
+ "key": "domaine-defialy",
+ "name": "Domaine Defialy",
+ "native": null,
+ "location": "Macedon, Victoria",
+ "region": "Macedon Ranges",
+ "country": "Australia",
+ "founded": null,
+ "master": null,
+ "website": null,
+ "brands": [],
+ "about": [],
+ "sources": [],
+ "related": [],
+ "tally": {
+  "drinks": 1,
+  "categories": 1,
+  "favourites": 0,
+  "timesHad": 1
+ },
+ "drinks": [
+  {
+   "id": "defialy-candlebark-hill-pinot-noir-2023",
+   "category": "wine",
+   "sub": "pinot-noir"
+  }
+ ],
+ "moreFromRegion": [],
+ "lat": -37.428,
+ "lon": 144.546,
+ "cid": "australia",
+ "prov": "victoria",
+ "provName": "Victoria",
+ "area": null,
+ "cont": "Oceania",
+ "reg": "Australia and New Zealand",
+ "main": "wine",
+ "exact": true
+}

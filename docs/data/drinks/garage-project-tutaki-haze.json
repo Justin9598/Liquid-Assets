@@ -1,0 +1,60 @@
+{
+ "id": "garage-project-tutaki-haze",
+ "name": "Garage Project Tutaki Haze",
+ "category": "fermented",
+ "sub": "ipa",
+ "producer": {
+  "key": "garage-project",
+  "name": "Garage Project",
+  "native": null,
+  "location": "Aro Valley, Wellington, New Zealand",
+  "founded": null,
+  "about": null,
+  "url": null
+ },
+ "abv": 7,
+ "styles": [],
+ "favourite": false,
+ "rating": null,
+ "spec": [
+  {
+   "label": "Type",
+   "value": "IPA"
+  },
+  {
+   "label": "Flavouring or botanicals",
+   "value": "Nelson Sauvin, Motueka and Riwaka hops"
+  },
+  {
+   "label": "ABV",
+   "value": 7,
+   "unit": "%"
+  },
+  {
+   "label": "Size",
+   "value": "Pint"
+  }
+ ],
+ "tasting": null,
+ "story": null,
+ "visits": [
+  {
+   "date": "2026-11-22",
+   "size": "Pint",
+   "where": "Shoot Taproom",
+   "note": null
+  }
+ ],
+ "photos": [
+  {
+   "kind": "front",
+   "caption": "Front label",
+   "web": "img/web/garage-project-tutaki-haze-1.webp",
+   "w": 676,
+   "h": 1200
+  }
+ ],
+ "moreFromProducer": [],
+ "prev": "isekado-mr-dank",
+ "next": "isekado-mr-dank"
+}
