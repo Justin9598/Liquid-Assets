@@ -109,8 +109,11 @@ class Browser:
                                      stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         port_file = Path(self.profile) / "DevToolsActivePort"
         for _ in range(100):
-            if port_file.exists() and port_file.read_text().strip():
-                break
+            try:
+                if port_file.exists() and port_file.read_text().strip():
+                    break
+            except OSError:                      # the browser is still writing the file
+                pass
             time.sleep(0.1)
         else:
             raise RuntimeError("the browser did not start")

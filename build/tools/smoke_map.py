@@ -195,6 +195,53 @@ def pin_problems(s, label):
     return out
 
 
+WHOLE_JS = r"""(async () => {
+  // Plan 14 section 13.2: a continent or region that opens straight to maker pins frames the whole outline of each pinned country
+  // (far outliers left out, as makemaps and the country level do): every province box lies inside the map, every pin too.
+  const host = document.querySelector('#mapbox');
+  const geo = host.querySelector('.mm-geo');
+  const m = /translate\(([-\d.]+) ([-\d.]+)\) scale\(([-\d.]+)\)/.exec(geo.getAttribute('transform') || '');
+  if (!m) return { problems: ['no view transform'] };
+  const [tx, ty, sc] = [+m[1], +m[2], +m[3]];
+  const hr = host.getBoundingClientRect();
+  const prods = await (await fetch('data/producers.json')).json();
+  const keys = [...host.querySelectorAll('.mm-pin')].map((p) => p.dataset.id).filter((i) => i.startsWith('m:')).map((i) => i.slice(2));
+  const held = prods.filter((p) => keys.includes(p.key));
+  const SKIP = { usa: ['alaska', 'hawaii'], japan: ['okinawa'] };
+  const problems = [];
+  for (const cid of new Set(held.map((p) => p.cid).filter(Boolean))) {
+    let doc;
+    try { doc = await (await fetch(`assets/maps/${cid}.json`)).json(); } catch { continue; }
+    const have = new Set(held.filter((p) => p.cid === cid).map((p) => p.prov));
+    for (const pv of doc.provinces) {
+      if ((SKIP[cid] || []).includes(pv.id) && !have.has(pv.id)) continue;
+      const [x0, y0, x1, y1] = pv.bb;
+      const l = x0 * sc + tx + hr.left, r = x1 * sc + tx + hr.left, t = y0 * sc + ty + hr.top, b = y1 * sc + ty + hr.top;
+      if (l < hr.left - 1 || r > hr.right + 1 || t < hr.top - 1 || b > hr.bottom + 1) problems.push(`${cid}/${pv.id} is cut off by the frame`);
+    }
+  }
+  for (const p of host.querySelectorAll('.mm-pin')) {
+    const q = p.querySelector('.pin-head').getBoundingClientRect();
+    if (q.left < hr.left - 1 || q.right > hr.right + 1 || q.top < hr.top - 1 || q.bottom > hr.bottom + 1) problems.push(`pin ${p.dataset.id} leaves the frame`);
+  }
+  return { problems, countries: [...new Set(held.map((p) => p.cid))] };
+})()"""
+
+WHOLE_LEVELS = ["oceania", "europe", "asia", "asia/southeast-asia", "asia/east-asia", "north-america", "south-america"]
+
+
+def whole_country_checks(page, tag):
+    """At every continent or region that opens straight to maker pins, each pinned country is framed whole."""
+    probs = []
+    for at in WHOLE_LEVELS:
+        s = open_at(page, at)
+        if s is None or s["kind"] != "makers" or s["level"] not in ("continent", "region"):
+            continue                                       # a level with group pins keeps its own framing
+        r = page.eval(WHOLE_JS, await_promise=True)
+        probs += [f"{tag} {at}: {m}" for m in r["problems"]]
+    return probs
+
+
 def map_checks(page, base, tag, full=True):
     """The Makers map: World to a prefecture and back up, the two rules, no overlaps at any level, map and list together."""
     probs = []
@@ -294,6 +341,7 @@ def map_checks(page, base, tag, full=True):
     s = state(page)
     if s["at"] != "" or s["back"]:
         probs.append(f"{tag}: back to the World gave '{s['at']}'")
+    probs += whole_country_checks(page, tag)
     if not full:
         return probs
     probs += frame_checks(page, tag)

@@ -233,10 +233,26 @@ ${board(`    <div class="m-controls">
         const pv = data.provinces.find((x) => x.id === view.node.id);
         if (pv) pts.push([pv.bb[0], pv.bb[1]], [pv.bb[2], pv.bb[3]]);
       }
+      // a continent or region that opens straight to maker pins frames the whole outline of every country that holds a pin (Plan 14 section 13.2)
+      let whole = false;
+      if (!data && ['continent', 'region'].includes(view.node.level) && view.kind === 'makers') {
+        for (const cid of new Set(view.makers.filter((p) => p.lat != null && p.cid).map((p) => p.cid))) {
+          let cd = null;
+          try { cd = await loadCountry(cid); } catch { cd = null; }
+          if (my !== token) return;
+          if (!cd) continue;
+          const held = new Set(view.makers.filter((p) => p.cid === cid).map((p) => p.prov));
+          const skip = (FRAME_SKIP[cid] || []).filter((id) => !held.has(id));        // far outliers stay out, as at the country level
+          for (const pv of cd.provinces) if (pv.bb && !skip.includes(pv.id)) { pts.push([pv.bb[0], pv.bb[1]], [pv.bb[2], pv.bb[3]]); whole = true; }
+        }
+      }
       if (!pts.length) pts.push(...(WORLD_BOX ? [[WORLD_BOX[0], WORLD_BOX[1]], [WORLD_BOX[2], WORLD_BOX[3]]] : []));
       const xs = pts.map((q) => q[0]);
       const ys = pts.map((q) => q[1]);
-      spec = { box: [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)], minW: 700, minH: 500, pad };
+      const eight = { l: stage.W * 0.08, r: stage.W * 0.08, t: stage.H * 0.08, b: stage.H * 0.08 };
+      // 8% round the countries, and never less than the room the pins' heads and name tags need
+      const padWhole = { l: Math.max(eight.l, pad.l), r: Math.max(eight.r, pad.r), t: Math.max(eight.t, pad.t), b: Math.max(eight.b, pad.b) };
+      spec = { box: [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)], minW: 700, minH: 500, pad: whole ? padWhole : pad };
     }
     await stage.go(spec, animate);
     if (my !== token) return;
