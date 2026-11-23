@@ -128,7 +128,7 @@ class Maps:
         self.by_name = {}
         self._country = {}
         for f in sorted(self.dir.glob("*.json")):
-            if f.name == "world.json":
+            if f.name in ("world.json", "chalk-style.json"):          # the style (Plan 17) is not a country file
                 continue
             try:
                 head = json.loads(f.read_text(encoding="utf-8"))

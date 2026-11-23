@@ -8,7 +8,7 @@ from pathlib import Path
 
 from . import assets as assets_mod, bottles as bottles_mod, phase as phase_mod, scene as scene_mod, checks, emit as emit_mod, images, og as og_mod, model, photos as photos_mod, producers as producers_mod
 from . import burger as burger_mod, shell_sheets, counter as counter_mod, maps as maps_mod, report as report_mod, scene_report
-from . import cropguard
+from . import cropguard, mapstyle as mapstyle_mod
 from .common import BuildError, Issues
 from .ledger import load_ledger
 
@@ -123,6 +123,8 @@ def run(root, ledger_path=None, photos_dir=None, new_dir=None, check=False, forc
             drinks, photo_map, seasonal, content["counter"], [c["key"] for c in shelf])     # Plan 14 section 3
     else:
         counter_report = None
+
+    mapstyle_mod.check(docs, content_dir, issues)                                   # E10, W31 (Plan 17 section 9)
 
     # S8
     jobs_all = images.plan_outputs(photo_map)

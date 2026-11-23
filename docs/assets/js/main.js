@@ -193,6 +193,7 @@ function footer(build) {
   if (build?.generated) bits.push(`Last updated ${esc(fmtDate(build.generated.slice(0, 10)))}`);
   if (build) bits.push(plural(build.drinkCount, 'drink'));
   bits.push('Map: Natural Earth (public domain)');
+  bits.push('Map data: © OpenStreetMap contributors, OpenFreeMap, OpenMapTiles · Maps drawn with MapLibre (BSD-3)');
   bits.push('Type: Kalam (SIL Open Font Licence)');
   bits.push('Icons: Phosphor (MIT)');
   el.innerHTML = `<span>${bits.join(' · ')}</span>`;

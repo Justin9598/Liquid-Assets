@@ -1,9 +1,18 @@
-"""Browser checks for the pin maps (Plan 14 sections 5 and 6, acceptance in section 9), and the screenshots into reports/plan14/.
+"""Browser checks for the pin maps (Plan 14 sections 5 and 6, Plan 17 sections 8 to 10), and the screenshots into reports/plan17/.
 
-    python build/tools/smoke_map.py                 all four sizes, exit 1 on any problem
-    python build/tools/smoke_map.py --shots DIR     also save the screenshots (default Ship/reports/plan14)
+    python build/tools/smoke_map.py                 every size, real map and ?map=svg, then the fallbacks; exit 1 on any problem
+    python build/tools/smoke_map.py --shots [DIR]   also save the screenshots (default Ship/reports/plan17)
+    python build/tools/smoke_map.py --only real|svg|fallback     one part only
 
-smoke_inner.py calls map_checks() and maker_map_checks() too, so the Phase 2 smoke test covers all of this.
+The run is in three parts (Plan 17 section 9):
+  real      headless Edge with software WebGL (SwiftShader), the real MapLibre map at every size, with the same walk as before plus
+            the real-map checks (frames, attribution, hatch layer, cooperative gestures, the reset button);
+  svg       the same walk with ?map=svg in the address: today's SVG map, unchanged;
+  fallback  no WebGL at all, and tiles that cannot be reached (?maptest=tiles-down): the page must fall back to the SVG map by itself.
+If a machine cannot run WebGL even with the flags, the real part notices (the page falls back) and fails with that said plainly.
+
+smoke_inner.py calls map_checks() and maker_map_checks() too (in a browser without WebGL, so they see the SVG map), so the Phase 2
+smoke test covers the SVG map as before.
 """
 from __future__ import annotations
 
@@ -15,6 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from smoke_inner import SIZES as _SIZES, load, settle, wait_for, wait_ready, go as _go  # noqa: E402
 
 SHIP = Path(__file__).resolve().parents[2]
+QUERY = ""            # "?map=svg" while the svg part runs: it stays in the address, the route changes are in the hash
 SIZES = _SIZES + [(745, 527)]          # and the narrow desktop pane the designer previews in (Plan 14 section 13.4)
 
 MAP_STATE = r"""(() => {
@@ -56,7 +66,8 @@ MAP_STATE = r"""(() => {
     chip: document.querySelector('#region-chip')?.textContent.trim() || '', back: !document.querySelector('#mm-back').disabled,
     sign: (() => { const g = document.querySelector('.mm-sign'); if (!g) return null; g.getAnimations().forEach((x) => x.finish()); const r = g.getBoundingClientRect(); const pin = [...host.querySelectorAll('.pin-head, .pin-tag.always')].some((e) => { const q = e.getBoundingClientRect(); return q.left < r.right && q.right > r.left && q.top < r.bottom && q.bottom > r.top; });
       return { shown: !g.hidden, words: [...g.querySelectorAll('small, b')].map((e) => e.textContent), hitsPin: pin, right: g.classList.contains('right'), inside: r.left >= hr.left - 1 && r.right <= hr.right + 1 && r.top >= hr.top - 1, font: Math.min(...[...g.querySelectorAll('small, b')].map((e) => parseFloat(getComputedStyle(e).fontSize))), width: r.width }; })(),
-    shape: (() => { const all = [...host.querySelectorAll('.g-country path')]; if (!all.length) return null; const sel = all.filter((p) => p.classList.contains('sel')); const use = sel.length ? sel : all.filter((p) => !['okinawa', 'alaska', 'hawaii'].includes(p.dataset.id));
+    engine: host.dataset.engine || '',
+    shape: (() => { if (host._stage && host._stage.gl) return host._stage.shapeInfo(); const all = [...host.querySelectorAll('.g-country path')]; if (!all.length) return null; const sel = all.filter((p) => p.classList.contains('sel')); const use = sel.length ? sel : all.filter((p) => !['okinawa', 'alaska', 'hawaii'].includes(p.dataset.id));
       let l = 1e9, t = 1e9, r = -1e9, b = -1e9; for (const p of use) { const q = p.getBoundingClientRect(); l = Math.min(l, q.left); t = Math.min(t, q.top); r = Math.max(r, q.right); b = Math.max(b, q.bottom); }
       const strokes = all.map((p) => { const cs = getComputedStyle(p); return [parseFloat(cs.strokeWidth), parseFloat((cs.stroke.match(/[\d.]+\)$/) || ['1)'])[0])]; });
       return { paths: all.length, selN: sel.length, padL: (l - hr.left) / hr.width, padR: (hr.right - r) / hr.width, padT: (t - hr.top) / hr.height, padB: (hr.bottom - b) / hr.height, minStroke: Math.min(...strokes.map((s) => s[0])), minAlpha: Math.min(...strokes.map((s) => s[1])), hatched: all.filter((p) => /url/.test(p.style.fill)).length }; })(),
@@ -199,10 +210,8 @@ WHOLE_JS = r"""(async () => {
   // Plan 14 section 13.2: a continent or region that opens straight to maker pins frames the whole outline of each pinned country
   // (far outliers left out, as makemaps and the country level do): every province box lies inside the map, every pin too.
   const host = document.querySelector('#mapbox');
-  const geo = host.querySelector('.mm-geo');
-  const m = /translate\(([-\d.]+) ([-\d.]+)\) scale\(([-\d.]+)\)/.exec(geo.getAttribute('transform') || '');
-  if (!m) return { problems: ['no view transform'] };
-  const [tx, ty, sc] = [+m[1], +m[2], +m[3]];
+  const st = host._stage;                                       // the same for both maps: stage.toPx gives a point's place in the stage
+  if (!st) return { problems: ['no stage'] };
   const hr = host.getBoundingClientRect();
   const prods = await (await fetch('data/producers.json')).json();
   const keys = [...host.querySelectorAll('.mm-pin')].map((p) => p.dataset.id).filter((i) => i.startsWith('m:')).map((i) => i.slice(2));
@@ -216,7 +225,8 @@ WHOLE_JS = r"""(async () => {
     for (const pv of doc.provinces) {
       if ((SKIP[cid] || []).includes(pv.id) && !have.has(pv.id)) continue;
       const [x0, y0, x1, y1] = pv.bb;
-      const l = x0 * sc + tx + hr.left, r = x1 * sc + tx + hr.left, t = y0 * sc + ty + hr.top, b = y1 * sc + ty + hr.top;
+      const [ax, ay] = st.toPx([x0, y0]), [bx, by] = st.toPx([x1, y1]);
+      const l = Math.min(ax, bx) + hr.left, r = Math.max(ax, bx) + hr.left, t = Math.min(ay, by) + hr.top, b = Math.max(ay, by) + hr.top;
       if (l < hr.left - 1 || r > hr.right + 1 || t < hr.top - 1 || b > hr.bottom + 1) problems.push(`${cid}/${pv.id} is cut off by the frame`);
     }
   }
@@ -247,7 +257,7 @@ def map_checks(page, base, tag, full=True):
     probs = []
     w, h = page.w, page.h
     phone = w < 768
-    load(page, base, "#/makers")
+    load(page, base, f"{QUERY}#/makers")
     s = state(page)
     if s is None:
         return [f"{tag}: the Makers page has no map"]
@@ -391,7 +401,7 @@ def maker_map_checks(page, base, tag, keys, want_capital=True):
     probs = []
     for key in keys:
         go(page, f"#/producer/{key}")
-        wait_for(page, "!!document.querySelector('#locator .mm-labels') || !document.querySelector('#locator')", 15)
+        wait_for(page, "!!document.querySelector('#locator .mm-labels') || !document.querySelector('#locator')", 30)
         r = page.eval(r"""(() => {
           const loc = document.querySelector('#locator');
           if (!loc) return { none: true };
@@ -408,7 +418,9 @@ def maker_map_checks(page, base, tag, keys, want_capital=True):
           }
           const inset = loc.querySelector('.mm-inset');
           const caps = [...loc.querySelectorAll('.mm-name.cap')].map((t) => t.textContent);
-          return { svg: !!loc.querySelector('.mm-svg'), sel: loc.querySelectorAll('.g-country path.sel').length, pin: !!head, headIn: !!head && head.left >= lr.left && head.right <= lr.right && head.top >= lr.top, names: names.map((n) => n.t), stars: loc.querySelectorAll('.mm-star').length,
+          const gl = !!loc._stage && !!loc._stage.gl;
+          return { gl, svg: gl ? !!loc.querySelector('canvas.maplibregl-canvas') : !!loc.querySelector('.mm-svg'), sel: gl ? loc._stage.marks.provSel.length : loc.querySelectorAll('.g-country path.sel').length,
+            shape: gl ? loc._stage.shapeInfo() : null, hatch: gl ? !!loc._stage.map.getLayer('ours-prov-sel-hatch') : null, attrib: gl ? (loc.querySelector('.mm-attrib')?.textContent || '') : null, pin: !!head, headIn: !!head && head.left >= lr.left && head.right <= lr.right && head.top >= lr.top, names: names.map((n) => n.t), stars: loc.querySelectorAll('.mm-star').length,
             towns: loc.querySelectorAll('.mm-town').length, inset: !!inset, insetSel: inset ? inset.querySelectorAll('path.sel').length : 0, label: loc.getAttribute('aria-label'), bad,
             caps, w: lr.width, sideways: document.documentElement.scrollWidth > innerWidth + 1 };
         })()""")
@@ -418,8 +430,19 @@ def maker_map_checks(page, base, tag, keys, want_capital=True):
         label = f"{tag} {key}"
         if want_capital and key in CAPITALS and not r["caps"]:
             probs.append(f"{label}: the capital of its province is not labelled")
-        if key == "akabu-shuzo" and ("Morioka" not in r["caps"] or r["towns"] < 2 or len(r["names"]) < 3):
+        if key == "akabu-shuzo" and ("Morioka" not in r["caps"] or (not r["gl"] and (r["towns"] < 2 or len(r["names"]) < 3))):
             probs.append(f"{label}: expected Morioka plus at least 2 towns, got {r['names']}")
+        if r["gl"]:                                          # the real map: the province frame, the hatch layer, the credit line, no town dots of ours
+            sh = r["shape"] or {}
+            pads = [sh.get("padL", 0), sh.get("padR", 0), sh.get("padB", 0)]
+            if min(pads) < 0.04 - 1e-3:
+                probs.append(f"{label}: the province is cut close to the edge: {[round(p, 3) for p in pads]}")
+            if not r["hatch"] or r["sel"] != 1:
+                probs.append(f"{label}: the province hatch layer is missing")
+            if not all(w in (r["attrib"] or "") for w in ("OpenStreetMap", "OpenFreeMap", "OpenMapTiles", "MapLibre")):
+                probs.append(f"{label}: the credit line reads '{r['attrib']}'")
+            if r["towns"]:
+                probs.append(f"{label}: the real map draws its own towns, not {r['towns']} dots of ours")
         if not (r["svg"] and r["sel"] == 1 and r["pin"] and r["headIn"] and r["inset"] and r["insetSel"] == 1):
             probs.append(f"{label}: map incomplete {{svg {r['svg']}, province paths {r['sel']}, pin {r['pin']}, pin in view {r['headIn']}, inset {r['inset']}/{r['insetSel']}}}")
         if r["bad"]:
@@ -513,47 +536,235 @@ def pick(page, base):
     return prods, by_country
 
 
-def run(base, shots_dir=None, sizes=SIZES, log=print):
+STAGE = "document.querySelector('#mapbox')._stage"
+
+
+def settle_map(page):
+    """Real map: wait until its tiles are drawn and nothing moves (screenshots, the interaction checks)."""
+    page.eval(f"{STAGE}.idle ? {STAGE}.idle() : 1", await_promise=True)
+    page.eval("new Promise(r => setTimeout(r, 700))", await_promise=True)
+
+
+def drag(page, dx, dy):
+    """A real mouse drag from the middle of the map, as a visitor would do it."""
+    c = page.eval("(() => { const r = document.querySelector('#mapbox').getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()")
+    x, y = c
+    page.send("Input.dispatchMouseEvent", type="mouseMoved", x=x, y=y)
+    page.send("Input.dispatchMouseEvent", type="mousePressed", x=x, y=y, button="left", buttons=1, clickCount=1)
+    for i in range(1, 7):
+        page.send("Input.dispatchMouseEvent", type="mouseMoved", x=x + dx * i / 6, y=y + dy * i / 6, button="left", buttons=1)
+    page.send("Input.dispatchMouseEvent", type="mouseReleased", x=x + dx, y=y + dy, button="left", buttons=0, clickCount=1)
+    page.eval("new Promise(r => setTimeout(r, 500))", await_promise=True)
+
+
+def wheel(page, delta, ctrl):
+    c = page.eval("(() => { const r = document.querySelector('#mapbox').getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()")
+    page.send("Input.dispatchMouseEvent", type="mouseMoved", x=c[0], y=c[1])
+    page.send("Input.dispatchMouseEvent", type="mouseWheel", x=c[0], y=c[1], deltaX=0, deltaY=delta, modifiers=2 if ctrl else 0)
+    page.eval("new Promise(r => setTimeout(r, 600))", await_promise=True)
+
+
+GL_INFO = """(() => { const st = %(S)s; const h = document.querySelector('#mapbox'); const hr = h.getBoundingClientRect();
+  const a = h.querySelector('.mm-attrib'); const ar = a ? a.getBoundingClientRect() : null;
+  return { gl: !!st && st.gl === true, engine: h.dataset.engine, canvas: !!h.querySelector('canvas.maplibregl-canvas'), grain: !!h.querySelector('.mm-grain'),
+    layers: ['ours-prov-hatch', 'ours-prov-sel-hatch', 'ours-prov-line', 'ours-prov-sel-line', 'ours-world-hatch'].filter((l) => !st.map.getLayer(l)),
+    attrib: a ? a.textContent : '', attribShown: !!ar && ar.width > 20 && ar.height > 5 && ar.left >= hr.left - 1 && ar.right <= hr.right + 1 && ar.bottom <= hr.bottom + 1 && getComputedStyle(a).visibility !== 'hidden',
+    coop: !!(st.map.cooperativeGestures && st.map.cooperativeGestures.isEnabled()), minZoom: st.map.getMinZoom(), maxZoom: st.map.getMaxZoom(), copies: st.map.getRenderWorldCopies(),
+    zoom: st.map.getZoom(), center: st.map.getCenter().toArray() }; })()"""
+
+
+def gl_checks(page, base, tag):
+    """The real map only (Plan 17 sections 5, 6 and 9): it really is the real map, its credit line, the hatch layers, cooperative
+    gestures, free panning with the reset button and no change to the drill-down level when the visitor moves the map, the world
+    level, and Fiji across 180 degrees."""
+    probs = []
+    s = open_at(page, "asia/east-asia/japan/tohoku")
+    info = page.eval(GL_INFO % {"S": STAGE})
+    if not (info["gl"] and info["engine"] == "gl" and info["canvas"]):
+        return [f"{tag}: is not the real map (engine '{info['engine']}'): WebGL or the tiles did not work in this browser"]
+    if info["layers"]:
+        probs.append(f"{tag}: layers missing: {info['layers']}")
+    if not info["attribShown"] or not all(w in info["attrib"] for w in ("OpenStreetMap", "OpenFreeMap", "OpenMapTiles", "MapLibre")):
+        probs.append(f"{tag}: the credit line is not visible or incomplete: '{info['attrib']}' (shown {info['attribShown']})")
+    if not info["grain"]:
+        probs.append(f"{tag}: no chalk grain over the map")
+    if not info["coop"]:
+        probs.append(f"{tag}: cooperative gestures are off")
+    if info["maxZoom"] > 14.001 or info["minZoom"] > 1.001 or info["copies"]:
+        probs.append(f"{tag}: zoom limits {info['minZoom']}..{info['maxZoom']}, world copies {info['copies']} at Tohoku")
+    if s["shape"] is None or s["shape"]["hatched"] < 1:
+        probs.append(f"{tag}: no hatched province at Tohoku")
+    settle_map(page)
+    if not page.eval(f"{STAGE}.map.areTilesLoaded()"):
+        probs.append(f"{tag}: the tiles did not finish loading")
+    # free movement: a plain scroll does not zoom, Ctrl and scroll does; the drag moves the map, the level in the breadcrumb does not
+    # change and nothing is written to the address; the reset button appears and returns the level's frame
+    if page.w >= 768:
+        z0 = page.eval(f"{STAGE}.map.getZoom()")
+        wheel(page, -400, ctrl=False)
+        z1 = page.eval(f"{STAGE}.map.getZoom()")
+        if abs(z1 - z0) > 1e-3:
+            probs.append(f"{tag}: a plain scroll over the map zoomed it ({z0:.2f} to {z1:.2f}): the page should scroll instead")
+        wheel(page, -400, ctrl=True)
+        z2 = page.eval(f"{STAGE}.map.getZoom()")
+        if z2 <= z0 + 1e-3:
+            probs.append(f"{tag}: Ctrl and scroll did not zoom the map ({z0:.2f} to {z2:.2f})")
+        c0 = page.eval(f"{STAGE}.map.getCenter().toArray()")
+        drag(page, 140, 60)
+        s2 = page.eval(MAP_STATE)
+        c1 = page.eval(f"{STAGE}.map.getCenter().toArray()")
+        shown = page.eval("!document.querySelector('.mm-reset').hidden")
+        if c0 == c1:
+            probs.append(f"{tag}: dragging did not move the map")
+        if not shown:
+            probs.append(f"{tag}: the reset button did not appear after the map was moved")
+        if s2["at"] != "asia/east-asia/japan/tohoku" or s2["crumbs"][-1] != "Tohoku":
+            probs.append(f"{tag}: moving the map changed the level to '{s2['at']}' {s2['crumbs']}")
+        if "at=asia/east-asia/japan/tohoku" not in s2["hash"] or "zoom" in s2["hash"] or "center" in s2["hash"]:
+            probs.append(f"{tag}: moving the map wrote to the address: {s2['hash']}")
+        if len(s2["pins"]) < 1 or s2["overlaps"]:
+            probs.append(f"{tag}: after moving, {len(s2['pins'])} pins, overlaps {s2['overlaps'][:2]}")
+        page.eval("document.querySelector('.mm-reset').click()")
+        page.eval("new Promise(r => setTimeout(r, 1600))", await_promise=True)
+        c2 = page.eval(f"{STAGE}.map.getCenter().toArray()")
+        z3 = page.eval(f"{STAGE}.map.getZoom()")
+        if abs(c2[0] - info["center"][0]) > 0.02 or abs(c2[1] - info["center"][1]) > 0.02 or abs(z3 - info["zoom"]) > 0.02 or not page.eval("document.querySelector('.mm-reset').hidden"):
+            probs.append(f"{tag}: the reset button did not return to the level's frame: {c2} zoom {z3:.2f} (was {info['center']} zoom {info['zoom']:.2f})")
+    # the world level: nothing repeats and the zoom limit holds
+    open_at(page, "")
+    w = page.eval(f"({{ copies: {STAGE}.map.getRenderWorldCopies(), z: {STAGE}.map.getZoom(), min: {STAGE}.map.getMinZoom() }})")
+    if w["copies"] or w["z"] < w["min"] - 1e-6:
+        probs.append(f"{tag}: the world level repeats the world or is below the zoom limit: {w}")
+    # Fiji lies across 180 degrees: the copies of the world are on there, and only there
+    open_at(page, "oceania")
+    if not page.eval(f"{STAGE}.map.getRenderWorldCopies()"):
+        probs.append(f"{tag}: Oceania (Fiji across 180 degrees) has the copies of the world off")
+    return probs
+
+
+def fallback_checks(base, log=print):
+    """Plan 17 section 8, acceptance in section 10: ?map=svg, no WebGL, and unreachable tiles each give the SVG map by themselves."""
+    from cdp import Browser
+    probs = []
+    cases = [("?map=svg", True, "?map=svg"), ("", False, "WebGL off"), ("?maptest=tiles-down", True, "tiles unreachable")]
+    for q, webgl, name in cases:
+        with Browser(webgl=webgl) as b:
+            page = b.page(1440, 900)
+            load(page, base, f"{q}#/makers")
+            ok = wait_for(page, "(() => { const h = document.querySelector('#mapbox'); return !!h && h.dataset.ready === '1' && h.dataset.moving !== '1'; })()", 30)
+            if not ok:
+                probs.append(f"fallback ({name}): the Makers map never became ready")
+                continue
+            r = page.eval("(() => { const h = document.querySelector('#mapbox'); return h ? { engine: h.dataset.engine, svg: !!h.querySelector('.mm-svg'), canvas: !!h.querySelector('canvas'), pins: h.querySelectorAll('.mm-pin').length } : null; })()")
+            if not r or r["engine"] != "svg" or not r["svg"] or r["canvas"] or r["pins"] < 3:
+                probs.append(f"fallback ({name}): expected the SVG map with pins, got {r}")
+            log(f"fallback ({name}): {r}")
+            load(page, base, f"{q}#/producer/akabu-shuzo")
+            if not wait_for(page, "!!document.querySelector('#locator .mm-labels')", 30):
+                probs.append(f"fallback ({name}): the maker page map did not appear")
+            else:
+                m = page.eval("(() => { const l = document.querySelector('#locator'); return { svg: !!l.querySelector('.mm-svg'), canvas: !!l.querySelector('canvas') }; })()")
+                if not m["svg"] or m["canvas"]:
+                    probs.append(f"fallback ({name}): the maker page map is not the SVG map: {m}")
+            page.close()
+    return probs
+
+
+def shoot_real(page, base, tag, out):
+    """The screenshots Plan 17 section 10 asks for, one pass after the checks: nine map levels and three maker pages."""
+    Path(out).mkdir(parents=True, exist_ok=True)
+
+    def board():
+        page.scroll_to(int(page.eval("(document.querySelector('.map-board').getBoundingClientRect().top + scrollY) - 8")))
+        page.eval("new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))", await_promise=True)
+
+    for name, at in (("world", ""), ("asia", "asia"), ("east-asia", "asia/east-asia"), ("japan", "asia/east-asia/japan"), ("tohoku", "asia/east-asia/japan/tohoku"),
+                     ("iwate", "asia/east-asia/japan/tohoku/iwate"), ("oceania", "oceania"), ("malaysia", "asia/southeast-asia/malaysia"), ("europe", "europe")):
+        open_at(page, at)
+        settle_map(page)
+        board()
+        page.screenshot(f"{out}/map-{name}-{tag}.png")
+    for name, key in (("japan", "akabu-shuzo"), ("france", "kronenbourg"), ("fiji", "vodco-pacific")):
+        go(page, f"#/producer/{key}")
+        wait_for(page, "!!document.querySelector('#locator .mm-labels')", 30)
+        page.eval("document.querySelector('#locator')._stage?.idle?.() || 1", await_promise=True)
+        page.eval("new Promise(r => setTimeout(r, 900))", await_promise=True)
+        page.scroll_to(int(page.eval("(document.querySelector('.facts').getBoundingClientRect().top + scrollY) - 8")))
+        page.eval("new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))", await_promise=True)
+        page.screenshot(f"{out}/maker-{name}-{tag}.png")
+
+
+def shoot_fallback(page, base, tag, out):
+    Path(out).mkdir(parents=True, exist_ok=True)
+    open_at(page, "asia/east-asia/japan")
+    page.scroll_to(int(page.eval("(document.querySelector('.map-board').getBoundingClientRect().top + scrollY) - 8")))
+    page.eval("new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))", await_promise=True)
+    page.screenshot(f"{out}/map-fallback-{tag}.png")
+
+
+def run_part(base, part, shots_dir, sizes, log):
+    """`part` is 'real' or 'svg': the same walk in a browser with software WebGL, with ?map=svg in the address for the svg part."""
+    global QUERY
     from cdp import Browser
     problems = []
-    with Browser() as b:
-        for w, h in sizes:
-            page = b.page(w, h, mobile=w < 500)
-            tag = f"{w}x{h}"
-            load(page, base, "#/makers")
-            prods, by_country = pick(page, base)
-            fill_capitals(page, prods)
-            log(f"{tag}: Makers map")
-            problems += map_checks(page, base, tag)
-            if (w, h) == sizes[0]:                          # every maker page at the first size, one per country at the others
-                keys = [p["key"] for p in prods if p.get("cid") and p.get("prov")]
-            else:
-                keys = list(by_country.values()) + ["akabu-shuzo"]
-            log(f"{tag}: {len(keys)} maker page maps")
-            problems += maker_map_checks(page, base, tag, keys)
-            if shots_dir:
-                shoot(page, base, tag, shots_dir)
-            if page.logs:
-                problems += [f"{tag}: console: {m}" for m in page.logs[:3]]
+    QUERY = "?map=svg" if part == "svg" else ""
+    try:
+        with Browser(webgl=True) as b:
+            for w, h in sizes:
+                page = b.page(w, h, mobile=w < 500)
+                tag = f"{w}x{h}"
+                load(page, base, f"{QUERY}#/makers")
+                prods, by_country = pick(page, base)
+                fill_capitals(page, prods)
+                log(f"{part} {tag}: Makers map")
+                if part == "real":
+                    probs = gl_checks(page, base, f"{part} {tag}")
+                    problems += probs
+                    if probs and "is not the real map" in probs[0]:
+                        page.close()
+                        break                                       # no WebGL here: one clear message, not a thousand
+                problems += map_checks(page, base, f"{part} {tag}")
+                if (w, h) == sizes[0]:                          # every maker page at the first size, one per country at the others
+                    keys = [p["key"] for p in prods if p.get("cid") and p.get("prov")]
+                else:
+                    keys = list(by_country.values()) + ["akabu-shuzo"]
+                log(f"{part} {tag}: {len(keys)} maker page maps")
+                problems += maker_map_checks(page, base, f"{part} {tag}", keys)
+                if shots_dir:
+                    (shoot_real if part == "real" else shoot_fallback)(page, base, tag, shots_dir)
+                logs = [m for m in page.logs if "net::ERR" not in m]
+                if logs:
+                    problems += [f"{part} {tag}: console: {m}" for m in logs[:3]]
                 page.logs.clear()
-            page.close()
+                page.close()
+    finally:
+        QUERY = ""
+    return problems
+
+
+def run(base, shots_dir=None, sizes=SIZES, log=print, only=None):
+    problems = []
+    for part in ("real", "svg"):
+        if only in (None, part):
+            problems += run_part(base, part, shots_dir, sizes, log)
+    if only in (None, "fallback"):
+        problems += fallback_checks(base, log)
     return problems
 
 
 def main():
     import argparse
-    import http.server
-    import socketserver
-    import threading
     ap = argparse.ArgumentParser()
-    ap.add_argument("--shots", nargs="?", const=str(SHIP / "reports" / "plan14"), default=None)
+    ap.add_argument("--shots", nargs="?", const=str(SHIP / "reports" / "plan17"), default=None)
     ap.add_argument("--docs", default=str(SHIP / "docs"))
-    ap.add_argument("--all-makers", action="store_true", help="check every maker page's map, not one per country")
+    ap.add_argument("--only", choices=["real", "svg", "fallback"], default=None)
+    ap.add_argument("--sizes", default=None, help="for example 1440x900,375x812")
     a = ap.parse_args()
     import smoke
     smoke.DOCS = Path(a.docs)
+    sizes = [tuple(int(v) for v in z.split("x")) for z in a.sizes.split(",")] if a.sizes else SIZES
     with smoke.Server() as srv:
-        probs = run(f"http://127.0.0.1:{srv.port}", a.shots)
+        probs = run(f"http://127.0.0.1:{srv.port}", a.shots, sizes, only=a.only)
     for p in probs:
         print("PROBLEM:", p)
     print("OK" if not probs else f"{len(probs)} problems")

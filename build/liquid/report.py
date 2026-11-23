@@ -10,7 +10,7 @@ from .photos import PHOTO_EXT
 
 CODE_TITLES = {
     "E01": "Cannot read the ledger", "E02": "Privacy leak in output", "E03": "Broken reference",
-    "E04": "Schema violation", "E05": "Image could not be processed", "E07": "Owner crop changed outside the crop tool", "E09": "bottles.json names a shell that does not exist", "E08": "No map file for a maker's country",
+    "E04": "Schema violation", "E05": "Image could not be processed", "E07": "Owner crop changed outside the crop tool", "E09": "bottles.json names a shell that does not exist", "E10": "The chalk map style uses a colour that is not a site token", "W31": "No tile source for the real map (the SVG map is used)", "E08": "No map file for a maker's country",
     "W01": "Photo not matched to any drink", "W02": "Drink has no front photo",
     "W03": "Other Detail Type not valid for the category", "W04": "Producer missing from Producers sheet",
     "W05": "Japanese Region is not one of the 47 prefectures", "W06": "Rows sharing an ID disagree",

@@ -97,13 +97,21 @@ class Page:
 
 
 class Browser:
+    # Software WebGL (SwiftShader) for the real map (Plan 17 section 9). Headless Edge offers WebGL even with --disable-gpu, so by default
+    # it is turned off for real (--disable-3d-apis): the other checks, and the "no WebGL" fallback check, then see the SVG map.
+    WEBGL_FLAGS = ["--use-angle=swiftshader", "--use-gl=angle", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"]
+    NO_WEBGL_FLAGS = ["--disable-gpu", "--disable-3d-apis"]
+
+    def __init__(self, webgl=False):
+        self.webgl = webgl
+
     def __enter__(self):
         from websockets.sync.client import connect
         exe = browser_path()
         if not exe:
             raise RuntimeError("no Edge or Chrome found")
         self.profile = tempfile.mkdtemp(prefix="cdp-profile-")
-        self.proc = subprocess.Popen([exe, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--remote-debugging-port=0",
+        self.proc = subprocess.Popen([exe, "--headless=new", *(self.WEBGL_FLAGS if self.webgl else self.NO_WEBGL_FLAGS), "--hide-scrollbars", "--remote-debugging-port=0",
                                       "--no-first-run", "--no-default-browser-check", "--mute-audio",
                                       f"--user-data-dir={self.profile}", "about:blank"],
                                      stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

@@ -23,6 +23,7 @@ function stackHTML(B, dens) {
 
 const CREDITS = [
   'Map: Natural Earth (public domain)',
+  'Map data: © OpenStreetMap contributors, OpenFreeMap, OpenMapTiles · Maps drawn with MapLibre (BSD-3)',
   'Type: Kalam (SIL Open Font Licence)',
   'Icons: Phosphor Icons (MIT)',
 ];
@@ -34,7 +35,8 @@ export function aboutHTML(b) {
     ? `A personal log of ${plural(b.drinkCount, 'drink')}${makers}, updated ${esc(fmtDate((b.generated || '').slice(0, 10)))}.`
     : 'A personal log of drinks.';
   return `<p>${about}</p>
-<ul class="credits">${CREDITS.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>`;
+<ul class="credits">${CREDITS.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>
+<p class="t-small">The Makers map loads its map tiles and map fonts from OpenFreeMap, so OpenFreeMap sees your IP address when you open it.</p>`;
 }
 
 /** The menu on every inner page (Plan 08 section 3.2): the counter's burger, smaller, fixed at the top right of the
