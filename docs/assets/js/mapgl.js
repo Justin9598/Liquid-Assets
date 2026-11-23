@@ -20,13 +20,15 @@ const IRON = '#1f1c1a';
 const MAX_ZOOM = 14;                                       // OpenFreeMap's top zoom (Plan 17 section 6)
 const WORLD = [[-170, -58], [180, 77]];                    // south-west, north-east: the world as the Makers map frames it
 const EMPTY = { type: 'FeatureCollection', features: [] };
-// The sea's polygons end at 180 degrees, and the coastline layer draws that edge as a line. When the copies of the world are on (Fiji
-// lies across 180) the line would run through the middle of the view, so it is covered in the colour of the sea. Taveuni stands on
+// The sea's polygons end at 180 degrees, and the coastline layer draws that edge as a line: at the edges of the world (the Antarctica
+// strip) and, when the copies of the world are on (Fiji lies across 180), through the middle of the view. It is covered in the colour of the sea. Taveuni stands on
 // 180 degrees (about 16.7 S), so the cover has a gap there, and its coast is not painted over.
 const SEAM = { type: 'FeatureCollection', features: [{ type: 'Feature', properties: {}, geometry: { type: 'MultiLineString', coordinates:
   [180, -180].flatMap((x) => [[[x, -85], [x, -17.4]], [[x, -16.0], [x, 85]]]) } }] };
 const none = (ids) => (ids && ids.length ? ids : ['\u0000']);           // an empty list in a filter
 
+const ISO = { japan: 'JP', 'south-korea': 'KR', taiwan: 'TW', vietnam: 'VN', singapore: 'SG', france: 'FR', scotland: 'GB', denmark: 'DK', usa: 'US', chile: 'CL',
+  fiji: 'FJ', austria: 'AT', australia: 'AU', 'new-zealand': 'NZ', malaysia: 'MY' };
 const log = (why) => console.info(`Map: using the SVG map (${why})`);
 
 // ---- can the real map run? ---------------------------------------------------------------------------------------------
@@ -140,7 +142,7 @@ export class GLStage {
     this.cTok = 0;
     this.marks = { has: [], edge: [], provSel: [], provAll: false, provHas: [], focus: false };
     host.classList.add('mm-stage', 'mm-gl');
-    host.innerHTML = `<div class="mm-gl-map"></div><div class="mm-grain" aria-hidden="true"></div><div class="mm-pins"></div>${mini ? '' : '<button type="button" class="mm-reset chalkboard chalkboard--s btn-s" hidden aria-label="Reset the map to the place chosen"><span class="chalk">Reset view</span></button>'}<p class="mm-attrib"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> · <a href="https://openfreemap.org" target="_blank" rel="noopener noreferrer">OpenFreeMap</a> · <a href="https://openmaptiles.org" target="_blank" rel="noopener noreferrer">OpenMapTiles</a> · <a href="https://maplibre.org" target="_blank" rel="noopener noreferrer">MapLibre</a></p>`;
+    host.innerHTML = `<div class="mm-gl-map"></div><div class="mm-grain" aria-hidden="true"></div><div class="mm-pins"></div>${mini ? '' : '<button type="button" class="mm-reset chalkboard chalkboard--s btn-s" hidden aria-label="Reset the map to the place chosen"><span class="chalk">Reset view</span></button>'}<p class="mm-attrib"><button type="button" class="mm-attrib-btn" aria-expanded="false" aria-label="Map credits"><span aria-hidden="true">i</span></button><span class="mm-attrib-links"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> · <a href="https://openfreemap.org" target="_blank" rel="noopener noreferrer">OpenFreeMap</a> · <a href="https://openmaptiles.org" target="_blank" rel="noopener noreferrer">OpenMapTiles</a> · <a href="https://maplibre.org" target="_blank" rel="noopener noreferrer">MapLibre</a></span></p>`;
     this.pinsEl = host.querySelector('.mm-pins');
     this.resetBtn = host.querySelector('.mm-reset');
     this.attrib = host.querySelector('.mm-attrib');
@@ -160,6 +162,10 @@ export class GLStage {
     this.map.on('move', () => { if (!this.auto) this.track(); });
     this.map.on('moveend', () => { if (!this.auto) this.moved(); });
     this.resetBtn?.addEventListener('click', () => this.reset());
+    this.attrib.querySelector('.mm-attrib-btn').addEventListener('click', () => {
+      const open = this.attrib.classList.toggle('open');
+      this.attrib.querySelector('.mm-attrib-btn').setAttribute('aria-expanded', String(open));
+    });
     this.ro = new ResizeObserver(() => {
       if (host.clientWidth === this.W && host.clientHeight === this.H) return;
       this.measure();
@@ -169,9 +175,14 @@ export class GLStage {
     this.ro.observe(host);
   }
 
+  /** On phones and on the maker page the credit is a small round button that opens on a tap; on a big map it is one line. Either
+   * way the pin layout treats it as an obstacle (obstacles()), so no pin head or name tag stands under it. */
   measure() {
     this.W = this.host.clientWidth;
-    this.H = this.host.clientHeight;
+    this.fullH = this.host.clientHeight;
+    this.compact = this.mini || this.W < 768;
+    this.H = this.fullH;
+    this.attrib?.classList.toggle('compact', this.compact);
   }
 
   /** Resolves once the style and the first tiles are in, with our layers added. Rejects on a source error or after `ms`. */
@@ -201,7 +212,7 @@ export class GLStage {
     const m = this.map;
     m.addImage('hatch-glow', hatchImage(GLOW), { pixelRatio: 2 });
     m.addSource('seam', { type: 'geojson', data: SEAM });
-    m.addLayer({ id: 'seam', type: 'line', source: 'seam', layout: { visibility: 'none' }, paint: { 'line-color': IRON, 'line-width': 3.5 } }, 'park');
+    m.addLayer({ id: 'seam', type: 'line', source: 'seam', paint: { 'line-color': IRON, 'line-width': 3.5 } }, 'park');
     m.addSource('ours-world', { type: 'geojson', data: EMPTY });
     m.addSource('ours-prov', { type: 'geojson', data: EMPTY });
     const before = 'place-country';
@@ -305,7 +316,7 @@ export class GLStage {
     this.pinsEl.style.visibility = '';
     this.resetBtn && (this.resetBtn.hidden = true);
     m.setRenderWorldCopies(wraps);
-    if (m.getLayer('seam')) m.setLayoutProperty('seam', 'visibility', wraps ? 'visible' : 'none');                         // Fiji lies across 180 degrees, and only then do the copies of the world show
+    // Fiji lies across 180 degrees, and only then do the copies of the world show
     if (!cam) return Promise.resolve();
     const to = { center: cam.center, zoom: cam.zoom };
     if (!animate || reducedMotion() || !this.W) {
@@ -332,6 +343,17 @@ export class GLStage {
   }
 
   /** Leaves one town's name off the basemap (the maker page draws its own starred label for the capital in the same place). */
+  /** Leaves the basemap's country names off: those of the given countries (our ids), or all of them. */
+  hideCountries(list) {
+    const id = 'place-country';
+    if (!this.map.getLayer(id)) return;
+    this.baseFilters ||= {};
+    this.baseFilters[id] ||= this.map.getFilter(id);
+    const isos = list === 'all' ? null : list.map((c) => ISO[c]).filter(Boolean);
+    const cut = list === 'all' ? ['==', 1, 0] : ['!', ['in', ['get', 'iso_a2'], ['literal', isos.length ? isos : ['--']]]];
+    this.map.setFilter(id, ['all', this.baseFilters[id], cut]);
+  }
+
   hideName(name) {
     const same = ['coalesce', ['get', 'name:en'], ['get', 'name_en'], ['get', 'name']];
     for (const id of ['place-city-large', 'place-city', 'place-town', 'place-village']) {
@@ -395,6 +417,14 @@ export class GLStage {
       const done = () => { if (this.map.loaded() && !this.map.isMoving()) resolve(); else this.map.once('idle', done); };
       done();
     });
+  }
+
+  /** What the pins must keep clear of: the credit (a fixed box the layout pushes pins away from; it is never drawn). */
+  obstacles() {
+    const b = this.attribBox();
+    if (b.r - b.l < 2) return [];
+    const m = 4;
+    return [{ cx: (b.l + b.r) / 2, cy: (b.t + b.b) / 2, bl: (b.r - b.l) / 2 + m, br: (b.r - b.l) / 2 + m, bt: (b.b - b.t) / 2 + m, bb: (b.b - b.t) / 2 + m }];
   }
 
   /** The attribution's box in the stage, so the maker page's inset keeps clear of it. */

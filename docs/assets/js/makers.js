@@ -235,6 +235,8 @@ ${board(`    <div class="m-controls">
     const provHas = data ? [...new Set(producers.filter((p) => p.cid === cidOpen && p.prov).map((p) => p.prov))] : [];
     stage.mark({ has: view.node.level === 'world' || !countryLevel ? allCids : [], sel: hatch, edge: view.node.level === 'world' ? [] : cids, provSel, provHas, focus: !!data && view.node.level !== 'country' });
     stage.clearPins();
+    // the basemap's own country names would sit under our tags: leave off those of the countries we mark, and below the regions all of them (the sign names the country)
+    stage.hideCountries?.(['country', 'area', 'province'].includes(view.node.level) ? 'all' : cids);
     // where to look
     const pad = padding();
     let spec;
@@ -244,7 +246,8 @@ ${board(`    <div class="m-controls">
       const box = stage.boxOf(provIds(view.node, data, cidOpen));
       const midLat = unproject(0, (box[1] + box[3]) / 2)[1];
       const km60 = 60 / (111.3 * Math.max(0.2, Math.cos((midLat * Math.PI) / 180)) * 0.005);
-      spec = { box, minW: km60, minH: km60, pad: { l: stage.W * 0.08, r: stage.W * 0.08, t: stage.H * 0.08, b: stage.H * 0.08 } };
+      const e8 = { l: stage.W * 0.08, r: stage.W * 0.08, t: stage.H * 0.08, b: stage.H * 0.08 };
+      spec = { box, minW: km60, minH: km60, pad: e8 };
     } else {
       const pts = (view.kind === 'groups' ? view.node.producers : view.makers).filter((p) => p.lat != null).map((p) => project(p.lon, p.lat));
       if (view.node.level === 'province' && data) {                     // a province fills the view, outline and all
@@ -253,13 +256,14 @@ ${board(`    <div class="m-controls">
       }
       // a continent or region that opens straight to maker pins frames the whole outline of every country that holds a pin (Plan 14 section 13.2)
       let whole = false;
-      if (!data && ['continent', 'region'].includes(view.node.level) && view.kind === 'makers') {
-        for (const cid of new Set(view.makers.filter((p) => p.lat != null && p.cid).map((p) => p.cid))) {
+      if (!data && ['continent', 'region'].includes(view.node.level)) {
+        const held0 = view.node.producers.filter((p) => p.lat != null && p.cid);          // group pins or maker pins: the countries that hold them are framed whole
+        for (const cid of new Set(held0.map((p) => p.cid))) {
           let cd = null;
           try { cd = await loadCountry(cid); } catch { cd = null; }
           if (my !== token) return;
           if (!cd) continue;
-          const held = new Set(view.makers.filter((p) => p.cid === cid).map((p) => p.prov));
+          const held = new Set(held0.filter((p) => p.cid === cid).map((p) => p.prov));
           const skip = (FRAME_SKIP[cid] || []).filter((id) => !held.has(id));        // far outliers stay out, as at the country level
           for (const pv of cd.provinces) if (pv.bb && !skip.includes(pv.id)) { pts.push([pv.bb[0], pv.bb[1]], [pv.bb[2], pv.bb[3]]); whole = true; }
         }

@@ -117,8 +117,8 @@ def layers() -> list:
               "layout": {"line-cap": "round", "line-join": "round"},
               "paint": {"line-color": col("chalk", 0.70), "line-width": 1.2}})
     # labels last, so our own layers (added in the page before 'place-country') sit under them
-    L.append(label("place-country", [["==", ["get", "class"], "country"]], 0.8,
-                   ramp((2, 10.5), (4, 12.5), (6, 14)), minzoom=2, maxzoom=7, upper=True, spacing=0.08))
+    L.append(label("place-country", [["==", ["get", "class"], "country"]], 0.55,
+                   ramp((2, 11), (4, 13), (6, 15)), minzoom=2, maxzoom=7))
     L.append(label("place-city-large", [["==", ["get", "class"], "city"], ["<=", ["get", "rank"], 3]], 0.75,
                    ramp((3, 11), (8, 14)), minzoom=3, maxzoom=12))
     L.append(label("place-city", [["==", ["get", "class"], "city"], [">", ["get", "rank"], 3]], 0.75,

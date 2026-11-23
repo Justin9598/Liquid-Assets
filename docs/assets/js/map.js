@@ -325,6 +325,7 @@ export class MapStage {
     for (const l of laid) {                              // the tag of a group pin goes on the side with room
       if (l.tagW) { l.flip = l.cx > W / 2; if (l.flip) l.bl = l.it.r + 4 + l.tagW; else l.br = l.it.r + 4 + l.tagW; }
     }
+    for (const o of (this.obstacles ? this.obstacles() : [])) laid.push({ ...o, obstacle: true, fixed: true, tagW: 0, it: { r: 0 } });          // the real map's credit: pins keep clear of it
     relax(laid, W, H);
     // a crowded corner (a phone, Japan's eight areas): pins that still touch give up their always-on name tag, which shows on
     // hover and focus instead, and the layout runs again; heads never overlap
@@ -341,7 +342,7 @@ export class MapStage {
       for (const l of touching()) if (l.tagW) { l.tagW = 0; l.bl = l.br = l.it.r; l.noTag = true; }
       relax(laid, W, H, 3 + k * 3);
     }
-    return laid;
+    return laid.filter((l) => !l.obstacle);
   }
 
   draw(laid) {

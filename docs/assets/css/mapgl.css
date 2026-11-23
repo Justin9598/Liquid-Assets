@@ -5,10 +5,15 @@
 .mm-gl .maplibregl-canvas { outline: none; }
 .mm-grain { position: absolute; inset: 0; z-index: 1; pointer-events: none; background-image: var(--chalk-grain); background-size: 120px 120px; opacity: .06; filter: invert(1); }      /* the site's chalk grain over the tiles, so they read as chalk and not as a flat vector map */
 .mm-gl .mm-pins { z-index: 2; }
-.mm-attrib { position: absolute; left: 6px; bottom: 5px; z-index: 1; max-width: calc(100% - 130px); margin: 0; padding: 1px 7px 2px; font: 400 11px/1.35 var(--chalkhand); color: rgba(242, 237, 228, .82); background: rgba(38, 42, 40, .8); border-radius: 4px; }
+.mm-attrib { position: absolute; left: 6px; bottom: 4px; z-index: 5; max-width: calc(100% - 130px); margin: 0; padding: 1px 7px 2px; font: 400 11px/1.35 var(--chalkhand); color: rgba(242, 237, 228, .82); background: rgba(38, 42, 40, .8); border-radius: 4px; }
 .mm-attrib a { color: inherit; text-decoration: underline dotted rgba(242, 237, 228, .5); text-underline-offset: 2px; }
 .mm-attrib a:hover, .mm-attrib a:focus-visible { color: var(--glow); }
-.mm-mini .mm-attrib { max-width: calc(100% - 12px); font-size: 9.5px; line-height: 1.3; padding: 1px 5px; }
+.mm-attrib-btn { display: none; }
+.mm-attrib.compact { padding: 0; background: none; max-width: none; }
+.mm-attrib.compact .mm-attrib-btn { display: block; width: 26px; height: 26px; padding: 0; border: 1.5px solid rgba(242, 237, 228, .7); border-radius: 50%; background: rgba(38, 42, 40, .85); color: var(--chalk); font: 700 15px/1 var(--chalkhand); cursor: pointer; }
+.mm-attrib.compact .mm-attrib-btn:focus-visible { outline: 3px solid var(--glow); outline-offset: 1px; }
+.mm-attrib.compact .mm-attrib-links { display: none; position: absolute; left: 0; bottom: 32px; width: max-content; max-width: min(260px, calc(100vw - 48px)); padding: 6px 9px; background: rgba(38, 42, 40, .96); border: 1.5px solid rgba(242, 237, 228, .5); border-radius: 6px; }
+.mm-attrib.compact.open .mm-attrib-links { display: block; }
 .mm-reset { position: absolute; right: 8px; bottom: 8px; z-index: 7; min-height: 44px; min-width: 44px; padding-inline: 12px; cursor: pointer; --cb-fs: 15px; }
 .mm-reset[hidden] { display: none; }
 .mm-reset:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; box-shadow: none; }

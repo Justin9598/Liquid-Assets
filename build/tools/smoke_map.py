@@ -56,6 +56,11 @@ MAP_STATE = r"""(() => {
     const hr2 = host.getBoundingClientRect(), a = tags[i].r;
     if (a.left < hr2.left - 0.5 || a.right > hr2.right + 0.5) overlaps.push('tag ' + tags[i].id + ' leaves the map');
   }
+  // the real map's credit (a line, or a small button) is never under a pin head or a name tag
+  const cr = host.querySelector('.mm-attrib');
+  if (cr) { const a = cr.getBoundingClientRect(); const hit = (q) => a.left < q.right - 0.5 && a.right > q.left + 0.5 && a.top < q.bottom - 0.5 && a.bottom > q.top + 0.5;
+    for (const p of pins) if (hit({ left: p.head[0], top: p.head[1], right: p.head[2], bottom: p.head[3] })) overlaps.push('credit / head ' + p.id);
+    for (const t of tags) if (hit(t.r)) overlaps.push('credit / tag ' + t.id); }
   const small = pins.filter((p) => p.w < 43.5 || p.h < 43.5 || p.tag !== 'BUTTON').map((p) => p.id);
   const outside = pins.filter((p) => p.head[0] < hr.left - 0.5 || p.head[2] > hr.right + 0.5 || p.head[1] < hr.top - 0.5 || p.head[3] > hr.bottom + 0.5).map((p) => p.id);
   const mb = document.querySelector('.map-board').getBoundingClientRect();
@@ -214,8 +219,10 @@ WHOLE_JS = r"""(async () => {
   if (!st) return { problems: ['no stage'] };
   const hr = host.getBoundingClientRect();
   const prods = await (await fetch('data/producers.json')).json();
-  const keys = [...host.querySelectorAll('.mm-pin')].map((p) => p.dataset.id).filter((i) => i.startsWith('m:')).map((i) => i.slice(2));
-  const held = prods.filter((p) => keys.includes(p.key));
+  // the makers of the place shown (group pins or maker pins alike): their countries are framed whole
+  const sl = (t) => String(t || '').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const [c0, r0] = (host.dataset.at || '').split('/');
+  const held = prods.filter((p) => p.lat != null && p.cid && (!c0 || sl(p.cont) === c0) && (!r0 || sl(p.reg) === r0));
   const SKIP = { usa: ['alaska', 'hawaii'], japan: ['okinawa'] };
   const problems = [];
   for (const cid of new Set(held.map((p) => p.cid).filter(Boolean))) {
@@ -245,8 +252,8 @@ def whole_country_checks(page, tag):
     probs = []
     for at in WHOLE_LEVELS:
         s = open_at(page, at)
-        if s is None or s["kind"] != "makers" or s["level"] not in ("continent", "region"):
-            continue                                       # a level with group pins keeps its own framing
+        if s is None or s["level"] not in ("continent", "region"):
+            continue                                       # group pins too (Plan 17 review): every country that holds one is whole
         r = page.eval(WHOLE_JS, await_promise=True)
         probs += [f"{tag} {at}: {m}" for m in r["problems"]]
     return probs
