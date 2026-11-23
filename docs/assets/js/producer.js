@@ -4,7 +4,7 @@ import { cardHTML } from './cards.js';
 import { board, emptyHTML, headBoard, pageHTML } from './chrome.js';
 import { getJSON } from './data.js';
 import { icon } from './icons.js';
-import { drawProvinceMap } from './map.js';
+import { mapMode, drawMakerMap } from './mapgl.js';
 import { drinkShell } from './shells.js';
 import { $, esc, plural, setTitle } from './util.js';
 
@@ -102,15 +102,22 @@ export async function mount(root, ctx) {
     boards: `${title}${pair}${shelf}${rowOf('Related makers', related)}${rowOf(`More from ${esc(p.region || p.location || '')}`, region)}`,
   });
 
+  let gone = false;
+  let stage = null;
   if (wantsMap) {
     const loc = $('#locator', root);
-    const drawn = await drawProvinceMap(loc, { p });
-    if (!drawn) {
-      loc.remove();                                   // a map that cannot place the province is left out, never shown unmarked
-      $('#facts-grid', root)?.classList.add('nomap');
-    }
+    const job = drawMakerMap(loc, { p }).then(({ drawn, stage: st }) => {
+      stage = st || null;
+      if (gone) { st?.destroy(); return; }
+      if (!drawn) {
+        loc.remove();                                 // a map that cannot place the province is left out, never shown unmarked
+        $('#facts-grid', root)?.classList.add('nomap');
+      }
+    });
+    // the SVG map is drawn at once, as it always was; the real map (Plan 17) arrives when its tiles do, so the page never waits for it
+    if (!mapMode().real) await job;
   }
-  return {};
+  return { unmount() { gone = true; stage?.destroy(); } };
 }
 
 /** Each host once, in source order (the official site first), linking to its first URL (Plan 09 section 11.4). */

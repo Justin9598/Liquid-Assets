@@ -44,7 +44,7 @@ export const pinColor = (cat) => PIN_COLORS[cat] || '#b9b2a6';
 
 let defsDone = false;
 /** The gloss shared by every pin head, once per page (gradients in a hidden <svg> do not draw, so this one is just out of sight). */
-function ensurePinDefs() {
+export function ensurePinDefs() {
   if (defsDone && document.getElementById('pin-gloss')) return;
   defsDone = true;
   document.body.insertAdjacentHTML('beforeend', `<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -419,13 +419,13 @@ const textW = (s, px) => Math.ceil(String(s).length * px * 0.6) + 8;
 /** The province the maker is in, drawn in chalk with its pin, its capital and up to 4 towns of 50,000 or more, a small country
  * inset in the corner, and words for screen readers. Resolves to true when drawn, false when it could not be (the caller then
  * leaves the map out). */
-export async function drawProvinceMap(host, { p }) {
+export async function drawProvinceMap(host, { p }, opts = {}) {
   if (!p.cid || p.lat == null) return false;
   let data;
   try { data = await loadCountry(p.cid); } catch { return false; }
   const prov = data.provinces.find((x) => x.id === p.prov);
   if (!prov) return false;
-  const stage = new MapStage(host);
+  const stage = opts.stage || new MapStage(host);          // opts.stage: the real map (mapgl.js), which brings its own towns
   host.classList.add('mini');
   stage.setCountry(data);
   const pin = project(p.lon, p.lat);
@@ -440,7 +440,7 @@ export async function drawProvinceMap(host, { p }) {
   stage.go(spec, false);
   stage.mark({ provSel: [prov.id] });
   const capital = (data.places || []).find((x) => x.p === prov.id && x.cap);
-  const towns = prov.city ? [] : (data.places || []).filter((x) => x.p === prov.id && !x.cap && x.pop >= 50000).sort((a, b) => b.pop - a.pop).slice(0, 4);
+  const towns = prov.city || opts.towns === false ? [] : (data.places || []).filter((x) => x.p === prov.id && !x.cap && x.pop >= 50000).sort((a, b) => b.pop - a.pop).slice(0, 4);
 
   // the pin, then labels that never cover it or each other
   const [tx, ty] = stage.toPx(pin);
@@ -449,6 +449,7 @@ export async function drawProvinceMap(host, { p }) {
   const hx = tx + 0.3 * L;
   const hy = ty - L;
   const used = [{ l: hx - r - 2, r: hx + r + 2, t: hy - r - 2, b: hy + r + 2 }, { l: tx - 4, r: tx + 4, t: ty - 9, b: ty + 3 }];   // the head, and the needle's foot
+  if (stage.attribBox) used.push(stage.attribBox());                        // the real map's credit line is kept clear too
   const hit = (a, b) => a.l < b.r + 3 && a.r > b.l - 3 && a.t < b.b + 3 && a.b > b.t - 3;
   const W = stage.W;
   const H = stage.H;
@@ -487,6 +488,7 @@ export async function drawProvinceMap(host, { p }) {
     used.push(pick.sp.box, pick.sp.dotBox);
     marks.push({ pl, kind, x: pick.sp.dx, y: pick.sp.dy, side: pick.t.side, l: pick.sp.l, w });
   };
+  if (capital) stage.hideName?.(capital.n);                                  // the real map's own label for it would sit under ours
   if (capital) label(capital, 'cap');
   towns.forEach((t) => label(t, 'town'));
   const overlay = marks.map((m) => {

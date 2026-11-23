@@ -1,0 +1,5 @@
+{
+  "tileSource": "https://tiles.openfreemap.org/planet",
+  "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+  "styleSource": "https://tiles.openfreemap.org/styles/dark"
+}

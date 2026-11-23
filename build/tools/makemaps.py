@@ -20,6 +20,12 @@ smooth move of the view. Coordinates are integers in units of 0.005 degree, with
 Outlines are SVG paths written as "M x y l dx dy ... z" per ring (relative steps), so the page can draw them as they are and
 the build (liquid/maps.py) can read them back to find which province a point falls in.
 
+Plan 17 section 3: the same outlines are also written as GeoJSON in longitude and latitude for the real map (MapLibre), into
+docs/assets/maps/geo/: world.geojson (only the countries that have makers) and <country>.geojson (its provinces). They are made
+from the SVG files just written, so the simplification, the dropped islands and the maker-island rules are identical. To write
+only these, from the SVG files that are already there (no download, no Research/ folder needed):
+    python -I build/tools/makemaps.py --geo-only
+
 Run it again when a maker from a new country is logged: add the country to COUNTRIES, then run. The build raises E08
 when a published maker's country has no map file.
 """
@@ -463,6 +469,56 @@ def is_city(cid, pr):
     return bool(CITY_TYPE.match(pr.get("type") or "")) and pr["id"] not in NOT_CITY
 
 
+# ---- GeoJSON for the real map (Plan 17 section 3) -----------------------------------------------------------------------
+_RING_RE = re.compile(r"M(-?\d+) (-?\d+)l([-\d ]*)z")
+
+
+def rings_lonlat(d):
+    """An SVG outline written by to_path -> rings of [lon, lat], each closed, to 3 decimals (the steps are 0.005 degree)."""
+    out = []
+    for m in _RING_RE.finditer(d or ""):
+        x, y = int(m.group(1)), int(m.group(2))
+        pts = [(x, y)]
+        n = [int(v) for v in m.group(3).split()]
+        for i in range(0, len(n) - 1, 2):
+            x, y = x + n[i], y + n[i + 1]
+            pts.append((x, y))
+        ring = []
+        for px, py in pts:
+            lon, lat = unproj(px, py)
+            ring.append([round(lon, 3), round(lat, 3)])
+        ring.append(ring[0])
+        out.append(ring)
+    return out
+
+
+def feature(props, d):
+    rings = rings_lonlat(d)
+    return {"type": "Feature", "properties": props, "geometry": {"type": "MultiPolygon", "coordinates": [[r] for r in rings]}}
+
+
+def write_geo():
+    """geo/world.geojson and geo/<country>.geojson, from the SVG files in docs/assets/maps/."""
+    geo = OUT / "geo"
+    geo.mkdir(parents=True, exist_ok=True)
+    world = json.loads((OUT / "world.json").read_text(encoding="utf-8"))
+    feats = [feature({"id": c["id"]}, c["d"]) for c in world["countries"] if c["id"] in COUNTRIES]
+    missing = sorted(set(COUNTRIES) - {f["properties"]["id"] for f in feats})
+    if missing:
+        raise SystemExit(f"world.json has no outline for {missing}")
+    text = dumps({"type": "FeatureCollection", "features": feats})
+    (geo / "world.geojson").write_text(text, encoding="utf-8")
+    print(f"geo/world.geojson: {len(text.encode('utf-8')) / 1000:.1f} KB, {len(feats)} countries")
+    for cid in COUNTRIES:
+        doc = json.loads((OUT / f"{cid}.json").read_text(encoding="utf-8"))
+        # big outlines first, so a city-province (Daejeon) is drawn over the province round it
+        provs = sorted(doc["provinces"], key=lambda p: -((p["bb"][2] - p["bb"][0]) * (p["bb"][3] - p["bb"][1])))
+        feats = [feature({"id": p["id"], "name": p["name"]}, p["d"]) for p in provs]
+        text = dumps({"type": "FeatureCollection", "features": feats})
+        (geo / f"{cid}.geojson").write_text(text, encoding="utf-8")
+        print(f"geo/{cid}.geojson: {len(text.encode('utf-8')) / 1000:.1f} KB, {len(feats)} provinces")
+
+
 LICENSE = """Map files (assets/maps/*.json)
 
 Source:   Natural Earth (https://www.naturalearthdata.com/), also at https://github.com/nvkelso/natural-earth-vector
@@ -475,6 +531,8 @@ Licence:  Public domain. Natural Earth terms of use (https://www.naturalearthdat
           permission is needed to use Natural Earth. Crediting the authors is unnecessary."
           The repository's LICENSE.md says the same ("Everything here is public domain.").
           Verified 2026-11-09.
+          The real map (Plan 17) draws the OpenStreetMap basemap from OpenFreeMap's vector tiles; those are not in this folder and
+          are credited on the page. geo/*.geojson are these same outlines written in longitude and latitude.
 Changes:  Outlines simplified (Douglas-Peucker), tiny islands and the remote islands of Japan dropped, overseas
           departments of France dropped, holes in outlines dropped, one Miller cylindrical projection for every file,
           written as integer SVG paths by Ship/build/tools/makemaps.py.
@@ -485,6 +543,9 @@ Credit:   The site footer reads "Map: Natural Earth (public domain)".
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     OUT.mkdir(parents=True, exist_ok=True)
+    if "--geo-only" in sys.argv:
+        write_geo()
+        return
     world = fetch("world")["features"]
     text = make_world(world)
     (OUT / "world.json").write_text(text, encoding="utf-8")
@@ -496,6 +557,7 @@ def main():
         (OUT / f"{cid}.json").write_text(text, encoding="utf-8")
         print(f"{cid}.json: {len(text.encode('utf-8')) / 1000:.1f} KB")
     (OUT / "LICENSE.txt").write_text(LICENSE, encoding="utf-8")
+    write_geo()
 
 
 if __name__ == "__main__":

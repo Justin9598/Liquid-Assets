@@ -6,6 +6,7 @@ import { getJSON } from './data.js';
 import { icon } from './icons.js';
 import { FRAME_SKIP, MapStage, innerPoint, loadCountry, loadWorld, pinColor, project, unproject } from './map.js';
 import { buildTree, chainOf, countryNode, crumbs, findNode, provinceNode, smallestHolding, tally, upFrom, viewOf } from './maptree.js';
+import { createGLStage } from './mapgl.js';
 import { makerTile } from './producer.js';
 import { $, buildHash, debounce, esc, fold, plural, regionKey, replaceHash, setTitle, slug } from './util.js';
 
@@ -126,15 +127,31 @@ ${board(`    <div class="m-controls">
   let world = null;
   let token = 0;
   let cardFor = null;
-  try {
-    world = await loadWorld();
-    stage = new MapStage(host);
+  let gone = false;
+  let curNode = null;
+  // The map is made after the page is up, so the list never waits for it: the real map (Plan 17) when it can run, else the SVG map
+  // (Plan 14), which is what the page used before and still uses with ?map=svg, without WebGL, or when the tiles cannot be had.
+  const stageReady = (async () => {
+    try {
+      world = await loadWorld();
+    } catch {
+      $('.map-board', root)?.remove();
+      $('.m-top', root).style.gridTemplateColumns = 'minmax(0, 1fr)';
+      return;
+    }
+    const made = (await createGLStage(host, { params: ctx.params })) || new MapStage(host);
+    if (gone) { made.destroy(); return; }
+    stage = made;
+    host._stage = stage;                                    // the tests read the map's state through this
+    host.dataset.engine = stage.gl ? 'gl' : 'svg';
     stage.setWorld(world);
     host.insertAdjacentHTML('beforeend', '<div class="mm-card chalkboard" id="mm-card" hidden role="dialog" aria-label="Maker"></div><div class="mm-sign" hidden aria-hidden="true"><div class="plank"></div></div>');
-  } catch {
-    $('.map-board', root)?.remove();
-    $('.m-top', root).style.gridTemplateColumns = 'minmax(0, 1fr)';
-  }
+    stage.onResize = () => render(false);
+    stage.onMoveStart = () => closeCard();
+    stage.onMoved = () => { if (curNode) updateSign(curNode); };      // after the visitor has panned or zoomed, the sign may cover a pin
+    const list = filtered();
+    busy = drawMap(list, shownNode(list), false);
+  })();
 
   const radiusFor = (n) => (n < 20 ? 13 : n < 60 ? 16 : 19);
   const centreOf = (list) => {
@@ -188,6 +205,7 @@ ${board(`    <div class="m-controls">
 
   async function drawMap(list, node, animate) {
     const my = ++token;
+    curNode = node;
     const view = st.q.trim() ? { kind: 'makers', node, makers: list.filter((p) => p.lat != null), groups: [] } : viewOf(node);
     host.dataset.at = st.at;
     host.dataset.level = node.level;
@@ -316,7 +334,6 @@ ${board(`    <div class="m-controls">
 
   read(ctx.params);
   render(false);
-  if (stage) stage.onResize = () => render(false);
 
   // ---- events --------------------------------------------------------------------------------------------------------
   const pinById = (id) => {
@@ -374,6 +391,7 @@ ${board(`    <div class="m-controls">
     update(n) { read(n.params); render(false); },
     unmount() {
       token++;
+      gone = true;
       stage?.destroy();
       root.removeEventListener('click', onClick);
       document.removeEventListener('keydown', onKey);
