@@ -189,8 +189,13 @@ export class GLStage {
   ready(ms = LOAD_TIMEOUT) {
     return new Promise((resolve, reject) => {
       let done = false;
-      const fail = (e) => { if (!done) { done = true; clearTimeout(timer); reject(e); } };
-      const timer = setTimeout(() => fail(new Error(`no load within ${ms / 1000} s`)), ms);
+      const fail = (e) => { if (!done) { done = true; clearInterval(timer); reject(e); } };
+      // the time allowed counts only while the page is visible: a tab opened in the background draws nothing until it is shown
+      let seen = 0;
+      const timer = setInterval(() => {
+        if (document.visibilityState === 'visible') seen += 250;
+        if (seen >= ms) fail(new Error(`no load within ${ms / 1000} s of the page being visible`));
+      }, 250);
       this.map.on('error', (e) => {
         const m = String(e?.error?.message || e?.message || '');
         if (!done && (e?.sourceId === 'openmaptiles' || /Failed to fetch|NetworkError|AJAXError|Load failed|style/i.test(m))) fail(new Error(m || 'a source error'));
@@ -202,7 +207,7 @@ export class GLStage {
         const cam = this.map.cameraForBounds(WORLD, { padding: 10 });
         this.map.setMinZoom(Math.min(1, cam ? cam.zoom : 1));
         done = true;
-        clearTimeout(timer);
+        clearInterval(timer);
         resolve();
       });
     });
