@@ -342,7 +342,43 @@ export class MapStage {
       for (const l of touching()) if (l.tagW) { l.tagW = 0; l.bl = l.br = l.it.r; l.noTag = true; }
       relax(laid, W, H, 3 + k * 3);
     }
+    this.placeLostTags(laid);
     return laid.filter((l) => !l.obstacle);
+  }
+
+  /** Every group pin keeps its name tag (Plan 17 review). A tag the beside-the-pin layout gave up is tried on every side of its pin, then
+   * a little farther out, in the first free spot: clear of every head, every other tag, the credit and the edges of the map. */
+  placeLostTags(laid) {
+    const { W, H } = this;
+    const TH = 26;
+    const head = (l) => (l.obstacle ? { l: l.cx - l.bl, r: l.cx + l.br, t: l.cy - l.bt, b: l.cy + l.bb } : { l: l.cx - l.it.r, r: l.cx + l.it.r, t: l.cy - l.it.r, b: l.cy + l.it.r });
+    const tagBox = (l) => {
+      if (l.place) return { l: l.cx + l.place.tx, r: l.cx + l.place.tx + l.tagW, t: l.cy + l.place.ty, b: l.cy + l.place.ty + TH };
+      const r = l.it.r + 4;
+      return l.flip ? { l: l.cx - r - l.tagW, r: l.cx - r, t: l.cy - TH / 2, b: l.cy + TH / 2 } : { l: l.cx + r, r: l.cx + r + l.tagW, t: l.cy - TH / 2, b: l.cy + TH / 2 };
+    };
+    const hit = (a, b) => a.l < b.r + 2 && a.r > b.l - 2 && a.t < b.b + 2 && a.b > b.t - 2;
+    const wants = laid.filter((l) => !l.obstacle && l.it.kind === 'group' && l.it.tag);
+    for (const l of wants.filter((x) => x.noTag)) {
+      const w = Math.ceil(String(l.it.name).length * 7.4 + 14);
+      const r = l.it.r;
+      for (const d of [4, 14, 26, 40, 56, 76]) {
+        const o = r + d;
+        const cands = [];
+        for (let a = 0; a < 360; a += 20) {            // right first, then round the pin
+          const ang = ((a === 0 ? 0 : a) * Math.PI) / 180;
+          const c = Math.cos(ang);
+          const sn = Math.sin(ang);
+          cands.push([c > 0.3 ? o * c : c < -0.3 ? o * c - w : -w / 2, sn > 0.3 ? o * sn : sn < -0.3 ? o * sn - TH : -TH / 2]);
+        }
+        const free = cands.find(([tx, ty]) => {
+          const b = { l: l.cx + tx, r: l.cx + tx + w, t: l.cy + ty, b: l.cy + ty + TH };
+          if (b.l < 2 || b.r > W - 2 || b.t < 2 || b.b > H - 2) return false;
+          return !laid.some((q) => (q !== l && hit(b, head(q))) || (q !== l && !q.obstacle && q.it.tag && !q.noTag && hit(b, tagBox(q))));
+        });
+        if (free) { l.place = { tx: free[0], ty: free[1], w, far: d >= 26 }; l.tagW = w; l.noTag = false; break; }
+      }
+    }
   }
 
   draw(laid) {
@@ -351,8 +387,15 @@ export class MapStage {
       const { it } = l;
       const art = pinArt({ r: it.r, color: it.kind === 'group' ? GROUP_COLOR : it.color, count: it.count, tip: [l.tip[0] - l.cx, l.tip[1] - l.cy] });
       const tag = it.kind === 'group' || it.kind === 'maker'
-        ? `<span class="pin-tag chalkboard chalkboard--s${(l.tagW ? l.flip : l.cx > W / 2) ? ' flip' : ''}${it.tag && !l.noTag ? ' always' : ''}" aria-hidden="true"><span class="chalk">${esc(it.name)}</span></span>` : '';
-      return `<button type="button" class="mm-pin ${it.kind}${l.fanned ? ' fanned' : ''}" data-id="${esc(it.id)}" aria-label="${esc(it.aria)}" style="left:${(l.cx - 22).toFixed(1)}px;top:${(l.cy - 22).toFixed(1)}px;--r:${it.r}px"><svg class="pin-art" width="1" height="1" aria-hidden="true" focusable="false">${art}</svg>${tag}</button>`;
+        ? `<span class="pin-tag chalkboard chalkboard--s${(l.tagW ? l.flip : l.cx > W / 2) ? ' flip' : ''}${it.tag && !l.noTag ? ' always' : ''}${l.place ? ' placed' : ''}"${l.place ? ` style="left:${(22 + l.place.tx).toFixed(1)}px;top:${(22 + l.place.ty).toFixed(1)}px;right:auto;transform:none"` : ''} aria-hidden="true"><span class="chalk">${esc(it.name)}</span></span>` : '';
+      let lead = '';
+      if (l.place && l.place.far) {                    // a tag set well away from its pin keeps a thin chalk line back to it
+        const { tx, ty, w } = l.place;
+        const nx = Math.min(Math.max(0, tx), tx + w);
+        const ny = Math.min(Math.max(0, ty), ty + 26);
+        lead = `<svg class="pin-lead" width="1" height="1" style="position:absolute;left:22px;top:22px;overflow:visible;pointer-events:none" aria-hidden="true" focusable="false"><line x1="0" y1="0" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}" stroke="#f2ede4" stroke-opacity=".65" stroke-width="1.2" stroke-dasharray="3 3"/></svg>`;
+      }
+      return `<button type="button" class="mm-pin ${it.kind}${l.fanned ? ' fanned' : ''}" data-id="${esc(it.id)}" aria-label="${esc(it.aria)}" style="left:${(l.cx - 22).toFixed(1)}px;top:${(l.cy - 22).toFixed(1)}px;--r:${it.r}px">${lead}<svg class="pin-art" width="1" height="1" aria-hidden="true" focusable="false">${art}</svg>${tag}</button>`;
     }).join('');
   }
 }

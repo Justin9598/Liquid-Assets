@@ -454,7 +454,7 @@ export class GLStage {
   }
 }
 
-for (const k of ['layout', 'draw']) GLStage.prototype[k] = MapStage.prototype[k];          // the pins are laid out and drawn exactly as on the SVG map
+for (const k of ['layout', 'draw', 'placeLostTags']) GLStage.prototype[k] = MapStage.prototype[k];          // the pins are laid out and drawn exactly as on the SVG map
 
 // ---- the entry points --------------------------------------------------------------------------------------------------
 /** The real map in `host`, or null (after one line in the console) when it cannot run. `host` is left clean for the SVG map then. */

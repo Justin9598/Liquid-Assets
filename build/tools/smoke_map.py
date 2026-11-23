@@ -56,6 +56,12 @@ MAP_STATE = r"""(() => {
     const hr2 = host.getBoundingClientRect(), a = tags[i].r;
     if (a.left < hr2.left - 0.5 || a.right > hr2.right + 0.5) overlaps.push('tag ' + tags[i].id + ' leaves the map');
   }
+  // every group pin keeps a visible name tag, inside the map (Plan 17 review); the overlaps above already keep it clear of other tags and heads
+  for (const g of host.querySelectorAll('.mm-pin.group')) {
+    const t = g.querySelector('.pin-tag');
+    const r = t && t.getBoundingClientRect();
+    if (!t || !t.classList.contains('always') || getComputedStyle(t).opacity !== '1' || r.width < 10 || r.left < hr.left - 0.5 || r.right > hr.right + 0.5 || r.top < hr.top - 0.5 || r.bottom > hr.bottom + 0.5) overlaps.push('group pin ' + g.dataset.id + ' has no visible tag');
+  }
   // the real map's credit (a line, or a small button) is never under a pin head or a name tag
   const cr = host.querySelector('.mm-attrib');
   if (cr) { const a = cr.getBoundingClientRect(); const hit = (q) => a.left < q.right - 0.5 && a.right > q.left + 0.5 && a.top < q.bottom - 0.5 && a.bottom > q.top + 0.5;
